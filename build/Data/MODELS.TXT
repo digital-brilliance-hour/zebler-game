@@ -15,6 +15,7 @@ load	Mandy		data/chars/mary/mary.txt
 load	Mighty		data/chars/mighty/mighty.txt
 load	zoomin		data/chars/misc/zoomin.txt
 load	zoomout		data/chars/misc/zoomout.txt
+load    Zebler     data/chars/warior/warior.txt
 
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt

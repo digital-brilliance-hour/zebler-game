@@ -1,0 +1,33 @@
+name	BalaLinn
+speed        20
+type	     none
+shadow	     0
+subject_to_wall 1
+candamage enemy obstacle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	3
+	attackone	1
+	hitflash	flash2
+	offset	-42 10
+	attack2	0 0 13 13 10 5 0 0 0 30
+	jugglecost	1
+	frame	data/chars/ZGoat/Bala.gif
+		
+#|edited by openBor Stats v 0.51
+		

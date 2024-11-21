@@ -1,0 +1,39 @@
+name	DutchLogo
+speed        0
+facing 1
+type	     none
+setlayer 1
+shadow	     0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	4
+	offset	42 41
+	frame	data/chars/Dutch/nome.gif
+		
+#|edited by openBor Stats v 0.51
+		

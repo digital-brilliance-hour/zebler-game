@@ -1,0 +1,90 @@
+name	slug
+health	200
+speed   10
+type	enemy
+falldie 1
+nolife	1
+
+
+anim idle
+	loop	1
+	delay	54
+	offset	33 58
+	bbox    6 3 48 56
+	frame	data/chars/slug/stance.gif
+
+
+anim walk
+	loop	1
+	delay	15
+	offset	29 61
+	bbox    7 5 48 52
+	frame	data/chars/slug/walk1.gif
+	offset	35 60
+	bbox    5 5 49 52
+	frame	data/chars/slug/walk2.gif
+	offset	28 63
+	bbox    7 3 46 58
+	frame	data/chars/slug/walk3.gif
+	offset	30 59
+	bbox    4 2 53 55
+	frame	data/chars/slug/walk4.gif
+	offset	28 63
+	bbox    5 2 45 59
+	frame	data/chars/slug/walk3.gif
+	offset	35 60
+	bbox    4 2 50 59
+	frame	data/chars/slug/walk2.gif
+
+
+anim pain
+	loop	0
+	delay	20
+	offset	23 62
+	bbox    5 5 49 56
+	sound	data/chars/xcon/iron.wav
+	frame	data/chars/slug/hit.gif
+
+
+
+anim fall
+	loop	0
+	delay	50
+	offset  32 45
+	frame	data/chars/slug/lie.gif
+	sound	data/chars/xcon/metal.wav
+	frame	data/chars/slug/lie.gif
+
+anim rise
+	loop	0
+	delay	10
+	offset  32 66
+	frame	data/chars/slug/j1.gif
+	offset  33 64
+	frame	data/chars/slug/j2.gif
+
+anim attack1
+	loop 	0
+	delay 	10
+	offset 	30 59
+		bbox  7  2  46  56
+	frame	data/chars/slug/a1.gif
+	sound	data/sounds/ss.wav
+	frame	data/chars/slug/a2.gif
+	attack1	50 8 94 52 60 1
+	offset	35 59
+	frame	data/chars/slug/a3.gif
+	attack1	48 4 107 55 60 1
+	offset	42 59
+	frame	data/chars/slug/a4.gif
+
+anim death
+	delay	18
+	sound	data/chars/xcon/blow.wav
+	offset	64 60
+	frame	data/chars/bots/death2/3.gif
+	offset	76 105
+	frame	data/chars/bots/death2/4.gif
+	offset	44 171
+	frame	data/chars/bots/gone.gif
+

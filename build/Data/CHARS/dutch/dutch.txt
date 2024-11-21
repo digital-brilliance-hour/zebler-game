@@ -1,0 +1,1639 @@
+
+name	Dutch
+health	300
+mp 60
+mprate 2
+speed 11
+type	player
+gfxshadow 1 3
+diesound data/chars/Dutch/morte.wav
+icon	data/chars/Dutch/portrait2.gif 1
+throwdamage 15
+weapons  DutchRun DutchRio BonusDutch BonusDutch BonusAtDutch
+grabforce 7
+knockdowncount 6
+candamage enemy obstacle 
+atchain 1 1 2 3 4
+combostyle 1
+bflash Block
+running  24  4  2  1  0
+holdblock 1
+riseinv 1 0
+antigrab 100
+jugglepoints 10
+
+jumpmove 0 0
+walkoffmove 2 0
+jumpheight 4
+jumpspeed 20
+
+
+makeinv 2 0
+parrow		data/chars/Dutch/nome.gif -37 -120
+parrow2		data/chars/Dutch/nome.gif -37 -120
+parrow3		data/chars/Dutch/nome.gif -37 -120
+parrow4		data/chars/Dutch/nome.gif -37 -120
+
+fmap 6
+palette       data/chars/Dutch/pal1.gif
+alternatepal  data/chars/Dutch/pal2.gif
+alternatepal  data/chars/Dutch/pal3.gif
+alternatepal  data/chars/Dutch/pal4.gif
+alternatepal  data/chars/Dutch/pal5.gif
+alternatepal  data/chars/Dutch/pal6.gif
+alternatepal  data/chars/Dutch/palgelo.gif
+
+animationscript data/scripts/grabscript.c
+keyscript  data/scripts/ironkey.c
+onmoveascript data/scripts/antihole.c
+
+load BonusDutch
+load BonusAtDutch
+load DutchRun
+load DutchRio
+load SuperCyTiroP
+knife SuperCyTiroP
+load stomp2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	fastattack	1
+	bbox	41 32 53 77
+	offset	68 109
+	hitfx	data/sounds/beat1.wav
+	sound	data/sounds/punch.wav
+	frame	data/chars/Dutch/a1.gif
+	attack	77 31 59 25 8 0 0 0 5 0
+	jugglecost	1
+	delay	9
+	frame	data/chars/Dutch/a2.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/a1.gif
+		
+anim	attack2
+	loop	0
+	delay	4
+	bbox	44 31 49 78
+	offset	68 109
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/a3.gif
+	attack	91 41 61 30 9 0 0 0 5 0
+	jugglecost	1
+	delay	8
+	frame	data/chars/Dutch/a4.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/a3.gif
+		
+anim	attack3
+	loop	0
+	delay	4
+	bbox	42 47 44 81
+	offset	60 128
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/ja1.gif
+	attack	69 41 43 54 9 0 0 0 5 0
+	jugglecost	1
+	delay	9
+	frame	data/chars/Dutch/ja2.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/ja1.gif
+		
+anim	attack4
+	loop	0
+	delay	12
+	bbox	49 41 47 76
+	offset	73 117
+	fastattack	1
+	hitfx	data/sounds/klunk2.wav
+	sound	data/chars/Dutch/a1.wav
+	frame	data/chars/Dutch/c1.gif
+	delay	7
+	sound	data/sounds/punch3.wav
+	attack	73 62 55 31 20 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/c2.gif
+	attack	89 37 55 42 20 9 0 0 5 0
+	jugglecost	1
+	delay	10
+	frame	data/chars/Dutch/c3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/c4.gif
+	delay	8
+	frame	data/chars/Dutch/c1.gif
+		
+anim	block
+	loop	0
+	delay	10
+	offset	78 114
+	bbox	60 32 50 82
+	cancel	1 99 0 f freespecial12
+	cancel	1 99 0 b freespecial10
+	frame	data/chars/Dutch/ta1.gif
+	frame	data/chars/Dutch/ta1.gif
+		
+anim	duck
+	loop	0
+	delay	6
+	cancel	0 99 0 j freespecial16
+	bbox	36 46 50 55
+	offset	61 100
+	frame	data/chars/Dutch/i2.gif
+		
+anim	duckattack
+	loop	0
+	delay	7
+	bbox	50 49 46 62
+	offset	69 109
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/da1.gif
+	attack	77 72 47 29 16 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/da2.gif
+	delay	5
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/da2.gif
+	frame	data/chars/Dutch/da1.gif
+		
+anim	ducking
+	loop	0
+	delay	6
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	duckrise
+	loop	0
+	delay	6
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	@cmd	gravity 1
+	cancel	2 2 0 j freespecial14
+	offset	75 108
+	frame	data/chars/Dutch/g1.gif
+	offset	78 105
+	frame	data/chars/Dutch/g2.gif
+	offset	78 95
+	delay	500
+	frame	data/chars/Dutch/g2.gif
+	offset	73 90
+	delay	10
+	frame	data/chars/Dutch/g3.gif
+		
+anim	follow4
+	loop	0
+	delay	6
+	landframe	5
+	jumpframe	0 6 0
+	@cmd	position 0 30 80 -1 1
+	delay	6
+	offset	80 112
+	sound	data/sounds/vuu2.wav
+	frame	data/chars/dutch/th5.gif
+	frame	data/chars/dutch/th6.gif
+	frame	data/chars/dutch/th7.gif
+	offset	83 113
+	delay	16
+	@cmd	velo001	0 0 0
+	@cmd	position 0 0 110 -1 0
+	frame	data/chars/dutch/th9.gif
+	offset	83 104
+	sound	data/sounds/punch.wav
+	delay	555
+	@cmd	position 0 20 80 -1 0
+	frame	data/chars/dutch/th8.gif
+	@cmd	velo001	0 0 0
+	@cmd	position 0 0 8 0 0
+	@cmd	depost 0
+	@cmd	throw 15 1 1 1 0 0
+	@cmd	clearL
+	delay	2
+	sound	data/sounds/stomp.wav
+	offset	77 101
+	attack	30 81 111 23 20 9 0 0 5 0
+	frame	data/chars/dutch/do22.gif
+	delay	8
+	attack	0 0 0 0 0 0 0 0 0 0
+	@cmd	spawn01 "stomp2" 1 1 -1
+	frame	data/chars/dutch/do22.gif
+	delay	6
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/dutch/do22.gif
+	delay	9
+	offset	61 100
+	frame	data/chars/Dutch/i2.gif
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	follow5
+	loop	0
+	landframe	15
+	cancel	13 14 j freespecial14
+	delay	5
+	jumpframe	0 5 2 0
+	offset	75 119
+	sound	data/chars/cyborg/fire.wav
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj4.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj4.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj3.gif
+	@cmd	gravity 1
+	delay	6
+	offset	59 113
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	frame	data/chars/Dutch/j2.gif
+	frame	data/chars/Dutch/j3.gif
+	frame	data/chars/Dutch/j3.gif
+	frame	data/chars/Dutch/j2.gif
+	frame	data/chars/Dutch/j2.gif
+	delay	500
+	idle	1
+	frame	data/chars/Dutch/j1.gif
+	delay	6
+	bbox	30 26 51 72
+	offset	54 98
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial
+	com	A3 freespecial
+	loop	0
+	energycost	30
+	fastattack	1
+	hitflash	flashShock
+	mponly	1
+	delay	15
+	offset	79 126
+	frame	data/chars/Dutch/tt1.gif
+	offset	97 124
+	delay	9
+	sound	data/chars/Dutch/z1.wav
+	frame	data/chars/Dutch/z10.gif
+	@cmd	velo001	1 0 0
+	shock	49 40 98 85 45 15 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/z11.gif
+	frame	data/chars/Dutch/z12.gif
+	frame	data/chars/Dutch/z13.gif
+	frame	data/chars/Dutch/z14.gif
+	sound	data/sounds/elec2.wav
+	frame	data/chars/Dutch/z11.gif
+	frame	data/chars/Dutch/z12.gif
+	frame	data/chars/Dutch/z13.gif
+	frame	data/chars/Dutch/z14.gif
+	sound	data/sounds/elec1.wav
+	frame	data/chars/Dutch/z11.gif
+	frame	data/chars/Dutch/z12.gif
+	frame	data/chars/Dutch/z13.gif
+	frame	data/chars/Dutch/z14.gif
+	@cmd	velo001	0 0 0
+	delay	16
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial10
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	71 116
+	cancel	6 99 0 j freespecial14
+	sound	data/chars/lex/dash.wav
+	frame	data/chars/Dutch/do6.gif
+	frame	data/chars/Dutch/do7.gif
+	frame	data/chars/Dutch/do8.gif
+	frame	data/chars/Dutch/do6.gif
+	frame	data/chars/Dutch/do7.gif
+	frame	data/chars/Dutch/do8.gif
+	@cmd	velo001	0 0 0
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial11
+	loop	0
+	energycost	5
+	mponly	1
+	jumpframe	0 1 -1
+	offset	78 108
+	bbox	59 24 44 85
+	delay	7
+	cancel	5 99 0 j freespecial14
+	landframe	6
+	energycost	6
+	mponly	1
+	loop	0
+	delay	7
+	offset	78 108
+	bbox	59 24 44 85
+	frame	data/chars/Dutch/x10.gif
+	frame	data/chars/Dutch/x11.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiroP" 40 40 1
+	frame	data/chars/Dutch/x12.gif
+	delay	15
+	frame	data/chars/Dutch/x11.gif
+	bbox	41 25 42 69
+	offset	59 113
+	delay	70
+	frame	data/chars/Dutch/j2.gif
+	delay	555
+	frame	data/chars/Dutch/j1.gif
+	delay	9
+	bbox	30 26 51 72
+	offset	54 98
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial12
+	loop	0
+	delay	9
+	@cmd	velo001	4 0 0
+	offset	70 101
+	cancel	6 99 0 j freespecial14
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/do20.gif
+	offset	82 101
+	delay	20
+	frame	data/chars/Dutch/do21.gif
+	@cmd	velo001	0 0 0
+	delay	6
+	bbox	54 48 51 54
+	offset	77 101
+	frame	data/chars/Dutch/do22.gif
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial13
+	loop	0
+	delay	8
+	landframe	29
+	cancel	3 99 0 D A freespecial3
+	cancel	3 99 0 A freespecial33
+	cancel	3 99 0 A3 freespecial20
+	cancel	7 99 0 j freespecial14
+	cancel	3 99 0 A2 freespecial11
+	bbox	30 26 51 72
+	offset	54 98
+	frame	data/chars/Dutch/i1.gif
+	delay	25
+	bbox	51 38 51 57
+	offset	66 98
+	frame	data/chars/Dutch/sj1.gif
+	delay	5
+	@cmd	velo001	1 0 7
+	sound	data/chars/cyborg/fire.wav
+	bbox	52 24 42 79
+	offset	71 118
+	frame	data/chars/Dutch/sj2.gif
+	frame	data/chars/Dutch/sj3.gif
+	frame	data/chars/Dutch/sj4.gif
+	frame	data/chars/Dutch/sj2.gif
+	frame	data/chars/Dutch/sj3.gif
+	frame	data/chars/Dutch/sj4.gif
+	frame	data/chars/Dutch/sj2.gif
+	frame	data/chars/Dutch/sj3.gif
+	frame	data/chars/Dutch/sj4.gif
+	frame	data/chars/Dutch/sj2.gif
+	frame	data/chars/Dutch/sj3.gif
+	delay	6
+	@cmd	velo001	1 0 1
+	@cmd	keymove 2 0
+	bbox	41 25 42 69
+	offset	59 113
+	frame	data/chars/Dutch/j2.gif
+	delay	9
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/Dutch/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/Dutch/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	delay	555
+	frame	data/chars/Dutch/j1.gif
+	@cmd	velo001	0 0 0
+	delay	9
+	bbox	30 26 51 72
+	offset	54 98
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial14
+	loop	0
+	delay	5
+	jumpframe	0 3 1 0
+	landframe	9
+	cancel	0 8 0 A2 freespecial11
+	cancel	0 8 0 A freespecial33
+	cancel	0 8 0 D A freespecial3
+	cancel	0 8 0 A3 freespecial20
+	cancel	8 9 0 J freespecial17
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+	offset	74 108
+	bbox	58 27 41 54
+	sound	data/chars/cyborg/fire.wav
+	frame	data/chars/dutch/jj1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/dutch/jj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/dutch/jj3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/dutch/jj1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/dutch/jj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/dutch/jj3.gif
+	@cmd	keymove 2 0
+	delay	25
+	bbox	41 25 42 69
+	offset	59 113
+	frame	data/chars/dutch/j3.gif
+	@cmd	keymove 2 0
+	delay	13
+	frame	data/chars/dutch/j2.gif
+	delay	555
+	idle	1
+	frame	data/chars/dutch/j1.gif
+	delay	9
+	sound	data/sounds/0pisada.wav
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial16
+	loop	0
+	delay	5
+	landframe	3
+	@script
+void self = getlocalvar("self");
+if(frame ==0)changeentityproperty(self,"subject_to_platform",0);
+if(frame >=1)changeentityproperty(self,"subject_to_platform",1);
+	@end_script	
+	@cmd	velo001	1 0 -10
+	offset	79 109
+	frame	data/chars/Dutch/s1.gif
+	@cmd	velo001	1 0 -10
+	delay	20
+	sound	data/sounds/punch.wav
+	offset	59 113
+	frame	data/chars/Dutch/j1.gif
+	delay	1000
+	@cmd	velo001	1 0 0
+	@cmd	keymove 2 0
+	bbox	41 25 42 69
+	frame	data/chars/Dutch/j1.gif
+	delay	5
+	offset	79 109
+	bbox	51 26 51 84
+	frame	data/chars/Dutch/s1.gif
+		
+anim	freespecial17
+	loop	0
+	delay	5
+	jumpframe	0 6 1 0
+	landframe	9
+	cancel	0 8 0 A2 freespecial11
+	cancel	0 8 0 A freespecial33
+	cancel	0 8 0 D A freespecial3
+	cancel	0 8 0 A3 freespecial20
+	cancel	8 9 0 J freespecial14
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+	sound	data/chars/cyborg/fire.wav
+	bbox	52 24 42 79
+	offset	71 118
+	frame	data/chars/Dutch/sj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj4.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/sj4.gif
+	@cmd	keymove 2 0
+	delay	25
+	bbox	41 25 42 69
+	offset	59 113
+	frame	data/chars/dutch/j3.gif
+	@cmd	keymove 2 0
+	delay	13
+	frame	data/chars/dutch/j2.gif
+	delay	555
+	idle	1
+	frame	data/chars/dutch/j1.gif
+	delay	9
+	sound	data/sounds/0pisada.wav
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/dutch/i1.gif
+		
+anim	freespecial2
+	com	A2 freespecial2
+	energycost	6
+	mponly	1
+	loop	0
+	delay	7
+	offset	81 108
+	bbox	59 24 44 85
+	cancel	3 99 0 A2 freespecial8
+	frame	data/chars/Dutch/x1.gif
+	frame	data/chars/Dutch/x3.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiroP" 40 40 1
+	frame	data/chars/Dutch/x4.gif
+	delay	15
+	frame	data/chars/Dutch/x1.gif
+	delay	7
+	bbox	43 31 51 78
+	offset	69 109
+	frame	data/chars/Dutch/a3.gif
+		
+anim	freespecial20
+	loop	0
+	energycost	30
+	hitflash	flashShock
+	mponly	1
+	hitfx	data/sounds/elechit.wav
+	jumpframe	0 2 4
+	delay	9
+	cancel	13 99 0 j freespecial14
+	landframe	14
+	offset	101 123
+	sound	data/sounds/elec1.wav
+	shock	49 40 98 85 45 15 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/z11.gif
+	frame	data/chars/Dutch/z12.gif
+	frame	data/chars/Dutch/z13.gif
+	frame	data/chars/Dutch/z14.gif
+	sound	data/sounds/elec2.wav
+	frame	data/chars/Dutch/z11.gif
+	frame	data/chars/Dutch/z12.gif
+	frame	data/chars/Dutch/z13.gif
+	frame	data/chars/Dutch/z14.gif
+	sound	data/sounds/elec1.wav
+	frame	data/chars/Dutch/z11.gif
+	frame	data/chars/Dutch/z12.gif
+	frame	data/chars/Dutch/z13.gif
+	frame	data/chars/Dutch/z14.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	7
+	offset	59 113
+	frame	data/chars/Dutch/j2.gif
+	delay	555
+	frame	data/chars/Dutch/j1.gif
+	delay	9
+	offset	61 100
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial3
+	loop	0
+	jumpframe	0 -3 1 0
+	delay	7
+	sound	data/sounds/vuu3.wav
+	cancel	3 99 0 j freespecial14
+	bbox	55 33 44 72
+	offset	79 122
+	frame	data/chars/Dutch/dive1.gif
+	sound	data/chars/Dutch/a2.wav
+	attack	79 34 47 37 19 9 0 0 15 0
+	frame	data/chars/Dutch/dive2.gif
+	bbox	31 55 85 39
+	attack	83 59 49 39 19 9 0 0 15 0
+	frame	data/chars/Dutch/dive3.gif
+		
+anim	freespecial30
+	loop	0
+	delay	7
+	offset	69 109
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/da1.gif
+	attack	77 72 47 29 16 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/da2.gif
+	delay	5
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/da2.gif
+	frame	data/chars/Dutch/da1.gif
+		
+anim	freespecial31
+	com	U U A freespecial31
+	loop	1 2
+	@script
+	void self = getlocalvar("self");
+	if(frame==4){
+    	void mana = getentityproperty(self,"mp"); //get mp
+    	changeentityproperty(self, "mp", mana+2);//add mp
+    	}
+	@end_script	
+	cancel	0 99 0 A3 freespecial
+	cancel	0 99 0 A2 freespecial2
+	cancel	0 99 0 K freespecial12
+	cancel	0 99 0 J freespecial13
+	cancel	0 99 0 A freespecial32
+	cancel	0 99 0 U freespecial32
+	cancel	0 99 0 F freespecial32
+	cancel	0 99 0 D freespecial32
+	cancel	0 99 0 B freespecial32
+	delay	12
+	offset	79 126
+	bbox	52 37 48 90
+	sound	data/chars/Dutch/t1.wav
+	frame	data/chars/Dutch/tt1.gif
+	frame	data/chars/Dutch/tt2.gif
+	delay	8
+	frame	data/chars/Dutch/tt3.gif
+	frame	data/chars/Dutch/tt3.gif
+	frame	data/chars/Dutch/tt4.gif
+	frame	data/chars/Dutch/tt4.gif
+		
+anim	freespecial32
+	loop	0
+	delay	7
+	offset	79 126
+	bbox	52 37 48 90
+	frame	data/chars/Dutch/tt2.gif
+		
+anim	freespecial33
+	loop	0
+	delay	8
+	bbox	43 48 50 64
+	offset	63 134
+	jumpframe	0 1 1
+	landframe	6
+	cancel	0 99 1 A2 freespecial11
+	cancel	5 99 0 j freespecial14
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/Dutch/ja1.gif
+	sound	data/sounds/punch2.wav
+	attack	65 37 44 45 16 9 0 0 15 0
+	jugglecost	1
+	delay	22
+	frame	data/chars/Dutch/ja2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	8
+	frame	data/chars/Dutch/ja1.gif
+	bbox	41 25 42 69
+	offset	59 113
+	frame	data/chars/Dutch/j2.gif
+	delay	50
+	frame	data/chars/Dutch/j3.gif
+	delay	550
+	frame	data/chars/Dutch/j1.gif
+	delay	9
+	bbox	35 26 51 74
+	offset	61 100
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial36
+	com	D D A freespecial36
+	loop	0
+	@script
+	if (frame==0){
+	      void self = getlocalvar("self");
+              performattack(self, openborconstant("ANI_duckattack"));
+            }
+	@end_script	
+	delay	1
+	offset	29 81
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial4
+	loop	0
+	delay	25
+	energycost	10
+	landframe	3
+	mponly	1
+	@script
+    	if (frame==1){
+    	       void self = getlocalvar("self");
+               performattack(self, openborconstant("ANI_FOLLOW4"));
+        }
+	@end_script	
+	@cmd	slamSuperGRAB
+	@cmd	position 0 0 90 -1 1
+	delay	25
+	offset	72 108
+	frame	data/chars/dutch/th2.gif
+	frame	data/chars/dutch/th2.gif
+		
+anim	freespecial5
+	loop	0
+	delay	5
+	energycost	7
+	mponly	1
+	fastattack	1
+	bbox	36 35 51 80
+	offset	61 115
+	frame	data/chars/Dutch/z3.gif
+	frame	data/chars/Dutch/z20.gif
+	burn	79 22 76 57 25 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/z21.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/z22.gif
+	delay	10
+	frame	data/chars/Dutch/z5.gif
+	delay	3
+	frame	data/chars/Dutch/z4.gif
+	frame	data/chars/Dutch/z3.gif
+	frame	data/chars/Dutch/z2.gif
+	frame	data/chars/Dutch/z1.gif
+		
+anim	freespecial7
+	loop	0
+	energycost	5
+	mponly	1
+	jumpframe	0 3 2
+	offset	73 111
+	bbox	45 22 56 80
+	delay	9
+	hitfx	data/sounds/beat3.wav
+	cancel	14 99 0 j freespecial14
+	landframe	15
+	sound	data/chars/Dutch/gr2.wav
+	frame	data/chars/Dutch/jx1.gif
+	bbox	45 27 59 62
+	attack	66 49 61 46 18 9 0 0 7 0
+	frame	data/chars/Dutch/jx2.gif
+	attack	70 49 78 33 18 9 0 0 7 0
+	delay	8
+	frame	data/chars/Dutch/jx3.gif
+	sound	data/sounds/punch.wav
+	frame	data/chars/Dutch/jx4.gif
+	frame	data/chars/Dutch/jx5.gif
+	frame	data/chars/Dutch/jx6.gif
+	frame	data/chars/Dutch/jx3.gif
+	sound	data/sounds/punch.wav
+	frame	data/chars/Dutch/jx4.gif
+	frame	data/chars/Dutch/jx5.gif
+	frame	data/chars/Dutch/jx6.gif
+	frame	data/chars/Dutch/jx3.gif
+	sound	data/sounds/punch.wav
+	frame	data/chars/Dutch/jx4.gif
+	frame	data/chars/Dutch/jx5.gif
+	frame	data/chars/Dutch/jx6.gif
+	delay	555
+	frame	data/chars/Dutch/jx3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	15
+	sound	data/sounds/stomp.wav
+	delay	6
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	freespecial8
+	energycost	3
+	mponly	1
+	loop	0
+	delay	7
+	offset	81 108
+	bbox	59 24 44 85
+	cancel	3 99 0 A2 freespecial2
+	frame	data/chars/Dutch/x1.gif
+	frame	data/chars/Dutch/x3.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiroP" 40 40 1
+	frame	data/chars/Dutch/x4.gif
+	delay	15
+	frame	data/chars/Dutch/x1.gif
+	delay	7
+	bbox	43 31 51 78
+	offset	69 109
+	frame	data/chars/Dutch/a3.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+	frame	data/chars/Dutch/i2.gif
+	frame	data/chars/Dutch/i1.gif
+		
+anim	grab
+	loop	0
+	cancel	0 99 0 A2 freespecial4
+	cancel	0 99 0 A3 freespecial
+	delay	9
+	offset	69 108
+	bbox	46 30 49 78
+	frame	data/chars/Dutch/th1.gif
+		
+anim	grabattack2
+	loop	0
+	delay	9
+	bbox	45 30 45 80
+	offset	65 109
+	fastattack	1
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/a3.gif
+	bbox	49 34 45 80
+	offset	74 114
+	attack	79 32 36 36 16 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/ta1.gif
+	attack	81 28 48 34 16 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Dutch/ta2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/Dutch/ta3.gif
+	frame	data/chars/Dutch/ta1.gif
+	bbox	45 30 45 80
+	offset	65 109
+	frame	data/chars/Dutch/a3.gif
+		
+anim	idle
+	loop	1
+	@cmd	setarNPC
+	delay	28
+	offset	79 109
+	bbox	51 26 51 84
+	frame	data/chars/Dutch/s1.gif
+	frame	data/chars/Dutch/s2.gif
+	frame	data/chars/Dutch/s1.gif
+	frame	data/chars/Dutch/s1a.gif
+	frame	data/chars/Dutch/s1.gif
+	frame	data/chars/Dutch/s2.gif
+	frame	data/chars/Dutch/s1.gif
+	frame	data/chars/Dutch/s1a.gif
+	delay	15
+	frame	data/chars/Dutch/s5.gif
+	frame	data/chars/Dutch/s4.gif
+	frame	data/chars/Dutch/s3.gif
+		
+anim	jump
+	loop	0
+	bbox	41 25 42 69
+	offset	59 113
+	delay	5
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A3 freespecial20
+	cancel	0 99 0 A2 freespecial11
+	cancel	7 99 0 j freespecial14
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j3.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j3.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j2.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/Dutch/j1.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	9
+	bbox	35 26 51 74
+	offset	61 100
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/Dutch/i1.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	cancel	0 99 0 A3 freespecial
+	offset	75 108
+	bbox	55 30 45 78
+	frame	data/chars/Dutch/g1.gif
+		
+anim	rise
+	loop	0
+	offset	73 90
+	delay	8
+	cancel	2 99 0 A freespecial30
+	frame	data/chars/Dutch/g3.gif
+	frame	data/chars/Dutch/g4.gif
+	offset	61 100
+	frame	data/chars/Dutch/i2.gif
+	frame	data/chars/Dutch/i1.gif
+		
+anim	run
+	loop	1
+	delay	10
+	bbox	46 28 52 81
+	cancel	0 99 0 k freespecial12
+	cancel	0 99 0 A2 freespecial7
+	cancel	0 99 0 A3 freespecial20
+	offset	78 107
+	frame	data/chars/Dutch/rr1.gif
+	offset	78 106
+	frame	data/chars/Dutch/rr2.gif
+	sound	data/sounds/run1.wav
+	offset	78 107
+	frame	data/chars/Dutch/rr3.gif
+	offset	78 107
+	frame	data/chars/Dutch/rr4.gif
+	offset	78 106
+	frame	data/chars/Dutch/rr5.gif
+	sound	data/sounds/run1.wav
+	offset	78 105
+	frame	data/chars/Dutch/rr6.gif
+		
+anim	runattack
+	loop	0
+	delay	9
+	bbox	52 34 48 77
+	offset	74 111
+	hitfx	data/sounds/beat3.wav
+	sound	data/chars/Dutch/a3.wav
+	frame	data/chars/Dutch/ra1.gif
+	sound	data/sounds/punch3.wav
+	bbox	61 39 59 72
+	attack	89 41 72 30 18 9 0 0 5 0
+	frame	data/chars/Dutch/ra2.gif
+	frame	data/chars/Dutch/ra2.gif
+	attack	89 68 49 30 18 9 0 0 5 0
+	frame	data/chars/Dutch/ra3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	52 34 48 77
+	frame	data/chars/Dutch/ra1.gif
+		
+anim	select
+	loop	0
+	delay	148
+	fshadow	0
+	sound	data/chars/Dutch/win.wav
+	offset	66 128
+	frame	data/chars/Dutch/por.gif
+		
+anim	spawn
+	loop	0
+	delay	2
+	landframe	1
+	seta	200
+	@cmd	setarNPC
+	@cmd	changeopenborvariant "slowmotion" 0
+	offset	59 113
+	frame	data/chars/Dutch/j1.gif
+		
+anim	special2
+	loop	0
+	delay	9
+	@cmd	velo001	4 0 0
+	offset	70 101
+	cancel	6 99 0 j freespecial14
+	sound	data/sounds/punch2.wav
+	frame	data/chars/Dutch/do20.gif
+	offset	82 101
+	delay	20
+	frame	data/chars/Dutch/do21.gif
+	@cmd	velo001	0 0 0
+	delay	6
+	bbox	54 48 51 54
+	offset	77 101
+	frame	data/chars/Dutch/do22.gif
+	bbox	35 26 51 74
+	offset	61 100
+	frame	data/chars/Dutch/i1.gif
+		
+anim	throw
+	loop	0
+	delay	8
+	@cmd	slamstartGRAB
+	@cmd	position 0 30 50 0 0
+	offset	69 108
+	frame	data/chars/Dutch/th3.gif
+	@cmd	position 0 30 50 0 0
+	@cmd	depost 0
+	@cmd	throw 14 1 4 2 0 1
+	@cmd	clearL
+	sound	data/sounds/swosh.wav
+	delay	25
+	frame	data/chars/Dutch/th2.gif
+	delay	6
+	frame	data/chars/Dutch/th3.gif
+	frame	data/chars/Dutch/th4.gif
+		
+anim	waiting
+	loop	1
+	unsummonframe	0
+	subentity	DutchLogo
+	summonframe	0 0 1 135 0
+	fshadow	0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	28
+	offset	66 128
+	frame	data/chars/Dutch/por.gif
+	frame	data/chars/Dutch/por.gif
+		
+anim	walk
+	loop	1
+	delay	14
+	offset	71 110
+	bbox	44 29 45 84
+	frame	data/chars/Dutch/w1.gif
+	frame	data/chars/Dutch/w2.gif
+	frame	data/chars/Dutch/w3.gif
+	frame	data/chars/Dutch/w4.gif
+	frame	data/chars/Dutch/w5.gif
+	frame	data/chars/Dutch/w6.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	idle	1
+	cancel	0 99 0 j freespecial14
+	@cmd	wallAttack "ANI_FOLLOW4"
+	bbox	41 25 42 69
+	offset	59 113
+	frame	data/chars/Dutch/j1.gif
+		
+#|edited by openBor Stats v 0.51
+		

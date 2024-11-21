@@ -1,0 +1,1753 @@
+
+name	Linn
+health	300
+mp 60
+mprate 2
+speed 16
+type	player
+gfxshadow 1 3
+diesound data/chars/linn/morte.wav
+icon	data/chars/linn/portrait.gif 1
+throwdamage 15
+weapons  LinnRun LinnRio BonusLinn BonusLinn BonusAtLinn none BonusLinn
+grabforce 5
+knockdowncount 6
+candamage enemy obstacle 
+atchain 1 1 2 3 4
+combostyle 1
+bflash Block
+running  32  4  2  1  0
+holdblock 1
+riseinv 1 0
+antigrab 100
+jugglepoints 10
+
+jumpmove 0 0
+walkoffmove 2 0
+jumpheight 4
+jumpspeed 20
+
+makeinv 2 0
+parrow		data/chars/linn/nome.gif -37 -130
+parrow2		data/chars/linn/nome.gif -37 -130
+parrow3		data/chars/linn/nome.gif -37 -130
+parrow4		data/chars/linn/nome.gif -37 -130
+
+fmap 5
+palette       data/chars/linn/pal1.gif
+alternatepal  data/chars/linn/pal2.gif
+alternatepal  data/chars/linn/pal3.gif
+alternatepal  data/chars/linn/pal4.gif
+alternatepal  data/chars/linn/pal5.gif
+alternatepal  data/chars/linn/pal1gelo.gif
+
+animationscript data/scripts/grabscript.c
+keyscript  data/scripts/ironkey.c
+onmoveascript data/scripts/antihole.c
+
+load BonusAtLinn
+load BonusLinn
+load LinnRun
+load LinnRio
+load balalinn
+knife balalinn
+load balaHQ
+load cartucho
+Bomb cartucho
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	bbox	37 39 38 77
+	offset	56 116
+	sound	data/sounds/punch.wav
+	frame	data/chars/linn/a1.gif
+	attack	62 40 41 21 6 0 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/a2.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/a1.gif
+		
+anim	attack2
+	loop	0
+	delay	6
+	bbox	37 44 40 71
+	offset	58 115
+	sound	data/sounds/punch.wav
+	frame	data/chars/linn/a3.gif
+	attack	65 51 47 23 7 0 0 0 5 0
+	jugglecost	1
+	delay	8
+	frame	data/chars/linn/a4.gif
+	frame	data/chars/linn/a5.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/a3.gif
+		
+anim	attack3
+	loop	0
+	delay	6
+	bbox	46 43 38 71
+	offset	62 114
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/a6.gif
+	attack	71 35 40 28 9 0 0 0 8 0
+	jugglecost	1
+	delay	8
+	frame	data/chars/linn/a7.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/a6.gif
+		
+anim	attack4
+	loop	0
+	delay	6
+	bbox	57 42 35 76
+	offset	67 118
+	fastattack	1
+	sound	data/chars/linn/a1.wav
+	frame	data/chars/linn/c1.gif
+	sound	data/sounds/punch3.wav
+	frame	data/chars/linn/c2.gif
+	frame	data/chars/linn/c3.gif
+	delay	8
+	bbox	57 36 37 80
+	attack	74 36 46 35 19 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/c4.gif
+	attack	70 55 37 27 19 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/c5.gif
+	delay	12
+	bbox	49 36 43 61
+	offset	71 96
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/i1.gif
+		
+anim	block
+	loop	0
+	delay	7
+	offset	42 96
+	bbox	24 28 38 68
+	cancel	1 99 0 f freespecial12
+	cancel	1 99 0 b freespecial10
+	frame	data/chars/linn/blo2.gif
+	frame	data/chars/linn/blo1.gif
+	frame	data/chars/linn/blo.gif
+		
+anim	duck
+	loop	0
+	delay	6
+	bbox	49 57 43 39
+	offset	71 96
+	cancel	0 99 0 j freespecial16
+	frame	data/chars/linn/i2.gif
+		
+anim	duckattack
+	loop	0
+	delay	7
+	bbox	56 57 39 54
+	offset	79 110
+	frame	data/chars/linn/da1.gif
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/da2.gif
+	attack	80 93 58 19 10 5 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/da3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/da4.gif
+	frame	data/chars/linn/da5.gif
+		
+anim	ducking
+	loop	0
+	delay	6
+	bbox	49 36 43 61
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	duckrise
+	loop	0
+	delay	6
+	bbox	49 36 43 61
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	@cmd	gravity 1
+	cancel	2 2 0 j freespecial14
+	offset	80 100
+	frame	data/chars/linn/g1.gif
+	offset	73 99
+	frame	data/chars/linn/g2.gif
+	offset	77 91
+	delay	500
+	frame	data/chars/linn/g3.gif
+	offset	83 79
+	delay	10
+	frame	data/chars/linn/g5.gif
+		
+anim	follow4
+	loop	0
+	landframe	18
+	cancel	2 99 0 A2 freespecial11
+	cancel	2 99 0 D A freespecial3
+	cancel	2 99 0 A freespecial33
+	cancel	2 99 0 A3 freespecial20
+	cancel	2 99 0 j freespecial14
+	@cmd	stayAir 120
+	delay	30
+	bbox	68 62 39 46
+	offset	90 122
+	@cmd	keymove 0 0
+	frame	data/chars/linn/jw1.gif
+	delay	8
+	@cmd	flip
+	@cmd	leaper 3 4 0
+	offset	82 133
+	bbox	64 53 35 63
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/j2.gif
+	bbox	30 1 0 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j2.gif
+	bbox	14 1 0 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j2.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	bbox	24 2 0 0
+	frame	data/chars/linn/j2.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	offset	82 133
+	bbox	64 53 35 63
+	frame	data/chars/linn/j3.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	delay	8
+	frame	data/chars/linn/j3.gif
+	delay	5
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	delay	555
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	delay	12
+	sound	data/sounds/0pisada.wav
+	bbox	49 36 43 61
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	follow5
+	loop	0
+	landframe	15
+	cancel	13 14 j freespecial14
+	delay	5
+	jumpframe	0 5 2 0
+	sound	data/sounds/vuu3.wav
+	offset	82 133
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j1.gif
+	@cmd	keymove 2 0
+	offset	82 127
+	frame	data/chars/linn/do1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do3.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do4.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do6.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do7.gif
+	@cmd	gravity 1
+	delay	6
+	offset	82 133
+	@cmd	keymove 2 0
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/j3.gif
+	frame	data/chars/linn/j3.gif
+	frame	data/chars/linn/j3.gif
+	frame	data/chars/linn/j4.gif
+	frame	data/chars/linn/j4.gif
+	frame	data/chars/linn/j4.gif
+	delay	500
+	idle	1
+	frame	data/chars/linn/j5.gif
+	sound	data/sounds/0pisada.wav
+	delay	6
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial
+	com	A3 freespecial
+	loop	0
+	energycost	30
+	mponly	1
+	delay	12
+	offset	76 114
+	hitflash	flash2
+	frame	data/chars/linn/z01.gif
+	delay	6
+	frame	data/chars/linn/z02.gif
+	sound	data/sounds/punch3.wav
+	frame	data/chars/linn/z03.gif
+	frame	data/chars/linn/z04.gif
+	attack	74 33 46 35 10 9 0 0 5 0
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balalinn" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z05.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/z03.gif
+	frame	data/chars/linn/z04.gif
+	@cmd	toss2 "cartucho" 10 60 1
+	@cmd	shoot "balalinn" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z05.gif
+	frame	data/chars/linn/z03.gif
+	frame	data/chars/linn/z04.gif
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balalinn" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z05.gif
+	frame	data/chars/linn/z06.gif
+	frame	data/chars/linn/z07.gif
+	@cmd	toss2 "cartucho" 15 35 1
+	@cmd	shoot "balalinn" -5 40 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z08.gif
+	frame	data/chars/linn/z06.gif
+	frame	data/chars/linn/z07.gif
+	@cmd	toss2 "cartucho" 15 35 1
+	@cmd	shoot "balalinn" -5 40 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z08.gif
+	frame	data/chars/linn/z06.gif
+	frame	data/chars/linn/z03.gif
+	delay	20
+	frame	data/chars/linn/z04.gif
+	attack	74 33 46 35 20 9 0 0 5 0
+	delay	6
+	@cmd	toss2 "cartucho" 10 60 1
+	@cmd	shoot "balaHQ" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z05.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/z09.gif
+	frame	data/chars/linn/z10.gif
+	frame	data/chars/linn/z03.gif
+	frame	data/chars/linn/z01.gif
+		
+anim	freespecial10
+	loop	0
+	delay	7
+	jumpframe	0 3 -2 0
+	cancel	7 99 0 j freespecial14
+	landframe	8
+	offset	82 127
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/do7.gif
+	frame	data/chars/linn/do6.gif
+	frame	data/chars/linn/do5.gif
+	frame	data/chars/linn/do4.gif
+	frame	data/chars/linn/do3.gif
+	frame	data/chars/linn/do2.gif
+	frame	data/chars/linn/do1.gif
+	delay	555
+	offset	82 133
+	frame	data/chars/linn/j4.gif
+	@cmd	velo001	0 0 0
+	delay	7
+	bbox	49 36 43 61
+	offset	71 96
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial11
+	loop	0
+	energycost	5
+	mponly	1
+	jumpframe	0 3 1
+	offset	94 104
+	bbox	78 33 39 56
+	delay	10
+	cancel	3 99 0 j freespecial14
+	landframe	4
+	frame	data/chars/linn/q1.gif
+	attack	111 49 26 45 16 9 0 0 7 0
+	delay	8
+	frame	data/chars/linn/q2.gif
+	delay	120
+	attack	111 53 17 53 16 9 0 0 7 0
+	frame	data/chars/linn/q3.gif
+	delay	555
+	frame	data/chars/linn/q3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	15
+	sound	data/sounds/0pisada.wav
+	offset	96 87
+	bbox	70 27 48 59
+	frame	data/chars/linn/q4.gif
+	delay	6
+	offset	42 96
+	bbox	24 28 38 68
+	frame	data/chars/linn/blo1.gif
+	frame	data/chars/linn/blo2.gif
+		
+anim	freespecial12
+	loop	0
+	delay	7
+	jumpframe	0 3 2 0
+	cancel	7 99 0 j freespecial14
+	landframe	8
+	offset	82 127
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/do1.gif
+	frame	data/chars/linn/do2.gif
+	frame	data/chars/linn/do3.gif
+	frame	data/chars/linn/do4.gif
+	frame	data/chars/linn/do5.gif
+	frame	data/chars/linn/do6.gif
+	frame	data/chars/linn/do7.gif
+	delay	555
+	offset	82 133
+	frame	data/chars/linn/j4.gif
+	@cmd	velo001	0 0 0
+	delay	7
+	bbox	49 36 43 61
+	offset	71 96
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial13
+	loop	0
+	delay	3
+	landframe	22
+	cancel	10 99 0 D A freespecial3
+	cancel	10 99 0 A freespecial33
+	cancel	10 99 0 A3 freespecial20
+	cancel	10 99 0 j freespecial14
+	cancel	10 99 0 A2 freespecial11
+	bbox	109 65 43 48
+	offset	136 114
+	frame	data/chars/linn/x01.gif
+	frame	data/chars/linn/x01.gif
+	frame	data/chars/linn/x01.gif
+	frame	data/chars/linn/x01.gif
+	frame	data/chars/linn/x01.gif
+	delay	50
+	@cmd	velo001	2 0 7
+	sound	data/sounds/vuu3.wav
+	offset	82 133
+	bbox	64 53 35 63
+	frame	data/chars/linn/j1.gif
+	delay	9
+	@cmd	velo001	1 0 1
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j2.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	delay	555
+	frame	data/chars/linn/j5.gif
+	@cmd	velo001	0 0 0
+	delay	9
+	sound	data/sounds/0pisada.wav
+	bbox	49 36 43 61
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial14
+	loop	0
+	jumpframe	0 3 1 0
+	landframe	23
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial20
+	cancel	0 99 0 A2 freespecial11
+	bbox	91 39 46 56
+	offset	82 127
+	delay	7
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do7.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do6.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do5.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/do4.gif
+	delay	5
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do1.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/do1.gif
+	@cmd	keymove 2 0
+	offset	82 133
+	bbox	64 53 35 63
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	wallAttack "ANI_FOLLOW4"
+	delay	555
+	idle	1
+	frame	data/chars/linn/j5.gif
+	idle	1
+	delay	9
+	sound	data/sounds/0pisada.wav
+	bbox	49 36 43 61
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial16
+	loop	0
+	delay	5
+	landframe	3
+	@script
+void self = getlocalvar("self");
+if(frame ==0)changeentityproperty(self,"subject_to_platform",0);
+if(frame >=1)changeentityproperty(self,"subject_to_platform",1);
+	@end_script	
+	@cmd	velo001	1 0 -10
+	offset	64 109
+	frame	data/chars/linn/s1.gif
+	@cmd	velo001	1 0 -10
+	delay	20
+	sound	data/sounds/punch.wav
+	offset	82 133
+	frame	data/chars/linn/j3.gif
+	delay	1000
+	@cmd	velo001	1 0 0
+	@cmd	keymove 2 0
+	bbox	64 53 35 63
+	frame	data/chars/linn/j3.gif
+	delay	5
+	offset	64 109
+	bbox	46 30 34 80
+	frame	data/chars/linn/s1.gif
+		
+anim	freespecial2
+	com	A2 freespecial2
+	energycost	8
+	mponly	1
+	loop	0
+	delay	7
+	@script
+	if (frame==5){
+    	       void self = getlocalvar("self");
+               performattack(self, openborconstant("ANI_Freespecial22"));
+        }
+	@end_script	
+	hitfx	data/sounds/espadahit.wav
+	offset	134 114
+	bbox	115 62 36 52
+	frame	data/chars/linn/x01.gif
+	@cmd	velo001	2 0 0
+	sound	data/sounds/espada.wav
+	frame	data/chars/linn/x02.gif
+	attack	140 74 63 15 10 9 0 0 5 0
+	dropv	3 0
+	jugglecost	1
+	frame	data/chars/linn/x03.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/x04.gif
+	@cmd	velo001	0 0 0
+	frame	data/chars/linn/x05.gif
+	frame	data/chars/linn/x05.gif
+		
+anim	freespecial20
+	loop	0
+	energycost	30
+	mponly	1
+	delay	12
+	offset	66 108
+	cancel	17 99 0 j freespecial14
+	landframe	18
+	jumpframe	0 3 -1
+	sound	data/sounds/punch3.wav
+	frame	data/chars/linn/z11.gif
+	delay	6
+	frame	data/chars/linn/z12.gif
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balaHQ" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z13.gif
+	frame	data/chars/linn/z11.gif
+	frame	data/chars/linn/z12.gif
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balaHQ" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z13.gif
+	frame	data/chars/linn/z11.gif
+	frame	data/chars/linn/z12.gif
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balaHQ" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z13.gif
+	frame	data/chars/linn/z11.gif
+	frame	data/chars/linn/z12.gif
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balaHQ" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z13.gif
+	frame	data/chars/linn/z11.gif
+	frame	data/chars/linn/z12.gif
+	@cmd	toss2 "cartucho" 15 60 1
+	@cmd	shoot "balaHQ" -9 65 1
+	sound	data/sounds/shot1.wav
+	frame	data/chars/linn/z13.gif
+	offset	82 133
+	frame	data/chars/linn/j3.gif
+	frame	data/chars/linn/j4.gif
+	delay	555
+	frame	data/chars/linn/j5.gif
+	@cmd	velo001	0 0 0
+	delay	9
+	sound	data/sounds/0pisada.wav
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial22
+	loop	0
+	delay	6
+	offset	137 111
+	bbox	115 48 36 52
+	hitfx	data/sounds/espadahit.wav
+	jumpframe	0 3 2
+	landframe	7
+	cancel	0 99 1 A2 freespecial11
+	cancel	0 99 1 A3 freespecial20
+	cancel	6 99 0 j freespecial14
+	frame	data/chars/linn/x06.gif
+	sound	data/sounds/espada.wav
+	frame	data/chars/linn/x07.gif
+	attack	60 47 110 40 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x08.gif
+	attack	94 49 108 44 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x09.gif
+	attack	55 57 143 30 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x10.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/x11.gif
+	delay	555
+	frame	data/chars/linn/x12.gif
+	delay	15
+	bbox	100 59 43 44
+	offset	118 103
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/x13.gif
+		
+anim	freespecial23
+	loop	0
+	energycost	4
+	mponly	1
+	delay	6
+	offset	137 111
+	bbox	115 48 36 52
+	hitfx	data/sounds/espadahit.wav
+	jumpframe	0 2 2
+	landframe	7
+	cancel	0 99 1 A3 freespecial20
+	cancel	6 99 0 j freespecial14
+	frame	data/chars/linn/x06.gif
+	sound	data/sounds/espada.wav
+	frame	data/chars/linn/x07.gif
+	attack	74 47 92 35 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x08.gif
+	attack	94 49 108 35 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x09.gif
+	attack	55 57 143 30 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x10.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/x11.gif
+	delay	555
+	frame	data/chars/linn/x12.gif
+	delay	15
+	bbox	100 59 43 44
+	offset	118 103
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/x13.gif
+		
+anim	freespecial24
+	loop	0
+	energycost	4
+	mponly	1
+	delay	6
+	offset	137 111
+	bbox	115 48 36 52
+	hitfx	data/sounds/espadahit.wav
+	jumpframe	0 3 0
+	landframe	7
+	cancel	0 99 1 A3 freespecial20
+	cancel	6 99 0 j freespecial14
+	frame	data/chars/linn/x06.gif
+	sound	data/sounds/espada.wav
+	frame	data/chars/linn/x07.gif
+	attack	74 47 92 35 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x08.gif
+	attack	94 49 108 35 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x09.gif
+	attack	55 57 143 30 18 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/x10.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/x11.gif
+	delay	555
+	frame	data/chars/linn/x12.gif
+	delay	15
+	bbox	100 59 43 44
+	offset	118 103
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/x13.gif
+		
+anim	freespecial3
+	loop	0
+	jumpframe	0 -4 3 0
+	delay	6
+	fastattack	1
+	cancel	2 99 0 j freespecial14
+	offset	76 100
+	bbox	55 23 40 64
+	frame	data/chars/linn/ja1.gif
+	offset	82 117
+	bbox	62 45 40 54
+	delay	24
+	sound	data/chars/linn/a2.wav
+	attack	90 79 47 29 15 5 0 0 15 0
+	frame	data/chars/linn/dive1.gif
+	delay	4
+	frame	data/chars/linn/dive1.gif
+		
+anim	freespecial30
+	loop	0
+	delay	7
+	offset	79 110
+	frame	data/chars/linn/da1.gif
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/da2.gif
+	attack	80 93 58 19 10 5 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/da3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/da4.gif
+	frame	data/chars/linn/da5.gif
+		
+anim	freespecial31
+	com	U U A freespecial31
+	loop	1
+	@script
+	void self = getlocalvar("self");
+	if(frame==2 || frame==5 || frame==8 || frame==11){
+    	void mana = getentityproperty(self,"mp"); //get mp
+    	changeentityproperty(self, "mp", mana+2);//add mp
+    	}
+	@end_script	
+	cancel	0 99 0 A3 freespecial
+	cancel	0 99 0 A2 freespecial2
+	cancel	0 99 0 K freespecial12
+	cancel	0 99 0 J freespecial13
+	cancel	0 99 0 A freespecial32
+	cancel	0 99 0 U freespecial32
+	cancel	0 99 0 F freespecial32
+	cancel	0 99 0 D freespecial32
+	cancel	0 99 0 B freespecial32
+	delay	10
+	offset	63 109
+	bbox	47 28 31 81
+	frame	data/chars/linn/tt1.gif
+	frame	data/chars/linn/tt2.gif
+	frame	data/chars/linn/tt3.gif
+	frame	data/chars/linn/tt2.gif
+	frame	data/chars/linn/tt3.gif
+	frame	data/chars/linn/tt2.gif
+	frame	data/chars/linn/tt1.gif
+	frame	data/chars/linn/tt4.gif
+	frame	data/chars/linn/tt5.gif
+	frame	data/chars/linn/tt4.gif
+	frame	data/chars/linn/tt5.gif
+	frame	data/chars/linn/tt4.gif
+		
+anim	freespecial32
+	loop	0
+	delay	9
+	offset	63 109
+	bbox	47 28 31 81
+	frame	data/chars/linn/tt1.gif
+		
+anim	freespecial33
+	loop	0
+	delay	6
+	offset	78 103
+	bbox	55 25 44 58
+	jumpframe	0 1 1
+	cancel	5 99 0 j freespecial14
+	cancel	0 99 1 A2 freespecial11
+	cancel	0 99 1 A freespecial4
+	landframe	6
+	sound	data/sounds/punch.wav
+	frame	data/chars/linn/ja1.gif
+	attack	75 41 60 25 8 0 0 0 15 0
+	frame	data/chars/linn/ja4.gif
+	jugglecost	1
+	delay	15
+	frame	data/chars/linn/ja4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	7
+	offset	82 133
+	bbox	64 53 35 63
+	frame	data/chars/linn/j3.gif
+	delay	50
+	frame	data/chars/linn/j4.gif
+	delay	555
+	frame	data/chars/linn/j5.gif
+	delay	12
+	bbox	49 36 43 61
+	offset	71 96
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/i1.gif
+		
+anim	freespecial36
+	com	D D A freespecial36
+	loop	0
+	@script
+	if (frame==0){
+	      void self = getlocalvar("self");
+              performattack(self, openborconstant("ANI_duckattack"));
+            }
+	@end_script	
+	delay	1
+	offset	29 81
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial4
+	loop	0
+	delay	5
+	cancel	0 99 1 A2 freespecial11
+	cancel	3 99 0 j freespecial14
+	landframe	4
+	offset	78 103
+	bbox	55 25 44 58
+	frame	data/chars/linn/ja1.gif
+	frame	data/chars/linn/ja2.gif
+	attack	76 43 42 28 9 0 0 0 15 0
+	jugglecost	1
+	delay	20
+	frame	data/chars/linn/ja3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	5
+	offset	82 133
+	bbox	64 53 35 63
+	frame	data/chars/linn/j3.gif
+	frame	data/chars/linn/j4.gif
+		
+anim	freespecial7
+	energycost	8
+	mponly	1
+	loop	0
+	delay	14
+	cancel	5 99 0 j freespecial14
+	hitfx	data/sounds/beat3.wav
+	hitflash	flashAzul
+	offset	83 101
+	bbox	61 36 46 64
+	sound	data/chars/linn/a3.wav
+	frame	data/chars/linn/rx1.gif
+	sound	data/sounds/vuu3.wav
+	delay	7
+	@cmd	velo001	4 0 0
+	attack	92 41 57 32 20 9 0 0 15 0
+	dropv	2 5
+	frame	data/chars/linn/rx3.gif
+	frame	data/chars/linn/rx4.gif
+	@cmd	velo001	0 0 0
+	frame	data/chars/linn/rx2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/rx2.gif
+	frame	data/chars/linn/rx1.gif
+		
+anim	freespecial9
+	loop	0
+	energycost	7
+	mponly	1
+	delay	6
+	jumpframe	1 3 2 0
+	fastattack	1
+	cancel	0 99 1 A2 freespecial24
+	cancel	0 99 1 A3 freespecial20
+	cancel	0 99 1 D A freespecial3
+	cancel	0 99 1 A freespecial33
+	cancel	11 99 0 j freespecial14
+	offset	83 114
+	bbox	62 53 42 56
+	frame	data/chars/linn/jx1.gif
+	sound	data/sounds/jump.wav
+	attack	76 60 39 42 10 9 0 0 5 0
+	dropv	4 1
+	frame	data/chars/linn/jx2.gif
+	attack	77 49 39 42 10 9 0 0 5 0
+	dropv	3 0
+	frame	data/chars/linn/jx3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/jx4.gif
+	frame	data/chars/linn/jx5.gif
+	frame	data/chars/linn/jx6.gif
+	attack	69 18 39 49 10 9 0 0 5 0
+	dropv	3 1
+	frame	data/chars/linn/jx7.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	77 111
+	bbox	58 35 42 56
+	frame	data/chars/linn/jx8.gif
+	offset	87 131
+	bbox	70 60 42 56
+	frame	data/chars/linn/do3.gif
+	frame	data/chars/linn/do2.gif
+	frame	data/chars/linn/do1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	82 133
+	bbox	64 53 35 63
+	frame	data/chars/linn/j4.gif
+		
+anim	get
+	loop	0
+	delay	6
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+	frame	data/chars/linn/i2.gif
+	frame	data/chars/linn/i1.gif
+		
+anim	grab
+	loop	0
+	delay	9
+	cancel	0 99 0 A2 freespecial9
+	cancel	0 99 0 A3 freespecial
+	offset	58 99
+	bbox	52 25 43 74
+	frame	data/chars/linn/th1.gif
+		
+anim	grabattack2
+	loop	0
+	delay	7
+	bbox	50 41 37 75
+	offset	59 116
+	fastattack	1
+	frame	data/chars/linn/ta1.gif
+	sound	data/sounds/punch3.wav
+	frame	data/chars/linn/ta2.gif
+	delay	6
+	attack	80 37 40 34 15 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/linn/ta3.gif
+	frame	data/chars/linn/ta4.gif
+	frame	data/chars/linn/ta5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/linn/ta2.gif
+	frame	data/chars/linn/ta1.gif
+		
+anim	idle
+	loop	1
+	offset	64 109
+	bbox	46 30 34 80
+	@cmd	setarNPC
+	delay	15
+	frame	data/chars/linn/s1.gif
+	frame	data/chars/linn/s1a.gif
+	frame	data/chars/linn/s2a.gif
+	frame	data/chars/linn/s2.gif
+	frame	data/chars/linn/s2a.gif
+	frame	data/chars/linn/s1a.gif
+		
+anim	jump
+	loop	1 11
+	offset	82 133
+	bbox	64 53 35 63
+	delay	5
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial20
+	cancel	0 99 0 A2 freespecial11
+	cancel	7 99 0 j freespecial14
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/linn/j2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j2.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j3.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j4.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+	@cmd	keymove 2 0
+	@cmd	wallAttack "ANI_FOLLOW4"
+	frame	data/chars/linn/j5.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	12
+	bbox	49 36 43 61
+	offset	71 96
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/i1.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	cancel	0 99 0 A3 freespecial
+	offset	80 100
+	bbox	63 28 37 73
+	frame	data/chars/linn/g1.gif
+		
+anim	rise
+	loop	0
+	offset	83 79
+	delay	8
+	cancel	1 99 0 A freespecial30
+	frame	data/chars/linn/g5.gif
+	offset	86 95
+	frame	data/chars/linn/g4.gif
+	offset	71 96
+	frame	data/chars/linn/i2.gif
+	frame	data/chars/linn/i1.gif
+		
+anim	run
+	loop	1
+	delay	8
+	cancel	0 99 0 k freespecial12
+	cancel	0 99 0 A2 freespecial7
+	cancel	0 99 0 A3 freespecial
+	offset	77 113
+	bbox	61 44 42 65
+	frame	data/chars/linn/r1.gif
+	sound	data/sounds/run1.wav
+	offset	77 112
+	frame	data/chars/linn/r2.gif
+	offset	77 115
+	frame	data/chars/linn/r3.gif
+	offset	77 112
+	frame	data/chars/linn/r4.gif
+	offset	77 109
+	sound	data/sounds/run1.wav
+	frame	data/chars/linn/r5.gif
+	offset	77 111
+	frame	data/chars/linn/r6.gif
+		
+anim	runattack
+	loop	0
+	delay	6
+	offset	84 115
+	bbox	64 44 45 59
+	landframe	2
+	jumpframe	0 2 2 0
+	cancel	0 99 1 A2 freespecial23
+	cancel	0 99 1 A3 freespecial20
+	cancel	1 99 0 j freespecial14
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/ra1.gif
+	sound	data/chars/linn/a2.wav
+	attack	90 68 50 28 15 9 0 0 9 0
+	jugglecost	1
+	delay	555
+	frame	data/chars/linn/ra2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/0pisada.wav
+	delay	6
+	bbox	49 36 43 61
+	offset	71 96
+	frame	data/chars/linn/i1.gif
+		
+anim	select
+	loop	0
+	jumpframe	4 5 4 0
+	fshadow	0
+	sound	data/chars/linn/win.wav
+	delay	149
+	offset	66 128
+	frame	data/chars/linn/por.gif
+		
+anim	spawn
+	loop	0
+	delay	2
+	landframe	1
+	seta	200
+	@cmd	setarNPC
+	@cmd	changeopenborvariant "slowmotion" 0
+	offset	82 133
+	frame	data/chars/linn/j5.gif
+		
+anim	special2
+	loop	0
+	delay	7
+	jumpframe	0 3 2 0
+	cancel	7 99 0 j freespecial14
+	landframe	8
+	offset	82 127
+	sound	data/sounds/punch2.wav
+	frame	data/chars/linn/do1.gif
+	frame	data/chars/linn/do2.gif
+	frame	data/chars/linn/do3.gif
+	frame	data/chars/linn/do4.gif
+	frame	data/chars/linn/do5.gif
+	frame	data/chars/linn/do6.gif
+	frame	data/chars/linn/do7.gif
+	delay	555
+	offset	82 133
+	frame	data/chars/linn/j4.gif
+	@cmd	velo001	0 0 0
+	delay	7
+	bbox	49 36 43 61
+	offset	71 96
+	sound	data/sounds/0pisada.wav
+	frame	data/chars/linn/i1.gif
+		
+anim	throw
+	loop	0
+	delay	6
+	offset	115 109
+	sound	data/sounds/swosh.wav
+	frame	data/chars/linn/th2.gif
+	offset	121 102
+	frame	data/chars/linn/th3.gif
+	offset	121 101
+	delay	15
+	frame	data/chars/linn/th4.gif
+	offset	118 100
+	delay	9
+	frame	data/chars/linn/th5.gif
+		
+anim	waiting
+	loop	1
+	unsummonframe	0
+	subentity	LinnLogo
+	summonframe	0 0 1 135 0
+	fshadow	0
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	15
+	offset	66 128
+	frame	data/chars/linn/por.gif
+	frame	data/chars/linn/por.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	74 102
+	bbox	59 25 31 77
+	frame	data/chars/linn/w1.gif
+	offset	74 101
+	frame	data/chars/linn/w2.gif
+	frame	data/chars/linn/w3.gif
+	offset	74 102
+	frame	data/chars/linn/w4.gif
+	offset	74 101
+	frame	data/chars/linn/w5.gif
+	frame	data/chars/linn/w6.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	idle	1
+	cancel	0 99 0 j freespecial14
+	@cmd	wallAttack "ANI_FOLLOW4"
+	offset	82 133
+	bbox	64 53 35 63
+	frame	data/chars/linn/j5.gif
+		
+#|edited by openBor Stats v 0.51
+		

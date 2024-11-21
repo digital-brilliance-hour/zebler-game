@@ -1,0 +1,296 @@
+name	Keith3
+type	none
+mp 100
+health	1
+speed	17
+mprate 4
+shadow	0
+atchain 1
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2
+facing	1		
+jumpheight 0		
+cantgrab 1		
+noquake	1		
+makeinv	5 0		
+nolife	1	
+load shta
+load wb1
+load wb2	
+load las
+com a2 freespecial2
+iconmphigh data/sprites/mp2.gif
+iconmphalf data/sprites/mp1
+iconmplow data/sprites/mp1
+icon data/chars/icons/3
+animationscript data/scripts/player.c
+keyscript data/scripts/keych.c
+setlayer 250
+candamage enemy obstacle npc shot
+anim spawn
+	offset	46 39
+	bbox	31 34 24 7
+	delay	250
+	frame	data/chars/misc/empty
+	drawmethod 128 128
+	delay 5
+	frame	data/chars/Keith/1
+	drawmethod 192 192
+	frame	data/chars/Keith/1
+	nodrawmethod 
+	frame	data/chars/Keith/1
+	@cmd velo001 -1 1 0
+	frame	data/chars/Keith/5
+	@cmd velo001 -1 1 0
+	frame	data/chars/Keith/6
+	@cmd velo001 -1 1 0
+	delay 50
+	frame	data/chars/Keith/7
+	delay 10
+	@cmd velo001 -1 1 0
+	frame	data/chars/Keith/6
+	@cmd velo001 -0.5 0.5 0
+	frame	data/chars/Keith/5
+	delay	3
+	@cmd velo001 0.5 -0.3 0
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+		frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+	frame	data/chars/Keith/9
+	frame	data/chars/Keith/1
+anim respawn
+	loop	1
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/Keith/1
+anim idle
+	loop	1
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	weaponframe 0 0
+	frame	data/chars/Keith/1
+anim walk
+	loop	1
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	weaponframe 0 0
+	frame	data/chars/Keith/1
+anim get
+	offset	46 39
+	bbox	31 34 24 7
+	delay	0
+	@cmd keycheck
+	frame	data/chars/Keith/1
+anim death
+	offset	46 39
+	delay 5
+	@cmd velo001 2 1 0
+	@cmd shoot "mdym" 0 0 -1
+	attack2 31 34 24 7 30 
+	frame	data/chars/Keith/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/7
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/7
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/Keith/7
+	offset	46 39
+	delay 5
+	@cmd velo001 1 0.5 0
+	@cmd shoot "wb2" 0 0 0
+	attack2 0 0 0 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+	delay 5
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 -10 0
+	frame	data/chars/misc/empty
+	delay 5
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+	delay 30
+	frame	data/chars/misc/empty
+anim attack1
+	offset	46 39
+	bbox	31 34 24 7
+	delay	0
+	frame	data/chars/Keith/1
+	delay 8
+	@cmd keycheck
+	@cmd shoot "shta" 10 0 0
+	frame	data/chars/Keith/1
+anim chargeattack
+	offset	46 39
+	bbox	31 34 24 7
+	delay 1
+	@cmd keycheck
+	@cmd shoot "drill" 0 0 -1
+	frame	data/chars/Keith/1
+	delay 8
+	@cmd shoot "shta" 10 0 0
+	frame	data/chars/Keith/1
+anim special
+	energycost 69
+	offset	46 39
+	bbox	31 34 24 7
+	delay 5
+	@cmd keycheck
+	hitflash wbblsk
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack2  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack2  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+	attack  27 17 323 42 5 0 0 0 0 25
+	frame	data/chars/Keith/10
+	attack  0 0 0 0 0 0
+	frame	data/chars/Keith/1
+anim fall
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/Keith/1
+anim pain
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/Keith/1
+anim rise
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/Keith/1
+
+
+

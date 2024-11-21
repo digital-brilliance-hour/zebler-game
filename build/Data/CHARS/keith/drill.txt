@@ -1,0 +1,21 @@
+name	drill
+health 1
+type	pshot
+nomove 1 1
+speedf 0
+candamage enemy npc obstacle 
+nolife 1
+hostile enemy npc
+grabdistance 1
+animationscript data/scripts/boscript.c
+setlayer 250
+lifespan 3
+anim idle
+	loop 1
+	delay 8
+	offset  46 39
+	bbox    0 0 0 0
+	@cmd shoot "shta" -4 0 -16
+	@cmd shoot "shta" -4 0 11
+	frame	data/chars/keith/8
+	frame	data/chars/keith/8

@@ -3,25 +3,17 @@ music		data/music/remix.bor
 bossmusic	data/music/menu.bor
 
 # Load images
-background	data/bgs/street/back.gif
+
+background  data/bgs/space.png
 
 # Front layer
-frontpanel	data/bgs/street/f00.gif
-frontpanel	data/bgs/street/f01.gif
-frontpanel	data/bgs/street/f02.gif
-frontpanel	data/bgs/street/f03.gif
+
 
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
-panel		data/bgs/street/n01.gif	data/bgs/street/neon01.gif	data/bgs/street/s01.gif
-panel		data/bgs/street/n02.gif	data/bgs/street/neon02.gif	data/bgs/street/s02.gif
-panel		data/bgs/street/n03.gif	none				none
-panel		data/bgs/street/n04.gif	none				none
-panel		data/bgs/street/n05.gif	none				data/bgs/street/s05
-panel		data/bgs/street/n06.gif	none				none
-panel		data/bgs/street/n07.gif	none				none
-panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
+
+
 
 # ab = Pinepot left
 # c = wall, ridge left
@@ -37,8 +29,8 @@ panel		data/bgs/street/n05.gif	data/bgs/street/clubk		data/bgs/street/s05
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
 #	order	[a...z]
 #
-order	fdefecdhfecggdabcd
-order	fdefecdhfecggdab
+order
+order
 
 
 # Spawn format:

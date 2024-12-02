@@ -6,6 +6,7 @@ bossmusic	data/music/menu.bor
 
 # Background layer
 background	data/bgs/street/back.gif
+background  data/bgs/image-20241119-010127.png
 
 # Front layer
 frontpanel	data/bgs/street/f00.gif

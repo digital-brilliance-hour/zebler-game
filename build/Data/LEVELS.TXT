@@ -10,23 +10,10 @@
 
 
 
-set	Grouping
+set	Stage 1
 
-file	data/levels/example1.txt
-next
-file	data/levels/holes.txt
+file	data/levels/Stage1-1.txt
+file	data/levels/Stage1-2.txt
 next
 scene	data/scenes/ending.txt
 
-
-set	water_(3_levels)
-file	data/levels/water.txt
-file	data/levels/water2.txt
-file	data/levels/water3.txt
-
-set	modes_(2_levels)
-file	data/levels/neon.txt
-file	data/levels/screen.txt
-
-set	mirror_(1_level)
-file	data/levels/mirror.txt

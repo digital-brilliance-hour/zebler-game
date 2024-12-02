@@ -7,7 +7,7 @@ type	player
 shadow	4
 icon	data/chars/Warrio/icon.gif
 
-diesound data/sounds/die3.wav
+#diesound data/sounds/die3.wav
 
 remap	data/chars/Warrio/idle1.gif    data/chars/Warrio/alter.gif
 

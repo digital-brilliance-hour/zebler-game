@@ -20,7 +20,7 @@ void main()
     if (openborvariant("in_titlescreen")) {
       int T = getglobalvar("TitleMusic");
       if(T != 1) {
-        void bg = "data/music/title.bor";
+        void bg = "data/music/title.ogg";
         playmusic(bg, 1);
         setglobalvar("TitleMusic", 1);
       }

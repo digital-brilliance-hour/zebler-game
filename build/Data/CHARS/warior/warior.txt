@@ -7,7 +7,7 @@ type	player
 shadow	4
 icon	data/chars/Warior/icon.gif
 
-diesound data/sounds/die3.wav
+#diesound data/sounds/die3.wav
 
 remap	data/chars/Warior/idle1.gif    data/chars/Warior/alter.gif
 
@@ -383,7 +383,7 @@ anim	throw
 	loop	0
 	offset	99 183
 	delay	5
-	sound	data/chars/Warior/final.wav
+	#sound	data/chars/Warior/final.wav
 	frame	data/chars/Warior/throw1.gif
 	move	-11
 	offset	75 125

@@ -1,0 +1,21 @@
+name	blst1
+health 1
+type	pshot
+speedf 0
+candamage enemy player npc
+nolife 1
+remove 0
+load wb3
+setlayer 250
+anim idle
+	loop 1
+	delay 1
+	offset  19 36
+	bbox    0 0 0 0
+	fastattack 1
+	hitflash wb3
+	attack  38 9 90 55 50 1 0 0 0 22
+	frame	data/chars/lloyo/blst1
+	attack2  38 9 90 55 50 1 0 0 0 22
+	frame	data/chars/lloyo/blst1
+	

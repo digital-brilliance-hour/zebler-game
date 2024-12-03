@@ -15,7 +15,8 @@ load	Mandy		data/chars/mary/mary.txt
 load	Mighty		data/chars/mighty/mighty.txt
 load	zoomin		data/chars/misc/zoomin.txt
 load	zoomout		data/chars/misc/zoomout.txt
-load    Zebler     data/chars/warior/warior.txt
+load    Zebler      data/chars/warior/warior.txt
+load    Keith       data/chars/keith/keith.txt
 
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt
@@ -73,3 +74,13 @@ know	Steamer		data/chars/misc/steamer.txt
 know	Furnace		data/chars/misc/furnace.txt
 know	Crab		data/chars/crab/crab.txt
 know	Lobster		data/chars/Lobster/Lobster.txt
+
+load keith1  data/chars/keith/keith1.txt
+load keith2  data/chars/keith/keith2.txt
+load keith3  data/chars/keith/keith3.txt
+load keith4  data/chars/keith/keith4.txt
+load las     data/chars/lloyo/las.txt
+load shta    data/chars/lloyo/shta.txt
+load wb1     data/chars/wybu1/wb1.txt
+load wb2     data/chars/wybu1/wb2.txt
+

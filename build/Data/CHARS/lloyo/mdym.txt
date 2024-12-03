@@ -1,0 +1,25 @@
+name	mdym
+health 1
+type	pshot
+speedf 0
+candamage enemy npc obstacle
+nolife 1
+nomove 1 1
+hostile enemy npc
+animationscript data/scripts/boscript.c
+anim idle
+	@script
+	if(frame == 4){
+	void self = getlocalvar("self");
+	killentity(self);
+	}
+	@end_script
+	delay 10
+	offset  15 12
+	bbox    0 0 0 0
+	frame	data/chars/lloyo/miss2
+	frame	data/chars/lloyo/miss3
+	frame	data/chars/lloyo/miss4
+	frame	data/chars/lloyo/miss5
+	frame	data/chars/misc/empty
+

@@ -1,0 +1,27 @@
+name	miss
+health 1
+type	pshot
+subtype chase
+speedf 0
+candamage enemy npc obstacle 
+nolife 1
+hostile enemy npc
+load mdym
+load wb2
+grabdistance 1
+animationscript data/scripts/boscript.c
+setlayer 250
+lifespan 5
+anim idle
+	loop 1
+	delay 2
+	offset  15 12
+	bbox    0 0 0 0
+	@cmd velo001 3 0 0
+	hitflash wb2
+	attack  6 6 16 10 10 1 0 0 0 20
+	fastattack 1
+	frame	data/chars/lloyo/miss1
+	@cmd shoot "mdym" -9 0 -1
+	attack2  6 6 16 10 10 1 0 0 0 20
+	frame	data/chars/lloyo/miss1

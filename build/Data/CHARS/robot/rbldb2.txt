@@ -1,0 +1,16 @@
+name	rbldb2
+type	pshot
+health 1
+speedf 0.6
+hostile player
+candamage player shot
+setlayer 200
+anim idle
+	loop 1
+	delay 10
+	offset  10 11
+	bbox    0 0 0 0
+	attack  8 9 4 4 10 1 0 0 
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 0.3 0
+	frame	data/chars/en1/enblb
+	frame	data/chars/en1/enblb2

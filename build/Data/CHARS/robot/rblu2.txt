@@ -1,0 +1,15 @@
+name	rblu2
+type	pshot
+speedf 0.5
+hostile player
+candamage player
+setlayer 200
+anim idle
+	loop 1
+	delay 10
+	offset  10 11
+	bbox    0 0 0 0
+	attack  8 9 4 4 10 1 0 0 
+	@cmd changeentityproperty getlocalvar("self") "velocity" 0 -0.4 0
+	frame	data/chars/en1/enbl
+	frame	data/chars/en1/enbl2

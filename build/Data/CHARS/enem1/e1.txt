@@ -1,0 +1,17 @@
+name	e1
+health	1
+type	enemy
+speed 15
+shadow	0
+candamage player
+setlayer 1
+remove 1
+
+anim idle
+		offset  10  7
+		attack1  3  3  14  6  5  0  0  0  0  1000
+	frame data/chars/enem1/e1.gif
+
+
+
+

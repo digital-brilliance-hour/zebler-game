@@ -1,0 +1,37 @@
+name		EShot
+type		none
+candamage	player obstacle
+lifespan	3
+nolife  	1
+palette		none
+subject_to_hole	1
+no_adjust_base	0
+subject_to_gravity 0
+subject_to_platform 0
+#offscreenkill	100
+
+
+anim	idle
+	fastattack 1
+	loop	1 2 6
+	delay	5
+	followanim 1
+	followcond 1
+	landframe 8
+	offset  5 5
+	attack  1 1 8 8 5 1
+	frame	data/chars/misc/shots/shot1.png
+	frame	data/chars/misc/shots/shot4.png
+	frame	data/chars/misc/shots/shot3.png
+	frame	data/chars/misc/shots/shot2.png #
+	frame	data/chars/misc/shots/shot1.png
+	frame	data/chars/misc/shots/shot4.png
+	frame	data/chars/misc/shots/shot3.png
+	frame	data/chars/misc/shots/shot2.png #
+	attack  0
+	frame	data/chars/misc/empty.png
+
+anim	follow1
+	delay	6
+	offset  10 10
+	frame	data/chars/misc/empty.png

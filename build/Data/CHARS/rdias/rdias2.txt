@@ -1,0 +1,148 @@
+name RDias2
+type none
+health 5
+speed 30
+falldie 1
+nodieblink 2
+icon data/chars/rdias/icon.gif
+makeinv 4 0
+turndelay	2147483647
+facing	3
+knife z1
+weapons rdias2 rdias
+
+atchain 0
+
+anim waiting
+	offset 67 230
+	frame data/chars/rdias/select.gif
+
+anim select
+	delay 200
+	offset 67 230
+	frame data/chars/rdias/select.gif
+
+anim idle
+	loop 1
+	delay 1
+	throwframe 0 21
+	weaponframe 1 2
+	sound data/sfx/shoot2.wav
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/1b.gif
+	frame data/chars/rdias/1b.gif
+
+anim walk
+	loop 1
+	delay 1
+	weaponframe 0 2
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/1b.gif
+
+anim backwalk
+	loop 1
+	delay 1
+	weaponframe 0 2
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/1b.gif
+
+
+anim pain
+	delay 1
+		offset  52  130
+	frame data/chars/rdias/1.gif
+
+anim fall
+	delay 1
+		offset  52  130
+	frame data/chars/rdias/1.gif
+
+anim rise
+	delay 1
+		offset  52  130
+	frame data/chars/rdias/1.gif
+
+anim freespecial
+	delay 1
+	weaponframe 0 1
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/1.gif
+
+anim special
+	energycost 0
+	cancel 2 3 0 s freespecial2
+	delay 6
+	sound data/sfx/saber.wav
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/2.gif
+		attack1  62  100  34  24  5  0  0  0  0  1000
+	frame data/chars/rdias/3.gif
+		Attack1  0
+	frame data/chars/rdias/4.gif
+	frame data/chars/rdias/4.gif
+
+anim freespecial2
+	cancel 2 3 0 s freespecial3
+	delay 6
+	sound data/sfx/saber.wav
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/5.gif
+		attack1  63  93  30  30  5  0  0  0  0  1000
+	frame data/chars/rdias/6.gif
+		Attack1  0
+	frame data/chars/rdias/7.gif
+	frame data/chars/rdias/7.gif
+
+anim freespecial3
+	delay 6
+	sound data/sfx/saber.wav
+		offset  52  130
+		bbox  50  112  1  1
+	frame data/chars/rdias/8.gif
+		attack1  68  106  33  18  5  0  0  0  0  1000
+	frame data/chars/rdias/9.gif
+		Attack1  0
+	frame data/chars/rdias/10.gif
+	frame data/chars/rdias/10.gif
+
+anim death
+	delay 5
+		offset  52  130
+	frame data/chars/ded/1.gif
+	frame data/chars/ded/2.gif
+	frame data/chars/ded/3.gif
+	frame data/chars/ded/4.gif
+	frame data/chars/ded/5.gif
+	frame data/chars/ded/6.gif
+	frame data/chars/ded/7.gif
+	frame data/chars/ded/8.gif
+	frame data/chars/ded/9.gif
+	frame data/chars/ded/10.gif
+	frame data/chars/ded/11.gif
+	frame data/chars/ded/12.gif
+	frame data/chars/ded/13.gif
+	frame data/chars/ded/14.gif
+	frame data/chars/ded/15.gif
+	frame data/chars/ded/16.gif
+	frame data/chars/ded/17.gif
+	frame data/chars/ded/18.gif
+	frame data/chars/ded/19.gif
+	frame data/chars/ded/20.gif
+	frame data/chars/ded/21.gif
+	frame data/chars/ded/22.gif
+	frame data/chars/ded/23.gif
+	frame data/chars/ded/24.gif
+	frame data/chars/ded/25.gif
+	frame data/chars/ded/26.gif
+
+
+
+
+
+

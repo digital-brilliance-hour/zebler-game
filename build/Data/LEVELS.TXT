@@ -9,7 +9,7 @@
 
 
 
-set	Stage 1
+set	Stage_1
 
 z 190 260 0
 file	data/levels/Stage1-1.txt
@@ -18,3 +18,18 @@ file	data/levels/Stage1-2.txt
 next
 scene	data/scenes/ending.txt
 
+set Stage_2
+
+file	data/levels/Stage1-1.txt
+file	data/levels/Stage1-2.txt
+next
+scene	data/scenes/ending.txt
+
+Set Stage_3
+
+z 50 284 210
+skipselect Elang
+file	data/levels/stage-3.txt
+
+set Story_1
+file 	data/levels/scenes/story1/story1.txt

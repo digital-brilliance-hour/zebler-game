@@ -1,0 +1,171 @@
+## Load music in this area ##
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/space.png
+
+panel	data/bgs/stage1/frontOld.gif
+order a
+	
+settime         0
+notime          1
+bgspeed         20
+#maxfallspeed	-100
+spawn1          60 0 0
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+
+spawn 	rdias
+health 100
+coords 	530 200
+at	1000	
+
+spawn 	enem1
+coords 	530 200
+at	1000	
+
+spawn 	enem1
+coords 	530 200
+at	1000	
+
+spawn 	enem1
+coords 	530 200
+at	1000	
+
+spawn 	enem1
+coords 	530 200
+at	1000	
+
+spawn 	enem1
+coords 	530 200
+at	1000
+
+wait
+at 1500
+
+group  1 6
+at 1500
+
+#--group2-----
+
+spawn 	rdias
+health 500
+coords 	530 200
+at	3000	
+
+spawn 	enem1
+coords 	530 200
+at	3000	
+
+spawn 	enem1
+coords 	530 200
+at	3000	
+
+spawn 	enem1
+coords 	530 200
+at	3000	
+
+spawn 	enem1
+coords 	530 200
+at	3000	
+
+spawn 	enem1
+coords 	530 200
+at	3000
+
+spawn 	enem1
+coords 	530 100
+at	3000
+
+
+wait
+at 3500
+
+group  1 10
+at 3500
+
+#--group3-----
+
+spawn 	rdias
+health 250
+coords 	530 50
+at	5000
+
+spawn 	rdias
+health 250
+coords 	530 200
+at	5000		
+
+spawn 	enem1
+coords 	530 100
+at	5000	
+
+spawn 	enem1
+coords 	530 170
+at	5000	
+
+spawn 	enem1
+coords 	530 100
+at	5000	
+
+spawn 	enem1
+coords 	530 170
+at	5000	
+
+spawn 	enem1
+coords 	530 100
+at	5000
+
+spawn 	enem1
+coords 	530 170
+at	5000
+
+spawn 	enem1
+coords 	530 100
+at	5000
+
+
+

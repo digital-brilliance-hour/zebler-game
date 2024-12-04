@@ -1,0 +1,30 @@
+name    	Beam
+type		none
+candamage	enemy
+lifespan	2
+nolife		1
+offscreenkill	100
+subject_to_hole	1
+no_adjust_base	0
+subject_to_gravity 0
+subject_to_platform 0
+animationscript	data/scripts/prscript.c
+
+
+anim	idle
+	loop	1
+	delay	12
+	offset	2 6
+	fastattack 1
+	followanim 1
+	followcond 1
+	attack	2 2 48 8 5
+	frame	data/chars/misc/shots/beam.png
+
+anim	follow1
+	delay	6
+	offset	2 6
+	frame	data/chars/misc/empty.png
+	@cmd	givescore 1
+	@cmd	suicide
+	frame	data/chars/misc/empty.png

@@ -1,0 +1,11 @@
+name		stop
+type  text
+subtype		noskip
+
+anim	spawn
+	loop	1
+	delay	10
+	frame	data/chars/misc/empty
+		
+#|edited by openBor Stats v 0.67
+		

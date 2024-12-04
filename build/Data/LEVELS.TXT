@@ -12,12 +12,18 @@
 
 set	Stage 1
 
-file	data/levels/stage-3.txt
+file	data/levels/Stage1-1.txt
+file	data/levels/Stage1-2.txt
+next
+scene	data/scenes/ending.txt
+
+set Stage 2
 
 file	data/levels/Stage1-1.txt
 file	data/levels/Stage1-2.txt
 next
 scene	data/scenes/ending.txt
 
+Set Stage 3
 
-
+file	data/levels/stage-3.txt

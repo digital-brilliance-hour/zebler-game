@@ -1,0 +1,306 @@
+name	robot
+type	enemy
+health	400
+speedf 0
+shadow	0
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2
+nomove 1 1		
+jumpheight 0		
+cantgrab 1		
+noquake	1					
+load enbl
+animationscript data/scripts/boscript.c
+grabdistance 50
+load rblu
+load rbld
+lifebarstatus 219 4 1 1 0 0 -1000 -1000 -1000 -1000
+lifeposition 50 218
+iconposition 51 217
+nameposition 1000 1000 
+AGGRESSION 100
+icon data/chars/misc/enlfb
+setlayer 100
+anim spawn
+	offset	49 26
+	bbox	0 0 0 0
+	delay	100
+	attack	28 8 43 61 10
+	delay 10
+	@cmd velo001 1.2 0 0
+	frame	data/chars/robot/1
+	frame	data/chars/robot/2
+	frame	data/chars/robot/1
+	frame	data/chars/robot/2
+	frame	data/chars/robot/1
+	frame	data/chars/robot/2
+	frame	data/chars/robot/1
+	frame	data/chars/robot/2	
+	frame	data/chars/robot/1
+	@cmd spawn01 "wkpnt" 0 0 0
+	frame	data/chars/robot/2
+anim idle
+	loop 1
+	offset	49 26
+	bbox	0 0 0 0
+	delay	100
+	attack	28 8 43 61 10
+	delay 10
+	frame	data/chars/robot/1
+	frame	data/chars/robot/2
+anim ATTACK1
+	rangez -1000 1000
+	range 0 1000
+	loop 1
+	offset	49 26
+	bbox	28 8 43 61 
+	delay	10
+	@cmd velo001 0 1.1 0
+	attack	28 8 43 61 10
+	@cmd shoot "enbl" 40 -10 -1 
+	@cmd shoot "rbld" 40 -10 -1 
+	@cmd shoot "rblu" 40 -10 -1 
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0	
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	@cmd shoot "enbl" 40 10 -1 
+	@cmd shoot "rbld" 40 10 -1 
+	@cmd shoot "rblu" 40 10 -1  
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 	
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	@cmd shoot "blst1" 40 0 -1 
+	frame	data/chars/robot/3
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1 
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2	
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	@cmd shoot "enbl" 40 -10 -1 
+	@cmd shoot "rbld" 40 -10 -1 
+	@cmd shoot "rblu" 40 -10 -1 
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2	
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	@cmd faint
+	frame	data/chars/robot/2	
+anim ATTACK2
+	loop 1
+	offset	49 26
+	bbox	28 8 43 61 
+	delay	10
+	@cmd velo001 0 1.1 0
+	attack	28 8 43 61 10 
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0	
+	frame	data/chars/robot/1
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1  
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 	
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	@cmd shoot "blst1" 40 0 -1 
+	frame	data/chars/robot/3
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1 
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd target 1 1 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	frame	data/chars/robot/2	
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/1
+	@cmd velo001 0 -1.1 0 
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/2	
+	@cmd velo001 0 1.1 0
+	frame	data/chars/robot/1
+	@cmd velo001 0 1.1 0
+	@cmd target 1 1
+	@cmd shoot2 "enbl" 40 0 -1 
+	frame	data/chars/robot/2
+anim death
+	offset	304 77
+	delay 5
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/robot/1
+	@cmd shoot "wb2" -20 10 0
+	frame	data/chars/robot/1
+	@cmd shoot "wb2" -20 -10 0
+	frame	data/chars/robot/1
+	delay 5
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/robot/1
+	@cmd shoot "wb2" -40 10 0
+	frame	data/chars/robot/1
+	@cmd shoot "wb2" -40 -10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -30 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" -30 -10 0
+	frame	data/chars/misc/empty
+	delay 5
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -20 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -20 -10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -40 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -40 -10 0
+	frame	data/chars/misc/empty
+	delay 5
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -20 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -20 -10 0
+	frame	data/chars/misc/empty

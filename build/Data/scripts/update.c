@@ -15,6 +15,8 @@ void main()
         }
       }
     } else if(openborvariant("in_menuscreen")==1){
+      setglobalvar("WP", 1);
+      setglobalvar("Atap", 0);
       setindexedvar(0, NULL());
     }
     if (openborvariant("in_titlescreen")) {

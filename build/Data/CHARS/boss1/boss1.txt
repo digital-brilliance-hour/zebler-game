@@ -1,0 +1,724 @@
+name	boss1
+type	enemy
+health	600
+speed 0
+speedf 0
+shadow	0
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2
+nomove 1 1		
+jumpheight 0		
+cantgrab 1		
+noquake	1					
+load enbl
+animationscript data/scripts/boscript.c
+grabdistance 68
+load rblu
+load rbld
+load rblu2
+load rbld2
+lifebarstatus 219 4 1 1 0 0 -1000 -1000 -1000 -1000
+lifeposition 50 218
+iconposition 51 217
+nameposition 1000 1000  
+setlayer 50
+AGGRESSION 100
+icon data/chars/misc/enlfb
+setlayer 100
+anim spawn
+	offset	103 87
+	bbox	0 0 0 0
+	delay	300
+	attack	0 30 103 109 10 0 0 0 0 68
+	@cmd velo001 0.5 0 0
+	frame	data/chars/boss1/1
+	delay 1
+	@cmd spawn01 "wkpnt" 0 0 0
+	frame	data/chars/boss1/1
+anim idle
+	LOOP 1
+	offset	103 87
+	bbox	0 30 103 109
+	delay	1
+	attack	0 30 103 109 10 0 0 0 0 68
+	frame	data/chars/boss1/1
+anim attack1
+	rangez -1000 1000
+	range -1000 1000
+	loop 1
+	offset	103 87
+	bbox	0 30 103 109
+	delay	1
+	attack	0 30 103 109 10 0 0 0 0 68
+
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	@cmd velo001 0.5 0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0.4 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.3 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.2 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.1 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0 0.5 0
+
+	@cmd shoot "enbl" 3 63 -1 
+	@cmd shoot "rbld" 3 63 -1 
+	@cmd shoot "rblu" 3 63 -1 
+	@cmd shoot "rbld2" 3 63 -1 
+	@cmd shoot "rblu2" 3 63 -1 
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 -0.1 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.2 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.3 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.4 0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	@cmd velo001 -0.5 0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 -0.5 0.4 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.5 0.3 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.5 0.2 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.5 0.1 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd shoot "enbl" 3 63 -1 
+	@cmd shoot "rbld" 3 63 -1 
+	@cmd shoot "rblu" 3 63 -1 
+	@cmd shoot "rbld2" 3 63 -1 
+	@cmd shoot "rblu2" 3 63 -1 
+
+	@cmd velo001 -0.5 0 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 -0.5 -0.1 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.5 -0.2 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.5 -0.3 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.5 -0.4 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	@cmd velo001 -0.5 -0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 -0.4 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.3 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.2 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.1 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd shoot "enbl" 3 63 -1 
+	@cmd shoot "rbld" 3 63 -1 
+	@cmd shoot "rblu" 3 63 -1 
+	@cmd shoot "rbld2" 3 63 -1 
+	@cmd shoot "rblu2" 3 63 -1 
+
+	@cmd velo001 0 -0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0.1 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.2 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.3 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.4 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	@cmd velo001 0.5 -0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0.5 -0.4 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 -0.3 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 -0.2 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 -0.1 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0.5 0 0
+
+	@cmd shoot "enbl" 3 63 -1 
+	@cmd shoot "rbld" 3 63 -1 
+	@cmd shoot "rblu" 3 63 -1
+	@cmd shoot "rbld2" 3 63 -1 
+	@cmd shoot "rblu2" 3 63 -1 
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1 
+
+	@cmd velo001 0.5 0.1 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 0.2 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 0.3 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 0.4 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd faint
+	frame	data/chars/boss1/1
+
+anim attack2
+	loop 1
+	offset	103 87
+	bbox	0 30 103 109
+	delay	2
+	attack	0 30 103 109 10 0 0 0 0 68
+	@cmd velo001 0.5 0.5 0
+
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a2
+
+	@cmd velo001 0.4 0.5 0
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a4
+	@cmd velo001 0.3 0.5 0
+	frame	data/chars/boss1/a4
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	frame	data/chars/boss1/a4
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a5
+	@cmd velo001 0.2 0.5 0
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a7
+	@cmd velo001 0.1 0.5 0
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a9
+
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	@cmd velo001 0 0.5 0
+
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+
+	@cmd velo001 -0.1 0.5 0
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	@cmd velo001 -0.2 0.5 0
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a4
+	frame	data/chars/boss1/a4
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	frame	data/chars/boss1/a4
+	frame	data/chars/boss1/a5
+	@cmd velo001 -0.3 0.5 0
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	@cmd velo001 -0.4 0.5 0
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+
+	@cmd velo001 -0.5 0.5 0
+
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a9
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a1
+
+	@cmd velo001 -0.5 0.4 0
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a2
+	@cmd velo001 -0.5 0.3 0
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a4
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	frame	data/chars/boss1/a4
+	@cmd velo001 -0.5 0.2 0
+	frame	data/chars/boss1/a4
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a6
+	@cmd velo001 -0.5 0.1 0
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a7
+
+	@cmd velo001 -0.5 0 0
+
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a9
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	@cmd velo001 -0.5 -0.1 0
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a1
+	frame	data/chars/boss1/a2
+	@cmd velo001 -0.5 -0.2 0
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a2
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	frame	data/chars/boss1/a3
+	@cmd velo001 -0.5 -0.3 0
+	frame	data/chars/boss1/a4
+	frame	data/chars/boss1/a4
+	@cmd target 1 1
+	@cmd shoot2 "enbl" -10 -5 -1
+	frame	data/chars/boss1/a4
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a5
+	@cmd velo001 -0.5 -0.4 0
+	frame	data/chars/boss1/a5
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a6
+	frame	data/chars/boss1/a7
+
+	@cmd velo001 -0.5 -0.5 0
+
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a7
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+	frame	data/chars/boss1/a8
+
+	@cmd velo001 -0.4 -0.5 0
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a9
+	frame	data/chars/boss1/a9
+	attack 0 15 846 140 10 0 0 0 0 70
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	@cmd velo001 -0.3 -0.5 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	@cmd velo001 -0.2 -0.5 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 -0.1 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0 -0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+
+	@cmd velo001 0.1 -0.5 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.2 -0.5 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.3 -0.5 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.4 -0.5 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0.5 -0.5 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+
+	@cmd velo001 0.5 -0.4 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.5 -0.3 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.5 -0.2 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	@cmd velo001 0.5 -0.1 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+
+	@cmd velo001 0.5 0 0
+
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1 
+
+	@cmd velo001 0.5 0.1 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.5 0.2 0
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.5 0.3 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/a10
+	@cmd velo001 0.5 0.4 0
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	frame	data/chars/boss1/a10
+	attack	0 30 103 109 10 0 0 0 0 68
+	frame	data/chars/boss1/1
+	frame	data/chars/boss1/1
+anim death
+	offset	304 77
+	delay 10
+	@cmd velo001 -0.2 0.2 0
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" -20 -50 0
+	frame	data/chars/boss1/1
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -20 50 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -20 -50 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 50 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 -50 0
+	frame	data/chars/misc/empty

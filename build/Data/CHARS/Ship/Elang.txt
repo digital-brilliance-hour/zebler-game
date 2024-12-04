@@ -1,0 +1,63 @@
+name    	 Elang
+health  	 50
+speed   	 50
+type    	 player
+facing  	 1
+makeinv  	 2
+atchain  	 1
+death   	 1
+nodrop		 2
+antigravity	 100
+subject_to_platform 0
+animationscript  data/scripts/player.c
+takedamagescript  data/scripts/invis.c
+
+anim	death
+	delay	10
+	offset	25 25
+	frame	data/chars/ship/ship.png
+	delay	150
+	@cmd	spawn01 "Blos" 0 0 0
+	@cmd	degravity -2
+	frame	data/chars/misc/empty.png
+		
+anim	idle
+	loop	1
+	delay	1
+	offset	25 25
+	bbox	0 8 45 34
+	frame	data/chars/ship/ship.png
+	@cmd	keyshoot "Beam" 15 0 4 10
+	@cmd	keyfly 2
+	frame	data/chars/ship/ship.png
+		
+anim	pain
+	delay	50
+	offset	25 25
+	@cmd	dasher -2 0 0
+	sound	data/sounds/hurt.wav
+	frame	data/chars/ship/ship.png
+	delay	10
+	@cmd	dasher 0 0 0
+	frame	data/chars/ship/ship.png
+	@cmd	beidle
+	frame	data/chars/ship/ship.png
+		
+anim	spawn
+@script
+  if(frame==1){
+    void self = getlocalvar("self");
+
+    changedrawmethod(self, "reset", 1); // not used yet
+    changeentityproperty(self, "position", NULL(), NULL(), 50);
+  }
+	@end_script	
+	delay	1
+	offset	25 25
+	bbox	0 8 45 34
+	frame	data/chars/misc/empty.png
+	delay	4
+	frame	data/chars/ship/ship.png
+		
+#|edited by openBor Stats v 0.67
+		

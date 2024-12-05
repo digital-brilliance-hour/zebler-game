@@ -1,0 +1,159 @@
+
+
+
+name	IceWall
+type obstacle
+shadow 0
+health 90
+lifespan 10
+candamage player npc obstacle
+Antigravity 100
+subject_to_wall 1
+
+
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	fall
+	loop	0
+	delay	8
+	flipframe	0
+	@script
+     	if (frame==4){
+    	       void self = getlocalvar("self");
+    	       killentity(self);
+        }
+	@end_script	
+	drawmethod	alpha 6
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	@cmd	gravity	1
+	delay	6
+	offset	47 119
+	bbox	18 9 0 0
+	frame	data/chars/zmetro/c27.gif
+	offset	47 112
+	frame	data/chars/zmetro/c28.gif
+	offset	47 101
+	frame	data/chars/zmetro/c29.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	follow1
+	loop	0
+	delay	755
+	offset	47 130
+	bbox	18 9 57 123
+	drawmethod	alpha 6
+		@script
+     	if (frame==1){
+    	       void self = getlocalvar("self");
+    	       killentity(self);
+        }
+	@end_script	
+	platform	56 133 -40 -36 22 17 4 120
+	attack	0 0 0 0 0 0 0 0 0 0
+	move	0
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	0
+	followanim	1
+	followcond	1
+	@script
+	void self = getlocalvar("self");
+     	if (frame==39){
+        	       killentity(self);
+        }
+	@end_script	
+	delay	2
+	offset	47 130
+	bbox	18 9 57 123
+	flipframe	0
+	drawmethod	alpha 6
+	platform	56 133 -40 -36 22 17 4 120
+	attack	32 9 45 124 10 9 0 0 0 0
+	move	11
+	frame	data/chars/zmetro/c29.gif
+	frame	data/chars/zmetro/c29.gif
+	frame	data/chars/zmetro/c29.gif
+	frame	data/chars/zmetro/c28.gif
+	frame	data/chars/zmetro/c28.gif
+	frame	data/chars/zmetro/c28.gif
+	frame	data/chars/zmetro/c27.gif
+	frame	data/chars/zmetro/c27.gif
+	frame	data/chars/zmetro/c27.gif
+	frame	data/chars/zmetro/c26.gif
+	frame	data/chars/zmetro/c26.gif
+	frame	data/chars/zmetro/c26.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	frame	data/chars/zmetro/c25.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	@cmd	velo001	0 0 0
+	move	0
+	delay	755
+	frame	data/chars/zmetro/c25.gif
+	delay	6
+	offset	47 119
+	bbox	18 9 0 0
+	frame	data/chars/zmetro/c27.gif
+	offset	47 112
+	frame	data/chars/zmetro/c28.gif
+	offset	47 101
+	frame	data/chars/zmetro/c29.gif
+		
+#|edited by openBor Stats v 0.51
+		

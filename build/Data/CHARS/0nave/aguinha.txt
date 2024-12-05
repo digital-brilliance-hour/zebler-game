@@ -1,0 +1,48 @@
+
+
+name	aguinha
+type	none
+shadow	0
+lifespan 1
+facing 1
+Antigravity 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	6
+	offset	29 23
+	drawmethod	alpha 1
+	frame	data/chars/0nave/agu1.gif
+	offset	31 23
+	frame	data/chars/0nave/agu2.gif
+	offset	32 23
+	frame	data/chars/0nave/agu3.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,48 @@
+name	cartucho
+speed       6
+type	     none
+shadow	     0
+candamage enemy obstacle
+jumpheight 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	offset	24 20
+	frame	data/chars/dead/bu01.gif
+		
+anim	attack2
+	loop	0
+	offset	24 20
+	frame	data/chars/dead/bu01.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	23 21
+	frame	data/chars/dead/bu01.gif
+	frame	data/chars/dead/bu02.gif
+	frame	data/chars/dead/bu03.gif
+	frame	data/chars/dead/bu04.gif
+	frame	data/chars/dead/bu05.gif
+	frame	data/chars/dead/bu06.gif
+	frame	data/chars/dead/bu07.gif
+	frame	data/chars/dead/bu08.gif
+		
+#|edited by openBor Stats v 0.51
+		

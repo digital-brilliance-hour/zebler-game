@@ -1,0 +1,21 @@
+
+
+name	Fundo4
+type	none
+shadow	0
+lifespan 0.5
+Antigravity 100
+setlayer 1
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	240 208
+	drawmethod	565 565 0 0 0 0 -1 0 0 0
+	frame	data/chars/CySuper/fundo.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,29 @@
+
+
+name	AquaEfeito1
+type	none
+gfxshadow 0
+lifespan 1
+facing 1
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	5
+	offset	-14 64
+	drawmethod	alpha 1
+	frame	data/chars/0Nave/aa1.gif
+	frame	data/chars/0Nave/aa2.gif
+	frame	data/chars/0Nave/aa3.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

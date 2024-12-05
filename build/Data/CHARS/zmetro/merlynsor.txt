@@ -1,0 +1,299 @@
+name MerlynSOR
+health	300
+speed 11
+type	enemy
+gfxshadow 1 3
+jumpheight 3
+hostile player npc
+candamage player npc
+antigrab  3
+diesound data/sounds/die6.wav
+throw 3 2
+knockdowncount 6
+jugglepoints 4
+falldie 2
+subject_to_screen 1
+aggression 333
+
+
+load FlechaE
+Knife FlechaE
+
+throw 3 3
+animationscript data/scripts/grabscript.c
+
+fmap 1
+palette       data/chars/zmetro/me00.gif
+alternatepal  data/chars/zmetro/me00gelo.gif
+alternatepal  data/chars/zmetro/me00poison.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	50 300
+	delay	7
+	offset	22 107
+	bbox	4 28 44 79
+	frame	data/chars/zmetro/me12.gif
+	offset	22 87
+	bbox	4 8 44 79
+	frame	data/chars/zmetro/me13.gif
+	frame	data/chars/zmetro/me14.gif
+	offset	22 83
+	frame	data/chars/zmetro/me15.gif
+	offset	22 87
+	sound	data/chars/ga/flecha.wav
+	@cmd	shoot "FlechaE" 12 65 1
+	frame	data/chars/zmetro/me16.gif
+	offset	25 83
+	frame	data/chars/zmetro/me17.gif
+		
+anim	attack2
+	loop	0
+	range	0 50
+	jumpframe	0 2 4
+	landframe	12
+	delay	5
+	offset	15 63
+	frame	data/chars/zmetro/me08.gif
+	frame	data/chars/zmetro/me09.gif
+	frame	data/chars/zmetro/me10.gif
+	frame	data/chars/zmetro/me11.gif
+	frame	data/chars/zmetro/me08.gif
+	frame	data/chars/zmetro/me09.gif
+	bbox	3 3 39 43
+	frame	data/chars/zmetro/me10.gif
+	frame	data/chars/zmetro/me11.gif
+	frame	data/chars/zmetro/me08.gif
+	frame	data/chars/zmetro/me09.gif
+	frame	data/chars/zmetro/me10.gif
+	delay	555
+	frame	data/chars/zmetro/me11.gif
+	delay	9
+	bbox	2 0 46 59
+	sound	data/sounds/0pisada.wav
+	offset	26 59
+	frame	data/chars/zmetro/me02.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	attack	6 15 5 53 8 9 0 0 0 0
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+	bbox	9 16 78 32
+	attack	13 18 5 30 8 9 0 0 0 0
+	offset	39 65
+	frame	data/chars/zmetro/me19.gif
+	offset	39 52
+	delay	500
+	frame	data/chars/zmetro/me19.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	50 21
+	frame	data/chars/zmetro/me20.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	39 38
+	frame	data/chars/zmetro/me19.gif
+		
+anim	grabbed
+	loop	0
+	delay	30
+	bbox	6 0 42 75
+	offset	22 86
+	frame	data/chars/zmetro/me18.gif
+		
+anim	idle
+	loop	1
+	offset	27 78
+	bbox	3 0 46 79
+	delay	30
+	frame	data/chars/zmetro/me01.gif
+		
+anim	jump
+	loop	0
+	delay	5
+	offset	15 63
+	frame	data/chars/zmetro/me08.gif
+	frame	data/chars/zmetro/me09.gif
+	frame	data/chars/zmetro/me10.gif
+	frame	data/chars/zmetro/me11.gif
+	frame	data/chars/zmetro/me08.gif
+	frame	data/chars/zmetro/me09.gif
+	frame	data/chars/zmetro/me10.gif
+	frame	data/chars/zmetro/me11.gif
+	frame	data/chars/zmetro/me08.gif
+	frame	data/chars/zmetro/me09.gif
+	frame	data/chars/zmetro/me10.gif
+	frame	data/chars/zmetro/me11.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+		
+anim	pain18
+	loop	0
+	delay	12
+	drawmethod	remap 2
+	offset	27 78
+	bbox	3 0 46 79
+	frame	data/chars/zmetro/me01.gif
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+	offset	27 78
+	bbox	3 0 46 79
+	frame	data/chars/zmetro/me01.gif
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+	offset	27 78
+	bbox	3 0 46 79
+	frame	data/chars/zmetro/me01.gif
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+	offset	27 78
+	bbox	3 0 46 79
+	frame	data/chars/zmetro/me01.gif
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+	offset	27 78
+	bbox	3 0 46 79
+	frame	data/chars/zmetro/me01.gif
+	bbox	6 0 42 75
+	offset	27 76
+	frame	data/chars/zmetro/me18.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	39 38
+	frame	data/chars/zmetro/me19.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	50 21
+	frame	data/chars/zmetro/me20.gif
+	offset	54 51
+	frame	data/chars/zmetro/me21.gif
+	offset	46 67
+	frame	data/chars/zmetro/me22.gif
+	sound	data/sounds/0pisada.wav
+	offset	26 59
+	frame	data/chars/zmetro/me02.gif
+		
+anim	walk
+	loop	1
+	delay	11
+	offset	25 79
+	bbox	5 1 41 79
+	frame	data/chars/zmetro/me03.gif
+	offset	28 78
+	frame	data/chars/zmetro/me04.gif
+	offset	27 79
+	frame	data/chars/zmetro/me05.gif
+	offset	21 80
+	frame	data/chars/zmetro/me06.gif
+	offset	22 80
+	frame	data/chars/zmetro/me07.gif
+		
+#|edited by openBor Stats v 0.51
+		

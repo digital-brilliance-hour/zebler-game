@@ -1,0 +1,268 @@
+
+
+
+name PazRun
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+icon	data/chars/peace/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 0
+nopain 1
+
+
+
+load LoboBala
+load SpawnTiro2
+
+atchain 1
+running 24 0  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+
+palette       data/chars/peace/pal01.gif
+alternatepal  data/chars/peace/pal02.gif
+alternatepal  data/chars/peace/pal03.gif
+alternatepal  data/chars/peace/pal04.gif
+alternatepal  data/chars/peace/pal05.gif
+alternatepal  data/chars/peace/pal06.gif
+
+parrow		data/chars/peace/nome.gif -37 -70
+parrow2		data/chars/peace/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	@cmd	keymove 2 0.6
+	offset	54 70
+	bbox	31 29 41 42
+	frame	data/chars/peace/paz03.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -10 17 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/peace/paz04.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/peace/paz03.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	54 70
+	delay	6
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/peace/paz01.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/peace/paz01.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/peace/paz01.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	32
+	@cmd	velo001	-6 0 0
+	sound	data/sounds/freio.wav
+	bbox	31 29 41 42
+	offset	54 70
+	frame	data/chars/peace/paz01.gif
+		
+anim	idle
+	loop	1
+	bbox	31 29 41 42
+	offset	54 70
+	delay	6
+	frame	data/chars/peace/paz01.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/peace/paz02.gif
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/peace/paz02.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+		
+anim	run
+	loop	1
+	bbox	31 29 41 42
+	offset	54 70
+	delay	4
+	frame	data/chars/peace/paz01.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/peace/paz02.gif
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/peace/paz02.gif
+		
+anim	runattack
+	loop	0
+	delay	8
+	@cmd	keymove 2 0.6
+	offset	54 70
+	bbox	31 29 41 42
+	frame	data/chars/peace/paz03.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -10 17 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/peace/paz04.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/peace/paz03.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	54 70
+	frame	data/chars/peace/paz01.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	bbox	31 29 41 42
+	offset	54 70
+	delay	5
+	frame	data/chars/peace/paz01.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/peace/paz02.gif
+	frame	data/chars/peace/paz01.gif
+	frame	data/chars/peace/paz02.gif
+		
+anim	walkoff
+		
+#|edited by openBor Stats v 0.51
+		

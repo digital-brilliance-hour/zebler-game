@@ -1,0 +1,309 @@
+
+
+
+name JayRun
+health	300
+speed 39
+type	none
+gfxshadow 1 3
+icon	data/chars/Jay/portrait.gif 1
+diesound data/chars/Jay/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 0
+
+load speed3
+
+atchain 1
+running  50 3  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/jay/nome.gif -37 -63
+parrow2		data/chars/jay/nome.gif -37 -63
+
+palette       data/chars/jay/pal1.gif
+alternatepal  data/chars/jay/pal3.gif
+alternatepal  data/chars/jay/pal2.gif
+alternatepal  data/chars/jay/pal4.gif
+alternatepal  data/chars/jay/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	2
+	offset	104 70
+	@cmd	velo001	28 0 0
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	attack	86 32 34 39 25 0 0 0 5 0
+	@cmd	spawn01 "speed3" 10 0 1
+	frame	data/chars/0Nave/jay07.gif
+	@cmd	spawn01 "speed3" 10 0 1
+	frame	data/chars/0Nave/jay07.gif
+	@cmd	velo001	-20 0 0
+	bbox	93 33 25 37
+	@cmd	spawn01 "speed3" 10 0 1
+	frame	data/chars/0Nave/jay08.gif
+	@cmd	spawn01 "speed3" 10 0 1
+	frame	data/chars/0Nave/jay08.gif
+		
+anim	backwalk
+	loop	1
+	cancel	1 99 0 A freespecial
+	delay	7
+	bbox	91 31 25 41
+	offset	103 71
+	frame	data/chars/0Nave/jay01.gif
+	frame	data/chars/0Nave/jay02.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay03.gif
+	frame	data/chars/0Nave/jay04.gif
+	frame	data/chars/0Nave/jay05.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay06.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	105 70
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/jay09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/jay09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/jay09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/jay09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/jay09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/jay09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/jay09.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	@cmd	velo001	-16 0 0
+	drawmethod	flipx 1
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	delay	7
+	offset	104 70
+	bbox	93 33 25 37
+	attack	86 32 34 39 25 0 0 0 5 0
+	frame	data/chars/0Nave/jay07.gif
+	frame	data/chars/0Nave/jay08.gif
+		
+anim	freespecial2
+	com	d d freespecial2
+	loop	0
+	@cmd	velo001	12 5 0
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	delay	5
+	offset	104 70
+	bbox	93 33 25 37
+	attack	86 32 34 39 25 0 0 0 5 0
+	frame	data/chars/0Nave/jay07.gif
+	frame	data/chars/0Nave/jay08.gif
+		
+anim	freespecial3
+	com	u u freespecial3
+	loop	0
+	delay	5
+	@cmd	velo001	12 -5 0
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	delay	7
+	offset	104 70
+	bbox	93 33 25 37
+	attack	86 32 34 39 25 0 0 0 5 0
+	frame	data/chars/0Nave/jay07.gif
+	frame	data/chars/0Nave/jay08.gif
+		
+anim	freespecial4
+	com	f f freespecial4
+	loop	0
+	delay	7
+	@cmd	velo001	16 0 0
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	delay	7
+	offset	104 70
+	bbox	93 33 25 37
+	attack	86 32 34 39 25 0 0 0 5 0
+	frame	data/chars/0Nave/jay07.gif
+	frame	data/chars/0Nave/jay08.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	91 31 25 41
+	offset	103 71
+	frame	data/chars/0Nave/jay01.gif
+	frame	data/chars/0Nave/jay02.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay03.gif
+	frame	data/chars/0Nave/jay04.gif
+	frame	data/chars/0Nave/jay05.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay06.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	5
+	bbox	91 31 25 41
+	offset	103 71
+	frame	data/chars/0Nave/jay06.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	@cmd	velo001	-2 0 0
+	offset	105 70
+	frame	data/chars/0Nave/jay09.gif
+		
+anim	run
+	loop	1
+	delay	3
+	@cmd	spawn01 "speed3" 20 0 1
+	bbox	91 31 25 41
+	offset	103 71
+	frame	data/chars/0Nave/jay01.gif
+	frame	data/chars/0Nave/jay02.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay03.gif
+	frame	data/chars/0Nave/jay04.gif
+	frame	data/chars/0Nave/jay05.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay06.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	91 31 25 41
+	offset	103 71
+	frame	data/chars/0Nave/jay06.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	4
+	@cmd	spawn01 "speed3" 20 0 1
+	bbox	91 31 25 41
+	offset	103 71
+	frame	data/chars/0Nave/jay01.gif
+	frame	data/chars/0Nave/jay02.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay03.gif
+	frame	data/chars/0Nave/jay04.gif
+	frame	data/chars/0Nave/jay05.gif
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/jay06.gif
+		
+#|edited by openBor Stats v 0.51
+		

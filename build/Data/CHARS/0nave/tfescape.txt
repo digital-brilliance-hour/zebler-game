@@ -1,0 +1,45 @@
+
+
+name	tfescape
+type none
+gfxshadow 1 3
+subject_to_gravity 0
+setlayer 0
+offscreenkill 200
+
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/0nave/tf1pal.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	@cmd	velo001	0.2 0 0.1
+	delay	5
+	offset	288 200
+	drawmethod	scale 0.45 0.45
+	sound	data/sounds/helicop.wav
+	frame	data/chars/0nave/tf1.gif
+	frame	data/chars/0nave/tf2.gif
+	frame	data/chars/0nave/tf1.gif
+	frame	data/chars/0nave/tf2.gif
+	frame	data/chars/0nave/tf1.gif
+	frame	data/chars/0nave/tf2.gif
+	frame	data/chars/0nave/tf1.gif
+	frame	data/chars/0nave/tf2.gif
+	frame	data/chars/0nave/tf1.gif
+	frame	data/chars/0nave/tf2.gif
+		
+#|edited by openBor Stats v 0.51
+		

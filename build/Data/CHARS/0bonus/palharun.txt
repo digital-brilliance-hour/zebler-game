@@ -1,0 +1,147 @@
+name PalhaRun
+health 10
+speed 0
+type	enemy
+gfxshadow 1 3
+antigrab 100
+hostile player npc
+candamage player npc
+nodrop 2
+death 1
+nomove 1
+facing 2
+nodieblink 2
+aggression 100
+offscreenkill 250
+
+
+animationscript data/scripts/grabscript.c
+
+fmap 6
+palette       data/chars/zgotham/q1pal1.gif
+alternatepal  data/chars/zgotham/q1pal2.gif
+alternatepal  data/chars/zgotham/q1pal3.gif
+alternatepal  data/chars/zgotham/q1pal4.gif
+alternatepal  data/chars/zgotham/q1pal5.gif
+alternatepal  data/chars/zgotham/q1pal6.gif
+alternatepal  data/chars/zgotham/q1gelo.gif
+alternatepal  data/chars/zgotham/q1poison.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	death
+	loop	0
+	delay	9
+	offset	43 72
+	@cmd	velo001	4 0 0
+	offset	50 87
+	frame	data/chars/zgotham/q6.gif
+	offset	50 85
+	frame	data/chars/zgotham/q7.gif
+	offset	50 72
+	frame	data/chars/zgotham/q7.gif
+	offset	47 63
+	frame	data/chars/zgotham/q8.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	attack	38 28 5 53 8 9 0 0 0 0
+	bbox	37 13 32 78
+	offset	50 87
+	frame	data/chars/zgotham/q6.gif
+	attack	22 31 5 30 8 9 0 0 0 0
+	bbox	19 31 60 30
+	offset	50 85
+	frame	data/chars/zgotham/q7.gif
+	offset	50 72
+	delay	500
+	frame	data/chars/zgotham/q7.gif
+	offset	47 63
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zgotham/q8.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	@cmd	velo001	4 0 0
+	offset	47 90
+	bbox	36 13 29 79
+	frame	data/chars/zgotham/q1.gif
+	frame	data/chars/zgotham/q1.gif
+	frame	data/chars/zgotham/q1.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	offset	40 83
+	bbox	20 13 52 72
+	delay	30
+	frame	data/chars/zthemi/q13.gif
+		
+anim	rise
+		
+anim	spawn
+	delay	1
+	offset	47 90
+	frame	data/chars/zgotham/q1.gif
+		
+anim	walk
+	delay	5
+	@cmd	velo001	4 0 0
+	offset	47 90
+	bbox	36 13 29 79
+	frame	data/chars/zgotham/q1.gif
+	frame	data/chars/zgotham/q1.gif
+	frame	data/chars/zgotham/q1.gif
+		
+#|edited by openBor Stats v 0.51
+		

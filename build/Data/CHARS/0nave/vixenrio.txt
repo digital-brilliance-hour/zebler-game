@@ -1,0 +1,294 @@
+
+name VixenRio
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+icon	data/chars/vixen/portrait.gif 1
+diesound data/chars/vixen/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 1
+jumpheight 4
+
+
+load AquaEfeito1
+
+
+atchain 1
+running  24 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/vixen/nome.gif -37 -60
+parrow2		data/chars/vixen/nome.gif -37 -60
+
+
+
+palette       data/chars/Vixen/00vixenpal.gif
+alternatepal  data/chars/Vixen/00vixenpal2.gif
+alternatepal  data/chars/Vixen/00vixenpal3.gif
+alternatepal  data/chars/Vixen/00vixenpal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	offset	35 54
+	@cmd	velo001	3 0 0
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/0Nave/vi6.gif
+	sound	data/sounds/punch2.wav
+	attack	29 9 37 50 30 0 0 0 5 0
+	frame	data/chars/0Nave/vi7.gif
+	frame	data/chars/0Nave/vi8.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/vi9.gif
+	offset	35 51
+	bbox	23 16 28 31
+	frame	data/chars/0Nave/vi10.gif
+	offset	35 54
+	frame	data/chars/0Nave/vi6.gif
+	@cmd	velo001	-4 0 0
+	bbox	40 17 35 22
+	offset	54 37
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/vi13.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	200
+	@cmd	spawn01 "tibum" 1 0 1
+	offset	82 155
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	fall
+		
+anim	freespecial
+	com	f f freespecial
+	loop	0
+	delay	8
+	landframe	4
+	jumpframe	0 2 5 0
+	hitfx	data/sounds/clawhit.wav
+	sound	data/sounds/vuu3.wav
+	attack	21 19 55 28 40 0 0 0 5 0
+	offset	49 50
+	frame	data/chars/0Nave/vi15.gif
+	frame	data/chars/0Nave/vi16.gif
+	frame	data/chars/0Nave/vi17.gif
+	delay	555
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	33 40
+	frame	data/chars/0Nave/vi11.gif
+	delay	5
+	offset	54 38
+	sound	data/sounds/agua2.wav
+	frame	data/chars/0Nave/vi13.gif
+		
+anim	freespecial2
+	com	b b freespecial2
+	loop	0
+	landframe	1
+	delay	555
+	offset	33 46
+	jumpframe	0 2 -4
+	sound	data/sounds/punch2.wav
+	frame	data/chars/0Nave/vi11.gif
+	delay	5
+	offset	54 37
+	sound	data/sounds/agua2.wav
+	frame	data/chars/0Nave/vi12.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	40 17 35 22
+	offset	54 37
+	frame	data/chars/0Nave/vi12.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/vi13.gif
+	frame	data/chars/0Nave/vi14.gif
+	frame	data/chars/0Nave/vi12.gif
+	frame	data/chars/0Nave/vi13.gif
+	frame	data/chars/0Nave/vi14.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	1
+	offset	54 37
+	frame	data/chars/0Nave/vi12.gif
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	35 41
+	@cmd	velo001	-2 0 0
+	frame	data/chars/0Nave/vi5.gif
+		
+anim	rise
+	loop	0
+	delay	1
+	offset	54 37
+	frame	data/chars/0Nave/vi12.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	54 37
+	frame	data/chars/0Nave/vi12.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	40 17 35 22
+	offset	54 37
+	frame	data/chars/0Nave/vi12.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/vi13.gif
+	frame	data/chars/0Nave/vi14.gif
+	frame	data/chars/0Nave/vi12.gif
+	frame	data/chars/0Nave/vi13.gif
+	frame	data/chars/0Nave/vi14.gif
+		
+#|edited by openBor Stats v 0.51
+		

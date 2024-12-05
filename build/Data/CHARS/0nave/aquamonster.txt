@@ -1,0 +1,309 @@
+
+
+
+name AquaMonster
+health	300
+speed 10
+type	none
+gfxshadow 1 3
+icon	data/chars/aquaman/portrait.gif 1
+diesound data/chars/aquaman/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+nopain 1
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 0
+
+
+load AquaEfeito1
+load Aquabomb2
+load Aquabomb
+Bomb Aquabomb
+
+atchain 1
+running  18 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/aquaman/nome.gif -37 -120
+parrow2		data/chars/aquaman/nome.gif -37 -120
+
+palette       data/chars/aquaman/pal01.gif
+alternatepal  data/chars/aquaman/pal02.gif
+alternatepal  data/chars/aquaman/pal03.gif
+alternatepal  data/chars/aquaman/pal04.gif
+alternatepal  data/chars/aquaman/pal05.gif
+alternatepal  data/chars/aquaman/pal06.gif
+alternatepal  data/chars/aquaman/pal07.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	tossframe	1 120
+	sound	data/sounds/agua2.wav
+	@cmd	spawnbind "AquaEfeito1" 3 73 1
+	@cmd	keymove 2 0.6
+	bbox	59 52 52 103
+	offset	82 155
+	frame	data/chars/0Nave/aq1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aq2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aq3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aq4.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aq5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	backwalk
+	loop	1
+	delay	9
+	bbox	59 52 52 103
+	offset	82 155
+	frame	data/chars/0Nave/aq1.gif
+	frame	data/chars/0Nave/aq2.gif
+	frame	data/chars/0Nave/aq3.gif
+	frame	data/chars/0Nave/aq4.gif
+	frame	data/chars/0Nave/aq5.gif
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	82 155
+	frame	data/chars/0Nave/aq7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aq7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aq7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aq7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aq7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aq7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aq7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	8
+	bbox	59 52 52 103
+	offset	82 155
+	frame	data/chars/0Nave/aq1.gif
+	frame	data/chars/0Nave/aq2.gif
+	frame	data/chars/0Nave/aq3.gif
+	frame	data/chars/0Nave/aq4.gif
+	frame	data/chars/0Nave/aq5.gif
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	9
+	bbox	59 52 52 103
+	offset	82 155
+	@cmd	keymove 0.5 0.2
+	frame	data/chars/0Nave/aq8.gif
+	@cmd	keymove 0.5 0.2
+	sound	data/sounds/agua1.wav
+	@cmd	toss2 "Aquabomb2" 5 85 0
+	frame	data/chars/0Nave/aq9.gif
+	@cmd	keymove 0.5 0.2
+	frame	data/chars/0Nave/aq10.gif
+	@cmd	keymove 0.5 0.2
+	frame	data/chars/0Nave/aq11.gif
+		
+anim	freespecial2
+	com	f f freespecial2
+	loop	0
+	delay	5
+	landframe	3
+	jumpframe	0 2 2 0
+	offset	82 155
+	hitfx	data/sounds/espadahit.wav
+	sound	data/sounds/jump.wav
+	frame	data/chars/0Nave/aq6.gif
+	frame	data/chars/0Nave/aq5.gif
+	attack	85 120 59 36 35 0 0 0 5 0
+	delay	555
+	frame	data/chars/0Nave/aq12.gif
+	sound	data/sounds/stomp.wav
+	delay	5
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	59 52 52 103
+	offset	82 155
+	frame	data/chars/0Nave/aq1.gif
+	frame	data/chars/0Nave/aq2.gif
+	frame	data/chars/0Nave/aq3.gif
+	frame	data/chars/0Nave/aq4.gif
+	frame	data/chars/0Nave/aq5.gif
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	jump
+		
+anim	pain
+	loop	0
+	delay	12
+	bbox	59 52 52 103
+	offset	82 155
+	@cmd	velo001	-1 0 0
+	frame	data/chars/0Nave/aq7.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	139 34 32 47
+	offset	154 77
+	frame	data/chars/0Nave/aq1.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	8
+	bbox	59 52 52 103
+	offset	82 155
+	frame	data/chars/0Nave/aq1.gif
+	frame	data/chars/0Nave/aq2.gif
+	frame	data/chars/0Nave/aq3.gif
+	frame	data/chars/0Nave/aq4.gif
+	frame	data/chars/0Nave/aq5.gif
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	59 52 52 103
+	offset	82 155
+	attack	40 84 73 72 25 0 0 0 5 0
+	frame	data/chars/0Nave/aq1.gif
+	frame	data/chars/0Nave/aq2.gif
+	frame	data/chars/0Nave/aq3.gif
+	frame	data/chars/0Nave/aq4.gif
+	frame	data/chars/0Nave/aq5.gif
+	frame	data/chars/0Nave/aq6.gif
+		
+anim	walkoff
+	loop	0
+	delay	8
+	bbox	59 52 52 103
+	offset	82 155
+	frame	data/chars/0Nave/aq1.gif
+		
+#|edited by openBor Stats v 0.51
+		

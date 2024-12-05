@@ -1,0 +1,267 @@
+
+
+
+name MaskRun
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+icon	data/chars/mask/portrait.gif 1
+diesound data/chars/mask/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 3
+jumpmove 3 3
+
+
+load LoboBala
+
+atchain 1
+running 24 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+
+palette       data/chars/Mask/pal1.gif
+alternatepal  data/chars/Mask/pal2.gif
+alternatepal  data/chars/Mask/pal3.gif
+alternatepal  data/chars/Mask/pal4.gif
+alternatepal  data/chars/Mask/pal5.gif
+alternatepal  data/chars/Mask/pal6.gif
+
+
+parrow		data/chars/mask/nome.gif -37 -70
+parrow2		data/chars/mask/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	bbox	36 20 27 41
+	offset	49 60
+	delay	5
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run1.gif
+	sound	data/sounds/run1.wav
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run2.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -3 8 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run4.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	43 62
+	frame	data/chars/mask/run5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/mask/run5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/mask/run5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/mask/run5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/mask/run5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/mask/run5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/mask/run5.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+		
+anim	freespecial2
+		
+anim	idle
+	loop	1
+	bbox	36 20 27 41
+	offset	49 60
+	delay	5
+	frame	data/chars/mask/run1.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/mask/run2.gif
+	frame	data/chars/mask/run3.gif
+	frame	data/chars/mask/run4.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	bbox	36 20 27 41
+	offset	49 60
+	delay	5
+	frame	data/chars/mask/run4.gif
+		
+anim	runattack
+	loop	0
+	bbox	36 20 27 41
+	offset	49 60
+	delay	5
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run1.gif
+	sound	data/sounds/run1.wav
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run2.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -3 8 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/mask/run4.gif
+		
+anim	pain
+	loop	0
+	delay	20
+	@cmd	velo001	-2 0 0
+	bbox	34 20 18 41
+	offset	43 62
+	frame	data/chars/mask/run5.gif
+		
+anim	run
+	loop	1
+	bbox	36 20 27 41
+	offset	49 60
+	delay	3
+	frame	data/chars/mask/run1.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/mask/run2.gif
+	frame	data/chars/mask/run3.gif
+	frame	data/chars/mask/run4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	36 20 27 41
+	offset	49 60
+	frame	data/chars/mask/run4.gif
+		
+anim	special2
+		
+		
+anim	walk
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	36 20 27 41
+	offset	49 60
+	frame	data/chars/mask/run4.gif
+		
+#|edited by openBor Stats v 0.51
+		

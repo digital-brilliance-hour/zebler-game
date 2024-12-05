@@ -1,0 +1,317 @@
+
+
+
+name BBoyrun
+health	300
+speed 28
+type	none
+gfxshadow 1 3
+icon	data/chars/beastboy/portrait.gif 1
+diesound data/chars/beastboy/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nopain 1
+nodrop 2
+jumpmove 3 3
+jumpheight 0
+
+load speed3
+
+atchain 1
+running  40 3  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/beastboy/nome.gif -37 -63
+parrow2		data/chars/beastboy/nome.gif -37 -63
+
+
+palette       data/chars/beastboy/00beastpal.gif
+alternatepal  data/chars/beastboy/00beastpal2.gif
+alternatepal  data/chars/beastboy/00beastpal3.gif
+alternatepal  data/chars/beastboy/00beastpal4.gif
+alternatepal  data/chars/beastboy/00beastpal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	fastattack	1
+	landframe	7
+	jumpframe	0 2 1 0
+	offset	74 70
+	bbox	56 19 36 51
+	drawmethod	scale 0.7 0.7
+	hitfx	data/sounds/clawhit.wav
+	sound	data/sounds/vuu3.wav
+	frame	data/chars/0Nave/bea08.gif
+	offset	56 70
+	bbox	39 21 36 51
+	attack	44 27 48 28 20 0 0 0 5 0
+	frame	data/chars/0Nave/bea09.gif
+	offset	49 72
+	bbox	33 22 36 51
+	attack	46 34 37 31 20 0 0 0 5 0
+	frame	data/chars/0Nave/bea10.gif
+	sound	data/sounds/punch3.wav
+	offset	56 71
+	bbox	40 30 50 41
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/bea11.gif
+	offset	59 58
+	bbox	37 25 69 34
+	attack	57 25 53 28 20 0 0 0 5 0
+	frame	data/chars/0Nave/bea12.gif
+	offset	60 51
+	bbox	39 19 68 30
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/bea13.gif
+	offset	89 54
+	bbox	62 24 68 31
+	delay	555
+	frame	data/chars/0Nave/bea04.gif
+	bbox	62 28 73 27
+	offset	94 54
+	delay	8
+	sound	data/sounds/run2.wav
+	@cmd	velo001	-1 0 0
+	frame	data/chars/0Nave/bea05.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	56 87
+	@cmd	velo001	-4 0 0
+	drawmethod	scale 0.5 0.5
+	frame	data/chars/beastboy/g1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/beastboy/g1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/beastboy/g1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/beastboy/g1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/beastboy/g1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/beastboy/g1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/beastboy/g1.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	15
+	jumpframe	0 2 -4
+	sound	data/sounds/punch2.wav
+	offset	95 60
+	drawmethod	scale 0.8 0.8
+	frame	data/chars/0Nave/bea06.gif
+		
+anim	freespecial3
+		
+anim	freespecial4
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	62 28 73 27
+	offset	94 54
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/0Nave/bea01.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea02.gif
+	frame	data/chars/0Nave/bea03.gif
+	frame	data/chars/0Nave/bea04.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea05.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	8
+	bbox	62 28 73 27
+	offset	94 54
+	drawmethod	scale 0.8 0.8
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea05.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	@cmd	velo001	-2 0 0
+	offset	56 87
+	bbox	37 36 36 51
+	drawmethod	scale 0.5 0.5
+	frame	data/chars/beastboy/g1.gif
+		
+anim	run
+	loop	1
+	delay	6
+	bbox	62 28 73 27
+	offset	94 54
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/0Nave/bea01.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea02.gif
+	frame	data/chars/0Nave/bea03.gif
+	frame	data/chars/0Nave/bea04.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea05.gif
+		
+anim	runattack
+	loop	0
+	delay	8
+	landframe	2
+	jumpframe	0 2 4 0
+	drawmethod	scale 0.7 0.7
+	hitfx	data/sounds/clawhit.wav
+	sound	data/sounds/vuu3.wav
+	attack	62 29 66 22 30 0 0 0 5 0
+	offset	95 60
+	frame	data/chars/0Nave/bea06.gif
+	delay	555
+	frame	data/chars/0Nave/bea07.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	62 28 73 27
+	offset	94 54
+	delay	8
+	sound	data/sounds/run2.wav
+	frame	data/chars/0Nave/bea05.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	62 28 73 27
+	offset	94 54
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/0Nave/bea05.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	7
+	bbox	62 28 73 27
+	offset	94 54
+	drawmethod	scale 0.7 0.7
+	frame	data/chars/0Nave/bea01.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea02.gif
+	frame	data/chars/0Nave/bea03.gif
+	frame	data/chars/0Nave/bea04.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/bea05.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -66,6 +66,7 @@ know    dutch       data/chars/dutch/dutch.txt
 know    k           data/chars/k/k.txt
 know    Mary        data/chars/Mary/Mary.txt
 know    metalgear   data/chars/metalgear/metalgear.txt
+know    Linn        data/chars/linn/linn.txt
 
 know robot   data/chars/robot/robot.txt
 
@@ -107,3 +108,26 @@ load wb2     data/chars/wybu1/wb2.txt
 
 know blackScreen data/chars/misc/blackscreen.txt
 
+
+# Bonus
+know	BonusLinn	data/chars/0Bonus/BonusLinn.txt
+know	BonusAtLinn	data/chars/0Bonus/BonusAtLinn.txt
+know	BonusDutch	data/chars/0Bonus/BonusDutch.txt
+know	BonusAtDutch	data/chars/0Bonus/BonusAtDutch.txt
+know	BonusPreda	data/chars/0Bonus/BonusPreda.txt
+
+know	SuperCyTiroP	data/chars/CySuper/SuperCyTiroP.txt
+
+#corrida
+know	avpRun		data/chars/0Bonus/avpRun.txt
+know	PredaRun	data/chars/0nave/PredaRun.txt
+know	LinnRun		data/chars/0nave/LinnRun.txt
+know	LinnRio		data/chars/0nave/LinnRio.txt
+know	DutchRun	data/chars/0nave/DutchRun.txt
+know	DutchRio	data/chars/0nave/DutchRio.txt
+know	cytiro		data/chars/0nave/CyTiro.txt
+know	stomp2		data/chars/steel/stomp2.txt
+know	LoboBala	data/chars/0nave/LoboBala.txt
+know	BalaLinn	data/chars/Linn/BalaLinn.txt
+know	BalaHQ		data/chars/HQuinn/BalaHQ.txt
+know	cartucho	data/chars/dead/cartucho.txt

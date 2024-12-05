@@ -1,0 +1,231 @@
+
+
+
+name GAJet
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+icon	data/chars/ga/portrait2.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 3
+
+load flechaMoto
+Knife flechaMoto
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/ga/nome.gif -37 -60
+parrow2		data/chars/ga/nome.gif -37 -60
+
+palette       data/chars/ga/00ga.gif
+alternatepal  data/chars/ga/00ga2.gif
+alternatepal  data/chars/ga/00ga3.gif
+alternatepal  data/chars/ga/00ga4.gif
+alternatepal  data/chars/ga/00ga5.gif
+alternatepal  data/chars/ga/00ga6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	bbox	23 36 52 29
+	offset	48 64
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga10.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga11.gif
+	sound	data/chars/ga/flecha.wav
+	@cmd	shoot "flechamoto" 15 22 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga7.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	bbox	30 36 39 28
+	offset	48 64
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/0Nave/ga9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ga9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ga9.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ga9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ga9.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ga9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ga9.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	23 36 52 29
+	offset	48 64
+	frame	data/chars/0Nave/ga8.gif
+	frame	data/chars/0Nave/ga7.gif
+	frame	data/chars/0Nave/ga6.gif
+		
+anim	jump
+	loop	0
+	delay	5
+	bbox	23 36 52 29
+	offset	48 64
+	frame	data/chars/0Nave/ga9.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	23 36 52 29
+	offset	48 64
+	frame	data/chars/0Nave/ga8.gif
+	frame	data/chars/0Nave/ga7.gif
+	frame	data/chars/0Nave/ga6.gif
+		
+anim	runattack
+	loop	0
+	delay	7
+	bbox	23 36 52 29
+	offset	48 64
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga10.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga11.gif
+	sound	data/chars/ga/flecha.wav
+	@cmd	shoot "flechamoto" 15 22 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ga7.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	5
+	bbox	23 36 52 29
+	offset	48 64
+	frame	data/chars/0Nave/ga9.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	23 36 52 29
+	offset	48 64
+	frame	data/chars/0Nave/ga8.gif
+	frame	data/chars/0Nave/ga7.gif
+	frame	data/chars/0Nave/ga6.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,61 @@
+name	HQbazoka
+speed       40
+type	     none
+shadow	     0
+candamage enemy obstacle
+jumpheight 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	burn	9 34 148 63 55 9 0 0 0 30
+	loop	0
+	delay	7
+	offset	40 89
+	hitflash	flash2
+	sound	data/sounds/explode.wav
+	frame	data/chars/HQuinn/qq1.gif
+	frame	data/chars/HQuinn/qq2.gif
+	frame	data/chars/HQuinn/qq3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/HQuinn/qq4.gif
+	frame	data/chars/HQuinn/qq5.gif
+	frame	data/chars/HQuinn/qq6.gif
+	frame	data/chars/HQuinn/qq7.gif
+	frame	data/chars/HQuinn/qq8.gif
+		
+anim	attack2
+	loop	0
+	hitflash	flashBomba
+	delay	5
+	offset	-23 43
+	frame	data/chars/HQuinn/rr18.gif
+	sound	data/sounds/explode.wav
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	bbox	4 0 32 39
+	hitfx	data/sounds/explode.wav
+	hitflash	flashBomba
+	burn	3 -1 33 40 55 9 0 0 0 30
+	loop	0
+	delay	5
+	offset	-23 43
+	frame	data/chars/HQuinn/rr18.gif
+		
+#|edited by openBor Stats v 0.51
+		

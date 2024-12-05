@@ -1,0 +1,165 @@
+name TankDark
+health 700
+speed 3
+type	enemy
+gfxshadow 1 3
+antigrab 100
+hostile player npc
+candamage player npc
+diesound data/sounds/dierobot2.wav
+nodrop 2
+death 1
+nodieblink 2
+subject_to_screen 1
+antigrab  999
+aggression 999
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+nopain 1
+aimove chasex
+aimove avoidz
+
+
+
+
+load TankDarkTiro
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	100 450
+	delay	9
+	offset	54 99
+	bbox	40 41 28 55
+	frame	data/chars/0nave/da1.gif
+	frame	data/chars/0nave/da2.gif
+	@cmd	shoot "TankDarkTiro" -11 55 2
+	sound	data/chars/zwolf/draio.wav
+	frame	data/chars/0nave/da3.gif
+	frame	data/chars/0nave/da1.gif
+		
+anim	death
+	loop	0
+	delay	8
+	offset	54 101
+	frame	data/chars/0nave/da4.gif
+	offset	54 102
+	sound	data/sounds/0loki2.wav
+	frame	data/chars/0nave/da5.gif
+	offset	54 96
+	frame	data/chars/0nave/da6.gif
+	offset	53 99
+	frame	data/chars/0nave/da7.gif
+	offset	47 95
+	frame	data/chars/0nave/da8.gif
+	offset	52 93
+	frame	data/chars/0nave/da9.gif
+	offset	56 99
+	frame	data/chars/0nave/da10.gif
+	offset	57 99
+	frame	data/chars/0nave/da11.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	fall
+	loop	0
+	delay	5
+	offset	54 99
+	bbox	40 41 28 55
+	frame	data/chars/0nave/da1.gif
+		
+anim	idle
+	loop	1
+	delay	12
+	offset	54 99
+	bbox	40 41 28 55
+	frame	data/chars/0nave/da1.gif
+		
+anim	pain
+	loop	0
+	delay	5
+	offset	54 99
+	bbox	40 41 28 55
+	frame	data/chars/0nave/da1.gif
+		
+anim	rise
+	loop	0
+	delay	5
+	offset	54 99
+	bbox	40 41 28 55
+	frame	data/chars/0nave/da1.gif
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	54 99
+	bbox	40 41 28 55
+	sound	data/chars/zwolf/d4.wav
+	frame	data/chars/0nave/da1.gif
+		
+anim	walk
+	loop	1
+	delay	12
+	offset	54 99
+	bbox	40 41 28 55
+	frame	data/chars/0nave/da1.gif
+		
+#|edited by openBor Stats v 0.51
+		

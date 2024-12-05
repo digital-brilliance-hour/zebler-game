@@ -1,0 +1,313 @@
+
+
+
+name redtRun
+health	300
+speed 26
+type	none
+gfxshadow 1 3
+icon	data/chars/redtornado/portrait.gif 1
+diesound data/chars/redtornado/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load redtRuntiro
+
+atchain 1
+running 43 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/redtornado/nome.gif -37 -60
+parrow2		data/chars/redtornado/nome.gif -37 -60
+
+palette       data/chars/redtornado/00red1.gif
+alternatepal  data/chars/redtornado/00red2.gif
+alternatepal  data/chars/redtornado/00red3.gif
+alternatepal  data/chars/redtornado/00red4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt3.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/punch.wav
+	@cmd	shoot "redtRuntiro" 14 1 2
+	frame	data/chars/0Nave/rt4.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rt5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rt6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rt2.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+	frame	data/chars/0Nave/rt2.gif
+	frame	data/chars/0Nave/rt3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	57 70
+	frame	data/chars/0Nave/rt7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rt7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rt7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rt7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rt7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rt7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rt7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-8 0 0
+	drawmethod	flipx 1
+	offset	60 70
+	bbox	43 32 39 27
+	attack	43 32 38 27 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rt8.gif
+		
+anim	freespecial14
+	loop	1
+	delay	6
+	dive	1 0.1
+	bbox	38 32 36 38
+	offset	52 74
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rt1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rt2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rt3.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	27 24 37 31
+	offset	46 64
+	dive	4 4
+	attack	47 30 27 32 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rt11.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+	frame	data/chars/0Nave/rt2.gif
+	frame	data/chars/0Nave/rt3.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	bbox	33 29 31 38
+	offset	47 74
+	frame	data/chars/0Nave/rt9.gif
+	frame	data/chars/0Nave/rt10.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	27 24 37 31
+	offset	46 64
+	dive	4 4
+	attack	47 30 27 32 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rt11.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+	frame	data/chars/0Nave/rt2.gif
+	frame	data/chars/0Nave/rt3.gif
+		
+anim	runattack
+	loop	0
+	delay	15
+	offset	60 70
+	@cmd	velo001	12 0 0
+	bbox	43 32 39 27
+	attack	43 32 38 27 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rt8.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+	frame	data/chars/0Nave/rt2.gif
+	frame	data/chars/0Nave/rt3.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	38 32 36 38
+	offset	52 74
+	frame	data/chars/0Nave/rt1.gif
+		
+#|edited by openBor Stats v 0.51
+		

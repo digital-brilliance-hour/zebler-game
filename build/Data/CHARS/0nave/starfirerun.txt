@@ -1,0 +1,314 @@
+
+
+
+name StarfireRun
+health	300
+speed 22
+type	none
+gfxshadow 1 3
+icon	data/chars/starfire/portraitB.gif 1
+diesound data/chars/starfire/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load StarfireRunTiro
+
+atchain 1
+running 40 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/starfire/nome.gif -37 -60
+parrow2		data/chars/starfire/nome.gif -37 -60
+
+palette       data/chars/Starfire/00pal1.gif
+alternatepal  data/chars/Starfire/00pal2.gif
+alternatepal  data/chars/Starfire/00pal3.gif
+alternatepal  data/chars/Starfire/00pal4.gif
+alternatepal  data/chars/Starfire/00pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	39 16 41 31
+	offset	61 60
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/sf4.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/starfire/raio.wav
+	@cmd	shoot "StarfireRunTiro" 14 30 2
+	frame	data/chars/0Nave/sf5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/sf6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/sf3.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf1.gif
+	frame	data/chars/0Nave/sf2.gif
+	frame	data/chars/0Nave/sf3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	36 51
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/sf13.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/sf13.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/sf13.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/sf13.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/sf13.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/sf13.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/sf13.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-6 0 0
+	drawmethod	flipx 1
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	bbox	39 16 41 31
+	offset	61 60
+	attack	49 18 33 22 25 0 0 0 5 0
+	frame	data/chars/0Nave/sf5.gif
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	bbox	20 5 22 37
+	offset	32 58
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	loop	1
+	frame	data/chars/0Nave/sf12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/sf12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/sf12.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	21 10 27 31
+	offset	36 59
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	38 24 28 18 15 0 0 0 5 0
+	frame	data/chars/0Nave/sf14.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf1.gif
+	frame	data/chars/0Nave/sf2.gif
+	frame	data/chars/0Nave/sf3.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	bbox	24 10 21 35
+	offset	34 64
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	frame	data/chars/0Nave/sf9.gif
+	delay	11
+	frame	data/chars/0Nave/sf10.gif
+	frame	data/chars/0Nave/sf11.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	23 9 25 31
+	offset	37 59
+	dive	4 4
+	attack	39 27 27 16 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/sf14.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf3.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf1.gif
+	frame	data/chars/0Nave/sf2.gif
+	frame	data/chars/0Nave/sf3.gif
+		
+anim	runattack
+	loop	0
+	delay	15
+	@cmd	velo001	9 0 0
+	bbox	39 16 41 31
+	offset	61 60
+	attack	58 20 36 19 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/sf4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf1.gif
+	frame	data/chars/0Nave/sf2.gif
+	frame	data/chars/0Nave/sf3.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	39 16 41 31
+	offset	61 60
+	frame	data/chars/0Nave/sf1.gif
+		
+#|edited by openBor Stats v 0.51
+		

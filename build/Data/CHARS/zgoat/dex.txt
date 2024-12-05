@@ -1,0 +1,249 @@
+name dex
+health	150
+speed 25
+type	enemy
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 20
+hostile player npc
+candamage player npc obstacle
+antigrab  99
+aggression 999
+blockodds 1
+diesound    data/chars/zgoat/CATMORTE.WAV
+throw 3 2
+aimove chase
+knockdowncount -1
+jugglepoints 4
+falldie 2
+
+
+
+throw 3 3
+
+fmap 1
+palette       data/chars/zgoat/dex1.gif
+alternatepal  data/chars/zgoat/dex1gelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 100
+	delay	8
+	offset	59 108
+	bbox	37 27 49 32
+	hitflash	flashVermelho
+	frame	data/chars/zgoat/dex4.gif
+	sound	data/chars/zgoat/CAT1.WAV
+	attack	77 29 44 25 10 5 0 0 0 0
+	frame	data/chars/zgoat/dex6.gif
+	attack	87 29 78 25 10 5 0 0 0 0
+	frame	data/chars/zgoat/dex7.gif
+	attack	91 29 75 25 10 5 0 0 0 0
+	frame	data/chars/zgoat/dex8.gif
+	attack	89 29 81 25 10 5 0 0 0 0
+	frame	data/chars/zgoat/dex9.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/dex10.gif
+	frame	data/chars/zgoat/dex11.gif
+	frame	data/chars/zgoat/dex12.gif
+	delay	20
+	frame	data/chars/zgoat/dex4.gif
+		
+anim	fall
+	loop	0
+	delay	9
+	landframe	7
+	offset	59 108
+	bbox	33 29 48 40
+	frame	data/chars/zgoat/dex3.gif
+	offset	59 100
+	frame	data/chars/zgoat/dex3.gif
+	offset	59 92
+	frame	data/chars/zgoat/dex3.gif
+	offset	59 84
+	frame	data/chars/zgoat/dex3.gif
+	offset	59 76
+	frame	data/chars/zgoat/dex3.gif
+	offset	59 68
+	frame	data/chars/zgoat/dex3.gif
+	offset	59 60
+	delay	500
+	frame	data/chars/zgoat/dex3.gif
+	bbox	33 29 0 0
+	delay	10
+	offset	59 53
+	frame	data/chars/zgoat/dex4.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	59 108
+	bbox	33 29 48 40
+	frame	data/chars/zgoat/dex1.gif
+	offset	59 109
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 110
+	frame	data/chars/zgoat/dex1.gif
+	offset	59 109
+	frame	data/chars/zgoat/dex2.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	offset	59 108
+	bbox	33 29 48 40
+	frame	data/chars/zgoat/dex3.gif
+		
+anim	pain
+	loop	0
+	delay	25
+	offset	59 108
+	bbox	33 29 48 40
+	frame	data/chars/zgoat/dex3.gif
+		
+anim	rise
+	loop	0
+	delay	55
+	offset	53 55
+	frame	data/chars/zgoat/dex5.gif
+	delay	6
+	offset	59 62
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 70
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 78
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 86
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 92
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 100
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 109
+	frame	data/chars/zgoat/dex2.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	59 108
+	bbox	33 29 48 40
+	frame	data/chars/zgoat/dex1.gif
+	offset	59 109
+	frame	data/chars/zgoat/dex2.gif
+	offset	59 110
+	frame	data/chars/zgoat/dex1.gif
+	offset	59 109
+	frame	data/chars/zgoat/dex2.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	59 108
+	bbox	33 29 48 40
+	frame	data/chars/zgoat/dex3.gif
+		
+#|edited by openBor Stats v 0.51
+		

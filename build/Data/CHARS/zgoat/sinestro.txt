@@ -1,0 +1,393 @@
+name Sinestro
+health	700
+speed 14
+type	enemy
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 60
+hostile player npc
+candamage player npc obstacle
+antigrab  8
+blockodds 3
+diesound data/sounds/die6.wav
+throw 3 2
+knockdowncount 6
+jugglepoints 6
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+
+load SuperCyTiro
+load balaPA
+knife balaPA
+
+throw 3 3
+
+fmap 2
+palette       data/chars/zgoat/sinestro01.gif
+alternatepal  data/chars/zgoat/sinestro02.gif
+alternatepal  data/chars/zgoat/si01gelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 80
+	hitfx	data/sounds/beat2.wav
+	delay	10
+	offset	28 81
+	bbox	6 0 29 81
+	frame	data/chars/zgoat/si18.gif
+	offset	37 81
+	bbox	25 0 39 63
+	sound	data/sounds/punch2.wav
+	attack	32 3 52 24 20 10 0 0 0 0
+	bbox	25 0 39 63
+	dropv	2 5
+	delay	18
+	@cmd	velo001	3 0 0
+	frame	data/chars/zgoat/si30.gif
+	attack	40 3 52 24 20 10 0 0 0 0
+	dropv	2 5
+	offset	45 81
+	bbox	32 0 39 63
+	frame	data/chars/zgoat/si31.gif
+	@cmd	velo001	0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	12
+	offset	31 81
+	bbox	18 0 39 63
+	frame	data/chars/zgoat/si32.gif
+	offset	36 84
+	bbox	12 0 43 82
+	frame	data/chars/zgoat/si17.gif
+		
+anim	attack2
+	loop	0
+	range	100 250
+	delay	11
+	offset	36 82
+	bbox	8 1 44 81
+	@script
+	void self = getlocalvar("self");
+        if (frame==2 || frame==3 || frame==4){
+            int Map = getentityproperty(self, "map");
+            if(Map==1){
+	    shoot("SuperCyTiro", 10, 50, 0);
+	    }
+            if(Map==0){
+	    shoot("balaPA", 10, 50, 0);
+	    }
+ 	}
+	@end_script	
+	frame	data/chars/zgoat/si35.gif
+	offset	48 95
+	bbox	23 14 43 81
+	frame	data/chars/zgoat/si34.gif
+	sound	data/sounds/cabletiro.wav
+	frame	data/chars/zgoat/si34.gif
+	sound	data/sounds/cabletiro.wav
+	frame	data/chars/zgoat/si34.gif
+	sound	data/sounds/cabletiro.wav
+	frame	data/chars/zgoat/si34.gif
+	frame	data/chars/zgoat/si34.gif
+	bbox	4 0 51 82
+	offset	33 83
+	frame	data/chars/zgoat/si02.gif
+		
+anim	attack3
+	loop	0
+	range	250 450
+	hitfx	data/sounds/beat2.wav
+	landframe	10
+	jumpframe	0 4 6 0
+	sound	data/sounds/vuu3.wav
+	delay	8
+	offset	76 55
+	attack	54 1 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si21.gif
+	offset	76 67
+	attack	54 13 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si22.gif
+	offset	99 82
+	attack	80 28 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si23.gif
+	offset	99 83
+	attack	82 29 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si24.gif
+	offset	99 86
+	attack	82 31 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si25.gif
+	offset	99 88
+	attack	73 36 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si26.gif
+	offset	99 89
+	attack	67 34 87 45 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/si27.gif
+	offset	87 92
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/si28.gif
+	offset	87 92
+	frame	data/chars/zgoat/si29.gif
+	offset	56 55
+	delay	555
+	frame	data/chars/zgoat/si19.gif
+	delay	9
+	offset	28 66
+	frame	data/chars/zgoat/si16.gif
+		
+anim	block
+	loop	0
+	delay	8
+	offset	43 87
+	bbox	21 2 54 84
+	frame	data/chars/zgoat/si33a.gif
+	frame	data/chars/zgoat/si33b.gif
+	frame	data/chars/zgoat/si33c.gif
+	offset	31 84
+	bbox	9 1 36 83
+	frame	data/chars/zgoat/si33.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	offset	37 83
+	bbox	13 0 39 84
+	frame	data/chars/zgoat/si12.gif
+	bbox	4 0 57 41
+	offset	28 59
+	frame	data/chars/zgoat/si13.gif
+	offset	28 48
+	delay	500
+	frame	data/chars/zgoat/si13.gif
+	offset	56 59
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	46 53
+	frame	data/chars/zgoat/si14.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	29 25
+	frame	data/chars/zgoat/si13.gif
+		
+anim	grabbed
+	loop	0
+	delay	25
+	offset	32 94
+	bbox	11 0 42 82
+	frame	data/chars/zgoat/si12.gif
+		
+anim	idle
+	loop	1
+	delay	16
+	offset	35 82
+	bbox	4 0 51 82
+	frame	data/chars/zgoat/si01.gif
+	offset	33 83
+	frame	data/chars/zgoat/si02.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	offset	36 84
+	bbox	12 0 43 82
+	frame	data/chars/zgoat/si17.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	offset	37 83
+	bbox	13 0 39 84
+	frame	data/chars/zgoat/si12.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	29 25
+	frame	data/chars/zgoat/si13.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	46 53
+	frame	data/chars/zgoat/si14.gif
+	offset	36 45
+	frame	data/chars/zgoat/si15.gif
+	offset	28 66
+	frame	data/chars/zgoat/si16.gif
+		
+anim	riseattack1
+	loop	0
+	range	0 80
+	hitfx	data/sounds/beat2.wav
+	delay	7
+	offset	36 45
+	frame	data/chars/zgoat/si15.gif
+	offset	44 65
+	frame	data/chars/zgoat/si36.gif
+	offset	52 65
+	frame	data/chars/zgoat/si37.gif
+	offset	62 65
+	frame	data/chars/zgoat/si38.gif
+	offset	68 79
+	sound	data/sounds/punch2.wav
+	attack	0 2 130 60 20 10 1 0 0 0
+	dropv	5 2
+	frame	data/chars/zgoat/si39.gif
+	offset	71 105
+	frame	data/chars/zgoat/si40.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	38 106
+	frame	data/chars/zgoat/si41.gif
+	offset	43 102
+	frame	data/chars/zgoat/si42.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	33 84
+	bbox	10 0 33 82
+	frame	data/chars/zgoat/si04.gif
+	offset	25 85
+	bbox	5 0 27 82
+	frame	data/chars/zgoat/si05.gif
+	offset	31 84
+	bbox	10 0 33 82
+	frame	data/chars/zgoat/si06.gif
+	offset	34 83
+	frame	data/chars/zgoat/si07.gif
+	offset	33 84
+	frame	data/chars/zgoat/si08.gif
+	offset	26 85
+	frame	data/chars/zgoat/si09.gif
+	offset	31 84
+	frame	data/chars/zgoat/si10.gif
+	offset	34 83
+	frame	data/chars/zgoat/si11.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	36 84
+	bbox	12 0 43 82
+	frame	data/chars/zgoat/si17.gif
+		
+#|edited by openBor Stats v 0.51
+		

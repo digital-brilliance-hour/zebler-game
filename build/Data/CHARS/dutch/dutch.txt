@@ -568,6 +568,7 @@ load stomp2
 
 
 
+
 anim	attack1
 	loop	0
 	delay	6
@@ -673,20 +674,6 @@ anim	duckattack
 	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Dutch/da2.gif
 	frame	data/chars/Dutch/da1.gif
-		
-anim	ducking
-	loop	0
-	delay	6
-	bbox	35 26 51 74
-	offset	61 100
-	frame	data/chars/Dutch/i1.gif
-		
-anim	duckrise
-	loop	0
-	delay	6
-	bbox	35 26 51 74
-	offset	61 100
-	frame	data/chars/Dutch/i1.gif
 		
 anim	fall
 	loop	0
@@ -1474,8 +1461,6 @@ anim	jump
 	@cmd	wallAttack "ANI_FOLLOW4"
 	@cmd	keymove 2 0
 	frame	data/chars/Dutch/j1.gif
-		
-anim	jumpattack
 		
 anim	jumpland
 	loop	0

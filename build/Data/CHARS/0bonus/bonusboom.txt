@@ -1,0 +1,177 @@
+
+
+
+name BonusBoom
+health	300
+speed 28
+type	none
+gfxshadow 1 3
+diesound data/chars/boom/morte.wav
+icon	data/chars/boom/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  31 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/boom/nome.gif -37 -60
+parrow2		data/chars/boom/nome.gif -37 -60
+
+palette       data/chars/boom/pal1.gif
+alternatepal  data/chars/boom/pal2.gif
+alternatepal  data/chars/boom/pal3.gif
+alternatepal  data/chars/boom/pal4.gif
+alternatepal  data/chars/boom/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	81 93
+	bbox	50 30 69 63
+	attack	34 47 103 45 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/boom/boom01.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom02.gif
+	frame	data/chars/boom/boom01.gif
+	frame	data/chars/boom/boom02.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	4
+	offset	81 93
+	bbox	50 30 69 63
+	attack	34 47 103 45 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/boom/boom01.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom02.gif
+	frame	data/chars/boom/boom01.gif
+	frame	data/chars/boom/boom02.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	81 93
+	frame	data/chars/boom/boom01.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	4
+	offset	81 93
+	bbox	50 30 69 63
+	attack	34 47 103 45 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/boom/boom01.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom02.gif
+	frame	data/chars/boom/boom01.gif
+	frame	data/chars/boom/boom02.gif
+		
+#|edited by openBor Stats v 0.51
+		

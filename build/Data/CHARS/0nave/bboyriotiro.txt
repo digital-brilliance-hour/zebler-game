@@ -1,0 +1,48 @@
+name BBoyRioTiro
+speed        20
+type	     none
+shadow	     0
+remove 0
+candamage enemy obstacle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	6
+	sound	data/sounds/agua2.wav
+	attack	80 35 35 51 20 9 0 0 0 15
+	offset	94 83
+	frame	data/chars/0nave/octo04.gif
+	frame	data/chars/0nave/octo05.gif
+	frame	data/chars/0nave/octo06.gif
+	frame	data/chars/0nave/octo04.gif
+	frame	data/chars/0nave/octo05.gif
+	frame	data/chars/0nave/octo06.gif
+	frame	data/chars/0nave/octo07.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0nave/octo08.gif
+	frame	data/chars/0nave/octo09.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

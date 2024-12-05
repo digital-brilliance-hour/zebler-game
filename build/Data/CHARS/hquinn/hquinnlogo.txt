@@ -1,0 +1,36 @@
+name	HquinnLogo
+speed        0
+facing 1
+type	     none
+setlayer 1
+shadow	     0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	4
+	offset	37 32
+	frame	data/chars/hquinn/nome.gif
+		
+#|edited by openBor Stats v 0.51
+		

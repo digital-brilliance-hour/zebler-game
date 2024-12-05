@@ -1,0 +1,353 @@
+
+
+
+name HawkmanRun
+health	300
+speed 26
+type	none
+gfxshadow 1 3
+icon	data/chars/Hawkman/portrait.gif 1
+diesound data/chars/Hawkman/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load flechaMoto
+Knife flechaMoto
+
+atchain 1
+running 43 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/Hawkman/nome.gif -37 -60
+parrow2		data/chars/Hawkman/nome.gif -37 -60
+
+palette       data/chars/hawkman/pal1.gif
+alternatepal  data/chars/hawkman/pal2.gif
+alternatepal  data/chars/hawkman/pal3.gif
+alternatepal  data/chars/hawkman/pal4.gif
+alternatepal  data/chars/hawkman/pal5.gif
+alternatepal  data/chars/hawkman/pal6.gif
+alternatepal  data/chars/hawkman/pal7.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	bbox	60 65 25 42
+	offset	73 112
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham04.gif
+	offset	73 113
+	@cmd	keymove 2 0.6
+	sound	data/chars/ga/flecha.wav
+	@cmd	shoot "flechamoto" 19 40 2
+	frame	data/chars/0Nave/ham01.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham02.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham03.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/ga/flecha.wav
+	@cmd	shoot "flechamoto" 19 41 2
+	frame	data/chars/0Nave/ham04.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham05.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham06.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+	offset	73 113
+	frame	data/chars/0Nave/ham01.gif
+	frame	data/chars/0Nave/ham02.gif
+	frame	data/chars/0Nave/ham03.gif
+	frame	data/chars/0Nave/ham04.gif
+	frame	data/chars/0Nave/ham05.gif
+	frame	data/chars/0Nave/ham06.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	72 115
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/ham07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ham07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ham07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ham07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ham07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ham07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ham07.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-6 0 0
+	drawmethod	flipx 1
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+		
+anim	freespecial14
+	loop	1
+	delay	6
+	dive	1 0.1
+	cancel	0 99 0 A freespecial2
+	bbox	67 53 27 47
+	offset	80 102
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham09.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham10.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham11.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham13.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ham14.gif
+		
+anim	freespecial2
+	loop	0
+	delay	4
+	bbox	69 53 26 40
+	offset	82 100
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/ham11.gif
+	bbox	59 69 36 25
+	offset	79 107
+	attack	74 76 30 20 15 0 0 0 5 0
+	frame	data/chars/0Nave/ham08.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+	offset	73 113
+	frame	data/chars/0Nave/ham01.gif
+	frame	data/chars/0Nave/ham02.gif
+	frame	data/chars/0Nave/ham03.gif
+	frame	data/chars/0Nave/ham04.gif
+	frame	data/chars/0Nave/ham05.gif
+	frame	data/chars/0Nave/ham06.gif
+		
+anim	jump
+	loop	0
+	delay	9
+	cancel	0 99 0 b A freespecial2
+	cancel	2 99 0 j freespecial14
+	bbox	69 54 26 39
+	offset	83 99
+	frame	data/chars/0Nave/ham12.gif
+	frame	data/chars/0Nave/ham13.gif
+	frame	data/chars/0Nave/ham14.gif
+	frame	data/chars/0Nave/ham12.gif
+	frame	data/chars/0Nave/ham09.gif
+	frame	data/chars/0Nave/ham10.gif
+		
+anim	jumpattack
+	loop	0
+	delay	4
+	bbox	69 53 26 40
+	offset	82 100
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/ham11.gif
+	bbox	59 69 36 25
+	offset	79 107
+	attack	74 76 30 20 15 0 0 0 5 0
+	frame	data/chars/0Nave/ham08.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+		
+anim	run
+	loop	1
+	delay	6
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+	offset	73 113
+	frame	data/chars/0Nave/ham01.gif
+	frame	data/chars/0Nave/ham02.gif
+	frame	data/chars/0Nave/ham03.gif
+	frame	data/chars/0Nave/ham04.gif
+	frame	data/chars/0Nave/ham05.gif
+	frame	data/chars/0Nave/ham06.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+	offset	73 113
+	frame	data/chars/0Nave/ham01.gif
+	frame	data/chars/0Nave/ham02.gif
+	frame	data/chars/0Nave/ham03.gif
+	frame	data/chars/0Nave/ham04.gif
+	frame	data/chars/0Nave/ham05.gif
+	frame	data/chars/0Nave/ham06.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	60 65 25 42
+	offset	73 112
+	frame	data/chars/0Nave/ham04.gif
+		
+#|edited by openBor Stats v 0.51
+		

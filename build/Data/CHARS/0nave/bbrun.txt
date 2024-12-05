@@ -1,0 +1,328 @@
+
+
+
+name BBRun
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+icon	data/chars/bb/portrait.gif 1
+diesound data/chars/bb/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 3
+jumpmove 3 3
+
+
+load cytiro
+
+atchain 1
+running 24 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+
+palette       data/chars/bb/pal1.gif
+alternatepal  data/chars/bb/pal2.gif
+alternatepal  data/chars/bb/pal3.gif
+alternatepal  data/chars/bb/pal4.gif
+alternatepal  data/chars/bb/pal5.gif
+
+
+parrow		data/chars/bb/nome.gif -37 -70
+parrow2		data/chars/bb/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	@cmd	keymove 2 0.6
+	@cmd	shoot "cytiro" 20 32 2
+	sound	data/chars/cyborg/missil.wav
+	frame	data/chars/bb/bb2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/bb/bb3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/bb/bb2.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	frame	data/chars/bb/bb2.gif
+	frame	data/chars/bb/bb3.gif
+	frame	data/chars/bb/bb2.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	63 74
+	frame	data/chars/bb/bb5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/bb/bb5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/bb/bb5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/bb/bb5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/bb/bb5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/bb/bb5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/bb/bb5.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	5
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+	offset	63 80
+	frame	data/chars/bb/bb3.gif
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	fastattack	1
+	delay	4
+	bbox	49 31 23 39
+	offset	63 74
+	frame	data/chars/bb/bb5.gif
+	@cmd	velo001	-5 0 0
+	delay	24
+	frame	data/chars/bb/bb5.gif
+	delay	4
+	@cmd	velo001	0 0 0
+	frame	data/chars/bb/bb5.gif
+		
+anim	freespecial2
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+	offset	63 80
+	frame	data/chars/bb/bb3.gif
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+		
+anim	jump
+	loop	0
+	delay	26
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb2.gif
+		
+anim	jumpattack
+	loop	1
+	delay	5
+	offset	64 76
+	dive	4 1
+	bbox	49 38 27 31
+	attack	50 39 25 30 15 0 0 0 5 0
+	frame	data/chars/bb/bb4.gif
+	frame	data/chars/bb/bb4.gif
+		
+anim	jumpland
+	loop	0
+	delay	5
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb2.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	@cmd	keymove 2 0.6
+	@cmd	shoot "cytiro" 20 32 2
+	sound	data/chars/cyborg/missil.wav
+	frame	data/chars/bb/bb2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/bb/bb3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/bb/bb2.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	@cmd	velo001	-1 0 0
+	bbox	52 32 23 39
+	offset	63 74
+	frame	data/chars/bb/bb5.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	frame	data/chars/bb/bb2.gif
+	frame	data/chars/bb/bb3.gif
+	frame	data/chars/bb/bb2.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	49 36 23 39
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	5
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+	offset	63 80
+	frame	data/chars/bb/bb3.gif
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	49 36 23 39
+	offset	63 78
+	frame	data/chars/bb/bb1.gif
+	frame	data/chars/bb/bb2.gif
+	frame	data/chars/bb/bb3.gif
+	frame	data/chars/bb/bb2.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	offset	63 79
+	frame	data/chars/bb/bb2.gif
+		
+#|edited by openBor Stats v 0.51
+		

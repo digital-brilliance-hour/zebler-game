@@ -1,0 +1,49 @@
+
+
+name	tibum
+type	none
+shadow	0
+lifespan 1
+facing 1
+Antigravity 100
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	9
+	offset	74 97
+	@cmd	velo001	1 0 0
+	drawmethod	alpha 1
+	sound	data/chars/aquaman/tibum.wav
+	frame	data/chars/0nave/ag1.gif
+	delay	6
+	frame	data/chars/0nave/ag2.gif
+	frame	data/chars/0nave/ag3.gif
+	frame	data/chars/0nave/ag4.gif
+	frame	data/chars/0nave/ag5.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

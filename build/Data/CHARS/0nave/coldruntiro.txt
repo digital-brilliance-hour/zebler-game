@@ -1,0 +1,44 @@
+name ColdRunTiro
+speed        25
+type	     none
+shadow	     0
+subject_to_wall 1
+candamage enemy obstacle 
+
+
+palette       data/chars/cold/pal1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	6
+	hitflash	FlashGelo
+	attack	40 19 34 12 10 9 0 0 0 15
+	offset	33 26
+	frame	data/chars/cold/cold20.gif
+	frame	data/chars/cold/cold21.gif
+	frame	data/chars/cold/cold22.gif
+	frame	data/chars/cold/cold23.gif
+		
+#|edited by openBor Stats v 0.51
+		

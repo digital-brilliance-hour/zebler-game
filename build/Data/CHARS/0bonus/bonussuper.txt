@@ -1,0 +1,167 @@
+
+
+
+name BonusSuper
+health	300
+speed 42
+type	none
+gfxshadow 1 3
+diesound data/chars/superman/morte.wav
+icon	data/chars/superman/por.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  46 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/superman/nome.gif -37 -60
+parrow2		data/chars/superman/nome.gif -37 -60
+
+palette       data/chars/superman/0paleta.gif
+alternatepal  data/chars/superman/0paleta2.gif
+alternatepal  data/chars/superman/0paleta3.gif
+alternatepal  data/chars/superman/0paleta8.gif
+alternatepal  data/chars/superman/0paleta4.gif
+alternatepal  data/chars/superman/0paleta11.gif
+alternatepal  data/chars/superman/0paleta10.gif
+alternatepal  data/chars/superman/0paleta12.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	bbox	27 2 35 81
+	loop	1
+	delay	12
+	offset	44 98
+	attack	28 10 34 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/superman/w1.gif
+	offset	43 98
+	frame	data/chars/superman/w2.gif
+	offset	41 98
+	frame	data/chars/superman/w3.gif
+	offset	43 98
+	frame	data/chars/superman/w2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	4
+	offset	73 100
+	bbox	53 15 49 50
+	attack	54 20 59 44 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0Bonus/super1.gif
+	frame	data/chars/0Bonus/super2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	44 98
+	frame	data/chars/superman/w1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	4
+	offset	73 100
+	attack	54 20 59 44 110 9 0 0 10 0
+	forcedirection	-2
+	bbox	53 15 49 50
+	frame	data/chars/0Bonus/super1.gif
+	frame	data/chars/0Bonus/super2.gif
+		
+#|edited by openBor Stats v 0.51
+		

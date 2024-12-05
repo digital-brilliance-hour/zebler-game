@@ -11,17 +11,17 @@
 
 set	Stage_1
 
-z 190 260 0
+z       160 333 173
 file	data/levels/Stage1-1.txt
-z 135 280 0
+
+z       160 270 110
 file	data/levels/Stage1-2.txt
 next
 scene	data/scenes/ending.txt
 
 set Stage_2
 
-file	data/levels/Stage1-1.txt
-file	data/levels/Stage1-2.txt
+file	data/levels/Stage-2.txt
 next
 scene	data/scenes/ending.txt
 
@@ -33,3 +33,10 @@ file	data/levels/stage-3.txt
 
 set Story_1
 file 	data/levels/scenes/story1/story1.txt
+
+set Story_3
+file 	data/levels/scenes/story3/story3.txt
+
+set Story_2
+file 	data/levels/scenes/story2/story2.txt
+

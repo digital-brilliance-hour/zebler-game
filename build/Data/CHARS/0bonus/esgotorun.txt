@@ -1,0 +1,71 @@
+name EsgotoRun
+speed 0
+type	none
+gfxshadow 1 3
+facing 1
+lifespan 50
+setlayer 1
+offscreenkill 9999
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	8
+	@cmd	velo001	-2 0 0
+	offset	367 175
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+		
+anim	spawn
+	loop	1
+	delay	8
+	@cmd	velo001	-3 0 0
+	offset	367 175
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+	frame	data/chars/0Bonus/fundoEsgoto.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,232 @@
+
+
+
+name LeoRio
+health	300
+speed 10
+type	none
+gfxshadow 1 3
+icon	data/chars/leo/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 3
+
+load Batbomb
+Knife Batbomb
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/leo/nome.gif -37 -60
+parrow2		data/chars/leo/nome.gif -37 -60
+
+palette       data/chars/leo/00leo.gif
+alternatepal  data/chars/leo/00leo2.gif
+alternatepal  data/chars/leo/00leo3.gif
+alternatepal  data/chars/leo/00leo4.gif
+alternatepal  data/chars/leo/00leo5.gif
+alternatepal  data/chars/leo/00leo0.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	@cmd	keymove 2 0.6
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo8.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/leo9.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 15 22 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/leo10.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	70 62
+	frame	data/chars/0Nave/leo11.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/leo11.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/leo11.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/leo11.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/leo11.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/leo11.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/leo11.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo8.gif
+	frame	data/chars/0Nave/leo9.gif
+	frame	data/chars/0Nave/leo10.gif
+		
+anim	jump
+	loop	0
+	delay	5
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo11.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo8.gif
+	frame	data/chars/0Nave/leo9.gif
+	frame	data/chars/0Nave/leo10.gif
+		
+anim	runattack
+	loop	0
+	delay	6
+	@cmd	keymove 2 0.6
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo8.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/leo9.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 15 22 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/leo10.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	5
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo11.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	43 24 49 42
+	offset	70 62
+	frame	data/chars/0Nave/leo8.gif
+	frame	data/chars/0Nave/leo9.gif
+	frame	data/chars/0Nave/leo10.gif
+		
+#|edited by openBor Stats v 0.51
+		

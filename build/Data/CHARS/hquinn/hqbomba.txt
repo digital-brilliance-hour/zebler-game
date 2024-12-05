@@ -1,0 +1,49 @@
+name	HQBomba
+speed       0
+type	     none
+shadow	     0
+candamage enemy obstacle
+lifespan 3
+Antigravity 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	hitfx	
+	hitflash	flashFire
+	loop	0
+	delay	19
+	offset	88 75
+	frame	data/chars/HQuinn/bomb2.gif
+	delay	9
+	frame	data/chars/HQuinn/bomb3.gif
+	frame	data/chars/HQuinn/bomb4.gif
+	frame	data/chars/HQuinn/bomb5.gif
+	delay	5
+	sound	data/sounds/explode.wav
+	burn	50 34 73 40 25 9 0 0 0 15
+	frame	data/chars/HQuinn/bomb6.gif
+	frame	data/chars/HQuinn/bomb7.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/HQuinn/bomb8.gif
+	frame	data/chars/HQuinn/bomb9.gif
+	frame	data/chars/HQuinn/bomb10.gif
+	frame	data/chars/HQuinn/bomb11.gif
+	frame	data/chars/HQuinn/bomb12.gif
+	frame	data/chars/HQuinn/bomb13.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

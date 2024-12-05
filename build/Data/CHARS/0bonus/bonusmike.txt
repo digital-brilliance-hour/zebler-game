@@ -1,0 +1,194 @@
+
+
+
+name BonusMike
+health	300
+speed 14
+type	none
+gfxshadow 1 3
+icon	data/chars/Mike/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+atchain 1
+running  18 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+
+parrow		data/chars/mike/nome.gif -37 -60
+parrow2		data/chars/mike/nome.gif -37 -60
+
+palette       data/chars/mike/00mike1.gif
+alternatepal  data/chars/mike/00mike2.gif
+alternatepal  data/chars/mike/00mike3.gif
+alternatepal  data/chars/mike/00mike4.gif
+alternatepal  data/chars/mike/00mike5.gif
+alternatepal  data/chars/mike/00mike0.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	37 88 64 62
+	attack	35 85 67 68 110 9 0 0 10 0
+	forcedirection	-2
+	offset	72 160
+	frame	data/chars/mike/r5.gif
+	offset	72 162
+	frame	data/chars/mike/r6.gif
+	offset	72 164
+	frame	data/chars/mike/r5.gif
+	offset	72 166
+	frame	data/chars/mike/r6.gif
+	offset	72 164
+	frame	data/chars/mike/r5.gif
+	offset	72 162
+	frame	data/chars/mike/r6.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	8
+	bbox	37 88 64 62
+	attack	35 85 67 68 110 9 0 0 10 0
+	forcedirection	-2
+	offset	72 160
+	frame	data/chars/mike/r5.gif
+	offset	72 162
+	frame	data/chars/mike/r6.gif
+	offset	72 164
+	frame	data/chars/mike/r5.gif
+	offset	72 166
+	frame	data/chars/mike/r6.gif
+	offset	72 164
+	frame	data/chars/mike/r5.gif
+	offset	72 162
+	frame	data/chars/mike/r6.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	72 160
+	frame	data/chars/mike/r5.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	8
+	bbox	37 88 64 62
+	attack	35 85 67 68 110 9 0 0 10 0
+	forcedirection	-2
+	offset	72 160
+	frame	data/chars/mike/r5.gif
+	offset	72 162
+	frame	data/chars/mike/r6.gif
+	offset	72 164
+	frame	data/chars/mike/r5.gif
+	offset	72 166
+	frame	data/chars/mike/r6.gif
+	offset	72 164
+	frame	data/chars/mike/r5.gif
+	offset	72 162
+	frame	data/chars/mike/r6.gif
+		
+#|edited by openBor Stats v 0.51
+		

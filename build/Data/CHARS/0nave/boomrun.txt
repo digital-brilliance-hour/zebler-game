@@ -1,0 +1,242 @@
+
+
+
+name BoomRun
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+icon	data/chars/boom/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+load BoomRunTiro
+Knife BoomRunTiro
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/boom/nome.gif -37 -60
+parrow2		data/chars/boom/nome.gif -37 -60
+
+palette       data/chars/boom/pal1.gif
+alternatepal  data/chars/boom/pal2.gif
+alternatepal  data/chars/boom/pal3.gif
+alternatepal  data/chars/boom/pal4.gif
+alternatepal  data/chars/boom/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	bbox	34 20 52 35
+	offset	62 55
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/boom/boom12.gif
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/boom/boom13.gif
+	@cmd	keymove 1.6 0.6
+	sound	data/chars/batman/batrang.wav
+	@cmd	shoot "BoomRunTiro" 15 30 2
+	frame	data/chars/boom/boom14.gif
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/boom/boom15.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	34 20 52 35
+	offset	62 55
+	frame	data/chars/boom/boom10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom11.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/boom/boom11.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	62 55
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/boom/boom10.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/boom/boom10.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/boom/boom10.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	32
+	@cmd	velo001	-5 0 0
+	sound	data/sounds/freio.wav
+	bbox	34 20 52 35
+	offset	62 55
+	frame	data/chars/boom/boom11.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	34 20 52 35
+	offset	62 55
+	frame	data/chars/boom/boom10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom11.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/boom/boom11.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	34 20 52 35
+	offset	62 55
+	frame	data/chars/boom/boom10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom11.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/boom/boom11.gif
+		
+anim	runattack
+	loop	0
+	delay	7
+	bbox	34 20 52 35
+	offset	62 55
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/boom/boom12.gif
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/boom/boom13.gif
+	@cmd	keymove 1.6 0.6
+	sound	data/chars/batman/batrang.wav
+	@cmd	shoot "BoomRunTiro" 15 30 2
+	frame	data/chars/boom/boom14.gif
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/boom/boom15.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	5
+	offset	62 55
+	frame	data/chars/boom/boom10.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	34 20 52 35
+	offset	62 55
+	frame	data/chars/boom/boom10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/boom/boom11.gif
+	frame	data/chars/boom/boom10.gif
+	frame	data/chars/boom/boom11.gif
+		
+#|edited by openBor Stats v 0.51
+		

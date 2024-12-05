@@ -1,0 +1,56 @@
+name	Hiena
+speed        18
+type	     npc
+gfxshadow 1 3
+candamage enemy obstacle
+hostile player
+jumpheight 0
+aimove Chase
+facing 1
+aggression 999
+subject_to_hole 0
+offscreenkill 100
+stealth 5 0
+
+
+palette       data/chars/hquinn/h1pal.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	idle
+	loop	1
+	delay	7
+	drawmethod	scale 0.75 0.75
+	offset	63 51
+	frame	data/chars/hquinn/h2.gif
+	offset	67 43
+	frame	data/chars/hquinn/h3.gif
+	offset	68 50
+	sound	data/sounds/run1.wav
+	frame	data/chars/hquinn/h4.gif
+	offset	65 46
+	frame	data/chars/hquinn/h5.gif
+		
+anim	spawn
+	loop	0
+	delay	9
+	offset	60 39
+	drawmethod	scale 0.75 0.75
+	frame	data/chars/hquinn/h1.gif
+		
+#|edited by openBor Stats v 0.51
+		

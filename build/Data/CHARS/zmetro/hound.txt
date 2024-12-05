@@ -1,0 +1,257 @@
+name Hound
+health	160
+speed 20
+type	enemy
+gfxshadow 1 3
+jumpheight 7
+hostile player npc
+candamage player npc obstacle
+antigrab  6
+aggression 100
+throw 3 2
+knockdowncount 6
+jugglepoints 4
+subject_to_screen 1
+falldie 2
+
+
+
+
+fmap 2
+palette       data/chars/zmetro/zz1pal.gif
+alternatepal  data/chars/zmetro/zz1.gif
+alternatepal  data/chars/zmetro/zz1palgelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 60
+	rangea	-30 30
+	hitfx	data/sounds/0knifehit.wav
+	delay	6
+	offset	65 131
+	bbox	40 35 57 97
+	frame	data/chars/zmetro/zz1.gif
+	delay	25
+	offset	65 124
+	bbox	43 21 52 105
+	frame	data/chars/zmetro/zz14.gif
+	sound	data/sounds/0knife.wav
+	attack	67 54 74 47 15 9 0 0 0 0
+	delay	9
+	frame	data/chars/zmetro/zz15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/zz16.gif
+	delay	35
+	offset	65 131
+	bbox	40 35 57 97
+	frame	data/chars/zmetro/zz1.gif
+		
+anim	backwalk
+	loop	1
+	delay	9
+	offset	69 132
+	bbox	45 46 57 76
+	drawmethod	256 256 1 0 0 0 -1 0 0 0
+	frame	data/chars/zmetro/zz2.gif
+	frame	data/chars/zmetro/zz3.gif
+	frame	data/chars/zmetro/zz4.gif
+	frame	data/chars/zmetro/zz5.gif
+	frame	data/chars/zmetro/zz6.gif
+	frame	data/chars/zmetro/zz7.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	attack	41 36 5 60 8 9 0 0 0 0
+	offset	56 120
+	bbox	34 20 45 101
+	frame	data/chars/zmetro/zz9.gif
+	attack	47 49 5 39 8 9 0 0 0 0
+	bbox	33 19 60 81
+	offset	60 119
+	frame	data/chars/zmetro/zz10.gif
+	offset	71 111
+	delay	500
+	frame	data/chars/zmetro/zz11.gif
+	offset	71 85
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zmetro/zz12.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	66 83
+	frame	data/chars/zmetro/zz11.gif
+		
+anim	grabbed
+	loop	0
+	delay	30
+	offset	63 130
+	bbox	37 23 50 102
+	frame	data/chars/zmetro/zz8.gif
+		
+anim	idle
+	loop	1
+	offset	65 131
+	bbox	40 35 57 97
+	delay	30
+	frame	data/chars/zmetro/zz1.gif
+		
+anim	jump
+	loop	0
+	delay	8
+	offset	64 135
+	bbox	44 44 53 77
+	delay	8
+	frame	data/chars/zmetro/zz2.gif
+		
+anim	jumpland
+	loop	0
+	sound	data/sounds/0pisada.wav
+	offset	68 86
+	bbox	41 21 53 66
+	delay	30
+	frame	data/chars/zmetro/zz13.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	offset	65 125
+	bbox	37 23 50 102
+	frame	data/chars/zmetro/zz8.gif
+	offset	66 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	65 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	66 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	65 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	66 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	65 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	66 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	65 125
+	frame	data/chars/zmetro/zz8.gif
+	offset	66 125
+	frame	data/chars/zmetro/zz8.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	66 83
+	frame	data/chars/zmetro/zz11.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	71 85
+	frame	data/chars/zmetro/zz12.gif
+	offset	70 98
+	frame	data/chars/zmetro/zz11.gif
+	offset	68 86
+	frame	data/chars/zmetro/zz13.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	69 132
+	bbox	45 46 57 76
+	frame	data/chars/zmetro/zz2.gif
+	frame	data/chars/zmetro/zz3.gif
+	frame	data/chars/zmetro/zz4.gif
+	frame	data/chars/zmetro/zz5.gif
+	frame	data/chars/zmetro/zz6.gif
+	frame	data/chars/zmetro/zz7.gif
+		
+anim	walkoff
+	loop	0
+	delay	8
+	offset	64 135
+	bbox	44 44 53 77
+	delay	8
+	frame	data/chars/zmetro/zz2.gif
+		
+#|edited by openBor Stats v 0.51
+		

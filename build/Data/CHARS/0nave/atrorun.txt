@@ -1,0 +1,323 @@
+
+name AtroRun
+health	300
+speed 20
+type	none
+gfxshadow 1 3
+icon	data/chars/atro/portrait.gif 1
+diesound data/chars/atro/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+load ajaxruntiro
+
+atchain 1
+running 30 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/atro/nome.gif -37 -60
+parrow2		data/chars/atro/nome.gif -37 -60
+
+palette       data/chars/atro/pal1.gif
+alternatepal  data/chars/atro/pal2.gif
+alternatepal  data/chars/atro/pal3.gif
+alternatepal  data/chars/atro/pal4.gif
+alternatepal  data/chars/atro/pal5.gif
+alternatepal  data/chars/atro/gelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	29 19 22 42
+	offset	40 71
+	@cmd	keymove 2 0.6
+	frame	data/chars/atro/at6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/atro/at7.gif
+	sound	data/chars/superman/raio.wav
+	@cmd	shoot "ajaxruntiro" 0 45 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/atro/at8.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/atro/at8.gif
+		
+anim	backwalk
+	loop	1
+	delay	8
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	41 69
+	@cmd	velo001	-4 0 0
+	frame	data/chars/atro/at9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/atro/at9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/atro/at9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/atro/at9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/atro/at9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/atro/at9.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/atro/at9.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-6 0 0
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at2.gif
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	bbox	27 18 23 47
+	offset	39 71
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	loop	1
+	frame	data/chars/atro/at2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/atro/at2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/atro/at2.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	26 25 29 30
+	offset	37 67
+	dive	5 3
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	35 26 23 21 15 0 0 0 5 0
+	frame	data/chars/atro/at5.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+	offset	39 72
+	frame	data/chars/atro/at1.gif
+	offset	39 73
+	frame	data/chars/atro/at1.gif
+	offset	39 72
+	frame	data/chars/atro/at1.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	bbox	29 21 21 37
+	offset	39 71
+	frame	data/chars/atro/at3.gif
+	frame	data/chars/atro/at4.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	26 25 29 30
+	offset	37 67
+	dive	5 3
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	35 26 23 21 15 0 0 0 5 0
+	frame	data/chars/atro/at5.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+		
+anim	runattack
+	loop	0
+	delay	15
+	@cmd	velo001	12 0 0
+	bbox	26 25 29 30
+	offset	37 67
+	attack	31 25 26 25 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/atro/at5.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	8
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+	offset	39 72
+	frame	data/chars/atro/at1.gif
+	offset	39 73
+	frame	data/chars/atro/at1.gif
+	offset	39 72
+	frame	data/chars/atro/at1.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	27 18 23 47
+	offset	39 71
+	frame	data/chars/atro/at1.gif
+		
+#|edited by openBor Stats v 0.51
+		

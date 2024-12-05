@@ -1,0 +1,336 @@
+
+
+
+name PlasticJet
+health	300
+speed 16
+type	none
+gfxshadow 1 3
+icon	data/chars/plastic/por.gif 1
+diesound data/chars/plastic/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+
+
+atchain 1
+running  22 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/plastic/nome.gif -37 -60
+parrow2		data/chars/plastic/nome.gif -37 -60
+
+palette       data/chars/plastic/00plastic.gif
+alternatepal  data/chars/plastic/00pal3.gif
+alternatepal  data/chars/plastic/00pal.gif
+alternatepal  data/chars/plastic/00pal2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	bbox	29 21 55 39
+	offset	55 60
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee4.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/punch.wav
+	attack	57 5 56 16 25 0 0 0 5 0
+	frame	data/chars/0Nave/ee5.gif
+	attack	65 6 83 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee6.gif
+	attack	123 7 76 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee7.gif
+	attack	166 6 75 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee8.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee7.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee4.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/0Nave/ee3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ee3.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ee3.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/ee1.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	5
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/0Nave/ee3.gif
+		
+anim	duck
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial14
+	loop	1
+	delay	4
+	dive	1 0.1
+	bbox	28 26 55 28
+	offset	55 60
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee9.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee9.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee9.gif
+		
+anim	freespecial2
+	loop	0
+	dive	6 3
+	delay	7
+	attack	42 27 41 28 15 0 0 0 5 0
+	bbox	29 21 55 39
+	offset	55 60
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/ee9.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/0Nave/ee3.gif
+		
+anim	jump
+	loop	0
+	cancel	3 99 0 j freespecial14
+	delay	6
+	bbox	28 26 55 28
+	offset	55 60
+	frame	data/chars/0Nave/ee9.gif
+	frame	data/chars/0Nave/ee9.gif
+	frame	data/chars/0Nave/ee9.gif
+	frame	data/chars/0Nave/ee9.gif
+	frame	data/chars/0Nave/ee9.gif
+		
+anim	jumpattack
+	loop	0
+	dive	6 3
+	delay	7
+	attack	42 27 41 28 15 0 0 0 5 0
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee9.gif
+		
+anim	jumpland
+	loop	0
+	delay	3
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee3.gif
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/0Nave/ee3.gif
+		
+anim	runattack
+	loop	0
+	delay	4
+	bbox	29 21 55 39
+	offset	55 60
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee4.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/punch.wav
+	attack	57 5 56 16 25 0 0 0 5 0
+	frame	data/chars/0Nave/ee5.gif
+	attack	65 6 83 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee6.gif
+	attack	123 7 76 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee7.gif
+	attack	166 6 75 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee8.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee7.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/ee4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee3.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	5
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/0Nave/ee3.gif
+		
+
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	29 21 55 39
+	offset	55 60
+	frame	data/chars/0Nave/ee1.gif
+	frame	data/chars/0Nave/ee2.gif
+	frame	data/chars/0Nave/ee3.gif
+		
+#|edited by openBor Stats v 0.51
+		

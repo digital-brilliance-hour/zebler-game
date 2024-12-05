@@ -1,0 +1,287 @@
+name GuyGNPC
+health	800
+speed 14
+type	npc
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 60
+hostile enemy
+candamage enemy obstacle
+antigrab  7
+blockodds 3
+diesound data/sounds/die3.wav
+throw 3 2
+knockdowncount 6
+jugglepoints 6
+falldie 2
+
+load GLwall
+
+
+throw 3 3
+
+fmap 2
+palette       data/chars/zgoat/guy1.gif
+alternatepal  data/chars/zgoat/sinestro02.gif
+alternatepal  data/chars/Batman/0paletagelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 90
+	hitflash	flashGL1
+	hitfx	data/sounds/klunk2.wav
+	delay	7
+	offset	88 143
+	bbox	73 74 37 69
+	frame	data/chars/zgoat/guy14.gif
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zgoat/guy15.gif
+	attack	89 20 43 47 20 10 0 0 0 0
+	frame	data/chars/zgoat/guy16.gif
+	attack	108 87 76 62 20 10 0 0 0 0
+	frame	data/chars/zgoat/guy17.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	12
+	frame	data/chars/zgoat/guy18.gif
+	offset	65 117
+	bbox	43 35 41 82
+	frame	data/chars/zgoat/guy1.gif
+		
+anim	attack2
+	loop	0
+	range	100 250
+	delay	11
+	offset	65 119
+	bbox	45 35 38 84
+	frame	data/chars/zgoat/guy12.gif
+	frame	data/chars/zgoat/guy13.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	spawn01 "GLwall" 20 0 0
+	frame	data/chars/zgoat/guy12.gif
+	frame	data/chars/zgoat/guy13.gif
+	frame	data/chars/zgoat/guy12.gif
+	frame	data/chars/zgoat/guy13.gif
+	frame	data/chars/zgoat/guy12.gif
+		
+anim	block
+	loop	0
+	delay	28
+	offset	47 96
+	bbox	28 14 59 84
+	frame	data/chars/zgoat/guy27.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	offset	74 110
+	bbox	55 30 39 81
+	frame	data/chars/zgoat/guy19.gif
+	bbox	51 42 57 41
+	offset	74 104
+	frame	data/chars/zgoat/guy20.gif
+	offset	74 89
+	delay	500
+	frame	data/chars/zgoat/guy20.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	80 69
+	frame	data/chars/zgoat/guy21.gif
+		
+anim	idle
+	loop	1
+	delay	16
+	offset	65 117
+	bbox	43 35 41 82
+	frame	data/chars/zgoat/guy1.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	offset	64 114
+	bbox	46 30 38 81
+	frame	data/chars/zgoat/guy10.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	offset	74 110
+	bbox	55 30 39 81
+	frame	data/chars/zgoat/guy19.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	80 69
+	frame	data/chars/zgoat/guy21.gif
+	offset	80 71
+	frame	data/chars/zgoat/guy22.gif
+	offset	114 147
+	frame	data/chars/zgoat/guy23.gif
+		
+anim	riseattack1
+	loop	0
+	range	0 50
+	hitflash	flashGL1
+	delay	9
+	offset	80 69
+	frame	data/chars/zgoat/guy21.gif
+	offset	80 71
+	frame	data/chars/zgoat/guy22.gif
+	offset	114 147
+	frame	data/chars/zgoat/guy23.gif
+	delay	4
+	sound	data/sounds/elec3.wav
+	attack	62 44 102 106 20 10 0 0 0 0
+	frame	data/chars/zgoat/guy24.gif
+	frame	data/chars/zgoat/guy25.gif
+	frame	data/chars/zgoat/guy26.gif
+	frame	data/chars/zgoat/guy24.gif
+	frame	data/chars/zgoat/guy25.gif
+	frame	data/chars/zgoat/guy26.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	9
+	offset	65 117
+	bbox	43 35 41 82
+	frame	data/chars/zgoat/guy1.gif
+		
+anim	spawn
+	loop	0
+	delay	160
+	offset	65 117
+	bbox	43 35 41 82
+	frame	data/chars/zgoat/guy1.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	64 116
+	bbox	48 33 33 83
+	frame	data/chars/zgoat/guy2.gif
+	frame	data/chars/zgoat/guy3.gif
+	frame	data/chars/zgoat/guy4.gif
+	frame	data/chars/zgoat/guy5.gif
+	frame	data/chars/zgoat/guy6.gif
+	frame	data/chars/zgoat/guy7.gif
+	frame	data/chars/zgoat/guy8.gif
+	frame	data/chars/zgoat/guy9.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	64 114
+	bbox	46 30 38 81
+	frame	data/chars/zgoat/guy10.gif
+		
+#|edited by openBor Stats v 0.51
+		

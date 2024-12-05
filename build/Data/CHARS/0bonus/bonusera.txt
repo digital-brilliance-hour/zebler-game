@@ -1,0 +1,165 @@
+
+
+
+name BonusEra
+health	300
+speed 28
+type	none
+gfxshadow 1 3
+diesound data/chars/eradicator/morte.wav
+icon	data/chars/eradicator/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  36 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/eradicator/nome.gif -37 -60
+parrow2		data/chars/eradicator/nome.gif -37 -60
+
+palette       data/chars/eradicator/00pal1.gif
+alternatepal  data/chars/eradicator/00pal2.gif
+alternatepal  data/chars/eradicator/00pal3.gif
+alternatepal  data/chars/eradicator/00pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	75 98
+	bbox	54 9 44 85
+	attack	56 10 40 80 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/eradicator/v1.gif
+	frame	data/chars/eradicator/v2.gif
+	frame	data/chars/eradicator/v3.gif
+	frame	data/chars/eradicator/v2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	8
+	offset	76 98
+	bbox	46 26 69 39
+	attack	42 25 78 52 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/eradicator/rx1.gif
+	frame	data/chars/eradicator/rx2.gif
+	frame	data/chars/eradicator/rx3.gif
+	frame	data/chars/eradicator/rx2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	75 98
+	frame	data/chars/eradicator/v1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	8
+	offset	76 98
+	bbox	46 26 69 39
+	attack	42 25 78 52 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/eradicator/rx1.gif
+	frame	data/chars/eradicator/rx2.gif
+	frame	data/chars/eradicator/rx3.gif
+	frame	data/chars/eradicator/rx2.gif
+		
+#|edited by openBor Stats v 0.51
+		

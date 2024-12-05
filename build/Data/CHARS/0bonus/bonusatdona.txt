@@ -1,0 +1,178 @@
+
+
+
+name BonusAtDona
+health	300
+speed 28
+type	none
+gfxshadow 1 3
+icon	data/chars/dona/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  32 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/dona/nome.gif -37 -60
+parrow2		data/chars/dona/nome.gif -37 -60
+
+
+
+palette       data/chars/dona/00pal1.gif
+alternatepal  data/chars/dona/00pal2.gif
+alternatepal  data/chars/dona/00pal3.gif
+alternatepal  data/chars/dona/00pal4.gif
+alternatepal  data/chars/dona/00pal5.gif
+alternatepal  data/chars/dona/00pal0.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	26 21 69 76
+	offset	60 96
+	attack	27 21 94 74 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/dona/at1.gif
+	offset	60 97
+	frame	data/chars/dona/at2.gif
+	offset	60 98
+	frame	data/chars/dona/at1.gif
+	offset	60 97
+	frame	data/chars/dona/at2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	26 21 69 76
+	offset	60 96
+	attack	27 21 94 74 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/dona/at1.gif
+	offset	60 97
+	frame	data/chars/dona/at2.gif
+	offset	60 98
+	frame	data/chars/dona/at1.gif
+	offset	60 97
+	frame	data/chars/dona/at2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	60 96
+	frame	data/chars/dona/at1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	26 21 69 76
+	offset	60 96
+	attack	27 21 94 74 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/dona/at1.gif
+	offset	60 97
+	frame	data/chars/dona/at2.gif
+	offset	60 98
+	frame	data/chars/dona/at1.gif
+	offset	60 97
+	frame	data/chars/dona/at2.gif
+		
+#|edited by openBor Stats v 0.51
+		

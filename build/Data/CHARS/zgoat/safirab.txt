@@ -1,0 +1,417 @@
+name SafiraB
+health	500
+speed 22
+type	enemy
+gfxshadow 1 3
+jumpheight 4
+jumpspeed 80
+hostile player npc
+candamage player npc obstacle
+antigrab  8
+aggression 999
+blockodds 1
+diesound data/sounds/eek.wav
+throw 3 2
+subject_to_screen 1
+aimove chase
+knockdowncount 6
+jugglepoints 4
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+
+
+
+throw 3 3
+
+fmap 3
+palette       data/chars/star/enemy1.gif
+alternatepal  data/chars/star/00stardark.gif
+alternatepal  data/chars/star/enemy3.gif
+alternatepal  data/chars/star/00pal1gelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	60 80
+	offset	84 128
+	delay	4
+	bbox	69 47 31 67
+	hitflash	flashRosa
+	cancel	0 99 1 A2 freespecial4
+	cancel	0 99 1 A freespecial3
+	frame	data/chars/star/ja1.gif
+	frame	data/chars/star/ja2.gif
+	sound	data/chars/zgotham/chicotehit.wav
+	frame	data/chars/star/ja3.gif
+	attack	97 29 67 59 10 9 0 0 0 0
+	jugglecost	1
+	frame	data/chars/star/ja4.gif
+	attack	125 54 67 45 10 9 0 0 0 0
+	jugglecost	1
+	frame	data/chars/star/ja5.gif
+	attack	148 72 67 43 10 9 0 0 0 0
+	jugglecost	1
+	frame	data/chars/star/ja6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/star/ja7.gif
+	delay	9
+	offset	50 110
+	bbox	34 33 29 62
+	frame	data/chars/star/j2.gif
+		
+anim	attack2
+	loop	0
+	delay	4
+	range	170 200
+	energycost	8
+	jumpframe	0 3 5
+	landframe	15
+	mponly	1
+	hitflash	flashRosa
+	hitfx	data/sounds/beat2.wav
+	cancel	0 99 0 A freespecial3
+	offset	61 121
+	bbox	40 37 45 76
+	attack	68 10 62 95 22 9 0 0 5 0
+	sound	data/sounds/espada.wav
+	frame	data/chars/star/jx1.gif
+	frame	data/chars/star/jx2.gif
+	frame	data/chars/star/jx3.gif
+	sound	data/sounds/espada.wav
+	frame	data/chars/star/jx1.gif
+	frame	data/chars/star/jx2.gif
+	frame	data/chars/star/jx3.gif
+	sound	data/sounds/espada.wav
+	frame	data/chars/star/jx1.gif
+	frame	data/chars/star/jx2.gif
+	frame	data/chars/star/jx3.gif
+	sound	data/sounds/espada.wav
+	frame	data/chars/star/jx1.gif
+	frame	data/chars/star/jx2.gif
+	frame	data/chars/star/jx3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	50 110
+	bbox	34 33 29 62
+	delay	9
+	frame	data/chars/star/j1.gif
+	frame	data/chars/star/j2.gif
+	delay	555
+	frame	data/chars/star/j3.gif
+	delay	12
+	sound	data/sounds/0pisada.wav
+	offset	51 108
+	bbox	32 34 38 76
+	frame	data/chars/star/i1.gif
+		
+anim	attack3
+	loop	0
+	delay	6
+	range	45 60
+	attackone	0
+	offset	89 177
+	bbox	66 96 41 82
+	hitflash	flashRosa
+	hitfx	data/sounds/espadahit.wav
+	fastattack	1
+	frame	data/chars/star/ta1.gif
+	frame	data/chars/star/ta2.gif
+	sound	data/sounds/espada.wav
+	attack	68 40 130 92 20 9 0 0 0 0
+	frame	data/chars/star/ta3.gif
+	attack	133 52 65 90 20 9 0 0 0 0
+	frame	data/chars/star/ta4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/star/ta5.gif
+	frame	data/chars/star/ta6.gif
+		
+anim	attack4
+	loop	0
+	range	0 45
+	delay	3
+	bbox	90 35 40 87
+	offset	110 120
+	fastattack	1
+	hitflash	flashRosa
+	hitfx	data/sounds/espadahit.wav
+	frame	data/chars/star/c1.gif
+	frame	data/chars/star/c2.gif
+	frame	data/chars/star/c3.gif
+	delay	6
+	sound	data/sounds/espada.wav
+	frame	data/chars/star/c4.gif
+	attack	81 66 90 42 20 9 0 0 10 20
+	jugglecost	2
+	frame	data/chars/star/c5.gif
+	bbox	0 0 0 0
+	attack	58 34 90 42 18 9 0 0 10 20
+	jugglecost	2
+	frame	data/chars/star/c6.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/star/c7.gif
+	delay	5
+	frame	data/chars/star/c8.gif
+	frame	data/chars/star/c9.gif
+		
+anim	block
+	loop	0
+	delay	6
+	offset	62 100
+	bbox	43 18 41 82
+	sound	data/chars/gl/effect2.wav
+	frame	data/chars/star/bo1.gif
+	frame	data/chars/star/bo2.gif
+	frame	data/chars/star/bo3.gif
+	frame	data/chars/star/bo4.gif
+	frame	data/chars/star/bo5.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	offset	61 94
+	bbox	40 14 44 80
+	frame	data/chars/star/g1.gif
+	offset	56 84
+	bbox	31 22 58 47
+	frame	data/chars/star/g2.gif
+	bbox	31 22 58 47
+	offset	56 72
+	delay	500
+	frame	data/chars/star/g2.gif
+	bbox	31 22 0 0
+	offset	55 57
+	delay	10
+	frame	data/chars/star/g3.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	55 52
+	frame	data/chars/star/g2.gif
+		
+anim	grabbed
+	loop	0
+	bbox	40 14 44 80
+	delay	30
+	offset	58 111
+	frame	data/chars/star/g1.gif
+		
+anim	idle
+	loop	1
+	bbox	29 17 30 82
+	offset	44 99
+	delay	38
+	frame	data/chars/star/s2.gif
+	delay	15
+	frame	data/chars/star/s4.gif
+	delay	38
+	frame	data/chars/star/s3.gif
+	delay	15
+	frame	data/chars/star/s4.gif
+		
+anim	jump
+	loop	0
+	offset	50 110
+	bbox	34 33 29 62
+	delay	25
+	frame	data/chars/star/j2.gif
+	frame	data/chars/star/j3.gif
+		
+anim	upper
+	loop	0
+	delay	5
+	range	0 100
+	hitflash	flashRosa
+	jumpframe	0 5 2
+	sound	data/sounds/vuu3.wav
+	bbox	29 15 39 55
+	offset	54 92
+	frame	data/chars/star/div1.gif
+	sound	data/chars/star/a2.wav
+	attack	39 29 55 56 18 9 0 0 15 0
+	frame	data/chars/star/div2.gif
+	frame	data/chars/star/div3.gif
+	frame	data/chars/star/div4.gif
+	frame	data/chars/star/div5.gif
+	frame	data/chars/star/div2.gif
+	frame	data/chars/star/div3.gif
+	frame	data/chars/star/div4.gif
+	frame	data/chars/star/div5.gif
+	frame	data/chars/star/div2.gif
+		
+anim	pain
+	loop	0
+	bbox	40 14 44 80
+	delay	30
+	offset	61 94
+	frame	data/chars/star/g1.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	55 52
+	frame	data/chars/star/g2.gif
+		
+anim	rise
+	loop	0
+	offset	55 57
+	delay	8
+	frame	data/chars/star/g3.gif
+	offset	55 62
+	frame	data/chars/star/g4.gif
+	offset	51 108
+	frame	data/chars/star/i2.gif
+	frame	data/chars/star/i1.gif
+		
+anim	riseattack1
+	loop	0
+	range	0 50
+	offset	55 57
+	delay	8
+	hitfx	data/sounds/beat1.wav
+	frame	data/chars/star/g3.gif
+	offset	55 62
+	frame	data/chars/star/g4.gif
+	delay	5
+	offset	44 106
+	sound	data/sounds/punch.wav
+	frame	data/chars/star/a6.gif
+	frame	data/chars/star/a7.gif
+	bbox	35 24 26 82
+	attack	54 45 56 26 8 5 0 0 10 0
+	jugglecost	1
+	delay	8
+	frame	data/chars/star/a8.gif
+	delay	4
+	attack	0 0 0 0 0
+	frame	data/chars/star/a7.gif
+	frame	data/chars/star/a6.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	bbox	20 16 50 71
+	offset	39 97
+	frame	data/chars/star/r1.gif
+	offset	39 98
+	frame	data/chars/star/r2.gif
+	offset	39 99
+	frame	data/chars/star/r1.gif
+	offset	39 98
+	frame	data/chars/star/r2.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	offset	50 110
+	bbox	34 33 29 62
+	frame	data/chars/star/j3.gif
+		
+#|edited by openBor Stats v 0.51
+		

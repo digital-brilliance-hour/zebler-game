@@ -1,0 +1,275 @@
+
+
+
+name SpawnRio
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+icon	data/chars/spawn/portrait.gif 1
+diesound data/chars/spawn/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 4
+jumpmove 3 3
+
+
+load GLTankTiro
+
+atchain 1
+running 24 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/Spawn/00spawn.gif
+alternatepal  data/chars/Spawn/00spawn2.gif
+alternatepal  data/chars/Spawn/00spawn3.gif
+alternatepal  data/chars/Spawn/00spawn4.gif
+
+parrow		data/chars/spawn/nome.gif -37 -70
+parrow2		data/chars/spawn/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	56 19 33 45
+	offset	79 70
+	@script
+		if (frame==0){
+		int myVar = getglobalvar("SpawnBar");
+                setglobalvar("SpawnBar", myVar -5);
+ 	   	}
+	@end_script	
+	@cmd	keymove 2 0.6
+	@cmd	spawn01 "aguinha" 0 0 1
+	frame	data/chars/0Nave/spa12.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/cyborg/missil.wav
+	@cmd	shoot "GLTankTiro" -16 34 2
+	frame	data/chars/0Nave/spa13.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa13.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	5
+	@cmd	velo001	-2 0 0
+	offset	62 80
+	frame	data/chars/0Nave/spa8.gif
+	offset	62 75
+	frame	data/chars/0Nave/spa8.gif
+	offset	62 70
+	frame	data/chars/0Nave/spa8.gif
+	@cmd	spawn01 "tibum" 1 0 1
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	56 19 33 45
+	offset	79 70
+	@cmd	spawn01 "aguinha" 0 0 1
+	frame	data/chars/0Nave/spa13.gif
+	frame	data/chars/0Nave/spa12.gif
+		
+anim	jump
+	loop	0
+	delay	26
+	bbox	43 29 33 45
+	offset	64 81
+	frame	data/chars/0Nave/spa9.gif
+	frame	data/chars/0Nave/spa10.gif
+		
+anim	jumpattack
+	loop	1
+	delay	5
+	offset	64 81
+	dive	4 3
+	attack	63 46 25 30 15 0 0 0 5 0
+	bbox	44 29 33 37
+	offset	64 81
+	frame	data/chars/0Nave/spa11.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	56 19 33 45
+	offset	79 70
+	frame	data/chars/0Nave/spa13.gif
+		
+anim	pain
+	loop	0
+	delay	20
+	@cmd	velo001	-1 0 0
+	bbox	46 31 28 41
+	offset	62 82
+	frame	data/chars/0Nave/spa8.gif
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	56 19 33 45
+	offset	79 68
+	@cmd	spawn01 "aguinha" 0 0 1
+	frame	data/chars/0Nave/spa13.gif
+	frame	data/chars/0Nave/spa12.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	bbox	56 19 33 45
+	offset	79 70
+	@script
+		if (frame==0){
+		int myVar = getglobalvar("SpawnBar");
+                setglobalvar("SpawnBar", myVar -5);
+ 	   	}
+	@end_script	
+	@cmd	keymove 2 0.6
+	@cmd	spawn01 "aguinha" 0 0 1
+	frame	data/chars/0Nave/spa12.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/cyborg/missil.wav
+	@cmd	shoot "GLTankTiro" 11 44 2
+	frame	data/chars/0Nave/spa13.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa13.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	56 19 33 45
+	offset	79 70
+	frame	data/chars/0Nave/spa13.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	8
+	bbox	56 19 33 45
+	offset	79 70
+	@cmd	spawn01 "aguinha" 0 0 1
+	frame	data/chars/0Nave/spa13.gif
+	frame	data/chars/0Nave/spa12.gif
+		
+#|edited by openBor Stats v 0.51
+		

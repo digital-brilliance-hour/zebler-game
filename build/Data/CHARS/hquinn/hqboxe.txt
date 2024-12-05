@@ -1,0 +1,69 @@
+name	HQboxe
+speed        18
+type	     none
+shadow	     0
+candamage enemy obstacle
+lifespan 10
+jumpheight 0
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	offset	18 42
+	frame	data/chars/hquinn/jxp5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp5.gif
+		
+anim	attack2
+	loop	0
+	delay	8
+	offset	18 42
+	frame	data/chars/hquinn/jxp4.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp4.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp4.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/hquinn/jxp4.gif
+		
+anim	idle
+	loop	0
+	delay	6
+	@cmd	velo001	5 0 -2
+	offset	18 42
+	attack	10 13 29 30 20 9 0 0 0 30
+	frame	data/chars/hquinn/jxp1.gif
+	frame	data/chars/hquinn/jxp2.gif
+	frame	data/chars/hquinn/jxp3.gif
+	frame	data/chars/hquinn/jxp4.gif
+	frame	data/chars/hquinn/jxp4.gif
+		
+#|edited by openBor Stats v 0.51
+		

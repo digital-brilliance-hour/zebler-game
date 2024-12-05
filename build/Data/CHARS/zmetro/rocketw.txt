@@ -1,0 +1,37 @@
+name	RocketW
+speed        22
+type	     none
+shadow	     0
+gfxshadow 1
+hostile enemy obstacle
+candamage enemy obstacle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	6
+	hitflash	flashex1
+	attack	22 30 36 13 15 9 0 0 0 25
+	offset	29 37
+	frame	data/chars/zmetro/lm12.gif
+	frame	data/chars/zmetro/lm13.gif
+		
+#|edited by openBor Stats v 0.51
+		

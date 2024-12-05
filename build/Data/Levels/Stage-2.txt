@@ -1,0 +1,422 @@
+## Load music in this area ##
+music		data/music/remix.bor
+bossmusic	data/music/menu.bor
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/stage-2/stage-2bg.gif
+
+# Front layer
+frontpanel	data/bgs/stage-2/stage-2bgp.png
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/stage-2/stage-2panelp.png
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order a
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+
+
+#--group1-----
+group 1 2
+
+spawn spider
+health 30
+coords
+at
+
+spawn spider
+health 30
+coords
+at
+
+spawn spider
+health 30
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+group 1 3
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+group 1 4
+
+spawn saku
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+Group 1 3
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+group 1 2
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+group 1 2
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn saku
+coords
+at
+
+group 1 2
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+group 1 5
+
+spawn
+health
+boss 1
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn spider
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn slug
+health
+coords
+at
+
+spawn saku
+health
+coords
+at
+
+
+
+
+
+
+
+
+
+
+
+
+

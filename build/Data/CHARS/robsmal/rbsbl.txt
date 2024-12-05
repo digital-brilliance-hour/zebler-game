@@ -1,0 +1,13 @@
+name	rbsbl
+type	pshot
+speedf 2
+hostile player
+candamage player
+setlayer 200
+anim idle
+	loop 1
+	delay 10
+	offset  6 6
+	bbox    0 0 0 0
+	attack  3 3 9 6 10 1 0 0 
+	frame	data/chars/robsmal/8

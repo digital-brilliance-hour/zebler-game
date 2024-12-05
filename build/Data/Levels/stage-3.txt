@@ -171,7 +171,7 @@ spawn 	enem1
 coords 	-50 100
 at	5000
 
-#--group3-----
+#--group4-----
 
 wait
 at 7000
@@ -216,6 +216,315 @@ at	7000
 spawn 	enem1
 coords 	530 100
 at	7000
+
+#--group5-----
+
+wait
+at 9000
+
+group  1 6
+at 9000
+
+spawn 	rdias
+health 100
+coords 	530 200
+at	9000	
+
+spawn 	enem1
+coords 	530 200
+at	9000	
+
+spawn 	enem1
+coords 	530 200
+at	9000	
+
+spawn 	enem1
+coords 	530 200
+at	9000	
+
+spawn 	enem1
+coords 	-50 200
+at	9000	
+
+spawn 	enem1
+coords 	-50 200
+at	9000
+
+#--group6-----
+wait
+at 11000
+
+group  1 10
+at 11000
+
+spawn 	rdias
+health 150
+coords 	530 200
+at	11000	
+
+spawn 	enem1
+coords 	-50 200
+at	11000	
+
+spawn 	enem1
+coords 	-50 200
+at	11000	
+
+spawn 	enem1
+coords 	-50 200
+at	11000	
+
+spawn 	enem1
+coords 	530 200
+at	11000	
+
+spawn 	enem1
+coords 	530 200
+at	11000
+
+spawn 	enem1
+coords 	530 100
+at	11000
+
+#--group7-----
+
+wait
+at 13000
+
+group  1 10
+at 13000
+
+spawn 	rdias
+health 150
+coords 	530 50
+at	13000
+
+spawn 	rdias
+health 150
+coords 	530 200
+at	13000		
+
+spawn 	enem1
+coords 	-30 100
+at	13000	
+
+spawn 	enem1
+coords 	530 170
+at	13000	
+
+spawn 	enem1
+coords 	-50 100
+at	13000	
+
+spawn 	enem1
+coords 	-50 170
+at	13000	
+
+spawn 	enem1
+coords 	530 100
+at	13000
+
+spawn 	enem1
+coords 	-50 170
+at	13000
+
+spawn 	enem1
+coords 	-50 100
+at	13000
+
+#--group8-----
+
+wait
+at 15000
+
+group  1 7
+at 15000
+
+spawn 	robot
+health 250
+coords 	530 50
+at	15000
+
+spawn 	rdias
+health 50
+coords 	530 200
+at	15000		
+
+spawn 	enem1
+coords 	-50 100
+at	15000	
+
+spawn 	enem1
+coords 	-50 170
+at	15000	
+
+spawn 	enem1
+coords 	530 100
+at	15000	
+
+spawn 	enem1
+coords 	530 170
+at	15000	
+
+spawn 	enem1
+coords 	-50 100
+at	15000
+
+spawn 	enem1
+coords 	-50 170
+at	15000
+
+spawn 	enem1
+coords 	530 100
+at	15000
+
+#--group9-----
+
+wait
+at 15000
+
+group  1 5
+at 15000
+
+spawn 	boss1
+boss 1
+health 500
+coords 	530 50
+at	15000
+
+#helpers
+
+spawn 	rdias
+health 50
+coords 	530 200
+at	15000		
+
+spawn 	enem1
+coords 	-50 100
+at	15000	
+
+spawn 	enem1
+coords 	-50 170
+at	15000	
+
+spawn 	enem1
+coords 	530 100
+at	15000	
+
+spawn 	enem1
+coords 	530 170
+at	15000	
+
+spawn 	enem1
+coords 	-50 100
+at	15000
+
+spawn 	enem1
+coords 	-50 170
+at	15000
+
+spawn 	enem1
+coords 	530 100
+at	15000
+
+spawn 	rdias
+health 50
+coords 	530 200
+at	15000		
+
+spawn 	enem1
+coords 	-50 100
+at	15000	
+
+spawn 	enem1
+coords 	-50 170
+at	15000	
+
+spawn 	enem1
+coords 	530 100
+at	15000	
+
+spawn 	enem1
+coords 	530 170
+at	15000	
+
+spawn 	enem1
+coords 	-50 100
+at	15000
+
+spawn 	enem1
+coords 	-50 170
+at	15000
+
+spawn 	enem1
+coords 	530 100
+at	15000
+
+spawn 	rdias
+health 50
+coords 	530 200
+at	15000		
+
+spawn 	enem1
+coords 	-50 100
+at	15000	
+
+spawn 	enem1
+coords 	-50 170
+at	15000	
+
+spawn 	enem1
+coords 	530 100
+at	15000	
+
+spawn 	enem1
+coords 	530 170
+at	15000	
+
+spawn 	enem1
+coords 	-50 100
+at	15000
+
+spawn 	enem1
+coords 	-50 170
+at	15000
+
+spawn 	enem1
+coords 	530 100
+at	15000
+
+spawn 	rdias
+health 50
+coords 	530 200
+at	15000		
+
+spawn 	enem1
+coords 	-50 100
+at	15000	
+
+spawn 	enem1
+coords 	-50 170
+at	15000	
+
+spawn 	enem1
+coords 	530 100
+at	15000	
+
+spawn 	enem1
+coords 	530 170
+at	15000	
+
+spawn 	enem1
+coords 	-50 100
+at	15000
+
+spawn 	enem1
+coords 	-50 170
+at	15000
+
+spawn 	enem1
+coords 	530 100
+at	15000
 
 
 

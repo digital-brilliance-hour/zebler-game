@@ -48,10 +48,19 @@ void oncreate()
     int C = fileskim("Rise", "Test.txt");
     setglobalvar("Load", C);
 
-    setindexedvar(1, 0);
+    setindexedvar(1, 0);   
+  void Title2;
+
+  Title2 = loadsprite("data/bgs/black.gif");
+      
+  setglobalvar("Title2", Title2);
 }
 
 void ondestroy(){
+      
+  void Title2 = getglobalvar("Title2");   
+  free(Title2);       
+  setglobalvar("Title2", NULL()); 
 }
 
 void fileskim(char Line, void Path)

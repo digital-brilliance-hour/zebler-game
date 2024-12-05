@@ -1,0 +1,90 @@
+name	snk
+type	enemy
+aimove chase
+running 11 2 0 0
+health	50
+speed	5
+shadow	0
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2		
+jumpheight 0		
+cantgrab 1		
+noquake	1				
+lifebarstatus 220 3 1 1 0 0 0 10 -1000
+lifeposition 50 216
+iconposition 51 217 
+nameposition 1000 1000 
+icon data/chars/misc/enlfb
+load enbl
+hostile player
+candamage player
+animationscript data/scripts/boscript.c
+setlayer 50
+anim idle
+	loop	1
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	10
+	@cmd shoot "snk2" -5 0 0
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+	@cmd shoot "snk2" -5 0 0
+	@cmd    target 0.8 0.8
+	@cmd shoot2 "enbl" 4 0 -1 
+	frame	data/chars/enb/1
+anim walk
+	loop	1
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	10
+	@cmd shoot "snk2" -5 0 0
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+anim run
+	loop	1
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	10
+	@cmd shoot "snk2" -5 0 0
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+anim death
+	delay 10
+	offset	13 11
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" -30 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" -30 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb3" -30 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 0 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -20 0 0
+	frame	data/chars/misc/empty

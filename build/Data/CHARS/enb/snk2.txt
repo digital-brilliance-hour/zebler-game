@@ -1,0 +1,31 @@
+name	snk2
+type	enemy
+health	10000
+speed	8
+shadow	0
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2		
+jumpheight 0		
+cantgrab 1		
+noquake	1				
+nolife	1	
+load enbl
+nomove 1 1
+hostile player
+candamage player
+setlayer 30
+anim spawn
+	@script
+	if(frame == 1){
+	void self = getlocalvar("self");
+	killentity(self);
+	}
+	@end_script
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	200
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+	frame	data/chars/misc/empty

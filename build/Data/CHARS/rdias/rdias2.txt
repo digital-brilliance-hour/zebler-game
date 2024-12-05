@@ -9,6 +9,7 @@ makeinv 4 0
 turndelay	2147483647
 facing	3
 knife z1
+nodrop 2
 weapons rdias2 rdias
 
 atchain 0

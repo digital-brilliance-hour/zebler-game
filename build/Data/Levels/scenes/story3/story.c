@@ -8,6 +8,25 @@ void main()
 	float y = getlayerproperty("background", 0, "zoffset");
 	int ypos = getlocalvar("stagey");
 
+	void blackMask = getglobalvar("Title2"); 
+    float opacity = getlocalvar("opacitynum");
+    if(opacity < 150) {
+    	opacity += 1;
+    	setlocalvar("opacitynum", opacity);
+    	log(opacity);
+    }
+    else {
+    	opacity = 150;
+    }
+      
+    changedrawmethod(NULL(), "enabled", 1);
+    changedrawmethod(NULL(), "alpha", 6);  
+    changedrawmethod(NULL(), "channelb", opacity+10);
+    changedrawmethod(NULL(), "channelg", opacity);
+    changedrawmethod(NULL(), "channelr", opacity);
+    drawsprite(blackMask, 0, 0, -1); 
+
+
 	void p;
     int i, hp, mp, lv, num;
     for(i=0; i<4; i++){

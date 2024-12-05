@@ -1,0 +1,42 @@
+name	GLTankTiro
+speed        18
+type	     none
+shadow	     0
+gfxshadow 1
+hostile enemy obstacle
+candamage enemy obstacle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	6
+	hitflash	flashgl1
+	attack	6 3 15 14 10 0 0 0 0 25
+	offset	11 9
+	frame	data/chars/0nave/gbomb1.gif
+	frame	data/chars/0nave/gbomb2.gif
+	frame	data/chars/0nave/gbomb3.gif
+	frame	data/chars/0nave/gbomb4.gif
+		
+#|edited by openBor Stats v 0.51
+		

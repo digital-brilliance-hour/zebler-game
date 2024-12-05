@@ -1,0 +1,178 @@
+
+
+
+name BCThemi
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+diesound data/chars/blackcanary/morte.wav
+icon	data/chars/blackcanary/portrait2.gif 0
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  22 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/blackcanary/nome.gif -37 -60
+parrow2		data/chars/blackcanary/nome.gif -37 -60
+
+palette       data/chars/0bonus/ee21.gif
+alternatepal  data/chars/0bonus/ee21pal.gif
+alternatepal  data/chars/0bonus/ee21pal2.gif
+alternatepal  data/chars/0bonus/ee21pal3.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	92 107
+	bbox	59 33 80 75
+	attack	75 40 57 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/ee21.gif
+	frame	data/chars/0bonus/ee22.gif
+	sound	data/sounds/horse.wav
+	frame	data/chars/0bonus/ee23.gif
+	frame	data/chars/0bonus/ee24.gif
+	frame	data/chars/0bonus/ee25.gif
+	frame	data/chars/0bonus/ee26.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	9
+	offset	92 107
+	bbox	59 33 80 75
+	attack	75 40 57 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/ee21.gif
+	frame	data/chars/0bonus/ee22.gif
+	sound	data/sounds/horse.wav
+	frame	data/chars/0bonus/ee23.gif
+	frame	data/chars/0bonus/ee24.gif
+	frame	data/chars/0bonus/ee25.gif
+	frame	data/chars/0bonus/ee26.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	8
+	offset	92 107
+	bbox	59 33 80 75
+	frame	data/chars/0bonus/ee26.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	92 107
+	bbox	59 33 80 75
+	attack	75 40 57 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/ee21.gif
+	frame	data/chars/0bonus/ee22.gif
+	sound	data/sounds/horse.wav
+	frame	data/chars/0bonus/ee23.gif
+	frame	data/chars/0bonus/ee24.gif
+	frame	data/chars/0bonus/ee25.gif
+	frame	data/chars/0bonus/ee26.gif
+		
+#|edited by openBor Stats v 0.51
+		

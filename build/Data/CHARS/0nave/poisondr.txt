@@ -1,0 +1,54 @@
+name PoisonDR
+speed        8
+type	     none
+shadow	     0
+candamage npc player
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	7
+	offset	49 69
+	drawmethod	scale 0.5 0.5
+	hitflash	veneno
+	hitfx	data/sounds/none.wav
+	drawmethod	alpha 6
+	attack	25 21 38 28 5 0 0 0 0 0
+	noreflect	1
+	frame	data/chars/ZGotham/jj1.gif
+	offset	52 82
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ZGotham/jj2.gif
+	offset	61 85
+	attack	33 27 48 36 5 0 0 0 0 0
+	noreflect	1
+	frame	data/chars/ZGotham/jj3.gif
+	offset	64 88
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/ZGotham/jj4.gif
+		
+#|edited by openBor Stats v 0.51
+		

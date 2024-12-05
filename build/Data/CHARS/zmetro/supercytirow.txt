@@ -1,0 +1,57 @@
+name	SuperCyTiroW
+speed        16
+type	     none
+shadow	     0
+subject_to_wall 1
+candamage enemy obstacle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	hitflash	Flash2
+	drawmethod	scale 0.75 0.75
+	attack8	23 8 46 32 15 9 0 0 0 15
+	offset	31 23
+	frame	data/chars/zmetro/cyb1.gif
+	attack8	23 8 46 32 15 9 0 0 0 15
+	offset	33 26
+	frame	data/chars/zmetro/cyb2.gif
+	attack8	23 8 46 32 15 9 0 0 0 15
+	offset	28 20
+	frame	data/chars/zmetro/cyb3.gif
+	attack8	23 12 50 32 15 9 0 0 0 15
+	offset	33 27
+	frame	data/chars/zmetro/cyb4.gif
+	attack8	23 8 46 32 15 9 0 0 0 15
+	offset	31 23
+	frame	data/chars/zmetro/cyb5.gif
+	attack8	22 11 54 32 15 9 0 0 0 15
+	offset	40 27
+	frame	data/chars/zmetro/cyb6.gif
+	attack8	23 5 46 32 15 9 0 0 0 15
+	offset	31 23
+	frame	data/chars/zmetro/cyb7.gif
+	attack8	23 11 46 32 15 9 0 0 0 15
+	offset	34 26
+	frame	data/chars/zmetro/cyb8.gif
+		
+#|edited by openBor Stats v 0.51
+		

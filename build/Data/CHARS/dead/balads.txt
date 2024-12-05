@@ -1,0 +1,118 @@
+name	BalaDS
+speed        30
+type	     none
+shadow	     0
+subject_to_wall 1
+candamage enemy obstacle
+hostile enemy
+subtype chase
+lifespan 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	2
+	attackone	1
+	hitflash	flash2
+	attack2	0 0 13 13 15 5 0 0 0 0
+	offset	6 14
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 17
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 20
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 23
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 26
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 29
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 32
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 35
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 38
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 41
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 44
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 47
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 50
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 53
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 56
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 59
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 62
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 65
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 68
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 71
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 74
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 77
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 80
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 83
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 86
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 89
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 92
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 95
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 98
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 101
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 104
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 107
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 110
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 113
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 116
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 119
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 122
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 125
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 128
+	frame	data/chars/ZGoat/BalaDS.gif
+	offset	6 128
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/MISC/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

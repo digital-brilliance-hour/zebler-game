@@ -1,0 +1,42 @@
+name	ZatRunTiro
+speed        18
+type	     none
+shadow	     0
+subject_to_wall 1
+candamage enemy obstacle
+
+
+palette       data/chars/zat/xx0pal.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1 
+	delay	5
+	hitflash	flashAzul
+	attack	112 53 31 29 15 9 0 0 0 0
+	offset	118 67
+	frame	data/chars/zat/xx4.gif
+	frame	data/chars/zat/xx5.gif
+	frame	data/chars/zat/xx6.gif
+		
+#|edited by openBor Stats v 0.51
+		

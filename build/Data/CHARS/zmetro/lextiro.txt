@@ -1,0 +1,96 @@
+name	LexTiro
+speed        0
+type	     none
+gfxshadow 1
+subject_to_wall 1
+candamage player obstacle enemy
+jumpheight 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	hitflash	Flash2
+	offset	17 55
+	attack	14 7 49 51 25 9 0 0 0 0
+	sound	data/sounds/explode.wav
+	frame	data/chars/zmetro/lm3.gif
+	offset	31 71
+	attack	20 14 63 57 25 9 0 0 0 0
+	frame	data/chars/zmetro/lm4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	38 78
+	frame	data/chars/zmetro/lm5.gif
+	offset	34 79
+	frame	data/chars/zmetro/lm6.gif
+	offset	46 81
+	frame	data/chars/zmetro/lm7.gif
+	offset	40 92
+	frame	data/chars/zmetro/lm8.gif
+	offset	35 104
+	frame	data/chars/zmetro/lm9.gif
+	offset	54 108
+	frame	data/chars/zmetro/lm10.gif
+	offset	65 102
+	frame	data/chars/zmetro/lm11.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	attack2
+	loop	0
+	delay	7
+	hitflash	Flash2
+	offset	17 55
+	attack	14 7 49 51 25 9 0 0 0 0
+	sound	data/sounds/explode.wav
+	frame	data/chars/zmetro/lm3.gif
+	offset	31 71
+	attack	20 14 63 57 25 9 0 0 0 0
+	frame	data/chars/zmetro/lm4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	38 78
+	frame	data/chars/zmetro/lm5.gif
+	offset	34 79
+	frame	data/chars/zmetro/lm6.gif
+	offset	46 81
+	frame	data/chars/zmetro/lm7.gif
+	offset	40 92
+	frame	data/chars/zmetro/lm8.gif
+	offset	35 104
+	frame	data/chars/zmetro/lm9.gif
+	offset	54 108
+	frame	data/chars/zmetro/lm10.gif
+	offset	65 102
+	frame	data/chars/zmetro/lm11.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	4
+	hitflash	Flash2
+	bbox	32 23 15 36
+	offset	20 56
+	burn	32 24 15 35 15 9 0 0 0 0
+	frame	data/chars/zmetro/lm1.gif
+	frame	data/chars/zmetro/lm2.gif
+		
+#|edited by openBor Stats v 0.51
+		

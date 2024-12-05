@@ -1,0 +1,499 @@
+name Zoom
+health	450
+speed 60
+type	enemy
+gfxshadow 1 3
+jumpheight 3
+hostile player npc
+candamage player npc obstacle
+antigrab  3
+aggression 9999
+blockodds 1
+aimove Avoidx
+aimove chasez
+diesound data/chars/zmetro/zoom1.wav
+throw 3 2
+knockdowncount 6
+jugglepoints 4
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+
+load speed
+load speed2
+throw 3 3
+
+animationscript data/scripts/grabscript.c
+
+fmap 3
+palette     data/chars/zmetro/z1.gif
+alternatepal  data/chars/zmetro/z1black2.gif
+alternatepal  data/chars/zmetro/z1flash.gif
+alternatepal  data/chars/zmetro/z1gelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 60
+	fastattack	1
+	hitfx	data/chars/flash/socoflash.wav
+	delay	4
+	offset	33 86
+	bbox	19 16 42 70
+	attack	44 6 53 54 5 0 0 0 0 0
+	sound	data/sounds/punch.wav
+	frame	data/chars/zmetro/z6.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z6.gif
+	delay	4
+	offset	33 92
+	bbox	20 24 44 67
+	attack	45 4 58 57 5 0 0 0 0 0
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zmetro/z7.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z7.gif
+	delay	4
+	offset	33 93
+	bbox	21 25 41 68
+	attack	44 22 65 45 5 0 0 0 0 0
+	sound	data/sounds/punch.wav
+	frame	data/chars/zmetro/z8.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z8.gif
+	delay	4
+	offset	33 72
+	bbox	18 0 40 72
+	attack	46 2 65 44 5 0 0 0 0 0
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zmetro/z9.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z9.gif
+	delay	4
+	offset	33 71
+	bbox	13 0 54 70
+	attack	40 5 45 43 5 0 0 0 0 0
+	sound	data/sounds/punch.wav
+	frame	data/chars/zmetro/z10.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z10.gif
+	delay	4
+	offset	33 79
+	bbox	14 8 45 69
+	attack	43 1 45 56 15 9 0 0 0 0
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zmetro/z11.gif
+	delay	1
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z11.gif
+	delay	10
+	offset	29 63
+	bbox	16 0 46 62
+	frame	data/chars/zmetro/z14.gif
+		
+anim	attack2
+	loop	0
+	range	150 300
+	delay	20
+	offset	29 63
+	hitflash	flash3
+	bbox	16 0 46 62
+	frame	data/chars/zmetro/z14.gif
+	@cmd	spawn01 "dust" 10 0 1
+	sound	data/sounds/vuu2.wav
+	@cmd	velo001	15 0 0
+	delay	5
+	offset	42 69
+	bbox	30 0 46 62
+	attack	45 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z12.gif
+	offset	33 69
+	bbox	22 0 46 62
+	attack	37 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z13.gif
+	offset	42 69
+	bbox	30 0 46 62
+	attack	45 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z12.gif
+	offset	33 69
+	bbox	22 0 46 62
+	attack	37 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z13.gif
+	offset	42 69
+	bbox	30 0 46 62
+	attack	45 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z12.gif
+	offset	33 69
+	bbox	22 0 46 62
+	attack	37 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z13.gif
+	offset	42 69
+	bbox	30 0 46 62
+	attack	45 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z12.gif
+	offset	33 69
+	bbox	22 0 46 62
+	attack	37 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z13.gif
+	offset	42 69
+	bbox	30 0 46 62
+	attack	45 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z12.gif
+	offset	33 69
+	bbox	22 0 46 62
+	attack	37 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z13.gif
+	offset	42 69
+	bbox	30 0 46 62
+	attack	45 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z12.gif
+	offset	33 69
+	bbox	22 0 46 62
+	attack	37 2 30 59 20 9 0 0 0 0
+	dropv	5 0.5 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/zmetro/z13.gif
+	@cmd	velo001	0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	40
+	offset	29 63
+	bbox	16 0 46 62
+	frame	data/chars/zmetro/z14.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	offset	39 74
+	bbox	22 3 43 68
+	drawmethod	256 256 1 0 0 0 -1 0 0 0
+	frame	data/chars/zmetro/z2.gif
+	offset	39 74
+	bbox	22 3 43 68
+	@cmd	spawn01 "speed2" 0 0 1
+	frame	data/chars/zmetro/z3.gif
+	offset	39 74
+	bbox	22 3 43 68
+	frame	data/chars/zmetro/z4.gif
+	offset	39 74
+	@cmd	spawn01 "speed2" 0 0 1
+	bbox	22 3 43 68
+	frame	data/chars/zmetro/z5.gif
+		
+anim	block
+	loop	0
+	offset	44 62
+	delay	3
+	@cmd	velo001	-8 0 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	velo001	0 0 0
+	offset	27 82
+	delay	9
+	frame	data/chars/zmetro/z1.gif
+		
+anim	burn
+	loop	0
+	delay	5
+	offset	28 65
+	landframe	22
+	bbox	4 9 55 41
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/z20.gif
+	frame	data/chars/zmetro/z21.gif
+	frame	data/chars/zmetro/z22.gif
+	frame	data/chars/zmetro/z23.gif
+	frame	data/chars/zmetro/z20.gif
+	frame	data/chars/zmetro/z21.gif
+	frame	data/chars/zmetro/z22.gif
+	frame	data/chars/zmetro/z23.gif
+	frame	data/chars/zmetro/z20.gif
+	frame	data/chars/zmetro/z21.gif
+	frame	data/chars/zmetro/z22.gif
+	frame	data/chars/zmetro/z23.gif
+	frame	data/chars/zmetro/z20.gif
+	frame	data/chars/zmetro/z21.gif
+	frame	data/chars/zmetro/z22.gif
+	frame	data/chars/zmetro/z23.gif
+	frame	data/chars/zmetro/z20.gif
+	frame	data/chars/zmetro/z21.gif
+	frame	data/chars/zmetro/z22.gif
+	frame	data/chars/zmetro/z23.gif
+	frame	data/chars/zmetro/z20.gif
+	frame	data/chars/zmetro/z21.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	45 19
+	frame	data/chars/zmetro/z19.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	attack	9 3 5 60 8 9 0 0 0 0
+	bbox	2 1 37 66
+	offset	22 70
+	frame	data/chars/zmetro/z16.gif
+	bbox	4 7 60 39
+	attack	11 10 5 33 8 9 0 0 0 0
+	offset	36 55
+	frame	data/chars/zmetro/z17.gif
+	offset	43 35
+	bbox	14 3 60 26
+	delay	500
+	frame	data/chars/zmetro/z18.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	4 7 0 0
+	offset	45 19
+	frame	data/chars/zmetro/z19.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	22 27
+	frame	data/chars/zmetro/z17.gif
+		
+anim	grabbed
+	loop	0
+	bbox	2 1 37 66
+	delay	20
+	offset	22 85
+	frame	data/chars/zmetro/z16.gif
+		
+anim	idle
+	loop	1
+	offset	27 82
+	bbox	8 1 40 81
+	delay	1
+	frame	data/chars/zmetro/z1.gif
+	offset	26 82
+	frame	data/chars/zmetro/z1.gif
+	offset	28 82
+	frame	data/chars/zmetro/z1.gif
+		
+anim	pain
+	loop	0
+	bbox	2 1 37 66
+	delay	2
+	offset	22 70
+	frame	data/chars/zmetro/z16.gif
+	offset	23 70
+	frame	data/chars/zmetro/z16.gif
+	offset	22 70
+	frame	data/chars/zmetro/z16.gif
+	offset	23 70
+	frame	data/chars/zmetro/z16.gif
+	offset	22 70
+	frame	data/chars/zmetro/z16.gif
+	offset	23 70
+	frame	data/chars/zmetro/z16.gif
+	offset	22 70
+	frame	data/chars/zmetro/z16.gif
+	offset	23 70
+	frame	data/chars/zmetro/z16.gif
+	offset	22 70
+	frame	data/chars/zmetro/z16.gif
+	offset	23 70
+	frame	data/chars/zmetro/z16.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	22 27
+	frame	data/chars/zmetro/z17.gif
+		
+anim	rise
+	loop	0
+	offset	45 19
+	delay	9
+	frame	data/chars/zmetro/z19.gif
+	offset	44 62
+	delay	3
+	@cmd	velo001	25 0 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	velo001	0 0 0
+	offset	27 82
+	delay	9
+	frame	data/chars/zmetro/z1.gif
+		
+anim	shock
+	loop	0
+	delay	5
+	offset	64 95
+	landframe	22
+	bbox	29 32 70 48
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	bbox	50 37 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	45 19
+	delay	9
+	frame	data/chars/zmetro/z19.gif
+		
+anim	spawn
+	loop	0
+	offset	27 82
+	bbox	8 1 40 81
+	delay	3
+	frame	data/chars/zmetro/z1.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	39 74
+	bbox	22 3 43 68
+	frame	data/chars/zmetro/z2.gif
+	offset	39 74
+	bbox	22 3 43 68
+	@cmd	spawn01 "speed2" 0 0 1
+	frame	data/chars/zmetro/z3.gif
+	offset	39 74
+	bbox	22 3 43 68
+	frame	data/chars/zmetro/z4.gif
+	offset	39 74
+	@cmd	spawn01 "speed2" 0 0 1
+	bbox	22 3 43 68
+	frame	data/chars/zmetro/z5.gif
+		
+#|edited by openBor Stats v 0.51
+		

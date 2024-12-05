@@ -1,0 +1,193 @@
+
+
+
+name BonusStarfire
+health	300
+speed 28
+type	none
+gfxshadow 1 3
+diesound data/chars/starfire/morte.wav
+icon	data/chars/starfire/portraitb.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  32 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/starfire/nome.gif -37 -60
+parrow2		data/chars/starfire/nome.gif -37 -60
+
+palette       data/chars/Starfire/00pal1.gif
+alternatepal  data/chars/Starfire/00pal2.gif
+alternatepal  data/chars/Starfire/00pal3.gif
+alternatepal  data/chars/Starfire/00pal4.gif
+alternatepal  data/chars/Starfire/00pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	78 99
+	bbox	56 24 58 47
+	attack	52 24 62 48 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/starfire/run1.gif
+	offset	78 100
+	frame	data/chars/starfire/run2.gif
+	offset	78 101
+	frame	data/chars/starfire/run3.gif
+	offset	78 102
+	frame	data/chars/starfire/run1.gif
+	offset	78 101
+	frame	data/chars/starfire/run2.gif
+	offset	78 100
+	frame	data/chars/starfire/run3.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	6
+	offset	78 99
+	bbox	56 24 58 47
+	attack	52 24 62 48 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/starfire/run10.gif
+	offset	78 100
+	frame	data/chars/starfire/run11.gif
+	offset	78 101
+	frame	data/chars/starfire/run12.gif
+	offset	78 102
+	frame	data/chars/starfire/run10.gif
+	offset	78 101
+	frame	data/chars/starfire/run11.gif
+	offset	78 100
+	frame	data/chars/starfire/run12.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	78 99
+	frame	data/chars/starfire/run1.gif
+		
+anim	special2
+
+		
+anim	walk
+	loop	1
+	delay	6
+	offset	78 99
+	bbox	56 24 58 47
+	attack	52 24 62 48 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/starfire/run10.gif
+	offset	78 100
+	frame	data/chars/starfire/run11.gif
+	offset	78 101
+	frame	data/chars/starfire/run12.gif
+	offset	78 102
+	frame	data/chars/starfire/run10.gif
+	offset	78 101
+	frame	data/chars/starfire/run11.gif
+	offset	78 100
+	frame	data/chars/starfire/run12.gif
+		
+#|edited by openBor Stats v 0.51
+		

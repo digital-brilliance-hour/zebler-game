@@ -1,0 +1,32 @@
+
+
+name	stomp2
+type	none
+shadow	0
+lifespan 2
+subject_to_gravity 0
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	6
+	offset	170 115
+	frame	data/chars/steel/xa1.gif
+	offset	170 107
+	frame	data/chars/steel/xa2.gif
+	frame	data/chars/steel/xa3.gif
+	frame	data/chars/steel/xa4.gif
+	frame	data/chars/steel/xa5.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

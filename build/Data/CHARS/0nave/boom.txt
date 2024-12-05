@@ -1,0 +1,34 @@
+
+
+name	Boom
+type	none
+gfxshadow 0
+lifespan 1
+facing 1
+Antigravity 100
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	37 44
+	frame	data/chars/0Nave/boom1.gif
+	frame	data/chars/0Nave/boom2.gif
+	frame	data/chars/0Nave/boom3.gif
+	frame	data/chars/0Nave/boom4.gif
+	frame	data/chars/0Nave/boom5.gif
+	frame	data/chars/0Nave/boom6.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

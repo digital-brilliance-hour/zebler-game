@@ -1,0 +1,311 @@
+
+
+
+name EradicatorRun
+health	300
+speed 22
+type	none
+gfxshadow 1 3
+icon	data/chars/eradicator/portrait.gif 1
+diesound data/chars/eradicator/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load EraRunTiro
+
+atchain 1
+running 40 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/eradicator/nome.gif -37 -60
+parrow2		data/chars/eradicator/nome.gif -37 -60
+
+palette       data/chars/eradicator/00pal1.gif
+alternatepal  data/chars/eradicator/00pal2.gif
+alternatepal  data/chars/eradicator/00pal3.gif
+alternatepal  data/chars/eradicator/00pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/superman/raio.wav
+	@cmd	shoot "EraRunTiro" 14 39 2
+	frame	data/chars/0Nave/er5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/er6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/er5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/er6.gif
+		
+anim	backwalk
+	loop	1
+	delay	8
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+	frame	data/chars/0Nave/er5.gif
+	frame	data/chars/0Nave/er6.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	37 57
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/er8.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/er8.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/er8.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/er8.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/er8.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/er8.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/er8.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-8 0 0
+	drawmethod	flipx 1
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	32 20 35 20 25 0 0 0 5 0
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	bbox	31 17 28 40
+	offset	44 71
+	frame	data/chars/0Nave/er1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/er2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/er3.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	26 10 22 31
+	offset	38 57
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	34 10 27 32 15 0 0 0 5 0
+	frame	data/chars/0Nave/er7.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+	frame	data/chars/0Nave/er5.gif
+	frame	data/chars/0Nave/er6.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	bbox	31 17 28 40
+	offset	44 71
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	frame	data/chars/0Nave/er1.gif
+	frame	data/chars/0Nave/er1.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	26 10 22 31
+	offset	38 57
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	34 10 27 32 15 0 0 0 5 0
+	frame	data/chars/0Nave/er7.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+	frame	data/chars/0Nave/er5.gif
+	frame	data/chars/0Nave/er6.gif
+		
+anim	runattack
+	loop	0
+	delay	15
+	@cmd	velo001	10 0 0
+	attack	32 20 35 20 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+	frame	data/chars/0Nave/er5.gif
+	frame	data/chars/0Nave/er6.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	19 17 38 29
+	offset	40 63
+	frame	data/chars/0Nave/er4.gif
+		
+#|edited by openBor Stats v 0.51
+		

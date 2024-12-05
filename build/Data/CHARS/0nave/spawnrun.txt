@@ -1,0 +1,322 @@
+
+
+
+name SpawnRun
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+icon	data/chars/spawn/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 0
+nopain 1
+
+
+
+load LoboBala
+load SpawnTiro2
+
+atchain 1
+running 24 0  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+
+palette       data/chars/Spawn/00spawn.gif
+alternatepal  data/chars/Spawn/00spawn2.gif
+alternatepal  data/chars/Spawn/00spawn3.gif
+alternatepal  data/chars/Spawn/00spawn4.gif
+
+parrow		data/chars/spawn/nome.gif -37 -70
+parrow2		data/chars/spawn/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	bbox	51 35 41 45
+	offset	72 80
+	delay	8
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa104.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -10 17 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa105.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa106.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa107.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	bbox	51 35 41 45
+	offset	72 80
+	frame	data/chars/0Nave/spa108.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa108.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa108.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa108.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa108.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa108.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa108.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	follow1
+	loop	0
+	bbox	51 35 41 45
+	offset	72 80
+	delay	8
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa104.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -10 17 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa105.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa106.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa107.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	32
+	@cmd	velo001	-6 0 0
+	sound	data/sounds/freio.wav
+	bbox	51 35 41 45
+	offset	72 80
+	frame	data/chars/0Nave/spa108.gif
+		
+anim	freespecial2
+	com	A2 freespecial2
+	com	A3 freespecial2
+	energycost	10
+	mponly	1
+	loop	0
+	@script
+		if (frame==0){
+		void self = getlocalvar("self");
+		int myVar = getglobalvar("SpawnBar");
+		if (myVar<=0){
+		performattack(self, openborconstant("ANI_FOLLOW1"));
+ 	   	}else{
+                setglobalvar("SpawnBar", myVar -50);
+ 	   	}
+ 	   	}
+	@end_script	
+	bbox	51 35 41 45
+	offset	72 80
+	delay	8
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa113.gif
+	frame	data/chars/0Nave/spa114.gif
+	sound	data/chars/Spawn/x2.wav
+	@cmd	shoot "SpawnTiro2" -1 16 1
+	frame	data/chars/0Nave/spa115.gif
+	frame	data/chars/0Nave/spa116.gif
+		
+anim	idle
+	loop	1
+	bbox	51 35 41 45
+	offset	72 80
+	delay	6
+	frame	data/chars/0Nave/spa100.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/spa101.gif
+	frame	data/chars/0Nave/spa102.gif
+	frame	data/chars/0Nave/spa103.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+		
+anim	run
+	loop	1
+	bbox	51 35 41 45
+	offset	72 80
+	delay	4
+	frame	data/chars/0Nave/spa100.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/spa101.gif
+	frame	data/chars/0Nave/spa102.gif
+	frame	data/chars/0Nave/spa103.gif
+		
+anim	runattack
+	loop	0
+	delay	4
+	bbox	51 35 41 45
+	offset	72 80
+	@cmd	velo001	3 0 0
+	frame	data/chars/0Nave/spa108.gif
+	frame	data/chars/0Nave/spa109.gif
+	sound	data/sounds/punch3.wav
+	@cmd	velo001	7 0 0
+	attack	54 36 36 37 25 0 0 0 5 0
+	frame	data/chars/0Nave/spa110.gif
+	attack	66 36 36 37 25 0 0 0 5 0
+	frame	data/chars/0Nave/spa111.gif
+	attack	62 36 63 23 25 0 0 0 5 0
+	delay	16
+	frame	data/chars/0Nave/spa112.gif
+	delay	3
+	@cmd	velo001	-2 0 0
+	attack	0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/spa111.gif
+	frame	data/chars/0Nave/spa110.gif
+	frame	data/chars/0Nave/spa109.gif
+	frame	data/chars/0Nave/spa108.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	72 80
+	frame	data/chars/0Nave/spa100.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	bbox	51 35 41 45
+	offset	72 80
+	delay	5
+	frame	data/chars/0Nave/spa100.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/spa101.gif
+	frame	data/chars/0Nave/spa102.gif
+	frame	data/chars/0Nave/spa103.gif
+		
+anim	walkoff
+		
+#|edited by openBor Stats v 0.51
+		

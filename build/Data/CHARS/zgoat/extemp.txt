@@ -1,0 +1,365 @@
+name extemp
+health	700
+speed 60
+type	enemy
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 60
+hostile player npc
+candamage player npc obstacle
+antigrab  6
+blockodds 3
+diesound data/sounds/die5.wav
+throw 3 2
+aggression 999
+knockdowncount 6
+jugglepoints 6
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+
+load SuperCyTiro
+
+throw 3 3
+
+fmap 1
+palette       data/chars/zgoat/ex1.gif
+alternatepal  data/chars/zgoat/ex1gelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 80
+	@cmd	changeopenborvariant "slowmotion" 0
+	hitfx	data/sounds/beat2.wav
+	delay	10
+	offset	77 106
+	bbox	63 15 36 76
+	frame	data/chars/zgoat/ex7.gif
+	offset	71 104
+	bbox	45 19 51 78
+	sound	data/sounds/punch2.wav
+	attack	59 24 57 24 20 10 0 0 0 0
+	dropv	2 5
+	delay	9
+	@cmd	velo001	3 0 0
+	frame	data/chars/zgoat/ex4.gif
+	@cmd	velo001	0 0 0
+	frame	data/chars/zgoat/ex5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/ex5.gif
+	offset	77 106
+	bbox	63 15 36 76
+	frame	data/chars/zgoat/ex7.gif
+		
+anim	attack2
+	loop	0
+	range	100 150
+	delay	11
+	offset	67 108
+	bbox	44 28 44 81
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex17.gif
+	frame	data/chars/zgoat/ex18.gif
+	attack	150 3 111 111 5 10 0 0 0 0
+	stun	2
+	frame	data/chars/zgoat/ex19.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/ex20.gif
+	frame	data/chars/zgoat/ex17.gif
+	frame	data/chars/zgoat/ex18.gif
+	frame	data/chars/zgoat/ex19.gif
+	frame	data/chars/zgoat/ex20.gif
+		
+anim	attack3
+	loop	0
+	range	250 450
+	hitfx	data/sounds/beat2.wav
+	landframe	9
+	jumpframe	0 4 6 0
+	@cmd	changeopenborvariant "slowmotion" 0
+	sound	data/sounds/vuu3.wav
+	delay	8
+	offset	74 89
+	bbox	43 21 68 43
+	attack	61 22 72 36 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/ex8.gif
+	frame	data/chars/zgoat/ex9.gif
+	frame	data/chars/zgoat/ex10.gif
+	frame	data/chars/zgoat/ex11.gif
+	frame	data/chars/zgoat/ex8.gif
+	frame	data/chars/zgoat/ex9.gif
+	frame	data/chars/zgoat/ex10.gif
+	frame	data/chars/zgoat/ex11.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	76 110
+	bbox	49 19 43 77
+	delay	555
+	frame	data/chars/zgoat/ex16.gif
+	delay	9
+	offset	77 106
+	bbox	63 15 36 76
+	frame	data/chars/zgoat/ex6.gif
+		
+anim	attack4
+	loop	0
+	range	150 200
+	@cmd	changeopenborvariant "slowmotion" 0
+	hitfx	data/sounds/beat2.wav
+	delay	10
+	offset	77 106
+	bbox	63 15 36 76
+	frame	data/chars/zgoat/ex7.gif
+	offset	71 104
+	bbox	45 19 51 78
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 70 1
+	delay	9
+	frame	data/chars/zgoat/ex4.gif
+	frame	data/chars/zgoat/ex5.gif
+	frame	data/chars/zgoat/ex5.gif
+	offset	77 106
+	bbox	63 15 36 76
+	frame	data/chars/zgoat/ex7.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	@cmd	changeopenborvariant "slowmotion" 0
+	offset	52 93
+	bbox	29 8 42 84
+	frame	data/chars/zgoat/ex12.gif
+	bbox	20 25 57 41
+	offset	45 87
+	frame	data/chars/zgoat/ex13.gif
+	offset	45 68
+	delay	500
+	frame	data/chars/zgoat/ex13.gif
+	offset	53 53
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	53 53
+	frame	data/chars/zgoat/ex14.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	48 45
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex13.gif
+		
+anim	grabbed
+	loop	0
+	delay	25
+	offset	50 101
+	bbox	29 8 42 84
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex12.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	77 108
+	bbox	51 18 45 82
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex1.gif
+	frame	data/chars/zgoat/ex2.gif
+	frame	data/chars/zgoat/ex3.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	offset	76 110
+	bbox	49 19 43 77
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex16.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	offset	52 93
+	bbox	29 8 42 84
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex12.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	48 45
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex13.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	53 53
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex14.gif
+	offset	57 63
+	frame	data/chars/zgoat/ex15.gif
+	offset	74 106
+	frame	data/chars/zgoat/ex1.gif
+		
+anim	riseattack1
+	loop	0
+	range	0 80
+	@cmd	changeopenborvariant "slowmotion" 0
+	delay	9
+	offset	53 53
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex14.gif
+	offset	57 63
+	frame	data/chars/zgoat/ex15.gif
+	offset	74 106
+	frame	data/chars/zgoat/ex1.gif
+	offset	67 108
+	bbox	44 28 44 81
+	frame	data/chars/zgoat/ex17.gif
+	frame	data/chars/zgoat/ex18.gif
+	attack	6 3 145 111 5 10 0 0 0 0
+	stun	2
+	frame	data/chars/zgoat/ex19.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/ex20.gif
+		
+anim	walk
+	loop	1
+	delay	4
+	offset	77 106
+	bbox	63 15 36 76
+	@cmd	changeopenborvariant "slowmotion" 1
+	frame	data/chars/zgoat/ex6.gif
+	offset	77 107
+	sound	data/chars/flash/slow2.wav
+	frame	data/chars/zgoat/ex7a.gif
+	offset	77 108
+	frame	data/chars/zgoat/ex6a.gif
+	offset	77 107
+	frame	data/chars/zgoat/ex7a.gif
+	offset	77 106
+	frame	data/chars/zgoat/ex6.gif
+	offset	77 107
+	frame	data/chars/zgoat/ex7.gif
+	offset	77 108
+	frame	data/chars/zgoat/ex6.gif
+	offset	77 107
+	frame	data/chars/zgoat/ex7.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	76 110
+	bbox	49 19 43 77
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/zgoat/ex16.gif
+		
+#|edited by openBor Stats v 0.51
+		

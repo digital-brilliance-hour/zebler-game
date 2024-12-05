@@ -1,0 +1,229 @@
+name Doom2
+health	600
+speed 20
+type	enemy
+gfxshadow 1 3
+hostile player npc
+candamage player npc obstacle
+jumpheight 6
+aggression 999
+diesound data/sounds/bheartdie.wav
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nopain 1
+knockdowncount 10
+nodieblink 1
+throw 3 2
+antigrab 100
+aimove chase
+
+ animationscript data/scripts/grabscript.c
+
+
+defense normal17 4 0 4
+
+fmap 1
+palette       data/chars/zmetro/dd1.gif
+alternatepal  data/chars/zmetro/dd1gelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 80
+	delay	35
+	hitflash	flash3
+	@script
+	if(frame==0)
+	{
+	       int SFX1 = loadsample("data/chars/zmetro/apoc1.wav");
+	       int SFX2 = loadsample("data/chars/zmetro/apoc2.wav");
+	       int SFX3 = loadsample("data/chars/zmetro/apoc3.wav");
+       	       int r = rand()%2;
+      	       if(r==-1){playsample(SFX1, 0, 120, 120, 100, 0);}
+      	       if(r==0){playsample(SFX2, 0, 120, 120, 100, 0);}
+      	       if(r==1){playsample(SFX3, 0, 120, 120, 100, 0);}
+        }
+	@end_script	
+	hitfx	data/sounds/beat3.wav
+	bbox	64 18 52 95
+	offset	85 113
+	frame	data/chars/zmetro/dd14.gif
+	delay	6
+	bbox	78 19 51 99
+	offset	90 116
+	sound	data/sounds/punch3.wav
+	frame	data/chars/zmetro/dd15.gif
+	attack	109 30 66 34 30 10 1 0 10 0
+	dropv	3 4
+	frame	data/chars/zmetro/dd16.gif
+	frame	data/chars/zmetro/dd17.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/dd17.gif
+	bbox	71 34 42 93
+	offset	82 128
+	frame	data/chars/zmetro/dd6.gif
+	delay	9
+	bbox	60 40 59 88
+	offset	86 128
+	frame	data/chars/zmetro/dd1.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	offset	86 114
+	frame	data/chars/zmetro/dd18.gif
+	offset	76 99
+	frame	data/chars/zmetro/dd19.gif
+	offset	76 82
+	delay	500
+	frame	data/chars/zmetro/dd19.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	75 57
+	sound	data/sounds/stomp.wav
+	@cmd	spawn01 "stomp" 0 0 -1
+	delay	50
+	frame	data/chars/zmetro/dd20.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	bbox	62 41 53 88
+	offset	86 128
+	frame	data/chars/zmetro/dd1.gif
+	frame	data/chars/zmetro/dd2.gif
+	frame	data/chars/zmetro/dd3.gif
+	frame	data/chars/zmetro/dd2.gif
+		
+anim	jumpattack
+	loop	0
+	range	250 550
+	delay	30
+	sound	data/sounds/vuu2.wav
+	bbox	58 35 49 81
+	offset	83 126
+	frame	data/chars/zmetro/dd11.gif
+	frame	data/chars/zmetro/dd12.gif
+		
+anim	jumpland
+	loop	0
+	delay	3
+	bbox	54 34 61 80
+	offset	84 113
+	quakeframe	2 6 6
+	sound	data/sounds/stomp.wav
+	@cmd	spawn01 "stomp" 0 0 -1
+	attack	-30 102 232 30 10 10 0 0 0 55
+	frame	data/chars/zmetro/dd13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	frame	data/chars/zmetro/dd13.gif
+	delay	20
+	bbox	57 25 62 103
+	offset	84 127
+	frame	data/chars/zmetro/dd1.gif
+		
+anim	pain
+	loop	0
+	delay	4
+	bbox	57 9 57 104
+	offset	86 114
+	frame	data/chars/zmetro/dd18.gif
+		
+anim	rise
+	loop	0
+	delay	10
+	offset	75 57
+	frame	data/chars/zmetro/dd20.gif
+	offset	72 79
+	frame	data/chars/zmetro/dd19.gif
+	offset	55 77
+	frame	data/chars/zmetro/dd21.gif
+	offset	86 113
+	frame	data/chars/zmetro/dd13.gif
+		
+anim	spawn
+	loop	0
+	delay	9
+	jumpframe	0 8 2 0
+	bbox	60 27 49 82
+	offset	84 134
+	sound	data/chars/zmetro/dhaha.wav
+	frame	data/chars/zmetro/dd12.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	bbox	71 32 45 97
+	offset	85 128
+		@script
+    	       void self = getlocalvar("self");
+               if(frame==2){
+               void vida = getentityproperty(self,"health"); //get health
+               if(vida<300){
+    	       changeentityproperty(self, "health", vida+2);//add health
+    	       }
+     	       }
+	@end_script	
+	frame	data/chars/zmetro/dd4.gif
+	frame	data/chars/zmetro/dd5.gif
+	frame	data/chars/zmetro/dd10.gif
+	frame	data/chars/zmetro/dd9.gif
+	frame	data/chars/zmetro/dd8.gif
+	frame	data/chars/zmetro/dd7.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	bbox	61 33 49 86
+	offset	84 134
+	frame	data/chars/zmetro/dd12.gif
+		
+#|edited by openBor Stats v 0.51
+		

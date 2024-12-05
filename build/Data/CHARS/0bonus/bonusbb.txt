@@ -1,0 +1,181 @@
+
+
+
+name BonusBB
+health	300
+speed 16
+type	none
+gfxshadow 1 3
+diesound data/chars/bb/morte.wav
+icon	data/chars/bb/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/BB/pal1.gif
+alternatepal  data/chars/BB/pal2.gif
+alternatepal  data/chars/BB/pal3.gif
+alternatepal  data/chars/BB/pal4.gif
+alternatepal  data/chars/BB/pal5.gif
+
+
+parrow		data/chars/BB/nome.gif -37 -60
+parrow2		data/chars/BB/nome.gif -37 -60
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	4
+	bbox	51 44 50 61
+	attack	49 43 53 65 110 9 0 0 10 0
+	forcedirection	-2
+	offset	82 121
+	frame	data/chars/bb/r1.gif
+	offset	82 122
+	frame	data/chars/bb/r2.gif
+	offset	82 123
+	sound	data/chars/bb/asa.wav
+	frame	data/chars/bb/r3.gif
+	offset	82 122
+	frame	data/chars/bb/r2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	51 56 50 72
+	attack	53 54 49 74 110 9 0 0 10 0
+	forcedirection	-2
+	offset	76 134
+	frame	data/chars/bb/rs1.gif
+	offset	76 135
+	frame	data/chars/bb/rs2.gif
+	offset	76 136
+	sound	data/chars/bb/asa.wav
+	frame	data/chars/bb/rs3.gif
+	offset	76 135
+	frame	data/chars/bb/rs2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	82 121
+	frame	data/chars/bb/r1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	51 56 50 72
+	attack	53 54 49 74 110 9 0 0 10 0
+	forcedirection	-2
+	offset	76 134
+	frame	data/chars/bb/rs1.gif
+	offset	76 135
+	frame	data/chars/bb/rs2.gif
+	offset	76 136
+	sound	data/chars/bb/asa.wav
+	frame	data/chars/bb/rs3.gif
+	offset	76 135
+	frame	data/chars/bb/rs2.gif
+		
+#|edited by openBor Stats v 0.51
+		

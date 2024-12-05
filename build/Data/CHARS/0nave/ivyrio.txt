@@ -1,0 +1,249 @@
+
+
+
+name IvyRio
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+diesound data/chars/poison/morte.wav
+icon	data/chars/poison/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 3
+
+load mikeTiro
+knife mikeTiro
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/poison/nome.gif -37 -60
+parrow2		data/chars/poison/nome.gif -37 -60
+
+palette       data/chars/poison/pal1.gif
+alternatepal  data/chars/poison/pal2.gif
+alternatepal  data/chars/poison/pal8.gif
+alternatepal  data/chars/poison/pal3.gif
+alternatepal  data/chars/poison/pal4.gif
+alternatepal  data/chars/poison/pal5.gif
+alternatepal  data/chars/poison/pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	@cmd	keymove 2 0.6
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy10.gif
+	offset	81 100
+	@cmd	keymove 2 0.6
+	frame	data/chars/poison/ivy11.gif
+	sound	data/chars/zgotham/poison.wav
+	@cmd	shoot "mikeTiro" 15 22 2
+	@cmd	keymove 2 0.6
+	offset	81 99
+	frame	data/chars/poison/ivy12.gif
+	@cmd	keymove 2 0.6
+	offset	81 101
+	frame	data/chars/poison/ivy13.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy14.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/poison/ivy14.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/poison/ivy14.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/poison/ivy14.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/poison/ivy14.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/poison/ivy14.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/poison/ivy14.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy10.gif
+	offset	81 100
+	frame	data/chars/poison/ivy11.gif
+	offset	81 99
+	frame	data/chars/poison/ivy12.gif
+	offset	81 101
+	frame	data/chars/poison/ivy13.gif
+		
+anim	jump
+	loop	0
+	delay	5
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy14.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy10.gif
+	offset	81 100
+	frame	data/chars/poison/ivy11.gif
+	offset	81 99
+	frame	data/chars/poison/ivy12.gif
+	offset	81 101
+	frame	data/chars/poison/ivy13.gif
+		
+anim	runattack
+	loop	0
+	delay	6
+	@cmd	keymove 2 0.6
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy10.gif
+	offset	81 100
+	@cmd	keymove 2 0.6
+	frame	data/chars/poison/ivy11.gif
+	sound	data/chars/zgotham/poison.wav
+	@cmd	shoot "mikeTiro" 15 22 2
+	@cmd	keymove 2 0.6
+	offset	81 99
+	frame	data/chars/poison/ivy12.gif
+	@cmd	keymove 2 0.6
+	offset	81 101
+	frame	data/chars/poison/ivy13.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy10.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	56 62 60 38
+	offset	81 100
+	frame	data/chars/poison/ivy10.gif
+	offset	81 100
+	frame	data/chars/poison/ivy11.gif
+	offset	81 99
+	frame	data/chars/poison/ivy12.gif
+	offset	81 101
+	frame	data/chars/poison/ivy13.gif
+		
+#|edited by openBor Stats v 0.51
+		

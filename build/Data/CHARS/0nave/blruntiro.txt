@@ -1,0 +1,41 @@
+name BLRunTiro
+speed        25
+type	     none
+shadow	     0
+candamage enemy obstacle
+
+palette       data/chars/Shazam/00pal1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	3
+	hitfx	data/sounds/elechit.wav
+	shock	20 10 27 12 10 9 0 0 0 15
+	offset	35 16
+	frame	data/chars/0nave/sha11.gif
+	frame	data/chars/0nave/sha12.gif
+		
+#|edited by openBor Stats v 0.51
+		

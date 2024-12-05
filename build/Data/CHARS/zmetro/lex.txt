@@ -1,0 +1,515 @@
+name Lex
+health	600
+speed 14
+type	enemy
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 60
+hostile player npc
+candamage player npc obstacle
+antigrab  6
+aggression 999
+blockodds 1
+diesound data/chars/zmetro/lexdie.wav
+throw 3 2
+aimove chase
+knockdowncount 6
+jugglepoints 4
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+offscreenkill 9999
+
+
+throw 3 3
+
+fmap 1
+palette       data/chars/zmetro/l1pal1.gif
+alternatepal  data/chars/zmetro/l1gelo.gif
+alternatepal  data/chars/zmetro/l1poison.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 80
+	hitfx	data/sounds/beat2.wav
+	offset	31 93
+	bbox	13 3 40 90
+	delay	6
+	frame	data/chars/zmetro/l22.gif
+	offset	31 96
+	bbox	13 7 40 90
+	sound	data/chars/zmetro/lexpunch.wav
+	frame	data/chars/zmetro/l23.gif
+	attack3	31 24 42 31 35 10 0 0 0 0
+	offset	24 105
+	bbox	8 16 40 90
+	frame	data/chars/zmetro/l24.gif
+	attack3	31 16 59 26 35 10 0 0 0 0
+	offset	26 100
+	bbox	9 12 40 90
+	frame	data/chars/zmetro/l25.gif
+	frame	data/chars/zmetro/l25.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	24 105
+	bbox	8 16 40 90
+	frame	data/chars/zmetro/l24.gif
+	offset	31 96
+	bbox	13 7 40 90
+	frame	data/chars/zmetro/l23.gif
+	offset	31 93
+	bbox	13 3 40 90
+	frame	data/chars/zmetro/l22.gif
+	offset	20 93
+	bbox	2 1 31 95
+	delay	30
+	frame	data/chars/zmetro/l1.gif
+		
+anim	block
+	loop	0
+	offset	31 89
+	bbox	8 1 48 88
+	delay	3
+	sound	data/chars/zmetro/shield.wav
+	frame	data/chars/zmetro/l10.gif
+	offset	31 90
+	frame	data/chars/zmetro/l11.gif
+	frame	data/chars/zmetro/l12.gif
+	offset	31 89
+	frame	data/chars/zmetro/l10.gif
+	offset	31 90
+	frame	data/chars/zmetro/l11.gif
+	frame	data/chars/zmetro/l12.gif
+	offset	31 89
+	frame	data/chars/zmetro/l10.gif
+	offset	31 90
+	frame	data/chars/zmetro/l11.gif
+	frame	data/chars/zmetro/l12.gif
+	offset	31 89
+	bbox	8 1 48 88
+	delay	3
+	frame	data/chars/zmetro/l10.gif
+	offset	31 90
+	frame	data/chars/zmetro/l11.gif
+	frame	data/chars/zmetro/l12.gif
+	offset	31 89
+	frame	data/chars/zmetro/l10.gif
+	offset	31 90
+	frame	data/chars/zmetro/l11.gif
+	frame	data/chars/zmetro/l12.gif
+	offset	31 89
+	frame	data/chars/zmetro/l10.gif
+	offset	31 90
+	frame	data/chars/zmetro/l11.gif
+	frame	data/chars/zmetro/l12.gif
+		
+anim	burn
+	loop	0
+	delay	5
+	landframe	22
+	offset	33 69
+	bbox	6 13 55 41
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/l31.gif
+	frame	data/chars/zmetro/l32.gif
+	offset	31 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/l33.gif
+	offset	33 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/l34.gif
+	frame	data/chars/zmetro/l31.gif
+	frame	data/chars/zmetro/l32.gif
+	offset	31 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/l33.gif
+	offset	33 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/l34.gif
+	frame	data/chars/zmetro/l31.gif
+	frame	data/chars/zmetro/l32.gif
+	offset	31 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/l33.gif
+	offset	33 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/l34.gif
+	frame	data/chars/zmetro/l31.gif
+	frame	data/chars/zmetro/l32.gif
+	offset	31 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/l33.gif
+	offset	33 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/l34.gif
+	frame	data/chars/zmetro/l31.gif
+	frame	data/chars/zmetro/l32.gif
+	offset	31 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/l33.gif
+	offset	33 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/l34.gif
+	frame	data/chars/zmetro/l31.gif
+	frame	data/chars/zmetro/l32.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	44 32
+	frame	data/chars/zmetro/l29.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	bbox	2 1 34 86
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+	bbox	8 13 64 50
+	offset	33 85
+	frame	data/chars/zmetro/l27.gif
+	offset	39 66
+	delay	500
+	frame	data/chars/zmetro/l28.gif
+	offset	46 94
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	44 32
+	frame	data/chars/zmetro/l29.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	35 39
+	frame	data/chars/zmetro/l28.gif
+		
+anim	grabbed
+	loop	0
+	bbox	2 1 34 86
+	delay	25
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+		
+anim	idle
+	loop	1
+	offset	20 94
+	bbox	2 1 31 95
+	delay	30
+	frame	data/chars/zmetro/l1.gif
+		
+anim	jumpattack
+	loop	0
+	range	120 200
+	hitfx	data/sounds/beat2.wav
+	delay	9
+	jumpframe	0 8 2 0
+	offset	39 82
+	bbox	20 1 48 81
+	sound	data/sounds/vuu5.wav
+	frame	data/chars/zmetro/l17.gif
+	offset	32 82
+	bbox	20 1 48 81
+	frame	data/chars/zmetro/l18.gif
+	frame	data/chars/zmetro/l19.gif
+	offset	39 82
+	bbox	20 1 48 81
+	frame	data/chars/zmetro/l17.gif
+	offset	32 82
+	bbox	20 1 48 81
+	frame	data/chars/zmetro/l18.gif
+	frame	data/chars/zmetro/l19.gif
+	offset	39 82
+	bbox	20 1 48 81
+	frame	data/chars/zmetro/l17.gif
+	offset	32 82
+	bbox	20 1 48 81
+	frame	data/chars/zmetro/l18.gif
+	frame	data/chars/zmetro/l19.gif
+	offset	44 96
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l20.gif
+	offset	39 93
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l21.gif
+	offset	44 96
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l20.gif
+	offset	39 93
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l21.gif
+	offset	44 96
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l20.gif
+	offset	39 93
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l21.gif
+	offset	44 96
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l20.gif
+	offset	39 93
+	bbox	29 16 47 64
+	attack	44 48 33 33 19 0 0 0 0 0
+	frame	data/chars/zmetro/l21.gif
+		
+anim	pain
+	loop	0
+	bbox	2 1 34 86
+	delay	25
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+		
+anim	pain18
+	loop	0
+	delay	8
+	drawmethod	remap 2
+	offset	20 94
+	bbox	2 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	bbox	2 1 34 86
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+	offset	20 94
+	bbox	2 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	bbox	2 1 34 86
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+	offset	20 94
+	bbox	2 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	bbox	2 1 34 86
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+	offset	20 94
+	bbox	2 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	bbox	2 1 34 86
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+	offset	20 94
+	bbox	2 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	bbox	2 1 34 86
+	offset	18 85
+	frame	data/chars/zmetro/l26.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	35 39
+	frame	data/chars/zmetro/l28.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	44 32
+	frame	data/chars/zmetro/l29.gif
+	offset	28 54
+	frame	data/chars/zmetro/l30.gif
+	offset	27 84
+	frame	data/chars/zmetro/l9.gif
+		
+anim	spawn
+	loop	0
+	delay	15
+	offset	17 94
+	bbox	3 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	offset	17 93
+	bbox	3 1 31 95
+	frame	data/chars/zmetro/l1a.gif
+	offset	16 92
+	bbox	4 1 27 95
+	frame	data/chars/zmetro/l1b.gif
+	offset	16 93
+	bbox	3 1 28 95
+	frame	data/chars/zmetro/l1c.gif
+	offset	17 94
+	bbox	3 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	offset	17 93
+	bbox	3 1 31 95
+	frame	data/chars/zmetro/l1a.gif
+	offset	16 92
+	bbox	4 1 27 95
+	frame	data/chars/zmetro/l1b.gif
+	offset	16 93
+	bbox	3 1 28 95
+	frame	data/chars/zmetro/l1c.gif
+	offset	17 94
+	bbox	3 1 31 95
+	frame	data/chars/zmetro/l1.gif
+	offset	17 93
+	bbox	3 1 31 95
+	frame	data/chars/zmetro/l1a.gif
+	offset	16 92
+	bbox	4 1 27 95
+	frame	data/chars/zmetro/l1b.gif
+	offset	16 93
+	bbox	3 1 28 95
+	frame	data/chars/zmetro/l1c.gif
+	offset	16 91
+	bbox	3 1 32 90
+	delay	9
+	frame	data/chars/zmetro/l5.gif
+	offset	16 94
+	bbox	8 1 30 95
+	frame	data/chars/zmetro/l1e.gif
+	offset	18 91
+	bbox	8 1 34 89
+	delay	20
+	sound	data/sound/0target.wav
+	frame	data/chars/zmetro/l1d.gif
+	offset	16 94
+	bbox	8 1 30 95
+	delay	9
+	frame	data/chars/zmetro/l1e.gif
+	offset	16 91
+	bbox	3 1 32 90
+	frame	data/chars/zmetro/l5.gif
+		
+anim	upper
+	loop	0
+	range	0 70
+	hitfx	data/sounds/beat2.wav
+	offset	24 97
+	bbox	7 11 40 86
+	delay	5
+	sound	data/sounds/punch.wav
+	frame	data/chars/zmetro/l13.gif
+	offset	24 121
+	bbox	12 25 37 97
+	attack	31 0 36 33 15 10 0 0 0 0
+	frame	data/chars/zmetro/l14.gif
+	offset	24 127
+	bbox	12 31 37 97
+	attack	31 0 36 33 15 10 0 0 0 0
+	frame	data/chars/zmetro/l15.gif
+	offset	24 128
+	bbox	12 32 37 97
+	attack	31 0 36 33 15 10 0 0 0 0
+	frame	data/chars/zmetro/l16.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	24 97
+	bbox	7 11 40 86
+	frame	data/chars/zmetro/l13.gif
+	offset	20 93
+	bbox	2 1 31 95
+	delay	20
+	frame	data/chars/zmetro/l1.gif
+		
+anim	walk
+	loop	1
+	delay	11
+	offset	17 86
+	bbox	4 1 31 86
+	frame	data/chars/zmetro/l3.gif
+	offset	17 87
+	frame	data/chars/zmetro/l4.gif
+	offset	17 88
+	frame	data/chars/zmetro/l5.gif
+	offset	17 87
+	frame	data/chars/zmetro/l6.gif
+	offset	17 86
+	frame	data/chars/zmetro/l7.gif
+	offset	22 85
+	frame	data/chars/zmetro/l8.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	17 86
+	frame	data/chars/zmetro/l7.gif
+		
+#|edited by openBor Stats v 0.51
+		

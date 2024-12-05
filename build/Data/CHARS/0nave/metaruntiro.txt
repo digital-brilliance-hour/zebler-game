@@ -1,0 +1,41 @@
+name MetaRunTiro
+speed        25
+type	     none
+shadow	     0
+candamage enemy obstacle
+
+palette       data/chars/meta/pal1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	hitflash	veneno
+	hitfx	data/sounds/agua1.wav
+	attack	30 28 27 12 15 9 0 0 0 15
+	offset	31 34
+	frame	data/chars/0nave/meta20.gif
+	frame	data/chars/0nave/meta21.gif
+		
+#|edited by openBor Stats v 0.51
+		

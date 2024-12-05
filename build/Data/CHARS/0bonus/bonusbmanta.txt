@@ -1,0 +1,198 @@
+
+
+
+name BonusBManta
+health	300
+speed 25
+type	none
+gfxshadow 1 3
+diesound data/chars/bmanta/morte.wav
+icon	data/chars/bmanta/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  31 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/bmanta/nome.gif -37 -60
+parrow2		data/chars/bmanta/nome.gif -37 -60
+
+palette       data/chars/bmanta/pal1.gif
+alternatepal  data/chars/bmanta/pal2.gif
+alternatepal  data/chars/bmanta/pal3.gif
+alternatepal  data/chars/bmanta/pal4.gif
+alternatepal  data/chars/bmanta/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	attack	30 10 41 82 110 9 0 0 10 0
+	forcedirection	-2
+	delay	4
+	offset	50 94
+	bbox	33 10 33 80
+	frame	data/chars/bmanta/r1.gif
+	sound	data/chars/lex/dash.wav
+	frame	data/chars/bmanta/r2.gif
+	offset	50 95
+	frame	data/chars/bmanta/r1.gif
+	frame	data/chars/bmanta/r2.gif
+	offset	50 96
+	frame	data/chars/bmanta/r1.gif
+	frame	data/chars/bmanta/r2.gif
+	offset	50 95
+	frame	data/chars/bmanta/r1.gif
+	frame	data/chars/bmanta/r2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	attack	30 10 41 82 110 9 0 0 10 0
+	forcedirection	-2
+	delay	4
+	offset	46 92
+	bbox	33 10 33 80
+	frame	data/chars/bmanta/run1.gif
+	sound	data/chars/lex/dash.wav
+	frame	data/chars/bmanta/run2.gif
+	offset	50 95
+	frame	data/chars/bmanta/run1.gif
+	frame	data/chars/bmanta/run2.gif
+	offset	50 96
+	frame	data/chars/bmanta/run1.gif
+	frame	data/chars/bmanta/run2.gif
+	offset	50 95
+	frame	data/chars/bmanta/run1.gif
+	frame	data/chars/bmanta/run2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	6
+	offset	50 94
+	frame	data/chars/bmanta/r1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	attack	30 10 41 82 110 9 0 0 10 0
+	forcedirection	-2
+	delay	4
+	offset	46 92
+	bbox	33 10 33 80
+	frame	data/chars/bmanta/run1.gif
+	sound	data/chars/lex/dash.wav
+	frame	data/chars/bmanta/run2.gif
+	offset	50 95
+	frame	data/chars/bmanta/run1.gif
+	frame	data/chars/bmanta/run2.gif
+	offset	50 96
+	frame	data/chars/bmanta/run1.gif
+	frame	data/chars/bmanta/run2.gif
+	offset	50 95
+	frame	data/chars/bmanta/run1.gif
+	frame	data/chars/bmanta/run2.gif
+		
+#|edited by openBor Stats v 0.51
+		

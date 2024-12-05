@@ -1,0 +1,140 @@
+name	hqFuma
+health 25
+speed 0
+type	enemy
+gfxshadow 1 3
+jumpheight 3
+hostile player npc
+candamage player npc
+antigrab  3
+diesound data/chars/hquinn/joker.wav
+throw 3 2
+nomove 1
+knockdowncount 6
+jugglepoints 4
+falldie 1
+nodieblink 3
+stealth 5 0
+offscreenkill 9999
+
+
+throw 3 3
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/hquinn/00pal2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	death
+	loop	0
+	delay	90
+	offset	57 90
+	frame	data/chars/hquinn/ra1.gif
+		
+anim	fall
+		
+anim	idle
+	loop	1
+	delay	16
+	offset	43 91
+	frame	data/chars/Hquinn/win1.gif
+	frame	data/chars/Hquinn/win2.gif
+	frame	data/chars/Hquinn/win3.gif
+	frame	data/chars/Hquinn/win4.gif
+		
+anim	pain
+		
+anim	rise
+		
+anim	spawn
+	loop	0
+	delay	100
+	offset	52 98
+	frame	data/chars/hquinn/z3.gif
+	delay	9
+	frame	data/chars/hquinn/z2.gif
+	frame	data/chars/hquinn/z1.gif
+	frame	data/chars/hquinn/z0.gif
+		
+#|edited by openBor Stats v 0.51
+		

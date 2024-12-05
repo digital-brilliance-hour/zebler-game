@@ -4,7 +4,7 @@ health	300
 mp 60
 mprate 2
 speed 11
-type	player
+type	enemy
 gfxshadow 1 3
 diesound data/chars/Dutch/morte.wav
 icon	data/chars/Dutch/portrait2.gif 1
@@ -54,6 +54,7 @@ load DutchRio
 load SuperCyTiroP
 knife SuperCyTiroP
 load stomp2
+
 
 
 
@@ -673,20 +674,6 @@ anim	duckattack
 	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/Dutch/da2.gif
 	frame	data/chars/Dutch/da1.gif
-		
-anim	ducking
-	loop	0
-	delay	6
-	bbox	35 26 51 74
-	offset	61 100
-	frame	data/chars/Dutch/i1.gif
-		
-anim	duckrise
-	loop	0
-	delay	6
-	bbox	35 26 51 74
-	offset	61 100
-	frame	data/chars/Dutch/i1.gif
 		
 anim	fall
 	loop	0
@@ -1475,8 +1462,6 @@ anim	jump
 	@cmd	keymove 2 0
 	frame	data/chars/Dutch/j1.gif
 		
-anim	jumpattack
-		
 anim	jumpland
 	loop	0
 	delay	9
@@ -1635,5 +1620,5 @@ anim	walkoff
 	offset	59 113
 	frame	data/chars/Dutch/j1.gif
 		
-#|edited by openBor Stats v 0.51
+#|edited by openBor Stats v 0.67
 		

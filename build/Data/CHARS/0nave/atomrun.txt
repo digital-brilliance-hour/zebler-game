@@ -1,0 +1,298 @@
+
+
+
+name AtomRun
+health	300
+speed 16
+type	none
+gfxshadow 1 3
+icon	data/chars/atom/portrait.gif 1
+diesound data/chars/atom/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+load Batbomb
+Knife Batbomb
+
+atchain 1
+running  25 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/atom/nome.gif -37 -70
+parrow2		data/chars/atom/nome.gif -37 -70
+
+palette       data/chars/atom/00pal1.gif
+alternatepal  data/chars/atom/00pal2.gif
+alternatepal  data/chars/atom/00pal3.gif
+alternatepal  data/chars/atom/00pal4.gif
+alternatepal  data/chars/atom/00pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 8 25 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/atom02.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/atom01.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/atom02.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+	offset	39 68
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/atom01.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	6
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+	offset	39 68
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+		
+anim	duck
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial14
+		
+anim	freespecial2
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+	offset	39 68
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	3
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	frame	data/chars/0Nave/atom02.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 8 25 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/atom02.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/atom01.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/atom02.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	6
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+	offset	39 68
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+		
+
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	16 24 49 29
+	offset	39 66
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+	offset	39 68
+	frame	data/chars/0Nave/atom01.gif
+	offset	39 67
+	frame	data/chars/0Nave/atom02.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,5 +1,6 @@
 
 name	Linn
+type enemy
 health	300
 mp 60
 mprate 2
@@ -54,6 +55,7 @@ knife balalinn
 load balaHQ
 load cartucho
 Bomb cartucho
+
 
 
 
@@ -623,20 +625,6 @@ anim	duckattack
 	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/linn/da4.gif
 	frame	data/chars/linn/da5.gif
-		
-anim	ducking
-	loop	0
-	delay	6
-	bbox	49 36 43 61
-	offset	71 96
-	frame	data/chars/linn/i1.gif
-		
-anim	duckrise
-	loop	0
-	delay	6
-	bbox	49 36 43 61
-	offset	71 96
-	frame	data/chars/linn/i1.gif
 		
 anim	fall
 	loop	0
@@ -1577,8 +1565,6 @@ anim	jump
 	@cmd	wallAttack "ANI_FOLLOW4"
 	frame	data/chars/linn/j5.gif
 		
-anim	jumpattack
-		
 anim	jumpland
 	loop	0
 	delay	12
@@ -1749,5 +1735,5 @@ anim	walkoff
 	bbox	64 53 35 63
 	frame	data/chars/linn/j5.gif
 		
-#|edited by openBor Stats v 0.51
+#|edited by openBor Stats v 0.67
 		

@@ -1,0 +1,177 @@
+
+
+
+name BonusAtCold
+health	300
+speed 27
+type	none
+gfxshadow 1 3
+diesound data/chars/cold/morte.wav
+icon	data/chars/cold/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  31 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/cold/nome.gif -37 -60
+parrow2		data/chars/cold/nome.gif -37 -60
+
+palette       data/chars/cold/pal1.gif
+alternatepal  data/chars/cold/pal2.gif
+alternatepal  data/chars/cold/pal3.gif
+alternatepal  data/chars/cold/pal4.gif
+alternatepal  data/chars/cold/pal5.gif
+alternatepal  data/chars/cold/pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	65 87
+	bbox	40 15 49 76
+	attack	39 22 50 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/cold/cold30.gif
+	offset	65 88
+	frame	data/chars/cold/cold31.gif
+	offset	65 89
+	frame	data/chars/cold/cold32.gif
+	offset	65 88
+	frame	data/chars/cold/cold31.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	4
+	offset	65 87
+	bbox	40 15 49 76
+	attack	39 22 50 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/cold/cold30.gif
+	frame	data/chars/cold/cold31.gif
+	frame	data/chars/cold/cold32.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	65 87
+	frame	data/chars/cold/cold30.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	5
+	offset	65 87
+	bbox	40 15 49 76
+	attack	39 22 50 69 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/cold/cold30.gif
+	frame	data/chars/cold/cold31.gif
+	frame	data/chars/cold/cold32.gif
+		
+#|edited by openBor Stats v 0.51
+		

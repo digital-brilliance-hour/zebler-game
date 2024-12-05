@@ -1,0 +1,265 @@
+
+
+
+name GL2Tank
+health	300
+speed 11
+type	none
+gfxshadow 1 3
+icon	data/chars/gl2/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+load GLTankTiro
+load Batbomb
+
+atchain 1
+running  22 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/gl/nome.gif -37 -75
+parrow2		data/chars/gl/nome.gif -37 -75
+
+
+
+palette       data/chars/gl2/pal01.gif
+alternatepal  data/chars/gl2/pal02.gif
+alternatepal  data/chars/gl2/pal03.gif
+alternatepal  data/chars/gl2/pal04.gif
+alternatepal  data/chars/gl2/pal05.gif
+alternatepal  data/chars/gl2/pal06.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	@script
+	void self = getlocalvar("self");
+        if (frame==1){
+	    shoot("GLTankTiro", 23, 37, 2);
+	    shoot("GLTankTiro", 20, 27, 2);
+ 	}
+	@end_script	
+	@cmd	keymove 2 0.6
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj21.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/plasma2.wav
+	frame	data/chars/0Nave/glj23.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/glj25.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/glj27.gif
+		
+		
+anim	backwalk
+	loop	1
+	delay	8
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	sound	data/sounds/tank2.wav
+	frame	data/chars/0Nave/glj22.gif
+	frame	data/chars/0Nave/glj24.gif
+	frame	data/chars/0Nave/glj26.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/glj20.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/glj20.gif
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/0Nave/glj20.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/glj20.gif
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/0Nave/glj20.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/glj20.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	6
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	sound	data/sounds/tank2.wav
+	frame	data/chars/0Nave/glj22.gif
+	frame	data/chars/0Nave/glj24.gif
+	frame	data/chars/0Nave/glj26.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	18
+	@cmd	velo001	-4 0 0
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	sound	data/sounds/tank2.wav
+	frame	data/chars/0Nave/glj22.gif
+	frame	data/chars/0Nave/glj24.gif
+	frame	data/chars/0Nave/glj26.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	sound	data/sounds/tank2.wav
+	frame	data/chars/0Nave/glj22.gif
+	frame	data/chars/0Nave/glj24.gif
+	frame	data/chars/0Nave/glj26.gif
+		
+anim	runattack
+	loop	0
+	delay	7
+	@script
+	void self = getlocalvar("self");
+        if (frame==1){
+	    shoot("GLTankTiro", 23, 37, 2);
+	    shoot("GLTankTiro", 20, 27, 2);
+ 	}
+	@end_script	
+	@cmd	keymove 2 0.6
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj21.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/plasma2.wav
+	frame	data/chars/0Nave/glj23.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/glj25.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/glj27.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	6
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	sound	data/sounds/tank2.wav
+	frame	data/chars/0Nave/glj22.gif
+	frame	data/chars/0Nave/glj24.gif
+	frame	data/chars/0Nave/glj26.gif
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	86 48 81 58
+	offset	126 103
+	frame	data/chars/0Nave/glj20.gif
+	sound	data/sounds/tank2.wav
+	frame	data/chars/0Nave/glj22.gif
+	frame	data/chars/0Nave/glj24.gif
+	frame	data/chars/0Nave/glj26.gif
+		
+#|edited by openBor Stats v 0.51
+		

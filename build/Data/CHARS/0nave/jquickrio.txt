@@ -1,0 +1,340 @@
+
+
+
+name JQuickRio
+health	300
+speed 25
+type	none
+gfxshadow 1 3
+icon	data/chars/jquick/portrait.gif 1
+diesound data/chars/jquick/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 0
+
+load speed3
+
+atchain 1
+running  40 3  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/jquick/nome.gif -37 -63
+parrow2		data/chars/jquick/nome.gif -37 -63
+
+palette       data/chars/jquick/pal1.gif
+alternatepal  data/chars/jquick/pal3.gif
+alternatepal  data/chars/jquick/pal2.gif
+alternatepal  data/chars/jquick/pal4.gif
+alternatepal  data/chars/jquick/pal5.gif
+alternatepal  data/chars/JQuick/pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	2
+	@cmd	velo001	28 0 0
+	attack	117 28 36 39 30 0 0 0 5 0
+	offset	138 66
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/0Nave/jess22.gif
+	@cmd	spawn01 "speed3" 10 0 1
+	frame	data/chars/0Nave/jess23.gif
+	@cmd	spawn01 "speed3" 10 0 1
+	@cmd	velo001	-20 0 0
+	bbox	117 27 34 41
+	frame	data/chars/0Nave/jess24.gif
+	@cmd	spawn01 "speed3" 10 0 1
+	frame	data/chars/0Nave/jess25.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	117 27 34 41
+	offset	138 66
+	cancel	1 99 0 A freespecial
+	frame	data/chars/0Nave/jess21.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	200
+	offset	26 49
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	6
+	bbox	117 27 34 41
+	offset	138 66
+	frame	data/chars/0Nave/jess21.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	3
+	@cmd	velo001	-16 0 0
+	drawmethod	flipx 1
+	attack	114 28 36 39 30 0 0 0 5 0
+	bbox	117 27 34 41
+	offset	138 66
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/0Nave/jess21.gif
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	freespecial2
+	com	d d freespecial2
+	loop	0
+	delay	2
+	@cmd	velo001	9 5 0
+	attack	114 28 36 39 30 0 0 0 5 0
+	bbox	117 27 34 41
+	offset	138 66
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/0Nave/jess21.gif
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	freespecial3
+	com	u u freespecial3
+	loop	0
+	delay	2
+	@cmd	velo001	9 -5 0
+	attack	114 28 36 39 30 0 0 0 5 0
+	bbox	117 27 34 41
+	offset	138 66
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/0Nave/jess21.gif
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	freespecial4
+	com	f f freespecial4
+	loop	0
+	delay	3
+	@cmd	velo001	16 0 0
+	attack	114 28 36 39 30 0 0 0 5 0
+	bbox	117 27 34 41
+	offset	138 66
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	frame	data/chars/0Nave/jess21.gif
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	117 27 34 41
+	offset	138 66
+	frame	data/chars/0Nave/jess21.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	jump
+		
+anim	pain
+	loop	0
+	delay	10
+	offset	28 44
+	@cmd	velo001	-2 0 0
+	frame	data/chars/0Nave/jess30.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	117 27 34 41
+	offset	138 66
+	frame	data/chars/0Nave/jess21.gif
+	@cmd	spawn01 "speed3" 20 0 1
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	@cmd	spawn01 "speed3" 20 0 1
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	117 27 34 41
+	offset	138 66
+	frame	data/chars/0Nave/jess21.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	6
+	bbox	117 27 34 41
+	offset	138 66
+	frame	data/chars/0Nave/jess21.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	117 27 34 41
+	offset	138 66
+	frame	data/chars/0Nave/jess21.gif
+	@cmd	spawn01 "speed3" 20 0 1
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess22.gif
+	frame	data/chars/0Nave/jess23.gif
+	frame	data/chars/0Nave/jess24.gif
+	@cmd	spawn01 "speed3" 20 0 1
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/jess25.gif
+	frame	data/chars/0Nave/jess26.gif
+		
+#|edited by openBor Stats v 0.51
+		

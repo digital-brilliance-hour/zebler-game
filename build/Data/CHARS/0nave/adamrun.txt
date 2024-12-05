@@ -1,0 +1,333 @@
+
+
+
+name AdamRun
+health	300
+speed 17
+type	none
+gfxshadow 1 3
+icon	data/chars/Adam/portrait.gif 1
+diesound data/chars/Adam/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load AdamRunTiro
+
+atchain 1
+running 38 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/Adam/nome.gif -37 -60
+parrow2		data/chars/Adam/nome.gif -37 -60
+
+
+palette       data/chars/adam/pal1.gif
+alternatepal  data/chars/adam/pal2.gif
+alternatepal  data/chars/adam/pal3.gif
+alternatepal  data/chars/adam/pal4.gif
+alternatepal  data/chars/adam/pal5.gif
+alternatepal  data/chars/adam/pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	21 15 20 40
+	offset	29 61
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad1.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/elec3.wav
+	@cmd	shoot "AdamRunTiro" 12 40 2
+	frame	data/chars/adam/ad2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad1.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+	frame	data/chars/adam/ad3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	32 52
+	@cmd	velo001	-4 0 0
+	frame	data/chars/adam/ad5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/adam/ad5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/adam/ad5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/adam/ad5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/adam/ad5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/adam/ad5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/adam/ad5.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	25
+	@cmd	velo001	-8 0 0
+	bbox	21 11 26 34
+	offset	34 57
+	frame	data/chars/adam/ad6.gif
+	frame	data/chars/adam/ad6.gif
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad3.gif
+		
+anim	freespecial2
+	loop	0
+	delay	9
+	bbox	20 18 21 33
+	offset	29 60
+	dive	5 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/adam/ad1.gif
+	bbox	26 13 28 31
+	offset	37 52
+	attack	39 14 22 18 15 0 0 0 5 0
+	frame	data/chars/adam/ad7.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+	offset	31 56
+	frame	data/chars/adam/ad3.gif
+	offset	31 57
+	frame	data/chars/adam/ad3.gif
+	offset	31 56
+	frame	data/chars/adam/ad3.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	bbox	23 9 20 44
+	offset	31 55
+	frame	data/chars/adam/ad4.gif
+	frame	data/chars/adam/ad4.gif
+		
+anim	jumpattack
+	loop	0
+	delay	9
+	bbox	21 16 29 28
+	offset	32 54
+	dive	5 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/adam/ad5.gif
+	attack	29 27 24 25 15 0 0 0 5 0
+	bbox	19 12 29 28
+	offset	32 53
+	frame	data/chars/adam/ad6.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	23 9 21 44
+	offset	31 55
+	frame	data/chars/adam/ad4.gif
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+	offset	31 56
+	frame	data/chars/adam/ad3.gif
+	offset	31 57
+	frame	data/chars/adam/ad3.gif
+	offset	31 56
+	frame	data/chars/adam/ad3.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	bbox	21 15 20 40
+	offset	29 61
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad1.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/elec3.wav
+	@cmd	shoot "AdamRunTiro" 12 40 2
+	frame	data/chars/adam/ad2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/adam/ad1.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	7
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+	offset	31 56
+	frame	data/chars/adam/ad3.gif
+	offset	31 57
+	frame	data/chars/adam/ad3.gif
+	offset	31 56
+	frame	data/chars/adam/ad3.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	19 7 24 44
+	offset	31 55
+	frame	data/chars/adam/ad3.gif
+		
+#|edited by openBor Stats v 0.51
+		

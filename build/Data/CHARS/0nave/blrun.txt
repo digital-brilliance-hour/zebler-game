@@ -1,0 +1,330 @@
+
+
+
+name BLRun
+health	300
+speed 17
+type	none
+gfxshadow 1 3
+icon	data/chars/bl/portrait.gif 1
+diesound data/chars/bl/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load BLRunTiro
+
+atchain 1
+running 38 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/bl/nome.gif -37 -60
+parrow2		data/chars/bl/nome.gif -37 -60
+
+palette       data/chars/bl/0pal1.gif
+alternatepal  data/chars/bl/0pal2.gif
+alternatepal  data/chars/bl/0pal3.gif
+alternatepal  data/chars/bl/0pal4.gif
+alternatepal  data/chars/bl/0pal5.gif
+alternatepal  data/chars/bl/0pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	61 38 21 44
+	offset	72 84
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl4.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl2.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/elec3.wav
+	@cmd	shoot "BLRunTiro" 15 38 2
+	frame	data/chars/0Nave/bl3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl2.gif
+		
+anim	backwalk
+	loop	1
+	delay	8
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl1.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl1.gif
+	offset	72 86
+	frame	data/chars/0Nave/bl1.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl1.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	71 78
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/bl5.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	15
+	@cmd	velo001	-8 0 0
+	bbox	58 41 26 34
+	offset	71 79
+	frame	data/chars/0Nave/bl5.gif
+	frame	data/chars/0Nave/bl5.gif
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	bbox	61 38 21 44
+	offset	72 84
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl1.gif
+		
+anim	freespecial2
+	loop	0
+	delay	9
+	bbox	61 38 21 44
+	offset	72 84
+	dive	5 4
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	attack	62 41 22 30 15 0 0 0 5 0
+	frame	data/chars/0Nave/bl4.gif
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl1.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl1.gif
+	offset	72 86
+	frame	data/chars/0Nave/bl1.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl1.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl1.gif
+	frame	data/chars/0Nave/bl1.gif
+		
+anim	jumpattack
+	loop	0
+	delay	9
+	bbox	61 38 21 44
+	offset	72 84
+	dive	5 4
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	attack	62 41 22 30 15 0 0 0 5 0
+	frame	data/chars/0Nave/bl4.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl1.gif
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl4.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl4.gif
+	offset	72 86
+	frame	data/chars/0Nave/bl4.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl4.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	bbox	61 38 21 44
+	offset	72 84
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl4.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl2.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/elec3.wav
+	@cmd	shoot "BLRunTiro" 15 38 2
+	frame	data/chars/0Nave/bl3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/bl2.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	7
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl4.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl4.gif
+	offset	72 86
+	frame	data/chars/0Nave/bl4.gif
+	offset	72 85
+	frame	data/chars/0Nave/bl4.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	61 38 21 44
+	offset	72 84
+	frame	data/chars/0Nave/bl1.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,1651 @@
+
+
+
+name	Steel
+health	300
+mp 60
+mprate 2
+speed 10
+type	player
+gfxshadow 1 3
+diesound data/chars/steel/morte.wav
+icon	data/chars/steel/portrait.gif 1
+throwdamage 15
+weapons  steelrun steelrun Bonussteel Bonussteel Bonussteel
+grabforce 9
+knockdowncount 6
+candamage enemy obstacle 
+combostyle 1
+bflash Block
+running  28  4  2  1  0
+holdblock 1
+riseinv 1 0
+antigrab 100
+jugglepoints 10
+
+jumpmove 0 0
+walkoffmove 2 0
+jumpheight 5
+jumpspeed 20
+
+defense normal2 0.5 0 0 0.2
+defense normal3 2 0 0 0.2
+
+
+makeinv 2 0
+parrow		data/chars/steel/nome.gif -37 -110
+parrow2		data/chars/steel/nome.gif -37 -110
+
+fmap 6
+palette       data/chars/steel/00pal.gif
+alternatepal  data/chars/steel/00pal2.gif
+alternatepal  data/chars/steel/00pal3.gif
+alternatepal  data/chars/steel/00pal5.gif
+alternatepal  data/chars/steel/00pal4.gif
+alternatepal  data/chars/steel/00pal6.gif
+alternatepal  data/chars/steel/00palgelo.gif
+
+animationscript data/scripts/grabscript.c
+keyscript  data/scripts/ironkey.c
+onmoveascript data/scripts/antihole.c
+
+load Martelo
+load stomp2
+load Bonussteel
+load steelrun
+load missil
+Knife missil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	bbox	51 34 50 80
+	offset	78 112
+	fastattack	1
+	frame	data/chars/steel/aa1.gif
+	attack	80 39 46 20 8 0 0 0 5 0
+	jugglecost	1
+	delay	9
+	frame	data/chars/steel/aa2.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/aa1.gif
+		
+anim	attack2
+	loop	0
+	hitfx	data/sounds/beat3.wav
+	delay	6
+	offset	54 89
+	bbox	22 10 49 82
+	frame	data/chars/Steel/c1.gif
+	sound	data/sounds/punch3.wav
+	offset	51 86
+	bbox	22 8 49 82
+	frame	data/chars/Steel/c2.gif
+	offset	36 81
+	bbox	10 1 49 82
+	attack	42 20 54 27 10 0 0 0 5 0
+	jugglecost	1
+	frame	data/chars/Steel/c3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	36 81
+	bbox	13 1 49 82
+	frame	data/chars/Steel/cc1.gif
+	offset	33 79
+	bbox	10 0 49 82
+	frame	data/chars/Steel/cc2.gif
+		
+anim	attack3
+	loop	0
+	delay	6
+	bbox	35 9 47 76
+	offset	58 91
+	fastattack	1
+	hitfx	data/sounds/klunk2.wav
+	frame	data/chars/steel/a3.gif
+	bbox	35 22 52 80
+	offset	59 104
+	sound	data/sounds/punch3.wav
+	frame	data/chars/steel/a4.gif
+	bbox	24 43 48 76
+	offset	44 119
+	frame	data/chars/steel/a6.gif
+	bbox	24 16 51 74
+	offset	45 89
+	attack	56 12 77 80 25 9 0 0 0 0
+	dropv	2 5 0
+	jugglecost	2
+	frame	data/chars/steel/a8.gif
+	bbox	38 1 49 75
+	offset	56 75
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/a9.gif
+	bbox	42 1 49 75
+	offset	61 75
+	delay	7
+	frame	data/chars/steel/a10.gif
+	offset	36 81
+	bbox	13 1 49 82
+	frame	data/chars/Steel/cc1.gif
+	offset	33 79
+	bbox	10 0 49 82
+	frame	data/chars/Steel/cc2.gif
+		
+anim	block
+	loop	0
+	delay	8
+	offset	39 87
+	bbox	12 5 51 83
+	cancel	1 99 0 f freespecial9
+	cancel	1 99 0 b freespecial6
+	frame	data/chars/steel/blo.gif
+	frame	data/chars/steel/blo.gif
+		
+anim	duck
+	loop	0
+	delay	6
+	cancel	0 99 0 j freespecial16
+	offset	37 102
+	bbox	13 45 48 61
+	frame	data/chars/steel/d2.gif
+		
+anim	duckattack
+	loop	0
+	delay	3
+	offset	37 102
+	bbox	13 45 48 61
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/steel/d2.gif
+	delay	8
+	sound	data/sounds/punch2.wav
+	attack	37 43 50 21 12 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/steel/d3.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/d2.gif
+		
+anim	ducking
+	bbox	29 1 55 68
+	loop	0
+	delay	6
+	offset	57 66
+	frame	data/chars/steel/d1.gif
+		
+anim	duckrise
+	bbox	29 1 55 68
+	loop	0
+	delay	6
+	offset	57 66
+	frame	data/chars/steel/d1.gif
+		
+anim	fall
+	loop	0
+	offset	41 85
+	delay	14
+	landframe	3
+	cancel	2 2 0 j freespecial14
+	@cmd	gravity 1
+	frame	data/chars/steel/g1.gif
+	offset	34 76
+	frame	data/chars/steel/g2.gif
+	offset	34 66
+	delay	500
+	frame	data/chars/steel/g2.gif
+	offset	52 33
+	delay	10
+	frame	data/chars/steel/g3.gif
+		
+anim	follow1
+	loop	0
+	delay	10
+	offset	54 89
+	bbox	22 10 49 82
+	hitfx	data/sounds/klunk2.wav
+	frame	data/chars/Steel/c1.gif
+	delay	5
+	sound	data/sounds/punch3.wav
+	offset	51 86
+	bbox	22 8 49 82
+	frame	data/chars/Steel/c2.gif
+	offset	36 81
+	bbox	10 1 49 82
+	attack	36 17 60 42 15 12 0 0 0 20
+	jugglecost	1
+	dropv	5 2 0
+	frame	data/chars/Steel/c3.gif
+	attack	56 1 52 51 15 12 0 0 0 20
+	jugglecost	1
+	dropv	4 2 0
+	offset	43 91
+	bbox	22 10 49 82
+	frame	data/chars/Steel/c4.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	43 91
+	bbox	22 10 49 82
+	frame	data/chars/Steel/c5.gif
+	offset	43 90
+	bbox	22 10 49 82
+	frame	data/chars/Steel/c6.gif
+	offset	44 84
+	bbox	22 4 49 82
+	frame	data/chars/Steel/c7.gif
+	offset	34 80
+	bbox	20 1 47 82
+	frame	data/chars/Steel/c8.gif
+	offset	53 81
+	bbox	27 0 59 82
+	frame	data/chars/Steel/s1.gif
+		
+anim	follow5
+	loop	0
+	landframe	9
+	cancel	7 8 j freespecial14
+	delay	5
+	jumpframe	0 5 2 0
+	offset	58 124
+	sound	data/sounds/vuu2.wav
+	@cmd	keymove 2 0
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/r1.gif
+	@cmd	gravity 1
+	offset	31 121
+	delay	25
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	delay	13
+	offset	50 110
+	frame	data/chars/steel/j1a.gif
+	offset	47 120
+	delay	555
+	idle	1
+	frame	data/chars/steel/j3.gif
+	delay	7
+	sound	data/sounds/0pisadametal.wav
+	offset	57 75
+	frame	data/chars/steel/j4.gif
+		
+anim	follow6
+	jumpframe	0 3 1 0
+	landframe	4
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+	loop	0
+	offset	31 117
+	bbox	11 29 42 74
+	delay	25
+	cancel	0 99 0 A2 freespecial5
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial10
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	offset	52 111
+	bbox	33 18 40 74
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	offset	47 118
+	bbox	24 32 44 74
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	offset	49 120
+	bbox	29 36 37 74
+	delay	555
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j3.gif
+	delay	7
+	sound	data/sounds/0pisadametal.wav
+	offset	57 75
+	bbox	29 10 56 66
+	frame	data/chars/steel/j4.gif
+		
+anim	freespecial
+	com	A3 freespecial
+	loop	0
+	energycost	30
+	fastattack	1
+	mponly	1
+	delay	26
+	offset	54 89
+	frame	data/chars/Steel/c1.gif
+	sound	data/sounds/punch3.wav
+	delay	6
+	offset	51 86
+	frame	data/chars/Steel/c2.gif
+	offset	36 81
+	frame	data/chars/Steel/c3.gif
+	@cmd	shoot "Martelo" 30 25 1
+	sound	data/sounds/swosh.wav
+	offset	43 91
+	delay	9
+	frame	data/chars/steel/zz02.gif
+	offset	44 90
+	frame	data/chars/steel/zz03.gif
+	offset	44 89
+	frame	data/chars/steel/zz04.gif
+	offset	45 83
+	frame	data/chars/steel/zz05.gif
+	offset	35 80
+	frame	data/chars/steel/zz06.gif
+	offset	35 88
+	delay	52
+	frame	data/chars/steel/zz01.gif
+	sound	data/sounds/get2.wav
+	delay	9
+	offset	36 81
+	frame	data/chars/Steel/cc1.gif
+	delay	20
+	offset	33 79
+	frame	data/chars/Steel/cc2.gif
+		
+anim	freespecial10
+	offset	33 115
+	loop	0
+	energycost	30
+	mponly	1
+	delay	5
+	jumpframe	0 2 1 0
+	landframe	4
+	cancel	3 99 0 j freespecial14
+	frame	data/chars/steel/j1.gif
+	offset	53 110
+	delay	15
+	frame	data/chars/steel/j1a.gif
+	delay	8
+	offset	44 119
+	frame	data/chars/steel/z0.gif
+	offset	24 103
+	delay	555
+	@cmd	velo001	0 0 -5
+	frame	data/chars/steel/z1.gif
+	offset	46 76
+	delay	10
+	@cmd	velo001	0 0 0
+	sound	data/chars/steel/pancada.wav
+	@cmd	spawn01 "stomp2" 0 0 -1
+	attack	-105 64 300 19 45 10 0 0 0 55
+	frame	data/chars/steel/z2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/z2.gif
+	offset	57 65
+	delay	8
+	frame	data/chars/steel/d1.gif
+		
+anim	freespecial11
+	offset	33 115
+	loop	0
+	energycost	30
+	mponly	1
+	delay	5
+	jumpframe	0 5 3 0
+	landframe	4
+	cancel	3 99 0 j freespecial14
+	frame	data/chars/steel/j1.gif
+	offset	53 110
+	delay	25
+	frame	data/chars/steel/j1a.gif
+	delay	8
+	offset	44 119
+	frame	data/chars/steel/z0.gif
+	offset	24 103
+	delay	555
+	@cmd	velo001	0 0 -5
+	frame	data/chars/steel/z1.gif
+	offset	46 76
+	delay	10
+	@cmd	velo001	0 0 0
+	sound	data/chars/steel/pancada.wav
+	@cmd	spawn01 "stomp2" 0 0 -1
+	attack	-105 64 300 19 45 10 0 0 0 55
+	frame	data/chars/steel/z2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/z2.gif
+	offset	57 65
+	delay	8
+	frame	data/chars/steel/d1.gif
+		
+anim	freespecial12
+	offset	33 115
+	loop	0
+	energycost	30
+	mponly	1
+	delay	8
+	jumpframe	0 5 0 0
+	landframe	4
+	frame	data/chars/steel/j1.gif
+	offset	53 110
+	delay	25
+	frame	data/chars/steel/j1a.gif
+	delay	8
+	offset	44 119
+	frame	data/chars/steel/z0.gif
+	offset	24 103
+	delay	555
+	@cmd	velo001	0 0 -5
+	frame	data/chars/steel/z1.gif
+	offset	46 76
+	delay	10
+	@cmd	velo001	0 0 0
+	sound	data/chars/steel/pancada.wav
+	@cmd	spawn01 "stomp2" 0 0 -1
+	attack	-105 64 300 19 45 10 0 0 0 55
+	frame	data/chars/steel/z2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/z2.gif
+	offset	57 65
+	delay	8
+	frame	data/chars/steel/d1.gif
+		
+anim	freespecial13
+	loop	0
+	delay	11
+	com	U J freespecial13
+	cancel	2 99 0 D A freespecial3
+	cancel	2 99 0 A freespecial33
+	cancel	2 99 0 A3 freespecial10
+	cancel	2 99 0 j freespecial14
+	cancel	2 99 0 A2 freespecial5
+	bbox	29 1 55 68
+	offset	57 65
+	frame	data/chars/steel/d1.gif
+	@cmd	velo001	1 0 10
+	landframe	15
+	delay	35
+	bbox	32 32 47 81
+	sound	data/sounds/vuu2.wav
+	offset	57 122
+	frame	data/chars/steel/r1.gif
+	offset	31 120
+	bbox	7 28 48 74
+	delay	25
+	@cmd	velo001	1 0 0
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	delay	13
+	offset	52 111
+	bbox	31 20 41 74
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	offset	47 119
+	bbox	23 30 44 74
+	delay	9
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	delay	555
+	offset	49 121
+	bbox	27 34 37 74
+	frame	data/chars/steel/j3.gif
+	delay	7
+	sound	data/sounds/0pisadametal.wav
+	offset	57 75
+	bbox	29 10 56 66
+	frame	data/chars/steel/j4.gif
+		
+anim	freespecial14
+	loop	1
+	delay	4
+	dive	0 0
+	@cmd	velo001	0 0 0
+	@script
+	if (frame==0){
+	       if(openborvariant("current_branch")=="wall_jump_OFF" || openborvariant("current_branch")=="BVS_wall_jump_OFF"){
+    	       void self = getlocalvar("self");
+               performattack(self, openborconstant("ANI_FOLLOW6"));
+            }
+        }
+	@end_script	
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "drop" 0
+	@cmd	changeentityproperty getlocalvar("self") "aiflag" "falling" 0
+	cancel	0 99 0 A2 freespecial5
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial10
+	cancel	0 99 0 j freespecial35
+	cancel	0 99 0 k freespecial15
+	cancel	0 99 0 B freespecial34
+	@cmd	keymove 2 1
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 1
+	bbox	31 33 50 79
+	offset	60 122
+	frame	data/chars/steel/r2.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r2.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r2.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r2.gif
+	@cmd	keymove 2 1
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r3.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r3.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r3.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r3.gif
+	@cmd	keymove 2 1
+	bbox	27 33 50 79
+	offset	51 125
+	frame	data/chars/steel/r4.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r4.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r4.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r4.gif
+		
+anim	freespecial15
+	loop	0
+	delay	7
+	idle	1
+	offset	52 111
+	bbox	33 18 40 74
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial10
+	cancel	0 99 0 A2 freespecial5
+	cancel	0 99 0 j freespecial14
+	frame	data/chars/steel/j1a.gif
+	idle	1
+	offset	47 118
+	bbox	24 32 44 74
+	frame	data/chars/steel/j2.gif
+		
+anim	freespecial16
+	loop	0
+	delay	5
+	landframe	3
+	@script
+void self = getlocalvar("self");
+if(frame ==0)changeentityproperty(self,"subject_to_platform",0);
+if(frame >=1)changeentityproperty(self,"subject_to_platform",1);
+	@end_script	
+	offset	58 82
+	@cmd	velo001	1 0 -10
+	frame	data/chars/steel/s1.gif
+	@cmd	velo001	1 0 -10
+	delay	20
+	offset	49 120
+	sound	data/sounds/punch.wav
+	frame	data/chars/steel/j3.gif
+	bbox	29 36 37 74
+	delay	1000
+	@cmd	velo001	1 0 0
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j3.gif
+	delay	5
+	offset	58 82
+	bbox	25 0 59 85
+	frame	data/chars/steel/s1.gif
+		
+anim	freespecial2
+	com	A2 freespecial2
+	energycost	10
+	mponly	1
+	throwframe	2 70
+	loop	0
+	delay	6
+	offset	52 92
+	bbox	21 10 59 81
+	frame	data/chars/steel/x1.gif
+	offset	57 92
+	frame	data/chars/steel/x2.gif
+	offset	52 92
+	sound	data/chars/steel/tiro.wav
+	frame	data/chars/steel/x3.gif
+	offset	57 92
+	frame	data/chars/steel/x2.gif
+	offset	52 92
+	frame	data/chars/steel/x1.gif
+		
+anim	freespecial3
+	loop	0
+	offset	61 93
+	jumpframe	0 -4 4 0
+	delay	5
+	cancel	1 99 0 j freespecial14
+	hitflash	flashazul
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/vuu3.wav
+	bbox	33 17 47 63
+	frame	data/chars/steel/jx1.gif
+	offset	61 86
+	bbox	31 19 59 42
+	attack	59 34 48 41 15 9 0 0 15 0
+	dropv	2 3 0
+	frame	data/chars/steel/jx2.gif
+		
+anim	freespecial30
+	loop	0
+	delay	3
+	offset	37 102
+	hitfx	data/sounds/beat2.wav
+	frame	data/chars/steel/d2.gif
+	delay	8
+	sound	data/sounds/punch2.wav
+	attack	37 43 50 21 12 9 0 0 5 0
+	jugglecost	1
+	frame	data/chars/steel/d3.gif
+	delay	3
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/d2.gif
+		
+anim	freespecial31
+	com	U U A freespecial31
+	loop	1
+	@script
+	void self = getlocalvar("self");
+	if(frame==2){
+    	void mana = getentityproperty(self,"mp"); //get mp
+    	changeentityproperty(self, "mp", mana+2);//add mp
+    	}
+	@end_script	
+	cancel	0 99 0 A3 freespecial
+	cancel	0 99 0 A2 freespecial2
+	cancel	0 99 0 K freespecial9
+	cancel	0 99 0 J freespecial13
+	cancel	0 99 0 A freespecial32
+	cancel	0 99 0 U freespecial32
+	cancel	0 99 0 F freespecial32
+	cancel	0 99 0 D freespecial32
+	cancel	0 99 0 B freespecial32
+	delay	8
+	offset	87 96
+	bbox	57 8 52 89
+	frame	data/chars/steel/win1.gif
+	offset	82 96
+	frame	data/chars/steel/win2.gif
+	offset	81 96
+	frame	data/chars/steel/win3.gif
+	offset	76 96
+	frame	data/chars/steel/win4.gif
+		
+anim	freespecial32
+	loop	0
+	delay	1
+	offset	58 82
+	bbox	25 0 59 85
+	frame	data/chars/steel/s1.gif
+		
+anim	freespecial33
+	loop	0
+	offset	55 98
+	delay	7
+	jumpframe	0 1 1
+	cancel	8 99 0 j freespecial14
+	cancel	0 99 1 A2 freespecial5
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	bbox	32 13 48 70
+	frame	data/chars/steel/ja1.gif
+	offset	36 96
+	bbox	11 2 48 76
+	attack	32 16 63 36 15 9 0 0 15 0
+	jugglecost	1
+	frame	data/chars/steel/ja2.gif
+	attack	53 0 55 54 15 9 0 0 15 0
+	jugglecost	1
+	offset	44 108
+	bbox	20 14 48 76
+	frame	data/chars/steel/ja3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	5
+	offset	41 111
+	bbox	19 11 44 74
+	frame	data/chars/steel/ja4.gif
+	offset	41 110
+	bbox	25 10 46 74
+	frame	data/chars/steel/ja5.gif
+	offset	42 104
+	bbox	25 4 53 74
+	frame	data/chars/steel/ja6.gif
+	offset	52 111
+	bbox	33 18 40 74
+	frame	data/chars/steel/j1a.gif
+	offset	47 118
+	bbox	24 32 44 74
+	frame	data/chars/steel/j2.gif
+	offset	49 120
+	bbox	29 36 37 74
+	frame	data/chars/steel/j3.gif
+		
+anim	freespecial34
+	loop	0
+	delay	1
+	flipframe	0
+	@script
+	if (frame==1){
+	       void self = getlocalvar("self");
+               performattack(self, openborconstant("ANI_freespecial14"));
+        }
+	@end_script	
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r1.gif
+	frame	data/chars/steel/r1.gif
+		
+anim	freespecial35
+	loop	0
+	delay	5
+	jumpframe	0 5 0
+	cancel	0 99 0 A2 freespecial5
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial10
+	cancel	4 99 0 j freespecial14
+	cancel	0 99 0 k freespecial15
+	@cmd	keymove 2 1
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r1.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r1.gif
+	bbox	31 33 50 79
+	offset	60 122
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r2.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r2.gif
+	@cmd	keymove 2 1
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r3.gif
+	@cmd	keymove 2 1
+	frame	data/chars/steel/r3.gif
+	delay	7
+	offset	52 111
+	bbox	33 18 40 74
+	frame	data/chars/steel/j1a.gif
+	offset	47 118
+	bbox	24 32 44 74
+	frame	data/chars/steel/j2.gif
+		
+anim	freespecial4
+	loop	0
+	delay	18
+	offset	49 115
+	energycost	7
+	mponly	1
+	bbox	25 22 42 78
+	hitfx	data/sounds/beat3.wav
+	cancel	7 99 0 j freespecial14
+	@cmd	velo001	-1 0 0
+	frame	data/chars/steel/ta1.gif
+	@cmd	velo001	8 0 0
+	delay	6
+	offset	70 117
+	bbox	43 34 52 71
+	sound	data/sounds/vuu3.wav
+	bbox	43 34 52 71
+	offset	70 117
+	attack	77 23 36 72 22 9 0 0 20 0
+	dropv	2 5 0
+	frame	data/chars/steel/v1.gif
+	offset	70 116
+	frame	data/chars/steel/v2.gif
+	frame	data/chars/steel/v3.gif
+	offset	70 117
+	frame	data/chars/steel/v1.gif
+	offset	70 116
+	frame	data/chars/steel/v2.gif
+	frame	data/chars/steel/v3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	@cmd	velo001	0 0 0
+	delay	8
+	sound	data/sounds/0pisadametal.wav
+	offset	33 79
+	bbox	10 0 49 82
+	frame	data/chars/Steel/cc2.gif
+		
+anim	freespecial5
+	energycost	8
+	mponly	1
+	throwframe	1 70
+	landframe	6
+	cancel	4 5 0 j freespecial14
+	loop	0
+	delay	5
+	offset	52 92
+	bbox	21 10 59 81
+	frame	data/chars/steel/jjx1.gif
+	offset	57 92
+	sound	data/chars/steel/tiro.wav
+	frame	data/chars/steel/jjx2.gif
+	offset	52 92
+	frame	data/chars/steel/jjx1.gif
+	offset	52 111
+	bbox	33 18 40 74
+	frame	data/chars/steel/j1a.gif
+	offset	47 118
+	bbox	24 32 44 74
+	frame	data/chars/steel/j2.gif
+	offset	49 120
+	bbox	29 36 37 74
+	delay	555
+	frame	data/chars/steel/j3.gif
+	delay	7
+	sound	data/sounds/0pisadametal.wav
+	offset	57 75
+	bbox	29 10 56 66
+	frame	data/chars/steel/j4.gif
+		
+anim	freespecial6
+	loop	0
+	delay	12
+	@cmd	velo001	-6 0 0
+	cancel	1 99 0 j freespecial14
+	sound	data/sounds/punch.wav
+	offset	75 81
+	frame	data/chars/steel/ga6.gif
+	@cmd	velo001	0 0 0
+	delay	8
+	offset	37 87
+	bbox	16 11 46 73
+	frame	data/chars/steel/ca3.gif
+		
+anim	freespecial7
+	loop	0
+	energycost	5
+	mponly	1
+	delay	8
+	bbox	9 1 38 91
+	hitflash	flashshock
+	hitfx	data/sounds/elechit.wav
+	offset	53 83
+	bbox	27 5 49 79
+	frame	data/chars/steel/ga1.gif
+	sound	data/sounds/punch.wav
+	frame	data/chars/steel/ga2.gif
+	offset	62 103
+	bbox	29 25 55 79
+	delay	3
+	sound	data/sounds/elec3.wav
+	shock	49 12 98 48 25 9 0 0 5 25
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	frame	data/chars/steel/xga2.gif
+	frame	data/chars/steel/xga1.gif
+	delay	8
+	offset	53 83
+	bbox	27 5 49 79
+	frame	data/chars/steel/ga1.gif
+		
+anim	freespecial9
+	loop	0
+	delay	15
+	@cmd	velo001	6 0 0
+	cancel	1 99 0 j freespecial14
+	sound	data/sounds/punch.wav
+	offset	35 88
+	frame	data/chars/steel/ca2.gif
+	@cmd	velo001	0 0 0
+	delay	8
+	offset	37 87
+	bbox	16 11 46 73
+	frame	data/chars/steel/ca3.gif
+		
+anim	get
+	loop	0
+	delay	8
+	offset	57 65
+	frame	data/chars/steel/d1.gif
+	offset	37 101
+	frame	data/chars/steel/d2.gif
+	offset	57 65
+	frame	data/chars/steel/d1.gif
+		
+anim	grab
+	loop	0
+	delay	1000
+	cancel	0 99 0 A2 freespecial7
+	cancel	0 99 0 A3 freespecial
+	offset	53 83
+	bbox	27 5 49 79
+	frame	data/chars/steel/ga1.gif
+		
+anim	grabattack2
+	loop	0
+	delay	9
+	bbox	12 5 45 79
+	offset	41 85
+	cancel	3 99 0 j freespecial14
+	attackone	1
+	hitflash	flash3
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch.wav
+	frame	data/chars/steel/ca1.gif
+	offset	37 87
+	bbox	17 11 45 73
+	delay	5
+	@cmd	velo001	2 0 0
+	frame	data/chars/steel/ca3.gif
+	offset	35 88
+	bbox	12 15 51 73
+	attack	42 14 23 29 22 9 0 0 0 0
+	dropv	1 3 0
+	delay	12
+	frame	data/chars/steel/ca2.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	37 87
+	bbox	16 11 46 73
+	@cmd	velo001	0 0 0
+	delay	4
+	frame	data/chars/steel/ca3.gif
+		
+anim	idle
+	loop	1
+	delay	20
+	offset	58 82
+	bbox	25 0 59 85
+	@cmd	setarNPC
+	frame	data/chars/steel/s1.gif
+	offset	58 83
+	frame	data/chars/steel/s2.gif
+	offset	58 82
+	frame	data/chars/steel/s3.gif
+	offset	58 81
+	frame	data/chars/steel/s4.gif
+	offset	58 82
+	frame	data/chars/steel/s5.gif
+		
+anim	jump
+	loop	1 10
+	offset	31 117
+	bbox	11 29 42 74
+	delay	5
+	cancel	0 99 0 D A freespecial3
+	cancel	0 99 0 A freespecial33
+	cancel	0 99 0 A3 freespecial10
+	cancel	0 99 0 A2 freespecial5
+	cancel	7 99 0 j freespecial14
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1.gif
+	offset	52 111
+	bbox	33 18 40 74
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	@cmd	keymove 2 0
+	frame	data/chars/steel/j1a.gif
+	@cmd	keymove 2 0
+	offset	47 118
+	bbox	24 32 44 74
+	frame	data/chars/steel/j2.gif
+	@cmd	keymove 2 0
+	offset	49 120
+	bbox	29 36 37 74
+	frame	data/chars/steel/j3.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	7
+	sound	data/sounds/0pisadametal.wav
+	offset	57 75
+	bbox	29 10 56 66
+	frame	data/chars/steel/j4.gif
+		
+anim	freespecial36
+	com	D D A freespecial36
+	loop	0
+	@script
+	if (frame==0){
+	      void self = getlocalvar("self");
+              performattack(self, openborconstant("ANI_duckattack"));
+            }
+	@end_script	
+	delay	1
+	offset	29 81
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	cancel	0 99 0 A3 freespecial
+	offset	37 84
+	bbox	13 2 59 83
+	frame	data/chars/Steel/g1.gif
+		
+anim	rise
+	loop	0
+	offset	51 32
+	delay	8
+	cancel	1 99 0 A freespecial30
+	frame	data/chars/Steel/g3.gif
+	offset	54 41
+	frame	data/chars/Steel/g4.gif
+	offset	54 56
+	frame	data/chars/Steel/g5.gif
+		
+anim	run
+	loop	1
+	delay	6
+	cancel	0 99 0 A2 freespecial4
+	cancel	0 99 0 k freespecial9
+	cancel	0 99 0 A3 freespecial
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r1.gif
+	bbox	31 33 50 79
+	offset	60 122
+	frame	data/chars/steel/r2.gif
+	bbox	27 33 50 79
+	offset	56 124
+	frame	data/chars/steel/r3.gif
+	bbox	26 35 50 79
+	offset	51 126
+	frame	data/chars/steel/r4.gif
+		
+anim	runattack
+	loop	0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/vuu3.wav
+	landframe	9
+	jumpframe	0 3 3 0
+	cancel	0 99 1 A2 freespecial5
+	cancel	0 99 1 A freespecial3
+	cancel	8 99 0 j freespecial14
+	offset	55 98
+	delay	7
+	bbox	32 13 48 70
+	frame	data/chars/steel/xja1.gif
+	offset	36 96
+	bbox	11 2 48 76
+	attack	32 16 63 36 18 9 0 0 15 0
+	dropv	4 2 0
+	jugglecost	1
+	frame	data/chars/steel/xja2.gif
+	attack	53 0 55 54 18 9 0 0 15 0
+	dropv	4 2 0
+	jugglecost	1
+	offset	44 108
+	bbox	20 14 48 76
+	frame	data/chars/steel/xja3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	41 111
+	bbox	19 11 44 74
+	frame	data/chars/steel/xja4.gif
+	offset	41 110
+	bbox	25 10 46 74
+	frame	data/chars/steel/xja5.gif
+	offset	42 104
+	bbox	25 4 53 74
+	frame	data/chars/steel/ja6.gif
+	offset	52 111
+	bbox	33 18 40 74
+	frame	data/chars/steel/j1a.gif
+	offset	47 118
+	bbox	24 32 44 74
+	frame	data/chars/steel/j2.gif
+	offset	49 120
+	bbox	29 36 37 74
+	delay	555
+	frame	data/chars/steel/j3.gif
+	delay	7
+	sound	data/sounds/0pisadametal.wav
+	offset	57 75
+	bbox	29 10 56 66
+	frame	data/chars/steel/j4.gif
+		
+anim	select
+	loop	0
+	delay	8
+	jumpframe	3 7 0 0
+	fshadow	0
+	sound	data/chars/steel/win.wav
+	offset	58 82
+	frame	data/chars/steel/s1.gif
+	delay	230
+	offset	38 103
+	frame	data/chars/steel/d2.gif
+	offset	58 67
+	delay	6
+	frame	data/chars/steel/d1.gif
+	offset	38 103
+	frame	data/chars/steel/d2.gif
+	delay	35
+	offset	61 119
+	sound	data/sounds/vuu2.wav
+	frame	data/chars/steel/r2.gif
+	delay	5
+	frame	data/chars/misc/vazio.gif
+		
+anim	spawn
+	loop	0
+	delay	2
+	seta	200
+	@script
+	if(frame==1){
+	void self = getlocalvar("self");
+	int cor = getentityproperty(self,"map");
+        setglobalvar("palSteel", cor);
+        }
+	@end_script	
+	@cmd	setarNPC
+	@cmd	changeopenborvariant "slowmotion" 0
+	offset	49 120
+	frame	data/chars/steel/j3.gif
+	frame	data/chars/steel/j3.gif
+		
+anim	special2
+	loop	0
+	delay	15
+	@cmd	velo001	6 0 0
+	sound	data/sounds/punch.wav
+	cancel	1 99 0 j freespecial14
+	offset	35 88
+	frame	data/chars/steel/ca2.gif
+	@cmd	velo001	0 0 0
+	delay	8
+	offset	37 87
+	bbox	16 11 46 73
+	frame	data/chars/steel/ca3.gif
+		
+anim	throw
+	loop	0
+	delay	7
+	offset	53 83
+	@cmd	slamstartGRAB
+	@cmd	position 0 35 8 0 0
+	frame	data/chars/steel/ga1.gif
+	@cmd	position 0 60 18 0 0
+	frame	data/chars/steel/ga2.gif
+	offset	49 141
+	@cmd	position 0 30 80 0 0
+	frame	data/chars/steel/ga3.gif
+	offset	48 143
+	@cmd	position 0 -1 84 0 0
+	frame	data/chars/steel/ga4.gif
+	@cmd	position 0 -1 80 0 0
+	@cmd	depost 0
+	@cmd	throw 15 1 5 -2 0 1
+	@cmd	clearL
+	sound	data/sounds/swosh.wav
+	offset	98 79
+	delay	22
+	@cmd	position 0 0 4 0 0
+	frame	data/chars/steel/ga5.gif
+	offset	77 77
+	delay	9
+	@cmd	position 0 0 4 0 0
+	frame	data/chars/steel/ga6.gif
+	offset	58 82
+	frame	data/chars/steel/s1.gif
+		
+anim	waiting
+	loop	1
+	delay	20
+	unsummonframe	0
+	subentity	steellogo
+	summonframe	0 0 1 90 0
+	fshadow	0
+	@cmd	changeopenborvariant "slowmotion" 0
+	offset	58 82
+	frame	data/chars/steel/s1.gif
+	offset	58 83
+	frame	data/chars/steel/s2.gif
+	offset	58 82
+	frame	data/chars/steel/s3.gif
+	offset	58 81
+	frame	data/chars/steel/s4.gif
+	offset	58 82
+	frame	data/chars/steel/s5.gif
+		
+anim	walk
+	loop	1
+	delay	13
+	offset	34 84
+	bbox	15 1 41 85
+	frame	data/chars/Steel/w1.gif
+	offset	28 85
+	frame	data/chars/Steel/w2.gif
+	offset	29 84
+	frame	data/chars/Steel/w3.gif
+	offset	31 83
+	frame	data/chars/Steel/w4.gif
+	offset	29 85
+	frame	data/chars/Steel/w5.gif
+	offset	27 85
+	frame	data/chars/Steel/w6.gif
+	offset	32 84
+	frame	data/chars/Steel/w7.gif
+	offset	35 83
+	frame	data/chars/Steel/w8.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	idle	1
+	cancel	0 99 0 j freespecial14
+	offset	49 120
+	bbox	29 36 37 74
+	frame	data/chars/steel/j3.gif
+		
+#|edited by openBor Stats v 0.51
+		

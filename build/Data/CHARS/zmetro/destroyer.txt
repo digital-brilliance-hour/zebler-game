@@ -1,0 +1,219 @@
+name Destroyer
+health	30
+speed 6
+type	enemy
+gfxshadow 1 3
+aggression 99
+hostile player npc
+candamage player npc
+knockdowncount 4
+risetime 1 0
+offscreen_noatk_factor 1
+offscreenkill 9999
+
+
+animationscript data/scripts/grabscript.c
+
+diesound data/sounds/die2.wav
+
+load palhabomb
+
+throw 3 2
+antigrab 100
+
+fmap 2
+palette       data/chars/zmetro/e1pal.gif
+alternatepal  data/chars/zmetro/e1pal2.gif
+alternatepal  data/chars/zmetro/e1gelo.gif
+alternatepal  data/chars/zmetro/e1poison.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	50 300
+	seta	80
+	delay	32
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	@cmd	toss "palhabomb" 2 75 1
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+		
+anim	attack2
+	loop	0
+	range	450 650
+	seta	80
+	delay	32
+	offset	61 106
+	bbox	44 17 39 77
+	jumpframe	0 8 4 0
+	frame	data/chars/zmetro/e1.gif
+		
+anim	fall
+	delay	500
+	seta	0
+	landframe	1
+	@cmd	degravity 0
+	bbox	33 31 72 47
+	offset	72 93
+	frame	data/chars/zmetro/e4.gif
+	bbox	68 38 0 0
+	delay	5
+	offset	75 48
+	frame	data/chars/zmetro/e5.gif
+		
+anim	fall9
+	delay	15
+	offset	69 66
+	frame	data/chars/zmetro/e4.gif
+		
+anim	idle
+	loop	1
+	seta	80
+	delay	8
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e2.gif
+	offset	61 107
+	frame	data/chars/zmetro/e2.gif
+	offset	61 108
+	frame	data/chars/zmetro/e2.gif
+	offset	61 107
+	frame	data/chars/zmetro/e2.gif
+		
+anim	jumpattack
+	loop	0
+	range	0 50
+	seta	80
+	delay	32
+	offset	61 106
+	bbox	44 17 39 77
+	jumpframe	0 5 2 0
+	@cmd	toss "palhabomb" 2 75 1
+	frame	data/chars/zmetro/e1.gif
+		
+anim	walkoff
+	loop	0
+	delay	3
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e1.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	seta	80
+	offset	63 102
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e3.gif
+		
+anim	pain18
+	loop	0
+	delay	12
+	drawmethod	remap 3
+	seta	80
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e2.gif
+	offset	63 102
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e3.gif
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e2.gif
+	offset	63 102
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e3.gif
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e2.gif
+	offset	63 102
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e3.gif
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e2.gif
+	offset	63 102
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e3.gif
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e2.gif
+	offset	63 102
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e3.gif
+		
+anim	pain9
+	delay	15
+	offset	69 66
+	frame	data/chars/zmetro/e4.gif
+		
+anim	rise
+	delay	6
+	seta	1
+	offset	76 78
+	frame	data/chars/zmetro/e4.gif
+	offset	55 75
+	frame	data/chars/zmetro/e6.gif
+	@cmd	degravity 1
+	@cmd	dasher 0 1 0
+	offset	61 106
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	frame	data/chars/zmetro/e1.gif
+	seta	80
+	@cmd	degravity 0
+	@cmd	dasher 0 0 0
+	frame	data/chars/zmetro/e2.gif
+		
+anim	spawn
+	loop	0
+	seta	80
+	delay	6
+	offset	61 106
+	bbox	44 17 39 77
+	frame	data/chars/zmetro/e1.gif
+		
+#|edited by openBor Stats v 0.51
+		

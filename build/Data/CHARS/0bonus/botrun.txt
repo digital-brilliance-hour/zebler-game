@@ -1,0 +1,140 @@
+name BotRun
+health 90
+speed 0
+type	enemy
+gfxshadow 1 3
+antigrab 100
+hostile player npc
+candamage player npc
+nodrop 2
+death 1
+nomove 1
+facing 2
+nodieblink 2
+aggression 100
+offscreenkill 350
+
+
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/ztrigon/0botlantern.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	death
+	loop	0
+	delay	9
+	@cmd	velo001	4 0 0
+	offset	25 70
+	frame	data/chars/zfortal/a3.gif
+	offset	30 67
+	frame	data/chars/zfortal/a4.gif
+	offset	30 56
+	frame	data/chars/zfortal/a4.gif
+	offset	36 36
+	delay	10
+	frame	data/chars/zfortal/a5.gif
+		
+anim	fall
+	loop	0
+	delay	9
+	offset	25 70
+	frame	data/chars/zfortal/a3.gif
+	offset	30 67
+	frame	data/chars/zfortal/a4.gif
+	offset	30 56
+	frame	data/chars/zfortal/a4.gif
+	offset	36 36
+	delay	10
+	frame	data/chars/zfortal/a5.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	@cmd	velo001	5 0 0
+	bbox	9 5 38 51
+	offset	27 70
+	frame	data/chars/zfortal/a2.gif
+	offset	27 72
+	frame	data/chars/zfortal/a2.gif
+	offset	27 74
+	frame	data/chars/zfortal/a2.gif
+	offset	27 72
+	frame	data/chars/zfortal/a2.gif
+		
+anim	pain
+	loop	0
+	delay	5
+	bbox	9 5 38 51
+	offset	27 70
+	frame	data/chars/zfortal/a2.gif
+		
+anim	rise
+		
+anim	spawn
+	delay	1
+	offset	27 70
+	frame	data/chars/zfortal/a2.gif
+		
+anim	walk
+	delay	5
+	@cmd	velo001	5 0 0
+	bbox	9 5 38 51
+	offset	27 70
+	frame	data/chars/zfortal/a2.gif
+	offset	27 72
+	frame	data/chars/zfortal/a2.gif
+	offset	27 74
+	frame	data/chars/zfortal/a2.gif
+	offset	27 72
+	frame	data/chars/zfortal/a2.gif
+		
+#|edited by openBor Stats v 0.51
+		

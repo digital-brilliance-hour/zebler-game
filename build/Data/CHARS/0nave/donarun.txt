@@ -1,0 +1,265 @@
+
+
+
+name DonaRun
+health	300
+speed 14
+type	none
+gfxshadow 1 3
+icon	data/chars/dona/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+load Batbomb
+Knife Batbomb
+
+atchain 1
+running  22 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/dona/nome.gif -37 -60
+parrow2		data/chars/dona/nome.gif -37 -60
+
+
+palette       data/chars/dona/00pal1.gif
+alternatepal  data/chars/dona/00pal2.gif
+alternatepal  data/chars/dona/00pal3.gif
+alternatepal  data/chars/dona/00pal4.gif
+alternatepal  data/chars/dona/00pal5.gif
+alternatepal  data/chars/dona/00pal0.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	sound	data/sounds/cabletiro.wav
+	@cmd	keymove 2 0.6
+	offset	64 100
+	bbox	22 52 83 49
+	frame	data/chars/0Nave/don5.gif
+	@cmd	shoot "Batbomb" 3 24 2
+	sound	data/sounds/cabletiro.wav
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/don6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/don5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/don6.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	sound	data/sounds/carro.wav
+	frame	data/chars/0Nave/don6.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/0Nave/don6.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/don5.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/don5.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/don5.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	4
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	sound	data/sounds/carro.wav
+	frame	data/chars/0Nave/don6.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/0Nave/don6.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	32
+	@cmd	velo001	-6 0 0
+	sound	data/sounds/freio.wav
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+		
+anim	idle
+	loop	1
+	delay	4
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	sound	data/sounds/carro.wav
+	frame	data/chars/0Nave/don6.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/0Nave/don6.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	sound	data/sounds/carro.wav
+	frame	data/chars/0Nave/don6.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/0Nave/don6.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	sound	data/sounds/cabletiro.wav
+	@cmd	keymove 2 0.6
+	offset	64 100
+	bbox	22 52 83 49
+	frame	data/chars/0Nave/don5.gif
+	@cmd	shoot "Batbomb" 3 24 2
+	sound	data/sounds/cabletiro.wav
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/don6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/don5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/don6.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	4
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	sound	data/sounds/carro.wav
+	frame	data/chars/0Nave/don6.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/0Nave/don6.gif
+		
+		
+anim	walk
+	loop	1
+	delay	3
+	bbox	22 52 83 49
+	offset	64 100
+	frame	data/chars/0Nave/don5.gif
+	sound	data/sounds/carro.wav
+	frame	data/chars/0Nave/don6.gif
+	frame	data/chars/0Nave/don5.gif
+	frame	data/chars/0Nave/don6.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,359 @@
+
+
+
+name GLJet
+health	300
+speed 14
+type	none
+gfxshadow 1 3
+icon	data/chars/gl/portrait.gif 1
+diesound	data/chars/gl/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+load GLTankTiro
+load Batbomb
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/gl/nome.gif -37 -80
+parrow2		data/chars/gl/nome.gif -37 -80
+
+
+
+palette       data/chars/gl/s1.gif
+alternatepal  data/chars/gl/00pal.gif
+alternatepal  data/chars/gl/00pal2.gif
+alternatepal  data/chars/gl/00pal3.gif
+alternatepal  data/chars/gl/00pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	@script
+	void self = getlocalvar("self");
+        if (frame==1){
+            int Map = getentityproperty(self, "map");
+            if(Map<4){
+	    shoot("GLTankTiro", 28, 43, 2);
+	    }
+            if(Map==4){
+	    shoot("Batbomb", 28, 43, 2);
+	    }
+ 	}
+	@end_script	
+	@cmd	keymove 2 0.6
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl9.gif
+	sound	data/sounds/plasma2.wav
+	@cmd	keymove 2 0.6
+	offset	49 83
+	frame	data/chars/0Nave/gl10.gif
+	@cmd	keymove 2 0.6
+	offset	49 82
+	frame	data/chars/0Nave/gl11.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl8.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	29 51
+	frame	data/chars/0Nave/gl7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/gl7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/gl7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/gl7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/gl7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/gl7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/gl7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	6
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 83
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 84
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 83
+	frame	data/chars/0Nave/gl8.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	bbox	18 14 24 41
+	offset	32 72
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	loop	1
+	frame	data/chars/0Nave/gl15.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/gl15.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/gl15.gif
+		
+anim	freespecial2
+	loop	0
+	dive	6 3
+	delay	7
+	bbox	16 17 22 39
+	offset	27 74
+	frame	data/chars/0nave/gl13.gif
+	attack	30 31 22 20 15 0 0 0 5 0
+	frame	data/chars/0nave/gl14.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 83
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 84
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 83
+	frame	data/chars/0Nave/gl8.gif
+		
+anim	jump
+	loop	0
+	delay	4
+	bbox	14 21 32 47
+	offset	34 78
+	cancel	5 99 0 j freespecial14
+	sound	data/chars/gl/effect4.wav
+	frame	data/chars/0Nave/gl16.gif
+	frame	data/chars/0Nave/gl17.gif
+	frame	data/chars/0Nave/gl18.gif
+	frame	data/chars/0Nave/gl19.gif
+	frame	data/chars/0Nave/gl20.gif
+	bbox	18 18 27 37
+	offset	31 74
+	frame	data/chars/0Nave/gl12.gif
+		
+anim	jumpattack
+	loop	0
+	dive	6 3
+	delay	7
+	bbox	16 17 22 39
+	offset	27 74
+	frame	data/chars/0nave/gl13.gif
+	attack	30 31 22 20 15 0 0 0 5 0
+	frame	data/chars/0nave/gl14.gif
+		
+anim	jumpland
+	loop	0
+	delay	4
+	bbox	14 21 32 47
+	offset	34 78
+	sound	data/chars/gl/effect4.wav
+	frame	data/chars/0Nave/gl20.gif
+	frame	data/chars/0Nave/gl19.gif
+	frame	data/chars/0Nave/gl18.gif
+	frame	data/chars/0Nave/gl17.gif
+	frame	data/chars/0Nave/gl16.gif
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl9.gif
+	frame	data/chars/0Nave/gl10.gif
+	frame	data/chars/0Nave/gl11.gif
+		
+anim	runattack
+	loop	0
+	delay	7
+	@script
+	void self = getlocalvar("self");
+        if (frame==1){
+            int Map = getentityproperty(self, "map");
+            if(Map<4){
+	    shoot("GLTankTiro", 28, 43, 2);
+	    }
+            if(Map==4){
+	    shoot("Batbomb", 28, 43, 2);
+	    }
+ 	}
+	@end_script	
+	@cmd	keymove 2 0.6
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl9.gif
+	sound	data/sounds/plasma2.wav
+	@cmd	keymove 2 0.6
+	offset	49 83
+	frame	data/chars/0Nave/gl10.gif
+	@cmd	keymove 2 0.6
+	offset	49 82
+	frame	data/chars/0Nave/gl11.gif
+		
+anim	spawn
+	loop	0
+	delay	4
+	bbox	14 21 32 47
+	offset	34 78
+	frame	data/chars/0Nave/gl20.gif
+	frame	data/chars/0Nave/gl19.gif
+	frame	data/chars/0Nave/gl18.gif
+	frame	data/chars/0Nave/gl17.gif
+	frame	data/chars/0Nave/gl16.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	6
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 83
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 84
+	frame	data/chars/0Nave/gl8.gif
+	offset	49 83
+	frame	data/chars/0Nave/gl8.gif
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	29 17 42 56
+	offset	49 82
+	frame	data/chars/0Nave/gl9.gif
+	frame	data/chars/0Nave/gl10.gif
+	frame	data/chars/0Nave/gl11.gif
+		
+anim	walkoff
+	loop	0
+	delay	4
+	bbox	18 18 27 37
+	offset	31 74
+	frame	data/chars/0Nave/gl12.gif
+		
+#|edited by openBor Stats v 0.51
+		

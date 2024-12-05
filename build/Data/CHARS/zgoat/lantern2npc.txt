@@ -1,0 +1,280 @@
+name Lantern2NPC
+health	80
+speed 14
+type npc
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 60
+hostile enemy
+candamage enemy obstacle
+antigrab  7
+blockodds 1
+diesound data/sounds/dierobot2.wav
+throw 3 2
+knockdowncount 6
+jugglepoints 6
+falldie 2
+
+load BalaPAW
+
+
+throw 3 3
+
+fmap 3
+palette       data/chars/zgoat/gl00alt01a.gif
+alternatepal  data/chars/zgoat/gl00alt02a.gif
+alternatepal  data/chars/zgoat/gl00alt03a.gif
+alternatepal  data/chars/Batman/0paletagelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 70
+	hitfx	data/sounds/beat2.wav
+	delay	10
+	offset	61 106
+	bbox	35 13 44 81
+	frame	data/chars/zgoat/gl06a.gif
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zgoat/gl07a.gif
+	attack	62 25 58 19 20 10 0 0 0 0
+	dropv	2 4
+	delay	18
+	@cmd	velo001	2 0 0
+	frame	data/chars/zgoat/gl08a.gif
+	@cmd	velo001	0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	12
+	frame	data/chars/zgoat/gl07a.gif
+	offset	59 104
+	bbox	40 10 36 81
+	frame	data/chars/zgoat/gl04a.gif
+	offset	59 107
+	frame	data/chars/zgoat/gl01a.gif
+		
+anim	attack2
+	loop	0
+	range	80 250
+	delay	11
+	offset	61 106
+	bbox	35 13 44 81
+	frame	data/chars/zgoat/gl06a.gif
+	offset	59 104
+	bbox	40 10 36 81
+	delay	35
+	frame	data/chars/zgoat/gl05a.gif
+	delay	11
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "balaPAW" 10 54 1
+	offset	61 104
+	frame	data/chars/zgoat/gl05a.gif
+	offset	60 104
+	frame	data/chars/zgoat/gl05a.gif
+	frame	data/chars/zgoat/gl04a.gif
+	offset	59 107
+	frame	data/chars/zgoat/gl01a.gif
+		
+anim	attack3
+	loop	0
+	range	320 450
+	hitfx	data/sounds/beat2.wav
+	jumpframe	0 4 5 0
+	sound	data/sounds/vuu3.wav
+	delay	16
+	offset	61 106
+	bbox	35 13 44 81
+	frame	data/chars/zgoat/gl06a.gif
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zgoat/gl07a.gif
+	attack	62 16 58 38 20 10 0 0 0 0
+	dropv	2 4
+	frame	data/chars/zgoat/gl08a.gif
+		
+anim	block
+	loop	0
+	offset	58 104
+	delay	40
+	bbox	32 14 45 89
+	frame	data/chars/zgoat/gl03a.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	offset	59 99
+	bbox	38 13 43 86
+	attack	40 26 5 53 8 9 0 0 0 0
+	frame	data/chars/zgoat/gl09a.gif
+	bbox	31 21 47 46
+	offset	54 81
+	attack	40 26 5 39 8 9 0 0 0 0
+	frame	data/chars/zgoat/gl10a.gif
+	offset	54 69
+	delay	500
+	frame	data/chars/zgoat/gl10a.gif
+	offset	56 59
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	56 59
+	frame	data/chars/zgoat/gl11a.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	59 107
+	bbox	33 13 43 86
+	frame	data/chars/zgoat/gl01a.gif
+	offset	59 108
+	frame	data/chars/zgoat/gl01a.gif
+	offset	59 109
+	frame	data/chars/zgoat/gl01a.gif
+	offset	59 108
+	frame	data/chars/zgoat/gl01a.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	offset	59 107
+	bbox	33 13 43 86
+	frame	data/chars/zgoat/gl01a.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	offset	59 99
+	bbox	38 13 43 86
+	frame	data/chars/zgoat/gl09a.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	56 59
+	frame	data/chars/zgoat/gl11a.gif
+	offset	60 67
+	frame	data/chars/zgoat/gl12a.gif
+	offset	51 76
+	frame	data/chars/zgoat/gl13a.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	59 107
+	bbox	33 13 43 86
+	frame	data/chars/zgoat/gl02a.gif
+	offset	59 108
+	frame	data/chars/zgoat/gl02a.gif
+	offset	59 109
+	frame	data/chars/zgoat/gl02a.gif
+	offset	59 108
+	frame	data/chars/zgoat/gl02a.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	59 107
+	bbox	33 13 43 86
+	frame	data/chars/zgoat/gl01a.gif
+		
+#|edited by openBor Stats v 0.51
+		

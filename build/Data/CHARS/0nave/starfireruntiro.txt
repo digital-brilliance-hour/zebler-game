@@ -1,0 +1,38 @@
+name StarfireRunTiro
+speed        25
+type	     none
+shadow	     0
+candamage enemy obstacle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	hitflash	flashgl1
+	attack	45 22 45 9 8 1 0 0 0 15
+	offset	65 28
+	frame	data/chars/0nave/sf7.gif
+	frame	data/chars/0nave/sf8.gif
+		
+#|edited by openBor Stats v 0.51
+		

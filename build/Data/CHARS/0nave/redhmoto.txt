@@ -1,0 +1,257 @@
+
+
+
+name RedHMoto
+health	300
+speed 14
+type	none
+gfxshadow 1 3
+icon	data/chars/redhood/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+load LoboBala
+
+atchain 1
+running  22 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/redhood/nome.gif -37 -60
+parrow2		data/chars/redhood/nome.gif -37 -60
+
+
+
+palette       data/chars/redhood/pal01.gif
+alternatepal  data/chars/redhood/pal02.gif
+alternatepal  data/chars/redhood/pal03.gif
+alternatepal  data/chars/redhood/pal04.gif
+alternatepal  data/chars/redhood/pal05.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	@cmd	keymove 2 0.6
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh12.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -10 11 2
+	frame	data/chars/0Nave/redh13.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/redh14.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/redh15.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/redh11.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/0Nave/redh11.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/redh10.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/redh10.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/redh10.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	4
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/redh11.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/0Nave/redh11.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	32
+	@cmd	velo001	-6 0 0
+	sound	data/sounds/freio.wav
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+		
+anim	idle
+	loop	1
+	delay	4
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/redh11.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/0Nave/redh11.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/redh11.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/0Nave/redh11.gif
+		
+anim	runattack
+	loop	0
+	delay	8
+	@cmd	keymove 2 0.6
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh12.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "LoboBala" -10 11 2
+	frame	data/chars/0Nave/redh13.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/redh14.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/redh15.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	4
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/redh11.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/0Nave/redh11.gif
+		
+anim	walk
+	loop	1
+	delay	3
+	bbox	31 32 52 35
+	offset	56 66
+	frame	data/chars/0Nave/redh10.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/0Nave/redh11.gif
+	frame	data/chars/0Nave/redh10.gif
+	frame	data/chars/0Nave/redh11.gif
+		
+#|edited by openBor Stats v 0.51
+		

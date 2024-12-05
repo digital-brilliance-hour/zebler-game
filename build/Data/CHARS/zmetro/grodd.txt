@@ -1,0 +1,282 @@
+name Grodd
+health	500
+speed 14
+type	enemy
+gfxshadow 1 3
+hostile player npc
+candamage player npc obstacle
+jumpheight 7
+aggression 100
+diesound	data/chars/zmetro/gmorte.wav
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+knockdowncount 7
+throw 3 2
+antigrab 100
+
+
+animationscript data/scripts/grabscript.c
+
+
+fmap 1
+palette      data/chars/zmetro/g1.gif
+alternatepal data/chars/zmetro/g1gelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 100
+	delay	15
+	hitflash	flash3
+	hitfx	data/sounds/beat3.wav
+	bbox	35 18 61 99
+	offset	73 117
+	frame	data/chars/zmetro/g10.gif
+	delay	9
+	bbox	61 26 65 90
+	offset	69 117
+	sound	data/sounds/punch3.wav
+	attack	80 42 113 43 15 10 0 0 10 0
+	dropv	3 5
+	frame	data/chars/zmetro/g11.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/g12.gif
+	bbox	41 23 66 93
+	offset	69 117
+	frame	data/chars/zmetro/g13.gif
+	delay	15
+	bbox	47 33 74 88
+	offset	86 121
+	frame	data/chars/zmetro/g1.gif
+		
+anim	attack2
+	loop	0
+	range	100 180
+	delay	30
+	jumpframe	0 6 1 0
+	landframe	4
+	quakeframe	4 6 6
+	bbox	47 29 61 101
+	offset	84 140
+	sound	data/sounds/vuu3.wav
+	frame	data/chars/zmetro/g14.gif
+	bbox	52 34 61 80
+	offset	84 142
+	frame	data/chars/zmetro/g15.gif
+	bbox	49 51 61 96
+	offset	82 165
+	sound	data/chars/zmetro/g1.wav
+	frame	data/chars/zmetro/g16.gif
+	bbox	54 34 0 0
+	offset	78 155
+	delay	555
+	frame	data/chars/zmetro/g17.gif
+	sound	data/sounds/stomp.wav
+	offset	147 157
+	delay	8
+	attack	90 132 163 30 30 10 0 0 0 55
+	frame	data/chars/zmetro/g18.gif
+	attack	44 131 232 30 20 10 0 0 0 55
+	bbox	91 88 98 73
+	frame	data/chars/zmetro/g19.gif
+	attack	7 129 299 30 10 10 0 0 0 55
+	frame	data/chars/zmetro/g20.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/g21.gif
+	frame	data/chars/zmetro/g22.gif
+		
+anim	attack3
+	loop	0
+	range	210 300
+	delay	30
+	jumpframe	0 6 2 0
+	landframe	4
+	quakeframe	4 6 6
+	bbox	47 29 61 101
+	offset	84 140
+	sound	data/sounds/vuu4.wav
+	frame	data/chars/zmetro/g14.gif
+	bbox	52 34 61 80
+	offset	84 142
+	frame	data/chars/zmetro/g15.gif
+	bbox	49 51 61 96
+	offset	82 165
+	sound	data/chars/zmetro/g2.wav
+	frame	data/chars/zmetro/g16.gif
+	bbox	54 34 0 0
+	offset	78 155
+	delay	555
+	frame	data/chars/zmetro/g17.gif
+	sound	data/sounds/stomp.wav
+	offset	147 157
+	delay	8
+	attack	90 132 163 30 30 10 0 0 0 55
+	frame	data/chars/zmetro/g18.gif
+	attack	44 131 232 30 20 10 0 0 0 55
+	bbox	91 88 98 73
+	frame	data/chars/zmetro/g19.gif
+	attack	7 129 299 30 10 10 0 0 0 55
+	frame	data/chars/zmetro/g20.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/g21.gif
+	frame	data/chars/zmetro/g22.gif
+		
+anim	attack4
+	loop	0
+	range	180 210
+	delay	15
+	hitflash	flash3
+	hitfx	data/sounds/beat3.wav
+	bbox	35 18 61 99
+	offset	73 117
+	frame	data/chars/zmetro/g10.gif
+	delay	4
+	bbox	31 56 66 93
+	offset	59 150
+	sound	data/chars/ajax/mente.wav
+	attack	255 27 197 121 10 9 0 0 0 0
+	stun	2
+	frame	data/chars/zmetro/g13a.gif
+	frame	data/chars/zmetro/g13b.gif
+	frame	data/chars/zmetro/g13a.gif
+	frame	data/chars/zmetro/g13b.gif
+	frame	data/chars/zmetro/g13a.gif
+	frame	data/chars/zmetro/g13b.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	41 23 66 93
+	offset	69 117
+	frame	data/chars/zmetro/g13.gif
+	delay	15
+	bbox	47 33 74 88
+	offset	86 121
+	frame	data/chars/zmetro/g1.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	offset	139 157
+	bbox	99 52 67 106
+	frame	data/chars/zmetro/g23.gif
+	offset	122 145
+	bbox	69 52 91 67
+	frame	data/chars/zmetro/g24.gif
+	offset	122 122
+	bbox	47 33 0 0
+	delay	500
+	frame	data/chars/zmetro/g24.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	122 146
+	sound	data/sounds/stomp.wav
+	@cmd	spawn01 "stomp" 0 0 -1
+	delay	10
+	frame	data/chars/zmetro/g25.gif
+	offset	100 147
+	frame	data/chars/zmetro/g27.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	bbox	47 33 74 88
+	offset	86 121
+	frame	data/chars/zmetro/g1.gif
+		
+anim	pain
+	loop	0
+	delay	24
+	offset	139 157
+	bbox	99 52 67 106
+	frame	data/chars/zmetro/g23.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	100 147
+	frame	data/chars/zmetro/g27.gif
+	offset	124 138
+	frame	data/chars/zmetro/g24.gif
+	offset	141 156
+	frame	data/chars/zmetro/g23.gif
+	offset	116 141
+	frame	data/chars/zmetro/g26.gif
+		
+anim	spawn
+	loop	0
+	delay	10
+	sound	data/chars/zmetro/gintro.wav
+	offset	86 121
+	frame	data/chars/zmetro/g1.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	bbox	42 32 85 93
+	offset	89 121
+	frame	data/chars/zmetro/g2.gif
+	offset	90 121
+	frame	data/chars/zmetro/g3.gif
+	offset	90 121
+	frame	data/chars/zmetro/g4.gif
+	offset	87 120
+	frame	data/chars/zmetro/g5.gif
+	offset	87 119
+	frame	data/chars/zmetro/g6.gif
+	offset	86 119
+	frame	data/chars/zmetro/g7.gif
+	offset	87 119
+	frame	data/chars/zmetro/g8.gif
+	offset	92 119
+	frame	data/chars/zmetro/g9.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	bbox	53 52 50 109
+	offset	84 164
+	frame	data/chars/zmetro/g16.gif
+		
+#|edited by openBor Stats v 0.51
+		

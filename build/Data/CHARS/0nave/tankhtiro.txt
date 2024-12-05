@@ -1,0 +1,54 @@
+name	TankHTiro
+speed        15
+type	     none
+gfxshadow 1
+candamage npc player obstacle
+jumpheight 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	16 29
+	frame	data/chars/0nave/mina2.gif
+	frame	data/chars/0nave/mina3.gif
+	frame	data/chars/0nave/mina4.gif
+	frame	data/chars/0nave/mina5.gif
+		
+anim	attack2
+	loop	0
+	delay	5
+	offset	15 29
+	frame	data/chars/0nave/mina2.gif
+	frame	data/chars/0nave/mina3.gif
+	frame	data/chars/0nave/mina4.gif
+	frame	data/chars/0nave/mina5.gif
+		
+anim	idle
+	bbox	24 13 15 15
+	attack	24 13 15 15 10 9 0 0 0 0
+	loop	0
+	delay	8
+	offset	14 23
+	frame	data/chars/0nave/minah1.gif
+	frame	data/chars/0nave/minah2.gif
+	frame	data/chars/0nave/minah3.gif
+	frame	data/chars/0nave/minah4.gif
+		
+#|edited by openBor Stats v 0.51
+		

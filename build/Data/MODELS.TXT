@@ -19,9 +19,9 @@ load    Zebler      data/chars/warior/warior.txt
 load    Keith       data/chars/keith/keith.txt
 
 # Players must also be loaded.
-load	Elang		data/chars/ship/elang.txt
+#load	Elang		data/chars/ship/elang.txt
 ## Player's Projectiles
-load	Beam		data/chars/misc/shots/Beam.txt
+#load	Beam		data/chars/misc/shots/Beam.txt
 
 # Items and other objects can be loaded when needed.
 know	Apple		data/chars/misc/apple.txt
@@ -105,6 +105,20 @@ load las     data/chars/lloyo/las.txt
 load shta    data/chars/lloyo/shta.txt
 load wb1     data/chars/wybu1/wb1.txt
 load wb2     data/chars/wybu1/wb2.txt
+load enbl    data/chars/en1/enbl.txt
+Load blankP Data/Chars/blankP/blankP.txt
+
+
+
+load rbld    data/chars/robot/rbld.txt
+load rblu    data/chars/robot/rblu.txt
+load rbld2   data/chars/robot/rbld2.txt
+load rblu2   data/chars/robot/rblu2.txt
+load rbldb   data/chars/robot/rbldb.txt
+load rblub   data/chars/robot/rblub.txt
+load rbldb2  data/chars/robot/rbldb2.txt
+load rblub2  data/chars/robot/rblub2.txt
+#load rbsbl   data/chars/robsmal/rbsbl.txt
 
 know blackScreen data/chars/misc/blackscreen.txt
 

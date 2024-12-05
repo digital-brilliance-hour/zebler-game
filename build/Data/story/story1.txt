@@ -1,41 +1,41 @@
-STORY			1	210
+STORY			3	230
 _
 _
 _
-Shrek_continues_to_fight_with_the_castle_ 1
-for_100_years,_and_in_the_midst_of_the_ 1
-fighting,_Fiona,_Donkey,_and_Puss_in_Boots_ 1
-have_all_perished._Being_alone_in_his_swamp_ 1
-for_that_time,_he_has_now_driven_himself_ 1
-insane_with_revenge,_and_wants_to_win_at_ 1
-all_costs._ 1
+Shrek_continues_to_fight_with_the_castle_ 3
+for_300_years,_and_in_the_midst_of_the_ 3
+fighting,_Fiona,_Donkey,_and_Puss_in_Boots_ 3
+have_all_perished._Being_alone_in_his_swamp_ 3
+for_that_time,_he_has_now_driven_himself_ 3
+insane_with_revenge,_and_wants_to_win_at_ 3
+all_costs._ 3
 _
 _
-Then_he_immediately_thinks_of_a_plan_that_ 1
-could_give_him_everything_that_he_desires._ 1
-Power,_women,_and_companionship._During_his_ 1
-hundred_year_quest,_Shrek_figures_out_the_ 1
-key_to_alternate_realities,_and_now_has_ 1
-access_to_many_anime_domains._Because_of_ 1
-this,_he_decides_to_capture_all_the_powerful_ 1
-enemies_in_different_anime_worlds,_give_them_ 1
-the_power_they_desire,_for_a_price_to_have_ 1
-them_fullfil_his_wishes_of_making_this_ 1
-world_his._ 1
+Then_he_immediately_thinks_of_a_plan_that_ 3
+could_give_him_everything_that_he_desires._ 3
+Power,_women,_and_companionship._During_his_ 3
+hundred_year_quest,_Shrek_figures_out_the_ 3
+key_to_alternate_realities,_and_now_has_ 3
+access_to_many_anime_domains._Because_of_ 3
+this,_he_decides_to_capture_all_the_powerful_ 3
+enemies_in_different_anime_worlds,_give_them_ 3
+the_power_they_desire,_for_a_price_to_have_ 3
+them_fullfil_his_wishes_of_making_this_ 3
+world_his._ 3
 _
 _
-Hes_even_managed_to_ensnare_Broly._He_has_ 1
-managed_to_put_all_that_he_has_transported_ 1
-into_his_submission._While_doing_so,_Broly_ 1
-was_given_god_ki_for_surrendering._With_all_ 1
-the_anime_worlds_in_turmoil,_the_heroes_of_ 1
-these_timelines_have_decided__to_use_the_ 1
-wormhole_residue_to_get_to_Shreks_time._ 1
+Hes_even_managed_to_ensnare_Broly._He_has_ 3
+managed_to_put_all_that_he_has_transported_ 3
+into_his_submission._While_doing_so,_Broly_ 3
+was_given_god_ki_for_surrendering._With_all_ 3
+the_anime_worlds_in_turmoil,_the_heroes_of_ 3
+these_timelines_have_decided__to_use_the_ 3
+wormhole_residue_to_get_to_Shreks_time._ 3
 _
 _
 
 _
-As_of_right_now,_they_are_in_the_middle_of_ 1
-this_travel.... 1 
+As_of_right_now,_they_are_in_the_middle_of_ 3
+this_travel.... 3 
 _
 ___

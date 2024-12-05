@@ -1,0 +1,299 @@
+name	en2
+type	enemy
+health	1
+speedf	1.5
+shadow	0
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2
+nomove 1 1		
+jumpheight 0		
+cantgrab 1		
+noquake	1				
+nolife	1	
+load enbl
+#lifespan 5
+AGGRESSION 1000
+animationscript data/scripts/boscript.c
+setlayer 50
+anim idle
+	loop	1
+	offset	30 21
+	bbox	23 5 14 32
+	delay	10
+	@cmd posdie2
+	@cmd velo001 1.5 0 0
+	attack	23 5 14 32 10 
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/7
+anim attack1
+	rangez 20 150
+        range -150 -50
+	loop	1
+	delay 1
+	offset	30 21
+	bbox	23 5 14 32
+	jumpframe 0 0 1 0.5
+	attack	23 5 14 32 10 
+	frame	data/chars/en1/1
+	delay 9
+	frame	data/chars/en1/1
+	delay 10
+	frame	data/chars/en1/2
+	frame	data/chars/en1/3
+	@cmd    target 0.8 0.8
+	@cmd shoot2 "enbl" 5 0 -1 
+	@cmd clearL
+	frame	data/chars/en1/4
+	frame	data/chars/en1/5
+	frame	data/chars/en1/6
+	frame	data/chars/en1/7
+	frame	data/chars/en1/1
+	frame	data/chars/en1/2
+	frame	data/chars/en1/3 
+	frame	data/chars/en1/4
+	frame	data/chars/en1/5
+	frame	data/chars/en1/6
+	frame	data/chars/en1/7
+	frame	data/chars/en1/1
+	frame	data/chars/en1/2
+	frame	data/chars/en1/3 
+	frame	data/chars/en1/4
+	frame	data/chars/en1/5
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+anim attack2
+	rangez -150 -20
+        range -150 -50
+	loop	1
+	delay 1
+	offset	30 21
+	bbox	23 5 14 32
+	jumpframe 0 0 1 -0.5
+	attack	23 5 14 32 10 
+	frame	data/chars/en1/1
+	delay 9
+	frame	data/chars/en1/1
+	DELAY 10
+	frame	data/chars/en1/2
+	frame	data/chars/en1/3
+	@cmd    target 0.8 0.8
+	@cmd shoot2 "enbl" 5 0 -1 
+	@cmd clearL
+	frame	data/chars/en1/4
+	frame	data/chars/en1/5
+	frame	data/chars/en1/6
+	frame	data/chars/en1/7
+	frame	data/chars/en1/1
+	frame	data/chars/en1/2
+	frame	data/chars/en1/3 
+	frame	data/chars/en1/4
+	frame	data/chars/en1/5
+	frame	data/chars/en1/6
+	frame	data/chars/en1/7
+	frame	data/chars/en1/1
+	frame	data/chars/en1/2
+	frame	data/chars/en1/3 
+	frame	data/chars/en1/4
+	frame	data/chars/en1/5
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2 
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+	@cmd posdie2
+	frame	data/chars/en1/1
+	@cmd posdie2
+	frame	data/chars/en1/2
+	@cmd posdie2
+	frame	data/chars/en1/3
+	@cmd posdie2
+	frame	data/chars/en1/4
+	@cmd posdie2
+	frame	data/chars/en1/5
+	@cmd posdie2
+	frame	data/chars/en1/6
+anim death
+	delay 5
+	@cmd shoot "wb1" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+anim death2
+	offset	30 21
+	bbox 0 0 0 0
+	delay 5
+	@cmd velo001 2 1 0
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/1
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/1
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/1
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/2
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/2
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/2
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/3
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/3
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/3
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/4
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/4
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/4
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/7
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/7
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/en1/7
+	delay 5
+	@cmd shoot "mdym" 0 0 -1
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+
+
+
+

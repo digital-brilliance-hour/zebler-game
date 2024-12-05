@@ -14,8 +14,8 @@ anim idle
 	bbox    0 0 0 0
 	fastattack 1
 	hitflash wb3
-	attack  38 9 90 55 50 1 0 0 0 22
+	attack  38 9 90 55 50 0 0 0 0 22
 	frame	data/chars/lloyo/blst1
-	attack2  38 9 90 55 50 1 0 0 0 22
+	attack2  38 9 90 55 50 0 0 0 0 22
 	frame	data/chars/lloyo/blst1
 	

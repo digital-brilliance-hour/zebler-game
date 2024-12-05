@@ -1,0 +1,56 @@
+name	enb
+type	enemy
+aimove chase
+aimove wander
+health	1
+speed	8
+shadow	0
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2		
+jumpheight 0		
+cantgrab 1		
+noquake	1				
+nolife	1	
+load enbl
+hostile player
+candamage player
+animationscript data/scripts/boscript.c
+setlayer 50
+anim spawn
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	70
+	@cmd velo001 2 0 0
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+anim idle
+	loop	1
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	10
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+anim walk
+	loop	1
+	offset	13 11
+	bbox	-10 -10 45 45
+	delay	300
+	attack	5 4 16 13 10 
+	frame	data/chars/enb/1
+	@cmd    target 0.8 0.8
+	@cmd shoot2 "enbl" 4 0 -1 
+	frame	data/chars/enb/1
+anim death
+	delay 5
+	offset	13 11
+	@cmd shoot "wb1" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+
+

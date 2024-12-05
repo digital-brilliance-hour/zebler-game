@@ -12,7 +12,7 @@ frontpanel	data/bgs/stage1/frontOld.gif
 
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
-# Specify normal, neon and screen, or 'none'
+# Specify nor3al, neon and screen, or 'none'
 
 panel		data/bgs/stage1/stg1-2.gif	
 
@@ -105,7 +105,7 @@ health  100
 coords	400 180
 at	480
 
-spawn	Mary
+spawn	Mandy
 health  100
 coords	500 240
 at	480
@@ -115,7 +115,7 @@ health  100
 coords	450 200
 at	480	
 
-spawn	Mary
+spawn	Mandy
 health  100
 coords	450 240
 at	480
@@ -136,11 +136,6 @@ at	840
 spawn	Angel
 health  100
 coords	400 240
-at	840
-
-spawn	dutch
-health  100
-coords	400 180
 at	840
 
 spawn	K'
@@ -184,12 +179,12 @@ at 1420
 group 1 5
 at 1420
 
-spawn	Mary
+spawn	Mandy
 health  100
 coords	400 180
 at	1420
 
-spawn	Mary
+spawn	Mandy
 health  100
 coords	400 240
 at	1420
@@ -199,7 +194,7 @@ health  100
 coords	400 180
 at	1420
 
-spawn	Mary
+spawn	Mandy
 health  100
 coords	500 240
 at	1420
@@ -227,11 +222,6 @@ health  100
 coords	400 240
 at	1750
 
-spawn	dutch
-health  100
-coords	400 180
-at	1750
-
 spawn	Angel
 health  100
 coords	500 240
@@ -247,14 +237,11 @@ at	1750
 wait
 at 1900
 	
-spawn   spider
-boss 1
-health  100
-coords	400 180
-at	1900
-
-wait
-at 1900
+#spawn   spider
+#boss 1
+#health  100
+#coords	400 180
+#at	1900
 	
 
 

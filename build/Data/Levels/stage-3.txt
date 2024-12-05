@@ -58,7 +58,13 @@ spawn1          60 0 0
 
 #--group1-----
 
-spawn 	robot
+wait
+at 1000
+
+group  1 6
+at 1000
+
+spawn 	rdias
 health 100
 coords 	530 200
 at	1000	
@@ -76,36 +82,35 @@ coords 	530 200
 at	1000	
 
 spawn 	enem1
-coords 	530 200
+coords 	-50 200
 at	1000	
 
 spawn 	enem1
-coords 	530 200
+coords 	-50 200
 at	1000
 
-wait
-at 1500
-
-group  1 6
-at 1500
-
 #--group2-----
+wait
+at 3000
+
+group  1 10
+at 3000
 
 spawn 	rdias
-health 500
+health 150
 coords 	530 200
 at	3000	
 
 spawn 	enem1
-coords 	530 200
+coords 	-50 200
 at	3000	
 
 spawn 	enem1
-coords 	530 200
+coords 	-50 200
 at	3000	
 
 spawn 	enem1
-coords 	530 200
+coords 	-50 200
 at	3000	
 
 spawn 	enem1
@@ -120,27 +125,26 @@ spawn 	enem1
 coords 	530 100
 at	3000
 
-
-wait
-at 3500
-
-group  1 10
-at 3500
-
 #--group3-----
 
+wait
+at 5000
+
+group  1 10
+at 5000
+
 spawn 	rdias
-health 250
+health 150
 coords 	530 50
 at	5000
 
 spawn 	rdias
-health 250
+health 150
 coords 	530 200
 at	5000		
 
 spawn 	enem1
-coords 	530 100
+coords 	-30 100
 at	5000	
 
 spawn 	enem1
@@ -148,11 +152,11 @@ coords 	530 170
 at	5000	
 
 spawn 	enem1
-coords 	530 100
+coords 	-50 100
 at	5000	
 
 spawn 	enem1
-coords 	530 170
+coords 	-50 170
 at	5000	
 
 spawn 	enem1
@@ -160,32 +164,40 @@ coords 	530 100
 at	5000
 
 spawn 	enem1
-coords 	530 170
+coords 	-50 170
 at	5000
 
 spawn 	enem1
-coords 	530 100
+coords 	-50 100
 at	5000
-
-wait
-at 5500
-
-group  1 10
-at 5500
 
 #--group3-----
+
+wait
+at 7000
+
+group  1 10
+at 7000
 
 spawn 	robot
 health 250
 coords 	530 50
-at	5500
+at	7000
 
 spawn 	rdias
-health 250
+health 50
 coords 	530 200
 at	7000		
 
 spawn 	enem1
+coords 	-50 100
+at	7000	
+
+spawn 	enem1
+coords 	-50 170
+at	7000	
+
+spawn 	enem1
 coords 	530 100
 at	7000	
 
@@ -194,19 +206,11 @@ coords 	530 170
 at	7000	
 
 spawn 	enem1
-coords 	530 100
-at	7000	
-
-spawn 	enem1
-coords 	530 170
-at	7000	
-
-spawn 	enem1
-coords 	530 100
+coords 	-50 100
 at	7000
 
 spawn 	enem1
-coords 	530 170
+coords 	-50 170
 at	7000
 
 spawn 	enem1

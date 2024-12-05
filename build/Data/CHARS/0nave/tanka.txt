@@ -1,0 +1,153 @@
+name TankA
+health	35
+speed 12
+type	enemy
+gfxshadow 1 3
+antigrab 100
+hostile player npc
+candamage player npc
+diesound data/sounds/0navedie2.wav
+nodrop 2
+death 1
+facing 2
+nodieblink 2
+aggression 100
+
+
+
+load balaE2
+
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/0nave/xb1.gif
+alternatepal  data/chars/0nave/xb1pal1.gif
+alternatepal  data/chars/0nave/xb1pal2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	60 300
+	delay	8
+	drawmethod	flipx 1
+	offset	63 60
+	bbox	38 15 48 51
+	frame	data/chars/0nave/xb5.gif
+	sound	data/sounds/shot1.wav
+	frame	data/chars/0nave/xb6.gif
+	frame	data/chars/0nave/xb7.gif
+	frame	data/chars/0nave/xb5.gif
+	@cmd	shoot "BalaE2" 1 38 2
+	sound	data/sounds/shot1.wav
+	frame	data/chars/0nave/xb6.gif
+	frame	data/chars/0nave/xb7.gif
+		
+anim	death
+	loop	0
+	delay	20
+	@cmd	spawn01 "boom" 1 0 1
+	offset	63 60
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb1.gif
+	delay	180
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/misc/vazio.gif
+		
+anim	fall
+	loop	0
+	delay	6
+	offset	63 60
+	bbox	38 15 48 51
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb1.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	63 60
+	bbox	38 15 48 51
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb1.gif
+	frame	data/chars/0nave/xb2.gif
+	frame	data/chars/0nave/xb3.gif
+		
+anim	jumpattack
+	loop	0
+	range	0 60
+	delay	8
+	jumpframe	0 2 -4 0
+	drawmethod	flipx 1
+	offset	63 60
+	bbox	38 15 48 51
+	frame	data/chars/0nave/xb4.gif
+		
+anim	pain
+	loop	0
+	delay	6
+	offset	63 60
+	bbox	38 15 48 51
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb2.gif
+		
+anim	rise
+	loop	0
+	delay	6
+	offset	63 60
+	bbox	38 15 48 51
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb3.gif
+		
+anim	spawn
+	loop	0
+	delay	6
+	offset	63 60
+	bbox	38 15 48 51
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb1.gif
+		
+anim	walk
+	loop	1
+	delay	6
+	offset	63 60
+	bbox	38 15 48 51
+	drawmethod	flipx 1
+	frame	data/chars/0nave/xb1.gif
+	frame	data/chars/0nave/xb2.gif
+	frame	data/chars/0nave/xb3.gif
+		
+#|edited by openBor Stats v 0.51
+		

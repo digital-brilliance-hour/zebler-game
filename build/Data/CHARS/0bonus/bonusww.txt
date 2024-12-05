@@ -1,0 +1,168 @@
+
+
+
+name BonusWW
+health	300
+speed 32
+type	none
+gfxshadow 1 3
+diesound data/chars/wonderwoman/morte.wav
+icon	data/chars/wonderwoman/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  36 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/wonderwoman/nome.gif -37 -60
+parrow2		data/chars/wonderwoman/nome.gif -37 -60
+
+palette       data/chars/wonderwoman/00pal1.gif
+alternatepal  data/chars/wonderwoman/00pal2.gif
+alternatepal  data/chars/wonderwoman/00pal3.gif
+alternatepal  data/chars/wonderwoman/00pal4.gif
+alternatepal  data/chars/wonderwoman/00pal5.gif
+alternatepal  data/chars/wonderwoman/00pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	28 100
+	bbox	8 3 32 78
+	attack	7 3 33 77 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/wonderwoman/f2.gif
+	offset	28 101
+	frame	data/chars/wonderwoman/f1.gif
+	frame	data/chars/wonderwoman/f3.gif
+	frame	data/chars/wonderwoman/f1.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	4
+	offset	59 104
+	bbox	39 22 52 49
+	attack	39 21 57 52 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/wonderwoman/ww1.gif
+	frame	data/chars/wonderwoman/ww2.gif
+	frame	data/chars/wonderwoman/ww3.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	28 100
+	frame	data/chars/wonderwoman/f2.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	4
+	offset	59 104
+	bbox	39 22 52 49
+	attack	39 21 57 52 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/wonderwoman/ww1.gif
+	frame	data/chars/wonderwoman/ww2.gif
+	frame	data/chars/wonderwoman/ww3.gif
+		
+#|edited by openBor Stats v 0.51
+		

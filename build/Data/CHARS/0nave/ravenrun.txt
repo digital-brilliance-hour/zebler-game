@@ -1,0 +1,328 @@
+
+
+
+name RavenRun
+health	300
+speed 22
+type	none
+gfxshadow 1 3
+icon	data/chars/Raven/portrait.gif 1
+diesound data/chars/Raven/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load Raventiro
+
+atchain 1
+running 43 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/Raven/nome.gif -37 -60
+parrow2		data/chars/Raven/nome.gif -37 -60
+
+palette       data/chars/Raven/00pal1.gif
+alternatepal  data/chars/Raven/00pal2.gif
+alternatepal  data/chars/Raven/00pal3.gif
+alternatepal  data/chars/Raven/00pal4.gif
+alternatepal  data/chars/Raven/00pal5.gif
+alternatepal  data/chars/Raven/00pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	8
+	@cmd	keymove 2 0.6
+	bbox	33 32 26 38
+	offset	48 77
+	frame	data/chars/0Nave/rav5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rav6.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/gl/effect4.wav
+	@cmd	shoot "RavenTiro" 15 35 2
+	frame	data/chars/0Nave/rav7.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rav8.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	33 32 26 38
+	offset	49 78
+	frame	data/chars/0Nave/rav1.gif
+	frame	data/chars/0Nave/rav2.gif
+	frame	data/chars/0Nave/rav3.gif
+	frame	data/chars/0Nave/rav4.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	48 66
+	frame	data/chars/0Nave/rav15.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rav15.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rav15.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rav15.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rav15.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rav15.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/rav15.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-7 0 0
+	drawmethod	flipx 1
+	bbox	30 21 33 43
+	offset	49 70
+	attack	21 16 53 50 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rav14.gif
+		
+anim	freespecial14
+	loop	1
+	delay	6
+	dive	1 0.1
+	cancel	0 99 0 A freespecial2
+	bbox	33 32 26 38
+	offset	49 78
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rav1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rav2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rav3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/rav4.gif
+		
+anim	freespecial2
+	loop	0
+	delay	6
+	bbox	39 24 22 33
+	offset	50 72
+	dive	4 4
+	offset	50 72
+	frame	data/chars/0Nave/rav10.gif
+	attack	45 39 25 21 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rav11.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	33 32 26 38
+	offset	49 78
+	frame	data/chars/0Nave/rav1.gif
+	frame	data/chars/0Nave/rav2.gif
+	frame	data/chars/0Nave/rav3.gif
+	frame	data/chars/0Nave/rav4.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	bbox	36 27 27 34
+	offset	51 73
+	frame	data/chars/0Nave/rav9.gif
+	offset	47 71
+	frame	data/chars/0Nave/rav12.gif
+		
+anim	jumpattack
+	loop	0
+	delay	6
+	bbox	39 24 22 33
+	offset	50 72
+	dive	4 4
+	offset	50 72
+	frame	data/chars/0Nave/rav10.gif
+	attack	45 39 25 21 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rav11.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	33 32 26 38
+	offset	49 78
+	frame	data/chars/0Nave/rav1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	33 32 26 38
+	offset	49 78
+	frame	data/chars/0Nave/rav1.gif
+	frame	data/chars/0Nave/rav2.gif
+	frame	data/chars/0Nave/rav3.gif
+	frame	data/chars/0Nave/rav4.gif
+		
+anim	runattack
+	loop	0
+	delay	15
+	@cmd	velo001	10 0 0
+	bbox	30 21 33 43
+	offset	49 70
+	attack	21 16 53 50 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/rav14.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	33 32 26 38
+	offset	49 78
+	frame	data/chars/0Nave/rav1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	33 32 26 38
+	offset	49 78
+	frame	data/chars/0Nave/rav1.gif
+	frame	data/chars/0Nave/rav2.gif
+	frame	data/chars/0Nave/rav3.gif
+	frame	data/chars/0Nave/rav4.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	36 28 24 28
+	offset	47 71
+	frame	data/chars/0Nave/rav12.gif
+		
+#|edited by openBor Stats v 0.51
+		

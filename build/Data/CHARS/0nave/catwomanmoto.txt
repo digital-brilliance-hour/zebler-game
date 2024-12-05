@@ -1,0 +1,195 @@
+
+
+
+name CatwomanMoto
+health	400
+speed 16
+type npc
+gfxshadow 1 3
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+aimove Avoid
+subject_to_screen 1
+
+load Batbomb
+Knife Batbomb
+
+atchain 1
+
+
+animationscript data/scripts/grabscript.c
+
+palette       data/chars/cat/pal1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	range	10 300
+	bbox	25 17 52 25
+	offset	53 41
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 15 8 2
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+		
+anim	backwalk
+	loop	1
+	delay	6
+	bbox	25 17 52 25
+	offset	53 41
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	offset	53 41
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cat/cat1.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cat/cat1.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cat/cat1.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	25 17 52 25
+	offset	53 41
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	25 17 52 25
+	offset	53 41
+	frame	data/chars/cat/cat1.gif
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	25 17 52 25
+	offset	53 41
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	sound	data/sounds/moto.wav
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+	frame	data/chars/cat/cat1.gif
+	frame	data/chars/cat/cat2.gif
+		
+#|edited by openBor Stats v 0.51
+		

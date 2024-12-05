@@ -1,0 +1,59 @@
+
+
+
+name	IceTrap
+type trap
+shadow 0
+health 90
+lifespan 10
+candamage player npc obstacle
+Antigravity 100
+subject_to_wall 1
+nolife 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	0
+	delay	8
+	offset	74 125
+	hitflash	flashgelo
+	drawmethod	alpha 6
+	frame	data/chars/zmetro/c16.gif
+	frame	data/chars/zmetro/c17.gif
+	frame	data/chars/zmetro/c18.gif
+	attack	51 73 45 52 10 9 0 0 0 0
+	frame	data/chars/zmetro/c19.gif
+		
+#|edited by openBor Stats v 0.51
+		

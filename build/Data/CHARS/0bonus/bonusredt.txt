@@ -1,0 +1,179 @@
+
+
+
+name BonusRedt
+health	300
+speed 30
+type	none
+gfxshadow 1 3
+diesound data/chars/redtornado/morte.wav
+icon	data/chars/redtornado/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  36 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/redtornado/nome.gif -37 -60
+parrow2		data/chars/redtornado/nome.gif -37 -60
+
+palette       data/chars/redtornado/00red1.gif
+alternatepal  data/chars/redtornado/00red2.gif
+alternatepal  data/chars/redtornado/00red3.gif
+alternatepal  data/chars/redtornado/00red4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	5
+	attack	63 24 63 102 110 9 0 0 10 0
+	forcedirection	-2
+	offset	94 129
+	bbox	68 30 55 88
+	frame	data/chars/RedTornado/v1.gif
+	sound	data/sounds/vuu1.wav
+	frame	data/chars/RedTornado/v2.gif
+	frame	data/chars/RedTornado/v1.gif
+	frame	data/chars/RedTornado/v2.gif
+	frame	data/chars/RedTornado/v1.gif
+	frame	data/chars/RedTornado/v2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	attack	40 21 77 86 110 9 0 0 10 0
+	forcedirection	-2
+	delay	5
+	offset	75 119
+	bbox	47 25 69 75
+	frame	data/chars/RedTornado/r1.gif
+	sound	data/sounds/vuu1.wav
+	frame	data/chars/RedTornado/r2.gif
+	frame	data/chars/RedTornado/r3.gif
+	frame	data/chars/RedTornado/r2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	94 129
+	frame	data/chars/RedTornado/v1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	5
+	attack	40 21 77 86 110 9 0 0 10 0
+	forcedirection	-2
+	delay	5
+	offset	75 119
+	bbox	47 25 69 75
+	frame	data/chars/RedTornado/r1.gif
+	sound	data/sounds/vuu1.wav
+	frame	data/chars/RedTornado/r2.gif
+	frame	data/chars/RedTornado/r3.gif
+	frame	data/chars/RedTornado/r2.gif
+	frame	data/chars/RedTornado/r1.gif
+	frame	data/chars/RedTornado/r2.gif
+	frame	data/chars/RedTornado/r3.gif
+	frame	data/chars/RedTornado/r2.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,388 @@
+name Veio
+health	80
+speed 5
+type	enemy
+gfxshadow 1 3
+jumpheight 3
+hostile player npc
+candamage player npc
+antigrab  3
+diesound data/sounds/die5.wav
+throw 3 2
+subject_to_screen 1
+knockdowncount 6
+jugglepoints 4
+falldie 2
+
+load BalaE
+Knife BalaE
+
+fmap 5
+palette       data/chars/zgoat/a1pal1.gif
+alternatepal  data/chars/zgoat/a1pal2.gif
+alternatepal  data/chars/zgoat/a1pal3.gif
+alternatepal  data/chars/zgoat/a1pal4.gif
+alternatepal  data/chars/zgoat/a1pal4.gif
+alternatepal  data/chars/zgoat/a1gelo.gif
+alternatepal  data/chars/zgoat/a1poison.gif
+
+
+throw 3 3
+animationscript data/scripts/grabscript.c
+
+remap	data/chars/zgoat/a1.gif data/chars/zgoat/a1alt.gif
+remap	data/chars/zgoat/a1.gif data/chars/zgoat/a2alt.gif
+remap	data/chars/zgoat/a1.gif data/chars/zgoat/a3alt.gif
+remap	data/chars/zgoat/a1.gif data/chars/zgoat/a4alt.gif
+remap	data/chars/zgoat/a1.gif data/chars/zgoat/a1gelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	fastattack	1
+	attackone	1
+	hitflash	flash2
+	range	30 110
+	delay	5
+	offset	59 93
+	bbox	35 27 40 68
+	frame	data/chars/zgoat/a8.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "BalaE" 2 25 1
+	frame	data/chars/zgoat/a9.gif
+	frame	data/chars/zgoat/a10.gif
+	frame	data/chars/zgoat/a8.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "BalaE" 2 20 1
+	frame	data/chars/zgoat/a9.gif
+	frame	data/chars/zgoat/a10.gif
+	frame	data/chars/zgoat/a8.gif
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "BalaE" 2 22 1
+	frame	data/chars/zgoat/a9.gif
+	frame	data/chars/zgoat/a10.gif
+	frame	data/chars/zgoat/a8.gif
+	sound	data/sounds/gun.wav
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "BalaE" 2 23 1
+	frame	data/chars/zgoat/a9.gif
+	frame	data/chars/zgoat/a10.gif
+	delay	60
+	frame	data/chars/zgoat/a8.gif
+		
+anim	attack2
+	loop	0
+	fastattack	1
+	attackone	1
+	hitflash	flash2
+	range	150 350
+	delay	9
+	offset	59 93
+	bbox	35 27 40 68
+	frame	data/chars/zgoat/a8.gif
+	delay	6
+	sound	data/sounds/shot1.wav
+	@cmd	shoot "BalaE" 2 25 1
+	frame	data/chars/zgoat/a9.gif
+	frame	data/chars/zgoat/a10.gif
+	delay	50
+	frame	data/chars/zgoat/a8.gif
+		
+anim	burn
+	loop	0
+	delay	5
+	offset	58 99
+	landframe	22
+	bbox	31 37 55 48
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/gb1.gif
+	frame	data/chars/zgoat/gb2.gif
+	frame	data/chars/zgoat/gb3.gif
+	frame	data/chars/zgoat/gb4.gif
+	frame	data/chars/zgoat/gb1.gif
+	frame	data/chars/zgoat/gb2.gif
+	frame	data/chars/zgoat/gb3.gif
+	frame	data/chars/zgoat/gb4.gif
+	frame	data/chars/zgoat/gb1.gif
+	frame	data/chars/zgoat/gb2.gif
+	frame	data/chars/zgoat/gb3.gif
+	frame	data/chars/zgoat/gb4.gif
+	frame	data/chars/zgoat/gb1.gif
+	frame	data/chars/zgoat/gb2.gif
+	frame	data/chars/zgoat/gb3.gif
+	frame	data/chars/zgoat/gb4.gif
+	frame	data/chars/zgoat/gb1.gif
+	frame	data/chars/zgoat/gb2.gif
+	frame	data/chars/zgoat/gb3.gif
+	frame	data/chars/zgoat/gb4.gif
+	frame	data/chars/zgoat/gb1.gif
+	frame	data/chars/zgoat/gb2.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	offset	55 68
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zgoat/a13.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	attack	41 22 5 53 8 9 0 0 0 0
+	bbox	34 20 40 68
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	bbox	30 24 52 54
+	attack	33 24 5 53 8 9 0 0 0 0
+	offset	59 88
+	frame	data/chars/zgoat/a12.gif
+	offset	59 83
+	delay	500
+	bbox	30 26 51 55
+	frame	data/chars/zgoat/a12.gif
+	offset	55 68
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zgoat/a13.gif
+		
+anim	fall9
+	loop	0
+	offset	54 59
+	delay	9
+	frame	data/chars/zgoat/a13.gif
+		
+anim	grabbed
+	loop	0
+	bbox	34 20 40 68
+	delay	30
+	offset	51 103
+	frame	data/chars/zgoat/a11.gif
+		
+anim	idle
+	loop	1
+	offset	66 102
+	bbox	43 34 40 73
+	delay	30
+	frame	data/chars/zgoat/a1.gif
+		
+anim	walkoff
+	loop	0
+	delay	4
+	bbox	30 24 52 54
+	offset	59 88
+	frame	data/chars/zgoat/a12.gif
+		
+anim	pain
+	loop	0
+	bbox	34 20 40 68
+	delay	3
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	58 85
+	frame	data/chars/zgoat/a11.gif
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	58 85
+	frame	data/chars/zgoat/a11.gif
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	58 85
+	frame	data/chars/zgoat/a11.gif
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	58 85
+	frame	data/chars/zgoat/a11.gif
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	58 85
+	frame	data/chars/zgoat/a11.gif
+		
+anim	pain18
+	loop	0
+	delay	12
+	drawmethod	remap 6
+	offset	66 102
+	bbox	43 34 40 73
+	frame	data/chars/zgoat/a1.gif
+	bbox	34 20 40 68
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	66 102
+	bbox	43 34 40 73
+	frame	data/chars/zgoat/a1.gif
+	bbox	34 20 40 68
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	66 102
+	bbox	43 34 40 73
+	frame	data/chars/zgoat/a1.gif
+	bbox	34 20 40 68
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	66 102
+	bbox	43 34 40 73
+	frame	data/chars/zgoat/a1.gif
+	bbox	34 20 40 68
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+	offset	66 102
+	bbox	43 34 40 73
+	frame	data/chars/zgoat/a1.gif
+	bbox	34 20 40 68
+	offset	59 85
+	frame	data/chars/zgoat/a11.gif
+		
+anim	pain9
+	loop	0
+	offset	54 59
+	delay	9
+	frame	data/chars/zgoat/a13.gif
+		
+anim	rise
+	loop	0
+	offset	55 68
+	delay	9
+	frame	data/chars/zgoat/a13.gif
+	offset	53 84
+	frame	data/chars/zgoat/a12.gif
+	offset	47 70
+	frame	data/chars/zgoat/a14.gif
+		
+anim	shock
+	loop	0
+	delay	5
+	offset	64 95
+	landframe	22
+	bbox	29 32 70 48
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	frame	data/chars/zgoat/gs1.gif
+	frame	data/chars/zgoat/gs2.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	offset	55 68
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zgoat/a13.gif
+		
+anim	spawn
+	loop	0
+	offset	66 102
+	delay	3
+	frame	data/chars/zgoat/a1.gif
+		
+anim	walk
+	loop	1
+	delay	13
+	offset	66 104
+	bbox	43 34 40 73
+	frame	data/chars/zgoat/a2.gif
+	frame	data/chars/zgoat/a3.gif
+	frame	data/chars/zgoat/a4.gif
+	frame	data/chars/zgoat/a5.gif
+	frame	data/chars/zgoat/a6.gif
+	offset	66 101
+	frame	data/chars/zgoat/a7.gif
+		
+#|edited by openBor Stats v 0.51
+		

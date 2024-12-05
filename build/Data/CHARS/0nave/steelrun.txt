@@ -1,0 +1,313 @@
+
+
+
+name SteelRun
+health	300
+speed 26
+type	none
+gfxshadow 1 3
+icon	data/chars/steel/portrait.gif 1
+diesound data/chars/steel/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 5
+layer 300
+
+load Batbomb
+Knife Batbomb
+
+atchain 1
+running 43 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/steel/nome.gif -37 -60
+parrow2		data/chars/steel/nome.gif -37 -60
+
+palette       data/chars/steel/00pal.gif
+alternatepal  data/chars/steel/00pal2.gif
+alternatepal  data/chars/steel/00pal3.gif
+alternatepal  data/chars/steel/00pal5.gif
+alternatepal  data/chars/steel/00pal4.gif
+alternatepal  data/chars/steel/00pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st6.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/steel/tiro.wav
+	@cmd	shoot "batbomb" 14 45 2
+	frame	data/chars/0Nave/st5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st5.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+	frame	data/chars/0Nave/st2.gif
+	frame	data/chars/0Nave/st3.gif
+	frame	data/chars/0Nave/st4.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	49 76
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/st7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/st7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/st7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/st7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/st7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/st7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/st7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial14
+	loop	1
+	delay	8
+	dive	1 0.1
+	bbox	34 27 29 45
+	offset	51 76
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st4.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	37 26 29 31
+	offset	50 63
+	dive	4 4
+	attack	49 32 27 32 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/st10.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+	frame	data/chars/0Nave/st2.gif
+	frame	data/chars/0Nave/st3.gif
+	frame	data/chars/0Nave/st4.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	bbox	35 26 25 41
+	offset	50 76
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	frame	data/chars/0Nave/st8.gif
+	frame	data/chars/0Nave/st9.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	37 26 29 31
+	offset	50 63
+	dive	4 4
+	attack	49 32 27 32 15 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/st10.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+	frame	data/chars/0Nave/st2.gif
+	frame	data/chars/0Nave/st3.gif
+	frame	data/chars/0Nave/st4.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st6.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/steel/tiro.wav
+	@cmd	shoot "batbomb" 14 45 2
+	frame	data/chars/0Nave/st5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st6.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/st5.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+	frame	data/chars/0Nave/st2.gif
+	frame	data/chars/0Nave/st3.gif
+	frame	data/chars/0Nave/st4.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	34 27 29 45
+	offset	51 76
+	frame	data/chars/0Nave/st1.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,33 @@
+name	SteelLogo
+speed        0
+facing 1
+type	     none
+setlayer 1
+shadow	     0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	4
+	offset	38 27
+	frame	data/chars/steel/nome.gif
+		
+#|edited by openBor Stats v 0.51
+		

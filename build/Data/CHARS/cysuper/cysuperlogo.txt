@@ -1,0 +1,32 @@
+name	CySuperLogo
+speed        0
+facing 1
+type	     none
+setlayer 1
+shadow	     0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	4
+	offset	33 25
+	frame	data/chars/CySuper/nome.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,38 @@
+name CanaryTiro
+speed        16
+type	     none
+shadow	     0
+remove 0
+candamage enemy obstacle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	drawmethod	scale 0.75 0.75
+	attack	20 19 43 28 30 9 0 0 0 15
+	offset	20 35
+	frame	data/chars/0nave/bc8.gif
+	frame	data/chars/0nave/bc9.gif
+		
+#|edited by openBor Stats v 0.51
+		

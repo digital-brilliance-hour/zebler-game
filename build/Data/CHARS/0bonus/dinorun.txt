@@ -1,0 +1,130 @@
+name DinoRun
+health 90
+speed 0
+type	enemy
+gfxshadow 1 3
+antigrab 100
+hostile player npc
+candamage player npc
+nodrop 2
+death 1
+nomove 1
+facing 2
+nodieblink 2
+aggression 100
+offscreenkill 150
+
+
+animationscript data/scripts/grabscript.c
+
+palette      data/chars/zatlantis/q1pal1.gif
+alternatepal  data/chars/zatlantis/q1pal2.gif
+alternatepal  data/chars/zatlantis/q1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	death
+	@cmd	velo001	5 1 0
+	loop	0
+	delay	9
+	offset	38 82
+	frame	data/chars/zatlantis/q16.gif
+	offset	57 69
+	frame	data/chars/zatlantis/q17.gif
+	frame	data/chars/zatlantis/q17.gif
+	frame	data/chars/zatlantis/q17.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	bbox	66 33 44 74
+	offset	90 108
+	frame	data/chars/zatlantis/q8.gif
+		
+anim	idle
+	loop	1
+	offset	58 82
+	bbox	36 12 47 72
+	delay	8
+	@cmd	velo001	4 0 0
+	bbox	66 33 44 74
+	offset	90 108
+	frame	data/chars/zatlantis/q8.gif
+	offset	90 109
+	frame	data/chars/zatlantis/q8.gif
+	offset	90 110
+	frame	data/chars/zatlantis/q8.gif
+	offset	90 109
+	frame	data/chars/zatlantis/q8.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	bbox	66 33 44 74
+	offset	90 108
+	frame	data/chars/zatlantis/q8.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	bbox	66 33 44 74
+	offset	90 108
+	frame	data/chars/zatlantis/q8.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	66 33 44 74
+	offset	90 108
+	frame	data/chars/zatlantis/q8.gif
+		
+anim	walk
+	loop	1
+	delay	11
+	bbox	66 33 44 74
+	offset	90 108
+	frame	data/chars/zatlantis/q8.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,354 @@
+name FURY
+health	700
+speed 18
+type	enemy
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 20
+hostile player npc
+candamage player npc obstacle
+antigrab  99
+aggression 999
+blockodds 1
+diesound	data/chars/zmetro/gmorte.wav
+throw 3 2
+aimove chase
+knockdowncount 6
+jugglepoints 4
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+
+
+throw 3 3
+
+fmap 2
+palette       data/chars/zgoat/at1pal2.gif
+alternatepal  data/chars/zgoat/at1pal1.gif
+alternatepal  data/chars/Batman/0paletagelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 70
+	hitfx	data/sounds/beat3.wav
+	offset	51 128
+	bbox	25 25 60 103
+	delay	14
+	frame	data/chars/zgoat/at13.gif
+	delay	6
+	frame	data/chars/zgoat/at14.gif
+	attack	69 39 62 32 25 10 0 0 0 0
+	dropv	2 5
+	delay	20
+	bbox	28 34 58 94
+	offset	58 128
+	@cmd	velo001	2 0 0
+	sound	data/sounds/punch3.wav
+	delay	20
+	frame	data/chars/zgoat/at15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	51 128
+	bbox	25 25 60 103
+	delay	8
+	@cmd	velo001	0 0 0
+	frame	data/chars/zgoat/at14.gif
+	offset	41 139
+	bbox	17 50 48 91
+	frame	data/chars/zgoat/at1.gif
+		
+anim	attack2
+	loop	0
+	range	100 170
+	delay	8
+	offset	41 139
+	bbox	17 50 48 91
+	hitflash	flashVermelho
+	@script
+	void self = getlocalvar("self");
+        if (frame==0){
+            int Map = getentityproperty(self, "map");
+            if(Map==1){
+            performattack(self, openborconstant("ANI_FOLLOW1"));
+ 	}
+ 	}
+	@end_script	
+	frame	data/chars/zgoat/at1.gif
+	sound	data/chars/zgoat/rage.wav
+	attack	49 36 52 53 20 10 0 0 0 0
+	frame	data/chars/zgoat/at2.gif
+	attack	65 49 80 29 20 10 0 0 0 0
+	frame	data/chars/zgoat/at3.gif
+	attack	105 52 80 29 20 10 0 0 0 0
+	frame	data/chars/zgoat/at4.gif
+	attack	138 49 80 29 20 10 0 0 0 0
+	frame	data/chars/zgoat/at5.gif
+	attack	221 45 80 29 20 10 0 0 0 0
+	frame	data/chars/zgoat/at6.gif
+	attack	278 43 120 29 20 10 0 0 0 0
+	frame	data/chars/zgoat/at7.gif
+	attack	290 44 111 29 20 10 0 0 0 0
+	frame	data/chars/zgoat/at8.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zgoat/at9.gif
+	frame	data/chars/zgoat/at10.gif
+	delay	20
+	frame	data/chars/zgoat/at1.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	bbox	21 23 57 93
+	offset	54 115
+	frame	data/chars/zgoat/at17.gif
+	bbox	22 42 64 50
+	offset	50 111
+	frame	data/chars/zgoat/at18.gif
+	offset	50 97
+	delay	500
+	frame	data/chars/zgoat/at18.gif
+	offset	53 89
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	53 89
+	frame	data/chars/zgoat/at19.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	49 78
+	frame	data/chars/zgoat/at18.gif
+		
+anim	follow1
+	loop	0
+	offset	51 128
+	bbox	25 25 60 103
+	delay	14
+	frame	data/chars/zgoat/at13.gif
+	delay	8
+	@cmd	shoot "SuperCyTiro" 10 50 1
+	sound	data/sounds/cabletiro.wav
+	frame	data/chars/zgoat/at14.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 70 1
+	frame	data/chars/zgoat/at14.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 30 1
+	frame	data/chars/zgoat/at14.gif
+	offset	41 139
+	bbox	17 50 48 91
+	frame	data/chars/zgoat/at1.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	41 139
+	bbox	17 50 48 91
+	frame	data/chars/zgoat/at1.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	bbox	34 50 57 74
+	offset	58 141
+	frame	data/chars/zgoat/at12.gif
+		
+anim	jumpattack
+	loop	0
+	range	200 400
+	hitfx	data/sounds/beat2.wav
+	delay	6
+	jumpframe	0 4 5 0
+	sound	data/sounds/vuu3.wav
+	bbox	34 50 57 74
+	offset	58 142
+	frame	data/chars/zgoat/at11.gif
+	offset	74 102
+	bbox	19 30 93 51
+	attack	68 44 70 33 25 9 0 0 0 0
+	frame	data/chars/zgoat/at16.gif
+		
+anim	pain
+	loop	0
+	delay	25
+	bbox	21 23 57 93
+	offset	54 115
+	frame	data/chars/zgoat/at17.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	49 78
+	frame	data/chars/zgoat/at18.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	53 89
+	frame	data/chars/zgoat/at19.gif
+	delay	18
+	offset	56 90
+	frame	data/chars/zgoat/at20.gif
+		
+anim	riseattack1
+	loop	0
+	range	0 80
+	delay	9
+	offset	53 89
+	hitfx	data/sounds/beat3.wav
+	frame	data/chars/zgoat/at19.gif
+	delay	18
+	offset	56 90
+	frame	data/chars/zgoat/at20.gif
+	delay	6
+	offset	41 139
+	frame	data/chars/zgoat/at1.gif
+	attack	69 39 62 32 25 10 0 0 0 0
+	dropv	2 5
+	delay	20
+	bbox	28 34 58 94
+	offset	58 128
+	@cmd	velo001	2 0 0
+	sound	data/sounds/punch3.wav
+	delay	20
+	frame	data/chars/zgoat/at15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	51 128
+	bbox	25 25 60 103
+	delay	8
+	frame	data/chars/zgoat/at14.gif
+	offset	41 139
+	bbox	17 50 48 91
+	frame	data/chars/zgoat/at1.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	bbox	34 50 57 74
+	offset	58 141
+	frame	data/chars/zgoat/at12.gif
+	offset	58 142
+	frame	data/chars/zgoat/at11.gif
+	offset	58 143
+	frame	data/chars/zgoat/at12.gif
+	offset	58 142
+	frame	data/chars/zgoat/at11.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	bbox	34 50 57 74
+	offset	58 141
+	frame	data/chars/zgoat/at12.gif
+		
+#|edited by openBor Stats v 0.51
+		

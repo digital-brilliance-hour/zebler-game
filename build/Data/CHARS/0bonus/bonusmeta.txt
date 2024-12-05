@@ -1,0 +1,178 @@
+
+
+
+name BonusMeta
+health	300
+speed 30
+type	none
+gfxshadow 1 3
+diesound	data/chars/meta/morte.wav
+icon	data/chars/meta/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  34 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/meta/nome.gif -37 -60
+parrow2		data/chars/meta/nome.gif -37 -60
+
+fmap 4
+palette       data/chars/meta/pal1.gif
+alternatepal  data/chars/meta/pal2.gif
+alternatepal  data/chars/meta/pal3.gif
+alternatepal  data/chars/meta/pal4.gif
+alternatepal  data/chars/Batman/0paletagelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	7
+	attack	124 43 48 69 110 9 0 0 10 0
+	forcedirection	-2
+	offset	146 113
+	bbox	126 44 41 69
+	frame	data/chars/meta/r1.gif
+	frame	data/chars/meta/r2.gif
+	frame	data/chars/meta/r3.gif
+	offset	146 112
+	frame	data/chars/meta/r1.gif
+	frame	data/chars/meta/r2.gif
+	frame	data/chars/meta/r3.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	6
+	attack	124 43 55 69 110 9 0 0 10 0
+	forcedirection	-2
+	offset	146 113
+	bbox	126 44 41 69
+	frame	data/chars/meta/rb1.gif
+	frame	data/chars/meta/rb2.gif
+	frame	data/chars/meta/rb3.gif
+	offset	146 112
+	frame	data/chars/meta/rb1.gif
+	frame	data/chars/meta/rb2.gif
+	frame	data/chars/meta/rb3.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	146 113
+	frame	data/chars/meta/r1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	6
+	attack	124 43 55 69 110 9 0 0 10 0
+	forcedirection	-2
+	offset	146 113
+	bbox	126 44 41 69
+	frame	data/chars/meta/rb1.gif
+	frame	data/chars/meta/rb2.gif
+	frame	data/chars/meta/rb3.gif
+	offset	146 112
+	frame	data/chars/meta/rb1.gif
+	frame	data/chars/meta/rb2.gif
+	frame	data/chars/meta/rb3.gif
+		
+#|edited by openBor Stats v 0.51
+		

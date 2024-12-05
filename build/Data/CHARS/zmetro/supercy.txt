@@ -1,0 +1,617 @@
+name SuperCy
+health	600
+speed 14
+type	enemy
+gfxshadow 1 3
+jumpheight 5
+jumpspeed 60
+hostile player npc
+candamage player npc obstacle
+antigrab  8
+aggression 999
+blockodds 1
+diesound data/sounds/dierobot2.wav
+throw 3 2
+aimove chase
+knockdowncount 6
+jugglepoints 4
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+subject_to_hole 0
+bounce 0
+risetime 200 0
+
+load SuperCyTiro
+knife SuperCyTiro
+
+defense normal17 6 0 5
+
+throw 3 3
+
+fmap 4
+palette       data/chars/cysuper/s1.gif
+alternatepal  data/chars/cysuper/00pal.gif
+alternatepal  data/chars/zmetro/cy2pal.gif
+alternatepal  data/chars/cysuper/s1kri.gif
+alternatepal  data/chars/cysuper/s1gelo.gif
+
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	20 120
+	hitfx	data/sounds/beat2.wav
+	offset	33 89
+	bbox	14 1 42 82
+	delay	16
+	frame	data/chars/zmetro/cy8.gif
+	attack	57 4 42 19 25 10 0 0 0 0
+	dropv	2 4
+	delay	3
+	bbox	28 0 49 72
+	offset	47 80
+	@cmd	velo001	2 0 0
+	sound	data/sounds/punch2.wav
+	frame	data/chars/zmetro/cy9.gif
+	offset	47 78
+	frame	data/chars/zmetro/cy9.gif
+	offset	47 76
+	frame	data/chars/zmetro/cy9.gif
+	offset	47 74
+	frame	data/chars/zmetro/cy9.gif
+	offset	47 74
+	frame	data/chars/zmetro/cy9.gif
+	@cmd	velo001	0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	offset	38 82
+	bbox	11 0 45 82
+	delay	25
+	frame	data/chars/zmetro/cy1.gif
+		
+anim	attack2
+	loop	0
+	range	150 250
+	delay	15
+	offset	58 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy10.gif
+	offset	63 92
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 70 1
+	frame	data/chars/zmetro/cy11.gif
+	offset	63 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy12.gif
+	offset	58 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy10.gif
+	offset	63 92
+	bbox	35 0 45 81
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 70 1
+	frame	data/chars/zmetro/cy11.gif
+	offset	63 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy12.gif
+	offset	58 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy10.gif
+	offset	63 92
+	bbox	35 0 45 81
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 70 1
+	frame	data/chars/zmetro/cy11.gif
+	offset	63 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy12.gif
+	offset	58 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy10.gif
+	offset	63 92
+	bbox	35 0 45 81
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "SuperCyTiro" 10 60 1
+	frame	data/chars/zmetro/cy11.gif
+	offset	63 92
+	bbox	35 0 45 81
+	frame	data/chars/zmetro/cy12.gif
+		
+anim	attack3
+	loop	0
+	range	0 20
+	hitfx	data/sounds/beat2.wav
+	delay	50
+	jumpframe	0 6 2 0
+	offset	51 90
+	bbox	33 1 40 81
+	sound	data/sounds/vuu3.wav
+	frame	data/chars/zmetro/cy2.gif
+	offset	47 90
+	bbox	32 1 43 81
+	delay	6
+	frame	data/chars/zmetro/cy3.gif
+	offset	29 89
+	bbox	9 11 48 57
+	frame	data/chars/zmetro/cy14.gif
+	offset	35 86
+	bbox	14 19 53 43
+	attack	45 39 33 33 25 9 1 0 0 0
+	frame	data/chars/zmetro/cy15.gif
+		
+anim	attack4
+	loop	0
+	range	400 600
+	hitfx	data/sounds/beat2.wav
+	delay	9
+	jumpframe	0 5 5 0
+	offset	59 63
+	bbox	14 1 95 32
+	attack	67 2 47 26 30 10 1 0 0 0
+	sound	data/sounds/vuu3.wav
+	frame	data/chars/zmetro/cyy1.gif
+	offset	51 72
+	bbox	4 9 95 32
+	attack	64 10 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy2.gif
+	offset	51 73
+	bbox	1 10 95 32
+	attack	64 11 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy3.gif
+	offset	58 69
+	bbox	7 5 95 32
+	attack	67 6 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy4.gif
+	attack	67 2 47 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy1.gif
+	offset	51 72
+	bbox	4 9 95 32
+	attack	64 10 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy2.gif
+	offset	51 73
+	bbox	1 10 95 32
+	attack	64 11 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy3.gif
+	offset	58 69
+	bbox	7 5 95 32
+	attack	67 6 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy4.gif
+		
+anim	attack5
+	loop	0
+	range	600 1000
+	hitfx	data/sounds/beat2.wav
+	delay	9
+	jumpframe	0 10 5 0
+	offset	59 63
+	bbox	14 1 95 32
+	attack	67 2 47 26 30 10 1 0 0 0
+	sound	data/sounds/vuu3.wav
+	frame	data/chars/zmetro/cyy1.gif
+	offset	51 72
+	bbox	4 9 95 32
+	attack	64 10 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy2.gif
+	offset	51 73
+	bbox	1 10 95 32
+	attack	64 11 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy3.gif
+	offset	58 69
+	bbox	7 5 95 32
+	attack	67 6 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy4.gif
+	attack	67 2 47 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy1.gif
+	offset	51 72
+	bbox	4 9 95 32
+	attack	64 10 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy2.gif
+	offset	51 73
+	bbox	1 10 95 32
+	attack	64 11 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy3.gif
+	offset	58 69
+	bbox	7 5 95 32
+	attack	67 6 41 26 30 10 1 0 0 0
+	frame	data/chars/zmetro/cyy4.gif
+		
+anim	block
+	loop	0
+	offset	31 79
+	delay	40
+	bbox	11 1 45 80
+	frame	data/chars/zmetro/cy7.gif
+		
+anim	burn
+	loop	0
+	delay	5
+	landframe	22
+	offset	30 69
+	bbox	6 13 55 41
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/cy20.gif
+	frame	data/chars/zmetro/cy21.gif
+	offset	27 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/cy22.gif
+	offset	29 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/cy23.gif
+	frame	data/chars/zmetro/cy20.gif
+	frame	data/chars/zmetro/cy21.gif
+	offset	27 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/cy22.gif
+	offset	29 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/cy23.gif
+	frame	data/chars/zmetro/cy20.gif
+	frame	data/chars/zmetro/cy21.gif
+	offset	27 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/cy22.gif
+	offset	29 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/cy23.gif
+	frame	data/chars/zmetro/cy20.gif
+	frame	data/chars/zmetro/cy21.gif
+	offset	27 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/cy22.gif
+	offset	29 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/cy23.gif
+	frame	data/chars/zmetro/cy20.gif
+	frame	data/chars/zmetro/cy21.gif
+	offset	27 58
+	bbox	2 2 55 41
+	frame	data/chars/zmetro/cy22.gif
+	offset	29 69
+	bbox	6 13 55 41
+	frame	data/chars/zmetro/cy23.gif
+	frame	data/chars/zmetro/cy20.gif
+	frame	data/chars/zmetro/cy21.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	44 32
+	frame	data/chars/zmetro/cy18.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	bbox	14 1 41 77
+	offset	28 91
+	frame	data/chars/zmetro/cy16.gif
+	bbox	8 2 64 50
+	offset	33 71
+	frame	data/chars/zmetro/cy17.gif
+	offset	33 59
+	delay	500
+	frame	data/chars/zmetro/cy17.gif
+	offset	46 94
+	attack	0 0 0 0 0 0 0 0 0 0
+	sound	data/sounds/punch.wav
+	delay	1
+	bbox	50 37 0 0
+	offset	44 32
+	frame	data/chars/zmetro/cy18.gif
+		
+anim	fall17
+	loop	0
+	delay	14
+	landframe	3
+	bbox	14 1 41 77
+	offset	28 91
+	drawmethod	remap 3
+	frame	data/chars/zmetro/cy16.gif
+	bbox	8 2 64 50
+	offset	33 71
+	drawmethod	remap -1
+	frame	data/chars/zmetro/cy17.gif
+	offset	33 59
+	delay	500
+	drawmethod	remap 3
+	frame	data/chars/zmetro/cy17.gif
+	drawmethod	remap -1
+	offset	46 94
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	offset	44 32
+	frame	data/chars/zmetro/cy18.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	27 29
+	frame	data/chars/zmetro/cy17.gif
+		
+anim	grabbed
+	loop	0
+	bbox	14 1 41 77
+	delay	25
+	offset	28 82
+	frame	data/chars/zmetro/cy16.gif
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	51 90
+	bbox	33 1 43 86
+	frame	data/chars/zmetro/cy2.gif
+	offset	47 90
+	bbox	33 1 41 86
+	frame	data/chars/zmetro/cy3.gif
+	offset	42 90
+	bbox	28 1 43 86
+	frame	data/chars/zmetro/cy4.gif
+	offset	47 90
+	bbox	33 1 43 86
+	frame	data/chars/zmetro/cy5.gif
+	offset	51 90
+	bbox	33 1 43 86
+	frame	data/chars/zmetro/cy6.gif
+		
+anim	jump
+	loop	0
+	delay	11
+	bbox	35 2 43 74
+	offset	51 90
+	frame	data/chars/zmetro/cy6.gif
+		
+anim	jumpattack
+	loop	0
+	range	200 400
+	hitfx	data/sounds/beat2.wav
+	delay	70
+	jumpframe	0 7 3 0
+	offset	51 90
+	bbox	33 1 40 81
+	sound	data/sounds/vuu3.wav
+	frame	data/chars/zmetro/cy2.gif
+	offset	47 90
+	bbox	32 1 43 81
+	delay	6
+	frame	data/chars/zmetro/cy3.gif
+	offset	29 89
+	bbox	9 11 48 57
+	frame	data/chars/zmetro/cy14.gif
+	offset	35 86
+	bbox	14 19 53 43
+	attack	45 39 33 33 25 9 1 0 0 0
+	frame	data/chars/zmetro/cy15.gif
+		
+anim	pain
+	loop	0
+	bbox	14 1 41 77
+	delay	25
+	offset	28 78
+	frame	data/chars/zmetro/cy16.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	27 29
+	frame	data/chars/zmetro/cy17.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	33 47
+	frame	data/chars/zmetro/cy19.gif
+	offset	37 81
+	frame	data/chars/zmetro/cy1.gif
+		
+anim	riseattack1
+	loop	0
+	delay	9
+	range	0 50
+	offset	44 32
+	hitflash	FlashFire
+	hitfx	data/sounds/fire3.wav
+	frame	data/chars/zmetro/cy18.gif
+	offset	33 47
+	frame	data/chars/zmetro/cy19.gif
+	offset	53 136
+	delay	4
+	frame	data/chars/zmetro/cy13.gif
+	burn	58 39 46 74 15 9 1 0 0 0
+	sound	data/sounds/fire1.wav
+	bbox	28 62 46 75
+	frame	data/chars/zmetro/cy13a.gif
+	burn	62 36 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13b.gif
+	burn	75 23 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13c.gif
+	burn	78 21 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13d.gif
+	burn	82 17 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13e.gif
+	burn	88 17 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13f.gif
+	burn	91 18 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13g.gif
+	burn	90 18 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13h.gif
+	burn	82 24 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13i.gif
+	burn	76 27 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13j.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/cy13l.gif
+	frame	data/chars/zmetro/cy13m.gif
+	frame	data/chars/zmetro/cy13.gif
+	offset	36 80
+	bbox	12 1 46 80
+	frame	data/chars/zmetro/CY1.gif
+		
+anim	upper
+	loop	0
+	range	0 70
+	offset	53 136
+	bbox	28 62 46 75
+	delay	5
+	hitflash	FlashFire
+	hitfx	data/sounds/fire3.wav
+	frame	data/chars/zmetro/cy13.gif
+	burn	58 39 46 41 15 9 0 0 0 0
+	sound	data/sounds/fire1.wav
+	frame	data/chars/zmetro/cy13a.gif
+	burn	62 36 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13b.gif
+	burn	75 23 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13c.gif
+	burn	78 21 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13d.gif
+	burn	82 17 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13e.gif
+	burn	88 17 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13f.gif
+	burn	91 18 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13g.gif
+	burn	90 18 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13h.gif
+	burn	82 24 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13i.gif
+	burn	76 27 46 41 15 9 0 0 0 0
+	frame	data/chars/zmetro/cy13j.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/cy13l.gif
+	frame	data/chars/zmetro/cy13m.gif
+	frame	data/chars/zmetro/cy13.gif
+	offset	36 80
+	bbox	12 1 46 80
+	delay	30
+	frame	data/chars/zmetro/CY1.gif
+		
+anim	walk
+	loop	1
+	delay	10
+	offset	51 90
+	bbox	33 1 43 86
+	frame	data/chars/zmetro/cy2.gif
+	offset	47 90
+	bbox	33 1 41 86
+	frame	data/chars/zmetro/cy3.gif
+	offset	42 90
+	bbox	28 1 43 86
+	frame	data/chars/zmetro/cy4.gif
+	offset	47 90
+	bbox	33 1 43 86
+	frame	data/chars/zmetro/cy5.gif
+	offset	51 90
+	bbox	33 1 43 86
+	frame	data/chars/zmetro/cy6.gif
+		
+anim	walkoff
+	loop	0
+	delay	9
+	offset	51 90
+	frame	data/chars/zmetro/cy2.gif
+		
+#|edited by openBor Stats v 0.51
+		

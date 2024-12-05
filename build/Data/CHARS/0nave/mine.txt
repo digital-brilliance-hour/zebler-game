@@ -1,0 +1,53 @@
+name Mine
+health	20
+speed 8
+type	enemy
+shadow 0
+antigrab 100
+hostile player npc
+candamage player npc
+
+nodrop 2
+death 1
+nomove 1 1
+nodieblink 2
+aggression 200
+offscreenkill 200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	death
+	loop	0
+	offset	31 30
+	delay	7
+	sound	data/sounds/boom1.wav
+	frame	data/chars/0nave/mina2.gif
+	frame	data/chars/0nave/mina3.gif
+	frame	data/chars/0nave/mina4.gif
+	frame	data/chars/0nave/mina5.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	attack	19 14 24 17 20 0 0 0 0 0
+	loop	1
+	delay	2
+	move	5
+	offset	31 30
+	hitfx	data/sounds/0knifehit.wav
+	frame	data/chars/0nave/mina1.gif
+		
+#|edited by openBor Stats v 0.51
+		

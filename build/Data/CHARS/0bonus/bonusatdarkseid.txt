@@ -1,0 +1,166 @@
+
+
+
+name BonusAtDarkseid
+health	300
+speed 14
+type	none
+gfxshadow 1 3
+icon	data/chars/darkseid/port.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  34 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/darkseid/nome.gif -37 -60
+parrow2		data/chars/darkseid/nome.gif -37 -60
+
+palette       data/chars/darkseid/pal0.gif
+alternatepal  data/chars/darkseid/pal1.gif
+alternatepal  data/chars/darkseid/pal2.gif
+alternatepal  data/chars/darkseid/pal3.gif
+alternatepal  data/chars/darkseid/pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	bbox	6 0 44 100
+	loop	1
+	delay	9
+	attack	5 -3 44 103 110 9 0 0 10 0
+	forcedirection	-2
+	offset	29 100
+	frame	data/chars/darkseid/j1.gif
+	offset	29 101
+	frame	data/chars/darkseid/j1.gif
+	offset	29 102
+	frame	data/chars/darkseid/j1.gif
+	offset	29 101
+	frame	data/chars/darkseid/j1.gif
+		
+anim	jump
+		
+anim	run
+	bbox	11 0 44 92
+	loop	1
+	delay	9
+	attack	4 0 62 92 110 9 0 0 10 0
+	forcedirection	-2
+	offset	33 94
+	frame	data/chars/darkseid/r1.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	29 100
+	frame	data/chars/darkseid/j1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	bbox	11 0 44 92
+	loop	1
+	delay	9
+	attack	4 0 62 92 110 9 0 0 10 0
+	forcedirection	-2
+	offset	33 94
+	frame	data/chars/darkseid/r1.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,159 @@
+
+
+
+name BonusPlastic
+health	300
+speed 20
+type	none
+gfxshadow 1 3
+diesound data/chars/plastic/morte.wav
+icon	data/chars/plastic/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  24 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/plastic/nome.gif -37 -60
+parrow2		data/chars/plastic/nome.gif -37 -60
+
+palette       data/chars/plastic/00plastic.gif
+alternatepal  data/chars/plastic/00pal3.gif
+alternatepal  data/chars/plastic/00pal.gif
+alternatepal  data/chars/plastic/00pal2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	79 111
+	attack	77 32 73 68 110 9 0 0 10 0
+	bbox	38 37 64 73
+	forcedirection	-2
+	frame	data/chars/0bonus/plas1.gif
+	frame	data/chars/0bonus/plas2.gif
+	frame	data/chars/0bonus/plas3.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	6
+	offset	79 111
+	bbox	38 37 64 73
+	attack	77 32 73 68 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/plas1.gif
+	frame	data/chars/0bonus/plas2.gif
+	frame	data/chars/0bonus/plas3.gif
+		
+anim	runattack
+		
+anim	spawn
+	delay	6
+	offset	79 111
+	frame	data/chars/0bonus/plas3.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	6
+	offset	79 111
+	bbox	38 37 64 73
+	attack	77 32 73 68 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/plas1.gif
+	frame	data/chars/0bonus/plas2.gif
+	frame	data/chars/0bonus/plas3.gif
+		
+#|edited by openBor Stats v 0.51
+		

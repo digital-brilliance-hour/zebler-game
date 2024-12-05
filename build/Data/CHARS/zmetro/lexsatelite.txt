@@ -1,0 +1,109 @@
+name	LexSatelite
+speed        30
+health 60
+type	     enemy
+shadow 0
+candamage player npc
+hostile player npc
+jumpheight 0
+aimove Chase
+aggression 999
+setlayer 1
+nodrop 2
+nopain 1
+
+
+load LexTiro
+Bomb LexTiro
+
+
+ animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 40
+	delay	3
+	offset	0 9
+	@cmd	toss "LexTiro" -130 555 0
+	sound	data/sounds/satelite2.wav
+	frame	data/chars/zmetro/ll1.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll2.gif
+	offset	-2 7
+	frame	data/chars/zmetro/ll3.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll4.gif
+	offset	0 9
+	frame	data/chars/zmetro/ll1.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll2.gif
+	offset	-2 7
+	frame	data/chars/zmetro/ll3.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll4.gif
+	offset	0 9
+	frame	data/chars/zmetro/ll1.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll2.gif
+	offset	-2 7
+	frame	data/chars/zmetro/ll3.gif
+	offset	-1 9
+	delay	200
+	frame	data/chars/zmetro/ll4.gif
+		
+anim	fall
+	loop	0
+	delay	9
+	offset	0 9
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	0 9
+	frame	data/chars/zmetro/ll1.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll2.gif
+	offset	-2 7
+	frame	data/chars/zmetro/ll3.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll4.gif
+		
+anim	spawn
+	loop	0
+	delay	9
+	offset	0 9
+	frame	data/chars/zmetro/ll1.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	0 9
+	frame	data/chars/zmetro/ll1.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll2.gif
+	offset	-2 7
+	frame	data/chars/zmetro/ll3.gif
+	offset	-1 9
+	frame	data/chars/zmetro/ll4.gif
+		
+#|edited by openBor Stats v 0.51
+		

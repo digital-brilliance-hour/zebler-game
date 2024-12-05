@@ -1,0 +1,295 @@
+
+
+
+name AlanRun
+health	300
+speed 14
+type	none
+gfxshadow 1 3
+diesound	data/chars/alan/morte.wav
+icon	data/chars/alan/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+load GLTankTiro
+load Batbomb
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/gl/nome.gif -37 -80
+parrow2		data/chars/gl/nome.gif -37 -80
+
+
+
+fmap 5
+palette       data/chars/alan/pal1.gif
+alternatepal  data/chars/alan/pal2.gif
+alternatepal  data/chars/alan/pal3.gif
+alternatepal  data/chars/alan/pal4.gif
+alternatepal  data/chars/alan/pal5.gif
+alternatepal  data/chars/alan/gelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	@cmd	keymove 2 0.6
+	bbox	29 25 26 51
+	offset	45 85
+	frame	data/chars/alan/alan1.gif
+	sound	data/sounds/plasma2.wav
+	@cmd	keymove 2 0.6
+	@cmd	shoot "GLTankTiro" 10 48 2
+	frame	data/chars/alan/alan3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/alan/alan2.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	53 74
+	frame	data/chars/alan/alan7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/alan/alan7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/alan/alan7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/alan/alan7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/alan/alan7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/alan/alan7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/alan/alan7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial14
+	loop	1
+	delay	7
+	dive	1 0.1
+	bbox	18 14 24 41
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	bbox	29 25 25 49
+	offset	45 84
+	frame	data/chars/alan/alan1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/alan/alan2.gif
+		
+anim	freespecial2
+	loop	0
+	dive	6 3
+	delay	7
+	bbox	36 23 20 32
+	offset	47 77
+	frame	data/chars/alan/alan5.gif
+	attack	49 36 23 16 15 0 0 0 5 0
+	frame	data/chars/alan/alan6.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	bbox	29 25 25 49
+	offset	45 84
+	frame	data/chars/alan/alan1.gif
+	offset	45 85
+	frame	data/chars/alan/alan2.gif
+	offset	45 86
+	frame	data/chars/alan/alan1.gif
+	offset	45 85
+	frame	data/chars/alan/alan2.gif
+		
+anim	jump
+	loop	0
+	delay	20
+	bbox	35 22 22 49
+	offset	48 82
+	cancel	1 99 0 j freespecial14
+	bbox	35 22 22 49
+	offset	48 82
+	frame	data/chars/alan/alan4.gif
+	frame	data/chars/alan/alan4.gif
+		
+anim	jumpattack
+	loop	0
+	dive	6 3
+	delay	7
+	bbox	36 23 20 32
+	offset	47 77
+	frame	data/chars/alan/alan5.gif
+	attack	49 36 23 16 15 0 0 0 5 0
+	frame	data/chars/alan/alan6.gif
+		
+anim	jumpland
+	loop	0
+	delay	4
+	bbox	29 25 25 49
+	offset	45 84
+	frame	data/chars/alan/alan1.gif
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	29 25 25 49
+	offset	45 84
+	frame	data/chars/alan/alan1.gif
+	frame	data/chars/alan/alan2.gif
+	frame	data/chars/alan/alan1.gif
+	frame	data/chars/alan/alan2.gif
+		
+anim	runattack
+	loop	0
+	delay	7
+	@cmd	keymove 2 0.6
+	bbox	29 25 26 51
+	offset	45 85
+	frame	data/chars/alan/alan1.gif
+	sound	data/sounds/plasma2.wav
+	@cmd	keymove 2 0.6
+	@cmd	shoot "GLTankTiro" 10 48 2
+	frame	data/chars/alan/alan3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/alan/alan2.gif
+		
+anim	spawn
+	loop	0
+	delay	7
+	bbox	29 25 25 49
+	offset	45 84
+	frame	data/chars/alan/alan1.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	29 25 25 49
+	offset	45 84
+	frame	data/chars/alan/alan1.gif
+	offset	45 85
+	frame	data/chars/alan/alan2.gif
+	offset	45 86
+	frame	data/chars/alan/alan1.gif
+	offset	45 85
+	frame	data/chars/alan/alan2.gif
+		
+anim	walkoff
+	loop	0
+	delay	7
+	delay	7
+	bbox	35 21 22 49
+	offset	46 81
+	frame	data/chars/alan/alan4.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,183 @@
+
+
+
+name BonusSuperBlack
+health	300
+speed 27
+type	none
+gfxshadow 1 3
+diesound data/chars/superman/morte.wav
+icon	data/chars/superman/portraitb2.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  31 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/superman/nome.gif -37 -60
+parrow2		data/chars/superman/nome.gif -37 -60
+
+palette       data/chars/superman/00blackpal1.gif
+alternatepal  data/chars/superman/00blackpal2.gif
+alternatepal  data/chars/superman/00blackpal3.gif
+alternatepal  data/chars/superman/00blackpal4.gif
+alternatepal  data/chars/superman/00blackpal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	64 91
+	bbox	35 17 48 69
+	attack	24 41 94 47 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/00bs1.gif
+	sound	data/sounds/moto.wav
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+	offset	64 93
+	frame	data/chars/0bonus/00bs1.gif
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	6
+	offset	64 91
+	bbox	35 17 48 69
+	attack	24 41 94 47 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/00bs1.gif
+	sound	data/sounds/moto.wav
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+	offset	64 93
+	frame	data/chars/0bonus/00bs1.gif
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	6
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	6
+	offset	64 91
+	bbox	35 17 48 69
+	attack	24 41 94 47 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/00bs1.gif
+	sound	data/sounds/moto.wav
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+	offset	64 93
+	frame	data/chars/0bonus/00bs1.gif
+	offset	64 92
+	frame	data/chars/0bonus/00bs1.gif
+		
+#|edited by openBor Stats v 0.51
+		

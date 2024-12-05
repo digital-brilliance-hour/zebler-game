@@ -1,0 +1,178 @@
+
+
+
+name StarSThemi
+health	300
+speed 22
+type	none
+gfxshadow 1 3
+diesound data/chars/star/morte.wav
+icon	data/chars/star/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  26 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/star/nome.gif -37 -60
+parrow2		data/chars/star/nome.gif -37 -60
+
+palette       data/chars/Star/00pal6.gif
+alternatepal  data/chars/Star/00pal1.gif
+alternatepal  data/chars/Star/00pal2.gif
+alternatepal  data/chars/Star/00pal3.gif
+alternatepal  data/chars/Star/00pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	8
+	offset	108 114
+	bbox	61 49 92 66
+	attack	61 57 91 57 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/stars4.gif
+	frame	data/chars/0bonus/stars5.gif
+	sound	data/sounds/horse.wav
+	frame	data/chars/0bonus/stars6.gif
+	frame	data/chars/0bonus/stars7.gif
+	frame	data/chars/0bonus/stars8.gif
+	frame	data/chars/0bonus/stars9.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	8
+	offset	108 114
+	attack	61 57 91 57 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/stars4.gif
+	frame	data/chars/0bonus/stars5.gif
+	sound	data/sounds/horse.wav
+	frame	data/chars/0bonus/stars6.gif
+	frame	data/chars/0bonus/stars7.gif
+	frame	data/chars/0bonus/stars8.gif
+	frame	data/chars/0bonus/stars9.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	7
+	offset	108 114
+	frame	data/chars/0bonus/stars4.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	8
+	offset	108 114
+	bbox	61 49 92 66
+	attack	61 57 91 57 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/0bonus/stars4.gif
+	frame	data/chars/0bonus/stars5.gif
+	sound	data/sounds/horse.wav
+	frame	data/chars/0bonus/stars6.gif
+	frame	data/chars/0bonus/stars7.gif
+	frame	data/chars/0bonus/stars8.gif
+	frame	data/chars/0bonus/stars9.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,170 @@
+
+
+
+name BonusATKing
+health	300
+speed 33
+type	none
+gfxshadow 1 3
+icon	data/chars/king/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+atchain 1
+running  33 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+
+parrow		data/chars/king/nome.gif -37 -60
+parrow2		data/chars/king/nome.gif -37 -60
+
+
+palette       data/chars/king/pal1.gif
+alternatepal  data/chars/king/pal2.gif
+alternatepal  data/chars/king/pal3.gif
+alternatepal  data/chars/king/pal4.gif
+alternatepal  data/chars/king/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	9
+	attack	25 22 76 77 110 9 0 0 10 0
+	forcedirection	-2
+	offset	63 112
+	frame	data/chars/king/f2.gif
+	offset	63 113
+	frame	data/chars/king/f3.gif
+	offset	63 114
+	frame	data/chars/king/f4.gif
+	offset	63 113
+	frame	data/chars/king/f3.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	7
+	attack	25 22 76 77 110 9 0 0 10 0
+	forcedirection	-2
+	offset	63 112
+	frame	data/chars/king/f2.gif
+	frame	data/chars/king/f3.gif
+	frame	data/chars/king/f2.gif
+	frame	data/chars/king/f4.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	64 118
+	frame	data/chars/king/f1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	7
+	attack	25 22 76 77 110 9 0 0 10 0
+	forcedirection	-2
+	offset	63 112
+	frame	data/chars/king/f2.gif
+	frame	data/chars/king/f3.gif
+	frame	data/chars/king/f2.gif
+	frame	data/chars/king/f4.gif
+		
+#|edited by openBor Stats v 0.51
+		

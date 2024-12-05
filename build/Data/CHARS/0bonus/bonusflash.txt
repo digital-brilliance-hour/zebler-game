@@ -1,0 +1,213 @@
+
+
+
+name BonusFlash
+health	300
+speed 50
+type	none
+gfxshadow 1 3
+diesound data/chars/flash/morte.wav
+icon	data/chars/flash/portrait2.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  100 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/flash/nome.gif -37 -60
+parrow2		data/chars/flash/nome.gif -37 -60
+
+palette       data/chars/flash/00altpal.gif
+alternatepal  data/chars/flash/00altpal3.gif
+alternatepal  data/chars/flash/00altpal2.gif
+alternatepal  data/chars/flash/00altpal4.gif
+alternatepal  data/chars/flash/00altpal5.gif
+alternatepal  data/chars/flash/00altpal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	41 75
+	bbox	30 0 35 74
+	attack	30 1 36 66 110 9 0 0 10 0
+	forcedirection	-2
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/flash/r1.gif
+	offset	28 75
+	attack	17 1 35 63 110 9 0 0 0 0
+	sound	data/sounds/run1.wav
+	frame	data/chars/flash/r2.gif
+	offset	41 75
+	attack	30 1 36 65 110 9 0 0 0 0
+	frame	data/chars/flash/r3.gif
+	sound	data/sounds/run1.wav
+	offset	29 75
+	attack	17 1 35 65 110 9 0 0 0 0
+	frame	data/chars/flash/r4.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	3
+	offset	107 75
+	bbox	96 0 35 74
+	attack	87 3 45 69 110 9 0 0 5 0
+	forcedirection	-2
+	frame	data/chars/flash/rr1.gif
+	offset	81 72
+	@cmd	spawn01 "speed" 0 0 1
+	attack	61 3 45 69 110 9 0 0 0 0
+	forcedirection	-2
+	bbox	70 0 35 74
+	frame	data/chars/flash/rr2a.gif
+	offset	107 74
+	attack	87 3 45 69 110 9 0 0 0 0
+	forcedirection	-2
+	bbox	96 0 35 74
+	frame	data/chars/flash/rr3.gif
+	@cmd	spawn01 "speed" 0 0 1
+	offset	83 73
+	sound	data/sounds/run2.wav
+	attack	61 3 45 69 110 9 0 0 0 0
+	forcedirection	-2
+	bbox	72 0 35 74
+	frame	data/chars/flash/rr4a.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	29 75
+	@cmd	changeopenborvariant "slowmotion" 0
+	frame	data/chars/flash/r4.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	3
+	offset	107 75
+	bbox	96 0 35 74
+	attack	87 3 45 69 110 9 0 0 5 0
+	forcedirection	-2
+	frame	data/chars/flash/rr1.gif
+	offset	81 72
+	@cmd	spawn01 "speed" 0 0 1
+	attack	61 3 45 69 110 9 0 0 0 0
+	forcedirection	-2
+	bbox	70 0 35 74
+	frame	data/chars/flash/rr2a.gif
+	offset	107 74
+	attack	87 3 45 69 110 9 0 0 0 0
+	forcedirection	-2
+	bbox	96 0 35 74
+	frame	data/chars/flash/rr3.gif
+	@cmd	spawn01 "speed" 0 0 1
+	offset	83 73
+	sound	data/sounds/run2.wav
+	attack	61 3 45 69 110 9 0 0 0 0
+	forcedirection	-2
+	bbox	72 0 35 74
+	frame	data/chars/flash/rr4a.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -4,7 +4,7 @@
 name	Mandy
 health	100
 speed	9
-type	player
+type	enemy
 shadow	3
 diesound data/sounds/eek.wav
 

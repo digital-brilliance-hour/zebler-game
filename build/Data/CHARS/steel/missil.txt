@@ -1,0 +1,44 @@
+name	missil
+speed        25
+type	     none
+shadow	     0
+subject_to_wall 1
+candamage enemy obstacle 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	hitflash	FlashEx1
+	hitfx	data/sounds/explode.wav
+	burn	4 -2 46 12 12 9 0 0 0 15
+	offset	14 4
+	frame	data/chars/steel/m1.gif
+	burn	2 -2 40 12 12 9 0 0 0 15
+	offset	6 4
+	frame	data/chars/steel/m2.gif
+		
+#|edited by openBor Stats v 0.51
+		

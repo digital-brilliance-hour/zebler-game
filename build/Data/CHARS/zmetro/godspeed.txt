@@ -1,0 +1,314 @@
+name Godspeed
+health	700
+speed 90
+type	enemy
+gfxshadow 1 3
+jumpheight 3
+hostile player npc
+candamage player npc obstacle
+antigrab  3
+aggression 9999
+blockodds 1
+aimove Avoidx
+aimove chasez
+diesound data/chars/zmetro/zoom1.wav
+throw 3 2
+knockdowncount 99
+jugglepoints 4
+falldie 2
+icon	data/chars/misc/00boss.gif 0
+iconposition 82 -10
+lifebarstatus 300 8 0 1 0 0 0 0 0
+lifeposition 90 10
+nameposition 93 11
+nolife 1
+offscreenkill 999999
+
+load speed
+load speed2
+throw 3 3
+
+animationscript data/scripts/grabscript.c
+
+fmap 1
+palette       data/chars/flash/black.gif
+alternatepal  data/chars/Batman/0paletagelo.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	range	0 40
+	loop	0
+	delay	4
+	bbox	31 18 45 63
+	offset	50 88
+	fastattack	1
+	hitfx	data/sounds/beat3.wav
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/rz1.gif
+	sound	data/sounds/punch3.wav
+	attack	57 30 40 37 30 0 0 0 0 0
+	jugglecost	1
+	frame	data/chars/flash/rz2.gif
+	frame	data/chars/flash/rz3.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/flash/rz4.gif
+	@cmd	velo001	-15 0 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	velo001	0 0 0
+	frame	data/chars/flash/rz4.gif
+		
+anim	attack2
+	loop	0
+	range	100 300
+	delay	3
+	hitflash	flash3
+	offset	36 74
+	bbox	26 1 39 70
+	@cmd	changeopenborvariant "slowmotion" 1
+	sound	data/chars/flash/slow.wav
+	frame	data/chars/flash/r1.gif
+	offset	24 73
+	bbox	13 2 39 65
+	frame	data/chars/flash/r2.gif
+	offset	36 74
+	bbox	26 1 39 66
+	frame	data/chars/flash/r3.gif
+	bbox	14 1 39 67
+	offset	25 73
+	frame	data/chars/flash/r4.gif
+	bbox	43 26 46 72
+	offset	64 98
+	frame	data/chars/flash/zz1.gif
+	@cmd	changeopenborvariant "slowmotion" 0
+	sound	data/sounds/vuu2.wav
+	@cmd	velo001	15 0 0
+	delay	5
+	@cmd	spawn01 "speed" 0 0 1
+	attack	69 32 45 25 60 0 0 0 5 0
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/flash/zz2.gif
+	@cmd	velo001	0 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	9
+	offset	51 89
+	bbox	35 18 39 61
+	frame	data/chars/flash/rz1.gif
+	offset	36 74
+	bbox	26 1 39 70
+	frame	data/chars/flash/r1.gif
+	offset	24 73
+	bbox	13 2 39 65
+	frame	data/chars/flash/r2.gif
+	offset	36 74
+	bbox	26 1 39 66
+	frame	data/chars/flash/r3.gif
+	bbox	14 1 39 67
+	offset	25 73
+	frame	data/chars/flash/r4.gif
+		
+anim	backwalk
+	loop	1
+	delay	2
+	offset	103 74
+	bbox	82 1 47 70
+	frame	data/chars/flash/rr1.gif
+	offset	77 73
+	bbox	66 2 39 65
+	frame	data/chars/flash/rr2a.gif
+	offset	103 74
+	bbox	92 1 39 66
+	frame	data/chars/flash/rr3.gif
+	bbox	68 1 39 67
+	offset	79 73
+	sound	data/sounds/punch2.wav
+	frame	data/chars/flash/rr4a.gif
+		
+anim	block
+	loop	0
+	offset	44 62
+	delay	3
+	@cmd	velo001	-8 0 0
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	spawn01 "speed" 0 0 1
+	frame	data/chars/misc/vazio.gif
+	@cmd	velo001	0 0 0
+	offset	21 81
+	delay	9
+	frame	data/chars/flash/j2.gif
+		
+anim	fall
+	loop	0
+	offset	25 79
+	delay	14
+	cancel	2 2 0 j freespecial14
+	landframe	3
+	frame	data/chars/flash/g1.gif
+	offset	34 62
+	frame	data/chars/flash/g3.gif
+	offset	34 49
+	delay	500
+	frame	data/chars/flash/g3.gif
+	offset	38 33
+	delay	10
+	@cmd	changeopenborvariant "slowmotion" 0
+	sound	data/chars/flash/slow.wav
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	3
+	offset	103 74
+	bbox	82 1 47 70
+	frame	data/chars/flash/rr1.gif
+	offset	77 73
+	@cmd	spawn01 "speed4" 0 0 1
+	bbox	66 2 39 65
+	frame	data/chars/flash/rr2a.gif
+	offset	103 74
+	bbox	92 1 39 66
+	frame	data/chars/flash/rr3.gif
+	@cmd	spawn01 "speed4" 0 0 1
+	bbox	68 1 39 67
+	offset	79 73
+	sound	data/sounds/punch2.wav
+	frame	data/chars/flash/rr4a.gif
+		
+anim	pain
+	loop	0
+	delay	20
+	offset	23 70
+	bbox	3 1 34 67
+	@cmd	velo001	-8 0 0
+	frame	data/chars/flash/g2.gif
+		
+anim	rise
+	loop	0
+	offset	45 19
+	delay	9
+	frame	data/chars/misc/vazio.gif
+		
+anim	spawn
+	loop	0
+	delay	3
+	offset	103 74
+	bbox	82 1 47 70
+	frame	data/chars/flash/rr1.gif
+		
+anim	walk
+	loop	1
+	delay	2
+	offset	103 74
+	bbox	82 1 47 70
+	frame	data/chars/flash/rr1.gif
+	offset	77 73
+	@cmd	spawn01 "speed4" 0 0 1
+	bbox	66 2 39 65
+	frame	data/chars/flash/rr2a.gif
+	offset	103 74
+	bbox	92 1 39 66
+	frame	data/chars/flash/rr3.gif
+	@cmd	spawn01 "speed4" 0 0 1
+	bbox	68 1 39 67
+	offset	79 73
+	sound	data/sounds/punch2.wav
+	frame	data/chars/flash/rr4a.gif
+		
+#|edited by openBor Stats v 0.51
+		

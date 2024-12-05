@@ -1,0 +1,185 @@
+
+
+
+name BonusAtVixen
+health	300
+speed 38
+type	none
+gfxshadow 1 3
+diesound data/chars/Vixen/morte.wav
+icon	data/chars/Vixen/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  38 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/Vixen/nome.gif -37 -60
+parrow2		data/chars/Vixen/nome.gif -37 -60
+
+palette       data/chars/Vixen/00vixenpal.gif
+alternatepal  data/chars/Vixen/00vixenpal2.gif
+alternatepal  data/chars/Vixen/00vixenpal3.gif
+alternatepal  data/chars/Vixen/00vixenpal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	attack	35 22 74 59 110 9 0 0 10 0
+	forcedirection	-2
+	delay	9
+	bbox	36 23 73 57
+	offset	78 82
+	frame	data/chars/vixen/z1.gif
+	offset	78 83
+	frame	data/chars/vixen/z1.gif
+	offset	78 84
+	frame	data/chars/vixen/z1.gif
+	offset	78 83
+	frame	data/chars/vixen/z1.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	attack	11 15 72 69 110 9 0 0 10 0
+	forcedirection	-2
+	delay	9
+	offset	46 81
+	bbox	11 20 72 57
+	frame	data/chars/vixen/r5.gif
+	offset	46 83
+	frame	data/chars/vixen/r5.gif
+	offset	46 84
+	frame	data/chars/vixen/r5.gif
+	offset	46 83
+	frame	data/chars/vixen/r5.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	3
+	idle	0
+	offset	78 82
+	frame	data/chars/vixen/z1.gif
+	@cmd	spawnbind "viTuba" 1 1 1
+	frame	data/chars/vixen/z1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	attack	11 15 72 69 110 9 0 0 10 0
+	forcedirection	-2
+	delay	9
+	offset	46 81
+	bbox	11 20 72 57
+	frame	data/chars/vixen/r5.gif
+	offset	46 83
+	frame	data/chars/vixen/r5.gif
+	offset	46 84
+	frame	data/chars/vixen/r5.gif
+	offset	46 83
+	frame	data/chars/vixen/r5.gif
+		
+#|edited by openBor Stats v 0.51
+		

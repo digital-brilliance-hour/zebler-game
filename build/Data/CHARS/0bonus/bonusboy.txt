@@ -1,0 +1,176 @@
+
+
+
+name BonusBoy
+health	300
+speed 26
+type	none
+gfxshadow 1 3
+diesound data/chars/superboy/morte.wav
+icon	data/chars/superboy/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  30 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/superboy/nome.gif -37 -60
+parrow2		data/chars/superboy/nome.gif -37 -60
+
+palette       data/chars/superboy/00pal.gif
+alternatepal  data/chars/superboy/00pal2.gif
+alternatepal  data/chars/superboy/00pal3.gif
+alternatepal  data/chars/superboy/00pal4.gif
+alternatepal  data/chars/superboy/00pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	8
+	bbox	8 0 36 74
+	attack	11 1 32 70 110 9 0 0 10 0
+	forcedirection	-2
+	offset	25 86
+	frame	data/chars/superboy/v1.gif
+	frame	data/chars/superboy/v2.gif
+	frame	data/chars/superboy/v3.gif
+	frame	data/chars/superboy/v2.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	12
+	bbox	11 1 78 32
+	attack	38 1 57 30 110 9 0 0 10 0
+	forcedirection	-2
+	offset	47 63
+	frame	data/chars/superboy/f1.gif
+	offset	47 64
+	frame	data/chars/superboy/f1.gif
+	offset	47 68
+	frame	data/chars/superboy/f2.gif
+	offset	47 67
+	frame	data/chars/superboy/f2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	47 67
+	frame	data/chars/superboy/f2.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	12
+	bbox	11 1 78 32
+	attack	38 1 57 30 110 9 0 0 10 0
+	forcedirection	-2
+	offset	47 63
+	frame	data/chars/superboy/f1.gif
+	offset	47 64
+	frame	data/chars/superboy/f1.gif
+	offset	47 68
+	frame	data/chars/superboy/f2.gif
+	offset	47 67
+	frame	data/chars/superboy/f2.gif
+		
+#|edited by openBor Stats v 0.51
+		

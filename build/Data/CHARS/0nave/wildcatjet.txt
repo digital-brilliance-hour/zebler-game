@@ -1,0 +1,233 @@
+
+
+
+name WildcatJET
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+icon	data/chars/wildcat/portrait.gif 1
+diesound data/sounds/0navedie2.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 3
+
+load Batbomb
+Knife Batbomb
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/wildcat/nome.gif -37 -60
+parrow2		data/chars/wildcat/nome.gif -37 -60
+
+palette       data/chars/wildcat/pal1.gif
+alternatepal  data/chars/wildcat/pal2.gif
+alternatepal  data/chars/wildcat/pal3.gif
+alternatepal  data/chars/wildcat/pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	bbox	69 11 45 36
+	offset	92 44
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild20.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild21.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 15 16 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild22.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild21.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	@cmd	spawn01 "boom" 1 -20 1
+	bbox	69 11 45 36
+	offset	92 44
+	frame	data/chars/0Nave/wild23.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/wild23.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/wild23.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/wild23.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/wild23.gif
+	@cmd	spawn01 "boom" 1 -20 1
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/wild23.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/wild23.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	bbox	69 11 45 36
+	offset	92 44
+	frame	data/chars/0Nave/wild20.gif
+	frame	data/chars/0Nave/wild21.gif
+	frame	data/chars/0Nave/wild22.gif
+		
+anim	jump
+	loop	0
+	delay	5
+	bbox	69 11 45 36
+	offset	92 44
+	frame	data/chars/0Nave/wild23.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	69 11 45 36
+	offset	92 44
+	frame	data/chars/0Nave/wild20.gif
+	frame	data/chars/0Nave/wild21.gif
+	frame	data/chars/0Nave/wild22.gif
+		
+anim	runattack
+	loop	0
+	delay	6
+	bbox	69 11 45 36
+	offset	92 44
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild20.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild21.gif
+	sound	data/sounds/cabletiro.wav
+	@cmd	shoot "Batbomb" 15 16 2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild22.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/wild21.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	5
+	bbox	69 11 45 36
+	offset	92 44
+	frame	data/chars/0Nave/wild23.gif
+		
+anim	special2
+		
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	69 11 45 36
+	offset	92 44
+	frame	data/chars/0Nave/wild20.gif
+	frame	data/chars/0Nave/wild21.gif
+	frame	data/chars/0Nave/wild22.gif
+		
+#|edited by openBor Stats v 0.51
+		

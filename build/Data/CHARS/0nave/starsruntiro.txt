@@ -1,0 +1,40 @@
+name StarSRunTiro
+speed        25
+type	     none
+shadow	     0
+candamage enemy obstacle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	5
+	hitflash	flashRosa
+	attack	22 13 24 13 10 1 0 0 0 15
+	offset	32 19
+	frame	data/chars/0nave/star11.gif
+	frame	data/chars/0nave/star12.gif
+		
+#|edited by openBor Stats v 0.51
+		

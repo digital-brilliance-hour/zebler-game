@@ -1,0 +1,411 @@
+
+name AquaRio
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+icon	data/chars/aquaman/portrait.gif 1
+diesound data/chars/aquaman/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 1
+jumpheight 4
+
+
+load AquaEfeito1
+load Aquabomb2
+load Aquabomb
+Bomb Aquabomb
+
+atchain 1
+running  24 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/aquaman/nome.gif -37 -60
+parrow2		data/chars/aquaman/nome.gif -37 -60
+
+palette       data/chars/aquaman/pal01.gif
+alternatepal  data/chars/aquaman/pal02.gif
+alternatepal  data/chars/aquaman/pal03.gif
+alternatepal  data/chars/aquaman/pal04.gif
+alternatepal  data/chars/aquaman/pal05.gif
+alternatepal  data/chars/aquaman/pal06.gif
+alternatepal  data/chars/aquaman/pal07.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	7
+	tossframe	1 48
+	sound	data/sounds/agua2.wav
+	@cmd	spawnbind "AquaEfeito1" -4 2 1
+	@cmd	keymove 2 0.6
+	bbox	70 25 35 46
+	offset	88 71
+	frame	data/chars/0Nave/aqq3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aqq2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aqq1.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	200
+	@cmd	spawn01 "tibum" 1 0 1
+	offset	82 155
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	fall
+	loop	0
+	delay	555
+	landframe	1
+	offset	33 54
+	@cmd	velo001	-1 0 0
+	frame	data/chars/0Nave/aqq17.gif
+	@cmd	spawn01 "tibum" 1 0 1
+	offset	82 155
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	f f freespecial
+	loop	0
+	delay	555
+	landframe	1
+	jumpframe	0 2 5 0
+	hitfx	data/sounds/clawhit.wav
+	sound	data/sounds/vuu3.wav
+	attack	60 57 59 28 40 0 0 0 5 0
+	offset	88 71
+	frame	data/chars/0Nave/aqq12.gif
+	delay	5
+	attack	0 0 0 0 0 0 0 0 0 0
+	bbox	70 25 35 46
+	offset	88 71
+	sound	data/sounds/agua2.wav
+	frame	data/chars/0Nave/aqq1.gif
+		
+anim	freespecial2
+	com	b b freespecial2
+	loop	0
+	delay	7
+	landframe	5
+	bbox	21 11 23 44
+	offset	34 64
+	jumpframe	0 2 -5 0
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/0Nave/aqq17.gif
+	offset	34 61
+	frame	data/chars/0Nave/aqq13.gif
+	offset	34 57
+	frame	data/chars/0Nave/aqq14.gif
+	offset	34 54
+	frame	data/chars/0Nave/aqq15.gif
+	offset	34 54
+	delay	500
+	frame	data/chars/0Nave/aqq17.gif
+	bbox	21 11 0 0
+	delay	100
+	offset	88 71
+	fshadow	0
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/misc/vazio.gif
+	delay	4
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq11.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq11.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq10.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq10.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq9.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq9.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq8.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq8.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq7.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq7.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq6.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq6.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq5.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq5.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	bbox	70 25 35 46
+	offset	88 71
+	frame	data/chars/0Nave/aqq3.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/aqq2.gif
+	frame	data/chars/0Nave/aqq1.gif
+	frame	data/chars/0Nave/aqq3.gif
+	frame	data/chars/0Nave/aqq2.gif
+	frame	data/chars/0Nave/aqq1.gif
+		
+anim	jump
+	loop	0
+	delay	12
+	bbox	21 11 23 44
+	offset	34 64
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/0Nave/aqq17.gif
+	offset	34 61
+	frame	data/chars/0Nave/aqq13.gif
+	offset	34 57
+	frame	data/chars/0Nave/aqq14.gif
+	offset	34 54
+	frame	data/chars/0Nave/aqq15.gif
+	offset	34 54
+	frame	data/chars/0Nave/aqq17.gif
+		
+anim	jumpattack
+	loop	0
+	dive	5 3
+	delay	15
+	offset	30 48
+	bbox	15 8 25 32
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	attack	24 17 30 25 20 0 0 0 5 0
+	frame	data/chars/0Nave/aqq16.gif
+		
+anim	jumpland
+	loop	0
+	delay	100
+	offset	88 71
+	fshadow	0
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/misc/vazio.gif
+	delay	4
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq11.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq11.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq10.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq10.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq9.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq9.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq8.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq8.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq7.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq7.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq6.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq6.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq5.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq5.gif
+		
+anim	pain
+	loop	0
+	delay	9
+	offset	88 71
+	frame	data/chars/0Nave/aqq4.gif
+		
+anim	rise
+	loop	0
+	delay	100
+	offset	88 71
+	fshadow	0
+	@cmd	spawn01 "tibum" 1 0 1
+	frame	data/chars/misc/vazio.gif
+	delay	4
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq11.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq11.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq10.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq10.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq9.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq9.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq8.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq8.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq7.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq7.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq6.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq6.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq5.gif
+	@cmd	keymove 3 1
+	frame	data/chars/0Nave/aqq5.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	70 25 35 46
+	offset	88 71
+	frame	data/chars/0Nave/aqq1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	9
+	bbox	70 25 35 46
+	offset	88 71
+	frame	data/chars/0Nave/aqq3.gif
+	sound	data/sounds/agua1.wav
+	frame	data/chars/0Nave/aqq2.gif
+	frame	data/chars/0Nave/aqq1.gif
+	frame	data/chars/0Nave/aqq3.gif
+	frame	data/chars/0Nave/aqq2.gif
+	frame	data/chars/0Nave/aqq1.gif
+		
+#|edited by openBor Stats v 0.51
+		

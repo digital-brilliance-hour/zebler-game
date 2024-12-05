@@ -1,0 +1,291 @@
+
+
+
+name KingRun
+health	300
+speed 25
+type	none
+gfxshadow 1 3
+icon	data/chars/King/portrait.gif 1
+diesound data/chars/King/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 0
+
+load speed3
+
+atchain 1
+running  40 3  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/King/nome.gif -37 -63
+parrow2		data/chars/King/nome.gif -37 -63
+
+palette       data/chars/king/pal1.gif
+alternatepal  data/chars/king/pal2.gif
+alternatepal  data/chars/king/pal3.gif
+alternatepal  data/chars/king/pal4.gif
+alternatepal  data/chars/king/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	555
+	offset	55 54
+	jumpframe	0 2 4
+	landframe	1
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	attack	39 16 37 29 40 0 0 0 5 0
+	frame	data/chars/king/sha12.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	@cmd	velo001	-4 0 0
+	delay	20
+	bbox	52 18 31 46
+	offset	68 64
+	frame	data/chars/king/sha8.gif
+		
+anim	backwalk
+	loop	1
+	delay	11
+	bbox	54 22 32 45
+	offset	70 67
+	frame	data/chars/king/sha1.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha2.gif
+	frame	data/chars/king/sha3.gif
+	frame	data/chars/king/sha4.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha5.gif
+	frame	data/chars/king/sha6.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	78 66
+	@cmd	velo001	-4 0 0
+	frame	data/chars/king/sha7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/king/sha7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/king/sha7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/king/sha7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/king/sha7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/king/sha7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/king/sha7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	25
+	offset	68 64
+	@cmd	velo001	-4 0 0
+	frame	data/chars/king/sha8.gif
+		
+anim	freespecial3
+		
+anim	freespecial4
+		
+anim	idle
+	loop	1
+	delay	9
+	bbox	54 22 32 45
+	offset	70 67
+	frame	data/chars/king/sha1.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha2.gif
+	frame	data/chars/king/sha3.gif
+	frame	data/chars/king/sha4.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha5.gif
+	frame	data/chars/king/sha6.gif
+		
+anim	jump
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	9
+	bbox	52 18 31 46
+	offset	68 64
+	frame	data/chars/king/sha8.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	offset	68 64
+	@cmd	velo001	-2 0 0
+	frame	data/chars/king/sha8.gif
+		
+anim	run
+	loop	1
+	delay	7
+	bbox	54 22 32 45
+	offset	70 67
+	frame	data/chars/king/sha1.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha2.gif
+	frame	data/chars/king/sha3.gif
+	frame	data/chars/king/sha4.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha5.gif
+	frame	data/chars/king/sha6.gif
+		
+anim	runattack
+	loop	0
+	delay	555
+	offset	55 54
+	jumpframe	0 2 4
+	landframe	1
+	hitfx	data/sounds/beat2.wav
+	sound	data/sounds/punch2.wav
+	attack	39 16 37 29 40 0 0 0 5 0
+	frame	data/chars/king/sha12.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	@cmd	velo001	-4 0 0
+	delay	20
+	bbox	52 18 31 46
+	offset	68 64
+	frame	data/chars/king/sha8.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	9
+	bbox	54 22 32 45
+	offset	70 67
+	frame	data/chars/king/sha1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	8
+	bbox	54 22 32 45
+	offset	70 67
+	frame	data/chars/king/sha1.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha2.gif
+	frame	data/chars/king/sha3.gif
+	frame	data/chars/king/sha4.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/king/sha5.gif
+	frame	data/chars/king/sha6.gif
+		
+#|edited by openBor Stats v 0.51
+		

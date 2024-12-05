@@ -1,0 +1,46 @@
+name BoomRunTiro
+speed        18
+type	     none
+shadow	     0
+candamage enemy obstacle
+
+palette       data/chars/boom/pal1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	drawmethod	scale 0.5 0.5
+	delay	5
+	attack	18 20 22 9 12 1 0 0 0 15
+	offset	28 25
+	frame	data/chars/boom/xx11.gif
+	frame	data/chars/boom/xx12.gif
+	frame	data/chars/boom/xx13.gif
+	frame	data/chars/boom/xx14.gif
+		
+#|edited by openBor Stats v 0.51
+		

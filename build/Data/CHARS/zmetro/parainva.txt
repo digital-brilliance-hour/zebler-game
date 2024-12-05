@@ -1,0 +1,57 @@
+name      ParaInva
+speed      10
+type      panel
+nolife      1
+facing 1
+gfxshadow	0
+setlayer 10000
+offscreenkill 9999
+
+load Parademon_
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	6
+	offset	14 22
+	@script
+    	void self = getlocalvar("self");
+    	int Enemy = openborvariant("count_enemies");
+    	if(Enemy <= 3 && frame == 1){
+    	 int r = rand()%3;
+    	       if(r==-2){spawn01("Parademon_", -50, 650, 0);}
+      	       if(r==-1){spawn01("Parademon_", 160, 650, 0);}
+      	       if(r==0){spawn01("Parademon_", 260, 650, 0);}
+      	       if(r==1){spawn01("Parademon_", 460, 650, 0);}
+      	       if(r==2){spawn01("Parademon_", 360, 650, 0);}
+      	}
+	@end_script	
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+		
+#|edited by openBor Stats v 0.51
+		

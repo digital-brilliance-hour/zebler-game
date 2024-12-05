@@ -1,0 +1,142 @@
+name OARun
+health 90
+speed 0
+type	enemy
+gfxshadow 1 3
+antigrab 100
+hostile player npc
+candamage player npc
+nodrop 2
+death 1
+nomove 1
+facing 2
+nodieblink 2
+aggression 100
+offscreenkill 250
+
+
+animationscript data/scripts/grabscript.c
+
+fmap 2
+palette       data/chars/0bonus/gua00pal.gif
+alternatepal  data/chars/0bonus/gua00pal1.gif
+alternatepal  data/chars/0bonus/gua00pal2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	death
+	loop	0
+	delay	9
+	offset	34 96
+	@cmd	velo001	4 0 0
+	frame	data/chars/0bonus/gua03.gif
+	offset	34 86
+	frame	data/chars/0bonus/gua04.gif
+	offset	34 76
+	frame	data/chars/0bonus/gua04.gif
+	offset	37 61
+	frame	data/chars/0bonus/gua05.gif
+		
+anim	fall
+	loop	0
+	delay	9
+	offset	34 96
+	@cmd	velo001	4 0 0
+	frame	data/chars/0bonus/gua03.gif
+	offset	34 86
+	frame	data/chars/0bonus/gua04.gif
+	offset	34 76
+	frame	data/chars/0bonus/gua04.gif
+	offset	37 61
+	frame	data/chars/0bonus/gua05.gif
+		
+anim	idle
+	loop	1
+	delay	5
+	offset	31 100
+	bbox	16 18 29 54
+	@cmd	velo001	3 0 0
+	frame	data/chars/0bonus/gua01.gif
+	offset	31 101
+	frame	data/chars/0bonus/gua01.gif
+	offset	31 102
+	frame	data/chars/0bonus/gua01.gif
+	offset	31 103
+	frame	data/chars/0bonus/gua02.gif
+	offset	31 102
+	frame	data/chars/0bonus/gua02.gif
+	offset	31 101
+	frame	data/chars/0bonus/gua02.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	offset	35 101
+	bbox	18 20 35 49
+	delay	30
+	frame	data/chars/0bonus/gua03.gif
+		
+anim	rise
+		
+anim	spawn
+	delay	1
+	offset	31 100
+	frame	data/chars/0bonus/gua01.gif
+		
+anim	walk
+	delay	5
+	offset	31 100
+	bbox	16 18 29 54
+	@cmd	velo001	4 0 0
+	frame	data/chars/0bonus/gua01.gif
+	offset	31 101
+	frame	data/chars/0bonus/gua01.gif
+	offset	31 102
+	frame	data/chars/0bonus/gua02.gif
+	offset	31 101
+	frame	data/chars/0bonus/gua02.gif
+		
+#|edited by openBor Stats v 0.51
+		

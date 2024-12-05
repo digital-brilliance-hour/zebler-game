@@ -1,0 +1,224 @@
+name KiteSOR
+health  200
+speed 6
+type	enemy
+gfxshadow 1 3
+aggression 99
+hostile player npc
+candamage player npc
+knockdowncount 4
+risetime 1 0
+subject_to_screen 1
+offscreenkill 9999
+
+
+animationscript data/scripts/grabscript.c
+
+diesound data/sounds/die2.wav
+
+load palhabomb
+
+throw 3 2
+antigrab 100
+
+fmap 1
+palette       data/chars/zmetro/k1.gif
+alternatepal  data/chars/zmetro/k0gelo.gif
+alternatepal  data/chars/zmetro/k0poison.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	100 300
+	seta	80
+	delay	32
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k3.gif
+	@cmd	toss "palhabomb" 2 75 1
+	frame	data/chars/zmetro/k1.gif
+	frame	data/chars/zmetro/k1.gif
+		
+anim	attack2
+	loop	0
+	range	0 50
+	seta	80
+	delay	9
+	jumpframe	0 5 5 0
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k3.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k3.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k3.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k3.gif
+		
+anim	fall
+	delay	500
+	seta	0
+	landframe	1
+	@cmd	degravity 0
+	bbox	43 37 72 47
+	offset	79 99
+	frame	data/chars/zmetro/k5.gif
+	bbox	68 38 0 0
+	delay	5
+	offset	81 79
+	frame	data/chars/zmetro/k6.gif
+		
+anim	fall9
+	loop	0
+	delay	14
+	offset	77 72
+	frame	data/chars/zmetro/k5.gif
+		
+anim	idle
+	loop	1
+	seta	80
+	delay	8
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	offset	67 147
+	frame	data/chars/zmetro/k3.gif
+	offset	67 148
+	frame	data/chars/zmetro/k2.gif
+	offset	67 147
+	frame	data/chars/zmetro/k3.gif
+		
+anim	jump
+	loop	0
+	seta	80
+	delay	6
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k1.gif
+		
+anim	jumpattack
+	loop	0
+	range	50 100
+	seta	80
+	delay	32
+	jumpframe	0 6 2 0
+	@cmd	toss "palhabomb" 2 75 1
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k1.gif
+		
+anim	pain
+	loop	0
+	delay	30
+	seta	80
+	offset	74 144
+	bbox	54 55 44 82
+	frame	data/chars/zmetro/k4.gif
+		
+anim	pain18
+	loop	0
+	delay	12
+	drawmethod	remap 2
+	seta	80
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	offset	72 144
+	bbox	54 55 44 82
+	frame	data/chars/zmetro/k4.gif
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	offset	72 144
+	bbox	54 55 44 82
+	frame	data/chars/zmetro/k4.gif
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	offset	72 144
+	bbox	54 55 44 82
+	frame	data/chars/zmetro/k4.gif
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	offset	72 144
+	bbox	54 55 44 82
+	frame	data/chars/zmetro/k4.gif
+	offset	67 146
+	bbox	48 55 39 77
+	frame	data/chars/zmetro/k2.gif
+	offset	72 144
+	bbox	54 55 44 82
+	frame	data/chars/zmetro/k4.gif
+		
+anim	pain9
+	loop	0
+	delay	14
+	offset	77 72
+	frame	data/chars/zmetro/k5.gif
+		
+anim	rise
+	delay	6
+	seta	1
+	offset	81 79
+	frame	data/chars/zmetro/k6.gif
+	offset	88 114
+	delay	16
+	frame	data/chars/zmetro/k7.gif
+	delay	6
+	@cmd	degravity 1
+	@cmd	dasher 0 1 0
+	offset	67 146
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	frame	data/chars/zmetro/k2.gif
+	seta	80
+	@cmd	degravity 0
+	@cmd	dasher 0 0 0
+	offset	67 146
+	frame	data/chars/zmetro/k3.gif
+		
+#|edited by openBor Stats v 0.51
+		

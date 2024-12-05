@@ -1,0 +1,311 @@
+
+name SpartanRun
+health	300
+speed 20
+type	none
+gfxshadow 1 3
+icon	data/chars/spartan/portrait.gif 1
+diesound data/chars/spartan/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+load spartanruntiro
+
+atchain 1
+running 30 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/spartan/nome.gif -37 -60
+parrow2		data/chars/spartan/nome.gif -37 -60
+
+palette       data/chars/spartan/00spa.gif
+alternatepal  data/chars/spartan/pal2.gif
+alternatepal  data/chars/spartan/pal3.gif
+alternatepal  data/chars/spartan/pal4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	@cmd	velo001	12 0 0
+	bbox	33 9 24 31
+	offset	43 52
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa02.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/spartan/x1.wav
+	@cmd	shoot "spartanruntiro" 15 36 2
+	frame	data/chars/0Nave/spa03.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa04.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	42 49
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/spa07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa07.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/spa07.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	loop	1
+	bbox	32 10 27 33
+	offset	45 51
+	frame	data/chars/0Nave/spa01.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa01.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa01.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	30 9 29 27
+	offset	42 48
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	40 25 27 17 15 0 0 0 5 0
+	frame	data/chars/0Nave/spa06.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	bbox	32 10 27 33
+	offset	45 51
+	frame	data/chars/0Nave/spa01.gif
+	offset	45 52
+	frame	data/chars/0Nave/spa01.gif
+	offset	45 53
+	frame	data/chars/0Nave/spa01.gif
+	offset	45 52
+	frame	data/chars/0Nave/spa01.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	bbox	36 2 19 39
+	offset	46 52
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	frame	data/chars/0Nave/spa05.gif
+	frame	data/chars/0Nave/spa05.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	30 9 29 27
+	offset	42 48
+	dive	4 4
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	40 25 27 17 15 0 0 0 5 0
+	frame	data/chars/0Nave/spa06.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	32 10 27 33
+	offset	45 51
+	frame	data/chars/0Nave/spa01.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	32 10 27 33
+	offset	45 51
+	frame	data/chars/0Nave/spa01.gif
+		
+anim	runattack
+	loop	0
+	delay	6
+	@cmd	velo001	12 0 0
+	bbox	33 9 24 31
+	offset	43 52
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa02.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/spartan/x1.wav
+	@cmd	shoot "spartanruntiro" 15 36 2
+	frame	data/chars/0Nave/spa03.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/spa04.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	32 10 27 33
+	offset	45 51
+	frame	data/chars/0Nave/spa01.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	8
+	bbox	32 10 27 33
+	offset	45 51
+	frame	data/chars/0Nave/spa01.gif
+	offset	45 52
+	frame	data/chars/0Nave/spa01.gif
+	offset	45 53
+	frame	data/chars/0Nave/spa01.gif
+	offset	45 52
+	frame	data/chars/0Nave/spa01.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	20 10 26 31
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+		
+#|edited by openBor Stats v 0.51
+		

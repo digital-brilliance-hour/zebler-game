@@ -1,0 +1,114 @@
+name	HQBalao
+speed        4
+type	     npc
+gfxshadow 1 3
+candamage enemy obstacle
+jumpheight 0
+aimove Chase
+aggression 999
+subject_to_hole 0
+lifespan 30
+antigravity 50
+offscreenkill 100
+falldie 1
+nodieblink 3
+stealth 5 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 25
+	delay	6
+	@script
+	if (frame==7){
+    	       void self = getlocalvar("self");
+    	       killentity(self);
+        }
+	@end_script	
+	hitflash	FlashFire
+	hitfx	data/sounds/fire3.wav
+	offset	49 131
+	frame	data/chars/hquinn/xba01.gif
+	sound	data/sounds/explode.wav
+	burn	24 58 52 37 45 15 0 0 0 35
+	frame	data/chars/hquinn/xba05.gif
+	frame	data/chars/hquinn/xba06.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hquinn/xba07.gif
+	frame	data/chars/hquinn/xba08.gif
+	frame	data/chars/hquinn/xba09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	death
+	loop	0
+	delay	6
+	hitflash	FlashFire
+	hitfx	data/sounds/fire3.wav
+	offset	49 131
+	frame	data/chars/hquinn/xba01.gif
+	sound	data/sounds/explode.wav
+	burn	24 58 52 37 45 15 0 0 0 35
+	frame	data/chars/hquinn/xba05.gif
+	frame	data/chars/hquinn/xba06.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/hquinn/xba07.gif
+	frame	data/chars/hquinn/xba08.gif
+	frame	data/chars/hquinn/xba09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/misc/vazio.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	49 131
+	frame	data/chars/hquinn/xba01.gif
+	frame	data/chars/hquinn/xba02.gif
+	frame	data/chars/hquinn/xba03.gif
+	frame	data/chars/hquinn/xba04.gif
+		
+anim	spawn
+	loop	0
+	delay	9
+	offset	49 131
+	frame	data/chars/hquinn/xba01.gif
+	frame	data/chars/hquinn/xba02.gif
+	frame	data/chars/hquinn/xba03.gif
+	frame	data/chars/hquinn/xba04.gif
+	frame	data/chars/hquinn/xba01.gif
+	frame	data/chars/hquinn/xba02.gif
+	frame	data/chars/hquinn/xba03.gif
+	frame	data/chars/hquinn/xba04.gif
+	frame	data/chars/hquinn/xba01.gif
+	frame	data/chars/hquinn/xba02.gif
+	frame	data/chars/hquinn/xba03.gif
+	frame	data/chars/hquinn/xba04.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	49 131
+	frame	data/chars/hquinn/xba01.gif
+	frame	data/chars/hquinn/xba02.gif
+	frame	data/chars/hquinn/xba03.gif
+	frame	data/chars/hquinn/xba04.gif
+		
+#|edited by openBor Stats v 0.51
+		

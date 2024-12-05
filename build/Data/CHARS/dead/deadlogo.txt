@@ -1,0 +1,35 @@
+name	DeadLogo
+speed        0
+facing 1
+type	     none
+setlayer 1
+shadow	     0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	4
+	offset	36 23
+	frame	data/chars/dead/nome.gif
+		
+#|edited by openBor Stats v 0.51
+		

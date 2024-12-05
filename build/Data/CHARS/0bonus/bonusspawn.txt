@@ -1,0 +1,176 @@
+
+
+
+name BonusSpawn
+health	300
+speed 20
+type	none
+gfxshadow 1 3
+diesound data/chars/cyborg/morte.wav
+icon	data/chars/spawn/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+
+atchain 1
+running  20 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/spawn/nome.gif -37 -60
+parrow2		data/chars/spawn/nome.gif -37 -60
+
+palette       data/chars/Spawn/00spawn.gif
+alternatepal  data/chars/Spawn/00spawn2.gif
+alternatepal  data/chars/Spawn/00spawn3.gif
+alternatepal  data/chars/Spawn/00spawn4.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	attack	85 37 72 86 110 9 0 0 10 0
+	forcedirection	-2
+	delay	5
+	offset	120 122
+	bbox	92 41 50 70
+	frame	data/chars/spawn/r1.gif
+	offset	120 123
+	delay	8
+	sound	data/sounds/run1.wav
+	frame	data/chars/spawn/r2.gif
+	frame	data/chars/spawn/r3.gif
+	frame	data/chars/spawn/r4.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/spawn/r5.gif
+	offset	120 120
+	frame	data/chars/spawn/r6.gif
+	offset	120 118
+	delay	5
+	frame	data/chars/spawn/r7.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	attack	44 26 84 86 110 9 0 0 10 0
+	forcedirection	-2
+	delay	7
+	offset	100 115
+	bbox	51 29 72 70
+	frame	data/chars/spawn/jxx1.gif
+	frame	data/chars/spawn/jxx2.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	120 122
+	frame	data/chars/spawn/r1.gif
+		
+anim	special2
+
+		
+anim	walk
+	loop	1
+	attack	44 26 84 86 110 9 0 0 10 0
+	forcedirection	-2
+	delay	7
+	offset	100 115
+	bbox	51 29 72 70
+	frame	data/chars/spawn/jxx1.gif
+	frame	data/chars/spawn/jxx2.gif
+		
+#|edited by openBor Stats v 0.51
+		

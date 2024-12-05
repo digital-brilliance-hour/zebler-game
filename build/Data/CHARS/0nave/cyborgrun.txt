@@ -1,0 +1,348 @@
+
+
+
+name CyborgRun
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+icon	data/chars/cyborg/portrait2.gif 1
+diesound data/chars/Cyborg/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 3
+jumpmove 3 3
+
+
+load cytiro
+
+atchain 1
+running 24 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+
+palette       data/chars/cyborg/pal2.gif
+alternatepal  data/chars/cyborg/pal1.gif
+alternatepal  data/chars/cyborg/pal3.gif
+alternatepal  data/chars/cyborg/pal4.gif
+alternatepal  data/chars/cyborg/pal5.gif
+alternatepal  data/chars/cyborg/pal6.gif
+
+parrow		data/chars/cyborg/nome.gif -37 -70
+parrow2		data/chars/cyborg/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	27 18 34 49
+	offset	43 66
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/c4.gif
+	@cmd	keymove 2 0.6
+	@cmd	shoot "cytiro" 14 41 2
+	sound	data/chars/cyborg/missil.wav
+	frame	data/chars/0Nave/c5.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/c4.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/c5.gif
+		
+anim	backwalk
+	loop	1
+	delay	8
+	bbox	32 18 25 50
+	offset	43 66
+	frame	data/chars/0Nave/c1.gif
+	frame	data/chars/0Nave/c2.gif
+	frame	data/chars/0Nave/c3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	25 46
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/c16.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/c16.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/c16.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/c16.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/c16.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/c16.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/c16.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	6
+	bbox	32 18 25 50
+	offset	43 66
+	frame	data/chars/0Nave/c1.gif
+	frame	data/chars/0Nave/c2.gif
+	frame	data/chars/0Nave/c3.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	fastattack	1
+	delay	8
+	offset	52 60
+	bbox	39 14 25 47
+	frame	data/chars/0Nave/c12.gif
+	@cmd	velo001	-3 0 0
+	delay	4
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c14.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c13.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c14.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c15.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c14.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c13.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c14.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c15.gif
+	delay	8
+	@cmd	velo001	0 0 0
+	frame	data/chars/0Nave/c12.gif
+		
+anim	freespecial2
+	com	f f freespecial2
+	loop	0
+	fastattack	1
+	delay	8
+	offset	52 60
+	bbox	39 14 25 47
+	drawmethod	flipx 1
+	frame	data/chars/0Nave/c12.gif
+	@cmd	velo001	3 0 0
+	delay	4
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c14.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c13.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c14.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c15.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c14.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c15.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c13.gif
+	attack	8 16 46 16 3 0 0 0 5 0
+	frame	data/chars/0Nave/c14.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/0Nave/c15.gif
+	delay	8
+	@cmd	velo001	0 0 0
+	frame	data/chars/0Nave/c12.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	32 18 25 50
+	offset	43 66
+	frame	data/chars/0Nave/c1.gif
+	frame	data/chars/0Nave/c2.gif
+	frame	data/chars/0Nave/c3.gif
+		
+anim	jump
+	loop	0
+	delay	26
+	bbox	24 19 21 41
+	offset	32 66
+	frame	data/chars/0Nave/c8.gif
+	frame	data/chars/0Nave/c9.gif
+	frame	data/chars/0Nave/c8.gif
+		
+anim	jumpattack
+	loop	1
+	delay	5
+	offset	41 60
+	dive	4 1
+	bbox	30 20 27 31
+	attack	31 20 25 30 15 0 0 0 5 0
+	frame	data/chars/0Nave/c10.gif
+	frame	data/chars/0Nave/c11.gif
+		
+anim	jumpland
+	loop	0
+	delay	20
+	bbox	7 8 21 43
+	offset	17 50
+	@cmd	velo001	-2 0 0
+	frame	data/chars/0Nave/c17.gif
+		
+anim	pain
+	loop	0
+	delay	20
+	bbox	7 8 21 43
+	offset	17 50
+	@cmd	velo001	-2 0 0
+	frame	data/chars/0Nave/c17.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	32 18 25 50
+	offset	43 66
+	frame	data/chars/0Nave/c1.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	6
+	bbox	32 18 25 50
+	offset	43 66
+	frame	data/chars/0Nave/c1.gif
+	frame	data/chars/0Nave/c2.gif
+	frame	data/chars/0Nave/c3.gif
+		
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	29 21 25 45
+	offset	43 65
+	frame	data/chars/0Nave/c6.gif
+	frame	data/chars/0Nave/c7.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	32 18 25 50
+	offset	43 66
+	frame	data/chars/0Nave/c1.gif
+		
+#|edited by openBor Stats v 0.51
+		

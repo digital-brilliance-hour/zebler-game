@@ -1,0 +1,166 @@
+
+
+
+name BonusAtIvy
+health	300
+speed 26
+type	none
+gfxshadow 1 3
+diesound data/chars/poison/morte.wav
+icon	data/chars/poison/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+load Hiena
+
+atchain 1
+running  30 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/poison/nome.gif -37 -60
+parrow2		data/chars/poison/nome.gif -37 -60
+
+palette       data/chars/poison/pal1.gif
+alternatepal  data/chars/poison/pal2.gif
+alternatepal  data/chars/poison/pal8.gif
+alternatepal  data/chars/poison/pal3.gif
+alternatepal  data/chars/poison/pal4.gif
+alternatepal  data/chars/poison/pal5.gif
+alternatepal  data/chars/poison/pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	7
+	bbox	85 40 55 74
+	attack	67 37 110 66 110 9 0 0 10 0
+	forcedirection	-2
+	offset	117 113
+	frame	data/chars/poison/po10.gif
+	offset	117 114
+	frame	data/chars/poison/po11.gif
+	offset	117 115
+	frame	data/chars/poison/po10.gif
+	offset	117 114
+	frame	data/chars/poison/po11.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	5
+	bbox	85 40 55 74
+	attack	67 37 110 66 110 9 0 0 10 0
+	forcedirection	-2
+	offset	117 113
+	frame	data/chars/poison/po10.gif
+	frame	data/chars/poison/po11.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	117 113
+	frame	data/chars/poison/po10.gif
+		
+anim	special2
+		
+anim	walk
+		
+#|edited by openBor Stats v 0.51
+		

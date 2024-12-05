@@ -1,0 +1,61 @@
+name	AquaBomb
+speed        25
+type	     none
+gfxshadow 1
+candamage enemy obstacle
+jumpheight 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	offset	-12 18
+	drawmethod	alpha 1
+	sound	data/sounds/agua3.wav
+	frame	data/chars/0nave/a7.gif
+	frame	data/chars/0nave/a8.gif
+	frame	data/chars/0nave/a9.gif
+	frame	data/chars/0nave/a10.gif
+	frame	data/chars/0nave/a11.gif
+		
+anim	attack2
+	loop	0
+	delay	7
+	offset	-24 19
+	drawmethod	alpha 1
+	sound	data/sounds/agua3.wav
+	frame	data/chars/0nave/a4.gif
+	frame	data/chars/0nave/a5.gif
+	frame	data/chars/0nave/a6.gif
+		
+anim	idle
+	hitflash	flashAzul
+	bbox	6 3 15 15
+	attackone	0
+	attack	6 3 15 15 25 9 0 0 0 20
+	loop	1
+	delay	6
+	offset	-21 11
+	drawmethod	alpha 1
+	frame	data/chars/0nave/a1.gif
+	frame	data/chars/0nave/a2.gif
+	frame	data/chars/0nave/a3.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,169 @@
+
+
+
+name BonusShazam
+health	300
+speed 32
+type	none
+gfxshadow 1 3
+diesound data/chars/Shazam/morte.wav
+icon	data/chars/Shazam/por.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  36 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/Shazam/nome.gif -37 -60
+parrow2		data/chars/Shazam/nome.gif -37 -60
+
+palette       data/chars/Shazam/00pal1.gif
+alternatepal  data/chars/Shazam/00pal2.gif
+alternatepal  data/chars/Shazam/00pal3.gif
+alternatepal  data/chars/Shazam/00pal4.gif
+alternatepal  data/chars/Shazam/00pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	9
+	attack	67 11 33 86 110 9 0 0 10 0
+	forcedirection	-2
+	offset	85 110
+	bbox	61 12 42 86
+	frame	data/chars/Shazam/v1.gif
+	offset	85 111
+	frame	data/chars/Shazam/v2.gif
+	offset	85 112
+	frame	data/chars/Shazam/v3.gif
+	offset	85 112
+	frame	data/chars/Shazam/v1.gif
+	offset	85 111
+	frame	data/chars/Shazam/v2.gif
+	offset	85 110
+	frame	data/chars/Shazam/v3.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	4
+	offset	86 102
+	bbox	61 15 50 70
+	attack	62 18 49 67 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/shazam/v5.gif
+	frame	data/chars/shazam/v4.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	85 110
+	frame	data/chars/Shazam/v1.gif
+		
+anim	special2
+
+		
+anim	walk
+	loop	1
+	delay	4
+	offset	86 102
+	bbox	61 15 50 70
+	attack	62 18 49 67 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/shazam/v5.gif
+	frame	data/chars/shazam/v4.gif
+		
+#|edited by openBor Stats v 0.51
+		

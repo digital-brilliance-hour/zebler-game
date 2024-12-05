@@ -1,0 +1,45 @@
+name AdamRunTiro
+speed        20
+type	     none
+shadow	     0
+candamage enemy obstacle 
+
+palette       data/chars/adam/pal1.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	delay	3
+	hitfx	data/sounds/elechit.wav
+	shock	26 19 15 15 10 9 0 0 0 15
+	offset	32 28
+	frame	data/chars/adam/ad10.gif
+	frame	data/chars/adam/ad11.gif
+	frame	data/chars/adam/ad12.gif
+	frame	data/chars/adam/ad13.gif
+		
+#|edited by openBor Stats v 0.51
+		

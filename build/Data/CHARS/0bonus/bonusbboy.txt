@@ -1,0 +1,179 @@
+
+
+
+name BonusBBoy
+health	300
+speed 25
+type	none
+gfxshadow 1 3
+diesound data/chars/beastboy/morte.wav
+icon	data/chars/beastboy/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  31 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/beastboy/nome.gif -37 -60
+parrow2		data/chars/beastboy/nome.gif -37 -60
+
+palette       data/chars/beastboy/00beastpal.gif
+alternatepal  data/chars/beastboy/00beastpal2.gif
+alternatepal  data/chars/beastboy/00beastpal3.gif
+alternatepal  data/chars/beastboy/00beastpal4.gif
+alternatepal  data/chars/beastboy/00beastpal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	8
+	attack	50 19 108 69 110 9 0 0 10 0
+	forcedirection	-2
+	offset	103 87
+	bbox	55 20 91 68
+	frame	data/chars/beastboy/at10.gif
+	sound	data/sounds/stomp.wav
+	frame	data/chars/beastboy/at11.gif
+	frame	data/chars/beastboy/at12.gif
+	frame	data/chars/beastboy/at13.gif
+		
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	6
+	attack	50 19 108 69 110 9 0 0 10 0
+	forcedirection	-2
+	offset	103 87
+	bbox	55 20 91 68
+	frame	data/chars/beastboy/at10.gif
+	sound	data/sounds/stomp.wav
+	frame	data/chars/beastboy/at11.gif
+	frame	data/chars/beastboy/at12.gif
+	frame	data/chars/beastboy/at13.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	6
+	offset	103 87
+	frame	data/chars/beastboy/at10.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	7
+	attack	50 19 108 69 110 9 0 0 10 0
+	forcedirection	-2
+	offset	103 87
+	bbox	55 20 91 68
+	frame	data/chars/beastboy/at10.gif
+	sound	data/sounds/stomp.wav
+	frame	data/chars/beastboy/at11.gif
+	frame	data/chars/beastboy/at12.gif
+	frame	data/chars/beastboy/at13.gif
+		
+#|edited by openBor Stats v 0.51
+		

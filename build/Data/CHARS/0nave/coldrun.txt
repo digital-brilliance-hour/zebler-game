@@ -1,0 +1,300 @@
+
+
+
+name ColdRun
+health	300
+speed 18
+type	none
+gfxshadow 1 3
+icon	data/chars/cold/portrait.gif 1
+diesound data/chars/cold/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+facing 1
+nodrop 2
+jumpheight 3
+jumpmove 3 3
+
+
+load coldruntiro
+
+atchain 1
+running 24 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+
+palette       data/chars/cold/pal1.gif
+alternatepal  data/chars/cold/pal2.gif
+alternatepal  data/chars/cold/pal3.gif
+alternatepal  data/chars/cold/pal4.gif
+alternatepal  data/chars/cold/pal5.gif
+alternatepal  data/chars/cold/pal6.gif
+
+parrow		data/chars/cold/nome.gif -37 -70
+parrow2		data/chars/cold/nome.gif -37 -70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	@cmd	keymove 2 0.6
+	@cmd	shoot "coldruntiro" -4 40 2
+	sound	data/chars/cold/gelo1.wav
+	frame	data/chars/cold/cold07.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/cold/cold08.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/cold/cold09.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	frame	data/chars/cold/cold07.gif
+	frame	data/chars/cold/cold08.gif
+	frame	data/chars/cold/cold09.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	99 73
+	frame	data/chars/cold/cold02.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cold/cold02.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cold/cold02.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cold/cold02.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cold/cold02.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cold/cold02.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/cold/cold02.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	down
+	loop	1
+	delay	6
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	frame	data/chars/cold/cold07.gif
+	frame	data/chars/cold/cold08.gif
+	frame	data/chars/cold/cold09.gif
+		
+anim	freespecial
+	com	b b freespecial
+		
+anim	freespecial2
+	com	f f freespecial2
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	frame	data/chars/cold/cold07.gif
+	frame	data/chars/cold/cold08.gif
+	frame	data/chars/cold/cold09.gif
+		
+anim	jump
+	loop	0
+	delay	26
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold02.gif
+		
+anim	jumpattack
+		
+anim	jumpland
+	loop	0
+	delay	20
+	@cmd	velo001	-2 0 0
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold02.gif
+		
+anim	pain
+	loop	0
+	delay	20
+	@cmd	velo001	-2 0 0
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold02.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	frame	data/chars/cold/cold07.gif
+	frame	data/chars/cold/cold08.gif
+	frame	data/chars/cold/cold09.gif
+		
+anim	runattack
+	loop	0
+	delay	5
+	@cmd	keymove 2 0.6
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	@cmd	keymove 2 0.6
+	@cmd	shoot "coldruntiro" -4 40 2
+	sound	data/chars/cold/gelo1.wav
+	frame	data/chars/cold/cold07.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/cold/cold08.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/cold/cold09.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold02.gif
+		
+anim	special2
+		
+anim	up
+	loop	1
+	delay	6
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	frame	data/chars/cold/cold07.gif
+	frame	data/chars/cold/cold08.gif
+	frame	data/chars/cold/cold09.gif
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold06.gif
+	frame	data/chars/cold/cold07.gif
+	frame	data/chars/cold/cold08.gif
+	frame	data/chars/cold/cold09.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	89 30 21 43
+	offset	99 73
+	frame	data/chars/cold/cold02.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -23,206 +23,184 @@ hole 1480 310 65 0 985 1055 65
 
 order	a
 
-## Spawning Area ##
-# Spawn format:
-#
-#	spawn	[id]
-#	alias	[name]		(change the displayed name, optional)
-#	map	[num]		(colourmap, range 0-3, optional)
-#	health	[num]		(optional)
-#	item	[id]		(obstacles only: contained item, optional)
-#	boss	[0/1]		(see below, optional)
-#	flip	[0/1]		(0 = face left, 1 = face right, optional)
-#	coords	[num] [num]	(coords relative to scrollpos)
-#	at	[scrollpos]
-#
-# Also:
-#	wait			(blocks scrolling until all enemies defeated)
-#	at	[scrollpos]
-#
-# And:
-#	group	[min] [max]	(set minimum and maximum enemies, see below)
-#	at	[scrollpos]
-#
-#
-#
-# Using group, you may set two values, namely:
-#
-# [min]
-# If the number of enemies drops below [min], more enemies will be spawned
-# (if possible).
-#
-# [max]
-# No more than [max] enemies will be present.
-#
-# So, to make enemies appear in groups of four, use this:
-# group 1 4
-#
-# To make them appear normally, use this:
-# group 4 4
-
-
 
 #--group1-----
-group 1 3 
-
+ 
 spawn	K'
 health  100
-item	Meat
-coords	200 180
+coords	490 180
 at	0
 
 spawn	K'
 health  100
-item	Meat
-coords	200 180
+coords	200 230
 at	0
 
 spawn	Angel
 health  100
-item	Meat
-coords	200 180
+coords	490 250
 at	0
 
-group 1 7
-
-spawn	Mandy
-health  100
-item	Meat
-coords	200 180
-at	760
-
-spawn	Mandy
-health  100
-item	Meat
-coords	200 180
-at	760
-
-spawn	Mandy
-health  100
-item	Meat
-coords	200 180
-at	760
-
-spawn	Mandy
-health  100
-item	Meat
-coords	200 180
-at	760
-
-spawn	Mandy
-health  100
-item	Meat
-coords	200 180
-at	760
-
-spawn	Angel
-health  100
-item	Meat
-coords	200 180
-at	760
-
-spawn	Angel
-health  100
-item	Meat
-coords	200 180
-at	760
-
-group 1 5 
-
-spawn	K'
-health  100
-item	Meat
-coords	200 180
-at	1160
-
-spawn	Angel
-health  100
-item	Meat
-coords	200 180
-at	1160
-
-spawn	Angel
-health  100
-item	Meat
-coords	200 180
-at	1160
-
-spawn	Angel
-health  100
-item	Meat
-coords	200 180
-at	1160
-
-spawn	Angel
-health  100
-item	Meat
-coords	200 180
-at	1160
+wait
+at 0
 
 group 1 3
+at 0
+
+#--group2-----
+
+spawn	Mandy
+health  100
+coords	500 180
+at	760
+
+spawn	Mandy
+health  100
+coords	500 220
+at	760
+
+spawn	Angel
+health  100
+coords	500 270
+at	760
+
+spawn	Mandy
+health  100
+coords	-50 180
+at	760
+
+spawn	Mandy
+health  100
+coords	-50 290
+at	760
+
+spawn	Mandy
+health  100
+coords	-50 220
+at	760
 
 spawn	Angel
 health  100
 item	Meat
+coords	-50 270
+at	760
+
+wait
+at 760
+
+group 1 7
+at 760 
+
+#--group3-----
+
+spawn	K'
+health  100
 coords	200 180
+at	1160
+
+spawn	Angel
+health  100
+coords	300 220
+at	1160
+
+spawn	Angel
+health  100
+coords	90 180
+at	1160
+
+spawn	Angel
+health  100
+coords	70 300
+at	1160
+
+spawn	Angel
+health  100
+coords	200 180
+at	1160
+
+wait 
+at 1160
+
+group 1 5
+at 1160
+
+#--group4-----
+
+spawn	Angel
+health  100
+coords	-60 180
 at	2020
 
 spawn	Angel
 health  100
-item	Meat
-coords	200 180
+coords	500 180
 at	2020
 
 spawn	Mandy
 health  100
-item	Meat
-coords	200 180
+coords	200 200
 at	2020
 
-group 1 1
+wait
+at 2020
+
+group 1 3
+at 2020
+
+#--group5-----
 
 spawn	dutch
 health  100
-item	Meat
-coords	200 180
+coords	150 180
 at	2490
 
-group 1 6
+wait
+at 2490 
+
+group 1 1
+at 2490
+
+#--group6-----
 
 spawn	Angel
 health  100
-item	Meat
-coords	200 180
-at	3200
+coords	200 200
+at	3000
 
 spawn	Angel
 health  100
-item	Meat
-coords	200 180
-at	3200
+coords	200 240
+at	3000
 
 spawn	Angel
 health  100
-item	Meat
-coords	200 180
-at	3200
+coords	200 280
+at	3000
+
+spawn	K'
+health  100
+coords	200 200
+at	3000
 
 spawn	K'
 health  100
 item	Meat
-coords	200 180
-at	3200
+coords	200 240
+at	3000
 
-spawn	K'
-health  100
-item	Meat
-coords	200 180
-at	3200
+wait
+at 3000
+
+group 1 5
+at 3000
+
+#--Boss-----
 
 spawn	Linn
 boss 1
 health  100
-item	Meat
-coords	200 180
-at	3200
+coords	290 220
+at	3100
+
+wait
+at 3100

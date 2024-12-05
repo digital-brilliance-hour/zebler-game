@@ -1,0 +1,172 @@
+
+
+
+name BonusSteel
+health	300
+speed 42
+type	none
+gfxshadow 1 3
+diesound data/chars/steel/morte.wav
+icon	data/chars/steel/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+atchain 1
+running  46 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/steel/nome.gif -37 -60
+parrow2		data/chars/steel/nome.gif -37 -60
+
+palette       data/chars/steel/00pal.gif
+alternatepal  data/chars/steel/00pal2.gif
+alternatepal  data/chars/steel/00pal3.gif
+alternatepal  data/chars/steel/00pal5.gif
+alternatepal  data/chars/steel/00pal4.gif
+alternatepal  data/chars/steel/00pal6.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+		
+anim	block
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	56 124
+	bbox	31 31 48 84
+	frame	data/chars/steel/r1.gif
+	offset	60 122
+	frame	data/chars/steel/r2.gif
+	offset	56 124
+	frame	data/chars/steel/r3.gif
+	offset	51 126
+	frame	data/chars/steel/r4.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	4
+	offset	75 118
+	bbox	49 35 48 76
+	attack	46 34 52 79 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/steel/v1.gif
+	offset	75 117
+	frame	data/chars/steel/v3.gif
+	offset	75 118
+	frame	data/chars/steel/v2.gif
+	frame	data/chars/steel/v3.gif
+		
+anim	runattack
+		
+anim	spawn
+	loop	0
+	delay	5
+	offset	60 122
+	frame	data/chars/steel/r2.gif
+		
+anim	special2
+
+		
+anim	walk
+	loop	1
+	delay	4
+	offset	75 118
+	bbox	49 35 48 76
+	attack	46 34 52 79 110 9 0 0 10 0
+	forcedirection	-2
+	frame	data/chars/steel/v1.gif
+	offset	75 117
+	frame	data/chars/steel/v3.gif
+	offset	75 118
+	frame	data/chars/steel/v2.gif
+	frame	data/chars/steel/v3.gif
+		
+#|edited by openBor Stats v 0.51
+		

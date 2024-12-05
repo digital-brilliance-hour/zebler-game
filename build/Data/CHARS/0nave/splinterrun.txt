@@ -1,0 +1,224 @@
+
+
+
+name SplinterRun
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+diesound data/chars/splinter/morte.wav
+icon	data/chars/splinter/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+
+
+atchain 1
+running  26 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/splinter/nome.gif -37 -60
+parrow2		data/chars/splinter/nome.gif -37 -60
+
+palette       data/chars/splinter/pal1.gif
+alternatepal  data/chars/splinter/pal2.gif
+alternatepal  data/chars/splinter/pal3.gif
+alternatepal  data/chars/splinter/pal4.gif
+alternatepal  data/chars/splinter/pal5.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	6
+	@cmd	keymove 1.6 0.6
+	bbox	20 13 31 39
+	offset	37 56
+	frame	data/chars/0Nave/splinter07.gif
+	@cmd	keymove 1.6 0.6
+	offset	37 57
+	sound	data/chars/rafa/sai.wav
+	@cmd	shoot "rafaTiro" 10 30 2
+	frame	data/chars/0Nave/splinter08.gif
+	offset	37 58
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/0Nave/splinter08.gif
+	offset	37 57
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/0Nave/splinter07.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	@cmd	velo001	-4 0 0
+	offset	36 52
+	frame	data/chars/0Nave/splinter09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/splinter09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/splinter09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/splinter09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/splinter09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/splinter09.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/splinter09.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	20 13 31 39
+	offset	37 56
+	frame	data/chars/0Nave/splinter05.gif
+	frame	data/chars/0Nave/splinter06.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	20 13 31 39
+	offset	37 56
+	frame	data/chars/0Nave/splinter05.gif
+	frame	data/chars/0Nave/splinter06.gif
+		
+anim	runattack
+	loop	0
+	delay	6
+	@cmd	keymove 1.6 0.6
+	bbox	20 13 31 39
+	offset	37 56
+	frame	data/chars/0Nave/splinter07.gif
+	@cmd	keymove 1.6 0.6
+	offset	37 57
+	sound	data/chars/rafa/sai.wav
+	@cmd	shoot "rafaTiro" 10 30 2
+	frame	data/chars/0Nave/splinter08.gif
+	offset	37 58
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/0Nave/splinter08.gif
+	offset	37 57
+	@cmd	keymove 1.6 0.6
+	frame	data/chars/0Nave/splinter07.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	5
+	bbox	20 13 31 39
+	offset	37 56
+	frame	data/chars/0Nave/splinter05.gif
+	frame	data/chars/0Nave/splinter06.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	5
+	bbox	20 13 31 39
+	offset	37 56
+	frame	data/chars/0Nave/splinter05.gif
+	frame	data/chars/0Nave/splinter06.gif
+		
+#|edited by openBor Stats v 0.51
+		

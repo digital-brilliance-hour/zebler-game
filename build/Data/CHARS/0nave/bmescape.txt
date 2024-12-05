@@ -1,0 +1,31 @@
+
+
+name	bmescape
+type none
+shadow	0
+subject_to_gravity 0
+setlayer 0
+
+animationscript data/scripts/grabscript.c
+
+
+
+
+
+
+
+
+
+anim	idle
+	loop	1
+	@cmd	velo001	-0.2 0 0.1
+	delay	4
+	offset	27 84
+	bbox	7 0 41 69
+	drawmethod	scale 0.5 0.5
+	drawmethod	flipx 1
+	frame	data/chars/zatlantis/b3.gif
+	frame	data/chars/zatlantis/b4.gif
+		
+#|edited by openBor Stats v 0.51
+		

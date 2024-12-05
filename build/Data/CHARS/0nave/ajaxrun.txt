@@ -1,0 +1,317 @@
+
+name AjaxRun
+health	300
+speed 20
+type	none
+gfxshadow 1 3
+icon	data/chars/ajax/por.gif 1
+diesound data/chars/ajax/morte.wav
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpmove 3 3
+jumpheight 4
+layer 300
+
+load ajaxruntiro
+
+atchain 1
+running 30 4  2  1  0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/ajax/nome.gif -37 -60
+parrow2		data/chars/ajax/nome.gif -37 -60
+
+palette       data/chars/ajax/pal01.gif
+alternatepal  data/chars/ajax/pal02.gif
+alternatepal  data/chars/ajax/pal03.gif
+alternatepal  data/chars/ajax/pal04.gif
+alternatepal  data/chars/ajax/pal05.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	5
+	bbox	20 10 26 31
+	offset	32 58
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aj1.gif
+	@cmd	keymove 2 0.6
+	sound	data/chars/superman/raio.wav
+	@cmd	shoot "ajaxruntiro" 0 51 2
+	frame	data/chars/0Nave/aj2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aj3.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aj2.gif
+		
+anim	backwalk
+	loop	1
+	delay	8
+	bbox	20 10 26 31
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+	frame	data/chars/0Nave/aj2.gif
+	frame	data/chars/0Nave/aj3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	offset	22 49
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/aj7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aj7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aj7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aj7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aj7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aj7.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/aj7.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	duck
+		
+anim	duckattack
+		
+anim	ducking
+		
+anim	duckrise
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	50
+	@cmd	velo001	-6 0 0
+	offset	32 58
+	drawmethod	256 256 0 0 0 6 -1 0 0 0
+	frame	data/chars/0Nave/aj1.gif
+		
+anim	freespecial14
+	loop	1
+	delay	9
+	dive	1 0.1
+	bbox	20 10 26 31
+	offset	32 58
+	cancel	0 99 0 A freespecial2
+	@cmd	keymove 2 0.6
+	loop	1
+	frame	data/chars/0Nave/aj1.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aj2.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/aj3.gif
+		
+anim	freespecial2
+	loop	0
+	delay	15
+	bbox	8 6 29 20
+	offset	26 50
+	dive	5 3
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	27 7 27 17 15 0 0 0 5 0
+	frame	data/chars/0Nave/aj4.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	20 10 26 42
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+	frame	data/chars/0Nave/aj2.gif
+	frame	data/chars/0Nave/aj3.gif
+		
+anim	jump
+	loop	0
+	delay	22
+	bbox	8 1 17 37
+	offset	18 53
+	cancel	0 99 0 b A freespecial2
+	cancel	1 99 0 j freespecial14
+	frame	data/chars/0Nave/aj6.gif
+	frame	data/chars/0Nave/aj6.gif
+		
+anim	jumpattack
+	loop	0
+	delay	15
+	bbox	8 6 29 20
+	offset	26 50
+	dive	5 3
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	attack	27 7 27 17 15 0 0 0 5 0
+	frame	data/chars/0Nave/aj4.gif
+		
+anim	jumpland
+	loop	0
+	delay	1
+	bbox	20 10 26 31
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+		
+anim	run
+	loop	1
+	delay	4
+	bbox	20 10 26 42
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+	frame	data/chars/0Nave/aj2.gif
+	frame	data/chars/0Nave/aj3.gif
+		
+anim	runattack
+	loop	0
+	delay	15
+	offset	28 48
+	@cmd	velo001	12 0 0
+	bbox	7 3 40 22
+	attack	19 4 36 20 25 0 0 0 5 0
+	hitfx	data/sounds/beat3.wav
+	sound	data/sounds/punch3.wav
+	frame	data/chars/0Nave/aj5.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	bbox	20 10 26 31
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+		
+anim	special2
+		
+anim	walk
+	loop	1
+	delay	6
+	bbox	20 10 26 44
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+	frame	data/chars/0Nave/aj2.gif
+	frame	data/chars/0Nave/aj3.gif
+		
+anim	walkoff
+	loop	0
+	delay	6
+	bbox	20 10 26 31
+	offset	32 58
+	frame	data/chars/0Nave/aj1.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -1,0 +1,283 @@
+
+
+
+name PlasticCar
+health	300
+speed 12
+type	none
+gfxshadow 1 3
+diesound data/chars/plastic/morte.wav
+icon	data/chars/plastic/portrait.gif 1
+throwdamage 15
+cantgrab 1
+falldie 1
+nodieblink 2
+candamage enemy obstacle
+nopain 1
+facing 1
+nodrop 2
+jumpheight 0
+
+load CanaryTiro
+Knife CanaryTiro
+
+atchain 1
+running  30 0 0 0 0
+
+animationscript data/scripts/grabscript.c
+
+parrow		data/chars/plastic/nome.gif -37 -60
+parrow2		data/chars/plastic/nome.gif -37 -60
+
+palette       data/chars/plastic/00plastic.gif
+alternatepal  data/chars/plastic/00pal3.gif
+alternatepal  data/chars/plastic/00pal.gif
+alternatepal  data/chars/plastic/00pal2.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	delay	4
+	bbox	26 10 30 39
+	offset	40 49
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e9.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/punch.wav
+	attack	49 12 56 16 25 0 0 0 5 0
+	frame	data/chars/0Nave/e10.gif
+	attack	49 12 75 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e11.gif
+	attack	78 12 76 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e12.gif
+	attack	138 12 75 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e11.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e10.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e9.gif
+		
+anim	backwalk
+	loop	1
+	delay	7
+	bbox	15 10 28 35
+	offset	28 47
+	frame	data/chars/0Nave/e1.gif
+	frame	data/chars/0Nave/e2.gif
+	frame	data/chars/0Nave/e3.gif
+		
+anim	block
+		
+anim	death
+	loop	0
+	delay	6
+	bbox	23 36 52 35
+	offset	48 71
+	@cmd	velo001	-4 0 0
+	frame	data/chars/0Nave/e5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/e5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/e5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/e5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/e5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/e5.gif
+	frame	data/chars/misc/vazio.gif
+	frame	data/chars/0Nave/e5.gif
+	delay	150
+	frame	data/chars/misc/vazio.gif
+		
+anim	freespecial
+	com	b b freespecial
+	loop	0
+	delay	555
+	bbox	8 6 43 41
+	offset	27 55
+	jumpframe	0 3 -4
+	landframe	1
+	attack	7 6 44 41 10 0 0 0 5 0
+	sound	data/sounds/punch.wav
+	frame	data/chars/0Nave/e4.gif
+	delay	5
+	bbox	15 10 28 35
+	offset	28 47
+	frame	data/chars/0Nave/e1.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	bbox	15 10 28 35
+	offset	28 47
+	frame	data/chars/0Nave/e1.gif
+	frame	data/chars/0Nave/e2.gif
+	frame	data/chars/0Nave/e3.gif
+		
+anim	jump
+		
+anim	run
+	loop	1
+	delay	3
+	bbox	22 12 42 35
+	offset	38 49
+	frame	data/chars/0Nave/e6.gif
+	sound	data/sounds/run1.wav
+	frame	data/chars/0Nave/e7.gif
+	frame	data/chars/0Nave/e8.gif
+		
+anim	runattack
+	loop	0
+	delay	4
+	bbox	26 10 30 39
+	offset	40 49
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e9.gif
+	@cmd	keymove 2 0.6
+	sound	data/sounds/punch.wav
+	attack	49 12 56 16 25 0 0 0 5 0
+	frame	data/chars/0Nave/e10.gif
+	attack	49 12 75 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e11.gif
+	attack	78 12 76 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e12.gif
+	attack	138 12 75 16 25 0 0 0 5 0
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e13.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	2
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e12.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e11.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e10.gif
+	@cmd	keymove 2 0.6
+	frame	data/chars/0Nave/e9.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	delay	5
+	bbox	15 10 28 35
+	offset	28 47
+	frame	data/chars/0Nave/e1.gif
+		
+anim	special2
+		
+
+		
+anim	walk
+	loop	1
+	delay	4
+	bbox	15 10 28 35
+	offset	28 47
+	frame	data/chars/0Nave/e1.gif
+	frame	data/chars/0Nave/e2.gif
+	frame	data/chars/0Nave/e3.gif
+		
+anim	walkoff
+	loop	0
+	delay	4
+	bbox	15 10 28 35
+	offset	28 47
+	frame	data/chars/0Nave/e1.gif
+		
+#|edited by openBor Stats v 0.51
+		

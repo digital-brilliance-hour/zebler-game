@@ -1,0 +1,393 @@
+name Parademon
+health	60
+speed 16
+type	enemy
+gfxshadow 1 3
+jumpheight 7
+hostile player npc
+candamage player npc obstacle
+antigrab  3
+throw 3 2
+knockdowncount 6
+jugglepoints 4
+subject_to_screen 1
+falldie 2
+
+
+
+throw 3 3
+
+
+fmap 2
+palette       data/chars/zmetro/p0pal4.gif
+alternatepal  data/chars/zmetro/p0pal3.gif
+alternatepal  data/chars/zmetro/p0pal1gelo.gif
+alternatepal  data/chars/zmetro/p0poison.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim	attack1
+	loop	0
+	range	0 55
+	rangea	-30 30
+	delay	19
+	hitfx	data/sounds/0knifehit.wav
+	offset	91 122
+	bbox	69 48 48 74
+	frame	data/chars/zmetro/p4.gif
+	sound	data/sounds/0knife.wav
+	attack	99 54 85 23 15 2 0 0 0 0
+	delay	8
+	frame	data/chars/zmetro/p5.gif
+	attack	0 0 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/p6.gif
+	frame	data/chars/zmetro/p4.gif
+	delay	35
+	offset	94 118
+	bbox	70 38 45 82
+	frame	data/chars/zmetro/p1.gif
+		
+anim	attack2
+	loop	0
+	range	400 600
+	jumpframe	0 5 5 0
+	delay	30
+	sound	data/sounds/vuu3.wav
+	offset	92 100
+	bbox	62 24 57 62
+	frame	data/chars/zmetro/p2.gif
+	offset	91 126
+	bbox	75 44 35 77
+	frame	data/chars/zmetro/p3.gif
+		
+anim	attack3
+	loop	0
+	range	600 900
+	jumpframe	0 9 6 0
+	delay	30
+	sound	data/sounds/vuu3.wav
+	offset	92 100
+	bbox	62 24 57 62
+	frame	data/chars/zmetro/p2.gif
+	offset	91 126
+	bbox	75 44 35 77
+	frame	data/chars/zmetro/p3.gif
+		
+anim	burn
+	loop	0
+	delay	5
+	offset	111 99
+	landframe	22
+	bbox	74 37 73 48
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/p18.gif
+	frame	data/chars/zmetro/p19.gif
+	frame	data/chars/zmetro/p20.gif
+	frame	data/chars/zmetro/p21.gif
+	frame	data/chars/zmetro/p18.gif
+	frame	data/chars/zmetro/p19.gif
+	frame	data/chars/zmetro/p20.gif
+	frame	data/chars/zmetro/p21.gif
+	frame	data/chars/zmetro/p18.gif
+	frame	data/chars/zmetro/p19.gif
+	frame	data/chars/zmetro/p20.gif
+	frame	data/chars/zmetro/p21.gif
+	frame	data/chars/zmetro/p18.gif
+	frame	data/chars/zmetro/p19.gif
+	frame	data/chars/zmetro/p20.gif
+	frame	data/chars/zmetro/p21.gif
+	frame	data/chars/zmetro/p18.gif
+	frame	data/chars/zmetro/p19.gif
+	frame	data/chars/zmetro/p20.gif
+	frame	data/chars/zmetro/p21.gif
+	frame	data/chars/zmetro/p18.gif
+	frame	data/chars/zmetro/p19.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	offset	93 73
+	bbox	50 37 0 0
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	frame	data/chars/zmetro/p10.gif
+		
+anim	fall
+	loop	0
+	delay	14
+	landframe	3
+	attack	79 49 5 60 8 9 0 0 0 0
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+	attack	56 49 5 39 8 9 0 0 0 0
+	bbox	47 46 97 44
+	offset	87 107
+	frame	data/chars/zmetro/p9.gif
+	offset	87 90
+	delay	500
+	frame	data/chars/zmetro/p9.gif
+	offset	93 73
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zmetro/p10.gif
+		
+anim	fall9
+	loop	0
+	delay	9
+	offset	95 68
+	frame	data/chars/zmetro/p10.gif
+		
+anim	grabbed
+	loop	0
+	delay	30
+	offset	98 131
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+		
+anim	idle
+	loop	1
+	offset	94 118
+	bbox	70 38 45 82
+	delay	30
+	frame	data/chars/zmetro/p1.gif
+		
+anim	jump
+	loop	0
+	delay	8
+	offset	91 126
+	bbox	75 44 35 77
+	frame	data/chars/zmetro/p3.gif
+		
+anim	jumpattack
+	loop	0
+	range	200 400
+	delay	35
+	sound	data/sounds/vuu3.wav
+	offset	92 100
+	bbox	62 24 57 62
+	frame	data/chars/zmetro/p2.gif
+	offset	91 126
+	bbox	75 44 35 77
+	frame	data/chars/zmetro/p3.gif
+		
+anim	jumpland
+	loop	0
+	sound	data/sounds/0pisada.wav
+	offset	95 116
+	bbox	70 63 51 54
+	delay	30
+	frame	data/chars/zmetro/p7.gif
+		
+anim	walkoff
+	loop	0
+	delay	4
+	offset	91 126
+	bbox	75 44 35 77
+	frame	data/chars/zmetro/p3.gif
+		
+anim	pain
+	loop	0
+	delay	3
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+	offset	103 128
+	frame	data/chars/zmetro/p8.gif
+	offset	102 128
+	frame	data/chars/zmetro/p8.gif
+	offset	103 128
+	frame	data/chars/zmetro/p8.gif
+	offset	102 128
+	frame	data/chars/zmetro/p8.gif
+	offset	103 128
+	frame	data/chars/zmetro/p8.gif
+	offset	102 128
+	frame	data/chars/zmetro/p8.gif
+	offset	103 128
+	frame	data/chars/zmetro/p8.gif
+	offset	102 128
+	frame	data/chars/zmetro/p8.gif
+	offset	103 128
+	frame	data/chars/zmetro/p8.gif
+		
+anim	pain18
+	loop	0
+	delay	10
+	drawmethod	remap 3
+	offset	94 118
+	bbox	70 38 45 82
+	frame	data/chars/zmetro/p1.gif
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+	offset	94 118
+	bbox	70 38 45 82
+	frame	data/chars/zmetro/p1.gif
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+	offset	94 118
+	bbox	70 38 45 82
+	frame	data/chars/zmetro/p1.gif
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+	offset	94 118
+	bbox	70 38 45 82
+	frame	data/chars/zmetro/p1.gif
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+	offset	94 118
+	bbox	70 38 45 82
+	frame	data/chars/zmetro/p1.gif
+	offset	102 128
+	bbox	78 42 45 82
+	frame	data/chars/zmetro/p8.gif
+		
+anim	pain9
+	loop	0
+	delay	9
+	offset	95 68
+	frame	data/chars/zmetro/p10.gif
+		
+anim	rise
+	loop	0
+	delay	9
+	offset	93 73
+	frame	data/chars/zmetro/p10.gif
+	offset	95 84
+	frame	data/chars/zmetro/p11.gif
+	offset	95 116
+	frame	data/chars/zmetro/p7.gif
+		
+anim	shock
+	loop	0
+	delay	5
+	landframe	22
+	offset	111 99
+	bbox	74 37 73 48
+	drawmethod	256 256 0 0 0 0 0 0 0 0
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	frame	data/chars/zmetro/p16.gif
+	frame	data/chars/zmetro/p17.gif
+	drawmethod	256 256 0 0 0 0 -1 0 0 0
+	offset	93 73
+	attack	0 0 0 0 0 0 0 0 0 0
+	delay	10
+	bbox	50 37 0 0
+	frame	data/chars/zmetro/p10.gif
+		
+anim	walk
+	loop	1
+	delay	9
+	offset	92 100
+	bbox	62 24 57 62
+	frame	data/chars/zmetro/p2.gif
+	offset	92 102
+	frame	data/chars/zmetro/p2.gif
+	offset	92 104
+	frame	data/chars/zmetro/p2.gif
+	offset	92 106
+	frame	data/chars/zmetro/p2.gif
+	offset	92 104
+	frame	data/chars/zmetro/p2.gif
+	offset	92 102
+	frame	data/chars/zmetro/p2.gif
+		
+#|edited by openBor Stats v 0.51
+		

@@ -73,6 +73,7 @@ know robot   data/chars/robot/robot.txt
 know boss1   data/chars/boss1/boss1.txt
 
 know spider  data/chars/spider/spider.txt
+load robsmal data/chars/robsmal/robsmal.txt
 
 know	enem1		data/chars/enem1/enem1.txt
 know	RDias		data/chars/rdias/rdias.txt
@@ -118,7 +119,7 @@ load rbldb   data/chars/robot/rbldb.txt
 load rblub   data/chars/robot/rblub.txt
 load rbldb2  data/chars/robot/rbldb2.txt
 load rblub2  data/chars/robot/rblub2.txt
-#load rbsbl   data/chars/robsmal/rbsbl.txt
+load rbsbl   data/chars/robsmal/rbsbl.txt
 
 know blackScreen data/chars/misc/blackscreen.txt
 

@@ -17,6 +17,7 @@ load	zoomin		data/chars/misc/zoomin.txt
 load	zoomout		data/chars/misc/zoomout.txt
 load    Zebler      data/chars/warior/warior.txt
 load    Keith       data/chars/keith/keith.txt
+know	Lt.Kurosawa	data/chars/Kurosa/Kurosa.txt	
 
 # Players must also be loaded.
 #load	Elang		data/chars/ship/elang.txt

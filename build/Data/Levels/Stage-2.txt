@@ -8,12 +8,12 @@ bossmusic	data/music/menu.bor
 background	data/bgs/stage-2/stage-2bg.gif
 
 # Front layer
-frontpanel	data/bgs/stage-2/stage-2bgp.png
+#frontpanel	data/bgs/stage-2/stage-2bgp.png
 
 # Load 'panels'. Up to 26 panels can be loaded.
 # They can be referenced using A-Z
 # Specify normal, neon and screen, or 'none'
-panel		data/bgs/stage-2/stage-2panelp.png
+panel		data/bgs/stage-2/panel.gif
 
 # ab = Pinepot left
 # c = wall, ridge left
@@ -72,341 +72,41 @@ order a
 
 
 #--group1-----
+#1st Wave
 group 1 2
+at 100
 
 spawn spider
 health 30
-coords
-at
+coords 105 287
+at 100
 
 spawn spider
 health 30
-coords
-at
+coords 125 287
+at 100
 
 spawn spider
 health 30
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-group 1 3
+coords 110 287
+at 100
 
 spawn spider
-health
-coords
-at
+health 40
+coords 105 287
+at 100 
 
 spawn spider
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-group 1 4
-
-spawn saku
-health
-coords
-at
+health 40
+coords 125 287
+at 100
 
 spawn spider
-health
-coords
-at
+health 40
+coords 110 287
+at 100
 
-spawn spider
-health
-coords
-at
 
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-Group 1 3
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-group 1 2
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-group 1 2
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn saku
-coords
-at
-
-group 1 2
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-group 1 5
-
-spawn
-health
-boss 1
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn spider
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn slug
-health
-coords
-at
-
-spawn saku
-health
-coords
-at
 
 
 

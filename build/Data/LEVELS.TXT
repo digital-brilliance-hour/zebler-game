@@ -35,3 +35,6 @@ file	data/levels/stage-3.txt
 
 set Story_1
 file 	data/levels/scenes/story1/story1.txt
+
+set Story_3
+file 	data/levels/scenes/story3/story3.txt

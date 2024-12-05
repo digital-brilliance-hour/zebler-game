@@ -237,11 +237,11 @@ at	1750
 wait
 at 1900
 	
-#spawn   spider
-#boss 1
-#health  100
-#coords	400 180
-#at	1900
+spawn   spider
+boss 1
+health  100
+coords	400 180
+at	1900
 	
 
 

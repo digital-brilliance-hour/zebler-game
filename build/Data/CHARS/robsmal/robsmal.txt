@@ -1,0 +1,119 @@
+name	robsmal
+type	enemy
+aimove wander
+aimove chase
+health	15
+speed	10
+shadow	0
+nodrop	1
+falldie	1
+nodieblink 2		
+jumpheight 0		
+cantgrab 1		
+noquake	1				
+nolife	1	
+load enbl
+hostile player
+candamage player
+load rbsbl
+aggression 50
+animationscript data/scripts/boscript.c
+setlayer 50
+anim idle
+	loop	1
+	offset	22 19
+	bbox	4 2 29 31
+	delay	5
+	attack	5 4 16 13 10 
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+anim walk
+	loop	1
+	offset	22 19
+	bbox	4 2 29 31
+	delay	5
+	attack	5 4 16 13 10 
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+anim backwalk
+	loop	1
+	offset	22 19
+	bbox	4 2 29 31
+	delay	5
+	attack	5 4 16 13 10 
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+anim pain
+	offset	22 19
+	bbox	4 2 29 31
+	delay	5
+	attack	5 4 16 13 10 
+	@cmd velo001 -2 0 0
+	frame	data/chars/robsmal/3
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/3
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/3
+	frame	data/chars/robsmal/2
+anim turn
+	offset	22 19
+	bbox	4 2 29 31
+	delay	5
+	attack	5 4 16 13 10 
+	@cmd velo001 -2 0 0
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	@cmd velo001 -1 0 0
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	@cmd velo001 -0.5 0 0
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+anim attack1
+	rangez -20 20
+	range 150 170
+	offset	22 19
+	bbox	4 2 29 31
+	delay	5
+	attack	5 4 16 13 10 
+	frame	data/chars/robsmal/3
+	frame	data/chars/robsmal/4
+	frame	data/chars/robsmal/5
+	frame	data/chars/robsmal/6
+	@cmd shoot "rbsbl" 23 3 1
+	frame	data/chars/robsmal/7
+	frame	data/chars/robsmal/5
+	@cmd shoot "rbsbl" 23 3 1
+	frame	data/chars/robsmal/7
+	frame	data/chars/robsmal/5
+	@cmd shoot "rbsbl" 23 3 1
+	frame	data/chars/robsmal/7
+	frame	data/chars/robsmal/5
+	frame	data/chars/robsmal/4
+	frame	data/chars/robsmal/3
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2	
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+	frame	data/chars/robsmal/1
+	frame	data/chars/robsmal/2
+anim death
+	delay 5
+	offset	22 19
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+
+

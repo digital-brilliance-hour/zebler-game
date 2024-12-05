@@ -30,7 +30,7 @@ anim idle
 	weaponframe 1 2
 	sound data/sfx/shoot2.wav
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/1b.gif
 	frame data/chars/rdias/1b.gif
 
@@ -39,7 +39,7 @@ anim walk
 	delay 1
 	weaponframe 0 2
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/1b.gif
 
 anim backwalk
@@ -47,7 +47,7 @@ anim backwalk
 	delay 1
 	weaponframe 0 2
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/1b.gif
 
 
@@ -70,7 +70,7 @@ anim freespecial
 	delay 1
 	weaponframe 0 1
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/1.gif
 
 anim special
@@ -79,7 +79,7 @@ anim special
 	delay 6
 	sound data/sfx/saber.wav
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/2.gif
 		attack1  62  100  34  24  5  0  0  0  0  1000
 	frame data/chars/rdias/3.gif
@@ -92,7 +92,7 @@ anim freespecial2
 	delay 6
 	sound data/sfx/saber.wav
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/5.gif
 		attack1  63  93  30  30  5  0  0  0  0  1000
 	frame data/chars/rdias/6.gif
@@ -104,7 +104,7 @@ anim freespecial3
 	delay 6
 	sound data/sfx/saber.wav
 		offset  52  130
-		bbox  50  112  1  1
+	bbox	34 93 32 37
 	frame data/chars/rdias/8.gif
 		attack1  68  106  33  18  5  0  0  0  0  1000
 	frame data/chars/rdias/9.gif

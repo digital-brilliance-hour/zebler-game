@@ -1,108 +1,130 @@
 name Enem1
 type enemy
-health 1
+health 25
 speed 4
 nolife 1
 falldie 1
 nodieblink 2
+nodrop 2
 knife e1
 
-anim idle
-	loop 1
-	delay 4
-	throwframe 14 18
-		offset  52  130
-		bbox  52  95  1  35
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-#7
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-#14
 
-anim walk
-	loop 1
-	delay 4
-	throwframe 14 18
-		offset  52  130
-		bbox  52  95  1  35
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-#7
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-	frame data/chars/enem1/1.gif
-	frame data/chars/enem1/1b.gif
-#14
-
-anim pain
-	delay 1
-		offset  52  130
-		bbox  52  95  1  35
-	frame data/chars/enem1/1.gif
-
-anim fall
-	delay 1
-		offset  52  130
-		bbox  52  95  1  35
-	frame data/chars/enem1/1.gif
-
-anim rise
-	delay 1
-		offset  52  130
-		bbox  52  95  1  35
-	frame data/chars/enem1/1.gif
-
-anim death
-	delay 3
-		offset  52  130
-	sound data/sfx/explode.wav
-	frame data/chars/ded/1.gif
-	frame data/chars/ded/2.gif
-	frame data/chars/ded/3.gif
-	frame data/chars/ded/4.gif
-	frame data/chars/ded/5.gif
-	frame data/chars/ded/6.gif
-	frame data/chars/ded/7.gif
-	frame data/chars/ded/8.gif
-	frame data/chars/ded/9.gif
-	frame data/chars/ded/10.gif
-	frame data/chars/ded/11.gif
-	frame data/chars/ded/12.gif
-	frame data/chars/ded/13.gif
-	frame data/chars/ded/14.gif
-	frame data/chars/ded/15.gif
-	frame data/chars/ded/16.gif
-	frame data/chars/ded/17.gif
-	frame data/chars/ded/18.gif
-	frame data/chars/ded/19.gif
-	frame data/chars/ded/20.gif
-	frame data/chars/ded/21.gif
-	frame data/chars/ded/22.gif
-	frame data/chars/ded/23.gif
-	frame data/chars/ded/24.gif
-	frame data/chars/ded/25.gif
-	frame data/chars/ded/26.gif
-
+anim	death
+	delay	3
+	offset	52 130
+	sound	data/sfx/explode.wav
+	frame	data/chars/ded/1.gif
+	frame	data/chars/ded/2.gif
+	frame	data/chars/ded/3.gif
+	frame	data/chars/ded/4.gif
+	frame	data/chars/ded/5.gif
+	frame	data/chars/ded/6.gif
+	frame	data/chars/ded/7.gif
+	frame	data/chars/ded/8.gif
+	frame	data/chars/ded/9.gif
+	frame	data/chars/ded/10.gif
+	frame	data/chars/ded/11.gif
+	frame	data/chars/ded/12.gif
+	frame	data/chars/ded/13.gif
+	frame	data/chars/ded/14.gif
+	frame	data/chars/ded/15.gif
+	frame	data/chars/ded/16.gif
+	frame	data/chars/ded/17.gif
+	frame	data/chars/ded/18.gif
+	frame	data/chars/ded/19.gif
+	frame	data/chars/ded/20.gif
+	frame	data/chars/ded/21.gif
+	frame	data/chars/ded/22.gif
+	frame	data/chars/ded/23.gif
+	frame	data/chars/ded/24.gif
+	frame	data/chars/ded/25.gif
+	frame	data/chars/ded/26.gif
+		
+anim	fall
+	delay	1
+	offset	52 130
+	bbox	52 95 1 35
+	frame	data/chars/enem1/1.gif
+		
+anim	idle
+	loop	1
+	delay	4
+	throwframe	14 18
+	offset	52 130
+	bbox	36 92 29 39
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+		
+anim	attack1
+	delay	4
+	throwframe	14 18
+	offset	52 130
+	bbox	36 92 29 39
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+		
+anim	pain
+	delay	1
+	offset	52 130
+	bbox	36 92 29 39
+	frame	data/chars/enem1/1.gif
+		
+anim	rise
+	delay	1
+	offset	52 130
+	bbox	52 95 1 35
+	frame	data/chars/enem1/1.gif
+		
+anim	walk
+	loop	1
+	delay	4
+	throwframe	14 18
+	offset	52 130
+	bbox	36 92 29 39
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+	frame	data/chars/enem1/1.gif
+	frame	data/chars/enem1/1b.gif
+		
+#|edited by openBor Stats v 0.67
+		

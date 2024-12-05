@@ -1,0 +1,18 @@
+name	wbblsk
+type	none
+toflip 1
+setlayer 10
+alpha 5
+anim idle
+	@script
+	if(frame == 1){
+	void self = getlocalvar("self");
+	killentity(self);
+	}
+	@end_script
+	offset	25 25
+	bbox 0 0 0 0
+	delay 5
+	drawmethod 2048 2048 0 0 0 5
+	frame	data/chars/wybu1/b1
+	frame	data/chars/misc/empty

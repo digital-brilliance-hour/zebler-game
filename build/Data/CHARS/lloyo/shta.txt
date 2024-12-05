@@ -1,0 +1,49 @@
+name	shta
+health 1
+type	pshot
+speedf 0
+candamage enemy npc obstacle shot
+projectilehit enemy npc obstacle shot
+nolife 1
+setlayer 250
+anim idle
+	delay 2
+	offset  8 12
+	bbox    0 0 0 0
+	jumpframe 4 0 3 0
+	attack  9 9 17 7 2 1 0 0 0 15
+	fastattack 1
+	frame	data/chars/lloyo/shta1
+	frame	data/chars/lloyo/shta2
+	frame	data/chars/lloyo/shta3
+	frame	data/chars/lloyo/shta4
+	delay 5
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	attack2  9 9 17 7 2 1 0 0 0 10
+	frame	data/chars/lloyo/shta5
+	ATTACK  0 0 0  0 0 0
+	frame	data/chars/misc/empty

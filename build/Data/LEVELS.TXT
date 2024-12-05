@@ -6,7 +6,6 @@
 #	file	[filename]	A level or part of a level
 #	next			Go to next level (show "stage clear" and stuff)
 #	scene	[filename]	Show a cut-scene
-#
 
 
 

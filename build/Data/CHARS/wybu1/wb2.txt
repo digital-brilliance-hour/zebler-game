@@ -1,0 +1,24 @@
+name	wb2
+type	none
+toflip 1
+speed 2
+setlayer 150
+anim idle
+	delay	5
+	offset	55 43
+	bbox 0 0 0 0
+	drawmethod 512 512
+	frame	data/chars/wybu1/a01
+	frame	data/chars/wybu1/a02
+	sound data/sounds/expl.wav
+	delay 10
+        frame	data/chars/wybu1/a03
+	frame	data/chars/wybu1/a04
+	frame	data/chars/wybu1/a05
+	frame	data/chars/wybu1/a06
+        frame	data/chars/wybu1/a07
+	frame	data/chars/wybu1/a08
+	frame	data/chars/wybu1/a06
+        frame	data/chars/wybu1/a07
+	frame	data/chars/wybu1/a08
+	frame	data/chars/misc/empty

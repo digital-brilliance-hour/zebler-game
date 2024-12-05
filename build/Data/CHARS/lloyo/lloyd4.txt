@@ -1,0 +1,287 @@
+name	Lloyd4
+type	none
+mp 100
+health	1
+speed	17
+mprate 4
+shadow	0
+atchain 1
+nopain	1
+nodrop	1
+falldie	1
+nodieblink 2
+running 25 0 0 1 0
+facing	1		
+jumpheight 0		
+cantgrab 1		
+noquake	1		
+makeinv	5 0		
+nolife	1	
+load shta
+load wb1
+load wb2	
+load las
+load lloyd3
+com a2 freespecial2
+candamage enemy obstacle npc
+iconmphigh data/sprites/mp2.gif
+iconmphalf data/sprites/mp1
+iconmplow data/sprites/mp1
+icon data/chars/icons/2
+weapons lloyd1 lloyd2 lloyd3 Lloyd
+animationscript data/scripts/player.c
+keyscript data/scripts/keych.c
+setlayer 250
+anim spawn
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/lloyo/1
+anim respawn
+	offset	46 39
+	bbox	31 34 24 7
+	delay	10
+	drawmethod 1024 1024
+	frame	data/chars/lloyo/4
+	drawmethod 896 896
+	frame	data/chars/lloyo/4
+	drawmethod 768 768
+	frame	data/chars/lloyo/3
+	drawmethod 640 640
+	frame	data/chars/lloyo/3
+	drawmethod 512 512
+	frame	data/chars/lloyo/2
+	drawmethod 384 384
+	frame	data/chars/lloyo/2
+anim attack1
+	offset	46 39
+	bbox	31 34 24 7
+	delay	0
+	@cmd keycheck
+	@script
+	if (frame == 0){
+		changeplayerproperty(0, "weapon", getglobalvar("p1weapon")); 
+	}
+	@end_script
+	frame	data/chars/lloyo/1
+	delay 1
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/1
+anim idle
+	loop	1
+	offset	46 39
+	bbox	31 34 24 7
+	fastattack 1
+	delay 3
+	attack  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l1
+	attack  0 0 0 0 0
+	frame	data/chars/lloyo/l2
+	attack2  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l3
+	attack2  0 0 0 0 0
+	frame	data/chars/lloyo/l4
+	attack  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l5
+	attack  0 0 0 0 0
+	frame	data/chars/lloyo/l6
+	attack  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l7
+	attack  0 0 0 0 0
+	frame	data/chars/lloyo/l8
+anim walk
+	loop	1
+	offset	46 39
+	bbox	31 34 24 7
+	fastattack 1
+	delay 3
+	attack  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l1
+	attack  0 0 0 0 0
+	frame	data/chars/lloyo/l2
+	attack  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l3
+	attack  0 0 0 0 0
+	frame	data/chars/lloyo/l4
+	attack2  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l5
+	attack2  0 0 0 0 0
+	frame	data/chars/lloyo/l6
+	attack  63 23 41 31 10 0 0 0 0 20
+	frame	data/chars/lloyo/l7
+	attack  0 0 0 0 0
+	frame	data/chars/lloyo/l8
+anim run
+	loop	1
+	offset	46 39
+	bbox	31 34 24 7
+	delay	0
+	weaponframe 0 0
+	frame	data/chars/lloyo/9
+	frame	data/chars/lloyo/1
+anim waiting
+	offset	148 100
+	bbox	31 34 24 7
+	delay	10
+	frame	data/chars/lloyo/sel
+anim select
+	offset	25 25
+	bbox 0 0 0 0
+	delay 5
+	drawmethod 2048 2048 0 0 0 5
+	frame	data/chars/wybu1/b1
+	nodrawmethod
+	offset	148 100
+	delay 5
+	bbox	31 34 24 7
+	frame	data/chars/lloyo/sel
+	frame	data/chars/MISC/empty
+	frame	data/chars/lloyo/sel
+	frame	data/chars/MISC/empty
+	frame	data/chars/lloyo/sel
+	frame	data/chars/MISC/empty
+	delay 50
+	frame	data/chars/lloyo/sel
+anim freespecial2
+	energycost 30
+	mponly 1
+	offset	46 39
+	bbox	0 0 0 0
+	delay	5
+	@cmd keycheck
+	frame	data/chars/lloyo/s1
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s2
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s1
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s2
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s1
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s2
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s1
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s2
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s1
+	frame	data/chars/lloyo/1
+	frame	data/chars/lloyo/s2
+	frame	data/chars/lloyo/1
+anim get
+	offset	46 39
+	bbox	31 34 24 7
+	delay	0
+	@cmd keycheck
+	sound data/sounds/shlvp.wav
+	frame	data/chars/lloyo/1
+anim death
+	sound data/sounds/pdie.wav
+	offset	46 39
+	delay 5
+	@cmd velo001 2 1 0
+	@cmd shoot "mdym" 0 0 -1
+	attack2 31 34 24 7 30 
+	frame	data/chars/lloyo/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/5
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/6
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/7
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/7
+	@cmd shoot "mdym" 0 0 -1
+	frame	data/chars/lloyo/7
+	offset	46 39
+	delay 5
+	@cmd velo001 1 0.5 0
+	@cmd shoot "wb2" 0 0 0
+	attack2 0 0 0 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+	delay 5
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb2" -10 -10 0
+	frame	data/chars/misc/empty
+	delay 5
+	@cmd shoot "wb2" 0 0 0
+	sound data/sounds/expl.wav
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 10 0
+	frame	data/chars/misc/empty
+	@cmd shoot "wb1" -10 -10 0
+	frame	data/chars/misc/empty
+	delay 60
+	frame	data/chars/misc/empty
+anim chargeattack
+	offset	46 39
+	bbox	31 34 24 7
+	delay 1
+	@cmd keycheck
+	@cmd shoot "miss" 0 20 -1
+	frame	data/chars/lloyo/8
+	@cmd shoot "miss" 0 -20 -1
+	frame	data/chars/lloyo/8
+	delay 20
+	frame	data/chars/lloyo/8
+	@cmd shoot "miss" 0 20 -1
+	frame	data/chars/lloyo/8
+	@cmd shoot "miss" 0 -20 -1
+	frame	data/chars/lloyo/8
+	delay 20
+	frame	data/chars/lloyo/8
+anim special
+	offset	100 96
+	bbox	0 0 0 0
+	delay	1
+	energycost 69
+	@cmd keycheck
+	frame	data/chars/lloyo/k01
+	frame	data/chars/lloyo/k02
+	frame	data/chars/lloyo/k03
+	frame	data/chars/lloyo/k04
+	frame	data/chars/lloyo/k05
+	frame	data/chars/lloyo/k06
+	frame	data/chars/lloyo/k07
+	frame	data/chars/lloyo/k08
+	frame	data/chars/lloyo/k09
+	frame	data/chars/lloyo/k10
+	frame	data/chars/lloyo/k11
+	frame	data/chars/lloyo/k12
+	delay 8
+	sound data/sounds/shoot.wav
+	@cmd shoot "blst1" 10 0 0
+	offset	46 39
+	bbox	31 34 24 7
+	frame	data/chars/lloyo/1
+anim fall
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/lloyo/1
+anim pain
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/lloyo/1
+anim rise
+	offset	46 39
+	bbox	31 34 24 7
+	delay	1
+	frame	data/chars/lloyo/1

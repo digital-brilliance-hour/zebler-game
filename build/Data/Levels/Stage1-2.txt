@@ -1,6 +1,6 @@
 ## Load music in this area ##
-music		data/music/remix.bor
-bossmusic	data/music/menu.bor
+music		data/music/stage1-2.ogg
+bossmusic	data/music/boss.ogg
 
 ## Load images in this area ##
 
@@ -32,7 +32,8 @@ wall 0 220 290 96 -95 -90 150 550
 #	order	[a...z]
 #
 order a
-
+stagenumber 1
+spawn1 284 20 0
 
 ## Spawning Area ##
 # Spawn format:
@@ -236,11 +237,59 @@ at	1750
 
 wait
 at 1900
+
+group 2 5
+at 1750
 	
-spawn   spider
+spawn   Lt.Kurosawa
 boss 1
+health  200
+coords	400 180
+at	1900
+
+#others
+
+
+spawn	K'
 health  100
 coords	400 180
+at	1900
+
+spawn	K'
+health  100
+coords	400 240
+at	1900
+
+spawn	Angel
+health  100
+coords	500 240
+at	1900
+
+spawn	K'
+health  100
+coords	500 200
+at	1900
+
+
+
+spawn	K'
+health  100
+coords	530 180
+at	1900
+
+spawn	K'
+health  100
+coords	400 240
+at	1900
+
+spawn	Angel
+health  100
+coords	530 240
+at	1900
+
+spawn	K'
+health  100
+coords	500 200
 at	1900
 	
 

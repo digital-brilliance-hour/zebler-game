@@ -1,15 +1,15 @@
-name	METAL_GEAR
+name metalgear
 health	500
 speed	10
-type	enemy#lifebarstatus {w} {h} {noborder} {type} {orientation} {border} {shadow} {graph} {backfill} 
+type	enemy
 lifebarstatus 380 5 0 1 0 0 0 0 0 
 lifeposition 50 219
 nameposition 50 210
 iconposition 0 -100 
 gfxshadow 1
-#shadow  6
-#icon data/chars/rat_/icon.gif 1
-#dust   dust
+
+
+
 nodrop	1
 candamage Player npc
 hostile Player npc 
@@ -21,243 +21,39 @@ nodieblink	1
 falldie 1
 jugglepoints 2
 
-anim idle
-	loop	1
-	delay	11
-	offset	215 243
-	bbox 173 70 136 177
-	frame	data/chars/MetalGear/0_0-0.gif
-	frame	data/chars/MetalGear/0_0-1.gif
-	frame	data/chars/MetalGear/0_0-2.gif
-	frame	data/chars/MetalGear/0_0-3.gif
-	frame	data/chars/MetalGear/0_0-4.gif
 
-anim walk
-	loop	1
-	delay   10
-	offset	215 243
-	bbox 173 70 136 177
-	frame	data/chars/MetalGear/0_20-1.gif
-	frame	data/chars/MetalGear/0_20-2.gif
-	frame	data/chars/MetalGear/0_20-3.gif
-	frame	data/chars/MetalGear/0_20-4.gif
-	frame	data/chars/MetalGear/0_20-5.gif
-	frame	data/chars/MetalGear/0_20-6.gif
-	frame	data/chars/MetalGear/0_20-7.gif
-	frame	data/chars/MetalGear/0_20-0.gif
-
-anim pain
-	loop	0
-	delay	10
-	offset	215 243
-	bbox 183 69 118 174
-      #  sound   data/chars/sla/pain.wav
-	frame	data/chars/MetalGear/0_5000-0.gif
-	delay	23
-	bbox 171 80 135 167
-	frame	data/chars/MetalGear/0_5010-0.gif
-
-anim	pain2
-	loop	0
-	delay	3
-	offset	215 243
-	bbox 183 69 118 174
-	quakeframe	0 3 4
-        Move    -3
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-        Move    -2
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-        Move    -1
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-        Move    0
-	delay	8
-	bbox 171 80 135 167
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-
-anim	pain3
-	loop	0
-	delay	2
-	offset	215 243
-	bbox 183 69 118 174
-	quakeframe	0 3 4
-	Move	-5
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	Move	-4
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	Move	-3
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	Move	-2
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	Move	-1
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	Move	0
-	frame	data/chars/MetalGear/0_5000-0.gif
-	bbox 171 80 135 167
-	frame	data/chars/MetalGear/0_5010-0.gif
-	delay	8
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-
-anim	pain4
-	loop	0
-	delay	6
-	offset	90 192
-	bbox	45 165 107 38
-	sound	data/chars/rat_/pain.wav
-	frame	data/chars/rat_/fall4.gif
-	offset	87 192
-	frame	data/chars/rat_/fall4.gif
-	offset	89 192
-	frame	data/chars/rat_/fall4.gif
-	offset	87 192
-	frame	data/chars/rat_/fall4.gif
-	offset	89 192
-	frame	data/chars/rat_/fall4.gif
-	offset	87 192
-	frame	data/chars/rat_/fall4.gif
-	offset	89 192
-	frame	data/chars/rat_/fall4.gif
-	offset	87 192
-	frame	data/chars/rat_/fall4.gif
-	offset	89 192
-	delay	50
-	frame	data/chars/rat_/fall4.gif
-	bbox	0
-	offset	90 192
-	delay	9
-	frame	data/chars/rat_/fall4.gif
-	frame	data/chars/rat_/fall4.gif
-	frame	data/chars/rat_/fall4.gif
-	frame	data/chars/rat_/fall4.gif
-	frame	data/chars/rat_/rise1.gif
-
-anim	pain5
-	loop	0
-	offset	215 243
-	bbox 183 69 118 174
-	jumpframe	0 3 0
-	delay	3
-	quakeframe	0 3 4
-	frame	data/chars/MetalGear/0_5000-0.gif
-	delay	2
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	delay	9
-	bbox 171 80 135 167
-	frame	data/chars/MetalGear/0_5010-0.gif
-
-anim	pain6
-	loop	0
-	offset	215 243
-	bbox 183 69 118 174
-	jumpframe	0 3 -1.5
-	delay	3
-	quakeframe	0 3 4
-	frame	data/chars/MetalGear/0_5000-0.gif
-	delay	2
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	frame	data/chars/MetalGear/0_5000-0.gif
-	delay	9
-	bbox 171 80 135 167
-	frame	data/chars/MetalGear/0_5010-0.gif
-
-anim fall
-	loop	0
-	offset	215 243
-	delay   30
-           landframe 2
-        #sound   data/chars/sla/fall.wav
-	attack3 189 71 90 172 10 0 0 0 0 20
-	bbox 189 71 90 172
-	frame	data/chars/MetalGear/0_5000-0.gif
-		delay  200
-	offset	205 203
-	attack3 125 84 158 118 10 0 0 0 0 20
-	bbox 125 84 158 118
-	frame	data/chars/MetalGear/0_5030-10.gif
-	delay   40
-		Attack1  0
-	bbox 0 0 0 0
-	offset	203 173
-	frame	data/chars/MetalGear/0_5030-20.gif
-	frame	data/chars/MetalGear/0_5030-10.gif
-	frame	data/chars/MetalGear/0_5030-20.gif
-
-anim rise
-	loop	0
-	delay	20
-	offset	215 243
-	frame	data/chars/MetalGear/0_5010-0.gif
-
-
-anim riseattack
-	range	0 90
-	loop	0
-	delay	5
-	offset	215 243
-	bbox	70 95 50 90
-        hitflash    wack
-        #sound   data/chars/sla/a2.wav
-        #hitfx   data/sounds/beat2.wav
-	frame	data/chars/MetalGear/0_200-0.gif
-	frame	data/chars/MetalGear/0_200-1.gif
-	frame	data/chars/MetalGear/0_200-2.gif
-	frame	data/chars/MetalGear/0_200-3.gif
-	frame	data/chars/MetalGear/0_200-4.gif
-	frame	data/chars/MetalGear/0_200-5.gif
-	frame	data/chars/MetalGear/0_200-6.gif
-	frame	data/chars/MetalGear/0_200-7.gif
-	frame	data/chars/MetalGear/0_200-8.gif
-	frame	data/chars/MetalGear/0_200-9.gif
-
-anim attack1
+anim	attack1
 	loop	0
 	delay	7
 	range	50 120
 	offset	215 243
-	bbox 159 71 133 172
-        #sound   data/chars/sla/a2.wav
-        #hitfx   data/sounds/beat2.wav
-jugglecost 1
+	bbox	159 71 133 172
+	jugglecost	1
 	frame	data/chars/MetalGear/0_200-0.gif
 	frame	data/chars/MetalGear/0_200-1.gif
 	frame	data/chars/MetalGear/0_200-2.gif
 	delay	5
-	attack3 214 95 170 146 15 0 0 0 0 20
+	attack3	214 95 170 146 15 1 0 0 0 20
+	dropv	3 7 0
 	frame	data/chars/MetalGear/0_200-3.gif
-	attack3 211 -4 177 247 15 0 0 0 0 20
+	attack3	211 -4 177 247 15 1 0 0 0 20
+	dropv	3 7 0
 	frame	data/chars/MetalGear/0_200-4.gif
-	attack3 0
+	attack3	0
 	frame	data/chars/MetalGear/0_200-5.gif
 	delay	7
 	frame	data/chars/MetalGear/0_200-6.gif
 	frame	data/chars/MetalGear/0_200-7.gif
 	frame	data/chars/MetalGear/0_200-8.gif
 	frame	data/chars/MetalGear/0_200-9.gif
-
-anim attack2
+		
+anim	freespecial1
 	loop	0
 	delay	1
 	range	200 270
 	offset	215 243
-	bbox 0 0 0 0
-jugglecost 1
+	bbox	0 0 0 0
+	jugglecost	1
 	frame	data/chars/MetalGear/0_1000-0.gif
 	frame	data/chars/MetalGear/0_1000-1.gif
 	frame	data/chars/MetalGear/0_1000-25.gif
@@ -291,8 +87,8 @@ jugglecost 1
 	frame	data/chars/MetalGear/0_1001-0.gif
 	frame	data/chars/MetalGear/0_1001-1.gif
 	frame	data/chars/MetalGear/0_1001-2.gif
-	blast   165 59 160 182 30  0  0  0  0  20
-        move    13
+	blast	165 59 160 182 30 0 0 0 0 20
+	move	13
 	delay	4
 	frame	data/chars/MetalGear/0_1002-0.gif
 	frame	data/chars/MetalGear/0_1002-1.gif
@@ -321,8 +117,8 @@ jugglecost 1
 	frame	data/chars/MetalGear/0_1002-0.gif
 	frame	data/chars/MetalGear/0_1002-1.gif
 	frame	data/chars/MetalGear/0_1002-2.gif
-	attack   0
-        move    0
+	attack	0
+	move	0
 	delay	1
 	frame	data/chars/MetalGear/0_1001-2.gif
 	frame	data/chars/MetalGear/0_1001-1.gif
@@ -356,16 +152,14 @@ jugglecost 1
 	frame	data/chars/MetalGear/0_1000-25.gif
 	frame	data/chars/MetalGear/0_1000-1.gif
 	frame	data/chars/MetalGear/0_1000-0.gif
-
-anim attack3
+		
+anim	freespecial2
 	loop	0
 	delay	3
 	range	121 191
 	offset	215 243
-	bbox 170 65 130 176
-        #sound   data/chars/sla/a2.wav
-        #hitfx   data/sounds/beat2.wav
-	attackNone 0 0 0 0 0 0 0 0 0 0
+	bbox	170 65 130 176
+	attack	0 0 0 0 0 0 0 0 0 0
 	frame	data/chars/MetalGear/0_1050-0.gif
 	frame	data/chars/MetalGear/0_1050-1.gif
 	frame	data/chars/MetalGear/0_1050-2.gif
@@ -408,176 +202,374 @@ anim attack3
 	frame	data/chars/MetalGear/0_1050-2.gif
 	frame	data/chars/MetalGear/0_1050-1.gif
 	frame	data/chars/MetalGear/0_1050-0.gif
-
+		
+anim	death
+	loop	0
+	offset	215 243
+	delay	3
+	@cmd	shoot "EX" -15 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 20 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 60 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -30 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 50 2 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -30 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -20 20 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 30 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 15 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -20 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 75 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -15 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 20 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 60 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -30 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 50 2 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -30 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -20 20 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 30 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 15 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -20 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 75 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -15 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 20 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 60 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -30 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 50 2 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -30 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -20 20 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 30 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 15 140 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" -20 110 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 75 50 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "EX" 20 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "pings" 20 80 0
+	frame	data/chars/MetalGear/0_5010-0.gif
+	@cmd	shoot "gleam" 0 60 80
+	frame	data/chars/MetalGear/0_5010-0.gif
+	delay	40
+	@cmd	killentity getlocalvar("self")
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	fall
+	loop	0
+	offset	215 243
+	delay	30
+	landframe	2
+	attack3	189 71 90 172 10 0 0 0 0 20
+	bbox	189 71 90 172
+	frame	data/chars/MetalGear/0_5000-0.gif
+	delay	200
+	offset	205 203
+	attack3	125 84 158 118 10 0 0 0 0 20
+	bbox	125 84 158 118
+	frame	data/chars/MetalGear/0_5030-10.gif
+	delay	40
+	Attack1	0
+	bbox	0 0 0 0
+	offset	203 173
+	frame	data/chars/MetalGear/0_5030-20.gif
+	frame	data/chars/MetalGear/0_5030-10.gif
+	frame	data/chars/MetalGear/0_5030-20.gif
+		
+anim	idle
+	loop	1
+	delay	11
+	offset	215 243
+	bbox	173 70 136 177
+	frame	data/chars/MetalGear/0_0-0.gif
+	frame	data/chars/MetalGear/0_0-1.gif
+	frame	data/chars/MetalGear/0_0-2.gif
+	frame	data/chars/MetalGear/0_0-3.gif
+	frame	data/chars/MetalGear/0_0-4.gif
+		
+anim	pain
+	loop	0
+	delay	10
+	offset	215 243
+	bbox	183 69 118 174
+	frame	data/chars/MetalGear/0_5000-0.gif
+	delay	23
+	bbox	171 80 135 167
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	pain2
+	loop	0
+	delay	3
+	offset	215 243
+	bbox	183 69 118 174
+	quakeframe	0 3 4
+	Move	-3
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	-2
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	-1
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	0
+	delay	8
+	bbox	171 80 135 167
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	pain3
+	loop	0
+	delay	2
+	offset	215 243
+	bbox	183 69 118 174
+	quakeframe	0 3 4
+	Move	-5
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	-4
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	-3
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	-2
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	-1
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	Move	0
+	frame	data/chars/MetalGear/0_5000-0.gif
+	bbox	171 80 135 167
+	frame	data/chars/MetalGear/0_5010-0.gif
+	delay	8
+	frame	data/chars/MetalGear/0_5010-0.gif
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	pain4
+	loop	0
+	delay	6
+	offset	90 192
+	bbox	45 165 107 38
+	sound	data/chars/rat_/pain.wav
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	frame	data/chars/rat_/fall4.gif
+	offset	87 192
+	frame	data/chars/rat_/fall4.gif
+	offset	89 192
+	delay	50
+	frame	data/chars/rat_/fall4.gif
+	bbox	0
+	offset	90 192
+	delay	9
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/fall4.gif
+	frame	data/chars/rat_/rise1.gif
+		
+anim	pain5
+	loop	0
+	offset	215 243
+	bbox	183 69 118 174
+	jumpframe	0 3 0
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/MetalGear/0_5000-0.gif
+	delay	2
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	delay	9
+	bbox	171 80 135 167
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	pain6
+	loop	0
+	offset	215 243
+	bbox	183 69 118 174
+	jumpframe	0 3 -1.5
+	delay	3
+	quakeframe	0 3 4
+	frame	data/chars/MetalGear/0_5000-0.gif
+	delay	2
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	frame	data/chars/MetalGear/0_5000-0.gif
+	delay	9
+	bbox	171 80 135 167
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	rise
+	loop	0
+	delay	20
+	offset	215 243
+	frame	data/chars/MetalGear/0_5010-0.gif
+		
+anim	riseattack
+	range	0 90
+	loop	0
+	delay	5
+	offset	215 243
+	bbox	70 95 50 90
+	hitflash	wack
+	frame	data/chars/MetalGear/0_200-0.gif
+	frame	data/chars/MetalGear/0_200-1.gif
+	frame	data/chars/MetalGear/0_200-2.gif
+	frame	data/chars/MetalGear/0_200-3.gif
+	frame	data/chars/MetalGear/0_200-4.gif
+	frame	data/chars/MetalGear/0_200-5.gif
+	frame	data/chars/MetalGear/0_200-6.gif
+	frame	data/chars/MetalGear/0_200-7.gif
+	frame	data/chars/MetalGear/0_200-8.gif
+	frame	data/chars/MetalGear/0_200-9.gif
+		
 anim	special2
 	loop	0
 	delay	7
 	range	50 100
 	offset	215 243
-        #sound   data/chars/sla/a2.wav
-        #hitfx   data/sounds/beat2.wav
 	frame	data/chars/MetalGear/0_200-0.gif
 	frame	data/chars/MetalGear/0_200-1.gif
 	frame	data/chars/MetalGear/0_200-2.gif
 	delay	5
-	attack3 214 95 170 146 15 0 0 0 0 20
+	attack3	214 95 170 146 15 0 0 0 0 20
 	frame	data/chars/MetalGear/0_200-3.gif
-	attack3 211 -4 177 247 15 0 0 0 0 20
+	attack3	211 -4 177 247 15 0 0 0 0 20
 	frame	data/chars/MetalGear/0_200-4.gif
-	attack3 0
+	attack3	0
 	frame	data/chars/MetalGear/0_200-5.gif
 	delay	7
 	frame	data/chars/MetalGear/0_200-6.gif
 	frame	data/chars/MetalGear/0_200-7.gif
 	frame	data/chars/MetalGear/0_200-8.gif
 	frame	data/chars/MetalGear/0_200-9.gif
-
-anim death
-	loop	0
+		
+anim	walk
+	loop	1
+	delay	10
 	offset	215 243
-	delay	3
-	#void tosser(void Bomb, float dx, float dy, float dz, float Vx, float Vy, float Vz)
-	@cmd	shoot "EX" -15 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 20 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 60 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -30 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 50 2 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -30 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -20 20 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 30 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 15 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -20 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 75 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -15 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 20 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 60 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -30 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 50 2 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -30 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -20 20 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 30 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 15 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -20 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 75 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -15 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 20 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 60 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -30 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 50 2 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -30 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -20 20 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 30 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 15 140 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" -20 110 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 75 50 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "EX" 20 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "pings"  20 80 0
-	frame	data/chars/MetalGear/0_5010-0.gif
-	@cmd	shoot "gleam" 0 60 80
-	frame	data/chars/MetalGear/0_5010-0.gif
-	#########
-	delay	40
-	@cmd	killentity getlocalvar("self")
-	frame	data/chars/MetalGear/0_5010-0.gif
-
+	bbox	173 70 136 177
+	frame	data/chars/MetalGear/0_20-1.gif
+	frame	data/chars/MetalGear/0_20-2.gif
+	frame	data/chars/MetalGear/0_20-3.gif
+	frame	data/chars/MetalGear/0_20-4.gif
+	frame	data/chars/MetalGear/0_20-5.gif
+	frame	data/chars/MetalGear/0_20-6.gif
+	frame	data/chars/MetalGear/0_20-7.gif
+	frame	data/chars/MetalGear/0_20-0.gif
+		
+#|edited by openBor Stats v 0.67
+		

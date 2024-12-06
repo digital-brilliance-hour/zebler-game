@@ -1,4 +1,4 @@
-music		data/music/menu.bor
+music		data/music/intro-story.ogg
 
 background	data/bgs/story1.png 1 1 0 0
 

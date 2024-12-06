@@ -5,7 +5,9 @@ void storyKeys()
 	//for scrolling
 	if(getindexedvar(story_back)!=NULL() && (playerkeys(0, 1, "start") || playerkeys(1, 1, "start") || playerkeys(2, 1, "start") || playerkeys(3, 1, "start")))
 	{
-		jumptobranch("",1);
+		if (openborvariant("in_level") && openborvariant("current_stage") > 12) {
+			jumptobranch("",1);
+		}
 	}
 	//for dialog
 	dialogSkip();

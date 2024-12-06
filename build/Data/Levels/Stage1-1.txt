@@ -1,6 +1,6 @@
 ## Load music in this area ##
-music		data/music/remix.bor
-bossmusic	data/music/menu.bor
+music		data/music/stage1.ogg
+bossmusic	data/music/boss.ogg
 
 ## Load images in this area ##
 
@@ -20,7 +20,8 @@ wall 3615 320 0 0 1520 1520 170 550
 
 hole 1480 310 65 0 985 1055 65
 
-
+stagenumber 1
+spawn1 20 20 0
 order	a
 
 

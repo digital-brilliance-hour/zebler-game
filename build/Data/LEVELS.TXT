@@ -9,37 +9,45 @@
 
 
 
-set	Stage_1
+set	Demo
+skipselect blankP
+file 	data/levels/scenes/intro-story/intro-story.txt
+scene	data/scenes/howto.txt
 
+skipselect Zebler
 z       160 333 173
 file	data/levels/Stage1-1.txt
 
 z       160 270 110
 file	data/levels/Stage1-2.txt
 next
-scene	data/scenes/ending.txt
-
-set Stage_2
-
-file	data/levels/Stage-2.txt
-next
-scene	data/scenes/ending.txt
-
-Set Stage_3
-
-z 50 284 210
-skipselect Keith
-file	data/levels/stage-3.txt
-
-set Story_1
 skipselect blankP
 file 	data/levels/scenes/story1/story1.txt
 
-set Story_3
-skipselect blankP
-file 	data/levels/scenes/story3/story3.txt
+#set Stage_2
 
-set Story_2
-skipselect blankP
-file 	data/levels/scenes/story2/story2.txt
+#file	data/levels/Stage-2.txt
+#next
+
+#Set Stage_3
+
+#z 50 284 210
+#skipselect Keith
+#file	data/levels/stage-3.txt
+
+#set Story_1
+#skipselect blankP
+#file 	data/levels/scenes/story1/story1.txt
+
+#set Story_3
+#skipselect blankP
+#file 	data/levels/scenes/story3/story3.txt
+
+#set Story_2
+#skipselect blankP
+#file 	data/levels/scenes/story2/story2.txt
+
+#set Story_Intro
+#skipselect blankP
+#file 	data/levels/scenes/intro-story/intro-story.txt
 

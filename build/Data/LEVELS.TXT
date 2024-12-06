@@ -18,7 +18,7 @@ skipselect Zebler
 z       160 290 173
 file	data/levels/Stage1-1.txt
 
-z       160 270 110
+z       160 260 110
 file	data/levels/Stage1-2.txt
 next
 skipselect blankP

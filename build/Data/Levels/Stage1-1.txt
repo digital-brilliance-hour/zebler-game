@@ -13,7 +13,7 @@ frontpanel	data/bgs/stage1/frontOld.gif
 
 panel		data/bgs/stage1/stg1-1.gif	
 
-wall 3615 230 210 0 -395 -130 150 550
+wall 3470 230 -210 0 395 130 150 550
 wall 2700 179 -150 0 750 920 150 550
 wall 1435 160 150 0 -1520 -1520 150 550
 wall 3615 320 0 0 1520 1520 170 550

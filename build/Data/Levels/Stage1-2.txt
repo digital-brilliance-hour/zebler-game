@@ -25,7 +25,8 @@ panel		data/bgs/stage1/stg1-2.gif
 # h = Club K neon
 
 wall 2295 220 95 96 1965 1900 150 550
-wall 0 220 290 96 -95 -90 150 550
+wall 0 250 -90 -60 400 90 150 450
+
 # Set the order (don't make the lines too long)
 # Syntax:
 #	order	[a...z]		(a sequence of panels, e.g. abcdefghij)

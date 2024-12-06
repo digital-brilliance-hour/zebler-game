@@ -1,6 +1,6 @@
 name	enbl
 type	pshot
-speedf 0.5
+speedf 3.5
 hostile player
 candamage player
 setlayer 200

@@ -1,7 +1,7 @@
 name	rbldb2
 type	pshot
 health 1
-speedf 0.6
+speedf 3.6
 hostile player
 candamage player shot
 setlayer 200

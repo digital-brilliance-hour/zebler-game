@@ -152,3 +152,4 @@ load	EX	        data/chars/misc3/EX.txt
 load	pings	        data/Chars/Misc/pings.txt
 load	Gleam	        data/Chars/Misc/Gleam.txt
 load    MGShot		data/chars/MetalGear/MGShot.txt
+load	bots		data/chars/bots/bot.txt

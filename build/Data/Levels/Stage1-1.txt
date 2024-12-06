@@ -33,10 +33,6 @@ at 150
 group 1 3
 at 150
 
-spawn	metalgear
-coords	490 180
-at	100
-
 spawn	K'
 coords	490 180
 at	100

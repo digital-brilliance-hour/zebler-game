@@ -17,6 +17,7 @@ noquake	1
 makeinv	5 0	
 running 25 0 0 1 0	
 nolife	1	
+modelflag 1
 load shta
 load wb1
 load wb2	

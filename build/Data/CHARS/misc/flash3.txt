@@ -1,0 +1,11 @@
+name	Flash
+type	none
+toflip 1
+setlayer 200
+anim idle
+	loop	0
+	delay	5
+	offset	15 13
+	frame	data/chars/misc/ff1
+	frame	data/chars/misc/ff2
+	

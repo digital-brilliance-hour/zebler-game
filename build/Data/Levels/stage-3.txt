@@ -66,6 +66,7 @@ at 1000
 
 spawn 	rdias
 health 100
+item pow1
 coords 	530 200
 at	1000	
 
@@ -97,6 +98,7 @@ group  1 10
 at 3000
 
 spawn 	rdias
+item pow1
 health 150
 coords 	530 200
 at	3000	
@@ -134,6 +136,7 @@ group  1 10
 at 5000
 
 spawn 	rdias
+item pow1
 health 150
 coords 	530 50
 at	5000
@@ -181,10 +184,12 @@ at 7000
 
 spawn 	robot
 health 250
+item pow2
 coords 	530 50
 at	7000
 
 spawn 	rdias
+item pow1
 health 50
 coords 	530 200
 at	7000		
@@ -226,6 +231,7 @@ group  1 6
 at 9000
 
 spawn 	rdias
+item pow1
 health 100
 coords 	530 200
 at	9000	
@@ -258,6 +264,7 @@ group  1 10
 at 11000
 
 spawn 	rdias
+item pow1
 health 150
 coords 	530 200
 at	11000	
@@ -295,6 +302,7 @@ group  1 10
 at 13000
 
 spawn 	rdias
+item pow1
 health 150
 coords 	530 50
 at	13000
@@ -342,11 +350,13 @@ at 15000
 
 spawn 	robot
 health 250
+item pow2
 coords 	530 50
 at	15000
 
 spawn 	rdias
 health 50
+item pow1
 coords 	530 200
 at	15000		
 

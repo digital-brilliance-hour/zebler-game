@@ -15,12 +15,7 @@ load rblu
 load rbld
 load rblu2
 load rbld2
-lifebarstatus 219 4 1 1 0 0 -1000 -1000 -1000 -1000
-lifeposition 50 218
-iconposition 51 217
-nameposition 1000 1000  
 AGGRESSION 30
-icon data/chars/misc/enlfb
 animationscript data/scripts/boscript.c
 
 shadow 4

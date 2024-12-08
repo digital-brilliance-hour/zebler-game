@@ -84,7 +84,7 @@ at 230
 group 1 5
 at 230
 
-spawn	Angel
+spawn  Angel
 health  100
 coords	500 240
 at	230
@@ -251,7 +251,7 @@ at	1900
 #others
 
 
-spawn	K'
+spawn   spider
 health  100
 coords	400 180
 at	1900
@@ -270,8 +270,6 @@ spawn	K'
 health  100
 coords	500 200
 at	1900
-
-
 
 spawn	K'
 health  100

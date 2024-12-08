@@ -28,6 +28,10 @@ skipselect Zebler
 Z 298 348
 file	data/levels/Stage-2.txt
 next
+skipselect blankP
+file 	data/levels/scenes/story2/story2.txt
+skipselect blankP
+file 	data/levels/scenes/story3/story3.txt
 
 skipselect blankP
 scene	data/scenes/planehowto.txt

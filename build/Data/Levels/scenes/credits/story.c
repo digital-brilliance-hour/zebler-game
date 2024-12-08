@@ -2,7 +2,7 @@
 
 void main()
 {	
-	scrollText("story-credits.txt",91,0.2,NULL(),0.09);
+	scrollText("story-credits.txt",91,0.2,NULL(),0.04);
 	drawstring(0360,253,1000,"Press Start To Skip");
   
 	float y = getlayerproperty("background", 0, "zoffset");

@@ -30,7 +30,7 @@ panel		data/bgs/stage-2/panel.gif
 #	order	[a...z]
 #
 order a
-stagenumber 3
+stagenumber 2
 
 ## Spawning Area ##
 # Spawn format:

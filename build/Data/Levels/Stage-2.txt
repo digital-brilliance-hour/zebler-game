@@ -1,6 +1,6 @@
 ## Load music in this area ##
-music		data/music/remix.bor
-bossmusic	data/music/menu.bor
+music     data/music/stage2.ogg
+bossmusic data/music/boss2.ogg
 
 ## Load images in this area ##
 
@@ -69,42 +69,382 @@ order a
 # To make them appear normally, use this:
 # group 4 4
 
-
+direction both
 
 #--group1-----
 #1st Wave
-group 1 2
+group 2 3
 at 100
 
-spawn spider
+spawn slug
 health 30
-coords 105 287
+coords -80 287
 at 100
 
-spawn spider
+spawn slug
 health 30
-coords 125 287
+coords 485 287
 at 100
 
-spawn spider
+spawn slug
 health 30
-coords 110 287
+coords 200 330
 at 100
 
 spawn spider
 health 40
-coords 105 287
+coords -80 287
 at 100 
 
 spawn spider
 health 40
-coords 125 287
+coords 485 287
 at 100
 
 spawn spider
 health 40
-coords 110 287
+coords 200 330
 at 100
+
+#2nd Wave
+group 3 5
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords -80 287
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+#3rd Wave
+group 2 4
+at 100
+
+spawn zaku
+health 50
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+item meat
+coords 485 287
+at 100
+
+
+#4th Wave
+group 2 3
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+
+#5th Wave
+group 2 4
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords 485 287
+at 100
+
+spawn spider
+health 40
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords -80 287
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+#6th Wave
+group 2 4
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords 200 330
+at 100
+
+spawn spider
+health 40
+coords 200 330
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords -80 287
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+coords 200 330
+at 100
+
+#7th Wave
+group 2 3
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn slug
+health 30
+item meat
+coords 485 287
+at 100
+
+#Final Wave
+group 2 3
+at 100
+
+spawn metalgear
+alias MV-Red
+health 500
+boss 1
+coords 200 205
+at 100
+
+spawn spider
+alias spider_x2
+health 80
+coords -80 287
+at 100
+
+spawn spider
+alias spider_x2
+health 80
+coords 485 287
+at 100
+
+spawn spider
+alias spider_x2
+health 80
+coords 200 330
+at 100
+
+spawn spider
+alias spider_x2
+health 80
+coords 200 300
+at 100
+
+spawn slug
+alias slug_x2
+health 60
+coords -80 287
+at 100
+
+spawn slug
+alias slug_x2
+health 60
+coords 485 287
+at 100
+
+spawn slug
+alias slug_x2
+health 60
+coords 200 330
+at 100
+
+spawn zaku
+alias zaku_x2
+item meat
+health 100
+coords  -80 287
+at 100
+
+
+
+
+
+
+
+
 
 
 

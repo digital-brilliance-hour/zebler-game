@@ -24,14 +24,11 @@ next
 skipselect blankP
 file 	data/levels/scenes/story1/story1.txt
 
-set Stage_2
-
 skipselect Zebler
 Z 298 348
 file	data/levels/Stage-2.txt
 next
 
-Set Stage_3
 skipselect blankP
 scene	data/scenes/planehowto.txt
 z 50 284 210
@@ -42,20 +39,4 @@ skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
 file 	data/levels/scenes/credits/credits.txt
 
-#set Story_1
-#skipselect blankP
-#file 	data/levels/scenes/story1/story1.txt
-
-#set Story_3
-#skipselect blankP
-#file 	data/levels/scenes/story3/story3.txt
-
-#set Story_2
-#skipselect blankP
-#file 	data/levels/scenes/story2/story2.txt
-
-set Story_Ending
-skipselect blankP
-file 	data/levels/scenes/ending-story/ending-story.txt
-file 	data/levels/scenes/credits/credits.txt
 

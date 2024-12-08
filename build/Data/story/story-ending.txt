@@ -11,8 +11,4 @@ Earth,a_quiet_determination_burns_within: 2
 their_journey_home_is_just_beginning,and 2
 this_tale_of_resilience_will_echo_across 2
 the_galaxy._ 2
-_
-_
-Zebler:_Evade,_Rebuild,Escape! 2
-_
 ___

@@ -1,0 +1,42 @@
+Zebler:_Evade,Rebuild,Escape 2
+_ 
+_ 
+Execute_Producers: 2
+Michael_Eason 2
+Josiah_Laster_ 2
+Caleb_Stowe_ 2
+Angel_Moody_ 2
+Jay_Jere_ 2
+Kevin_Epps_ 2
+_ 
+_ 
+Development_Team:_ 2
+Simone_Mba_ 2
+Bradley_Perry_ 2
+David_Jones_ 2
+_ 
+_ 
+Design_Team:_ 2
+Sharja_Jihan_ 2
+Katie_Ramos_ 2
+_ 
+_ 
+QA_Team:_ 2
+Rodney_Lash_ 2
+Aunre_Hawes_ 2
+Jonathan_Peoples_ 2
+_ 
+_ 
+Music_Team:_ 2
+Violet_Bunbury_ 2
+Artist_name:(platonically) 2
+_ 
+_ 
+Thanks_for_Playing!_ 2
+_ 
+_ 
+Stay_tuned_to_upcoming_updates_on_ 2
+gamejolt.com_or_itch.io_ 2
+_
+_
+___

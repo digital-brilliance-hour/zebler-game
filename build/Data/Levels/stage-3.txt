@@ -12,6 +12,7 @@ order a
 	
 settime         0
 notime          1
+stagenumber 3
 bgspeed         20
 #maxfallspeed	-100
 spawn1          60 0 0

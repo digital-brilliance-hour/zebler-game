@@ -30,13 +30,15 @@ file 	data/levels/scenes/story1/story1.txt
 #next
 
 Set Stage_3
-
+skipselect blankP
+scene	data/scenes/planehowto.txt
 z 50 284 210
 skipselect Keith
 file	data/levels/stage-3.txt
 next
 skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
+file 	data/levels/scenes/credits/credits.txt
 
 #set Story_1
 #skipselect blankP
@@ -53,5 +55,5 @@ file 	data/levels/scenes/ending-story/ending-story.txt
 set Story_Ending
 skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
-file 	data/levels/scenes/ending-story/ending-story.txt
+file 	data/levels/scenes/credits/credits.txt
 

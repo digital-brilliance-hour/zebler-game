@@ -9,6 +9,7 @@ setlayer 250
 anim idle
 	delay 2
 	offset  8 12
+	loop 1 5
 	bbox    0 0 0 0
 	jumpframe 4 0 3 -0.2
 	attack  9 9 17 7 2 1 0 0 0 15
@@ -45,5 +46,3 @@ anim idle
 	frame	data/chars/lloyo/shta6
 	attack2  9 9 17 7 2 1 0 0 0 10
 	frame	data/chars/lloyo/shta6
-	ATTACK  0 0 0 0 0 0
-	frame	data/chars/misc/empty

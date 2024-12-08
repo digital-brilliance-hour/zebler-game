@@ -14,6 +14,7 @@ settime         0
 notime          1
 nopause		1
 nolife 1
+nofadeout 1
 type 2
 stagenumber 13
 #direction left

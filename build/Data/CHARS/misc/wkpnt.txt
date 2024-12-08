@@ -1,0 +1,11 @@
+name	wkpnt
+type	text
+subtype noskip
+toflip 1
+setlayer 300
+facing 1
+anim idle
+	loop	0
+	delay	100
+	offset	107 48
+	frame	data/chars/misc/wkpnt

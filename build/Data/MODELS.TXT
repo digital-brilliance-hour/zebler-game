@@ -109,6 +109,7 @@ load shta1   data/chars/lloyo/shta1.txt
 load shta2   data/chars/lloyo/shta2.txt
 load wb1     data/chars/wybu1/wb1.txt
 load wb2     data/chars/wybu1/wb2.txt
+load wb3     data/chars/wybu1/wb3.txt
 load enbl    data/chars/en1/enbl.txt
 Load blankP Data/Chars/blankP/blankP.txt
 

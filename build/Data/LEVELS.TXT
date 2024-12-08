@@ -53,4 +53,5 @@ file 	data/levels/scenes/ending-story/ending-story.txt
 set Story_Ending
 skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
+file 	data/levels/scenes/ending-story/ending-story.txt
 

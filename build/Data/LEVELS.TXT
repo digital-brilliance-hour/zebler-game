@@ -24,10 +24,12 @@ next
 skipselect blankP
 file 	data/levels/scenes/story1/story1.txt
 
-#set Stage_2
+set Stage_2
 
-#file	data/levels/Stage-2.txt
-#next
+skipselect Zebler
+Z 298 348
+file	data/levels/Stage-2.txt
+next
 
 Set Stage_3
 skipselect blankP

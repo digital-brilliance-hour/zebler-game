@@ -3,7 +3,6 @@ type	enemy
 health	1000
 speed 10
 running 15 0 0 0 0
-nodrop	1
 falldie	1
 nodieblink 2
 jumpheight 0		

@@ -10,6 +10,7 @@
 
 
 set	Demo
+maxplayers 1
 skipselect blankP
 file 	data/levels/scenes/intro-story/intro-story.txt
 scene	data/scenes/howto.txt

@@ -72,6 +72,8 @@ know    Linn        data/chars/linn/linn.txt
 know robot   data/chars/robot/robot.txt
 
 know boss1   data/chars/boss1/boss1.txt
+know q data/chars/q/q.txt
+load q data/chars/q/q.txt
 
 know spider  data/chars/spider/spider.txt
 load robsmal data/chars/robsmal/robsmal.txt

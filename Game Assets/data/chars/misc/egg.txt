@@ -1,0 +1,40 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Egg
+health	30
+type	obstacle
+shadow	0
+icon	data/chars/misc/Eggicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	1
+	delay	100
+	offset	60 80
+#	bbox	8 -30 40 90
+	bbox	20 12 83 74
+	frame	data/chars/misc/Egg1.gif
+	frame	data/chars/misc/Egg1.gif	
+	frame	data/chars/misc/Egg1.gif
+	frame	data/chars/misc/Egg1.gif
+	frame	data/chars/misc/Egg1.gif
+	delay	6
+	frame	data/chars/misc/Egg2.gif
+	frame	data/chars/misc/Egg3.gif
+	frame	data/chars/misc/Egg4.gif
+	frame	data/chars/misc/Egg5.gif
+	frame	data/chars/misc/Egg6.gif
+	frame	data/chars/misc/Egg7.gif
+	frame	data/chars/misc/Egg6.gif
+	frame	data/chars/misc/Egg5.gif
+	frame	data/chars/misc/Egg4.gif
+	frame	data/chars/misc/Egg3.gif
+	frame	data/chars/misc/Egg2.gif
+
+anim fall
+	loop	1
+	delay	1000
+	offset	60 80
+	frame	data/chars/misc/Egg7.gif

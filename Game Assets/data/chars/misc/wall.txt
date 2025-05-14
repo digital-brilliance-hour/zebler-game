@@ -1,0 +1,22 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	wall
+type	obstacle
+health	50000000
+shadow	0
+
+anim idle
+	loop	0
+	delay	1000
+        offset	1 444
+        bbox	0 1 1 1
+	frame	data/chars/misc/wall.gif
+
+anim fall
+	loop	0
+	delay	100
+	frame	data/chars/misc/wall.gif
+
+
+

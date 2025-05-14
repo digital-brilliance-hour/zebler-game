@@ -1,0 +1,108 @@
+#Chest by Kingherb
+
+name	Chest_Buster
+health	50
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/Chest/icon.gif
+
+diesound data/sounds/die1.wav
+
+remap	data/chars/Chest/walk1.gif    data/chars/Chest/alter.gif
+
+
+anim idle
+	loop	1
+	delay	7
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Chest/walk1.gif
+	frame   data/chars/Chest/walk2.gif
+	frame   data/chars/Chest/walk3.gif
+	frame   data/chars/Chest/walk4.gif
+	frame   data/chars/Chest/walk5.gif
+	frame   data/chars/Chest/walk6.gif
+	frame   data/chars/Chest/walk7.gif
+	frame   data/chars/Chest/walk8.gif
+	
+anim walk
+	loop	1
+	delay	7
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Chest/walk1.gif
+	frame   data/chars/Chest/walk2.gif
+	frame   data/chars/Chest/walk3.gif
+	frame   data/chars/Chest/walk4.gif
+	frame   data/chars/Chest/walk5.gif
+	frame   data/chars/Chest/walk6.gif
+	frame   data/chars/Chest/walk7.gif
+	frame   data/chars/Chest/walk8.gif
+
+anim jump
+	loop	0
+	offset	13 26
+	delay	6
+	attack	1 1 26 26 15 1
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+
+anim jumpattack
+	loop	0
+	offset	13 26
+	delay	6
+	attack	1 1 26 26 15 1
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+	frame	data/chars/Chest/jump01.gif
+
+anim pain
+	loop	0
+	offset	104 182
+	bbox	72 90 43 83
+	delay	15
+	frame   data/chars/Chest/walk1.gif
+	frame   data/chars/Chest/walk2.gif
+	frame   data/chars/Chest/walk3.gif
+	frame   data/chars/Chest/walk4.gif
+	frame   data/chars/Chest/walk5.gif
+	frame   data/chars/Chest/walk6.gif
+	frame   data/chars/Chest/walk7.gif
+	frame   data/chars/Chest/walk8.gif
+
+
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/Chest/fall3.gif
+        offset  88 134
+	frame	data/chars/Chest/fall3.gif
+	frame	data/chars/Chest/fall3.gif
+        offset  93 124
+	frame	data/chars/Chest/fall3.gif
+	frame	data/chars/Chest/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	104 182
+	delay	8
+	frame   data/chars/Chest/walk6.gif
+	frame   data/chars/Chest/walk7.gif
+	frame   data/chars/Chest/walk8.gif
+
+anim land
+	loop	0
+	delay	10
+	offset	99 183
+	frame   data/chars/Chest/get1.gif
+

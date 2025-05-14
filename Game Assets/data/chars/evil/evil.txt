@@ -1,0 +1,199 @@
+#Evil by Kingherb, fixed by vicviper
+
+name	Evil_Predator
+health	400
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/Evil/icon.gif
+
+remap	data/chars/Evil/idle1.gif    data/chars/Evil/alter.gif
+
+
+anim idle
+	loop	1
+	delay	100
+	offset	99 183
+	bbox	79 95 40 84
+	frame   data/chars/Evil/idle1.gif
+	frame   data/chars/Evil/idle1.gif
+	delay	500
+	delay	12
+	frame   data/chars/Evil/idle2.gif
+	frame   data/chars/Evil/idle3.gif
+	frame   data/chars/Evil/idle4.gif
+	frame   data/chars/Evil/idle5.gif
+	frame   data/chars/Evil/idle6.gif
+anim walk
+	loop	1
+	delay	5
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Evil/walk1.gif
+	frame   data/chars/Evil/walk2.gif
+	frame   data/chars/Evil/walk3.gif
+	frame   data/chars/Evil/walk4.gif
+	frame   data/chars/Evil/walk5.gif
+	frame   data/chars/Evil/walk6.gif
+	frame   data/chars/Evil/walk7.gif
+	frame   data/chars/Evil/walk8.gif
+	frame   data/chars/Evil/walk9.gif
+	frame   data/chars/Evil/walk10.gif
+	frame   data/chars/Evil/walk11.gif
+	frame   data/chars/Evil/walk12.gif
+
+anim jump
+	loop	0
+	delay	7
+	offset	92 179
+	bbox	75 65 51 79
+	frame   data/chars/Evil/jump1.gif
+        offset  92 164
+	frame   data/chars/Evil/jump2.gif
+        offset  92 144
+	frame   data/chars/Evil/jump3.gif
+	frame   data/chars/Evil/jump4.gif
+	frame   data/chars/Evil/jump5.gif
+	frame   data/chars/Evil/jump6.gif
+        offset  92 176
+        frame   data/chars/Evil/jump7.gif
+
+anim jumpattack
+	loop	0
+	offset	69 125
+	delay	7
+	bbox	56 56 33 61
+        frame   data/chars/Evil/ap1.gif
+        frame   data/chars/Evil/ap2.gif
+        attack  76 55 47 63 7 
+        frame   data/chars/Evil/ap3.gif
+        frame   data/chars/Evil/ap3.gif
+        frame   data/chars/Evil/ap3.gif
+        attack  0 0 0 0 0 
+        frame   data/chars/Evil/ap2.gif
+
+
+anim attack1
+	loop	0
+	delay	6
+	range	10 150
+	offset	95 178
+	bbox	22 102 50 92
+                sound   data/chars/Predator_Warrior/sounds/shot.wav
+	frame	data/chars/Evil/free1.gif
+	frame	data/chars/Evil/free2.gif
+	frame	data/chars/Evil/free3.gif
+	frame	data/chars/Evil/free4.gif
+	frame	data/chars/Evil/free5.gif
+	delay	3
+	attack  110 88 36 84 20 1
+	bbox	25 114 66 78
+	frame	data/chars/Evil/free6.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free7.gif
+	attack  110 80 91 101 20 1
+	frame	data/chars/Evil/free8.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free9.gif
+	attack	67 35 112 58 20 1
+	frame	data/chars/Evil/free10.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free11.gif
+	attack	67 35 112 58 20 1
+	frame	data/chars/Evil/free12.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free13.gif
+	attack  82 86 68 23 7 1
+	frame	data/chars/Evil/free14.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free14.gif
+	attack  82 86 68 23 7 1
+	frame	data/chars/Evil/free15.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free16.gif
+	attack  114 92 64 14 7 1
+	frame	data/chars/Evil/free17.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free18.gif
+	attack  132 91 68 22 7 1
+	frame	data/chars/Evil/free19.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free20.gif
+	attack  149 99 78 60 7 1
+	frame	data/chars/Evil/free21.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free22.gif
+	attack  167 94 79 29 7 1
+	frame	data/chars/Evil/free23.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free23.gif
+	attack  187 97 73 21 7 1
+	frame	data/chars/Evil/free24.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free24.gif
+	attack  182 92 89 29 7 1
+	frame	data/chars/Evil/free25.gif
+	attack  204 95 88 35 7 1
+	frame	data/chars/Evil/free26.gif
+	attack  203 92 108 37 7 1
+	frame	data/chars/Evil/free27.gif
+	attack  211 95 106 50 7 1
+	frame	data/chars/Evil/free28.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Evil/free29.gif
+	frame	data/chars/Evil/free30.gif
+	frame	data/chars/Evil/free31.gif
+	frame	data/chars/Evil/free32.gif
+
+anim attack2
+	loop	0
+	delay	3
+	offset	95 178
+	bbox	80 87 39 83
+        frame   data/chars/Evil/a1-01.gif
+	frame   data/chars/Evil/a1-02.gif
+        attack  108 85 60 35 8
+        frame   data/chars/Evil/a1-03.gif
+        frame   data/chars/Evil/a1-03.gif
+        attack  0 0 0 0 0
+        frame   data/chars/Evil/a1-04.gif
+        frame   data/chars/Evil/a1-04.gif
+
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	15
+	frame	data/chars/Evil/pain1.gif
+	frame	data/chars/Evil/pain2.gif
+	frame	data/chars/Evil/pain1.gif
+
+
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/Evil/fall1.gif
+        offset  88 134
+	frame	data/chars/Evil/fall2.gif
+	frame	data/chars/Evil/fall3.gif
+        offset  93 124
+	frame	data/chars/Evil/fall4.gif
+	frame	data/chars/Evil/fall5.gif
+
+
+anim rise
+	loop	0
+	offset  	93 124
+	delay	9
+	frame	data/chars/Evil/rise1.gif
+   	frame	data/chars/Evil/rise2.gif
+	frame	data/chars/Evil/rise3.gif
+	
+anim land
+	loop	0
+	delay	10
+	offset	93 124
+	frame   data/chars/Evil/rise3.gif

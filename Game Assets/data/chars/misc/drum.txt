@@ -1,0 +1,25 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	drum
+health	30
+type	obstacle
+shadow	1
+diesound data/sounds/klunk.wav
+
+icon	data/chars/misc/drumicon.gif
+
+
+anim idle
+	loop	0
+	delay	100
+	offset	33 71
+	bbox	7 8 52 63
+	frame	data/chars/misc/drum.gif
+
+
+anim fall
+	loop	1
+	delay	1000
+	offset	36 81
+	frame	data/chars/misc/drum2.gif

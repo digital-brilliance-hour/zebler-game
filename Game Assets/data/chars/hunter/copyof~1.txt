@@ -1,0 +1,315 @@
+#P.Hunter by Kingherb, fixed by vicviper
+
+name	P.Hunter
+health	100
+speed	10
+type	player
+shadow	4
+icon	data/chars/P.Hunter/icon.gif
+
+remap	data/chars/P.Hunter/idle1.gif    data/chars/P.Hunter/alter.gif
+
+
+anim idle
+	loop	1
+	delay	100
+	offset	99 183
+	bbox	79 95 40 84
+	frame   data/chars/P.Hunter/idle1.gif
+	frame   data/chars/P.Hunter/idle1.gif
+	delay	500
+	delay	12
+	frame   data/chars/P.Hunter/idle2.gif
+	frame   data/chars/P.Hunter/idle3.gif
+	frame   data/chars/P.Hunter/idle4.gif
+	frame   data/chars/P.Hunter/idle5.gif
+	frame   data/chars/P.Hunter/idle6.gif
+anim walk
+	loop	1
+	delay	5
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/P.Hunter/walk1.gif
+	frame   data/chars/P.Hunter/walk2.gif
+	frame   data/chars/P.Hunter/walk3.gif
+	frame   data/chars/P.Hunter/walk4.gif
+	frame   data/chars/P.Hunter/walk5.gif
+	frame   data/chars/P.Hunter/walk6.gif
+	frame   data/chars/P.Hunter/walk7.gif
+	frame   data/chars/P.Hunter/walk8.gif
+	frame   data/chars/P.Hunter/walk9.gif
+	frame   data/chars/P.Hunter/walk10.gif
+	frame   data/chars/P.Hunter/walk11.gif
+	frame   data/chars/P.Hunter/walk12.gif
+
+anim get
+	loop	0
+	delay	8
+	offset	99 183
+	sound   data/chars/P.Hunter/sounds/get.wav
+	frame   data/chars/P.Hunter/get1.gif
+	frame   data/chars/P.Hunter/get1.gif
+        delay   11
+	frame   data/chars/P.Hunter/get1.gif
+        delay   5
+	frame   data/chars/P.Hunter/get1.gif
+
+
+anim jump
+	loop	0
+	delay	7
+	offset	92 179
+	bbox	75 65 51 79
+	frame   data/chars/P.Hunter/jump1.gif
+        offset  92 164
+	frame   data/chars/P.Hunter/jump2.gif
+        offset  92 144
+	frame   data/chars/P.Hunter/jump3.gif
+	frame   data/chars/P.Hunter/jump4.gif
+	frame   data/chars/P.Hunter/jump5.gif
+	frame   data/chars/P.Hunter/jump6.gif
+        offset  92 176
+        frame   data/chars/P.Hunter/jump7.gif
+
+
+anim jumpattack
+	loop	0
+	offset	66 128
+	delay	7
+	bbox	50 66 42 54
+        frame   data/chars/P.Hunter/ak1.gif
+        delay   20
+        offset  66 127
+        attack  74 82 72 39 12 1
+        frame   data/chars/P.Hunter/ak2.gif
+        frame   data/chars/P.Hunter/ak2.gif
+
+
+
+anim jumpattack2
+	loop	0
+	offset	69 125
+	delay	7
+	bbox	56 56 33 61
+        frame   data/chars/P.Hunter/ap1.gif
+        frame   data/chars/P.Hunter/ap2.gif
+        attack  76 55 47 63 7 
+        frame   data/chars/P.Hunter/ap3.gif
+        frame   data/chars/P.Hunter/ap3.gif
+        frame   data/chars/P.Hunter/ap3.gif
+        attack  0 0 0 0 0 
+        frame   data/chars/P.Hunter/ap2.gif
+
+
+anim attack1
+	loop	0
+	delay	3
+	offset	95 178
+	bbox	80 87 39 83
+        frame   data/chars/P.Hunter/a1-01.gif
+        attack  108 85 60 35 8
+        frame   data/chars/P.Hunter/a1-02.gif
+        frame   data/chars/P.Hunter/a1-02.gif
+        attack  0 0 0 0 0
+        frame   data/chars/P.Hunter/a1-01.gif
+        frame   data/chars/P.Hunter/a1-01.gif
+
+
+anim attack2
+        loop	0
+ 	delay	5
+ 	offset	99 183
+ 	bbox	81 108 39 69
+	frame	data/chars/P.Hunter/a2-01.gif
+	frame	data/chars/P.Hunter/a2-02.gif
+	bbox    32 117
+	frame	data/chars/P.Hunter/a2-03.gif
+	frame	data/chars/P.Hunter/a2-03.gif
+                attack  108 85 60 35 8
+	frame	data/chars/P.Hunter/a2-04.gif
+	frame	data/chars/P.Hunter/a2-05.gif
+	frame	data/chars/P.Hunter/a2-06.gif
+	frame	data/chars/P.Hunter/a2-07.gif
+	attack  93 39 45 115 20 1
+	attack  0 0 0 0 0
+	
+anim attack3
+        loop	0
+ 	delay	4
+        move    4
+ 	offset	99 183
+ 	bbox	81 108 39 69
+	frame	data/chars/P.Hunter/a3-01.gif
+	frame	data/chars/P.Hunter/a3-02.gif
+	bbox    32 117                
+        attack  121 95 108 87 10 0
+	frame	data/chars/P.Hunter/a3-03.gif
+	frame	data/chars/P.Hunter/a3-04.gif
+	attack  0 0 0 0 0
+	frame	data/chars/P.Hunter/a3-05.gif
+	frame	data/chars/P.Hunter/a3-06.gif
+	frame	data/chars/P.Hunter/a3-07.gif
+	attack  121 95 108 87 10 1
+	frame	data/chars/P.Hunter/a3-08.gif
+	frame	data/chars/P.Hunter/a3-09.gif
+	attack  0 0 0 0 0
+	frame	data/chars/P.Hunter/a3-02.gif
+	bbox    32 117                
+        attack  121 95 108 87 10 0
+	frame	data/chars/P.Hunter/a3-03.gif
+	frame	data/chars/P.Hunter/a3-04.gif
+	attack  0 0 0 0 0
+	frame	data/chars/P.Hunter/a3-05.gif
+	frame	data/chars/P.Hunter/a3-06.gif
+	frame	data/chars/P.Hunter/a3-07.gif
+	attack  121 95 108 87 10 1
+	frame	data/chars/P.Hunter/a3-08.gif
+	attack  0 0 0 0 0
+        delay   15
+	frame	data/chars/P.Hunter/a3-09.gif
+       
+anim grab
+	loop	0
+	delay	100
+	offset	98 173
+	bbox	93 90 32 78
+	frame	data/chars/P.Hunter/grab.gif
+
+
+anim throw
+	loop	0
+	delay	6
+	offset	99 183
+	frame	data/chars/P.Hunter/idle1.gif
+	frame	data/chars/P.Hunter/idle1.gif
+	frame	data/chars/P.Hunter/idle1.gif
+        delay   15
+	frame	data/chars/P.Hunter/idle1.gif
+        delay   6
+	frame	data/chars/P.Hunter/idle1.gif
+	frame	data/chars/P.Hunter/idle1.gif
+      	frame	data/chars/P.Hunter/idle1.gif
+
+
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	15
+	frame	data/chars/P.Hunter/pain1.gif
+	frame	data/chars/P.Hunter/pain2.gif
+	frame	data/chars/P.Hunter/pain1.gif
+
+
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/P.Hunter/fall1.gif
+        offset  88 134
+	frame	data/chars/P.Hunter/fall2.gif
+	frame	data/chars/P.Hunter/fall3.gif
+        offset  93 124
+	frame	data/chars/P.Hunter/fall4.gif
+	frame	data/chars/P.Hunter/fall5.gif
+
+
+anim rise
+	loop	0
+	offset  	93 124
+	delay	9
+	frame	data/chars/P.Hunter/rise1.gif
+   	frame	data/chars/P.Hunter/rise2.gif
+	frame	data/chars/P.Hunter/rise3.gif
+	
+anim special
+	loop	0
+	delay	7
+	offset	99 183
+        sound   data/chars/P.Hunter/sounds/special.wav
+	frame	data/chars/P.Hunter/ta01.gif
+        delay   4
+	frame	data/chars/P.Hunter/ta02.gif
+	frame	data/chars/P.Hunter/ta03.gif
+        BLAST   49 52 105 105 25 1
+	frame	data/chars/P.Hunter/ta04.gif
+        	frame	data/chars/P.Hunter/ta05.gif
+	frame	data/chars/P.Hunter/ta06.gif
+	frame	data/chars/P.Hunter/ta07.gif
+	frame	data/chars/P.Hunter/ta08.gif
+	frame	data/chars/P.Hunter/ta09.gif
+	frame	data/chars/P.Hunter/ta10.gif
+	frame	data/chars/P.Hunter/ta11.gif
+	frame	data/chars/P.Hunter/ta12.gif
+        BLAST   0 0 0 0 0 0 
+	frame	data/chars/P.Hunter/ta13.gif
+	frame	data/chars/P.Hunter/ta14.gif
+	frame	data/chars/P.Hunter/ta15.gif
+
+anim freespecial
+        jumpframe 4
+        delay   4
+        offset  91 178
+        frame   data/chars/P.Hunter/sh02.gif
+        frame   data/chars/P.Hunter/sh02.gif
+        frame   data/chars/P.Hunter/sh03.gif
+        attack  109 92 41 43 10 1
+        frame   data/chars/P.Hunter/sh04.gif
+	delay  7
+        attack  0 0 0 0 0 0
+        frame   data/chars/P.Hunter/sh04.gif
+               attack  99 32 45 144 7 1
+        frame   data/chars/P.Hunter/sh05.gif
+        delay   7
+        attack  99 32 45 144 7 1
+        frame   data/chars/P.Hunter/sh05.gif
+        attack  0 0 0 0 0 0
+        frame   data/chars/P.Hunter/sh05.gif
+        frame   data/chars/P.Hunter/sh05.gif
+        frame   data/chars/P.Hunter/sh05.gif
+	bbox	79 95 40 84
+	frame   data/chars/P.Hunter/idle1.gif
+	frame   data/chars/P.Hunter/idle1.gif
+
+   
+anim grabattack
+	loop	0
+	offset	98 173
+	bbox	79 95 41 82
+	delay	7
+	frame	data/chars/P.Hunter/a5-01.gif
+	frame	data/chars/P.Hunter/a5-01.gif
+        attack  104 87 36 46 10 
+	frame	data/chars/P.Hunter/a5-02.gif
+        attack  0 0 0 0 0 
+	frame	data/chars/P.Hunter/a5-01.gif
+
+
+
+anim grabattack2
+	loop	0
+	delay	4
+	offset	98 173
+	bbox	62 95 48 67
+	move        10
+	frame	data/chars/P.Hunter/a7-01.gif
+	frame	data/chars/P.Hunter/a7-01.gif
+	frame	data/chars/P.Hunter/a7-02.gif
+        attack  90 100 59 63 17 1
+	frame	data/chars/P.Hunter/a7-02.gif
+	frame	data/chars/P.Hunter/a7-03.gif
+	frame	data/chars/P.Hunter/a7-03.gif
+        attack  0 0 0 0 0 0
+	delay   10
+	frame	data/chars/P.Hunter/a7-02.gif
+	frame	data/chars/P.Hunter/a7-02.gif
+	frame	data/chars/P.Hunter/a7-01.gif
+
+
+anim land
+	loop	0
+	delay	10
+	offset	99 183
+	frame   data/chars/P.Hunter/get1.gif

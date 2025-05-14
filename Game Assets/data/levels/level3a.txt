@@ -1,0 +1,534 @@
+#level3a
+music		data/music/aliens.bor
+bossmusic	data/music/boss.bor
+
+# Load images
+background	data/bgs/level3a/back.gif
+panel		data/bgs/level3a/front.gif	none	                        none
+frontpanel	data/bgs/level3a/fnt.gif
+#---------------------
+order	aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+
+
+#---Punch some Eggs in the floor---
+
+
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	240 160
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	240 195
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	240 230
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	530 160
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	530 195
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	530 230
+flip	0
+at	0
+
+
+
+#-----It's raining Raiden... Aleluya!---
+
+
+
+wait
+at	250
+
+group	4 4
+at	250
+
+spawn	Alien2
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	Alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	Alien2
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	kingherb
+map	2
+health	100
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	kingherb
+map	2
+health	100
+coords	220 210
+at	250
+
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+
+
+#---Punch some Eggs in the floor---
+
+
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	900 160
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	900 195
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	900 230
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	1190 160
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	1190 195
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	1190 230
+flip	0
+at	0
+
+
+
+#--wait room-----------
+
+spawn	boxb
+item	apple
+coords	610 160
+flip	0
+at	0
+
+spawn	boxb
+item	gold
+coords	730 160
+flip	0
+at	0
+
+spawn	drum
+item	meat
+coords	675 175
+flip	0
+at	0
+
+
+group	5 5
+at	750
+
+wait
+at	750
+
+spawn	Infectoid
+alias	LOLER
+map	2
+health	35
+coords	500 170
+at	750
+
+spawn	Infectoid
+alias	CAPTAIN WOLF
+map	1
+health	75
+coords	500 195
+at	750
+
+spawn	Infectoid
+alias	LOLER
+map	2
+health	35
+coords	500 220
+at	750
+
+spawn	Infectoid
+alias	LOLER
+#map	1
+health	35
+coords	-200 170
+at	750
+
+spawn	Infectoid
+alias	LOLER
+#map	1
+health	35
+coords	-200 220
+at	750
+
+
+
+
+#-----It's raining Chest_Buster... Aleluya!---
+
+
+wait
+at	1150
+
+group	4 4
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest_Buster
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	alien2
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+spawn	alien2
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest_Buster
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+spawn	Chest_Buster
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest_Buster
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest_Buster
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	Chest_Buster
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest_Buster
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+
+#--- Chest_Buster TIME!!!---------------
+wait
+at	1700
+
+group	5 5
+at	1700
+
+spawn	Chest_Buster
+alias	Speed
+health	35
+coords	500 163
+at	1700
+
+spawn	Chest_Buster
+alias	Speed
+health	100
+coords	500 178
+at	1700
+
+spawn	Chest_Buster
+alias	Speed
+health	35
+coords	500 193
+at	1700
+
+spawn	Chest_Buster
+alias	Speed
+health	35
+coords	500 208
+at	1700
+
+spawn	Chest_Buster
+alias	Speed
+health	35
+coords	500 223
+at	1700

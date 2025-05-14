@@ -1,0 +1,683 @@
+music		data/music/level2.bor
+bossmusic	data/music/boss.bor
+
+background	data/bgs/plantc/back.gif
+panel		data/bgs/plantc/front.gif	none	                        none
+
+#---------------------
+order	aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+
+
+#---Punch some Eggs in the floor---
+
+
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	240 160
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	240 195
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	240 230
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	530 160
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	530 195
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	530 230
+flip	0
+at	0
+
+
+
+#-----It's raining Raiden... Aleluya!---
+
+
+
+wait
+at	250
+
+group	4 4
+at	250
+
+spawn	Alien2
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	Alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	Alien2
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	kingherb
+map	2
+health	100
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	kingherb
+map	2
+health	100
+coords	220 210
+at	250
+
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+
+
+#---Punch some Eggs in the floor---
+
+
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	900 160
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	900 195
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	1000
+coords	900 230
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	1190 160
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	1190 195
+flip	0
+at	0
+
+spawn	Egg
+item	apple
+health	1000
+coords	1190 230
+flip	0
+at	0
+
+
+
+#--wait room-----------
+
+spawn	boxb
+item	apple
+coords	610 160
+flip	0
+at	0
+
+spawn	boxb
+item	gold
+coords	730 160
+flip	0
+at	0
+
+spawn	drum
+item	meat
+coords	675 175
+flip	0
+at	0
+
+
+group	5 5
+at	750
+
+wait
+at	750
+
+spawn	Chest
+alias	LOLER
+map	2
+health	35
+coords	500 170
+at	750
+
+spawn	Chest
+alias	CAPTAIN WOLF
+map	1
+health	75
+coords	500 195
+at	750
+
+spawn	Chest
+alias	LOLER
+map	2
+health	35
+coords	500 220
+at	750
+
+spawn	Chest
+alias	LOLER
+#map	1
+health	35
+coords	-200 170
+at	750
+
+spawn	Chest
+alias	LOLER
+#map	1
+health	35
+coords	-200 220
+at	750
+
+
+
+
+#-----It's raining Chest... Aleluya!---
+
+
+wait
+at	1150
+
+group	4 4
+at	1150
+
+spawn	Chest
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+spawn	Chest
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	Chest
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	Chest
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	alien2
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+spawn	alien2
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+spawn	Chest
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+spawn	Chest
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	Chest
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+spawn	alien2
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	1150
+
+spawn	Chest
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	1150
+
+spawn	alien2
+alias	LOLER
+health	35
+coords	100 210
+at	1150
+
+spawn	Chest
+alias	kingherb
+map	2
+health	35
+coords	220 210
+at	1150
+
+
+#--- Chest TIME!!!---------------
+wait
+at	1700
+
+group	5 5
+at	1700
+
+spawn	Chest
+alias	Speed
+health	35
+coords	500 163
+at	1700
+
+spawn	Chest
+alias	Speed
+health	100
+coords	500 178
+at	1700
+
+spawn	Chest
+alias	Speed
+health	35
+coords	500 193
+at	1700
+
+spawn	Chest
+alias	Speed
+health	35
+coords	500 208
+at	1700
+
+spawn	Chest
+alias	Speed
+health	35
+coords	500 223
+at	1700
+
+
+
+
+#---Punch some Eggs in the floor---
+
+
+spawn	Egg
+item	apple
+flip	1
+health	35
+coords	400 160
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	400 195
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	400 230
+at	0
+
+spawn	Egg
+item	meat
+flip	1
+health	35
+coords	450 180
+at	0
+
+spawn	Egg
+item	1up
+flip	1
+health	35
+coords	450 195
+at	0
+
+spawn	Egg
+item	money
+flip	1
+health	35
+coords	450 210
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	500 160
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	35
+coords	500 195
+at	0
+
+spawn	Egg
+item	gold
+flip	1
+health	35
+coords	500 230
+at	0
+
+spawn	Egg
+item	meat
+flip	1
+health	35
+coords	550 180
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	550 195
+at	0
+
+spawn	Egg
+item	1up
+flip	1
+health	35
+coords	550 210
+at	0
+spawn	Egg
+flip	1
+health	35
+coords	600 160
+at	0
+
+spawn	Egg
+item	money
+flip	1
+health	35
+coords	600 195
+at	0
+
+spawn	Egg
+item	gold
+flip	1
+health	35
+coords	600 230
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	650 180
+at	0
+
+spawn	Egg
+item	money
+flip	1
+health	35
+coords	650 195
+at	0
+
+spawn	Egg
+item	meat
+flip	1
+health	35
+coords	650 210
+at	0
+
+
+wait
+at	2500
+
+spawn	chry
+boss	1
+alias	kingherb
+map	2
+health	700
+coords	400 195
+at	2500
+
+spawn	Chest
+alias	kingherb
+map	1
+health	500
+coords	1600 210
+at	2500
+
+spawn	Chest
+alias	kingherb
+map	1
+health	500
+coords	-500 175
+at	2500

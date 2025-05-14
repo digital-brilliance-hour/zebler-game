@@ -1,0 +1,67 @@
+
+
+# Required objects. These must always be loaded.
+load	Flash		data/chars/misc/flash.txt
+
+# Players must also be loaded.
+load	P.Warrior		data/chars/Warior/Warior.txt
+load	Lt.Kurosawa	data/chars/Kurosa/Kurosa.txt	
+load	P.Hunter      	data/chars/Hunter/Hunter.txt		
+
+# Items and other objects can be loaded when needed.
+know	apple		data/chars/misc/apple.txt
+know	Meat		data/chars/misc/meat.txt
+know	1up		data/chars/misc/1up.txt
+know	Money		data/chars/misc/money.txt
+know	Gold		data/chars/misc/gold.txt
+know	Time		data/chars/misc/time.txt
+know	Hotdog		data/chars/misc/Hotdog.txt
+know	Pizza		data/chars/misc/Pizza.txt
+know	Burger		data/chars/misc/Burger.txt
+know	Porker		data/chars/misc/Porker.txt
+know	Beefsteak		data/chars/misc/Beef.txt
+know	sea_bream	data/chars/misc/Bream.txt
+know	Ham		data/chars/misc/Ham.txt
+know	rain		data/chars/misc/rain.txt
+know	fire		data/chars/misc/fire.txt
+
+# Obstacles (item containers)
+know    	wall           	data/chars/misc/wall.txt
+know    	Body1            	data/chars/misc/Body1.txt
+know    	Body2            	data/chars/misc/Body2.txt
+know	Egg		data/chars/misc/Egg.txt
+know	Box		data/chars/misc/box.txt
+know	boxb		data/chars/misc/boxb.txt
+know	ad		data/chars/misc/ad.txt
+know	phone		data/chars/misc/phone.txt
+know	Crate		data/chars/misc/crate.txt
+know	Trash		data/chars/misc/trash.txt
+know	Table		data/chars/misc/table.txt
+know	Chair		data/chars/misc/chair.txt
+know	Fence		data/chars/misc/fence.txt
+know	Drum		data/chars/misc/drum.txt
+know	Trolly		data/chars/misc/trolly.txt
+
+# Enemies
+know	alien1		data/chars/alien1/alien1.txt
+know	Alien2		data/chars/Alien2/Alien2.txt
+know	Alien3		data/chars/Alien3/Alien3.txt						
+know	Alien4		data/chars/Alien4/Alien4.txt
+know	Alien5		data/chars/Alien5/Alien5.txt
+know	Alien6		data/chars/Alien6/Alien6.txt
+know	Face_Hugger	data/chars/Hugger/Hugger.txt
+know	Chest_Buster	data/chars/Chest/Chest.txt
+know	Infectoid		data/chars/Infect/Infect.txt	
+know	Evil_Predator	data/chars/Evil/Evil.txt
+know	RAMON		data/chars/RAMON/RAMON.txt
+know	Chrysalis		data/chars/Chrys/Chrys.txt
+know	Royal_Gaurd	data/chars/Royal/Royal.txt
+know	Razor_Claws	data/chars/Razor/Razor.txt
+know	Queen		data/chars/Queen/Queen.txt
+
+# Other stuff
+know	bender		data/chars/misc/bender.txt
+know	Steam		data/chars/misc/steam.txt
+know	Steamer		data/chars/misc/steamer.txt
+know	Furnace		data/chars/misc/furnace.txt
+

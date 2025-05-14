@@ -1,0 +1,350 @@
+#Kurosa by Kingherb, fixed by vicviper
+
+name	Lt.Kurosawa
+health	100
+speed	10
+type	player
+shadow	4
+icon	data/chars/Kurosa/icon.gif
+
+diesound data/sounds/die3.wav
+
+remap	data/chars/Kurosa/idle1.gif    data/chars/Kurosa/alter.gif
+
+
+anim idle
+	loop	1
+	delay	100
+	offset	104 182
+	bbox	79 95 40 84
+	frame   data/chars/Kurosa/idle1.gif
+	frame   data/chars/Kurosa/idle1.gif
+	delay	500
+	delay	12
+	frame   data/chars/Kurosa/idle2.gif
+	frame   data/chars/Kurosa/idle3.gif
+	frame   data/chars/Kurosa/idle4.gif
+	frame   data/chars/Kurosa/idle3.gif
+	frame   data/chars/Kurosa/idle2.gif
+	frame   data/chars/Kurosa/idle5.gif
+	frame   data/chars/Kurosa/idle6.gif
+	frame   data/chars/Kurosa/idle5.gif
+	
+anim walk
+	loop	1
+	delay	5
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Kurosa/walk1.gif
+	frame   data/chars/Kurosa/walk2.gif
+	frame   data/chars/Kurosa/walk3.gif
+	frame   data/chars/Kurosa/walk4.gif
+	frame   data/chars/Kurosa/walk5.gif
+	frame   data/chars/Kurosa/walk6.gif
+	frame   data/chars/Kurosa/walk7.gif
+	frame   data/chars/Kurosa/walk8.gif
+	frame   data/chars/Kurosa/walk9.gif
+	frame   data/chars/Kurosa/walk10.gif
+	frame   data/chars/Kurosa/walk11.gif
+	frame   data/chars/Kurosa/walk12.gif
+
+anim get
+	loop	0
+	delay	8
+	offset	99 183
+	sound   data/chars/Kurosa/sounds/get.wav
+	frame   data/chars/Kurosa/get1.gif
+	frame   data/chars/Kurosa/get1.gif
+        delay   11
+	frame   data/chars/Kurosa/get1.gif
+        delay   5
+	frame   data/chars/Kurosa/get1.gif
+
+anim jump
+	loop	0
+	delay	7
+	offset	92 179
+	bbox	75 65 51 79
+	frame   data/chars/Kurosa/jump1.gif
+        offset  92 164
+	frame   data/chars/Kurosa/jump2.gif
+        offset  92 144
+	frame   data/chars/Kurosa/jump3.gif
+	frame   data/chars/Kurosa/jump4.gif
+	frame   data/chars/Kurosa/jump5.gif
+	frame   data/chars/Kurosa/jump6.gif
+	delay	1
+        offset  92 176
+        frame   data/chars/Kurosa/jump7.gif
+
+anim jumpattack
+	loop	0
+	offset	66 128
+	delay	7
+	bbox	50 66 42 54
+        frame   data/chars/Kurosa/ak1.gif
+        delay   20
+        offset  66 127
+        attack  74 82 72 39 12 1
+        frame   data/chars/Kurosa/ak2.gif
+        frame   data/chars/Kurosa/ak2.gif
+
+anim jumpattack2
+	loop	0
+	offset	69 125
+	delay	7
+	bbox	56 56 33 61
+        frame   data/chars/Kurosa/ap1.gif
+        frame   data/chars/Kurosa/ap2.gif
+        attack  76 55 47 63 10 
+        frame   data/chars/Kurosa/ap3.gif
+        frame   data/chars/Kurosa/ap3.gif
+        frame   data/chars/Kurosa/ap3.gif
+        attack  0 0 0 0 0 
+        frame   data/chars/Kurosa/ap2.gif
+
+anim attack1
+	loop	0
+	delay	3
+	offset	104 182
+	bbox	80 87 39 83
+        frame   data/chars/Kurosa/a1-01.gif
+        attack  108 85 60 35 10
+        frame   data/chars/Kurosa/a1-02.gif
+        frame   data/chars/Kurosa/a1-02.gif
+        attack  0 0 0 0 0
+        frame   data/chars/Kurosa/a1-01.gif
+        frame   data/chars/Kurosa/a1-01.gif
+
+anim attack2
+        loop	0
+ 	delay	5
+ 	offset	99 183
+ 	bbox	81 108 39 69
+	frame	data/chars/Kurosa/a2-01.gif
+	frame	data/chars/Kurosa/a2-02.gif
+	bbox    32 117
+	frame	data/chars/Kurosa/a2-03.gif
+	frame	data/chars/Kurosa/a2-03.gif
+                attack  108 85 60 35 10
+	frame	data/chars/Kurosa/a2-04.gif
+	frame	data/chars/Kurosa/a2-05.gif
+	frame	data/chars/Kurosa/a2-06.gif
+	frame	data/chars/Kurosa/a2-07.gif
+	attack  93 39 45 115 20 1
+	attack  0 0 0 0 0
+	
+anim attack3
+                delay   3
+        offset   104 182
+        sound   data/chars/Kurosa/sounds/at3.wav
+        frame   data/chars/Kurosa/b01.gif
+        frame   data/chars/Kurosa/b02.gif
+        frame   data/chars/Kurosa/b03.gif
+        attack  109 92 41 43 20 1
+        frame   data/chars/Kurosa/b04.gif
+        delay   19
+        attack  99 32 45 144 20 1
+        frame   data/chars/Kurosa/b05.gif
+        delay   7
+        frame   data/chars/Kurosa/b05.gif
+        frame   data/chars/Kurosa/b05.gif
+        attack  0 0 0 0 0 0
+        frame   data/chars/Kurosa/b06.gif
+        frame   data/chars/Kurosa/b07.gif
+        frame   data/chars/Kurosa/b08.gif
+	frame   data/chars/Kurosa/b09.gif
+        frame   data/chars/Kurosa/bx10.gif
+       
+anim grab
+	loop	0
+	delay	100
+	offset	104 182
+	bbox	93 90 32 78
+	frame	data/chars/Kurosa/grab.gif
+
+anim throw
+	loop	0
+	delay	6
+        offset   92 179
+        frame   data/chars/Kurosa/b4.gif
+	delay	35
+        frame   data/chars/Kurosa/b5.gif
+
+
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	15
+	frame	data/chars/Kurosa/pain1.gif
+	frame	data/chars/Kurosa/pain2.gif
+	frame	data/chars/Kurosa/pain1.gif
+
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/Kurosa/fall1.gif
+        offset  88 134
+	frame	data/chars/Kurosa/fall2.gif
+	frame	data/chars/Kurosa/fall3.gif
+        offset  93 124
+	frame	data/chars/Kurosa/fall4.gif
+	frame	data/chars/Kurosa/fall5.gif
+
+
+anim rise
+	loop	0
+	offset  	93 124
+	delay	9
+	frame	data/chars/Kurosa/rise1.gif
+   	frame	data/chars/Kurosa/rise2.gif
+	frame	data/chars/Kurosa/rise3.gif
+	frame	data/chars/Kurosa/rise4.gif
+
+anim special
+        move 15
+        delay   5
+        offset   92 179
+        sound   data/chars/Kurosa/sounds/freespecial.wav
+        frame   data/chars/Kurosa/b1.gif
+        frame   data/chars/Kurosa/b2.gif
+        frame   data/chars/Kurosa/b3.gif
+        attack  109 92 41 43 20 1
+        frame   data/chars/Kurosa/b4.gif
+        frame   data/chars/Kurosa/b5.gif
+        frame   data/chars/Kurosa/b6.gif
+        frame   data/chars/Kurosa/b7.gif
+        frame   data/chars/Kurosa/b8.gif
+        frame   data/chars/Kurosa/b9.gif
+        attack  99 32 45 144 20 1
+        frame   data/chars/Kurosa/b12.gif
+        frame   data/chars/Kurosa/b13.gif
+        frame   data/chars/Kurosa/b14.gif
+        attack  0 0 0 0 0 0
+
+anim freespecial
+	loop	0
+	delay	3
+	offset	104 182
+        sound           data/chars/Kurosa/sounds/special.wav
+	frame	data/chars/Kurosa/ta01.gif
+	frame	data/chars/Kurosa/ta02.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta03.gif
+        attack   49 52 105 105 5
+	frame	data/chars/Kurosa/ta04.gif
+        attack   0 0 0 0 0 0 
+       	frame	data/chars/Kurosa/ta05.gif
+        attack  147 145 53 55 5
+	frame	data/chars/Kurosa/ta06.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta07.gif
+        attack   145 127 79 62 5
+	frame	data/chars/Kurosa/ta08.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta09.gif
+        attack   49 52 105 105 5
+	frame	data/chars/Kurosa/ta10.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta11.gif
+        attack   133 113 125 71 5
+	frame	data/chars/Kurosa/ta12.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta13.gif
+        attack  147 112 155 82 5
+	frame	data/chars/Kurosa/ta14.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta15.gif
+        attack  163 109 158 79 5
+	frame	data/chars/Kurosa/ta16.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta17.gif
+        attack  135 100 200 82 5 1
+	frame	data/chars/Kurosa/ta18.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta19.gif
+        attack  134 100 217 55 5 1
+	frame	data/chars/Kurosa/ta20.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta21.gif
+        attack  137 109 204 52 5 1
+	frame	data/chars/Kurosa/ta22.gif
+        attack   0 0 0 0 0 0 
+	frame	data/chars/Kurosa/ta23.gif
+	offset	104 182
+        delay   50
+	frame	data/chars/Kurosa/ta00.gif
+
+anim grabattack
+	loop	0
+	offset	34 60
+	bbox	79 95 41 82
+	delay	5
+	frame	data/chars/Kurosa/ga1.gif
+	offset	25 53
+	frame	data/chars/Kurosa/ga2.gif
+	offset	24 53
+        attack  38 4 34 20 10 
+	frame	data/chars/Kurosa/ga3.gif
+	offset	25 53
+	frame	data/chars/Kurosa/ga2.gif
+	offset	34 60
+	bbox	79 95 41 82
+	frame	data/chars/Kurosa/ga1.gif
+
+anim grabattack2
+        move   6
+	delay   4
+	offset  37 67
+	 sound   data/chars/Kurosa/sounds/gat2.wav
+	frame   data/chars/Kurosa/k1.gif
+	offset  51 80
+	frame   data/chars/Kurosa/k2.gif
+	offset  70 92
+	attack  53 12 34 52 10
+	frame   data/chars/Kurosa/k3.gif
+	offset  71 100
+	attack  0
+	frame   data/chars/Kurosa/k4.gif
+	offset  67 110
+	frame   data/chars/Kurosa/k5.gif
+	offset  77 115
+	frame   data/chars/Kurosa/k6.gif
+	offset  53 135
+	delay   5
+	attack  49 76 26 73 10 1
+	frame   data/chars/Kurosa/k7.gif
+	offset  53 140
+	frame   data/chars/Kurosa/k7.gif
+	offset  53 145
+	frame   data/chars/Kurosa/k7.gif
+	offset  53 150
+	frame   data/chars/Kurosa/k7.gif
+	offset  53 155
+	frame   data/chars/Kurosa/k7.gif
+	offset  53 160
+	frame   data/chars/Kurosa/k7.gif
+        move    0
+	offset  47 150
+	attack  0
+	frame   data/chars/Kurosa/k8.gif
+	offset  47 135
+	attack  0
+	frame   data/chars/Kurosa/k8.gif
+	offset  47 125
+	frame   data/chars/Kurosa/k8.gif
+	offset  47 115
+	frame   data/chars/Kurosa/k8.gif
+	offset  29  62
+	frame   data/chars/Kurosa/k9.gif
+
+anim land
+	loop	0
+	delay	10
+	offset	99 183
+	frame   data/chars/Kurosa/get1.gif
+

@@ -1,0 +1,30 @@
+# Do not forget to name your character.
+# Health is optional.
+
+name	Body1
+health	1
+type	obstacle
+shadow	0
+
+
+anim idle
+	loop	1
+	delay	100
+	offset	60 80
+#	bbox	8 -30 40 90
+	bbox	20 12 83 74
+	frame	data/chars/misc/Body1a.gif
+	delay	12
+	frame	data/chars/misc/Body1b.gif	
+	frame	data/chars/misc/Body1a.gif
+	frame	data/chars/misc/Body1b.gif
+	frame	data/chars/misc/Body1a.gif
+	frame	data/chars/misc/Body1b.gif	
+	frame	data/chars/misc/Body1a.gif
+	frame	data/chars/misc/Body1b.gif
+	frame	data/chars/misc/Body1a.gif
+anim fall
+	loop	1
+	delay	1000
+	offset	60 80
+	frame	data/chars/misc/Body1a.gif

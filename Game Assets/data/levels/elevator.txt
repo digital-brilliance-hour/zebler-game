@@ -1,0 +1,368 @@
+# Elevator
+direction	up
+music		data/music/level1.bor
+background	data/bgs/elevator/back.gif
+panel		data/bgs/elevator/platform.gif	data/bgs/elevator/lights.gif none
+order		a
+endhole		1
+
+
+spawn	Drum
+item	meat
+coords	210 161
+at	0
+
+spawn	Drum
+2pitem	meat
+coords	160 160
+at	0
+
+spawn	Time
+coords	60 160
+at	0
+
+group	1 2
+at	0
+
+spawn	alien1
+alias	Prissy
+coords	20 180
+health	100
+at	100
+
+spawn	alien1
+alias	Prissy
+map	1
+coords	10 210
+health	100
+at	0
+
+spawn	alien1
+alias	Johnny
+map	1
+coords	30 230
+health	100
+at	0
+
+group	1 1
+at	0
+
+# Ha-ha!
+spawn	Ramon
+map	3
+coords	280 170
+at	0
+
+group	1 3
+at	0
+
+spawn	alien1
+alias	Prissy
+coords	200 200
+health	100
+at	0
+
+spawn	alien1
+map	1
+alias	Rolfie
+coords	10 170
+health	100
+at	0
+
+spawn	alien1
+map	0
+alias	Pete
+coords	20 230
+health	100
+at	0
+
+group	2 4
+at	0
+
+spawn	alien1
+map	1
+coords	100 160
+health	50
+at	0
+
+spawn	alien1
+map	0
+coords	-60 160
+health	50
+at	0
+
+spawn	alien1
+map	1
+coords	180 220
+health	50
+at	0
+
+spawn	alien1
+map	0
+coords	180 180
+health	50
+at	0
+
+spawn	alien1
+map	1
+coords	-60 200
+health	50
+at	0
+
+group	4 4
+at	0
+
+spawn	alien1
+map	0
+coords	100 160
+health	60
+at	0
+
+spawn	alien1
+map	1
+coords	-60 160
+health	100
+at	0
+
+spawn	alien1
+map	0
+coords	10 220
+health	100
+at	0
+
+spawn	alien1
+coords	10 190
+health	60
+at	0
+
+spawn	alien1
+map	1
+coords	-60 -160
+health	50
+at	0
+
+spawn	alien1
+map	0
+coords	180 200
+health	100
+at	0
+
+
+group	1 3
+at	0
+
+spawn	alien1
+map	1
+coords	20 230
+health	100
+at	0
+
+spawn	alien1
+map	0
+coords	240 170
+health	100
+at	0
+
+spawn	alien1
+map	1
+coords	-60 230
+health	120
+at	0
+
+
+spawn	alien1
+map	0
+coords	-60 160
+health	120
+at	0
+
+spawn	alien1
+map	1
+coords	-60 190
+health	100
+at	0
+
+spawn	alien1
+map	0
+coords	-60 220
+health	100
+at	0
+
+spawn	alien1
+map	1
+coords	-60 160
+health	100
+at	0
+
+spawn	alien1
+map	0
+coords	100 160
+health	100
+at	0
+
+spawn	alien1
+alias	Buzzard
+map	1
+coords	-60 160
+health	120
+at	0
+
+spawn	alien1
+alias	Ibis
+map	0
+coords	-60 200
+health	120
+at	0
+
+spawn	alien1
+map	1
+coords	180 200
+health	50
+at	0
+
+spawn	alien1
+map	0
+coords	180 220
+health	50
+at	0
+
+
+group	5 5
+at	0
+
+spawn	alien1
+map	1
+coords	180 175
+health	70
+at	0
+
+spawn	alien1
+map	0
+coords	180 200
+health	50
+at	0
+
+spawn	alien1
+map	1
+coords	180 230
+health	50
+at	0
+
+spawn	alien1
+map	0
+coords	10 220
+health	50
+at	0
+
+spawn	alien1
+map	1
+coords	10 185
+health	70
+at	0
+
+spawn	alien1
+map	0
+coords	100 210
+health	80
+at	0
+
+spawn	alien1
+map	1
+coords	100 180
+health	80
+at	0
+
+spawn	alien1
+map	0
+coords	180 230
+health	100
+at	0
+
+spawn	alien1
+map	1
+coords	10 160
+health	100
+at	0
+
+spawn	alien1
+map	0
+coords	100 230
+health	90
+at	0
+
+spawn	alien1
+map	1
+coords	100 160
+health	90
+at	0
+
+spawn	alien1
+map	0
+coords	100 200
+health	90
+at	0
+
+group	1 4
+at	0
+
+spawn	alien1
+map	1
+coords	100 160
+health	100
+at	0
+
+spawn	alien1
+coords	110 180
+health	100
+at	0
+
+spawn	alien1
+map	1
+coords	90 200
+health	100
+at	0
+
+spawn	alien1
+coords	10 220
+health	100
+at	0
+
+spawn	alien1
+coords	-30 230
+health	120
+at	0
+
+spawn	alien1
+map	1
+coords	-30 170
+health	120
+at	0
+
+spawn	alien1
+coords	20 220
+health	60
+at	0
+
+spawn	alien1
+map	1
+coords	20 190
+health	60
+at	0
+
+
+
+
+group	3 3
+at	0
+
+spawn	alien1
+map	1
+coords	-60 200
+health	100
+at	0
+
+spawn	alien1
+map	2
+coords	10 170
+health	100
+at	0

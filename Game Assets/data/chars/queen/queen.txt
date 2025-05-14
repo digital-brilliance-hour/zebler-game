@@ -1,0 +1,88 @@
+Name	Queen
+health	150
+type	enemy
+shadow	5
+speed	1
+
+icon	data/chars/Queen/icon.gif
+diesound data/sounds/bossdie.wav
+#remap	data/chars/Queen/idle1.gif data/chars/Queen/alter.gif
+
+
+anim idle
+	loop	1
+	offset	32 223
+	delay	5
+        	frame	data/chars/Queen/idle1.gif
+	
+	
+anim walk
+	loop	1
+	offset	32 223
+bbox	42 45 87 155
+delay	100
+frame	data/chars/Queen/walk.gif
+delay	10
+frame	data/chars/Queen/walk.gif
+attack	62 65 107 175 40
+frame	data/chars/Queen/walk.gif
+frame	data/chars/Queen/walk.gif
+attack	62 65 107 175 40
+frame	data/chars/Queen/walk.gif
+	
+anim attack1
+	range	10 200
+	loop	0
+	delay	5
+        bbox	62 65 107 175
+	attack	62 65 107 175 40
+	offset	32 223
+        frame	data/chars/Queen/at1.gif
+        frame	data/chars/Queen/at2.gif 
+        frame	data/chars/Queen/at2.gif 
+        attack  0 0 0 0 0
+        frame	data/chars/Queen/at3.gif 
+
+anim attack2
+	range	10 200
+	loop	0
+	delay	5
+        bbox	62 65 107 175
+	attack	62 65 107 175 40
+	offset	32 223
+        frame	data/chars/Queen/at4.gif
+        frame	data/chars/Queen/at5.gif 
+        attack  0 0 0 0 0
+        frame	data/chars/Queen/at5.gif 
+	
+anim pain
+	loop	0
+	offset	32 223
+	bbox	33 7 57 84
+	delay	20
+	frame	data/chars/Queen/pain.gif
+anim fall
+	loop	0
+	offset	32 223
+#	attack	
+	delay	20
+	frame	data/chars/Queen/fall.gif
+                
+
+anim rise
+	loop	0
+#	attack	
+        bbox	34 9 19 93
+	delay	30
+        offset	32 223
+	  sound	data/chars/Queen/hiss.wav
+	frame	data/chars/Queen/idle1.gif
+              
+anim land
+	loop	0
+	offset	18 50
+    	 offset	32 223
+	bbox	34 9 19 93
+	delay	30
+	frame	data/chars/Queen/idle1.gif
+	

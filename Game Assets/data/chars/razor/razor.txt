@@ -1,0 +1,90 @@
+name	Razor_Claws
+health	300
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/Razor/icon.gif
+diesound data/sounds/die2.wav
+
+#remap	data/chars/Razor/idle03.gif data/chars/Razor/alt1.gif
+#remap	data/chars/Razor/idle03.gif data/chars/Razor/alt2.gif
+
+anim idle
+	loop	1
+	offset	245 197
+	bbox	185 108 108 94
+	delay	15
+	frame	data/chars/Razor/idle01.gif
+	frame	data/chars/Razor/idle02.gif
+	frame	data/chars/Razor/idle03.gif
+	frame	data/chars/Razor/idle04.gif
+	
+anim walk
+	loop	1
+	offset	245 197
+	bbox	179 104 117 105
+	delay	10
+	frame	data/chars/Razor/walk1.gif
+	frame	data/chars/Razor/walk2.gif
+	frame	data/chars/Razor/walk3.gif
+	frame	data/chars/Razor/walk4.gif
+	frame	data/chars/Razor/walk5.gif
+	frame	data/chars/Razor/walk6.gif
+			
+anim pain
+	loop	0
+	offset	245 197
+	bbox	195 99 93 103
+	delay	8
+	frame	data/chars/Razor/pain00.gif
+	delay	30
+	frame	data/chars/Razor/pain00.gif
+	delay	8
+	frame	data/chars/Razor/pain00.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	105 170
+#	attack	28 158 213 53 15 1
+	move 	-40
+        bbox    28 158 213 53 15 1
+	frame	data/chars/Razor/fall1.gif
+	attack	28 108 129 99 15 1
+	frame	data/chars/Razor/fall2.gif
+	attack	39 109 129 99 15 1
+	offset	105 200
+        bbox    0 0 0 0 0 0
+	frame	data/chars/Razor/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	245 197
+	delay	20
+	frame	data/chars/Razor/idle01.gif
+	frame	data/chars/Razor/idle01.gif
+	frame	data/chars/Razor/idle01.gif
+
+
+anim attack1
+range	10 140
+	loop	0
+	delay	7
+	offset	245 197
+	bbox	18 13 42 107
+	sound	data/chars/Razor/TIGER.wav
+	frame   data/chars/Razor/sh01.gif
+        	frame   data/chars/Razor/sh01.gif
+	bbox	36 5 36 118
+	attack	176 83 88 138 50
+	frame   data/chars/Razor/sh02.gif
+	frame   data/chars/Razor/sh02.gif
+                frame   data/chars/Razor/sh03.gif
+	frame   data/chars/Razor/sh04.gif
+	frame   data/chars/Razor/sh05.gif
+                frame   data/chars/Razor/sh06.gif
+	frame   data/chars/Razor/sh06.gif
+	frame   data/chars/Razor/sh07.gif
+	attack  0 0 0 0 0 
+

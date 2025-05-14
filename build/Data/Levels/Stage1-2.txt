@@ -84,12 +84,12 @@ at 230
 group 1 5
 at 230
 
-spawn  Angel
+spawn  MakiE
 health  100
 coords	500 240
 at	230
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	500 200
 at	230
@@ -135,7 +135,7 @@ health  100
 coords	400 180
 at	840
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	400 240
 at	840
@@ -145,7 +145,7 @@ health  100
 coords	500 240
 at	840
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	500 200
 at	840
@@ -158,17 +158,17 @@ at 1140
 group 1 5
 at 1140	
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	400 180
 at	1140
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	500 240
 at	1140
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	200 200
 at	1140
@@ -191,7 +191,7 @@ health  100
 coords	400 240
 at	1420
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	400 180
 at	1420
@@ -201,7 +201,7 @@ health  100
 coords	500 240
 at	1420
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	500 200
 at	1420
@@ -224,7 +224,7 @@ health  100
 coords	400 240
 at	1750
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	500 240
 at	1750
@@ -261,7 +261,7 @@ health  100
 coords	400 240
 at	1900
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	500 240
 at	1900
@@ -281,7 +281,7 @@ health  100
 coords	400 240
 at	1900
 
-spawn	Angel
+spawn	MakiE
 health  100
 coords	530 240
 at	1900

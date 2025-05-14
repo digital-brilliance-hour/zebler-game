@@ -1,0 +1,271 @@
+# level1a
+music		data/music/pred2.BOR
+
+# Load images
+background	data/bgs/level1a/back.gif
+panel		data/bgs/level1a/front.gif	none	                        none
+
+order	a
+
+spawn	phone
+2pitem	apple
+coords	160 230
+at	0
+
+spawn	phone
+item	Money
+coords	200 220
+at	0
+
+spawn	phone
+coords	380 220
+at	1
+
+spawn	ad
+flip	1
+coords	380 170
+at	1
+
+spawn	ad
+coords	380 210
+at	1
+
+spawn	Alien1
+map	1
+coords	350 160
+at	1
+
+spawn	Alien1
+map	2
+coords	-30 230
+at	1
+
+spawn	Alien1
+map	1
+coords	350 160
+at	1
+
+spawn	Alien1
+map	2
+coords	-30 230
+at	1
+
+spawn	Alien1
+map	1
+coords	350 160
+at	1
+
+spawn	Alien1
+map	2
+coords	-30 230
+at	1
+
+wait
+at	100
+
+
+spawn	alien2
+coords	-50 220
+at	190
+
+spawn	Alien1
+coords	350 170
+at	190
+
+spawn	alien2
+coords	350 220
+at	190
+
+spawn	alien2
+coords	-50 220
+at	190
+
+spawn	Alien1
+coords	350 170
+at	190
+
+spawn	alien2
+coords	350 220
+at	190
+
+spawn	alien2
+coords	-50 220
+at	190
+
+spawn	Alien1
+coords	350 170
+at	190
+
+spawn	alien2
+coords	350 220
+at	190
+
+
+wait
+at	200
+
+
+spawn	alien2
+map	1
+coords	350 180
+at	280
+
+spawn	Alien1
+map	1
+coords	350 230
+at	280
+
+spawn	alien2
+map	1
+coords	-50 180
+at	280
+
+spawn	alien2
+map	0
+coords	-50 230
+at	280
+
+
+spawn	alien2
+map	1
+coords	350 180
+at	280
+
+spawn	Alien1
+map	1
+coords	350 230
+at	280
+
+spawn	alien2
+map	1
+coords	-50 180
+at	280
+
+spawn	alien2
+map	0
+coords	-50 230
+at	280
+
+wait
+at	310
+
+group	3 3
+at	320
+
+wait
+at	400
+
+spawn	alien1
+map	0
+health	100
+coords	350 230
+at	320
+
+spawn	Alien1
+map	1
+health	60
+coords	350 180
+at	320
+
+spawn	alien2
+map	2
+health	70
+coords	-30 180
+at	320
+
+spawn	Alien1
+map	0
+health	30
+coords	350 180
+at	320
+
+spawn	alien2
+map	1
+health	40
+coords	-30 230
+at	320
+
+spawn	alien2
+map	2
+health	40
+coords	350 165
+at	320
+
+
+group	100 100
+at	410
+
+spawn	alien2
+map	0
+health	70
+coords	350 230
+at	440
+
+spawn	Alien1
+map	2
+health	60
+coords	-30 230
+at	440
+
+spawn	Alien1
+map	1
+health	70
+coords	350 230
+at	440
+
+spawn	alien2
+map	0
+health	70
+coords	350 230
+at	440
+
+spawn	Alien1
+map	2
+health	60
+coords	-30 230
+at	440
+
+spawn	Alien1
+map	1
+health	70
+coords	350 230
+at	440
+
+spawn	alien2
+map	0
+health	70
+coords	350 230
+at	440
+
+spawn	Alien1
+map	2
+health	60
+coords	-30 230
+at	440
+
+spawn	Alien1
+map	1
+health	70
+coords	350 230
+at	440
+spawn	box
+item	gold
+coords	380 230
+at	320
+
+spawn	Egg
+2pitem	money
+coords	420 220
+at	320
+
+spawn	Egg
+item	apple
+flip	1
+coords	380 170
+at	320
+
+spawn	Egg
+item	money
+coords	420 180
+at	320
+

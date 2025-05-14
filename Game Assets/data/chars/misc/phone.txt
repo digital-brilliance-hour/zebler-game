@@ -1,0 +1,22 @@
+name	phone
+health	20
+type	obstacle
+shadow	0
+icon	data/chars/misc/applicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	18 95
+	bbox	0 -25 43 100
+	frame	data/chars/misc/phone1.gif
+	frame	data/chars/misc/phone2.gif
+	frame	data/chars/misc/phone3.gif
+	frame	data/chars/misc/phone4.gif
+	frame	data/chars/misc/phone5.gif
+anim fall
+	delay	1000
+	offset	21 95
+	frame	data/chars/misc/phone5.gif

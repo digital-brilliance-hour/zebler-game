@@ -1,0 +1,116 @@
+name	Chrysalis
+health	300
+speed	10
+type	enemy
+shadow	4
+icon	data/chars/Chrys/icon.gif
+diesound data/sounds/die2.wav
+
+remap	data/chars/Chrys/idle03.gif data/chars/Chrys/alt1.gif
+remap	data/chars/Chrys/idle03.gif data/chars/Chrys/alt2.gif
+
+anim idle
+	loop	1
+	offset	245 197
+	bbox	185 108 108 94
+	delay	15
+	frame	data/chars/Chrys/idle01.gif
+	frame	data/chars/Chrys/idle02.gif
+	frame	data/chars/Chrys/idle03.gif
+	frame	data/chars/Chrys/idle04.gif
+	
+anim walk
+	loop	1
+	offset	245 197
+	bbox	179 104 117 105
+	delay	10
+	frame	data/chars/Chrys/walk1.gif
+	frame	data/chars/Chrys/walk2.gif
+	frame	data/chars/Chrys/walk3.gif
+	frame	data/chars/Chrys/walk4.gif
+	frame	data/chars/Chrys/walk5.gif
+	frame	data/chars/Chrys/walk6.gif
+	frame	data/chars/Chrys/walk7.gif
+	frame	data/chars/Chrys/walk8.gif
+		
+anim pain
+	loop	0
+	offset	245 197
+	bbox	195 99 93 103
+        move    -10
+	delay	8
+	frame	data/chars/Chrys/pain00.gif
+	delay	30
+	frame	data/chars/Chrys/pain00.gif
+	delay	8
+	frame	data/chars/Chrys/pain00.gif
+
+anim fall
+	loop	0
+	delay	20
+	offset	105 170
+#	attack	28 158 213 53 15 1
+        bbox    28 158 213 53 15 1
+	frame	data/chars/Chrys/fall1.gif
+	attack	28 108 129 99 15 1
+	offset	105 185
+	frame	data/chars/Chrys/fall1.gif
+	attack	39 109 129 99 15 1
+	offset	105 200
+        bbox    0 0 0 0 0 0
+	frame	data/chars/Chrys/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	245 197
+	delay	20
+	frame	data/chars/Chrys/idle01.gif
+	frame	data/chars/Chrys/idle01.gif
+	frame	data/chars/Chrys/idle01.gif
+
+anim attack1
+range	10 110
+	loop	0
+	delay	7
+	offset	245 197
+	bbox	18 13 42 107
+	sound	data/chars/Chrys/TIGER.wav
+	frame   data/chars/Chrys/sh01.gif
+        	frame   data/chars/Chrys/sh01.gif
+	bbox	36 5 36 118
+	attack	243 127 91 42 10
+	frame   data/chars/Chrys/sh02.gif
+	attack  0 0 0 0 0 0
+	frame   data/chars/Chrys/sh03.gif
+        frame   data/chars/Chrys/sh02.gif
+	attack	243 127 91 72 10
+	frame   data/chars/Chrys/sh02.gif
+	frame   data/chars/Chrys/sh03.gif
+	attack  0 0 0 0 0 0
+        frame   data/chars/Chrys/sh03.gif
+	attack	243 127 91 72 10 1
+	frame   data/chars/Chrys/sh02.gif
+	frame   data/chars/Chrys/sh03.gif
+	attack  0 0 0 0 0 
+
+anim attack2
+range	10 115
+	loop	0
+	delay	6
+	offset	245 197
+	bbox	18 13 42 107
+	frame   data/chars/Chrys/at2-1.gif
+        	frame   data/chars/Chrys/at2-3.gif
+	frame   data/chars/Chrys/at2-3.gif
+	bbox	36 5 36 118
+	attack	238 117 92 28 50
+	frame   data/chars/Chrys/at2-4.gif
+        frame   data/chars/Chrys/at2-4.gif
+	frame   data/chars/Chrys/at2-4.gif
+	attack	238 117 92 28 50
+	frame   data/chars/Chrys/at2-5.gif
+        frame   data/chars/Chrys/at2-5.gif
+	attack  0 0 0 0 0 
+	
+ 

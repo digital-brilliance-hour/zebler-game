@@ -1,0 +1,134 @@
+#Hugger by Kingherb
+
+name	Face_Hugger
+health	50
+speed	12
+type	enemy
+shadow	4
+icon	data/chars/Hugger/icon.gif
+
+diesound data/sounds/die1.wav
+
+remap	data/chars/Hugger/walk1.gif    data/chars/Hugger/alter.gif
+
+
+anim idle
+	loop	1
+	delay	7
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Hugger/idle.gif
+		
+anim walk
+	loop	1
+	delay	6
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Hugger/walk1.gif
+	frame   data/chars/Hugger/walk2.gif
+	frame   data/chars/Hugger/walk3.gif
+	frame   data/chars/Hugger/walk4.gif
+	frame   data/chars/Hugger/walk5.gif
+	frame   data/chars/Hugger/walk6.gif
+	frame   data/chars/Hugger/walk7.gif
+	frame   data/chars/Hugger/walk8.gif
+
+anim jump
+	loop	0
+	offset	13 26
+	delay	6
+	attack	1 1 26 26 15 1
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+
+anim jumpattack
+	loop	0
+	offset	13 26
+	delay	6
+	attack	1 1 26 26 15 1
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+	frame	data/chars/Hugger/jump01.gif
+
+anim pain
+	loop	0
+	offset	104 182
+	bbox	72 90 43 83
+	delay	15
+	frame   data/chars/Hugger/walk1.gif
+	frame   data/chars/Hugger/walk2.gif
+	frame   data/chars/Hugger/walk3.gif
+	frame   data/chars/Hugger/walk4.gif
+	frame   data/chars/Hugger/walk5.gif
+	frame   data/chars/Hugger/walk6.gif
+	frame   data/chars/Hugger/walk7.gif
+	frame   data/chars/Hugger/walk8.gif
+
+
+
+anim fall
+	loop	0
+	offset	90 170 
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/Hugger/fall3.gif
+        offset  88 134
+	frame	data/chars/Hugger/fall3.gif
+	frame	data/chars/Hugger/fall3.gif
+        offset  93 124
+	frame	data/chars/Hugger/fall3.gif
+	frame	data/chars/Hugger/fall3.gif
+
+
+anim rise
+	loop	0
+	offset	104 182
+	delay	8
+	frame   data/chars/Hugger/walk6.gif
+	frame   data/chars/Hugger/walk7.gif
+	frame   data/chars/Hugger/walk8.gif
+
+anim land
+	loop	0
+	delay	10
+	offset	99 183
+	frame   data/chars/Hugger/get1.gif
+
+anim grab
+	loop	0
+	offset	98 173
+	bbox	2 2 26 30
+	delay	8
+	frame	data/chars/Hugger/grab.gif
+       	attack  104 87 36 46 10 
+	frame	data/chars/Hugger/ga1.gif
+	frame	data/chars/Hugger/ga2.gif
+	frame	data/chars/Hugger/ga3.gif
+	attack  104 87 36 46 10 
+	frame	data/chars/Hugger/ga4.gif
+	frame	data/chars/Hugger/ga5.gif
+	frame	data/chars/Hugger/ga6.gif
+	attack  104 87 36 46 10 1
+	frame	data/chars/Hugger/ga7.gif
+        attack  0 0 0 0 0 
+	frame	data/chars/Hugger/grab.gif
+       	attack  104 87 36 46 10 
+	frame	data/chars/Hugger/ga1.gif
+	frame	data/chars/Hugger/ga2.gif
+	frame	data/chars/Hugger/ga3.gif
+	attack  104 87 36 46 10 
+	frame	data/chars/Hugger/ga4.gif
+	frame	data/chars/Hugger/ga5.gif
+	frame	data/chars/Hugger/ga6.gif
+	attack  104 87 36 46 10 1
+	frame	data/chars/Hugger/ga7.gif
+        attack  0 0 0 0 0 
+	frame	data/chars/Hugger/grab.gif
+
+
+

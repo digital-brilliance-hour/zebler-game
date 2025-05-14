@@ -1,0 +1,296 @@
+# level1b
+music		data/music/pred1.bor
+
+# Load images
+background	data/bgs/level1b/back.gif
+panel		data/bgs/level1b/front.gif	none	                        none
+
+blocked	1
+
+# game over man game over!
+order	a
+
+# ---------------------
+
+spawn	body1
+coords	160 230
+at	0
+
+spawn	box
+health	30
+coords	530 195
+flip	0
+at	0
+
+spawn	box
+health	30
+coords	530 230
+flip	0
+at	0
+
+spawn	box
+flip	1
+item	burger
+coords	200 171
+at	0
+
+spawn	box
+flip	1
+2pitem	pork
+coords	240 170
+at	0
+
+group	2 3
+at	0
+
+spawn	Chrysalis
+alias	Chrysalis
+health	300
+boss	1
+map	1
+coords	580 220
+at	0
+
+spawn	Chest_Buster
+map	1
+coords	380 220
+at	0
+
+spawn	Alien1
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	-30 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	1
+coords	380 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	1
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	2
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	0
+coords	380 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	2
+coords	380 220
+at	0
+
+spawn	Alien1
+map	2
+coords	380 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	2
+coords	-30 220
+at	0
+
+
+#---Punch some Eggs in the floor---
+
+
+spawn	phone
+item	apple
+flip	1
+health	35
+coords	400 160
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	400 195
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	400 230
+at	0
+
+spawn	Egg
+item	meat
+flip	1
+health	35
+coords	450 180
+at	0
+
+spawn	Egg
+item	1up
+flip	1
+health	35
+coords	450 195
+at	0
+
+spawn	Egg
+item	money
+flip	1
+health	35
+coords	450 210
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	500 160
+at	0
+
+spawn	Egg
+item	apple
+flip	1
+health	35
+coords	500 195
+at	0
+
+spawn	Egg
+item	gold
+flip	1
+health	35
+coords	500 230
+at	0
+
+spawn	Egg
+item	meat
+flip	1
+health	35
+coords	550 180
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	550 195
+at	0
+
+spawn	Egg
+item	1up
+flip	1
+health	35
+coords	550 210
+at	0
+spawn	Egg
+flip	1
+health	35
+coords	600 160
+at	0
+
+spawn	Egg
+item	money
+flip	1
+health	35
+coords	600 195
+at	0
+
+spawn	Egg
+item	gold
+flip	1
+health	35
+coords	600 230
+at	0
+
+spawn	Egg
+flip	1
+health	35
+coords	650 180
+at	0
+
+spawn	Egg
+item	money
+flip	1
+health	35
+coords	650 195
+at	0
+
+spawn	Egg
+item	meat
+flip	1
+health	35
+coords	650 210
+at	0
+

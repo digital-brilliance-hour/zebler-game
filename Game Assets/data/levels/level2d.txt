@@ -1,0 +1,166 @@
+# level2d
+music		data/music/level2.bor
+bossmusic	data/music/boss.bor
+
+# Load images
+background	data/bgs/level2d/back.gif
+panel		data/bgs/level2d/front.gif	none	                        none
+
+#---------------------
+order	a
+
+
+
+#---Punch some Eggs in the floor---
+
+wait
+at	250
+
+group	4 4
+at	250
+
+spawn	Razor_Claws
+alias	Razor_Claws
+health	300
+boss	1
+map	2
+coords	100 180
+at	250
+
+spawn	Alien2
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	Alien2
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	kingherb
+map	2
+health	100
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	100 180
+at	250
+
+spawn	alien1
+alias	kingherb
+map	2
+health	100
+coords	220 210
+at	250
+
+
+spawn	alien1
+alias	LOLER
+map	2
+health	35
+coords	220 180
+at	250
+
+spawn	alien1
+alias	LOLER
+health	35
+coords	100 210
+at	250
+
+spawn	alien1
+alias	LOLER
+map	1
+health	35
+coords	220 210
+at	250
+
+
+

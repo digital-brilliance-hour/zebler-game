@@ -1,0 +1,24 @@
+
+
+set	Arcade
+scene	data/scenes/level1.txt
+file	data/levels/level1a.txt
+file	data/levels/level1b.txt
+next
+file	data/levels/level2a.txt
+file	data/levels/level2b.txt
+file	data/levels/level2c.txt
+file	data/levels/level2d.txt
+next
+file	data/levels/level3a.txt
+file	data/levels/level3b.txt
+scene	data/scenes/ending.txt
+
+set	Char_Bios
+scene	data/scenes/bios.txt
+
+set	Sound_Test_N/A
+
+
+
+

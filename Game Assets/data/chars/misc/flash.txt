@@ -1,0 +1,24 @@
+# Hit flash
+
+name	Flash
+type	none
+shadow	0
+
+
+#old was 36 51 delay 6
+# alt was 27 24 delay 6
+
+anim idle
+	loop	0
+	delay	6
+	offset	38 59
+	frame	data/chars/misc/flash2-1.gif
+	frame	data/chars/misc/flash2-2.gif
+	frame	data/chars/misc/flash2-3.gif
+	frame	data/chars/misc/flash2-4.gif
+	frame	data/chars/misc/flash2-5.gif
+	frame	data/chars/misc/flash2-6.gif
+	frame	data/chars/misc/flash2-7.gif
+	frame	data/chars/misc/flash2-8.gif
+
+

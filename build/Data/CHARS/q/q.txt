@@ -1,0 +1,521 @@
+name	Quincy
+health	2500
+speed	12
+type	enemy
+shadow	6
+blockodds   1
+dust    dust
+diesound data/sounds/qdie.wav
+icon	data/chars/q/1.gif
+iconpain     data/chars/q/2.gif
+aggression 5
+gfxshadow 1
+lifebarstatus 220 5 0 1 0 0 0 0 0 
+lifeposition 50 200
+nameposition 60 190 
+iconposition 50 360
+
+remap	data/chars/q/wk05.gif  data/chars/q/map1.gif
+
+
+
+
+
+
+
+
+anim idle
+	loop	1
+	offset	29 131
+	bbox	10 10 35 108
+	delay	8
+                  sound       data/sounds/qidle.wav
+	frame         data/chars/Q/idle00.gif
+offset	30 132
+	frame         data/chars/Q/idle01.gif
+offset	33 132
+	frame         data/chars/Q/idle02.gif
+offset	38 133
+	frame         data/chars/Q/idle03.gif
+offset	36 133
+	frame         data/chars/Q/idle04.gif
+offset	34 134
+	frame         data/chars/Q/idle05.gif
+offset	34 134
+	frame         data/chars/Q/idle06.gif
+offset	33 133
+	frame         data/chars/Q/idle07.gif
+offset	31 133
+	frame         data/chars/Q/idle08.gif
+offset	30 133
+	frame         data/chars/Q/idle09.gif
+offset	29 133
+	frame         data/chars/Q/idle10.gif
+offset	28 134
+	frame         data/chars/Q/idle11.gif
+offset	29 133
+	frame         data/chars/Q/idle10.gif
+offset	30 133
+	frame         data/chars/Q/idle09.gif
+offset	31 133
+	frame         data/chars/Q/idle08.gif
+offset	33 133
+	frame         data/chars/Q/idle07.gif
+offset	34 134
+	frame         data/chars/Q/idle06.gif
+offset	34 134
+	frame         data/chars/Q/idle05.gif
+offset	36 133
+	frame         data/chars/Q/idle04.gif
+offset	38 133
+	frame         data/chars/Q/idle03.gif
+offset	33 132
+	frame         data/chars/Q/idle02.gif
+offset	30 132
+	frame         data/chars/Q/idle01.gif
+
+
+
+
+anim walk
+	loop	1
+	offset	35 130
+	bbox	17 12 39 111
+	delay	8
+	frame         data/chars/Q/wk00.gif
+offset        27 132
+                  bbox           12 11 36 100
+                  frame         data/chars/Q/wk01.gif
+offset        26 133
+                  frame         data/chars/Q/wk02.gif
+offset        24 131
+                  frame         data/chars/Q/wk03.gif
+offset        25 129
+                  frame          data/chars/Q/wk04.gif
+offset        36 127
+                  bbox           24 10 33 100
+                  frame         data/chars/Q/wk05.gif
+offset        45 125
+                  bbox          29 8 32 104  
+                  frame         data/chars/Q/wk06.gif
+offset       42 126
+                  frame          data/chars/Q/wk07.gif
+offset        41 127
+                  frame          data/chars/Q/wk08.gif
+offset        45 129
+                  frame         data/chars/Q/wk09.gif
+offset        48 130
+	bbox	29 14 32 102
+                  frame         data/chars/Q/wk10.gif
+offset        42 131
+                  frame          data/chars/Q/wk11.gif
+offset       36 129
+                  bbox            19 10 31 105
+                  frame          data/chars/Q/wk12.gif
+offset        22 127
+                  bbox           4 7 32 104 
+                  frame          data/chars/Q/wk13.gif
+offset        27 126
+                  frame         data/chars/Q/wk14.gif
+offset        36 125
+                  bbox          18 7 32 104
+                  frame         data/chars/Q/wk15.gif
+offset        39 127 
+                  bbox           16 11 40 97 
+                  frame          data/chars/Q/wk16.gif
+offset        39 128
+                  frame          data/chars/Q/wk17.gif
+
+
+
+anim pain
+	loop	0
+	offset	36 128
+	bbox	6 3 66 110
+	sound       data/sounds/qPAIN.wav
+	delay	10
+	frame         data/chars/Q/pain1.gif
+offset	62 121
+                  bbox         10 5 97 96
+	frame         data/chars/Q/pain2.gif
+offset	76 106
+                  bbox         17 6 107 71
+	frame         data/chars/Q/pain3.gif
+offset	62 121
+                  bbox         10 5 97 96
+	frame         data/chars/Q/pain2.gif
+
+
+
+
+
+anim fall
+	loop	0
+	offset	58 113
+	delay	10
+	frame         data/chars/Q/fall1.gif
+offset	58 117
+        frame         data/chars/Q/fall2.gif
+offset	58 115
+        ATTACK         12 15 71 37 10 1
+	frame         data/chars/Q/fall3.gif
+offset	58 113
+        ATTACK         0 0 0 0 0 0
+	frame         data/chars/Q/fall4.gif
+offset	55 131
+	frame         data/chars/Q/fall5.gif
+offset	32 161
+	frame         data/chars/Q/fall6.gif
+offset	95 68
+	frame         data/chars/Q/fall7.gif
+offset	122 16
+	frame         data/chars/Q/fall8.gif
+
+
+
+
+
+
+
+
+anim rise
+	loop	0
+	offset	121 20
+	delay	13
+	frame         data/chars/Q/rise1.gif
+offset	94 38
+	frame         data/chars/Q/rise2.gif
+offset	69 56
+	frame         data/chars/Q/rise3.gif
+offset	48 61
+	frame         data/chars/Q/rise4.gif
+offset	27 82
+	frame         data/chars/Q/rise5.gif
+offset	32 100
+	frame         data/chars/Q/rise6.gif
+offset	36 112
+	frame         data/chars/Q/rise7.gif
+offset	34 124
+	frame         data/chars/Q/rise8.gif
+
+
+
+
+
+
+
+
+	
+
+
+
+
+anim BLOCK
+                  loop       0
+                  delay         10
+offset	24 130
+	frame         data/chars/Q/block1.gif
+offset	34 129
+                  frame         data/chars/Q/block2.gif   
+offset	34 129
+                  frame         data/chars/Q/block3.gif   
+                  move          -10
+                  delay          6
+offset	44 113
+                  frame         data/chars/Q/block4.gif   
+offset	45 98
+                  frame         data/chars/Q/block5.gif   
+offset	32 126
+                  frame         data/chars/Q/block6.gif   
+offset	28 131
+                  frame         data/chars/Q/block7.gif   
+offset	43 135
+                  frame         data/chars/Q/block8.gif   
+offset	43 130
+                  frame         data/chars/Q/block9.gif   
+offset	51 125
+                  frame         data/chars/Q/block10.gif   
+offset	58 119
+                  frame         data/chars/Q/block11.gif   
+
+
+
+
+
+
+
+
+
+
+anim UPPER
+	loop	0
+	offset	46 121
+	delay	5
+                  sound        data/sounds/quper.wav
+	hitfx           data/sounds/hk.wav
+                   frame         data/chars/Q/ATK200.gif
+offset         42 117
+                  frame         data/chars/Q/ATK201.gif
+offset	40 118
+                   frame         data/chars/Q/ATK202.gif
+offset	40 117
+                  frame         data/chars/Q/ATK203.gif
+offset	36 157
+                  DELAY        20
+                  attack         17 1 58 112 20 1
+                  frame         data/chars/Q/ATK204.gif
+offset	39 151
+DELAY      5
+                  attack         0 0 0 0 0 0
+                  frame         data/chars/Q/ATK205.gif
+offset	42 150
+                  frame         data/chars/Q/ATK206.gif
+offset	43 141
+                  frame         data/chars/Q/ATK207.gif
+offset	45 135
+                  frame         data/chars/Q/ATK208.gif
+offset	44 122
+                  frame         data/chars/Q/ATK209.gif
+
+
+anim attack1
+	loop	0
+	offset	44 128
+	delay	6
+	bbox	24 11 48 103
+                  sound         data/sounds/quper.wav    
+	hitfx           data/sounds/fast.wav
+	frame         data/chars/Q/ATK01.gif
+offset	43 123
+bbox         30 14 30 99  
+	frame         data/chars/Q/ATK02.gif
+offset	53 117
+                  attack         76 16 66 68 20 
+                  bbox          41 15 35 80
+	frame         data/chars/Q/ATK03.gif
+offset	44 121
+	frame         data/chars/Q/ATK04.gif
+offset	65 121
+                  attack        0 0 0 0 0
+                  frame         data/chars/Q/ATK05.gif                    
+offset	86 108
+	frame         data/chars/Q/ATK06.gif
+offset	97 106
+	frame         data/chars/Q/ATK07.gif
+offset	44 119
+bbox         34 15 32 87
+	frame         data/chars/Q/ATK08.gif
+offset	43 136
+move         5
+                  blast           46 1 44 117 20 0      
+	frame         data/chars/Q/ATK09.gif
+offset	44 131
+	frame         data/chars/Q/ATK10.gif
+offset	43 130
+                  frame         data/chars/Q/ATK11.gif
+offset	39 129
+	frame         data/chars/Q/ATK12.gif
+offset	30 129
+                  frame         data/chars/Q/ATK13.gif                    
+
+
+
+
+anim attack2
+                  RANGE    150 250
+	loop	0
+                  delay	6
+	sound       data/sounds/qrush.wav
+	hitfx           data/sounds/fast.wav
+offset	34 119
+                  bbox           10 14 40 99
+	frame         data/chars/Q/rush01.gif
+offset	43 102
+bbox          13 16 45 77
+	frame         data/chars/Q/rush02.gif
+offset	55 79
+move         15
+bbox         26 16 50 57
+	frame         data/chars/Q/rush03.gif
+offset	80 75
+                  bbox          0 0 0 0 
+	frame         data/chars/Q/rush04.gif
+offset	111 89
+	frame         data/chars/Q/rush05.gif
+offset	117 96
+     	frame         data/chars/Q/rush06.gif
+offset	110 114
+	frame         data/chars/Q/rush07.gif
+offset	87 107
+     	frame         data/chars/Q/rush08.gif
+offset	108 100
+	frame         data/chars/Q/rush09.gif
+offset	108 94
+                   attack       77 2 112 78 30 2
+     	frame         data/chars/Q/rush10.gif
+offset	98 95
+	frame         data/chars/Q/rush11.gif
+offset	86 101
+                  attack         0 0 0 0 0 0
+	frame         data/chars/Q/rush12.gif
+offset	52 118
+     	frame         data/chars/Q/rush13.gif
+offset	34 128
+	frame         data/chars/Q/rush14.gif
+
+
+
+anim special
+                  loop           0
+                  delay          5
+                  sound         data/sounds/qspec.wav  
+offset	30 109
+	frame         data/chars/Q/spec1.gif
+offset	31 102
+attack       22 1 51 105 5
+	frame         data/chars/Q/spec2.gif
+offset	31 100
+                  delay        6
+	frame         data/chars/Q/spec3.gif
+offset	41 112
+                   attack       0 0 0 0 0 
+	frame         data/chars/Q/spec4.gif
+offset	54 121
+                  blast           5 0 102 114 30 0
+	frame         data/chars/Q/spec5.gif
+offset	49 133
+	frame         data/chars/Q/spec6.gif
+offset	50 132
+	frame         data/chars/Q/spec7.gif
+offset	52 132
+	frame         data/chars/Q/spec8.gif
+offset	49 132
+	frame         data/chars/Q/spec9.gif
+offset	40 132
+	frame         data/chars/Q/spec10.gif
+offset	42 125
+	frame         data/chars/Q/spec11.gif
+offset	41 120
+	frame         data/chars/Q/spec12.gif
+
+
+
+
+
+
+
+
+
+
+
+
+anim grab
+                  range         0 50
+                  loop            0
+                  sound          data/sounds/qrush.wav
+                  hitfx             data/sounds/sslash.wav
+                  delay           7
+                  bbox            60 16 37 81
+offset	80 116
+	frame         data/chars/Q/grab1.gif
+offset	49 115
+bbox         35 18 31 84
+	frame         data/chars/Q/grab2.gif
+offset	42 115
+                  attack       54 10 74 52 10
+bbox         26 15 32 78    
+	frame         data/chars/Q/grab3.gif
+offset	42 127
+                  attack        0 0 0 0 0 
+	frame         data/chars/Q/grab4.gif
+offset	41 128
+	frame         data/chars/Q/grab5.gif
+offset	44 119
+                  attack         60 15 69 51 10
+	frame         data/chars/Q/grab6.gif
+offset	51 118
+	frame         data/chars/Q/grab7.gif
+offset	80 116
+                 attack          0 0 0 0 0  
+bbox           60 16 37 81
+	frame         data/chars/Q/grab8.gif
+offset	66 115
+	frame         data/chars/Q/grab9.gif
+offset	49 115
+bbox         28 18 37 78
+	frame         data/chars/Q/grab10.gif
+offset	44 132
+bbox         bbox         26 15 32 78    
+                  attack         54 0 59 78 10
+	frame         data/chars/Q/grab11.gif
+offset	47 136
+                  attack         0 0 0 0 0
+	frame         data/chars/Q/grab12.gif
+offset	41 136
+	frame         data/chars/Q/grab13.gif
+offset	44 119
+                  attack         50 1 69 74 10
+	frame         data/chars/Q/grab14.gif
+offset	51 118
+                  attack         0 0 0 0 0  
+	frame         data/chars/Q/grab15.gif
+                  bbox            60 16 37 81
+offset	80 116
+	frame         data/chars/Q/grab1.gif
+offset	49 115
+bbox         35 18 31 84
+	frame         data/chars/Q/grab2.gif
+offset	42 115
+                  attack       54 10 74 52 10
+bbox         26 15 32 78    
+	frame         data/chars/Q/grab3.gif
+offset	42 127
+                  attack        0 0 0 0 0 
+	frame         data/chars/Q/grab4.gif
+offset	41 128
+	frame         data/chars/Q/grab5.gif
+offset	44 119
+                  attack         60 15 69 51 10
+	frame         data/chars/Q/grab6.gif
+offset	51 118
+	frame         data/chars/Q/grab7.gif
+offset	80 116
+                 attack          0 0 0 0 0  
+bbox           60 16 37 81
+	frame         data/chars/Q/grab8.gif
+offset	66 115
+	frame         data/chars/Q/grab9.gif
+offset	49 115
+bbox         28 18 37 78
+	frame         data/chars/Q/grab10.gif
+offset	44 132
+bbox         bbox         26 15 32 78    
+                  attack         54 0 59 78 10
+	frame         data/chars/Q/grab11.gif
+offset	47 136
+                  attack         0 0 0 0 0
+	frame         data/chars/Q/grab12.gif
+offset	41 136
+	frame         data/chars/Q/grab13.gif
+offset	44 119
+                  attack         50 1 69 74 10 1
+	frame         data/chars/Q/grab14.gif
+offset	51 118
+                  attack         0 0 0 0 0 0
+	frame         data/chars/Q/grab15.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

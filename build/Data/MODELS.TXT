@@ -164,3 +164,5 @@ load drill   data/chars/keith/drill.txt
 
 load pow1    data/chars/misc/pow1.txt
 load pow2    data/chars/misc/pow2.txt
+
+know Q       data/chars/q/q.txt

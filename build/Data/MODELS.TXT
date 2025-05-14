@@ -164,3 +164,6 @@ load drill   data/chars/keith/drill.txt
 
 load pow1    data/chars/misc/pow1.txt
 load pow2    data/chars/misc/pow2.txt
+
+know Kagetsura Data/CHARS/kagetsura/kagetsura-enemy.txt 
+know star_projectile data/chars/kagetsura/star_projectile.txt

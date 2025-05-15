@@ -1,0 +1,224 @@
+name	Mukai
+health	400
+speed	10
+type	enemy
+shadow	6
+icon	data/chars/Mukai/icon.gif
+diesound data/sounds/die1.wav
+
+
+remap	data/chars/Mukai/idle/01.gif data/chars/Mukai/alt1.gif
+
+anim idle
+	loop	1
+	offset  48 141
+	bbox 	25 33 45 108
+	delay	7
+	frame	data/chars/Mukai/idle/01.gif
+	frame	data/chars/Mukai/idle/02.gif
+	frame	data/chars/Mukai/idle/03.gif
+	frame	data/chars/Mukai/idle/04.gif
+	frame	data/chars/Mukai/idle/03.gif
+	frame	data/chars/Mukai/idle/02.gif
+	frame	data/chars/Mukai/idle/01.gif
+
+anim walk
+	loop	1
+	offset  49 146
+	bbox 	26 28 45 115
+	delay	7
+	frame	data/chars/Mukai/walk/01.gif
+	frame	data/chars/Mukai/walk/02.gif
+	frame	data/chars/Mukai/walk/03.gif
+	frame	data/chars/Mukai/walk/04.gif
+	frame	data/chars/Mukai/walk/05.gif
+	frame	data/chars/Mukai/walk/06.gif
+	frame	data/chars/Mukai/walk/07.gif
+	frame	data/chars/Mukai/walk/08.gif
+	frame	data/chars/Mukai/walk/09.gif
+	frame	data/chars/Mukai/walk/10.gif
+
+anim pain
+	loop	0
+	offset	47 140
+	delay	7
+	bbox	16 24 60 117
+	frame	data/chars/Mukai/pain/01.gif
+	delay	30
+	frame	data/chars/Mukai/pain/02.gif
+	delay	7
+	frame	data/chars/Mukai/pain/01.gif
+
+anim fall
+	loop	0
+	delay	7
+	offset	110 141
+	attack	58 34 86 77 15 1
+	frame	data/chars/Mukai/fall/01.gif
+	attack	36 60 113 74 15 1
+	frame	data/chars/Mukai/fall/02.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Mukai/fall/03.gif
+	frame	data/chars/Mukai/fall/04.gif
+
+anim rise
+	loop	0
+	offset	59 143
+	delay	7
+	frame	data/chars/Mukai/rise/01.gif
+	frame	data/chars/Mukai/rise/02.gif
+	frame	data/chars/Mukai/rise/03.gif
+
+
+anim attack1
+	range	10 100
+	loop	0
+	delay	10
+	offset	122 192
+	bbox	93 79 47 116
+	frame	data/chars/Mukai/attack1/01.gif
+	bbox	106 80 45 113
+	frame	data/chars/Mukai/attack1/02.gif
+	frame	data/chars/Mukai/attack1/03.gif
+	bbox	80 95 76 104
+	attack	159 101 41 28 20 1
+	frame	data/chars/Mukai/attack1/04.gif
+	frame	data/chars/Mukai/attack1/05.gif
+	frame	data/chars/Mukai/attack1/06.gif
+	frame	data/chars/Mukai/attack1/07.gif
+	attack	0 0 0 0 0 0
+	bbox	102 80 50 115
+	frame	data/chars/Mukai/attack1/08.gif
+	bbox	101 79 43 116
+	frame	data/chars/Mukai/attack1/09.gif
+	bbox	96 72 49 121
+	frame	data/chars/Mukai/attack1/10.gif
+
+anim attack2
+	range	150 250
+	loop	0	
+	offset	199 138
+	delay	30	
+	bbox	173 21 44 111
+	frame	data/chars/Mukai/attack2/01.gif
+	delay	15
+	frame	data/chars/Mukai/attack2/02.gif
+	attack	254 124 147 28 30 1
+	frame	data/chars/Mukai/attack2/03.gif
+	attack	254 107 147 45 30 1
+	frame	data/chars/Mukai/attack2/04.gif
+	attack	254 92 147 60 30 1
+	frame	data/chars/Mukai/attack2/05.gif
+	attack	254 77 147 75 30 1
+	frame	data/chars/Mukai/attack2/06.gif
+	attack	254 63 147 86 30 1
+	frame	data/chars/Mukai/attack2/07.gif
+	attack	254 49 147 86 30 1
+	frame	data/chars/Mukai/attack2/08.gif
+	attack	254 32 147 86 30 1
+	frame	data/chars/Mukai/attack2/09.gif
+	attack	254 19 147 86 30 1
+	frame	data/chars/Mukai/attack2/10.gif
+	attack	254 19 147 86 20 1
+	frame	data/chars/Mukai/attack2/11.gif
+	attack	254 19 147 86 10 1
+	frame	data/chars/Mukai/attack2/12.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Mukai/attack2/13.gif
+	frame	data/chars/Mukai/attack2/14.gif
+
+anim attack3
+	range	150 250
+	loop	0	
+	offset	199 138
+	delay	30	
+	bbox	173 21 44 111
+	frame	data/chars/Mukai/attack3/01.gif
+	delay	15
+	frame	data/chars/Mukai/attack3/02.gif
+	attack	301 118 45 32 20 1
+	frame	data/chars/Mukai/attack3/03.gif
+	attack	302 103 88 48 20 1
+	frame	data/chars/Mukai/attack3/04.gif
+	attack	121 83 279 67 20 1
+	frame	data/chars/Mukai/attack3/05.gif
+	attack	1 58 400 94 20 1
+	frame	data/chars/Mukai/attack3/06.gif
+	attack	1 34 400 117 20 1
+	frame	data/chars/Mukai/attack3/07.gif
+	attack	1 17 400 103 20 1
+	frame	data/chars/Mukai/attack3/08.gif
+	attack	1 1 400 102 20 1
+	frame	data/chars/Mukai/attack3/09.gif
+	attack	1 1 400 84 20 1
+	frame	data/chars/Mukai/attack3/10.gif
+	attack	1 1 400 63 20 1
+	frame	data/chars/Mukai/attack3/11.gif
+	attack	1 1 400 44 20 1
+	frame	data/chars/Mukai/attack3/12.gif
+	attack	1 1 400 24 20 1
+	frame	data/chars/Mukai/attack3/13.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Mukai/attack3/14.gif
+
+anim grab
+	loop	0
+	delay	10
+	offset	122 191
+	bbox	101 74 44 116
+	frame	data/chars/Mukai/gattack/01.gif
+	bbox	91 67 48 118
+	frame	data/chars/Mukai/gattack/02.gif
+	frame	data/chars/Mukai/gattack/03.gif
+	frame	data/chars/Mukai/gattack/04.gif
+	frame	data/chars/Mukai/gattack/05.gif
+	attack	121 31 17 69 30 1
+	bbox	99 59 26 123
+	frame	data/chars/Mukai/gattack/06.gif
+	attack	121 43 22 49 30 1
+	bbox	93 76 45 106
+	frame	data/chars/Mukai/gattack/07.gif
+	attack	131 43 59 156 30 1
+	bbox	81 109 53 81
+	frame	data/chars/Mukai/gattack/08.gif
+	attack	0 0 0 0 0 0
+	bbox	75 104 86 95
+	frame	data/chars/Mukai/gattack/09.gif
+	frame	data/chars/Mukai/gattack/10.gif
+	frame	data/chars/Mukai/gattack/11.gif
+	bbox	79 101 84 90
+	frame	data/chars/Mukai/gattack/12.gif
+	bbox	85 91 73 98
+	frame	data/chars/Mukai/gattack/13.gif
+	bbox	86 87 59 105
+	frame	data/chars/Mukai/gattack/14.gif
+	bbox	92 76 51 116
+	frame	data/chars/Mukai/gattack/15.gif
+	bbox	98 74 47 114
+	frame	data/chars/Mukai/gattack/16.gif
+
+anim special
+	loop	0
+	delay	10
+	offset	75 166
+	frame	data/chars/Mukai/special/01.gif
+	frame	data/chars/Mukai/special/02.gif
+	attack	18 10 113 167 30 1
+	frame	data/chars/Mukai/special/03.gif
+	frame	data/chars/Mukai/special/04.gif
+	frame	data/chars/Mukai/special/05.gif
+	frame	data/chars/Mukai/special/06.gif
+	frame	data/chars/Mukai/special/07.gif
+	frame	data/chars/Mukai/special/08.gif
+	frame	data/chars/Mukai/special/09.gif
+	attack	0 0 0 0 0 0
+	frame	data/chars/Mukai/special/10.gif
+	frame	data/chars/Mukai/special/11.gif
+
+
+
+
+
+
+
+

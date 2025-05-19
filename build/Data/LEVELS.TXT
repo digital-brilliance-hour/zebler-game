@@ -27,6 +27,7 @@ file 	data/levels/scenes/story1/story1.txt
 
 skipselect Zebler
 Z 298 348
+file data/levels/stage2-1.txt
 file 	data/levels/stage2-new.txt
 file	data/levels/Stage-2.txt
 next

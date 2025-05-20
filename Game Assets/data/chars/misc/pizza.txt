@@ -1,0 +1,24 @@
+name	Pizza
+health	70
+type	item
+shadow	0
+icon	data/chars/misc/Porkicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	60 80
+#	bbox	8 -30 40 90
+	bbox	20 12 83 74
+	frame	data/chars/misc/Pizza1.gif
+	frame	data/chars/misc/Pizza2.gif	
+	frame	data/chars/misc/Pizza3.gif
+	frame	data/chars/misc/Pizza4.gif
+	
+anim fall
+	loop	1
+	delay	1000
+	offset	60 80
+	frame	data/chars/misc/Pizza1.gif

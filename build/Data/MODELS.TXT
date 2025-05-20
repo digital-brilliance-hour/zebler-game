@@ -69,10 +69,13 @@ know    Mary        data/chars/Mary/Mary.txt
 know    metalgear   data/chars/metalgear/metalgear.txt
 know    Linn        data/chars/linn/linn.txt
 know Mukai data/chars/mukai/mukai.txt
+know    MakiE       Data/CHARS/maki/maki2.txt
 
 know robot   data/chars/robot/robot.txt
 
 know boss1   data/chars/boss1/boss1.txt
+know q data/chars/q/q.txt
+load q data/chars/q/q.txt
 
 know spider  data/chars/spider/spider.txt
 load robsmal data/chars/robsmal/robsmal.txt
@@ -165,3 +168,6 @@ load drill   data/chars/keith/drill.txt
 
 load pow1    data/chars/misc/pow1.txt
 load pow2    data/chars/misc/pow2.txt
+
+know Kagetsura Data/CHARS/kagetsura/kagetsura-enemy.txt 
+know star_projectile data/chars/kagetsura/star_projectile.txt

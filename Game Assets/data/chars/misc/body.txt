@@ -1,0 +1,19 @@
+# Do not forget to name your character.
+# Health is optional.
+
+
+name	Body
+health	1
+type	obstacle
+shadow	0
+
+
+icon	data/chars/misc/1upicon.gif
+
+
+anim idle
+	loop	1
+	delay	6
+	offset	0 0
+	frame	data/chars/misc/Body.gif
+

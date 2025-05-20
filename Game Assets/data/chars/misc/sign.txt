@@ -1,0 +1,18 @@
+name	sign
+health	35
+type	obstacle
+shadow	0
+icon	data/chars/misc/boxicon.gif
+diesound data/sounds/wood.wav
+
+
+anim idle
+	delay	1000
+	offset	39 133
+	bbox	0 -25 43 100
+	frame	data/chars/misc/boxb1.gif
+
+anim fall
+	delay	1000
+	offset	39 133
+	frame	data/chars/misc/boxb2.gif

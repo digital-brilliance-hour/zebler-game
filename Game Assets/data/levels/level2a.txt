@@ -1,0 +1,430 @@
+# level2a
+music		data/music/MISSION1.bor
+bossmusic	data/music/1boss.bor
+
+background	data/bgs/level2a/back.gif
+
+panel		data/bgs/level2a/front.gif
+
+order	a
+
+spawn	Egg
+item	apple
+flip	1
+coords	380 160
+at	50
+
+spawn	Egg
+item	apple
+flip	1
+health	30
+coords	380 230
+at      50
+
+spawn	Body2
+health	30
+coords	530 160
+flip	0
+at	0
+
+spawn	Egg
+health	50
+item	Porker
+coords	530 230
+flip	0
+at	55
+
+spawn	box
+coords	380 220
+at	70
+
+spawn	phone
+flip	1
+coords	280 170
+at	200
+
+spawn	box
+coords	380 170
+at	160
+
+spawn	box
+alias	Miki
+coords	380 200
+at	230
+
+group	7 7
+at	10
+# ---------------------
+spawn	Alien1
+coords	370 160
+health	10
+at	10
+
+spawn	Alien1
+coords	360 165
+map	1
+health	10
+at	10
+
+spawn	Alien4
+coords	380 170
+map	0
+health	10
+at	10
+
+spawn	Alien3
+coords	380 175
+map	0
+health	10
+at	10
+
+spawn	Alien1
+coords	370 180
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 190
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 195
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 200
+map	1
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 210
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 170
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	370 215
+map	1
+health	10
+at	10
+
+spawn	Alien6
+coords	370 220
+map	2
+health	10
+at	10
+
+spawn	Alien5
+coords	370 225
+map	3
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 210
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 160
+health	10
+at	10
+
+spawn	Alien1
+coords	370 230
+health	10
+at	10
+
+spawn	Alien1
+coords	220 170
+map	1
+health	10
+at	10
+
+spawn	Alien2
+coords	250 195
+map	2
+health	10
+at	10
+
+spawn	alien2
+alias	Cuckoo
+health	100
+coords	370 195
+at	200
+
+spawn	alien2
+alias	Thrush
+map	1
+health	100
+coords	-30 195
+at	200
+
+spawn	alien4
+alias	Snipe
+map	2
+health	100
+coords	-30 230
+at	200
+
+spawn	alien2
+coords	380 160
+at	200
+
+spawn	alien5
+map	2
+health	100
+coords	370 170
+at	200
+
+spawn	alien2
+map	4
+health	100
+coords	370 230
+at	200
+
+# ---------------------
+spawn	Alien1
+coords	370 160
+health	10
+at	10
+
+spawn	Alien6
+coords	360 165
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	380 170
+map	2
+health	10
+at	10
+
+spawn	Alien1
+coords	380 175
+map	3
+health	10
+at	10
+
+spawn	Alien1
+coords	370 180
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 190
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 195
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 200
+map	1
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 210
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 170
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	370 215
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	370 220
+map	2
+health	10
+at	10
+
+spawn	Alien4
+coords	370 225
+map	3
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 210
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 160
+health	10
+at	10
+
+spawn	Alien1
+coords	370 230
+health	10
+at	10
+
+spawn	Alien3
+coords	220 170
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	250 195
+map	2
+health	10
+at	10
+
+spawn	alien2
+alias	Cuckoo
+health	100
+coords	370 195
+at	200
+
+spawn	alien2
+alias	Thrush
+map	1
+health	100
+coords	-30 195
+at	200
+
+spawn	alien5
+alias	Snipe
+map	2
+health	100
+coords	-30 230
+at	200
+
+spawn	alien2
+coords	380 160
+at	200
+
+spawn	alien2
+map	2
+health	100
+coords	370 170
+at	200
+
+spawn	alien2
+map	4
+health	100
+coords	370 230
+at	200
+
+spawn	Alien6
+coords	370 160
+health	10
+at	10
+
+spawn	Alien1
+coords	360 165
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	380 170
+map	2
+health	10
+at	10
+
+spawn	Alien1
+coords	380 175
+map	3
+health	10
+at	10
+
+spawn	Alien1
+coords	370 180
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 190
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 195
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 200
+map	1
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 210
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 170
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	370 215
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	370 220
+map	2
+health	10
+at	10
+
+spawn	Alien1
+coords	370 225
+map	3
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 210
+health	10
+at	10
+
+spawn	chest_buster
+coords	200 160
+health	10
+at	10
+
+spawn	Alien1
+coords	370 230
+health	10
+at	10
+
+spawn	Alien1
+coords	220 170
+map	1
+health	10
+at	10
+
+spawn	Alien1
+coords	250 195
+map	2
+health	10
+at	10
+

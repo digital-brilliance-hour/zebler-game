@@ -1,0 +1,1089 @@
+name	MakiE
+health	600
+speed	13
+type	enemy
+shadow	6
+dust    dust
+running	20 3.5 2 1 0
+noquake 1
+makeinv 4
+blockodds   1
+diesound data/sounds/makidie.wav
+aggression 5
+nopassiveblock 1
+gfxshadow 1
+
+icon	data/chars/maki/3.gif
+iconpain     data/chars/maki/4.gif
+
+com     d f a freespecial2
+com     f d a freespecial3
+com     u f a freespecial4
+
+
+
+remap	data/chars/maki/idle1.gif data/chars/maki/alt1.gif
+remap	data/chars/maki/idle1.gif data/chars/maki/alt2.gif
+
+
+anim idle
+	loop	1
+	delay	10
+	offset	32 96
+	bbox	14 11 36 84
+	frame	data/chars/maki/idle1.gif
+offset	32 99
+        frame	data/chars/maki/idle2.gif
+offset	32 100
+        frame	data/chars/maki/idle3.gif
+offset	32 99
+        frame	data/chars/maki/idle4.gif
+offset	31 97
+        frame	data/chars/maki/idle5.gif
+offset	31 96
+        frame	data/chars/maki/idle6.gif    
+
+
+anim faint
+	loop	1
+	delay	10
+	offset	34 93
+	bbox	12 14 27 55
+	frame	data/chars/maki/faint1.gif
+        frame	data/chars/maki/faint2.gif
+offset	34 94
+        frame	data/chars/maki/faint3.gif
+offset	35 94
+        frame	data/chars/maki/faint4.gif
+offset	35 95
+        frame	data/chars/maki/faint5.gif
+offset	34 94
+        frame	data/chars/maki/faint6.gif    
+
+
+
+
+anim walk
+	loop	1
+	delay	7
+	offset	39 97
+	bbox	20 8 31 74
+	frame	data/chars/maki/wk1.gif
+offset	39 98
+        frame	data/chars/maki/wk2.gif
+offset	22 100
+        bbox    5 9 26 79
+        frame	data/chars/maki/wk3.gif
+offset	22 99
+        frame	data/chars/maki/wk4.gif
+offset	22 98
+        frame	data/chars/maki/wk5.gif
+offset	22 97
+        frame	data/chars/maki/wk6.gif
+offset	27 98
+        bbox    11 12 22 79   
+        frame	data/chars/maki/wk7.gif
+offset	24 99
+        frame	data/chars/maki/wk8.gif
+offset	22 100
+        frame	data/chars/maki/wk9.gif
+offset	22 98
+        frame	data/chars/maki/wk10.gif
+offset	27 97
+        frame	data/chars/maki/wk11.gif
+offset	33 96
+	bbox	20 8 31 74
+        frame	data/chars/maki/wk12.gif
+
+
+
+
+
+anim run
+	loop	1
+	delay	8
+	offset	53 86
+	bbox	49 6 36 45
+	frame	data/chars/maki/run1.gif
+offset	28 85
+        bbox    23 7 32 44 
+	frame	data/chars/maki/run2.gif
+offset	41 87
+        bbox    32 14 35 39
+        frame	data/chars/maki/run3.gif
+offset	49 86
+	bbox	49 6 36 45
+        frame	data/chars/maki/run4.gif
+offset	31 85
+        bbox    23 7 32 44 
+        frame	data/chars/maki/run5.gif
+offset	45 87
+        bbox    32 14 35 39
+        frame	data/chars/maki/run6.gif
+
+
+
+
+anim get
+	loop	0
+	delay	5
+	offset	41 79
+        bbox          0 0 0 0 
+	frame	data/chars/maki/get1.gif
+offset	37 68
+        frame	data/chars/maki/get2.gif
+offset	40 65
+        frame	data/chars/maki/get3.gif
+offset	37 68
+        frame	data/chars/maki/get2.gif
+
+
+
+anim block
+	loop	0
+	delay	5
+	offset	32 97
+	frame	data/chars/maki/block1.gif
+offset	34 98 
+        bbox    9 10 26 63 
+	delay	5
+        frame	data/chars/maki/block2.gif
+
+
+
+
+
+
+
+anim attack1
+	loop	0
+	delay	5
+	offset	32 98
+	bbox	21 1 23 65
+	frame	data/chars/maki/1atk1.gif
+        attack  44 13 49 62 5
+        frame	data/chars/maki/1atk2.gif
+        frame	data/chars/maki/1atk3.gif
+offset  32 97
+        attack  0 0 0 0 0
+        frame	data/chars/maki/1atk4.gif
+
+
+
+
+anim attack2
+	loop	0
+	delay	5
+	offset	38 95
+	bbox	26 14 23 58
+	frame	data/chars/maki/2atk1.gif
+offset	33 96
+        frame	data/chars/maki/2atk2.gif    
+offset	34 95
+        attack  53 22 63 54 5
+        frame	data/chars/maki/2atk3.gif
+        frame	data/chars/maki/2atk4.gif
+        bbox    18 12 25 63    
+        frame	data/chars/maki/2atk5.gif
+offset	33 98
+        frame	data/chars/maki/2atk6.gif
+offset	32 103
+        attack  0 0 0 0 0 
+        frame	data/chars/maki/2atk7.gif
+offset	32 97
+        bbox    13 11 29 69
+        frame	data/chars/maki/2atk8.gif
+
+
+
+
+
+anim attack3
+	loop	0
+        offset	35 98
+	bbox	35 9 20 70
+        delay   5
+	sound   data/sounds/fast.wav
+	hitfx   data/sounds/hk.wav
+	frame	data/chars/maki/3atk1.gif
+offset	11 101
+        bbox    11 7 25 62 
+ 	frame	data/chars/maki/3atk2.gif
+offset	6 99
+        bbox    8 6 25 69
+	frame	data/chars/maki/3atk3.gif
+offset	4 100
+        attack  28 35 55 55 5
+	frame	data/chars/maki/3atk4.gif
+offset	7 99
+        bbox    5 11 26 59
+	frame	data/chars/maki/3atk5.gif
+offset	17 98
+        attack  0 0 0 0 0
+        frame	data/chars/maki/3atk6.gif
+offset	36 90
+        bbox    36 10 23 65
+	frame	data/chars/maki/4atk1.gif
+offset	24 99
+        bbox    23 10 28 75
+	frame	data/chars/maki/4atk2.gif
+offset	4 107
+        bbox    10 11 23 76
+	frame	data/chars/maki/4atk3.gif
+offset	-8 112
+        bbox    4 11 18 83
+	frame	data/chars/maki/4atk4.gif
+offset	6 113
+        attack  35 2 40 100 10 1
+        bbox    16 12 19 66
+	frame	data/chars/maki/4atk5.gif
+offset	1 112
+	frame	data/chars/maki/4atk6.gif
+offset	7 108
+	frame	data/chars/maki/4atk7.gif
+offset	19 102
+        attack  0 0 0 0 0 0
+        bbox    18 11 20 71
+	frame	data/chars/maki/4atk8.gif
+offset	32 82
+        bbox    17 13 31 58
+	frame	data/chars/maki/4atk9.gif
+offset	32 90
+        bbox    17 9 24 68
+	frame	data/chars/maki/4atk10.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim runattack
+	loop	0
+	delay	7
+	offset	33 92
+        bbox    0 0 0 0 
+	fastattack 1
+	followanim 4
+	followcond 1
+        move    10
+	sound   data/sounds/makiratk.wav
+	frame	data/chars/maki/fury1.gif
+offset	33 90
+        frame	data/chars/maki/fury2.gif
+offset	34 90
+        attack  52 19 79 69 5
+        move    0
+	frame	data/chars/maki/fury3.gif
+offset	35 90
+	frame	data/chars/maki/fury4.gif
+offset	48 90	
+        frame	data/chars/maki/fury5.gif
+offset	50 90
+ 	frame	data/chars/maki/fury6.gif
+offset	36 91
+        frame	data/chars/maki/fury7.gif
+offset	11 91
+        attack  0 0 0 0 0 
+	frame	data/chars/maki/fury8.gif
+offset	23 91
+	frame	data/chars/maki/fury9.gif
+offset	32 93
+        frame	data/chars/maki/fury10.gif
+
+
+anim follow4
+jumpframe 36 2
+	loop	0
+	delay	3
+        bbox    0 0 0 0 
+	fastattack 1
+	sound   data/sounds/makiratk.wav
+offset	32 83
+	frame	data/chars/maki/fury11.gif
+offset	31 91
+	frame	data/chars/maki/fury12.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	31 112
+        attack  60 1 36 83 2
+	frame	data/chars/maki/fury13.gif
+offset	31 129
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury14.gif
+offset	31 134
+        attack  32 0 55 85 2
+	frame	data/chars/maki/fury15.gif
+offset	32 97
+        attack  0 0 0 0 0
+	frame	data/chars/maki/fury16.gif
+offset	32 87
+	frame	data/chars/maki/fury17.gif
+offset	10 104
+        delay   5 
+	frame	data/chars/maki/fury18.gif
+offset	24 141
+        attack  35 5 67 128 10 1
+	frame	data/chars/maki/fury19.gif
+offset	24 140
+	frame	data/chars/maki/fury20.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/maki/fury21.gif
+offset	29 134
+	frame	data/chars/maki/fury22.gif
+offset	31 121
+	frame	data/chars/maki/fury23.gif
+offset	18 138
+	frame	data/chars/maki/fury24.gif
+offset	20 134
+	frame	data/chars/maki/fury25.gif
+
+
+
+
+anim runjumpattack
+	loop	0
+	offset	56 100
+        delay   4
+        bbox    0 0 0 0 
+	sound   data/sounds/makirjatk.wav
+	hitfx           data/sounds/hk.wav
+        frame	data/chars/maki/rjatk1.gif
+offset  60 109
+        frame	data/chars/maki/rjatk2.gif 
+offset  35 105
+        frame	data/chars/maki/rjatk3.gif 
+offset  36 109
+        attack  6 46 90 38 10 1
+        frame	data/chars/maki/rjatk4.gif 
+offset  36 116
+        attack  0 0 0 0 0 0
+        frame	data/chars/maki/rjatk5.gif
+
+
+
+
+anim special
+	loop	0
+	delay   4
+	offset	34 93
+        bbox    0 0 0 0  
+        fastattack 1 
+	sound   data/sounds/makispec.wav
+	hitfx   data/sounds/hk.wav
+	frame	data/chars/maki/spec1.gif
+offset  32 93
+        frame	data/chars/maki/spec2.gif
+offset	31 98
+ 	frame	data/chars/maki/spec3.gif
+offset	25 101
+        attack  26 0 76 102 5
+ 	frame	data/chars/maki/spec4.gif
+offset	24 99
+        attack  0 0 0 0 0
+ 	frame	data/chars/maki/spec5.gif
+offset	64 100
+ 	frame	data/chars/maki/spec6.gif
+offset	81 101
+        attack  0 0 63 104 5
+ 	frame	data/chars/maki/spec7.gif
+offset	46 105
+ 	frame	data/chars/maki/spec8.gif
+offset	23 102
+        attack  0 0 0 0 0
+ 	frame	data/chars/maki/spec9.gif
+offset	25 101
+        attack  26 0 76 102 5
+ 	frame	data/chars/maki/spec4.gif
+offset	24 99
+        attack  0 0 0 0 0
+ 	frame	data/chars/maki/spec5.gif
+offset	64 100
+ 	frame	data/chars/maki/spec6.gif
+offset	81 101
+        attack  0 0 63 104 5
+ 	frame	data/chars/maki/spec7.gif
+offset	46 105
+ 	frame	data/chars/maki/spec8.gif
+offset	23 102
+        attack  0 0 0 0 0
+ 	frame	data/chars/maki/spec9.gif
+offset	25 101
+        attack  26 0 76 102 5
+ 	frame	data/chars/maki/spec4.gif
+offset	24 99
+        attack  0 0 0 0 0
+ 	frame	data/chars/maki/spec5.gif
+offset	64 100
+ 	frame	data/chars/maki/spec6.gif
+offset	81 101
+        attack  0 0 63 104 5
+ 	frame	data/chars/maki/spec7.gif
+offset	46 105
+ 	frame	data/chars/maki/spec8.gif
+offset	23 102
+        attack  0 0 0 0 0
+ 	frame	data/chars/maki/spec9.gif
+offset	25 101
+        attack  26 0 76 102 5 1
+ 	frame	data/chars/maki/spec4.gif
+offset	24 99
+        attack  0 0 0 0 0 0
+ 	frame	data/chars/maki/spec5.gif
+offset	64 100
+ 	frame	data/chars/maki/spec6.gif
+offset	81 101
+        attack  0 0 63 104 5 1
+ 	frame	data/chars/maki/spec7.gif
+offset	46 105
+ 	frame	data/chars/maki/spec8.gif
+offset	23 102
+        attack  0 0 0 0 0 0
+ 	frame	data/chars/maki/spec9.gif
+offset  32 93
+        frame	data/chars/maki/spec2.gif
+offset  34 93
+        frame	data/chars/maki/spec1.gif
+
+
+
+
+
+
+
+
+
+
+ 
+
+anim freespecial2
+	loop	 0
+	delay	 5
+	followanim 1
+	followcond 1
+        bbox    0 0 0 0 
+	fastattack 1
+        move    10
+	sound   data/sounds/.wav
+offset	34 82
+	frame	data/chars/maki/free1.gif
+offset	32 90
+	frame	data/chars/maki/free2.gif
+offset	33 98
+        move    0
+        attack  45 0 40 76 5  
+	frame	data/chars/maki/free3.gif
+offset	33 90
+	frame	data/chars/maki/free4.gif
+offset	33 91
+        attack  0 0 0 0 0
+	frame	data/chars/maki/free5.gif
+offset	33 99
+	frame	data/chars/maki/free6.gif
+offset	32 97
+	frame	data/chars/maki/free7.gif
+
+
+
+
+
+
+anim follow1
+	loop	0
+	delay	4
+        bbox    0 0 0 0
+	fastattack 1
+	sound   data/sounds/makifree.wav
+offset	35 98
+	frame	data/chars/maki/3atk1.gif
+offset	11 101
+ 	frame	data/chars/maki/3atk2.gif
+offset	6 99
+	frame	data/chars/maki/3atk3.gif
+offset	4 100
+        attack  28 35 55 55 3
+	frame	data/chars/maki/3atk4.gif
+offset	7 99
+	frame	data/chars/maki/3atk5.gif
+offset	17 98
+        attack  0 0 0 0 0
+        frame	data/chars/maki/3atk6.gif
+offset	20 99
+	frame	data/chars/maki/free8.gif
+offset	22 98							
+	frame	data/chars/maki/free9.gif
+offset	23 94
+        attack  44 24 69 50 5
+	frame	data/chars/maki/free10.gif
+offset	22 96
+	frame	data/chars/maki/free11.gif
+offset	15 98
+	frame	data/chars/maki/free12.gif
+offset	15 103
+        attack  0 0 0 0 0
+	frame	data/chars/maki/free13.gif
+offset	16 101
+	frame	data/chars/maki/free14.gif
+offset	36 94
+        frame	data/chars/maki/gatk1.gif
+offset	36 98
+        frame	data/chars/maki/gatk2.gif
+offset	7 103
+        attack  28 26 33 72 3
+        frame	data/chars/maki/gatk3.gif
+offset	3 105
+        frame	data/chars/maki/gatk4.gif   
+offset	9 100
+        attack  0 0 0 0 0
+        frame	data/chars/maki/gatk5.gif
+offset	27 79 
+	frame	data/chars/maki/free15.gif
+offset	41 79
+	frame	data/chars/maki/get1.gif
+offset	37 68
+        frame	data/chars/maki/get2.gif
+offset	40 65
+        frame	data/chars/maki/get3.gif
+offset	4 95
+        attack  6 10 38 83 7
+	frame	data/chars/maki/free16.gif
+offset	21 132
+        attack  0 0 0 0 0
+	frame	data/chars/maki/free17.gif
+offset	21 129
+        attack  11 4 52 121 10 1
+	frame	data/chars/maki/free18.gif
+offset	14 116
+	frame	data/chars/maki/free19.gif
+offset	14 106
+        attack  0 0 0 0 0 0
+	frame	data/chars/maki/free20.gif
+
+
+
+
+
+
+
+
+
+anim freespecial3
+	loop	0
+	delay	5
+	followanim 2
+	followcond 1
+	fastattack 1
+        sound   data/sounds/.wav
+offset	27 112
+        move    10
+        bbox    10 16 26 71
+	frame	data/chars/maki/jump1.gif
+offset	30 127
+        bbox    14 24 20 82
+        frame	data/chars/maki/jump2.gif
+offset	33 126
+        bbox    16 24 24 70
+        frame	data/chars/maki/jump3.gif
+        bbox    0 0 0 0
+offset	37 130
+	frame	data/chars/maki/free21.gif
+offset	38 142
+        frame	data/chars/maki/free22.gif
+offset	40 142
+        frame	data/chars/maki/free23.gif
+offset	51 151
+        move    0
+        attack  30 49 95 21 8
+        frame	data/chars/maki/free24.gif
+offset	56 139
+        frame	data/chars/maki/free25.gif
+offset	51 129
+        frame	data/chars/maki/free26.gif
+offset	49 132
+        attack  0 0 0 0 0
+        frame	data/chars/maki/free27.gif
+
+
+
+
+
+
+anim follow2
+	loop	0
+	delay	5
+        bbox    0 0 0 0 
+	fastattack 1
+	sound   data/sounds/makiratk.wav
+offset	41 138
+        frame	data/chars/maki/free28.gif
+offset	34 134
+        attack  17 27 61 67 5
+        frame	data/chars/maki/free29.gif
+offset	29 146
+        frame	data/chars/maki/free30.gif
+offset	29 147
+        attack  0 0 0 0 0
+        frame	data/chars/maki/free31.gif
+offset	35 139
+        frame	data/chars/maki/free32.gif
+offset	35 135
+	frame	data/chars/maki/ver1.gif
+offset	35 142
+	attack  21 6 52 102 5 
+	frame	data/chars/maki/ver2.gif
+offset	33 146
+	frame	data/chars/maki/ver3.gif
+offset	33 148
+	attack  0 0 0 0 0 
+        frame	data/chars/maki/ver4.gif
+offset	33 146
+	frame	data/chars/maki/ver5.gif
+offset	34 151
+	frame	data/chars/maki/ver6.gif
+offset	43 152
+        frame	data/chars/maki/free33.gif
+offset	42 155
+        frame	data/chars/maki/free34.gif
+offset	33 160
+        frame	data/chars/maki/free35.gif
+offset	28 141
+        attack  8 38 85 63 10 1
+        frame	data/chars/maki/free36.gif
+offset	24 144
+        attack  0 0 0 0 0 0
+        frame	data/chars/maki/free37.gif
+
+
+
+
+anim freespecial4
+	loop	0
+	delay	5
+	offset	39 62
+	followanim 3
+	followcond 1
+        bbox    0 0 0 0 
+	fastattack 1
+        move    10
+	sound   data/sounds/.wav
+	frame	data/chars/maki/free66.gif
+offset	40 58
+        frame	data/chars/maki/free67.gif
+offset	46 51
+        frame	data/chars/maki/free68.gif
+offset	45 50
+        attack  43 15 91 36 7
+        frame	data/chars/maki/free69.gif
+offset	45 52
+        move    0
+        frame	data/chars/maki/free70.gif
+offset	36 60
+        frame	data/chars/maki/free71.gif
+offset	28 63
+        attack  0 0 0 0 0
+        frame	data/chars/maki/free72.gif
+offset	31 66
+        frame	data/chars/maki/free73.gif
+offset	32 62
+        frame	data/chars/maki/free74.gif
+
+
+anim follow3
+jumpframe 1 2 
+	loop	0
+	delay	5
+	offset	40 114
+	followanim 3
+	followcond 1
+        bbox    0 0 0 0 
+	fastattack 1
+	sound   data/sounds/.wav
+	frame	data/chars/maki/free76.gif
+offset	35 114
+        frame	data/chars/maki/free77.gif
+offset	49 86
+        attack  44 1 65 68 10 1
+        frame	data/chars/maki/free78.gif
+offset	39 125
+        attack  0 0 0 0 0 0
+        frame	data/chars/maki/free79.gif
+offset	29 124
+        frame	data/chars/maki/free80.gif
+offset	40 120
+        frame	data/chars/maki/free81.gif
+offset	62 113
+        attack  1 0 63 82 10 1
+        frame	data/chars/maki/free82.gif
+offset	22 77
+        attack  0 0 0 0 0 0
+        frame	data/chars/maki/free83.gif
+offset	34 53
+        frame	data/chars/maki/free84.gif
+offset	33 65
+        frame	data/chars/maki/free85.gif
+offset	32 77
+        frame	data/chars/maki/free86.gif
+offset	33 65
+        frame	data/chars/maki/free85.gif
+offset	34 53
+        frame	data/chars/maki/free84.gif
+offset	22 77
+        frame	data/chars/maki/free83.gif
+
+
+anim jump
+	loop 	0
+	delay   10
+	offset	27 112
+        bbox    10 16 26 71
+	frame	data/chars/maki/jump1.gif
+offset	30 122
+        bbox    14 24 20 82
+        frame	data/chars/maki/jump2.gif
+offset	33 111
+        bbox    16 24 24 70
+        frame	data/chars/maki/jump3.gif
+offset	32 106
+        bbox    17 19 28 63
+        frame	data/chars/maki/jump4.gif
+offset	33 115
+        bbox    20 29 26 60
+	frame	data/chars/maki/jump5.gif
+
+
+
+
+
+anim jumpforward
+	loop	0
+	offset	30 104
+	delay   5
+        bbox    15 20 26 48
+	sound   data/sounds/makiairk.wav
+	hitfx   data/sounds/hk.wav
+	frame	data/chars/maki/airk1.gif
+offset	31 114
+	frame	data/chars/maki/airk2.gif
+offset	36 120
+        bbox    0 0 0 0
+	frame	data/chars/maki/airk3.gif
+offset	36 122
+	frame	data/chars/maki/airk4.gif
+offset	37 120
+        delay   25
+        attack  7 45 101 31 10 1
+	frame	data/chars/maki/airk5.gif
+offset	35 125
+        delay   5 
+        bbox    17 34 31 50
+	frame	data/chars/maki/airk6.gif
+offset	37 131
+        attack  0 0 0 0 0 0
+        bbox    20 38 31 68
+	frame	data/chars/maki/airk7.gif
+offset	37 137
+        bbox    21 48 33 57
+	frame	data/chars/maki/airk8.gif
+
+
+
+
+
+
+
+
+
+
+
+
+
+anim jumpattack
+	loop	0
+	offset	35 105
+	delay   4
+        bbox    18 15 34 73
+	sound   data/sounds/makiairk.wav
+	hitfx   data/sounds/hk.wav
+	frame	data/chars/maki/ver1.gif
+offset	35 112
+        bbox    0 0 0 0 
+	delay   20
+	attack  21 6 52 102 7 1
+	frame	data/chars/maki/ver2.gif
+offset	33 116
+	delay   3
+	frame	data/chars/maki/ver3.gif
+offset	33 118
+	attack  0 0 0 0 0 0
+        frame	data/chars/maki/ver4.gif
+offset	33 116
+	frame	data/chars/maki/ver5.gif
+offset	34 121
+        bbox    18 33 35 63
+	frame	data/chars/maki/ver6.gif
+
+
+
+
+
+
+
+anim jumpattack2
+dive 3 3
+	loop	0
+	bbox	0 0 0 0
+        DELAY   5
+	sound   data/sounds/makiairk.wav
+offset	39 103
+	frame	data/chars/maki/dive1.gif
+offset	33 116
+	frame	data/chars/maki/dive2.gif
+offset	28 120
+        delay   25
+        attack  17 32 56 85 15 1
+	frame	data/chars/maki/dive3.gif
+        attack  0 0 0 0 0 0
+
+
+
+
+
+anim grab
+	loop	 0
+        delay    3000				
+	offset	 37 94
+	bbox	 32 7 36 79
+        frame	 data/chars/maki/grab.gif
+
+
+
+
+
+anim grabattack
+	loop	0
+	offset	36 94
+	bbox	32 11 20 72
+	delay	5
+        hitfx   data/sounds/GRABATCK.wav
+        frame	data/chars/maki/gatk1.gif
+offset	36 98
+        frame	data/chars/maki/gatk2.gif
+offset	7 103
+        bbox    0 0 0 0
+        attack  28 26 33 72 5
+        frame	data/chars/maki/gatk3.gif
+offset	3 105
+        frame	data/chars/maki/gatk4.gif   
+offset	9 100
+        attack  0 0 0 0 0
+        frame	data/chars/maki/gatk5.gif
+
+
+
+
+
+
+anim grabattack2
+	loop	0
+	offset	23 100
+	bbox	0 0 0 0 
+	delay	5
+        hitfx   data/sounds/GRABATCK.wav
+        frame	data/chars/maki/gatk21.gif
+offset	26 125
+        attack  34 2 33 126 10 1
+        frame	data/chars/maki/gatk22.gif
+offset	22 127
+        frame	data/chars/maki/gatk23.gif
+offset	16 120
+        frame	data/chars/maki/gatk24.gif
+offset	14 100
+        attack  0 0 0 0 0 0
+        frame	data/chars/maki/gatk25.gif
+
+
+
+
+
+          
+anim throw
+	loop	0
+	offset	44 93
+	delay	9
+        bbox    0 0 0 0
+	sound   data/sounds/makithw.wav
+	frame	data/chars/maki/trow1.gif
+offset	35 91
+	frame	data/chars/maki/trow2.gif
+offset	28 106
+	frame	data/chars/maki/trow3.gif
+offset	4 96
+	frame	data/chars/maki/trow4.gif
+offset	-12 83
+        delay   23
+	frame	data/chars/maki/trow5.gif
+offset	-6 86
+        delay   7
+	frame	data/chars/maki/trow6.gif
+offset	-3 93
+        frame	data/chars/maki/trow7.gif
+offset	1 99
+	frame	data/chars/maki/trow8.gif
+offset	25 98
+	frame	data/chars/maki/trow9.gif
+
+
+
+
+anim pain
+	loop	0
+	delay	10
+	offset	32 99
+	bbox	7 5 36 98
+	sound   data/sounds/makipain.wav
+	frame	data/chars/maki/pain1.gif
+offset	41 98
+        bbox    9 8 52 88
+        delay   18
+	frame	data/chars/maki/pain2.gif
+	delay	10
+        bbox    6 5 62 86
+offset	50 92
+	frame	data/chars/maki/pain3.gif
+
+
+
+
+
+
+anim fall
+	loop	0
+	delay   5
+        offset	41 87
+	frame	data/chars/maki/fall1.gif
+offset	46 76
+        delay   65
+        ATTACK  3 12 42 33 10 1
+        frame	data/chars/maki/fall2.gif
+offset	37 99
+        delay   15
+        frame	data/chars/maki/fall3.gif
+offset  50 48
+        attack  0 0 0 0 0 0
+        delay   5
+        frame	data/chars/maki/fall4.gif
+offset	63 18
+        delay   35
+        frame	data/chars/maki/fall5.gif
+
+
+
+anim rise
+	loop	0
+	offset	40 65
+	delay   7
+        bbox    0 0 0 0
+	frame	data/chars/maki/rise1.gif
+offset	58 74
+	frame	data/chars/maki/rise2.gif
+offset	72 66
+	frame	data/chars/maki/rise3.gif
+offset	61 80
+	frame	data/chars/maki/rise4.gif
+
+
+
+
+
+

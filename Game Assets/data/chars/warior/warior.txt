@@ -1,0 +1,469 @@
+#Warior by Kingherb, fixed by vicviper
+
+name	P.Warrior
+health	100
+speed	10
+type	player
+shadow	4
+icon	data/chars/Warior/icon.gif
+
+diesound data/sounds/die3.wav
+
+remap	data/chars/Warior/idle1.gif    data/chars/Warior/alter.gif
+
+
+anim idle
+	loop	1
+	delay	60
+	offset	99 183
+	bbox	79 95 40 84
+	frame   data/chars/Warior/idle1.gif
+	frame   data/chars/Warior/idle1.gif
+	frame   data/chars/Warior/idle1.gif
+	frame   data/chars/Warior/idle1.gif
+	delay	800
+	delay	12
+	frame   data/chars/Warior/idle2.gif
+	frame   data/chars/Warior/idle3.gif
+	frame   data/chars/Warior/idle4.gif
+	frame   data/chars/Warior/idle5.gif
+	frame   data/chars/Warior/idle6.gif
+	frame   data/chars/Warior/idle6.gif
+	frame   data/chars/Warior/idle5.gif
+	frame   data/chars/Warior/idle4.gif
+	frame   data/chars/Warior/idle3.gif
+	frame   data/chars/Warior/idle2.gif
+	frame   data/chars/Warior/idle3.gif
+	frame   data/chars/Warior/idle4.gif
+	frame   data/chars/Warior/idle5.gif
+	frame   data/chars/Warior/idle6.gif
+	frame   data/chars/Warior/idle5.gif
+	frame   data/chars/Warior/idle4.gif
+	frame   data/chars/Warior/idle3.gif
+	frame   data/chars/Warior/idle2.gif
+	frame   data/chars/Warior/idle3.gif
+	frame   data/chars/Warior/idle4.gif
+	frame   data/chars/Warior/idle5.gif
+	frame   data/chars/Warior/idle6.gif
+	frame   data/chars/Warior/idle5.gif
+	frame   data/chars/Warior/idle4.gif
+	frame   data/chars/Warior/idle3.gif
+	frame   data/chars/Warior/idle2.gif
+anim walk
+	loop	1
+	delay	5
+	offset	104 182
+	bbox	86 94 42 81
+	frame   data/chars/Warior/walk1.gif
+	frame   data/chars/Warior/walk2.gif
+	frame   data/chars/Warior/walk3.gif
+	frame   data/chars/Warior/walk4.gif
+	frame   data/chars/Warior/walk5.gif
+	frame   data/chars/Warior/walk6.gif
+	frame   data/chars/Warior/walk7.gif
+	frame   data/chars/Warior/walk8.gif
+	frame   data/chars/Warior/walk9.gif
+	frame   data/chars/Warior/walk10.gif
+	frame   data/chars/Warior/walk11.gif
+	frame   data/chars/Warior/walk12.gif
+
+anim get
+	loop	0
+	delay	8
+	offset	99 183
+	sound   data/chars/Warior/sounds/predget.wav
+	frame   data/chars/Warior/get1.gif
+	frame   data/chars/Warior/get1.gif
+        delay   11
+	frame   data/chars/Warior/get1.gif
+        delay   5
+	frame   data/chars/Warior/get1.gif
+
+
+anim jump
+	loop	0
+	delay	7
+	offset	92 179
+	bbox	75 65 51 79
+	frame   data/chars/Warior/jump1.gif
+        offset  92 164
+	frame   data/chars/Warior/jump2.gif
+        offset  92 144
+	frame   data/chars/Warior/jump3.gif
+	frame   data/chars/Warior/jump4.gif
+	frame   data/chars/Warior/jump5.gif
+	frame   data/chars/Warior/jump6.gif
+        offset  92 176
+        frame   data/chars/Warior/jump7.gif
+
+
+anim jumpattack
+	loop	0
+	offset	66 128
+	delay	7
+	bbox	50 66 42 54
+        frame   data/chars/Warior/ak1.gif
+        delay   20
+        offset  66 127
+        attack  74 82 72 39 12 1
+        frame   data/chars/Warior/ak2.gif
+        frame   data/chars/Warior/ak2.gif
+
+
+
+anim jumpattack2
+	loop	0
+	offset	69 125
+	delay	7
+	bbox	56 56 33 61
+        frame   data/chars/Warior/ap1.gif
+        frame   data/chars/Warior/ap2.gif
+        attack  76 55 47 63 7
+        frame   data/chars/Warior/ap3.gif
+        frame   data/chars/Warior/ap3.gif
+        frame   data/chars/Warior/ap3.gif
+        attack  0 0 0 0 0
+        frame   data/chars/Warior/ap2.gif
+
+
+anim attack1
+	loop	0
+	delay	3
+	offset	95 178
+	bbox	80 87 39 83
+        frame   data/chars/Warior/a1-01.gif
+        attack  119 80 91 62 8
+        frame   data/chars/Warior/a1-02.gif
+        frame   data/chars/Warior/a1-02.gif
+        attack  0 0 0 0 0
+        frame   data/chars/Warior/a1-01.gif
+        frame   data/chars/Warior/a1-01.gif
+
+
+anim attack2
+        loop	0
+	delay	5
+	offset	95 178
+	bbox	81 108 39 69
+	frame	data/chars/Warior/a2-01.gif
+	frame	data/chars/Warior/a2-02.gif
+	bbox    32 117
+        attack  122 103 104 39 8
+	frame	data/chars/Warior/a2-03.gif
+	frame	data/chars/Warior/a2-03.gif
+	frame	data/chars/Warior/a2-04.gif
+	attack  0 0 0 0 0
+	delay	4
+	frame	data/chars/Warior/a2-05.gif
+	frame	data/chars/Warior/a2-06.gif
+	frame	data/chars/Warior/a2-07.gif
+	attack  93 61 86 72 20 1
+	frame	data/chars/Warior/a2-08.gif
+	attack  0 0 0 0 0
+	frame	data/chars/Warior/a2-09.gif
+       	frame	data/chars/Warior/a2-10.gif
+	frame	data/chars/Warior/a2-11.gif
+
+anim attack3
+        loop	0
+	delay	3
+	offset	95 178
+	bbox	81 108 39 69
+	frame	data/chars/Warior/a3-01.gif
+	frame	data/chars/Warior/a3-02.gif
+	bbox    32 117
+	frame	data/chars/Warior/a3-03.gif
+	frame	data/chars/Warior/a3-04.gif
+	frame	data/chars/Warior/a3-05.gif
+        blast  100 86 91 83 20 1
+	frame	data/chars/Warior/a3-06.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/a3-06.gif
+        blast  106 94 85 85 20 1
+	frame	data/chars/Warior/a3-07.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/a3-07.gif
+	blast  93 39 45 115 20 1
+	offset	95 178
+	frame	data/chars/Warior/a3-08.gif
+	attack  0 0 0 0 0
+	frame	data/chars/Warior/a3-09.gif
+	frame	data/chars/Warior/a3-10.gif
+
+anim grab
+	loop	0
+	delay	100
+	offset	98 173
+	bbox	93 90 32 78
+	frame	data/chars/Warior/grab.gif
+
+
+anim throw
+loop	0
+	offset	99 183
+	delay	5
+	sound	data/chars/Warior/final.wav
+	frame	data/chars/Warior/throw1.gif
+	move	-11
+	offset	75 125
+	blast	-30 -30 200 200 100 1
+	frame	data/chars/Warior/throw2.gif
+	move	-11
+	offset	75 140
+	frame	data/chars/Warior/throw2.gif
+	move	-11
+	offset	75 155
+	frame	data/chars/Warior/throw2.gif
+	move	-11
+	offset	75 170
+	frame	data/chars/Warior/throw2.gif
+	move	-11
+	offset	75 185
+	frame	data/chars/Warior/throw3.gif
+	move	-11
+	offset	75 200
+	frame	data/chars/Warior/throw3.gif
+	move	-11
+	offset	75 185
+	frame	data/chars/Warior/throw3.gif
+	move	-11
+	offset	75 170
+	frame	data/chars/Warior/throw3.gif
+	move	-11
+	offset	75 155
+	frame	data/chars/Warior/throw4.gif
+	move	-11
+	offset	75 140
+	frame	data/chars/Warior/throw4.gif
+	move	-11
+	offset	75 125
+	frame	data/chars/Warior/throw4.gif
+	move	-11
+	offset	75 105
+	frame	data/chars/Warior/throw4.gif
+	move	-11
+	offset	75 90
+	frame	data/chars/Warior/throw5.gif
+	move	-11
+	offset	75 80
+	frame	data/chars/Warior/throw5.gif
+	DELAY	40
+	frame	data/chars/Warior/throw5.gif
+	blast	0 0 0 0 0
+
+
+anim pain
+	loop	0
+	offset	99 183
+	bbox	72 90 43 83
+	delay	15
+	frame	data/chars/Warior/pain1.gif
+	frame	data/chars/Warior/pain2.gif
+	frame	data/chars/Warior/pain1.gif
+
+
+
+anim fall
+	loop	0
+	offset	90 170
+	delay	20
+	attack	70 87 56 61 17 1
+	frame	data/chars/Warior/fall1.gif
+        offset  88 134
+	frame	data/chars/Warior/fall2.gif
+	frame	data/chars/Warior/fall3.gif
+        offset  93 124
+	frame	data/chars/Warior/fall4.gif
+	frame	data/chars/Warior/fall5.gif
+
+
+anim rise
+	loop	0
+	offset  	93 124
+	delay	9
+	frame	data/chars/Warior/rise1.gif
+   	frame	data/chars/Warior/rise2.gif
+	frame	data/chars/Warior/rise3.gif
+
+anim special
+	loop	0
+	delay	7
+	offset	99 183
+        sound   data/chars/Warior/sounds/special.wav
+	frame	data/chars/Warior/ta01.gif
+        delay   3
+	frame	data/chars/Warior/ta02.gif
+	frame	data/chars/Warior/ta03.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta04.gif
+        attack  0 0 0 0 0 0
+        frame	data/chars/Warior/ta05.gif
+	frame	data/chars/Warior/ta06.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta07.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/ta08.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta09.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/ta10.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta11.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/ta12.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta13.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/ta14.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta15.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/ta16.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta17.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/ta18.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/ta19.gif
+	frame	data/chars/Warior/ta20.gif
+	frame	data/chars/Warior/ta21.gif
+	frame	data/chars/Warior/ta22.gif
+        BLAST   0 0 0 0 0 0
+	frame	data/chars/Warior/ta23.gif
+	frame	data/chars/Warior/ta24.gif
+	frame	data/chars/Warior/ta25.gif
+
+anim freespecial
+	loop	0
+	delay	2
+	offset	95 178
+	bbox	22 102 50 92
+                sound   data/chars/Warior/sounds/shot.wav
+	frame	data/chars/Warior/free1.gif
+	frame	data/chars/Warior/free2.gif
+	frame	data/chars/Warior/free3.gif
+	frame	data/chars/Warior/free4.gif
+	frame	data/chars/Warior/free5.gif
+	attack  110 88 36 84 20 1
+	bbox	25 114 66 78
+	frame	data/chars/Warior/free6.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free7.gif
+	attack  110 80 91 101 20 1
+	frame	data/chars/Warior/free8.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free9.gif
+	attack	67 35 112 58 20 1
+	frame	data/chars/Warior/free10.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free11.gif
+	attack	67 35 112 58 20 1
+	frame	data/chars/Warior/free12.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free13.gif
+	attack  82 86 68 23 7 1
+	frame	data/chars/Warior/free14.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free14.gif
+	attack  82 86 68 23 7 1
+	frame	data/chars/Warior/free15.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free16.gif
+	attack  114 92 64 14 7 1
+	frame	data/chars/Warior/free17.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free18.gif
+	attack  132 91 68 22 7 1
+	frame	data/chars/Warior/free19.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free20.gif
+	attack  149 99 78 60 7 1
+	frame	data/chars/Warior/free21.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free22.gif
+	attack  167 94 79 29 7 1
+	frame	data/chars/Warior/free23.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free23.gif
+	attack  187 97 73 21 7 1
+	frame	data/chars/Warior/free24.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free24.gif
+	attack  182 92 89 29 7 1
+	frame	data/chars/Warior/free25.gif
+	attack  204 95 88 35 7 1
+	frame	data/chars/Warior/free26.gif
+	attack  203 92 108 37 7 1
+	frame	data/chars/Warior/free27.gif
+	attack  211 95 106 50 7 1
+	frame	data/chars/Warior/free28.gif
+	attack  0 0 0 0 0 0
+	frame	data/chars/Warior/free29.gif
+	frame	data/chars/Warior/free30.gif
+
+
+
+
+anim grabattack
+	loop	0
+	offset	98 173
+	bbox	79 95 41 82
+	delay	7
+	frame	data/chars/Warior/a5-01.gif
+	frame	data/chars/Warior/a5-01.gif
+        attack  104 87 36 46 10
+	frame	data/chars/Warior/a5-02.gif
+        attack  0 0 0 0 0
+	frame	data/chars/Warior/a5-01.gif
+
+
+
+anim grabattack2
+	loop	0
+	delay	7
+	offset	99 183
+        sound   data/chars/Warior/sounds/grabat2.wav
+	frame	data/chars/Warior/sh01.gif
+        delay   5
+	frame	data/chars/Warior/sh02.gif
+	frame	data/chars/Warior/sh03.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh04.gif
+        attack  0 0 0 0 0 0
+        frame	data/chars/Warior/sh05.gif
+	frame	data/chars/Warior/sh06.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh07.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/sh08.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh09.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/sh10.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh11.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/sh12.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh13.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/sh14.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh15.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/sh16.gif
+        blast   49 52 105 105 25 1
+	frame	data/chars/Warior/sh17.gif
+        attack  0 0 0 0 0 0
+	frame	data/chars/Warior/sh18.gif
+	frame	data/chars/Warior/sh19.gif
+	frame	data/chars/Warior/sh20.gif
+ 
+anim land
+	loop	0
+	delay	10
+	offset	99 183
+	frame   data/chars/Warior/get1.gif
+
+
+

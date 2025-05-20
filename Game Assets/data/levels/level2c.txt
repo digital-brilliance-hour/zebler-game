@@ -1,0 +1,136 @@
+#level2c
+music		data/music/mission4.BOR
+bossmusic	data/music/boss.bor
+
+background	data/bgs/level2c/back.gif
+
+panel		data/bgs/level2c/front.gif
+
+order		a
+
+# Block far right of level (a wall is there)
+blocked	1
+
+# ---------------------
+
+spawn	Chest_Buster
+map	1
+coords	380 220
+at	0
+
+spawn	Royal_Gaurd
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	-30 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	1
+coords	380 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	1
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	2
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	0
+coords	380 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	2
+coords	380 220
+at	0
+
+spawn	Alien1
+map	2
+coords	380 220
+at	0
+
+spawn	Chest_Buster
+map	0
+coords	380 220
+at	0
+
+spawn	Alien1
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien2
+map	0
+coords	380 220
+at	0
+
+spawn	alien2
+map	0
+coords	-30 220
+at	0
+
+spawn	Alien1
+map	2
+coords	-30 220
+at	0
+
+

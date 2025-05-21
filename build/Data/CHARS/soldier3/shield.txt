@@ -1,0 +1,46 @@
+name	shield
+health	1
+speed	13
+nolife	1
+aggression 30
+falldie	1
+nomove	1 1
+noname	1
+nodieblink    3
+jumpmove 0 2
+type	none
+
+gfxshadow 1
+
+diesound data/sounds/deathsoldier1.wav
+projectilehit   enemy npc obstacle
+
+animationscript data/scripts/escript.c
+
+		
+anim	idle
+	loop	0
+	delay	10
+	offset	52 80
+	jumpframe 1 4 0 0
+	frame	data/chars/soldier3/shield3.gif
+	frame	data/chars/soldier3/shield4.gif
+	frame	data/chars/soldier3/shield2.gif
+	frame	data/chars/soldier3/shield5.gif
+	frame	data/chars/soldier3/shield2.gif
+	frame	data/chars/soldier3/shield3.gif
+	frame	data/chars/soldier3/shield4.gif
+	frame	data/chars/soldier3/shield2.gif
+	frame	data/chars/soldier3/shield5.gif
+	frame	data/chars/soldier3/shield2.gif
+	frame	data/chars/soldier3/shield3.gif
+	frame	data/chars/soldier3/shield6.gif
+
+anim	spawn
+	loop	0
+	delay	7
+	offset	52 80
+	frame	data/chars/soldier3/shield3.gif
+
+#|edited by openBor Stats v 0.67
+		

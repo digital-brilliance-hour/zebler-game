@@ -1,0 +1,129 @@
+name	Tank
+health	900
+speed	5
+type	enemy
+gfxshadow 1
+antigrab 10
+nojump	1
+nopain	1
+weapons	tankst tank
+nolife  1
+noname  1
+falldie		1
+nodrop	2
+diesound data/sounds/bang3.wav
+
+
+load cannoshoot
+
+anim	attack1
+	range	150 250
+	loop	0
+	delay	7
+	offset	130 280
+	bbox	47 149 207 135
+	custbomb	cannoshoot
+	tossframe	1 1
+	sound	data/sounds/gun3.wav
+	frame	data/chars/tank/att00.gif
+	delay	12
+	frame	data/chars/tank/att01.gif
+	frame	data/chars/tank/att02.gif
+	frame	data/chars/tank/att03.gif
+		
+anim	death
+	loop	0
+	delay	10
+	offset	130 280
+	bbox	41 167 217 120
+	drawmethod	260 260
+	quakeframe	1 5 10
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot00.gif
+	frame	data/chars/tank/fall.gif
+	offset	130 280
+	frame	data/chars/tank/fireshoot01.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot02.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot03.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot04.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot05.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot06.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot07.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot08.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot09.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot10.gif
+	frame	data/chars/tank/fall.gif
+	frame	data/chars/tank/fireshoot11.gif
+	frame	data/chars/tank/fireshoot12.gif
+	frame	data/chars/tank/fireshoot13.gif
+	frame	data/chars/tank/fireshoot14.gif
+	frame	data/chars/tank/fireshoot15.gif
+	frame	data/chars/tank/fireshoot16.gif
+	frame	data/chars/tank/fireshoot17.gif
+	frame	data/chars/tank/fireshoot18.gif
+	frame	data/chars/tank/fireshoot19.gif
+	frame	data/chars/tank/fireshoot20.gif
+	frame	data/chars/tank/fireshoot21.gif
+	frame	data/chars/tank/fireshoot22.gif
+	frame	data/chars/tank/fireshoot23.gif
+	frame	data/chars/tank/fireshoot24.gif
+		
+anim	fall
+	loop	0
+	delay	1
+	offset	130 280
+	bbox	44 166 207 119
+	frame	data/chars/tank/fall.gif
+		
+anim	idle
+	loop	1
+	offset	130 280
+	bbox	49 152 206 134
+	delay	10
+	frame	data/chars/tank/walk00.gif
+		
+anim	pain
+	loop	0
+	delay	1
+	offset	130 280
+	bbox	43 147 213 137
+	frame	data/chars/tank/hurt00.gif
+	frame	data/chars/tank/hurt00.gif
+	frame	data/chars/tank/hurt00.gif
+	frame	data/chars/tank/hurt00.gif
+	frame	data/chars/tank/hurt00.gif
+	frame	data/chars/tank/hurt00.gif
+		
+anim	rise
+	bbox	44 149 212 140
+	loop	0
+	offset	130 280
+	delay	15
+	frame	data/chars/tank/att00.gif
+		
+anim	walk
+	loop	1
+	offset	130 280
+	bbox	43 151 215 138
+	delay	12
+	sound	data/sounds/tankwalk.wav
+	blast	55 221 200 69 15 1 0 0 0 0
+	frame	data/chars/tank/walk00.gif
+	frame	data/chars/tank/walk01.gif
+	frame	data/chars/tank/walk02.gif
+	frame	data/chars/tank/walk03.gif
+	frame	data/chars/tank/walk04.gif
+	frame	data/chars/tank/walk05.gif
+	frame	data/chars/tank/walk06.gif
+		
+#|edited by openBor Stats v 0.67
+		

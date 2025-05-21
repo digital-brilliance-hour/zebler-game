@@ -1,0 +1,278 @@
+name	soldier2
+health	150
+speed	13
+nolife	1
+aggression 30
+nodieblink    3
+falldie	2
+noname	1
+jumpmove 0 2
+type	enemy
+gfxshadow 1
+
+diesound data/sounds/death1.wav
+projectilehit   enemy npc obstacle
+
+
+animationscript data/scripts/escript.c
+
+load elect2
+load bulletr
+load flash2
+
+anim	attack1
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier2/att00.gif
+	attack	175 183 48 93 10 1 1 0 0 0
+	frame	data/chars/soldier2/att05.gif
+	frame	data/chars/soldier2/att04.gif
+	frame	data/chars/soldier2/att05.gif
+	frame	data/chars/soldier2/idle00.gif
+	frame	data/chars/soldier2/att00.gif
+
+anim	attack2
+	range	150 300
+	loop	0
+	delay	12
+	offset	140 280
+	bbox	126 194 42 87
+	custknife	bulletr
+	throwframe	2
+	sound	data/sounds/gun3.wav
+	frame	data/chars/soldier2/att00.gif
+	delay	7
+	frame	data/chars/soldier2/att01.gif
+	frame	data/chars/soldier2/att02.gif
+	frame	data/chars/soldier2/att03.gif
+	frame	data/chars/soldier2/att04.gif
+	frame	data/chars/soldier2/att05.gif
+	frame	data/chars/soldier2/att00.gif
+	bbox	0
+	delay	50
+	frame	data/chars/soldier2/spawn1.gif
+	delay	8
+	frame	data/chars/soldier2/spawn2.gif
+		
+anim	burn
+	loop	0
+	delay	4
+	offset	140 280
+	bbox	0 0 0 0
+	burn	89 221 117 68 12 1 0 0 0 0
+	burn	89 221 117 68 12 1 0 0 0 0
+	sound	data/sounds/fire.wav
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/burn1.gif
+	frame	data/chars/soldier2/burn2.gif
+	frame	data/chars/soldier2/fall04.gif
+		
+anim	shock
+	loop	0
+	delay	20
+	offset	140 280
+	bbox	116 187 65 98
+	throwframe	2
+	@cmd	spawnGun "elect2" 0 0 0 0
+	attack	117 190 29 23 10 1 0 0 0 0
+	frame	data/chars/soldier2/fall00.gif
+	attack	87 256 22 24 10 1 1 0 0 0
+	bbox	88 218 99 61
+	frame	data/chars/soldier2/fall01.gif
+	bbox	0 0 0 0
+	frame	data/chars/soldier2/fall02.gif
+	bbox	61 258 131 21
+	attack	64 259 23 23 10 1 1 0 0 0
+	frame	data/chars/soldier2/fall03.gif
+	attack	66 259 24 25 5 0 1 0 0 0
+	@cmd	killgun 1 0
+	frame	data/chars/soldier2/fall04.gif
+
+anim	fall
+	loop	0
+	delay	20
+	offset	140 280
+	bbox	116 187 65 98
+	throwframe	2
+	attack	117 190 29 23 10 1 0 0 0 0
+	frame	data/chars/soldier2/fall00.gif
+	attack	87 256 22 24 10 1 1 0 0 0
+	bbox	88 218 99 61
+	frame	data/chars/soldier2/fall01.gif
+	bbox	0 0 0 0
+	frame	data/chars/soldier2/fall02.gif
+	bbox	61 258 131 21
+	attack	64 259 23 23 10 1 1 0 0 0
+	frame	data/chars/soldier2/fall03.gif
+	attack	66 259 24 25 5 0 1 0 0 0
+	frame	data/chars/soldier2/fall04.gif
+				
+anim	fall3
+	loop	0
+	delay	20
+	offset	140 280
+	bbox	116 187 65 98
+	throwframe	2
+	@cmd	spawnGun "flash2" 50 50 -1 1
+	attack	117 190 29 23 10 1 0 0 0 0
+	frame	data/chars/soldier2/fall00.gif
+	attack	87 256 22 24 10 1 1 0 0 0
+	bbox	88 218 99 61
+	frame	data/chars/soldier2/fall01.gif
+	bbox	0 0 0 0
+	frame	data/chars/soldier2/fall02.gif
+	bbox	61 258 131 21
+	attack	64 259 23 23 10 1 1 0 0 0
+	frame	data/chars/soldier2/fall03.gif
+	attack	66 259 24 25 5 0 1 0 0 0
+	@cmd	killgun 1 0
+	frame	data/chars/soldier2/fall04.gif
+
+anim	fall4
+	loop	0
+	delay	20
+	offset	140 280
+	bbox	116 187 65 98
+	@cmd	spawnGun "flash2" 50 0 -1 1
+	attack	117 190 29 23 10 1 0 0 0 0
+	frame	data/chars/soldier2/d1.gif
+	attack	87 256 22 24 10 1 1 0 0 0
+	bbox	88 218 99 61
+	frame	data/chars/soldier2/d2.gif
+	bbox	61 258 131 21
+	attack	64 259 23 23 10 1 1 0 0 0
+	@cmd	killgun 1 0
+	frame	data/chars/soldier2/d3.gif
+
+anim	death4
+	loop	0
+	offset	140 280
+	delay	15
+	frame	data/chars/soldier2/r1.gif
+	frame	data/chars/soldier2/r2.gif
+	frame	data/chars/soldier2/r3.gif
+	frame	data/chars/soldier2/r4.gif
+	delay	40
+	offset	140 280
+	bbox	116 187 65 98
+	@cmd	spawnGun "flash2" 50 0 -1 1
+	frame	data/chars/soldier2/d1.gif
+	delay	20
+	bbox	88 218 99 61
+	frame	data/chars/soldier2/d2.gif
+	bbox	84 258 117 21
+	@cmd	killgun 1 0
+	frame	data/chars/soldier2/d3.gif
+
+anim	idle
+	loop	1
+	offset	140 280
+	bbox	128 189 37 91
+	delay	15
+	frame	data/chars/soldier2/idle00.gif
+	frame	data/chars/soldier2/idle01.gif
+	frame	data/chars/soldier2/idle02.gif
+	frame	data/chars/soldier2/idle01.gif
+		
+anim	jump
+	loop	0
+	offset	140 280
+	bbox	116 184 55 98
+	delay	20
+	frame	data/chars/soldier2/walk04.gif
+	bbox	125 186 61 96
+	frame	data/chars/soldier2/walk05.gif
+	frame	data/chars/soldier2/walk06.gif
+	bbox	116 180 58 108
+	frame	data/chars/soldier2/walk07.gif
+	frame	data/chars/soldier2/walk08.gif
+		
+anim	pain
+	loop	0
+	offset	140 280
+	bbox	119 186 44 94
+	delay	9
+	frame	data/chars/soldier2/hurt00.gif
+	frame	data/chars/soldier2/hurt01.gif
+	frame	data/chars/soldier2/hurt02.gif
+		
+anim	rise
+	loop	0
+	offset	140 280
+	delay	15
+	frame	data/chars/soldier2/rise00.gif
+	frame	data/chars/soldier2/rise01.gif
+		
+anim	rise4
+	loop	0
+	offset	140 280
+	delay	15
+	frame	data/chars/soldier2/r1.gif
+	frame	data/chars/soldier2/r2.gif
+	frame	data/chars/soldier2/r3.gif
+	frame	data/chars/soldier2/r4.gif
+
+anim	walk
+	loop	1
+	offset	140 280
+	bbox	117 183 61 98
+	delay	10
+	frame	data/chars/soldier2/walk00.gif
+	frame	data/chars/soldier2/walk01.gif
+	frame	data/chars/soldier2/walk02.gif
+	frame	data/chars/soldier2/walk03.gif
+	frame	data/chars/soldier2/walk04.gif
+	frame	data/chars/soldier2/walk05.gif
+	frame	data/chars/soldier2/walk06.gif
+	frame	data/chars/soldier2/walk07.gif
+	frame	data/chars/soldier2/walk08.gif
+		
+anim	follow1
+	loop	1
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	@cmd	attack1 -120 120 90 "ANI_FOLLOW2"
+	frame	data/chars/soldier2/spawn1.gif
+
+anim	follow2
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier2/spawn1.gif
+	frame	data/chars/soldier2/spawn3.gif
+
+anim	follow3
+	loop	1
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	@cmd	attack1 -120 120 90 "ANI_FOLLOW4"
+	frame	data/chars/soldier2/spawn2.gif
+
+anim	follow4
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier2/spawn1.gif
+	frame	data/chars/soldier2/spawn3.gif
+
+#|edited by openBor Stats v 0.67
+		

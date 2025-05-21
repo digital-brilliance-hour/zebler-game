@@ -1,0 +1,94 @@
+name	Soldierspawn1
+health	1
+speed	13
+nolife	1
+aggression 30
+falldie	1
+nomove	1 1
+nodieblink    3
+noname	1
+jumpmove 0 2
+type	enemy
+gfxshadow 1
+
+diesound data/sounds/deathsoldier1.wav
+projectilehit   enemy npc obstacle
+
+animationscript data/scripts/escript.c
+load soldier
+
+
+
+anim	death
+	range	150 200
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier/spawn1.gif
+	frame	data/chars/soldier/spawn3.gif
+	spawnframe	data/chars/soldier/idle00.gif 0 10 -64 
+	subentity	soldier
+	@cmd	suicide
+	frame	data/chars/soldier/empty.gif
+
+anim	follow1
+	range	150 200
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier/spawn3.gif
+	@cmd	suicide
+	frame	data/chars/soldier/empty.gif
+	spawnframe	data/chars/soldier/idle00.gif 0 10 -64 
+	subentity	soldier
+	frame	data/chars/soldier/empty.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	@cmd	attack1 -120 120 90 "ANI_FOLLOW1"
+	frame	data/chars/soldier/spawn1.gif
+
+anim	spawn
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier/spawn1.gif
+
+anim	burn
+	loop	0
+	delay	4
+	offset	140 280
+	bbox	0 0 0 0
+	burn	89 221 117 68 12 1 0 0 0 0
+	burn	89 221 117 68 12 1 0 0 0 0
+	sound	data/sounds/fire.wav
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/burn1.gif
+	frame	data/chars/soldier/burn2.gif
+	frame	data/chars/soldier/fall03.gif
+	spawnframe	data/chars/soldier/idle00.gif 0 10 -64 
+	subentity	soldier
+	@cmd	suicide
+	frame	data/chars/soldier/empty.gif
+
+#|edited by openBor Stats v 0.67
+		

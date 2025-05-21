@@ -1,0 +1,64 @@
+name	Tankst
+health	1
+speed	5
+type	none
+gfxshadow 1
+antigrab 10
+candamage player
+nomove 1 1
+nojump	1
+nopain	1
+nolife  1
+noname  1
+falldie		1
+#noblink
+nodrop	2
+#offscreenkill 	100
+diesound data/sounds/bang3.wav
+
+animationscript data/scripts/escript.c
+
+load cannoshoot
+load tank
+
+		
+anim	death
+	range	50 100
+	loop	0
+	delay	1
+	offset	130 280
+	bbox	41 167 217 120
+	drawmethod	260 260
+	quakeframe	1 5 10
+	frame	data/chars/tank/empty.gif
+	spawnframe	data/chars/tank/walk00.gif 0 0 -64 
+	subentity	tank
+				
+anim	idle
+	loop	1
+	offset	130 280
+	bbox	49 152 206 134
+	delay	10
+	@cmd	attack1 -120 120 90 "ANI_FOLLOW1"
+	frame	data/chars/tank/walk00.gif
+
+anim	follow1
+	loop	0
+	offset	130 280
+	bbox	49 152 206 134
+	delay	10
+	frame	data/chars/tank/walk00.gif
+	spawnframe	data/chars/tank/walk00.gif 0 0 -64 
+	subentity	tank
+	@cmd	suicide
+	frame	data/chars/tank/empty.gif
+
+anim	spawn
+	loop	0
+	offset	130 280
+	bbox	49 152 206 134
+	delay	10
+	frame	data/chars/tank/walk00.gif
+
+#|edited by openBor Stats v 0.67
+		

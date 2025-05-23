@@ -1,0 +1,82 @@
+name	 Mine
+health   1
+speed    7
+type     enemy
+nolife   1
+falldie	1
+nomove 1 1
+gfxshadow	1
+lifespan 10
+candamage player obstacle
+load Flash5
+animationscript data/scripts/escript.c
+
+anim	follow1
+	loop	0
+	delay	10
+	offset	9 14
+	bbox	0 0 0 0
+	quakeframe	1 1 10
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	burn -100 -148 210 211 70 1 1 0 10 0
+	frame	data/chars/objetos/mine3.gif
+	frame	data/chars/objetos/mine2.gif
+	frame	data/chars/objetos/mine1.gif
+	burn 0
+	spawnframe data/chars/objetos/fireshoot00.gof
+	subentity	flash5
+	@cmd	suicide
+	frame	data/chars/objetos/mineempty.gif
+		
+anim	death
+	loop	0
+	delay	10
+	offset	9 14
+	bbox	0 0 0 0
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	burn -100 -148 210 211 70 1 1 0 10 40
+	frame	data/chars/objetos/mine3.gif
+	frame	data/chars/objetos/mine2.gif
+	frame	data/chars/objetos/mine1.gif
+	burn 0
+	spawnframe data/chars/objetos/fireshoot00.gif
+	subentity	flash5
+	frame	data/chars/objetos/mineempty.gif
+		
+anim	idle
+	loop	1
+	delay	9
+	offset	9 14
+	bbox	0 0 0 0
+	move	0
+	@cmd	attack1 -50 50 50 "ANI_FOLLOW1"
+	frame	data/chars/objetos/mine8.gif
+	frame	data/chars/objetos/mine7.gif
+	frame	data/chars/objetos/mine6.gif
+	frame	data/chars/objetos/mine5.gif
+	frame	data/chars/objetos/mine4.gif
+		
+anim	spawn
+	loop	0
+	delay	6
+	offset	9 14
+	bbox	0 0 0 0
+	sound	data/sounds/bombfall.wav
+	frame	data/chars/objetos/mine19.gif
+	frame	data/chars/objetos/mine18.gif
+	frame	data/chars/objetos/mine17.gif
+	frame	data/chars/objetos/mine16.gif
+	frame	data/chars/objetos/mine15.gif
+	frame	data/chars/objetos/mine14.gif
+	frame	data/chars/objetos/mine13.gif
+	frame	data/chars/objetos/mine12.gif
+	frame	data/chars/objetos/mine11.gif
+	frame	data/chars/objetos/mine10.gif
+	frame	data/chars/objetos/mine9.gif
+	
+#|edited by openBor Stats v 0.67
+		

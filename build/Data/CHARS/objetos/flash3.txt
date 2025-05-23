@@ -1,0 +1,31 @@
+# Hit flash
+
+name	Flash3
+health	1
+type	none
+shadow	0
+diesound	data/sounds/bang2.wav
+
+
+anim idle
+	loop	0
+	delay	20
+	offset	130 280
+	bbox	0 0 0 0
+	sound   data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	attack	140 190 65 150 15 1
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/firebombem00.gif
+	attack	140 190 65 150 15 1
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/firebombem01.gif
+	attack	140 190 65 150 15 1
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/firebombem02.gif
+	frame	data/chars/objetos/firebombem03.gif
+	frame	data/chars/objetos/firebombem04.gif
+	frame	data/chars/objetos/firebombem05.gif
+	attack  0 0 0 0
+	frame	data/chars/objetos/firebombem06.gif
+	frame	data/chars/objetos/firebombem07.gif

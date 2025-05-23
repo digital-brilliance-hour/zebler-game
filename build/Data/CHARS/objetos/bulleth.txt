@@ -1,0 +1,42 @@
+name	Bulleth
+health  1
+speed	10
+type	enemy
+speed	10
+remove	1
+flash	flash2
+nolife  1
+candamage player obstacle
+
+
+anim	attack1
+	loop	1
+	delay	6
+	offset	-100 -20
+	bbox	0 0 0 0
+	attack	24 24 31 10 10 10 0 0 8
+	frame	data/chars/objetos/flashg.gif
+	frame	data/chars/objetos/flashg00.gif
+	frame	data/chars/objetos/flashg01.gif
+	frame	data/chars/objetos/flashg02.gif
+	frame	data/chars/objetos/flashg03.gif
+	frame	data/chars/objetos/flashg04.gif
+	frame	data/chars/objetos/flashg05.gif
+	frame	data/chars/objetos/flashg06.gif
+	frame	data/chars/objetos/flashg07.gif
+	frame	data/chars/objetos/flashg08.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	-100 -20
+	bbox	0 0 0 0
+	attack	2 2 12 9 10 1 0 0 8 0
+	hitfx	data/sounds/beat4.wav
+	hitflash	fb
+	frame	data/chars/objetos/bulleth00.gif
+	frame	data/chars/objetos/bulleth01.gif
+	frame	data/chars/objetos/bulleth02.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,239 @@
+name	Soldier3
+health	350
+speed	13
+nolife	1
+nodrop	1
+falldie 1
+blockodds     1
+antigrab	10
+#nopassiveblock 1
+aggression 30
+escapehits 1
+nodieblink    3
+noname	1
+jumpmove 0 2
+type	enemy
+gfxshadow 1
+
+diesound data/sounds/deathsoldier1.wav
+projectilehit   enemy npc obstacle
+animationscript data/scripts/escript.c
+
+load bullet
+load shield
+load soldier
+load mine
+
+
+anim	attack1
+	range	110 200
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	custknife	bullet
+	throwframe	2
+	sound	data/sounds/gun3.wav
+	frame	data/chars/soldier3/att00.gif
+	frame	data/chars/soldier3/att01.gif
+	frame	data/chars/soldier3/att02.gif
+	frame	data/chars/soldier3/att03.gif
+	frame	data/chars/soldier3/att04.gif
+	frame	data/chars/soldier3/att05.gif
+	frame	data/chars/soldier3/att06.gif
+		
+anim	attack2
+	range	150 300
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	sound	data/sounds/mineclk.wav
+	frame	data/chars/soldier3/idle00.gif
+	spawnframe	data/chars/objetos/mine19.gif 0 0 0
+	subentity	mine
+	frame	data/chars/soldier3/idle00.gif
+	offset	140 280
+	bbox	117 183 61 98
+	delay	12
+	@cmd	target
+	frame	data/chars/soldier3/walk00.gif
+	@cmd	target
+	frame	data/chars/soldier3/walk01.gif
+	@cmd	target
+	move	15
+	frame	data/chars/soldier3/walk02.gif
+	@cmd	target
+	frame	data/chars/soldier3/walk03.gif
+	@cmd	target
+	frame	data/chars/soldier3/walk04.gif
+	@cmd	target
+	move	0
+	frame	data/chars/soldier3/walk05.gif
+
+anim	attack3
+	loop	0
+	range 0 105
+	delay	12
+	offset	140 280
+	bbox	116 187 65 98
+	frame	data/chars/soldier3/walk00.gif
+	frame	data/chars/soldier3/walk01.gif
+	frame	data/chars/soldier3/walk02.gif
+	move 12
+	frame	data/chars/soldier3/walk03.gif
+	frame	data/chars/soldier3/fall00.gif
+	delay 9
+	attack 122 183 89 58 15 1 0 0 0 0
+	bbox	88 218 99 61
+	attack 122 183 89 58 15 1 0 0 0 0
+	frame	data/chars/soldier3/fall02.gif
+		delay 20
+	bbox	120 199 54 77
+	attack 0
+	frame	data/chars/soldier3/fall01.gif
+	delay 9
+	attack 122 183 89 40 10 1 0 0 0 0
+	frame	data/chars/soldier3/fall02.gif
+
+anim	special2
+	loop	0
+	delay	9
+	offset	140 280
+	frame	data/chars/soldier3/fall00.gif
+	delay 9
+	attack 122 183 89 58 15 1 0 0 0 0
+	bbox	88 218 99 61
+	attack 122 183 89 58 15 1 0 0 0 0
+	frame	data/chars/soldier3/fall02.gif
+		delay 20
+	bbox	120 199 54 77
+	attack 0
+	frame	data/chars/soldier3/fall01.gif
+	delay 9
+	attack 122 183 89 40 10 1 0 0 0 0
+	frame	data/chars/soldier3/fall02.gif
+
+anim	death
+	loop	0
+	delay	7
+	offset	140 280
+	bbox	126 194 42 87
+	frame	data/chars/soldier3/hurt01.gif
+	frame	data/chars/soldier3/hurt02.gif
+	@cmd	spawn01 "shield" 0 0 -1 1
+	spawnframe	data/chars/soldier3/idle00.gif
+	subentity	soldier
+	frame	data/chars/soldier3/empty.gif
+	
+anim	burn
+	loop	0
+	delay	4
+	offset	140 280
+	bbox	0 0 0 0
+	burn	89 221 117 68 12 1 0 0 0 0
+	burn	89 221 117 68 12 1 0 0 0 0
+	sound	data/sounds/fire.wav
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/burn1.gif
+	frame	data/chars/soldier3/burn2.gif
+	frame	data/chars/soldier3/fall03.gif
+		
+anim	fall
+	loop	0
+	delay	20
+	offset	140 280
+	bbox	116 187 65 98
+	throwframe	2
+	attack	117 190 29 23 10 1 0 0 0 0
+	frame	data/chars/soldier3/fall00.gif
+	attack	87 256 22 24 10 1 1 0 0 0
+	bbox	88 218 99 61
+	frame	data/chars/soldier3/fall01.gif
+	bbox	61 258 131 21
+	attack	64 259 23 23 10 1 1 0 0 0
+	frame	data/chars/soldier3/fall02.gif
+	attack	66 259 24 25 5 0 1 0 0 0
+	frame	data/chars/soldier3/fall03.gif
+		
+anim	fall2
+	loop	0
+	delay	20
+	offset	140 280
+	frame	data/chars/soldier3/fall03.gif
+		
+anim	idle
+	loop	1
+	offset	140 280
+	bbox	128 189 37 91
+	delay	10
+	frame	data/chars/soldier3/idle01.gif
+				
+anim	block
+	loop	0
+	offset	140 280
+	bbox	119 186 44 94
+	delay	10
+	sound	data/sounds/block2.wav
+	frame	data/chars/soldier3/hurt00.gif
+	frame	data/chars/soldier3/hurt01.gif
+	frame	data/chars/soldier3/hurt02.gif
+	frame	data/chars/soldier3/hurt03.gif
+	frame	data/chars/soldier3/hurt04.gif
+	frame	data/chars/soldier3/hurt05.gif
+	
+anim	follow1
+	loop	0
+
+anim	pain
+	loop	0
+	offset	140 280
+	bbox	119 186 44 94
+	delay	10
+	sound 	data/sounds/block.wav
+	frame	data/chars/soldier3/hurt00.gif
+	frame	data/chars/soldier3/hurt01.gif
+	frame	data/chars/soldier3/hurt02.gif
+	frame	data/chars/soldier3/hurt03.gif
+	frame	data/chars/soldier3/hurt04.gif
+	frame	data/chars/soldier3/hurt05.gif
+		
+anim	rise
+	loop	0
+	offset	140 280
+	delay	15
+	frame	data/chars/soldier3/idle00.gif
+		
+anim	spawn
+	loop	0
+	offset	140 280
+	delay	15
+	frame	data/chars/soldier3/idle01.gif
+	
+anim	walk
+	loop	1
+	offset	140 280
+	bbox	117 183 61 98
+	delay	10
+	frame	data/chars/soldier3/walk00.gif
+	frame	data/chars/soldier3/walk01.gif
+	frame	data/chars/soldier3/walk02.gif
+	frame	data/chars/soldier3/walk03.gif
+	frame	data/chars/soldier3/walk04.gif
+	frame	data/chars/soldier3/walk05.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,43 @@
+name	Erocket
+health  1
+type	none
+gfxshadow 1
+speed	5
+remove	1
+#palette data/chars/marco/pal.gif
+lifespa 0.5
+nolife  1
+flash flash2
+candamage player pshot
+
+animationscript data/scripts/escript.c
+		
+anim	spawn
+	loop	0
+	delay	6
+	offset	22 9
+	jumpframe 1 2 1 0
+	attack 1 -8 38 30 30 1 0 0 0 0
+	hitfx	data/sounds/beat4.wav
+	hitflash	flash5
+	drawmethod  350 350
+	frame	data/chars/objetos/erocket1.gif
+	frame	data/chars/objetos/erocket2.gif
+	frame	data/chars/objetos/erocket5.gif
+	
+anim	idle
+	loop	1
+	delay	6
+	offset	22 10
+	attack 1 -8 38 30 30 1 0 0 0 0
+	hitfx	data/sounds/beat4.wav
+	hitflash	flash5
+	drawmethod  350 350
+	frame	data/chars/objetos/erocket1.gif
+	frame	data/chars/objetos/erocket2.gif
+	frame	data/chars/objetos/erocket3.gif
+	frame	data/chars/objetos/erocket4.gif
+		
+	
+#|edited by openBor Stats v 0.67
+		

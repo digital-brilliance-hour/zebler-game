@@ -1,0 +1,74 @@
+name	 cannoshoot
+health   0
+speed    7
+type     enemy
+nolife   1
+counter  9999
+shootnum 9999
+gfxshadow	1
+hitenemy 1 0
+jumpheight 4
+remove 1
+
+anim idle
+	loop	1
+	delay	6
+	offset	-50 100
+	bbox	0 0 0 0
+	move    4
+	attack	140 190 65 38 15 1
+	burn	140 190 65 38 15 1
+	sound	data/sounds/bombfall.wav
+	frame	data/chars/objetos/shoot00.gif
+	frame	data/chars/objetos/shoot01.gif
+
+anim attack1
+
+	loop	0
+	delay	3
+	offset	130 280
+	bbox	0 0 0 0
+	sound   data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	attack	140 190 65 38 15 5
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/fireshoot00.gif
+	offset	130 280
+	attack	140 190 65 38 15 5
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/fireshoot01.gif
+	attack	140 190 65 38 15 5
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/fireshoot02.gif
+	frame	data/chars/objetos/fireshoot03.gif
+	frame	data/chars/objetos/fireshoot04.gif
+	attack	140 190 65 38 15 5
+	burn	140 190 65 38 15 1 1 0 10
+	frame	data/chars/objetos/fireshoot05.gif
+	frame	data/chars/objetos/fireshoot06.gif
+	frame	data/chars/objetos/fireshoot07.gif
+	frame	data/chars/objetos/fireshoot08.gif
+	frame	data/chars/objetos/fireshoot09.gif
+	frame	data/chars/objetos/fireshoot10.gif
+	frame	data/chars/objetos/fireshoot11.gif
+	frame	data/chars/objetos/fireshoot12.gif
+	frame	data/chars/objetos/fireshoot13.gif
+	frame	data/chars/objetos/fireshoot14.gif
+
+anim death
+	loop	0
+	delay	3
+	offset	130 280
+	bbox	0 0 0 0
+	sound   data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	frame	data/chars/objetos/fireshoot15.gif
+	frame	data/chars/objetos/fireshoot16.gif
+	frame	data/chars/objetos/fireshoot17.gif
+	frame	data/chars/objetos/fireshoot18.gif
+	frame	data/chars/objetos/fireshoot19.gif
+	frame	data/chars/objetos/fireshoot20.gif
+	frame	data/chars/objetos/fireshoot21.gif
+	frame	data/chars/objetos/fireshoot22.gif
+	frame	data/chars/objetos/fireshoot23.gif
+	frame	data/chars/objetos/fireshoot24.gif

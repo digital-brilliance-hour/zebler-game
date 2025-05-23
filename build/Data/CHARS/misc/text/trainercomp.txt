@@ -1,0 +1,14 @@
+name	TrainerComp
+health	0
+type	text
+facing 1 0
+shadow	0
+setlayer 1220
+lifespan 50
+
+anim idle
+	loop	0
+	delay	100
+	offset	100 27
+	sound	data/music/remix.bor
+	frame	data/chars/misc/text/treinoComp.gif

@@ -74,95 +74,104 @@ direction both
 
 #--group1-----
 #1st Wave
+wait
+at 150
+
 group 2 3
-at 50
+at 150
 
 spawn slug
 health 30
-coords 431 130
-at 50
+coords 430 150
+at 100
 
 spawn slug
 health 30
-coords 350 200
-at 50
+coords 300 130
+at 100
 
 spawn slug
 health 30
-coords 505 211
-at 50
+coords 430 130
+at 100
 
 spawn spider
 health 40
-coords 600 220
-at 50
+coords 300 220
+at 100
 
 spawn spider
 health 40
-coords 650 160
-at 50
+coords 250 160
+at 100
 
 spawn spider
 health 40
 item meat
-coords 700 220
-at 50
+coords 460 220
+at 100
 
 #2nd Wave
-group 3 5
-at 50
+wait
+at 500
+
+group 2 3
+at 500
 
 spawn spider
 health 40
-coords 750 200
-at 50
+coords 550 200
+at 90
 
 spawn spider
 health 40
-coords 800 107
-at 50
+coords 500 107
+at 140
 
 spawn zaku
 health 50
-coords 850 169
-at 50
+coords 550 169
+at 90
 
 spawn zaku
 health 50
-coords 900 200
-at 50
+coords 500 200
+at 140
 
 spawn zaku
 health 50
-coords 1000 190
-at 50
+coords 500 190
+at 140
 
 spawn zaku
 health 50
-coords 1050 212
-at 50
+coords 550 212
+at 90
 
 #3rd Wave
+wait
+at 700
+
+group 2 3
+at 700
+
 spawn spider
 alias spider_x2
 health 80
 coords 1100 230
-at 50
+at -460
 
 spawn zaku
 alias zaku_x2
 health 80
 coords 1115 300
-at 50
+at -475
 
 spawn slug
 alias slug_x2
 health 60
 coords 1052 125
-at 50
-
-group 1 1
-wait 50
+at -412
 
 spawn metalgear
 alias MV-Red
@@ -170,12 +179,12 @@ health 100
 item meat
 boss 1
 coords 1190 117
-at 50
+at -550
 
 
 #Final Wave
 #group 1 1
-#wait 50
+#wait 100
 
 #spawn mukai
 #alias human experiment
@@ -183,6 +192,8 @@ at 50
 #item meat
 #boss 1
 #coords 1300 180
-#at 50
+#at 100
+
+
 
 

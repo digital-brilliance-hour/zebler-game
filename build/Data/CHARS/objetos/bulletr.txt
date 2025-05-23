@@ -1,0 +1,23 @@
+name	Bulletr
+health  1
+type	enemy
+speed	30
+remove	1
+nolife  1
+
+candamage player obstacle
+
+		
+anim	idle
+	loop	1
+	delay	10
+	offset	-20 10
+	bbox	0 0 0 0
+	attack	1 1 16 11 15 1 0 0 0 0
+	hitfx	data/sounds/beat4.wav
+	hitflash	fb
+	frame	data/chars/objetos/bulletr1.gif
+	frame	data/chars/objetos/bulletr2.gif
+		
+#|edited by openBor Stats v 0.67
+		

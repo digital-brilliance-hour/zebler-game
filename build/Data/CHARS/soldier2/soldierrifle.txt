@@ -10,7 +10,7 @@ jumpmove 0 2
 type	enemy
 gfxshadow 1
 
-diesound data/sounds/death1.wav
+diesound data/sounds/deathsoldier1.wav
 projectilehit   enemy npc obstacle
 
 

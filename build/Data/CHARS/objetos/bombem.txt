@@ -1,0 +1,74 @@
+name	 Bombem
+health   0
+speed    7
+type     enemy
+nolife   1
+counter  9999
+shootnum 9999
+gfxshadow	1
+jumpheight 4
+
+palette data/chars/soldiery/pal.gif
+candamage player obstacle
+remove 1
+
+
+anim	attack1
+	loop	0
+	delay	3
+	offset	130 280
+	bbox	0 0 0 0
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	burn	72 199 121 101 50 1 1 0 20 41
+	frame	data/chars/soldiery/explo00.gif
+	offset	130 280
+#	burn	62 176 141 124 50 1 1 0 20 1
+	frame	data/chars/soldiery/explo01.gif
+#	burn	64 165 139 134 50 1 1 0 20 1
+	frame	data/chars/soldiery/explo02.gif
+#	burn	66 169 132 129 50 1 1 0 0 0
+	frame	data/chars/soldiery/explo03.gif
+	frame	data/chars/soldiery/explo04.gif
+	frame	data/chars/soldiery/explo05.gif
+	attack	0 0 0 0
+	frame	data/chars/soldiery/explo06.gif
+	frame	data/chars/soldiery/explo07.gif
+		
+anim	death
+	loop	0
+	delay	3
+	offset	130 280
+	bbox	0 0 0 0
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	attack	0
+	frame	data/chars/soldiery/explo08.gif
+	frame	data/chars/soldiery/explo09.gif
+	frame	data/chars/soldiery/explo10.gif
+	frame	data/chars/soldiery/explo11.gif
+	frame	data/chars/soldiery/explo12.gif
+	frame	data/chars/soldiery/explo13.gif
+	frame	data/chars/soldiery/explo14.gif
+	frame	data/chars/soldiery/explo15.gif
+	frame	data/chars/soldiery/explo16.gif
+	frame	data/chars/soldiery/explo17.gif
+	frame	data/chars/soldiery/explo18.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	-10 100
+	bbox	0 0 0 0
+	move	4
+	sound	data/sounds/bombfall.wav
+	attack	6 9 50 44 50 1 0 0 0 0
+	burn	6 9 50 44 50 1 0 0 0 0
+	hitflash	fb
+	frame	data/chars/objetos/bombem00.gif
+	frame	data/chars/objetos/bombem01.gif
+	frame	data/chars/objetos/bombem02.gif
+	frame	data/chars/objetos/bombem03.gif
+		
+#|edited by openBor Stats v 0.67
+		

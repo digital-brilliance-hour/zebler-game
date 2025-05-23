@@ -1,0 +1,22 @@
+name	Pbullet
+health  1
+type	pshot
+speed	30
+remove	1
+nolife  1
+Offscreen_noatk_factor 1
+lifespan 0.9
+candamage enemy obstacle shot
+gfxshadow 1
+
+anim	idle
+	loop	0
+	delay	6
+	offset	-55 5
+	hitfx	data/sounds/beat4.wav
+	hitflash	flashg
+	attack	0 0 16 11 18 0 0 0 0 0
+	frame	data/chars/objetos/bullet.gif
+		
+#|edited by openBor Stats v 0.67
+		

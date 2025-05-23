@@ -1,0 +1,74 @@
+name	 AIM3
+health   0
+speed    50
+type     enemy
+subtype  chase
+nolife   1
+facing   3
+aggression 5
+lifespan 40
+
+load	missile
+
+anim spawn
+	loop	0
+	delay	1
+	offset	0 0
+	bbox	0 0 0 0
+	frame	data/chars/0misc1/empty.gif
+
+anim idle
+	loop	1
+	delay	7
+	offset	125 121
+	bbox	0 0 0 0
+	frame	data/chars/0objct/aim01.gif
+	frame	data/chars/0objct/aim02.gif
+
+anim walk
+	loop	1
+	delay	7
+	offset	125 121
+	bbox	0 0 0 0
+	sound   data/sounds/bip1.wav
+	frame	data/chars/0objct/aim01.gif
+	frame	data/chars/0objct/aim02.gif
+
+anim attack1
+	range   -26 26
+	loop	0
+	delay	4
+	offset	125 121
+	bbox	0 0 0 0
+	custbomb missile
+	tossframe 1 270
+	sound   data/sounds/bip2.wav
+	frame	data/chars/0objct/aim03.gif
+	frame	data/chars/0objct/aim04.gif
+	frame	data/chars/0objct/aim05.gif
+	sound   data/sounds/bip2.wav
+	frame	data/chars/0objct/aim03.gif
+	frame	data/chars/0objct/aim04.gif
+	frame	data/chars/0objct/aim05.gif
+	sound   data/sounds/bip2.wav
+	frame	data/chars/0objct/aim03.gif
+	frame	data/chars/0objct/aim04.gif
+	frame	data/chars/0objct/aim05.gif
+	sound   data/sounds/bip2.wav
+	frame	data/chars/0objct/aim03.gif
+	frame	data/chars/0objct/aim04.gif
+	frame	data/chars/0objct/aim05.gif
+	sound   data/sounds/bip2.wav
+	frame	data/chars/0objct/aim03.gif
+	frame	data/chars/0objct/aim04.gif
+	frame	data/chars/0objct/aim05.gif
+	delay   150
+	frame	data/chars/0misc1/empty.gif
+
+anim death
+	loop	0
+	delay	1
+	offset	0 0
+	bbox	0 0 0 0
+	frame	data/chars/0misc1/empty.gif
+

@@ -1,0 +1,35 @@
+name	Bullethg
+health  1
+type	pshot
+speed	30
+remove	1
+nolife  1
+candamage player obstacle
+
+anim idle
+	loop	1
+	delay	6
+	offset	-80 3
+	bbox	0 0 0 0
+	attack 24 24 31 10 60 1 0 0 0
+	hitfx data/sounds/beat4.wav
+	frame	data/chars/weapons/bulleth00.gif
+	frame	data/chars/weapons/bulleth01.gif
+
+
+anim attack1
+	loop	1
+	delay	6
+	offset	-80 3
+	bbox	0 0 0 0
+	attack 	140 190 65 10 10 1 0 0 0
+	frame	data/chars/objetos/flashg.gif
+	frame	data/chars/objetos/flashg00.gif
+	frame	data/chars/objetos/flashg01.gif
+	frame	data/chars/objetos/flashg02.gif
+	frame	data/chars/objetos/flashg03.gif
+	frame	data/chars/objetos/flashg04.gif
+	frame	data/chars/objetos/flashg05.gif
+	frame	data/chars/objetos/flashg06.gif
+	frame	data/chars/objetos/flashg07.gif
+	frame	data/chars/objetos/flashg08.gif

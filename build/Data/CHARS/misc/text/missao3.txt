@@ -1,0 +1,13 @@
+name	missao3
+health	0
+type	none
+facing 1 0
+shadow	0
+setlayer 10
+
+anim idle
+	loop	0
+	delay	100
+	offset	86 23
+	drawmethod 230 230
+	frame	data/chars/misc/text/missao3.gif

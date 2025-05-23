@@ -7,6 +7,9 @@
 
 # Required objects. These must always be loaded.
 load	Flash		data/chars/misc/flash.txt
+load	Flash2		data/chars/misc/flash2.txt
+load	elect		data/chars/misc/elect.txt
+load	elect2		data/chars/misc/elect2.txt
 
 # Players must also be loaded.
 load	Kula		data/chars/kula/kula.txt
@@ -42,6 +45,20 @@ know	Fence		data/chars/misc/fence.txt
 know	Drum		data/chars/misc/drum.txt
 know	Trolly		data/chars/misc/trolly.txt
 
+# weapons
+
+load	cannoshoot	data/chars/objetos/cannoshoot.txt
+load	cannoshoot2	data/chars/objetos/cannoshoot2.txt
+load	cannoshoot4	data/chars/objetos/cannoshoot4.txt
+load	cannoshoot5	data/chars/objetos/cannoshoot5.txt
+load	cannoshoot6	data/chars/objetos/cannoshoot6.txt
+load	Mine		data/chars/objetos/mine.txt
+load	bullet		data/chars/objetos/bullet.txt
+load	bulletr		data/chars/objetos/bulletr.txt
+load	bulletallen	data/chars/objetos/bulletallen.txt
+load	bulleth		data/chars/objetos/bulleth.txt
+
+
 # Enemies
 know	K'		data/chars/k/k.txt
 know	biker-K'	data/chars/biker-k/biker-k.txt
@@ -70,6 +87,21 @@ know    metalgear   data/chars/metalgear/metalgear.txt
 know    Linn        data/chars/linn/linn.txt
 know Mukai data/chars/mukai/mukai.txt
 know    MakiE       Data/CHARS/maki/maki2.txt
+know	Soldier		data/chars/soldier/soldier01.txt
+know	Soldier2	data/chars/soldier2/soldierrifle.txt
+know	Soldier3	data/chars/soldier3/soldiershield.txt
+know	Soldiershield2	data/chars/soldier3/soldiershield2.txt
+know	Tank		data/chars/tank/tank.txt
+
+#==========================SPAWN========================
+
+know	Tankst		data/chars/tank/tankst.txt
+know	soldierspawn1	data/chars/soldier/soldierspawn1.txt
+know	soldierspawn2	data/chars/soldier/soldierspawn2.txt
+know	soldierspawn3	data/chars/soldier2/soldierspawn3.txt
+
+know	Shield		data/chars/soldier3/shield.txt
+know	Shield2		data/chars/soldier3/shield2.txt
 
 know robot   data/chars/robot/robot.txt
 
@@ -163,6 +195,7 @@ load	bots		data/chars/bots/bot.txt
 load wkpnt   data/chars/misc/wkpnt.txt
 load wbblsk  data/chars/wybu1/wbblsk.txt
 load flash   data/chars/misc/flash3.txt
+load	Flash5		data/chars/objetos/flash5.txt
 load mdym    data/chars/lloyo/mdym.txt
 load drill   data/chars/keith/drill.txt
 

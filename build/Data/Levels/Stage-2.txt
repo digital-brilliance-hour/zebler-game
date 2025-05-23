@@ -79,12 +79,12 @@ at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 spawn slug
@@ -94,12 +94,12 @@ at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100 
 
 spawn spider
 health 40
-coords 485 287
+coords 365 287
 at 100
 
 spawn spider
@@ -113,12 +113,12 @@ at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100
 
 spawn spider
 health 40
-coords 485 287
+coords 365 287
 at 100
 
 spawn zaku
@@ -128,12 +128,12 @@ at 100
 
 spawn zaku
 health 50
-coords 485 287
+coords 340 287
 at 100
 
 spawn zaku
 health 50
-coords -80 287
+coords 80 287
 at 100
 
 spawn zaku
@@ -143,17 +143,17 @@ at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 #3rd Wave
@@ -162,17 +162,17 @@ at 100
 
 spawn zaku
 health 50
-coords -80 287
+coords 80 287
 at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
@@ -192,13 +192,13 @@ at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 spawn slug
 health 30
 item meat
-coords 485 287
+coords 365 287
 at 100
 
 
@@ -228,17 +228,17 @@ at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 
@@ -248,12 +248,12 @@ at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100
 
 spawn spider
 health 40
-coords 485 287
+coords 365 287
 at 100
 
 spawn spider
@@ -263,12 +263,12 @@ at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 spawn slug
@@ -278,17 +278,17 @@ at 100
 
 spawn zaku
 health 50
-coords 485 287
+coords 340 287
 at 100
 
 spawn zaku
 health 50
-coords -80 287
+coords 80 287
 at 100
 
 spawn zaku
 health 50
-coords 485 287
+coords 340 287
 at 100
 
 #6th Wave
@@ -297,7 +297,7 @@ at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100
 
 spawn spider
@@ -312,12 +312,12 @@ at 100
 
 spawn spider
 health 40
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 312
 at 100
 
 spawn slug
@@ -327,12 +327,12 @@ at 100
 
 spawn zaku
 health 50
-coords -80 287
+coords 80 312
 at 100
 
 spawn zaku
 health 50
-coords 485 287
+coords 340 287
 at 100
 
 spawn zaku
@@ -350,33 +350,33 @@ at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 health 30
-coords -80 287
+coords 80 312
 at 100
 
 spawn slug
 health 30
-coords 485 287
+coords 365 287
 at 100
 
 spawn zaku
 health 50
-coords 485 287
+coords 340 312
 at 100
 
 spawn slug
 health 30
 item meat
-coords 485 287
+coords 365 287
 at 100
 
 #Final Wave
@@ -393,13 +393,13 @@ at 100
 spawn spider
 alias spider_x2
 health 80
-coords -80 287
+coords 80 287
 at 100
 
 spawn spider
 alias spider_x2
 health 80
-coords 485 287
+coords 365 287
 at 100
 
 spawn spider
@@ -417,13 +417,13 @@ at 100
 spawn slug
 alias slug_x2
 health 60
-coords -80 287
+coords 80 287
 at 100
 
 spawn slug
 alias slug_x2
 health 60
-coords 485 287
+coords 365 287
 at 100
 
 spawn slug
@@ -436,7 +436,7 @@ spawn zaku
 alias zaku_x2
 item meat
 health 100
-coords  -80 287
+coords  80 287
 at 100
 
 

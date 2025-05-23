@@ -1,0 +1,215 @@
+## Load music in this area ##
+music     data/music/stage2.ogg
+bossmusic data/music/boss2.ogg
+
+## Load images in this area ##
+
+# Background layer
+background	data/bgs/zg-41/back3.gif
+
+# Front layer
+#frontpanel	data/bgs/stage-2/stage-2bgp.png
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/zg-41/test1.gif
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
+order a
+stagenumber 2
+
+## Spawning Area ##
+# Spawn format:
+#
+#	spawn	[id]
+#	alias	[name]		(change the displayed name, optional)
+#	map	[num]		(colourmap, range 0-3, optional)
+#	health	[num]		(optional)
+#	item	[id]		(obstacles only: contained item, optional)
+#	boss	[0/1]		(see below, optional)
+#	flip	[0/1]		(0 = face left, 1 = face right, optional)
+#	coords	[num] [num]	(coords relative to scrollpos)
+#	at	[scrollpos]
+#
+# Also:
+#	wait			(blocks scrolling until all enemies defeated)
+#	at	[scrollpos]
+#
+# And:
+#	group	[min] [max]	(set minimum and maximum enemies, see below)
+#	at	[scrollpos]
+#
+#
+#
+# Using group, you may set two values, namely:
+#
+# [min]
+# If the number of enemies drops below [min], more enemies will be spawned
+# (if possible).
+#
+# [max]
+# No more than [max] enemies will be present.
+#
+# So, to make enemies appear in groups of four, use this:
+# group 1 4
+#
+# To make them appear normally, use this:
+# group 4 4
+
+direction both
+
+#--group1-----
+#Wave 1
+#Game Resolution 480 x 270
+
+group 2 4
+at 50
+
+spawn lobster
+health
+coords 168 176
+at 50
+
+spawn slug
+health 60
+coords 500 200
+at 50
+
+spawn slug
+health 60
+coords 530 220
+at 50
+
+spawn slug
+health 60
+coords 530 170
+at 50
+
+spawn slug
+health 60
+coords 370 220
+at 50
+
+spawn slug
+health 60
+coords 550 165
+at 70
+
+spawn slug
+health 60
+coords 550475 200
+at 70
+
+spawn spider
+health 75
+coords 550 170
+at 70
+
+wait
+at 500
+
+
+#Wave 2
+group 2 3
+at 560
+
+spawn lobster
+health 150
+coords 220 150
+at 600
+
+spawn spider
+health 80
+coords 600 210
+at 600
+
+spawn lobster
+health 150
+coords 230 200
+at 600
+
+spawn slug
+health 40
+coords 200 220
+at 600
+
+spawn slug
+health 40
+coords 300 160
+at 600
+
+spawn lobster
+health 170
+coords 300 200
+at 650
+
+spawn spider
+health 80
+coords 550 160
+at 650
+
+spawn lobster
+health 170
+coords 200 150
+at 650
+
+spawn spider
+health 90
+coords 565 200
+at 650
+
+spawn box
+item meat
+coords 550 155
+at 900
+
+wait
+at 1400
+
+spawn KagetsuraE
+boss 1
+health 150
+coords 200 184
+at 1500
+
+spawn spider
+coord 550 200
+at 1500
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

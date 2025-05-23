@@ -17,6 +17,7 @@ scene	data/scenes/howto.txt
 
 skipselect Zebler
 z       160 290 173
+file	data/levels/Teststage.txt
 file	data/levels/Stage1-1.txt
 
 z       160 260 110

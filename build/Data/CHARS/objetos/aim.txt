@@ -1,0 +1,87 @@
+name	 AIM
+health   0
+speed    50
+type     enemy
+subtype  chase
+candamage  none player enemy
+nolife   1
+lifespan 30
+
+
+anim	attack1
+	range	-26 26
+	loop	0
+	delay	4
+	offset	125 121
+	bbox	0 0 0 0
+	sound	data/sounds/bip2.wav
+	frame	data/chars/objetos/aim03.gif
+	frame	data/chars/objetos/aim04.gif
+	frame	data/chars/objetos/aim05.gif
+	sound	data/sounds/bip2.wav
+	frame	data/chars/objetos/aim03.gif
+	frame	data/chars/objetos/aim04.gif
+	frame	data/chars/objetos/aim05.gif
+	sound	data/sounds/bip2.wav
+	frame	data/chars/objetos/aim03.gif
+	frame	data/chars/objetos/aim04.gif
+	frame	data/chars/objetos/aim05.gif
+	sound	data/sounds/bip2.wav
+	frame	data/chars/objetos/aim03.gif
+	frame	data/chars/objetos/aim04.gif
+	frame	data/chars/objetos/aim05.gif
+	sound	data/sounds/bip2.wav
+	frame	data/chars/objetos/aim03.gif
+	frame	data/chars/objetos/aim04.gif
+	frame	data/chars/objetos/aim05.gif
+	offset	92 225
+	attack 51 172 89 66 15 1 0 0 0 0
+	frame	data/chars/objetos/bang01.gif
+	attack	0
+	frame	data/chars/objetos/bang02.gif
+	attack 13 88 167 152 15 1 0 0 0 0
+	frame	data/chars/objetos/bang03.gif
+	attack	0
+	frame	data/chars/objetos/bang04.gif
+	attack 14 15 165 226 15 1 0 0 0 0
+	frame	data/chars/objetos/bang05.gif
+	attack	0
+	frame	data/chars/objetos/bang06.gif
+	frame	data/chars/objetos/bang07.gif
+	frame	data/chars/objetos/bang08.gif
+	delay	150
+	frame	data/chars/objetos/empty.gif
+		
+anim	death
+	loop	0
+	delay	1
+	offset	0 0
+	bbox	0 0 0 0
+	frame	data/chars/objetos/aim01.gif
+		
+anim	idle
+	loop	1
+	delay	7
+	offset	125 121
+	bbox	0 0 0 0
+	frame	data/chars/objetos/aim01.gif
+	frame	data/chars/objetos/aim02.gif
+		
+anim	spawn
+	loop	0
+	delay	1
+	offset	0 0
+	bbox	0 0 0 0
+	frame	data/chars/objetos/aim01.gif
+		
+anim	walk
+	loop	1
+	delay	7
+	offset	125 121
+	bbox	0 0 0 0
+	sound	data/sounds/bip1.wav
+	frame	data/chars/objetos/aim01.gif
+	frame	data/chars/objetos/aim02.gif
+		
+#|edited by openBor Stats v 0.67
+		

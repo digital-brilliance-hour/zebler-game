@@ -1,0 +1,55 @@
+name    	elect
+type    	none
+shadow  	0
+lifespan  	4
+nomove  	1
+nolife          1
+antigravity     100
+setlayer	120
+
+
+anim idle
+      loop	0
+	delay	8
+	offset	118 182
+	shock 70 80 94 200 10 1 0 0 0 0
+	frame	data/chars/misc/elect1.gif
+	frame	data/chars/misc/elect2.gif
+	frame	data/chars/misc/elect3.gif
+	frame	data/chars/misc/elect4.gif
+      frame	data/chars/misc/elect5.gif
+	frame	data/chars/misc/elect6.gif
+	frame	data/chars/misc/elect1.gif
+	frame	data/chars/misc/elect2.gif
+	frame	data/chars/misc/elect3.gif
+	frame	data/chars/misc/elect4.gif
+      frame	data/chars/misc/elect5.gif
+	frame	data/chars/misc/elect6.gif
+	frame	data/chars/misc/elect1.gif
+	frame	data/chars/misc/elect2.gif
+	frame	data/chars/misc/elect3.gif
+	frame	data/chars/misc/elect4.gif
+      frame	data/chars/misc/elect5.gif
+	frame	data/chars/misc/elect6.gif
+	frame	data/chars/misc/elect1.gif
+	frame	data/chars/misc/elect2.gif
+	frame	data/chars/misc/elect3.gif
+	frame	data/chars/misc/elect4.gif
+      frame	data/chars/misc/elect5.gif
+	frame	data/chars/misc/elect6.gif
+	shock 0 0 0 0 0 0 0 0
+	frame	data/chars/misc/elect1.gif
+	shock 70 80 94 108 10 1 0 0 0 0
+	frame	data/chars/misc/elect2.gif
+	frame	data/chars/misc/elect3.gif
+	frame	data/chars/misc/elect4.gif
+      frame	data/chars/misc/elect5.gif
+	frame	data/chars/misc/elect6.gif
+      frame	data/chars/misc/elect1.gif
+	frame	data/chars/misc/elect2.gif
+      frame	data/chars/misc/elect3.gif
+	frame	data/chars/misc/elect4.gif
+	shock 0 0 0 0 0 0 0 0
+      frame	data/chars/misc/empty.gif
+
+

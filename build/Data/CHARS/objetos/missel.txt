@@ -1,0 +1,27 @@
+name	Missel
+health  1
+type	enemy
+speed	50
+remove	1
+flash	explosion
+nolife  1
+candamage player obstacle
+
+
+
+anim	idle
+	loop	0
+	delay	6
+	offset	19 -15
+	bbox	0 0 0 0
+	drawmethod	260 260
+	hitflash	explosion
+	attack3	103 232 42 41 15 1 1 0 10 20
+	frame	data/chars/objetos/miss00.gif
+	attack3	95 231 64 44 15 1 1 0 0 20
+	frame	data/chars/objetos/miss01.gif
+	attack3	87 225 93 56 15 1 1 0 0 20
+	frame	data/chars/objetos/miss02.gif
+		
+#|edited by openBor Stats v 0.67
+		

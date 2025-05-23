@@ -1,0 +1,74 @@
+name	 Bombem2
+health   0
+speed    7
+type     enemy
+nolife   1
+counter  9999
+shootnum 9999
+gfxshadow	1
+jumpheight 4
+flash	flash2
+candamage player obstacle
+remove 1
+
+anim idle
+	loop	1
+	delay	6
+	offset	60 100
+	bbox	0 0 0 0
+	move    -18
+	attack	130 280 65 150 15 1
+	burn	130 280 65 150 15 1
+	hitflash	fb
+	sound	data/sounds/bombfall.wav
+	frame	data/chars/objetos/bombem00.gif
+	frame	data/chars/objetos/bombem01.gif
+	frame	data/chars/objetos/bombem02.gif
+	frame	data/chars/objetos/bombem03.gif
+
+anim attack1
+	loop	0
+	delay	3
+	offset	130 280
+	bbox	0 0 0 0
+	sound   data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	attack	140 190 65 38 50 5 1
+	burn	140 190 65 38 50 1 1 0 10
+	quakeframe 1 1 10
+	frame	data/chars/vansoldier/explo00.gif
+	offset	130 280
+	attack	140 190 65 38 50 5
+	burn	140 190 65 38 50 1 1 0 10
+	frame	data/chars/vansoldier/explo01.gif
+	attack	140 190 65 38 50 5
+	burn	140 190 65 38 50 1 1 0 10
+	frame	data/chars/vansoldier/explo02.gif
+	frame	data/chars/vansoldier/explo03.gif
+	frame	data/chars/vansoldier/explo04.gif
+	frame	data/chars/vansoldier/explo05.gif
+	attack  0 0 0 0
+	frame	data/chars/vansoldier/explo06.gif
+	frame	data/chars/vansoldier/explo07.gif
+
+anim death
+	loop	0
+	delay	3
+	offset	130 280
+	bbox	0 0 0 0
+	sound   data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	attack  0
+	frame	data/chars/vansoldier/explo08.gif
+	frame	data/chars/vansoldier/explo09.gif
+	frame	data/chars/vansoldier/explo10.gif
+	frame	data/chars/vansoldier/explo11.gif
+	frame	data/chars/vansoldier/explo12.gif
+	frame	data/chars/vansoldier/explo13.gif
+	frame	data/chars/vansoldier/explo14.gif
+	frame	data/chars/vansoldier/explo15.gif
+	frame	data/chars/vansoldier/explo16.gif
+	frame	data/chars/vansoldier/explo17.gif
+	frame	data/chars/vansoldier/explo18.gif
+	frame	data/chars/vansoldier/explo19.gif
+	frame	data/chars/vansoldier/explo20.gif

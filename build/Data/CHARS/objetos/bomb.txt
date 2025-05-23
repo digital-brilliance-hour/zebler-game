@@ -1,0 +1,79 @@
+name	 Bomba
+health   0
+speed    7
+type     pshot
+nolife   1
+counter  9999
+shootnum 50
+gfxshadow	1
+subject_to_wall 1
+jumpheight 4
+remove 1
+candamage enemy obstacle
+
+
+anim	attack1
+	loop	0
+	delay	7
+	offset	130 280
+	bbox	0 0 0 0
+	quakeframe	1 1 10
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	burn	2 123 276 173 100 1 1 0 10 50
+	frame	data/chars/objetos/explo00.gif
+#	attack	0
+	frame	data/chars/objetos/explo01.gif
+#	burn	2 123 276 173 70 1 1 0 10 50
+	frame	data/chars/objetos/explo02.gif
+#	attack	0
+	frame	data/chars/objetos/explo03.gif
+	offset	130 280
+#	burn	2 123 276 173 70 1 1 0 10 50
+	frame	data/chars/objetos/explo04.gif
+	frame	data/chars/objetos/explo05.gif
+#	attack	0 0 0 0
+	frame	data/chars/objetos/explo06.gif
+	frame	data/chars/objetos/explo07.gif
+		
+anim	death
+	loop	0
+	delay	7
+	offset	130 280
+	bbox	0 0 0 0
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	attack	0
+	frame	data/chars/objetos/explo08.gif
+	frame	data/chars/objetos/explo09.gif
+	frame	data/chars/objetos/explo10.gif
+	frame	data/chars/objetos/explo11.gif
+	frame	data/chars/objetos/explo12.gif
+	frame	data/chars/objetos/explo13.gif
+	frame	data/chars/objetos/explo14.gif
+	frame	data/chars/objetos/explo15.gif
+	frame	data/chars/objetos/explo16.gif
+	frame	data/chars/objetos/explo17.gif
+	frame	data/chars/objetos/explo18.gif
+	frame	data/chars/objetos/explo19.gif
+	frame	data/chars/objetos/explo20.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	-10 30
+	bbox	0 0 0 0
+	move	4
+	burn	0 1 19 18 100 1 1 1 0 10
+	sound	data/sounds/bombfall.wav
+	frame	data/chars/objetos/bomb00.gif
+	frame	data/chars/objetos/bomb01.gif
+	frame	data/chars/objetos/bomb02.gif
+	frame	data/chars/objetos/bomb03.gif
+	frame	data/chars/objetos/bomb04.gif
+	frame	data/chars/objetos/bomb05.gif
+	frame	data/chars/objetos/bomb06.gif
+	frame	data/chars/objetos/bomb07.gif
+		
+#|edited by openBor Stats v 0.67
+		

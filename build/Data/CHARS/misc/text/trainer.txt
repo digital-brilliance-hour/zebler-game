@@ -1,0 +1,13 @@
+name	Trainer
+health	0
+type	text
+facing 1 0
+shadow	0
+setlayer 1220
+lifespan 2
+
+anim idle
+	loop	0
+	delay	100
+	offset	124 13
+	frame	data/chars/misc/text/treino.gif

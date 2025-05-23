@@ -1,0 +1,24 @@
+name	Rocketlaunttxt
+health	0
+type	none
+facing 1 0
+shadow	0
+setlayer 120
+lifespan 1
+
+anim idle
+	loop	0
+	delay	10
+	offset	50 7
+	movea	10
+	frame	data/chars/misc/text/rshot1.gif
+	frame	data/chars/misc/text/rshot2.gif
+	frame	data/chars/misc/text/rshot1.gif
+	frame	data/chars/misc/text/rshot2.gif
+	frame	data/chars/misc/text/rshot1.gif
+	frame	data/chars/misc/text/rshot2.gif
+	frame	data/chars/misc/text/rshot1.gif
+	frame	data/chars/misc/text/rshot2.gif
+	frame	data/chars/misc/text/rshot1.gif
+	frame	data/chars/misc/text/rshot2.gif
+	frame	data/chars/misc/text/empty.gif

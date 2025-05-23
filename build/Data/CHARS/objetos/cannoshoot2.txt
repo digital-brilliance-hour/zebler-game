@@ -1,0 +1,72 @@
+name	 cannoshoot2
+health   0
+speed    7
+type     enemy
+nolife   1
+counter  9999
+shootnum 9999
+gfxshadow	1
+jumpheight 4
+remove 1
+candamage player obstacle
+
+
+
+
+anim	attack1
+	loop	0
+	delay	3
+	offset	45 280
+	bbox	0 0 0 0
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	burn	48 146 205 141 25 1 1 0 0 40
+	burn	48 146 205 141 25 1 1 0 0 40
+	frame	data/chars/objetos/fireshoot00.gif
+	frame	data/chars/objetos/fireshoot01.gif
+	frame	data/chars/objetos/fireshoot02.gif
+	frame	data/chars/objetos/fireshoot03.gif
+	frame	data/chars/objetos/fireshoot04.gif
+	frame	data/chars/objetos/fireshoot05.gif
+	frame	data/chars/objetos/fireshoot06.gif
+	frame	data/chars/objetos/fireshoot07.gif
+	frame	data/chars/objetos/fireshoot08.gif
+	frame	data/chars/objetos/fireshoot09.gif
+	frame	data/chars/objetos/fireshoot10.gif
+	frame	data/chars/objetos/fireshoot11.gif
+	frame	data/chars/objetos/fireshoot12.gif
+	frame	data/chars/objetos/fireshoot13.gif
+	frame	data/chars/objetos/fireshoot14.gif
+		
+anim	death
+	loop	0
+	delay	3
+	offset	45 280
+	bbox	0 0 0 0
+	sound	data/sounds/bang2.wav
+	hitfx	data/sounds/fire.wav
+	frame	data/chars/objetos/fireshoot15.gif
+	frame	data/chars/objetos/fireshoot16.gif
+	frame	data/chars/objetos/fireshoot17.gif
+	frame	data/chars/objetos/fireshoot18.gif
+	frame	data/chars/objetos/fireshoot19.gif
+	frame	data/chars/objetos/fireshoot20.gif
+	frame	data/chars/objetos/fireshoot21.gif
+	frame	data/chars/objetos/fireshoot22.gif
+	frame	data/chars/objetos/fireshoot23.gif
+	frame	data/chars/objetos/fireshoot24.gif
+		
+anim	idle
+	loop	1
+	delay	6
+	offset	-100 100
+	bbox	0 0 0 0
+	move	4
+	attack2	1 1 38 37 25 1 0 10
+	burn	1 1 38 37 15 1 0 10
+	sound	data/sounds/bombfall.wav
+	frame	data/chars/objetos/shoot00.gif
+	frame	data/chars/objetos/shoot01.gif
+		
+#|edited by openBor Stats v 0.67
+		

@@ -1,0 +1,52 @@
+name	RMissel
+health  1
+subtype chase
+type	enemy
+aimove	chase
+hostile player
+gfxshadow 1
+speed	10
+remove	1
+nolife  1
+candamage player obstacle pshot
+
+anim	idle
+	loop	0
+	delay	10
+	offset	130 245
+	bbox	0 0 0 0
+	
+	hitfx	data/sounds/bang2.wav
+	hitflash	explosion
+	attack3	101 232 45 43 15 1 1 0 10 20
+	frame	data/chars/objetos/miss00.gif
+	attack3	97 233 62 44 15 1 1 0 0 20
+	frame	data/chars/objetos/miss01.gif
+	attack3	87 222 89 63 15 1 1 0 0 20
+	frame	data/chars/objetos/miss02.gif
+		
+anim	walk
+	loop	0
+	delay	10
+	offset	130 245
+	bbox	0 0 0 0
+	hitfx	data/sounds/bang2.wav
+	hitflash	explosion
+	attack3	101 232 45 43 15 1 1 0 10 20
+	frame	data/chars/objetos/miss00.gif
+	attack3	97 233 62 44 15 1 1 0 0 20
+	frame	data/chars/objetos/miss01.gif
+	attack3	87 222 89 63 15 1 1 0 0 20
+	frame	data/chars/objetos/miss02.gif
+		
+
+anim	fall
+	loop	0
+	delay	10
+	offset	130 245
+	bbox	0 0 0 0
+	attack3	101 232 45 43 15 1 1 0 10 20
+	frame	data/chars/objetos/misemp.gif
+
+#|edited by openBor Stats v 0.67
+		

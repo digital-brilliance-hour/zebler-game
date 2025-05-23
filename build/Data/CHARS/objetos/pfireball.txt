@@ -1,0 +1,36 @@
+name	Pfireball
+health	1
+type	pshot
+speed	5
+gfxshadow 1
+hitenemy 1 0
+remove 0
+candamage obstacle enemy
+
+
+anim	idle
+	loop	0
+	delay	7
+	offset	20 230
+	attack	87 206 125 79 60 0 0 0 0 0
+	frame	data/chars/objetos/fireball00.gif
+	frame	data/chars/objetos/fireball01.gif
+	attack	0
+	frame	data/chars/objetos/fireball02.gif
+	frame	data/chars/objetos/fireball03.gif
+	burn	87 206 112 78 80 1 0 0 0 0
+	burn	87 206 112 78 80 1 0 0 0 0
+	frame	data/chars/objetos/fireball04.gif
+	frame	data/chars/objetos/fireball05.gif
+	frame	data/chars/objetos/fireball06.gif
+	frame	data/chars/objetos/fireball07.gif
+	frame	data/chars/objetos/fireball08.gif
+	frame	data/chars/objetos/fireball09.gif
+	frame	data/chars/objetos/fireball10.gif
+	frame	data/chars/objetos/fireball11.gif
+	frame	data/chars/objetos/fireball12.gif
+	attack	0
+	frame	data/chars/objetos/empty.gif
+		
+#|edited by openBor Stats v 0.67
+		

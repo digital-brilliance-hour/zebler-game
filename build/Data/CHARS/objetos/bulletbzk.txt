@@ -1,0 +1,36 @@
+name	Bulletbzk
+health  1
+type	enemy
+speed	30
+remove	1
+nolife  1
+flash	flash2
+
+anim idle
+	loop	1
+	delay	6
+	offset	-10 10
+	bbox	0 0 0 0
+	attack 24 24 31 10 10 10 0 0 8
+	burn 24 24 31 10 10 10 0 0 8
+	hitflash	fb
+	frame	data/chars/soldierbka/bulletbzk.gif
+
+
+anim attack1
+	loop	1
+	delay	6
+	offset	-20 10
+	bbox	0 0 0 0
+	attack 24 24 31 10 10 10 0 0 8
+	burn 24 24 31 10 10 10 0 0 8
+	frame	data/chars/objetos/flashg.gif
+	frame	data/chars/objetos/flashg00.gif
+	frame	data/chars/objetos/flashg01.gif
+	frame	data/chars/objetos/flashg02.gif
+	frame	data/chars/objetos/flashg03.gif
+	frame	data/chars/objetos/flashg04.gif
+	frame	data/chars/objetos/flashg05.gif
+	frame	data/chars/objetos/flashg06.gif
+	frame	data/chars/objetos/flashg07.gif
+	frame	data/chars/objetos/flashg08.gif

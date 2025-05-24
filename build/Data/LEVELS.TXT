@@ -47,12 +47,8 @@ skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
 file 	data/levels/scenes/credits/credits.txt
 
-<<<<<<< Updated upstream
-=======
 set	Stage_2-2_Test
 skipselect Zebler
 Z 160 348
 file 	data/levels/Stage2-2.txt
-
->>>>>>> Stashed changes
 

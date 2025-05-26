@@ -80,32 +80,32 @@ at 150
 group 2 3
 at 150
 
-spawn slug
+spawn soldier
 health 30
 coords 430 150
 at 100
 
-spawn slug
+spawn soldier
 health 30
 coords 300 130
 at 100
 
-spawn slug
+spawn soldier
 health 30
 coords 430 130
 at 100
 
-spawn spider
+spawn soldier2
 health 40
 coords 300 220
 at 100
 
-spawn spider
+spawn soldier2
 health 40
 coords 250 160
 at 100
 
-spawn spider
+spawn soldier2
 health 40
 item meat
 coords 460 220
@@ -118,32 +118,32 @@ at 500
 group 2 3
 at 500
 
-spawn spider
+spawn soldier3
 health 40
 coords 550 200
 at 90
 
-spawn spider
+spawn soldier3
 health 40
 coords 500 107
 at 140
 
-spawn zaku
+spawn soldiershield2
 health 50
 coords 550 169
 at 90
 
-spawn zaku
+spawn soldiershield2
 health 50
 coords 500 200
 at 140
 
-spawn zaku
+spawn soldiershield2
 health 50
 coords 500 190
 at 140
 
-spawn zaku
+spawn tank
 health 50
 coords 550 212
 at 90
@@ -155,20 +155,20 @@ at 700
 group 2 3
 at 700
 
-spawn spider
-alias spider_x2
+spawn tank
+alias tank_x2
 health 80
 coords 1100 230
 at -460
 
-spawn zaku
-alias zaku_x2
+spawn soldier
+alias soldier_x2
 health 80
 coords 1115 300
 at -475
 
-spawn slug
-alias slug_x2
+spawn soldier2
+alias soldier2_x2
 health 60
 coords 1052 125
 at -412

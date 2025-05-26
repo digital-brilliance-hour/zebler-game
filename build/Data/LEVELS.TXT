@@ -17,7 +17,6 @@ scene	data/scenes/howto.txt
 
 skipselect Zebler
 z       160 290 173
-file data/levels/stage2-1.txt
 file	data/levels/Stage1-1.txt
 
 z       160 260 110
@@ -46,6 +45,11 @@ next
 skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
 file 	data/levels/scenes/credits/credits.txt
+
+set	Stage_2-1_Test
+skipselect Zebler
+Z 160 348
+file 	data/levels/Stage2-2.txt
 
 set	Stage_2-2_Test
 skipselect Zebler

@@ -49,7 +49,7 @@ file 	data/levels/scenes/credits/credits.txt
 set	Stage_2-1_Test
 skipselect Zebler
 Z 160 348
-file 	data/levels/Stage2-2.txt
+file 	data/levels/Stage2-1.txt
 
 set	Stage_2-2_Test
 skipselect Zebler

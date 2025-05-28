@@ -173,26 +173,26 @@ health 60
 coords 1052 125
 at -412
 
-spawn metalgear
-alias MV-Red
-health 100
+#spawn metalgear
+#alias MV-Red
+#health 100
+#item meat
+#boss 1
+#coords 1190 117
+#at -550
+
+
+Final Wave
+group 1 1
+wait 100
+
+spawn mukai
+alias human_experiment
+health 550
 item meat
 boss 1
 coords 1190 117
 at -550
-
-
-#Final Wave
-#group 1 1
-#wait 100
-
-#spawn mukai
-#alias human experiment
-#health 550
-#item meat
-#boss 1
-#coords 1300 180
-#at 100
 
 
 

@@ -12,6 +12,7 @@
 set	Demo
 maxplayers 1
 skipselect blankP
+file 	data/levels/scenes/story1/story1.txt
 file 	data/levels/scenes/intro-story/intro-story.txt
 scene	data/scenes/howto.txt
 
@@ -23,12 +24,23 @@ z       160 260 110
 file	data/levels/Stage1-2.txt
 next
 skipselect blankP
+
 file 	data/levels/scenes/story1/story1.txt
 
 skipselect Zebler
 Z 298 348
 file data/levels/stage2-1.txt
-file 	data/levels/stage2-new.txt
+
+file 	data/levels/scenes/story2-2/story2-2.txt
+file data/levels/stage2-2.txt
+
+next
+skipselect blankP
+
+# need to change bg and story text to be finished
+
+file 	data/levels/scenes/story1/story1.txt
+#file 	data/levels/stage2-new.txt
 file	data/levels/Stage-2.txt
 next
 skipselect blankP

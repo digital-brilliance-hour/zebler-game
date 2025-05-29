@@ -63,6 +63,7 @@ anim fall
 
 anim rise
 	loop	0
+	sound	data/chars/Mukai/hahaha.wav
 	offset	59 143
 	delay	7
 	frame	data/chars/Mukai/rise/01.gif
@@ -85,6 +86,7 @@ anim attack1
 	frame	data/chars/Mukai/attack1/04.gif
 	frame	data/chars/Mukai/attack1/05.gif
 	frame	data/chars/Mukai/attack1/06.gif
+	sound	data/chars/Mukai/punch.wav
 	frame	data/chars/Mukai/attack1/07.gif
 	attack	0 0 0 0 0 0
 	bbox	102 80 50 115
@@ -97,6 +99,7 @@ anim attack1
 anim attack2
 	range	150 250
 	loop	0	
+	sound	data/sounds/rock.wav
 	offset	199 138
 	delay	30	
 	bbox	173 21 44 111
@@ -129,7 +132,8 @@ anim attack2
 
 anim attack3
 	range	150 250
-	loop	0	
+	loop	0
+	sound	data/sounds/rock.wav
 	offset	199 138
 	delay	30	
 	bbox	173 21 44 111

@@ -1,6 +1,6 @@
 music		data/music/intro-story.ogg
 
-background	data/bgs/story2-2.png 1 1 0 0
+background	data/bgs/story2-1-new.png 1 1 0 0
 
 #frontpanel	data/bgs/story.gif
 

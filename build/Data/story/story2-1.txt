@@ -6,9 +6,9 @@ Zebler_escape_the_ship_and_avoided__ 2
 being_captured_by_the_humans._Now 2
 Zebler_is_searching_for_metal_parts_to, 2
 repair_his_ship_to_fly_back_home._ 2
-Now_Zebler_has_to_fight_his_way_threw 2
-heavily_armed_soldiers_and_tanks.As_Zebler_fight, 2
-off_soldiers_a_powerful_opponent_appear_ 2
+Now_Zebler_has_to_fight_his_way_through 2
+heavily_armed_soilders_and_tanks.As_Zebler_fights, 2
+off_soilders_a_powerful_opponent_appears_ 2
 to_slow_Zebler_down_from_reaching_his_ship._Zebler_felt 2
 threaten_by_this_new_opponent.Zebler's 2
 new_mission_was_clear:defeat_the_new 2

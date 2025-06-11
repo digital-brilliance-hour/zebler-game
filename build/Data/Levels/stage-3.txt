@@ -1,21 +1,36 @@
 ## Load music in this area ##
-music		data/music/stage3.ogg
-bossmusic	data/music/boss3.ogg
+music     data/music/stage2.ogg
+bossmusic data/music/boss2.ogg
 
 ## Load images in this area ##
 
 # Background layer
-background	data/bgs/space.png
+background	data/bgs/stage-2/stage-2bg.gif
 
-panel	data/bgs/stage1/frontOld.gif
+# Front layer
+#frontpanel	data/bgs/stage-2/stage-2bgp.png
+
+# Load 'panels'. Up to 26 panels can be loaded.
+# They can be referenced using A-Z
+# Specify normal, neon and screen, or 'none'
+panel		data/bgs/stage-2/panel.gif
+
+# ab = Pinepot left
+# c = wall, ridge left
+# d = wall, ridge right + 078
+# e = window
+# f = door
+# g = wall
+# h = Club K neon
+
+
+# Set the order (don't make the lines too long)
+# Syntax:
+#	order	[a...z]		(a sequence of panels, e.g. abcdefghij)
+#	order	[a...z]
+#
 order a
-	
-settime         0
-notime          1
-stagenumber 3
-bgspeed         20
-#maxfallspeed	-100
-spawn1          60 0 0
+stagenumber 2
 
 ## Spawning Area ##
 # Spawn format:
@@ -55,487 +70,394 @@ spawn1          60 0 0
 # To make them appear normally, use this:
 # group 4 4
 
-
+direction both
 
 #--group1-----
+#1st Wave
+group 2 3
+at 100
 
-wait
-at 1000
+spawn slug
+health 30
+coords -80 287
+at 100
 
-group  1 6
-at 1000
+spawn slug
+health 30
+coords 485 287
+at 100
 
-spawn 	rdias
-health 100
-item pow1
-coords 	530 200
-at	1000	
+spawn slug
+health 30
+coords 200 330
+at 100
 
-spawn 	enem1
-coords 	530 200
-at	1000	
+spawn spider
+health 40
+coords -80 287
+at 100 
 
-spawn 	enem1
-coords 	530 200
-at	1000	
+spawn spider
+health 40
+coords 485 287
+at 100
 
-spawn 	enem1
-coords 	530 200
-at	1000	
+spawn spider
+health 40
+coords 200 330
+at 100
 
-spawn 	enem1
-coords 	-50 200
-at	1000	
+#2nd Wave
+group 3 5
+at 100
 
-spawn 	enem1
-coords 	-50 200
-at	1000
+spawn spider
+health 40
+coords -80 287
+at 100
 
-#--group2-----
-wait
-at 3000
+spawn spider
+health 40
+coords 485 287
+at 100
 
-group  1 10
-at 3000
-
-spawn 	rdias
-item pow1
-health 150
-coords 	530 200
-at	3000	
-
-spawn 	enem1
-coords 	-50 200
-at	3000	
-
-spawn 	enem1
-coords 	-50 200
-at	3000	
-
-spawn 	enem1
-coords 	-50 200
-at	3000	
-
-spawn 	enem1
-coords 	530 200
-at	3000	
-
-spawn 	enem1
-coords 	530 200
-at	3000
-
-spawn 	enem1
-coords 	530 100
-at	3000
-
-#--group3-----
-
-wait
-at 5000
-
-group  1 10
-at 5000
-
-spawn 	rdias
-item pow1
-health 150
-coords 	530 50
-at	5000
-
-spawn 	rdias
-health 150
-coords 	530 200
-at	5000		
-
-spawn 	enem1
-coords 	-30 100
-at	5000	
-
-spawn 	enem1
-coords 	530 170
-at	5000	
-
-spawn 	enem1
-coords 	-50 100
-at	5000	
-
-spawn 	enem1
-coords 	-50 170
-at	5000	
-
-spawn 	enem1
-coords 	530 100
-at	5000
-
-spawn 	enem1
-coords 	-50 170
-at	5000
-
-spawn 	enem1
-coords 	-50 100
-at	5000
-
-#--group4-----
-
-wait
-at 7000
-
-group  1 10
-at 7000
-
-spawn 	robot
-health 250
-item pow2
-coords 	530 50
-at	7000
-
-spawn 	rdias
-item pow1
+spawn zaku
 health 50
-coords 	530 200
-at	7000		
+coords 200 330
+at 100
 
-spawn 	enem1
-coords 	-50 100
-at	7000	
-
-spawn 	enem1
-coords 	-50 170
-at	7000	
-
-spawn 	enem1
-coords 	530 100
-at	7000	
-
-spawn 	enem1
-coords 	530 170
-at	7000	
-
-spawn 	enem1
-coords 	-50 100
-at	7000
-
-spawn 	enem1
-coords 	-50 170
-at	7000
-
-spawn 	enem1
-coords 	530 100
-at	7000
-
-#--group5-----
-
-wait
-at 9000
-
-group  1 6
-at 9000
-
-spawn 	rdias
-item pow1
-health 100
-coords 	530 200
-at	9000	
-
-spawn 	enem1
-coords 	530 200
-at	9000	
-
-spawn 	enem1
-coords 	530 200
-at	9000	
-
-spawn 	enem1
-coords 	530 200
-at	9000	
-
-spawn 	enem1
-coords 	-50 200
-at	9000	
-
-spawn 	enem1
-coords 	-50 200
-at	9000
-
-#--group6-----
-wait
-at 11000
-
-group  1 10
-at 11000
-
-spawn 	rdias
-item pow1
-health 150
-coords 	530 200
-at	11000	
-
-spawn 	enem1
-coords 	-50 200
-at	11000	
-
-spawn 	enem1
-coords 	-50 200
-at	11000	
-
-spawn 	enem1
-coords 	-50 200
-at	11000	
-
-spawn 	enem1
-coords 	530 200
-at	11000	
-
-spawn 	enem1
-coords 	530 200
-at	11000
-
-spawn 	enem1
-coords 	530 100
-at	11000
-
-#--group7-----
-
-wait
-at 13000
-
-group  1 10
-at 13000
-
-spawn 	rdias
-item pow1
-health 150
-coords 	530 50
-at	13000
-
-spawn 	rdias
-health 150
-coords 	530 200
-at	13000		
-
-spawn 	enem1
-coords 	-30 100
-at	13000	
-
-spawn 	enem1
-coords 	530 170
-at	13000	
-
-spawn 	enem1
-coords 	-50 100
-at	13000	
-
-spawn 	enem1
-coords 	-50 170
-at	13000	
-
-spawn 	enem1
-coords 	530 100
-at	13000
-
-spawn 	enem1
-coords 	-50 170
-at	13000
-
-spawn 	enem1
-coords 	-50 100
-at	13000
-
-#--group8-----
-
-wait
-at 15000
-
-group  1 7
-at 15000
-
-spawn 	robot
-health 250
-item pow2
-coords 	530 50
-at	15000
-
-spawn 	rdias
+spawn zaku
 health 50
-item pow1
-coords 	530 200
-at	15000		
+coords 485 287
+at 100
 
-spawn 	enem1
-coords 	-50 100
-at	15000	
+spawn zaku
+health 50
+coords -80 287
+at 100
 
-spawn 	enem1
-coords 	-50 170
-at	15000	
+spawn zaku
+health 50
+coords 200 330
+at 100
 
-spawn 	enem1
-coords 	530 100
-at	15000	
+spawn slug
+health 30
+coords -80 287
+at 100
 
-spawn 	enem1
-coords 	530 170
-at	15000	
+spawn slug
+health 30
+coords -80 287
+at 100
 
-spawn 	enem1
-coords 	-50 100
-at	15000
+spawn slug
+health 30
+coords -80 287
+at 100
 
-spawn 	enem1
-coords 	-50 170
-at	15000
+#3rd Wave
+group 2 4
+at 100
 
-spawn 	enem1
-coords 	530 100
-at	15000
+spawn zaku
+health 50
+coords -80 287
+at 100
 
-#--group9-----
+spawn spider
+health 40
+coords -80 287
+at 100
 
-wait
-at 15000
+spawn spider
+health 40
+coords -80 287
+at 100
 
-group  2 5
-at 15000
+spawn slug
+health 30
+coords 200 330
+at 100
 
-spawn 	boss1
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+item meat
+coords 485 287
+at 100
+
+
+#4th Wave
+group 2 3
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+
+#5th Wave
+group 2 4
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords 485 287
+at 100
+
+spawn spider
+health 40
+coords 200 330
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords -80 287
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+#6th Wave
+group 2 4
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn spider
+health 40
+coords 200 330
+at 100
+
+spawn spider
+health 40
+coords 200 330
+at 100
+
+spawn spider
+health 40
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn slug
+health 30
+coords 200 330
+at 100
+
+spawn zaku
+health 50
+coords -80 287
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords 200 330
+at 100
+
+spawn zaku
+coords 200 330
+at 100
+
+#7th Wave
+group 2 3
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords -80 287
+at 100
+
+spawn slug
+health 30
+coords 485 287
+at 100
+
+spawn zaku
+health 50
+coords 485 287
+at 100
+
+spawn slug
+health 30
+item meat
+coords 485 287
+at 100
+
+#Final Wave
+group 2 3
+at 100
+
+spawn metalgear
+alias MV-Red
+health 500
 boss 1
-health 400
-coords 	530 150
-at	15000
+coords 200 205
+at 100
 
-#helpers
+spawn spider
+alias spider_x2
+health 80
+coords -80 287
+at 100
 
-spawn 	rdias
-health 50
-coords 	530 200
-at	15000		
+spawn spider
+alias spider_x2
+health 80
+coords 485 287
+at 100
 
-spawn 	enem1
-coords 	-50 100
-at	15000	
+spawn spider
+alias spider_x2
+health 80
+coords 200 330
+at 100
 
-spawn 	enem1
-coords 	-50 170
-at	15000	
+spawn spider
+alias spider_x2
+health 80
+coords 200 300
+at 100
 
-spawn 	enem1
-coords 	530 100
-at	15000	
+spawn slug
+alias slug_x2
+health 60
+coords -80 287
+at 100
 
-spawn 	enem1
-coords 	530 170
-at	15000	
+spawn slug
+alias slug_x2
+health 60
+coords 485 287
+at 100
 
-spawn 	enem1
-coords 	-50 100
-at	15000
+spawn slug
+alias slug_x2
+health 60
+coords 200 330
+at 100
 
-spawn 	enem1
-coords 	-50 170
-at	15000
+spawn zaku
+alias zaku_x2
+item meat
+health 100
+coords  -80 287
+at 100
 
-spawn 	enem1
-coords 	530 100
-at	15000
 
-spawn 	rdias
-health 50
-coords 	530 200
-at	15000		
 
-spawn 	enem1
-coords 	-50 100
-at	15000	
 
-spawn 	enem1
-coords 	-50 170
-at	15000	
 
-spawn 	enem1
-coords 	530 100
-at	15000	
 
-spawn 	enem1
-coords 	530 170
-at	15000	
 
-spawn 	enem1
-coords 	-50 100
-at	15000
 
-spawn 	enem1
-coords 	-50 170
-at	15000
 
-spawn 	enem1
-coords 	530 100
-at	15000
 
-spawn 	rdias
-health 50
-coords 	530 200
-at	15000		
 
-spawn 	enem1
-coords 	-50 100
-at	15000	
 
-spawn 	enem1
-coords 	-50 170
-at	15000	
 
-spawn 	enem1
-coords 	530 100
-at	15000	
 
-spawn 	enem1
-coords 	530 170
-at	15000	
 
-spawn 	enem1
-coords 	-50 100
-at	15000
 
-spawn 	enem1
-coords 	-50 170
-at	15000
 
-spawn 	enem1
-coords 	530 100
-at	15000
 
-spawn 	rdias
-health 50
-coords 	530 200
-at	15000		
 
-spawn 	enem1
-coords 	-50 100
-at	15000	
 
-spawn 	enem1
-coords 	-50 170
-at	15000	
-
-spawn 	enem1
-coords 	530 100
-at	15000	
-
-spawn 	enem1
-coords 	530 170
-at	15000	
-
-spawn 	enem1
-coords 	-50 100
-at	15000
-
-spawn 	enem1
-coords 	-50 170
-at	15000
-
-spawn 	enem1
-coords 	530 100
-at	15000
 
 
 

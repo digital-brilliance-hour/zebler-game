@@ -1,5 +1,5 @@
 ## Load music in this area ##
-music     data/music/stage2.ogg
+music     data/music/stage2-2.ogg 529590
 bossmusic data/music/boss2.ogg
 
 ## Load images in this area ##

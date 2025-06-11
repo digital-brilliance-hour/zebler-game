@@ -1,5 +1,5 @@
 ## Load music in this area ##
-music     data/music/stage2.ogg
+music     data/music/stage2-2.ogg 529590
 bossmusic data/music/boss2.ogg
 
 ## Load images in this area ##
@@ -101,6 +101,7 @@ at 50
 
 spawn tank
 health 60
+item meat
 coords 370 220
 at 50
 
@@ -134,6 +135,7 @@ at 600
 
 spawn tank
 health 80
+item meat
 coords 600 210
 at 600
 
@@ -151,27 +153,6 @@ spawn soldier3
 health 40
 coords 300 160
 at 600
-
-spawn soldier
-health 170
-coords 300 200
-at 650
-
-spawn tank
-health 80
-coords 550 160
-at 650
-
-spawn soldier
-health 170
-coords 200 150
-at 650
-
-spawn tank
-health 90
-coords 565 200
-at 650
-
 spawn box
 item meat
 coords 550 155

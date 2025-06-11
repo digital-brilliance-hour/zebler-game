@@ -37,7 +37,7 @@ file 	data/levels/scenes/story2-2/story2-2.txt
 
 
 #file 	data/levels/stage2-new.txt
-file	data/levels/Stage-2.txt
+file	data/levels/Stage-3.txt
 next
 skipselect blankP
 file 	data/levels/scenes/story2/story2.txt
@@ -48,19 +48,19 @@ skipselect blankP
 scene	data/scenes/planehowto.txt
 z 50 284 210
 skipselect Keith
-file	data/levels/stage-3.txt
+file	data/levels/stage-4.txt
 next
 skipselect blankP
 file 	data/levels/scenes/ending-story/ending-story.txt
 file 	data/levels/scenes/credits/credits.txt
 
-set	Stage_2-1_Test
-skipselect Zebler
-Z 160 348
-file 	data/levels/Stage2-1.txt
+#set	Stage_2-1_Test
+#skipselect Zebler
+#Z 160 348
+#file 	data/levels/Stage2-1.txt
 
-set	Stage_2-2_Test
-file 	data/levels/scenes/story2-2/story2-2.txt
-skipselect Zebler
-Z 160 348
-file 	data/levels/Stage2-2.txt
+#set	Stage_2-2_Test
+#file 	data/levels/scenes/story2-2/story2-2.txt
+#skipselect Zebler
+#Z 160 348
+#file 	data/levels/Stage2-2.txt
